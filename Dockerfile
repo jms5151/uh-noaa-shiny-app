@@ -32,7 +32,7 @@ RUN mkdir /root/uh-noaa-shiny-app/codes
 RUN mkdir /root/uh-noaa-shiny-app/forec_shiny_app_data
 COPY codes /root/uh-noaa-shiny-app/codes
 COPY forec_shiny_app_data /root/uh-noaa-shiny-app/forec_shiny_app_data
-COPY styles.css /root/uh-noaa-shiny-app/styles.css
+COPY styles.css /root/uh-noaa-shiny-app/codes/styles.css
 
 COPY Rprofile.site /usr/lib/R/etc/
 

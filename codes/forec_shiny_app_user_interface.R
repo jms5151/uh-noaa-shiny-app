@@ -465,7 +465,7 @@ ui <- navbarPage(
       class = "outer",
       tags$head(
         includeCSS(
-          "codes/styles.css"
+          "styles.css"
         )
       ),
       leafletOutput(

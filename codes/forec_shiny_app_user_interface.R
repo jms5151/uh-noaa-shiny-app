@@ -1,7 +1,7 @@
 ui <- navbarPage(
   theme = shinytheme(
     "flatly"
-    ), 
+  ), 
   collapsible = TRUE, 
   "", 
   id="nav",
@@ -10,31 +10,31 @@ ui <- navbarPage(
     "Coral disease predictions",
     leafletOutput(
       "map1"
-      ) %>%
+    ) %>%
       withSpinner(
         color = spinColor
-        ),
+      ),
     hr(),
     fluidRow(
       column(
         6,
         plotlyOutput(
           "plotlyGA"
-          ) %>%
+        ) %>%
           withSpinner(
             color = spinColor
-            )
-        ),
+          )
+      ),
       column(
         6,
         plotlyOutput(
           "plotlyWS"
-          ) %>% 
+        ) %>% 
           withSpinner(
             color = spinColor
-            )
-        )
-      ),
+          )
+      )
+    ),
     absolutePanel(
       id = "controls",
       class = "panel panel-default",
@@ -48,35 +48,35 @@ ui <- navbarPage(
         dropdownButton(
           icon = icon(
             'info'
-            ),
-          size = "xs"
           ),
+          size = "xs"
+        ),
         h3(
           strong(
             'Information'
-            )
-          ),
+          )
+        ),
         h5(
           landing_page_info_txt
-          )
         )
       )
-    ),
+    )
+  ),
   # Management scenarios page
   tabPanel(
     "Investigating scenarios", #HTML("Long-term mitigation<br/>potential"),
     leafletOutput(
       "management_map", 
       height = "300px"
-      ) %>% 
+    ) %>% 
       withSpinner(
         color = spinColor
-        ),
+      ),
     # set all slider colors at once, colors = deepskyblue4, dark red, black repeated\
     setSliderColor(
       c("#00688B", "#8B0000", "#000000", "#00688B", "#8B0000", "#000000"),
       c(1, 2, 3, 4, 5, 6)
-      ),
+    ),
     hr(),
     tabsetPanel(
       type = "tabs",
@@ -92,47 +92,47 @@ ui <- navbarPage(
                   "Info2",
                   icon = icon(
                     'info'
-                    ),
-                  size = "xs"
                   ),
+                  size = "xs"
+                ),
                 h3(
                   strong(
                     'Information'
-                    )
-                  ),
-                h5(
-                  scenarios_page_info_txt
                   )
                 ),
+                h5(
+                  scenarios_page_info_txt
+                )
+              ),
               span(
                 h5(
                   strong(
                     "Targets:"
-                    )
-                  ),
+                  )
                 ),
+              ),
               sliderInput(
                 "wq_slider_ga",
                 label = span(
                   h5(
                     strong(
                       "Water quality"
-                      )
-                    ),
+                    )
+                  ),
                   tags$i(
                     h6(
                       htmlOutput(
                         "chlA_value_ga"
-                        )
                       )
-                    ),
+                    )
+                  ),
                   tags$i(
                     h6(
                       htmlOutput(
                         "kd_value_ga"
-                        )
                       )
-                    ),
+                    )
+                  ),
                   style = "color:#00688B",
                   div(
                     style = 'width:250px;',
@@ -140,45 +140,45 @@ ui <- navbarPage(
                       h6(
                         style ='float:left;', 
                         'Worse'
-                        )
-                      ),
+                      )
+                    ),
                     div(
                       h6(
                         style = 'float:right;', 
                         'Better'
-                        )
                       )
                     )
-                  ),
+                  )
+                ),
                 min = -100,
                 max = 100,
                 step = 20,
                 post = " %",
                 value = 0,
                 width = "250px"
-                ),
+              ),
               bsTooltip(
                 "wq_slider_ga",
                 wq_hover_txt,
                 placement = "bottom",
                 trigger = "hover",
                 options = NULL
-                ),
+              ),
               sliderInput(
                 "fish_slider_ga",
                 label = span(
                   h5(
                     strong(
                       "Herbivorous fish"
-                      )
-                    ),
+                    )
+                  ),
                   tags$i(
                     h6(
                       htmlOutput(
                         "fish_value_ga"
-                        )
                       )
-                    ),
+                    )
+                  ),
                   style = "color:#8B0000",
                   div(
                     style = 'width:250px;',
@@ -186,8 +186,8 @@ ui <- navbarPage(
                       h6(
                         style = 'float:left;', 
                         'Less'
-                        )
-                      ),
+                      )
+                    ),
                     div(
                       h6(
                         style = 'float:right;', 
@@ -509,6 +509,17 @@ ui <- navbarPage(
   ),
   # About the project page
   tabPanel(
-    "About"
+    "About",
+    h3("Funding:"),
+    uiOutput("funding_statement"),
+    br(),
+    h3("Publications:"),
+    uiOutput("cite1"),
+    br(),
+    uiOutput("cite2"),
+    br(),
+    uiOutput("cite3"),
+    br(),
+    uiOutput("cite4")
   )
 )

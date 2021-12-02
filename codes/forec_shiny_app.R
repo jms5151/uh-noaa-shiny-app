@@ -1,18 +1,6 @@
 # Fore-C interactive explorer -----------------------------------------------------
 # load libraries (and install if not already installed) 
-if (!require("shiny")) install.packages("shiny"); library(shiny)
-if (!require("shinythemes")) install.packages("shinythemes"); library(shinythemes)
-if (!require("flexdashboard")) install.packages("flexdashboard"); library(flexdashboard)
-if (!require("tidyverse")) install.packages("tidyverse"); library(tidyverse)
-if (!require("shinyWidgets")) install.packages("shinyWidgets"); library(shinyWidgets)
-if (!require("xts")) install.packages("xts"); library(xts)
-if (!require("shinydashboard")) install.packages("shinydashboard"); library(plotly)
-if (!require("shinycssloaders")) install.packages("shinycssloaders"); library(shinycssloaders)
-if (!require("shinyBS")) install.packages("shinyBS"); library(shinyBS) # for hover text
-if (!require("leaflet")) install.packages("leaflet"); library(leaflet)
-if (!require("RColorBrewer")) install.packages("RColorBrewer"); library(RColorBrewer)
-if (!require("viridis")) install.packages("viridis"); library(viridis)
-if (!require("plotly")) install.packages("plotly"); library(plotly)
+source("../codes/forec_shiny_app_packages.R")
 
 # load data -----------------------------------------------------------------------
 filenames <- list.files("../forec_shiny_app_data/Forecasts/", full.names=TRUE)

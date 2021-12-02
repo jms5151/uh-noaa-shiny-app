@@ -18,6 +18,16 @@ fish_hover_txt <- "Adjust me!"
 coral_hover_txt <- "Adjust me!"
 
 # create text for about page ---------------------------------------------------------------
+# about coral diseases
+photo_credit <- "Photos courtesy of Courtney Couch."
+
+disease_info_text <- "Growth anomalies are chronic, protuberant 
+masses of coral skeletons (i.e., tumors) 
+that reduce growth, fecundity, and survival. Tissue loss diseases, 
+or white syndromes, are characterized by progressive tissue loss 
+across the coral colony with lesions progressing slowly (chronic 
+to subacute or rapidly (acute)."
+
 # funding
 himb_url <- a("Hawaii Institute of Marine Biology, University of Hawaii",
               href = 'http://www.himb.hawaii.edu/'              

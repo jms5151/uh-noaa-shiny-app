@@ -31,40 +31,41 @@ plotly_margins <- list(
   t = 60
 )
 
-# function to plot line graph of near-term forecasts -------------------------------
+# function to plot line graph of near-term foreensembles -------------------------------
 diseaseRisk_plotly <- function(df, titleName){
   plot_ly() %>%
     add_trace(data = df, 
               x = ~Date, 
-              y = ~round(value*100), 
-              split = ~cast, 
+              y = ~value,
+              y = ~round(value),
+              split = ~ensemble, 
               type = 'scatter', 
               mode = 'lines',
               color = ~type,
               colors = c("Salmon", "Midnight blue"),
               text = ~paste("Date:", Date,
                             "<br>Disease risk:",
-                            "<br>90th percentile", round(Upr*100), "%", # IQR90
-                            "<br>75th percentile", round(value*100), "%", #IQR75
-                            "<br>50th percentile", round(Lwr*100), "%" #IQR50
-                            ),
+                            "<br>90th percentile", round(Upr), "%", # IQR90
+                            "<br>75th percentile", round(value), "%", #IQR75
+                            "<br>50th percentile", round(Lwr), "%" #IQR50
+              ),
               hoverinfo = "text") %>%
     add_ribbons(data = df, 
                 x= ~Date, 
-                split = ~cast, 
-                ymin = ~round(Lwr*100), 
-                ymax = ~round(Upr*100),
+                split = ~ensemble, 
+                ymin = ~round(Lwr), 
+                ymax = ~round(Upr),
                 color = ~type,
                 colors = c("Salmon", "Midnight blue"),
-                opacity=0.3,
+                opacity = 0.3,
                 hoverinfo='skip') %>%
     layout(title = titleName,
            xaxis = list(showgrid = F, 
                         title = ""), 
            yaxis = list(showline = T, 
                         showgrid = F, 
-                        range = c(0, 100),
-                        title = "Disease risk"),
+                        range = c(0, 40),
+                        title = "Disease risk\n(#/50m)"),
            font = list(size = 14),
            showlegend = FALSE,
            updatemenus = button_info, 
@@ -83,12 +84,70 @@ diseaseRisk_placeholder_plot <- function(titleName, dateRange) {
                         title = ""), 
            yaxis = list(showline = T, 
                         showgrid = F, 
-                        range = c(0, 100),
-                        title = "Disease risk"),
+                        range = c(0, 40),
+                        title = "Disease risk\n(#/50m)"),
            font = list(size = 14),
            showlegend = FALSE,
            margin = plotly_margins)
 }
+# diseaseRisk_plotly <- function(df, titleName){
+#   plot_ly() %>%
+#     add_trace(data = df, 
+#               x = ~Date, 
+#               y = ~value,
+#               y = ~round(value*100),
+#               split = ~ensemble, 
+#               type = 'scatter', 
+#               mode = 'lines',
+#               color = ~type,
+#               colors = c("Salmon", "Midnight blue"),
+#               text = ~paste("Date:", Date,
+#                             "<br>Disease risk:",
+#                             "<br>90th percentile", round(Upr*100), "%", # IQR90
+#                             "<br>75th percentile", round(value*100), "%", #IQR75
+#                             "<br>50th percentile", round(Lwr*100), "%" #IQR50
+#                             ),
+#               hoverinfo = "text") %>%
+#     add_ribbons(data = df, 
+#                 x= ~Date, 
+#                 split = ~ensemble, 
+#                 ymin = ~round(Lwr*100), 
+#                 ymax = ~round(Upr*100),
+#                 color = ~type,
+#                 colors = c("Salmon", "Midnight blue"),
+#                 opacity = 0.3,
+#                 hoverinfo='skip') %>%
+#     layout(title = titleName,
+#            xaxis = list(showgrid = F, 
+#                         title = ""), 
+#            yaxis = list(showline = T, 
+#                         showgrid = F, 
+#                         range = c(0, 100),
+#                         title = "Disease risk"),
+#            font = list(size = 14),
+#            showlegend = FALSE,
+#            updatemenus = button_info, 
+#            margin = plotly_margins)      
+# }
+# 
+# # empty plot to display line graph before any pixel is selected -------------------
+# diseaseRisk_placeholder_plot <- function(titleName, dateRange) {
+#   plot_ly() %>%
+#     add_trace(x = ~range(dateRange), 
+#               y = 0, 
+#               type = 'scatter', 
+#               mode = 'lines') %>%
+#     layout(title = titleName,
+#            xaxis = list(showgrid = F, 
+#                         title = ""), 
+#            yaxis = list(showline = T, 
+#                         showgrid = F, 
+#                         range = c(0, 100),
+#                         title = "Disease risk"),
+#            font = list(size = 14),
+#            showlegend = FALSE,
+#            margin = plotly_margins)
+# }
 
 # function to bound numbers between 0 and 100 % -----------------------------------
 bound0100 <- function(x){

@@ -3,8 +3,6 @@
 # libraries required :
 # if (!require("leaflet")) install.packages("leaflet"); library(leaflet)
 # # if (!require("leaflet.extras")) install.packages("leaflet.extras"); library(leaflet.extras) # need if using drawable polygons
-# if (!require("RColorBrewer")) install.packages("RColorBrewer"); library(RColorBrewer)
-# if (!require("viridis")) install.packages("viridis"); library(viridis)
 
 # polygons and data layers required (added in forec_shiny_app.R): 
 # load("./forec_shiny_app_data/Static_data/historical_surveys.RData")
@@ -28,14 +26,45 @@ scaleBarOptions = function(maxWidth = 100, metric = TRUE, imperial = TRUE,
 }
 
 # set colors for different polygon layers -------------------------------------------------
-# bins <- c(0, 0.05, 0.10, 0.15, 0.25, 0.50, 0.75, 1.0)
-bins <- c(0, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 1.0)
-cols <- c("white", "#FFFABF", "#FFDBA4", "#FF9E6E", "#FF603B", "red")
-pal <- colorBin(cols, domain = polygons_5km$drisk, bins = bins, na.color = "transparent")
+bins <- seq(from = 0,
+            to = 4, 
+            by = 1
+            )
 
-legendLabels <- c("0-5", "6-10", "11-15", "16-25", "26-50", "51-75", "76-100", "NA")
-gbrmpa_zone_colors <- brewer.pal(length(polygons_GBRMPA_park_zoning), "Dark2")
-mpa_colors <- viridis_pal(option = "A")(length(polygons_management_areas$Type))
+cols <- c("#CCFFFF", 
+          "#FFEF00",
+          "#FFB300",
+          "#EB1F08",
+          "#8D1002"
+          )
+
+#colorBin function is from leaflet!
+pal <- colorBin(cols, 
+                domain = polygons_5km$drisk, 
+                bins = bins, 
+                na.color = "transparent"
+                )
+
+# legendLabels <- c("0-5", "6-10", "11-15", "16-25", "26-50", "51-75", "76-100", "NA")
+legendLabels <- c("No stress", 
+                  "Watch", 
+                  "Warning", 
+                  "Alert Level 1", 
+                  "Alert Level 2"
+                  )
+
+gbrmpa_zone_pal <- colorBin(cols,
+                            domain = polygons_GBRMPA_park_zoning$drisk,
+                            bins = bins,
+                            na.color = "transparent"
+                            )
+
+
+management_zone_pal <- colorBin(cols,
+                                domain = polygons_management_zoning$drisk,
+                                bins = bins,
+                                na.color = "transparent"
+                                )
 
 # create landing page map of near-term forecasts ------------------------------------------
 leaf_reefs <- leaflet() %>%
@@ -52,29 +81,32 @@ leaf_reefs <- leaflet() %>%
               group = "5km forecasts",
               highlightOptions = highlightOptions(color = "black", weight = 3, bringToFront = TRUE)
   ) %>%
-  addPolygons(data = polygons_management_areas,
-              group = "Management area forecasts",
-              layerId = ~ID,
-              color = mpa_colors,
-              highlightOptions = highlightOptions(color = "black", weight = 2, bringToFront = TRUE)
-  ) %>%
   addPolygons(data = polygons_GBRMPA_park_zoning,
               group = "GBRMPA park zoning forecasts",
               layerId = ~ID,
-              color = gbrmpa_zone_colors,
+              color = ~gbrmpa_zone_pal(polygons_GBRMPA_park_zoning$drisk),
+              highlightOptions = highlightOptions(color = "black", weight = 2, bringToFront = TRUE)
+  ) %>%
+  addPolygons(data = polygons_management_zoning,
+              group = "Management area forecasts",
+              layerId = ~ID,
+              color = ~management_zone_pal(polygons_management_zoning$drisk),
               highlightOptions = highlightOptions(color = "black", weight = 2, bringToFront = TRUE)
   ) %>%
   addLayersControl(
     overlayGroups = c("5km forecasts", 
                       "Management area forecasts", 
                       "GBRMPA park zoning forecasts"),
-    baseGroups = c("OpenStreetMap", "Satellite"),
+    baseGroups = c("Satellite", 
+                   "OpenStreetMap"),
     options = layersControlOptions(collapsed = FALSE), # icon versus buttons with text
     position = c("bottomright")) %>%
   hideGroup(c("Management area forecasts", 
               "GBRMPA park zoning forecasts")) %>%
-  leaflet::addLegend("bottomright", pal = pal, values = polygons_5km$drisk,
-                     title = "Disease risk (%)",
+  leaflet::addLegend("bottomright", 
+                     pal = pal, 
+                     values = polygons_5km$drisk,
+                     title = "Disease risk",
                      labFormat = function(type, cuts, p) {  # Here's the trick
                        paste0(legendLabels) }) 
 

@@ -510,6 +510,11 @@ ui <- navbarPage(
   # About the project page
   tabPanel(
     "About",
+    h3("Coral disease information:"),
+    imageOutput("cdz_images"),
+    disease_info_text,
+    photo_credit,
+    br(),
     h3("Funding:"),
     uiOutput("funding_statement"),
     br(),

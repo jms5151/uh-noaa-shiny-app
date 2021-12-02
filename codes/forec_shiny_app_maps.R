@@ -111,7 +111,7 @@ leaf_reefs <- leaflet() %>%
                        paste0(legendLabels) }) 
 
 # create map for scenarios page ------------------------------------------------------------
-leaf_scenarios <- leaf_reefs 
+leaf_scenarios <- leaf_reefs
 
 # create map of historical disease surveys -------------------------------------------------
 historicalMap = leaflet() %>%

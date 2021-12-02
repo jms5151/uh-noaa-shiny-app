@@ -24,7 +24,7 @@ RUN apt-get update && apt-get install -y \
 # basic shiny functionality
 RUN R -e "install.packages(c('shiny', 'shinythemes', 'leaflet', 'flexdashboard', 'tidyverse'), repos='https://cloud.r-project.org/')"
 
-RUN R -e "install.packages(c('shinyWidgets', 'plotly', 'xts', 'shinydashboard', 'shinycssloaders', 'shinyBS', 'RColorBrewer', 'viridis'), repos='https://cloud.r-project.org/')"
+RUN R -e "install.packages(c('shinyWidgets', 'plotly', 'xts', 'shinydashboard', 'shinycssloaders', 'shinyBS'), repos='https://cloud.r-project.org/')"
 
 # copy the app to the image
 RUN mkdir /root/uh-noaa-shiny-app

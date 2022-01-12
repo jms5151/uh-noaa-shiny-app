@@ -8,32 +8,38 @@ ui <- navbarPage(
   # Nowcasts and forecasts page
   tabPanel(
     "Coral disease predictions",
-    leafletOutput(
-      "map1"
-    ) %>%
-      withSpinner(
-        color = spinColor
-      ),
-    hr(),
     fluidRow(
       column(
-        6,
-        plotlyOutput(
-          "plotlyGA"
-        ) %>%
-          withSpinner(
-            color = spinColor
-          )
-      ),
+        width = 2,
+        plotlyOutput("gauge_plots")
+        ),
       column(
-        6,
-        plotlyOutput(
-          "plotlyWS"
-        ) %>% 
+        width = 6,
+        height = 500,
+        leafletOutput(
+          "map1"
+          ) %>%
           withSpinner(
             color = spinColor
-          )
-      )
+            )
+        ),
+      column(
+        width = 4,
+        plotlyOutput(
+          "plotlyGA",
+          height = 200
+          ) %>%
+          withSpinner(
+            color = spinColor
+            ),
+        plotlyOutput(
+          "plotlyWS",
+          height = 200
+          ) %>%
+          withSpinner(
+            color = spinColor
+            )
+        )
     ),
     absolutePanel(
       id = "controls",
@@ -58,10 +64,10 @@ ui <- navbarPage(
         ),
         h5(
           landing_page_info_txt
+          )
         )
       )
-    )
-  ),
+    ),
   # Management scenarios page
   tabPanel(
     "Investigating scenarios", #HTML("Long-term mitigation<br/>potential"),

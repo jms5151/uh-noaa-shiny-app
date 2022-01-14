@@ -9,11 +9,59 @@ ui <- navbarPage(
   tabPanel(
     "Coral disease predictions",
     fluidRow(
+      style = "border-top: 2px double #00172D;",
       column(
-        width = 2,
-        plotlyOutput("gauge_plots")
+        width = 3,
+        style = "border-right: 2px double #00172D;",
+        h4(
+          "Risk nowcast",
+          align = "center",
+          style = "background-color: #00172D;
+          color: white;
+          padding-bottom: 3px"
+          )
         ),
       column(
+        width = 6,
+        # style = "border: 2px solid #00172D",
+        h4(
+          "Risk map",
+          align = "center",
+          style = "background-color: #00172D;
+          color: white;
+          padding-bottom: 3px"
+          )
+        ),
+      column(
+        width = 3,
+        style = "border-left: 2px double #00172D",
+        h4(
+          "Risk forecast",
+          align = "center",
+          style = "background-color: #00172D;
+          color: white;
+          padding-bottom: 3px"
+          )
+        )
+      ),
+    fluidRow(
+      # style = "margin-bottom: 5%",
+      column(
+        width = 3,
+        style = "border-right: 2px double #00172D;
+        border-bottom: 2px double #00172D;
+        padding-bottom: 15px;", 
+        plotlyOutput(
+          "gauge_plots",
+          height = 400
+          ) %>%
+          withSpinner(
+            color = spinColor
+          )
+        ),
+      column(
+        style = "border-bottom: 2px double #00172D;
+        padding-bottom: 15px;",
         width = 6,
         height = 500,
         leafletOutput(
@@ -24,7 +72,10 @@ ui <- navbarPage(
             )
         ),
       column(
-        width = 4,
+        width = 3,
+        style = "border-left: 2px double #00172D;
+        border-bottom: 2px double #00172D;
+        padding-bottom: 15px;",
         plotlyOutput(
           "plotlyGA",
           height = 200
@@ -41,32 +92,36 @@ ui <- navbarPage(
             )
         )
     ),
-    absolutePanel(
-      id = "controls",
-      class = "panel panel-default",
-      top = 450,
-      left = 30,
-      fixed = TRUE,
-      draggable = FALSE,
-      height = "auto",
-      class = "dropdown",
-      dropMenu(
-        dropdownButton(
-          icon = icon(
-            'info'
-          ),
-          size = "xs"
-        ),
-        h3(
-          strong(
-            'Information'
-          )
-        ),
-        h5(
-          landing_page_info_txt
-          )
-        )
+    hr(),
+    textOutput(
+      "last_update"
       )
+    # absolutePanel(
+    #   id = "controls",
+    #   class = "panel panel-default",
+    #   top = 450,
+    #   left = 30,
+    #   fixed = TRUE,
+    #   draggable = FALSE,
+    #   height = "auto",
+    #   class = "dropdown",
+    #   dropMenu(
+    #     dropdownButton(
+    #       icon = icon(
+    #         'info'
+    #       ),
+    #       size = "xs"
+    #     ),
+    #     h3(
+    #       strong(
+    #         'Information'
+    #       )
+    #     ),
+    #     h5(
+    #       landing_page_info_txt
+    #       )
+    #     )
+    #   )
     ),
   # Management scenarios page
   tabPanel(

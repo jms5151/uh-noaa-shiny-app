@@ -1,4 +1,8 @@
 server <- function(input, output, session) {
+  output$gauge_plots <- renderPlotly({
+    gaugePlots
+  })
+  
   output$map1 <- renderLeaflet({
     leaf_reefs
   })
@@ -110,6 +114,10 @@ server <- function(input, output, session) {
       }
     })
   
+  output$last_update <- renderText({
+    last_update_txt
+  })
+
   # Investigating scenarios outputs
   output$management_map <- renderLeaflet({
     leaf_scenarios

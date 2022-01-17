@@ -124,8 +124,49 @@ ui <- navbarPage(
     #   )
     ),
   # Management scenarios page
+  # this is how to do conditional sliders based on region and disease:
+  # https://stackoverflow.com/questions/68250593/how-to-show-slider-inputs-based-on-selected-radio-buttons-in-shiny-r
   tabPanel(
-    "Investigating scenarios", #HTML("Long-term mitigation<br/>potential"),
+    "Investigating scenarios new",
+    fluidRow(
+      column(
+        width = 5,
+        selectInput(
+          inputId = "Region",
+          label = "Select region",
+          selected = NULL,
+          choices = c(
+            "American Samoa",
+            "Guam/Commonwealth of the Northern Mariana Islands",
+            "Great Barrier Reef",
+            "Hawaii",
+            "U.S. Pacific Remote Island Areas"
+          )
+        ),
+        selectInput(
+          "Disease",
+          "Select disease type",
+          choices = c(
+            "Growth anomalies",
+            "White syndromes"
+          )
+        )
+      ),
+      column(
+        width = 7,
+        leafletOutput(
+          "management_map", 
+          height = "300px"
+        ) %>% 
+          withSpinner(
+            color = spinColor
+            )
+        )
+      )
+    ),
+    
+  tabPanel(
+    "Investigating scenarios original", #HTML("Long-term mitigation<br/>potential"),
     leafletOutput(
       "management_map", 
       height = "300px"

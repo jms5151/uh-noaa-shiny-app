@@ -23,7 +23,6 @@ ui <- navbarPage(
         ),
       column(
         width = 6,
-        # style = "border: 2px solid #00172D",
         h4(
           "Risk map",
           align = "center",
@@ -45,7 +44,6 @@ ui <- navbarPage(
         )
       ),
     fluidRow(
-      # style = "margin-bottom: 5%",
       column(
         width = 3,
         style = "border-right: 2px double #00172D;
@@ -129,18 +127,19 @@ ui <- navbarPage(
   tabPanel(
     "Investigating scenarios new",
     fluidRow(
+      style = "border-top: 2px double #00172D;",
       column(
-        width = 5,
+        width = 4,
+        style = "border-right: 2px double #00172D;
+        border-bottom: 2px double #00172D;
+        padding-top: 15px;",
         selectInput(
           inputId = "Region",
           label = "Select region",
           selected = NULL,
           choices = c(
-            "American Samoa",
-            "Guam/Commonwealth of the Northern Mariana Islands",
-            "Great Barrier Reef",
-            "Hawaii",
-            "U.S. Pacific Remote Island Areas"
+            "U.S. Pacific",
+            "Great Barrier Reef, Australia"
           )
         ),
         selectInput(
@@ -150,20 +149,99 @@ ui <- navbarPage(
             "Growth anomalies",
             "White syndromes"
           )
+        ),
+        conditionalPanel(
+          condition = "input.Region == 'U.S. Pacific' & 
+          input.Disease == 'Growth anomalies'",
+          
+            sliderInput("a",
+                        label = "a:", 
+                        min = 0, max = 1,step = 1, value = 0),
+          
+            sliderInput("b",
+                        "b:", 
+                        min = 0, max = 1,step = 1, value = 0),
+            
+            sliderInput("c",
+                        "c:", 
+                        min = 0, max = 1,step = 1, value = 0)
+        ),
+        
+        conditionalPanel(
+          condition = "input.Region == 'U.S. Pacific' & 
+          input.Disease == 'White syndromes'",
+          
+          sliderInput("d",
+                      label = "d:", 
+                      min = 0, max = 1,step = 1, value = 0),
+          
+          sliderInput("e",
+                      "e:", 
+                      min = 0, max = 1,step = 1, value = 0),
+          
+          sliderInput("f",
+                      "f:", 
+                      min = 0, max = 1,step = 1, value = 0)
+        ),
+
+        conditionalPanel(
+          condition = "input.Region == 'Great Barrier Reef, Australia' & 
+          input.Disease == 'Growth anomalies'",
+
+          sliderInput("g",
+                      label = "g:", 
+                      min = 0, max = 1,step = 1, value = 0),
+          
+          sliderInput("h",
+                      "h:", 
+                      min = 0, max = 1,step = 1, value = 0),
+          
+          sliderInput("i",
+                      "i:", 
+                      min = 0, max = 1,step = 1, value = 0)
+        ),
+        
+        conditionalPanel(
+          condition = "input.Region == 'Great Barrier Reef, Australia' & 
+          input.Disease == 'White syndromes'",
+          
+          sliderInput("j",
+                      label = "j:", 
+                      min = 0, max = 1,step = 1, value = 0),
+          
+          sliderInput("k",
+                      "k:", 
+                      min = 0, max = 1,step = 1, value = 0),
+          
+          sliderInput("l",
+                      "l:", 
+                      min = 0, max = 1,step = 1, value = 0)
         )
+        
       ),
       column(
-        width = 7,
+        width = 8,
+        style = "border-left: 2px double #00172D;
+        border-bottom: 2px double #00172D;
+        padding: 15px;",
         leafletOutput(
           "management_map", 
           height = "300px"
         ) %>% 
           withSpinner(
             color = spinColor
-            )
+            ),
+        plotlyOutput(
+          "barplot",
+          height = "300px"
+          ) %>% 
+          withSpinner(
+            color = spinColor
+          )
         )
       )
-    ),
+    )
+  )#,
     
   tabPanel(
     "Investigating scenarios original", #HTML("Long-term mitigation<br/>potential"),

@@ -1,4 +1,5 @@
 # create text blocks for Fore-C shiny app information buttons and hover text -------------------
+last_update_txt <- Sys.time()
 
 landing_page_info_txt <- 'Click on a pixel to explore near-real time coral disease forecasts for a given location'
 

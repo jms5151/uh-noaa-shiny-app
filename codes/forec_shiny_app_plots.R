@@ -56,7 +56,7 @@ diseaseRisk_plotly <- function(df, titleName){
                 ymin = ~round(Lwr), 
                 ymax = ~round(Upr),
                 color = ~type,
-                colors = c("Salmon", "Midnight blue"),
+                colors = c("blue", "darkslategrey"),
                 opacity = 0.3,
                 hoverinfo='skip') %>%
     layout(title = titleName,
@@ -148,6 +148,24 @@ diseaseRisk_placeholder_plot <- function(titleName, dateRange) {
 #            showlegend = FALSE,
 #            margin = plotly_margins)
 # }
+
+# gauge plots -----------------------------------------------------------------
+df <- gauge_cnmi_ga
+
+plot_ly(
+  df, 
+  x = ~Value, 
+  y = ~Alert_Level,
+  # color = ~colors,
+  type = 'bar'
+) %>%
+  layout(
+    yaxis = list(title = ''),
+    barmode = 'stack'
+  )
+
+create_gauge_plot <- function(df){
+}
 
 # function to bound numbers between 0 and 100 % -----------------------------------
 bound0100 <- function(x){
@@ -245,4 +263,3 @@ scenarios_placeholder_plot <- plot_ly(
     font = list(size = 14),
     showlegend = FALSE) 
 
-scenarios_placeholder_plot

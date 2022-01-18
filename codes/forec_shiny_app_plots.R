@@ -203,7 +203,7 @@ gauge_ws_prias <- individual_gauges(gauge_prias_ws) %>%
       showgrid = FALSE,
       zeroline = FALSE,
       font = list(
-        size = fontSize,
+        size = 11,
         family = "Arial"
       )
     )

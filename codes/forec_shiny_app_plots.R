@@ -152,7 +152,7 @@ diseaseRisk_placeholder_plot <- function(titleName, dateRange) {
 # gauge plots -----------------------------------------------------------------
 individual_gauges <- function(df){
   plot_ly(df,
-          x = ~Value, #*100
+          x = ~Value,
           y = ~Disease,
           type = 'bar',
           # text = ~N,
@@ -160,7 +160,7 @@ individual_gauges <- function(df){
           marker = list(color = ~colors,
                         line = list(color = I("black"),
                                     width = 1.5)),
-          hovertemplate = '%{x:.2p)} of reef pixels <extra></extra>'
+          hovertemplate = '%{x:.2p} of reef pixels <extra></extra>'
   ) %>%
     layout(yaxis = list(title = '',
                         showticklabels = FALSE,
@@ -197,9 +197,9 @@ gauge_ga_prias <- individual_gauges(gauge_prias_ga)
 gauge_ws_prias <- individual_gauges(gauge_prias_ws) %>%
   layout(
     xaxis = list(
-      title = 'Pixels per risk category',
+      title = 'Precent of pixels per risk category',
       showticklabels = TRUE,
-      tickformat = "%",
+      tickformat = ".0%",
       showgrid = FALSE,
       zeroline = FALSE,
       font = list(

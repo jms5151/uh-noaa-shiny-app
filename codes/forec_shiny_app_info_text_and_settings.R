@@ -1,5 +1,6 @@
 # create text blocks for Fore-C shiny app information buttons and hover text -------------------
-last_update_txt <- Sys.time()
+last_update_date <- Sys.time()
+last_update_txt <- paste0('Last update: ', last_update_date, 'EST')
 
 landing_page_info_txt <- 'Click on a pixel to explore near-real time coral disease forecasts for a given location'
 

@@ -114,6 +114,10 @@ server <- function(input, output, session) {
       }
     })
   
+  output$gauge_plots <- renderPlotly({
+    gaugePlots
+  })
+  
   output$last_update <- renderText({
     last_update_txt
   })

@@ -150,22 +150,157 @@ diseaseRisk_placeholder_plot <- function(titleName, dateRange) {
 # }
 
 # gauge plots -----------------------------------------------------------------
-df <- gauge_cnmi_ga
+individual_gauges <- function(df){
+  plot_ly(df,
+          x = ~Value, #*100
+          y = ~Disease,
+          type = 'bar',
+          # text = ~N,
+          color = ~name,
+          marker = list(color = ~colors,
+                        line = list(color = I("black"),
+                                    width = 1.5)),
+          hovertemplate = '%{x:.2p)} of reef pixels <extra></extra>'
+  ) %>%
+    layout(yaxis = list(title = '',
+                        showticklabels = FALSE,
+                        tickformat = ""),
+           xaxis = list(title = '',
+                        showticklabels = FALSE,
+                        tickformat = "",
+                        showgrid = F,
+                        zeroline = FALSE),
+           barmode = 'stack',
+           showlegend = FALSE,
+           margin = list(
+             l = 0,
+             r = 0,
+             b = 0,
+             t = 0
+           )
+    )
+}
 
-plot_ly(
-  df, 
-  x = ~Value, 
-  y = ~Alert_Level,
-  # color = ~colors,
-  type = 'bar'
-) %>%
+gauge_ga_samoas <- individual_gauges(gauge_samoas_ga)
+gauge_ws_samoas <- individual_gauges(gauge_samoas_ws)
+
+gauge_ga_cnmi <- individual_gauges(gauge_cnmi_ga)
+gauge_ws_cnmi <- individual_gauges(gauge_cnmi_ws) 
+
+gauge_ga_gbr <- individual_gauges(gauge_gbr_ga)
+gauge_ws_gbr <- individual_gauges(gauge_gbr_ws)
+
+gauge_ga_hi <- individual_gauges(gauge_hi_ga)
+gauge_ws_hi <- individual_gauges(gauge_hi_ws)
+
+gauge_ga_prias <- individual_gauges(gauge_prias_ga)
+gauge_ws_prias <- individual_gauges(gauge_prias_ws) %>%
   layout(
-    yaxis = list(title = ''),
-    barmode = 'stack'
+    xaxis = list(
+      title = 'Pixels per risk category',
+      showticklabels = TRUE,
+      tickformat = "%",
+      showgrid = FALSE,
+      zeroline = FALSE,
+      font = list(
+        size = fontSize,
+        family = "Arial"
+      )
+    )
   )
 
-create_gauge_plot <- function(df){
-}
+xlab_placement = 0
+ylab_placement = 0.9
+fontSize = 11
+
+aList <- list(  
+  xanchor = 'left',
+  x = xlab_placement,
+  y = ylab_placement,
+  font = list(size = fontSize,
+              family = "Arial"
+  ),
+  showarrow = F
+)
+
+gaugePlots <- subplot(
+  gauge_ga_samoas %>%
+    layout(
+      annotations = c(
+        aList, 
+        text = "American Samoa - growth anomalies"
+      )
+    ),
+  gauge_ws_samoas %>%
+    layout(
+      annotations = c(
+        aList,
+        text = "American Samoa - white syndromes"
+      )
+    ),
+  gauge_ws_cnmi %>%
+    layout(
+      annotations = c(aList,
+                      text = "Guam/CNMI - white syndromes"
+      )
+    ),
+  gauge_ga_cnmi %>%
+    layout(
+      annotations = c(
+        aList,
+        text = "Guam/CNMI - growth anomalies"
+      )
+    ),
+  gauge_ga_gbr %>%
+    layout(
+      annotations = c(
+        aList,
+        text = "Great Barrier Reef - growth anomalies"
+      )
+    ),
+  gauge_ws_gbr %>%
+    layout(
+      annotations = c(
+        aList,
+        text = "Great Barrier Reef - white syndromes"
+      )
+    ),
+  gauge_ga_hi %>%
+    layout(
+      annotations = c(
+        aList,
+        text = "Hawaii - growth anomalies"
+      )
+    ),
+  gauge_ws_hi %>%
+    layout(
+      annotations = c(
+        aList,
+        text = "Hawaii - white syndromes"
+      )
+    ),
+  gauge_ga_prias %>%
+    layout(
+      annotations = c(
+        aList,
+        text = "PRIAs - growth anomalies"
+      )
+    ),
+  gauge_ws_prias %>%
+    layout(
+      annotations = c(
+        aList, 
+        text = "PRIAs - white syndromes"
+      )
+    ),
+  nrows = 10,
+  margin = 0.01,
+  heights = rep(0.1, 10),
+  shareX = TRUE
+) %>% 
+  config(
+    displayModeBar = F
+  )
 
 # function to bound numbers between 0 and 100 % -----------------------------------
 bound0100 <- function(x){

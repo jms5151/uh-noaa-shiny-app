@@ -1,4 +1,7 @@
 server <- function(input, output, session) {
+  
+  # Nowcasts/forecasts outputs -------------------------------
+  
   output$gauge_plots <- renderPlotly({
     gaugePlots
   })
@@ -122,7 +125,8 @@ server <- function(input, output, session) {
     last_update_txt
   })
 
-  # Investigating scenarios outputs
+  # Investigating scenarios outputs -------------------------------
+
   output$management_map <- renderLeaflet({
     leaf_scenarios
   })
@@ -149,7 +153,7 @@ server <- function(input, output, session) {
         )
         
         baseVals <- subset(
-          ga_scenarios_baseline_vals, 
+          ga_pac_scenarios, 
           ID == input$management_map_shape_click$id
         )
         

@@ -5,7 +5,7 @@ ui <- navbarPage(
   collapsible = TRUE, 
   "", 
   id="nav",
-  # Nowcasts and forecasts page
+  # Nowcasts and forecasts page --------------------
   tabPanel(
     "Coral disease predictions",
     fluidRow(
@@ -121,7 +121,7 @@ ui <- navbarPage(
     #     )
     #   )
     ),
-  # Management scenarios page
+  # Management scenarios page --------------------
   # this is how to do conditional sliders based on region and disease:
   # https://stackoverflow.com/questions/68250593/how-to-show-slider-inputs-based-on-selected-radio-buttons-in-shiny-r
   tabPanel(
@@ -131,8 +131,8 @@ ui <- navbarPage(
       column(
         width = 4,
         style = "border-right: 2px double #00172D;
-        border-bottom: 2px double #00172D;
-        padding-top: 15px;",
+        padding-top: 15px;
+        padding-left: 20px;",
         selectInput(
           inputId = "Region",
           label = "Select region",
@@ -142,6 +142,7 @@ ui <- navbarPage(
             "Great Barrier Reef, Australia"
           )
         ),
+        
         selectInput(
           "Disease",
           "Select disease type",
@@ -150,80 +151,500 @@ ui <- navbarPage(
             "White syndromes"
           )
         ),
+        
+        setSliderColor(c(rep("#003152", 14)), c(1:14)),
+        
+        # Scenarios - GA, Pacific -------------------
         conditionalPanel(
           condition = "input.Region == 'U.S. Pacific' & 
           input.Disease == 'Growth anomalies'",
           
-            sliderInput("a",
-                        label = "a:", 
-                        min = 0, max = 1,step = 1, value = 0),
+          sliderInput(
+            "coral_size_slider_ga_pac",
+            label = span(
+              h5(
+                strong(
+                  "Median coral colony size"
+                  )
+                ),
+              tags$i(
+                h6(
+                  textOutput(
+                    "corsize_value_ga_pac"
+                    )
+                  )
+                ),
+              ),
+            min = 5,
+            max = 55,
+            step = 10,
+            post = " cm",
+            value = 15,
+            width = "275px"
+            ),
           
-            sliderInput("b",
-                        "b:", 
-                        min = 0, max = 1,step = 1, value = 0),
-            
-            sliderInput("c",
-                        "c:", 
-                        min = 0, max = 1,step = 1, value = 0)
-        ),
-        
+          bsTooltip(
+            id = "coral_size_slider_ga_pac",
+            title = "Median colony size of corals in the family Poritidae",
+            placement = "right",
+            trigger = "hover"
+          ),
+          
+          
+          sliderInput(
+            "coral_cover_slider_ga_pac",
+            label = span(
+              h5(
+                strong(
+                  tags$em(
+                    "Porites"
+                    ),
+                  "coral cover"
+                )
+              ),
+              tags$i(
+                h6(
+                  textOutput(
+                    "corcov_value_ga_pac"
+                    )
+                  )
+                )
+            ),
+            min = 5,
+            max = 45,
+            step = 10,
+            post = " %",
+            value = 15,
+            width = "275px"
+          ),
+          
+          sliderInput(
+            "herb_fish_slider_ga_pac",
+            label = span(
+              h5(
+                strong(
+                  "Herbivorous fish density (fish/m",
+                  tags$sup("2"),
+                  ")"
+                  )
+                ),
+              tags$i(
+                h6(
+                  htmlOutput(
+                    "herb_fish_value_ga_pac"
+                    )
+                  )
+                )
+              ),
+            min = 0.1,
+            max = 0.7,
+            step = 0.2,
+            # post = " fish/m<sup>2</sup>",
+            value = 0.3,
+            width = "275px"
+            ),
+          
+          sliderInput(
+            "dev_slider_ga_pac",
+            label = span(
+              h5(
+                strong(
+                  "Coastal development index"
+                )
+              ),
+              tags$i(
+                h6(
+                  htmlOutput(
+                    "dev_value_ga_pac"
+                  )
+                )
+              ),
+              div(
+                style = 'width:275px;',
+                div(
+                  h6(
+                    style = 'float:left;',
+                    'Undeveloped'
+                  )
+                ),
+                div(
+                  h6(
+                    style = 'float:right;',
+                    'Highly developed'
+                  )
+                )
+              )
+            ),
+            min = 0.0,
+            max = 0.9,
+            step = 0.3,
+            # post = "",
+            value = 0.3,
+            width = "275px"
+            )
+          ),
+
+        # Scenarios - WS, Pacific -------------------
         conditionalPanel(
           condition = "input.Region == 'U.S. Pacific' & 
           input.Disease == 'White syndromes'",
           
-          sliderInput("d",
-                      label = "d:", 
-                      min = 0, max = 1,step = 1, value = 0),
+          sliderInput(
+            "coral_size_slider_ws_pac",
+            label = span(
+              h5(
+                strong(
+                  "Median coral colony size"
+                )
+              ),
+              tags$i(
+                h6(
+                  textOutput(
+                    "corsize_value_ws_pac"
+                  )
+                )
+              ),
+            ),
+            min = 5,
+            max = 55,
+            step = 10,
+            post = " cm",
+            value = 10,
+            width = "275px"
+          ),
           
-          sliderInput("e",
-                      "e:", 
-                      min = 0, max = 1,step = 1, value = 0),
+          bsTooltip(
+            id = "coral_size_slider_ws_pac",
+            title = "Median colony size of corals in the family Acroporidae",
+            placement = "right",
+            trigger = "hover"
+          ),
           
-          sliderInput("f",
-                      "f:", 
-                      min = 0, max = 1,step = 1, value = 0)
-        ),
+          sliderInput(
+            "turbidity_slider_ws_pac", # long term kd median
+            label = span(
+              h5(
+                strong(
+                  "Turbidity"
+                )
+              ),
+              tags$i(
+                h6(
+                  htmlOutput(
+                    "kd_value_ws_pac"
+                  )
+                )
+              ),
+              div(
+                style = 'width:250px;',
+                div(
+                  h6(
+                    style ='float:left;',
+                    'Less'
+                  )
+                ),
+                div(
+                  h6(
+                    style = 'float:right;',
+                    'More'
+                  )
+                )
+              )
+            ),
+            min = 0,
+            max = 2,
+            step = 0.5,
+            post = " m<sup>-1</sup>",
+            value = 0.5,
+            width = "275px"
+            ),
+          
+          bsTooltip(
+            id = "turbidity_slider_ws_pac",
+            title = 'Turbidity is represented by the diffuse attenuation coefficient at 490 nm (Kd490). Higher value indicate lower clarity of ocean water.',
+            placement = "right",
+            trigger = "hover"
+          ),
+          
+          sliderInput(
+            "parrotfish_slider_ws_pac",
+            label = span(
+              h5(
+                strong(
+                  "Parrotfish density (fish/m",
+                  tags$sup("2"),
+                  ")"
+                  )
+                ),
+              tags$i(
+                h6(
+                  htmlOutput(
+                    "parrotfish_value_ws_pac"
+                    )
+                  )
+                )
+              ),
+            min = 0.00,
+            max = 0.06,
+            step = 0.02,
+            # post = " fish/m<sup>2</sup>",
+            value = 0.02,
+            width = "275px"
+            ),
+          
+          sliderInput(
+            "herb_fish_slider_ws_pac",
+            label = span(
+              h5(
+                strong(
+                  "Herbivorous fish density (fish/m",
+                  tags$sup("2"),
+                  ")"
+                )
+              ),
+              tags$i(
+                h6(
+                  htmlOutput(
+                    "herb_fish_value_ws_pac"
+                  )
+                )
+              )
+            ),
+            min = 0.0,
+            max = 0.6,
+            step = 0.2,
+            # post = "",
+            value = 0.4,
+            width = "275px"
+            )
+          ),
 
+        # Scenarios - GA, GBR -------------------
         conditionalPanel(
-          condition = "input.Region == 'Great Barrier Reef, Australia' & 
+          condition = "input.Region == 'Great Barrier Reef, Australia' &
           input.Disease == 'Growth anomalies'",
 
-          sliderInput("g",
-                      label = "g:", 
-                      min = 0, max = 1,step = 1, value = 0),
+          sliderInput(
+            "herb_fish_slider_ga_gbr",
+            label = span(
+              h5(
+                strong(
+                  "Herbivorous fish abundance"
+                )
+              ),
+              tags$i(
+                h6(
+                  htmlOutput(
+                    "herb_fish_value_ga_gbr"
+                  )
+                )
+              )
+            ),
+            min = 400,
+            max = 800,
+            step = 100,
+            # post = "",
+            value = 600,
+            width = "275px"
+          ),
           
-          sliderInput("h",
-                      "h:", 
-                      min = 0, max = 1,step = 1, value = 0),
+          bsTooltip(
+            id = "herb_fish_slider_ga_gbr",
+            title = "Fish count within ~2km",
+            placement = "right",
+            trigger = "hover"
+          ),
+
+          sliderInput(
+            "turbidity_slider_ga_gbr", # three week kd variability 
+            label = span(
+              h5(
+                strong(
+                  "Turbidity"
+                )
+              ),
+              tags$i(
+                h6(
+                  htmlOutput(
+                    "kd_value_ga_gbr"
+                  )
+                )
+              ),
+              div(
+                style = 'width:250px;',
+                div(
+                  h6(
+                    style ='float:left;',
+                    'Less'
+                  )
+                ),
+                div(
+                  h6(
+                    style = 'float:right;',
+                    'More'
+                  )
+                )
+              )
+            ),
+            min = 0,
+            max = 2,
+            step = 0.5,
+            post = " m<sup>-1</sup>",
+            value = 0.5,
+            width = "275px"
+          ),
           
-          sliderInput("i",
-                      "i:", 
-                      min = 0, max = 1,step = 1, value = 0)
+          bsTooltip(
+            id = "turbidity_slider_ga_gbr",
+            title = 'Turbidity is represented by the diffuse attenuation coefficient at 490 nm (Kd490). Higher value indicate lower clarity of ocean water.',
+            placement = "right",
+            trigger = "hover"
+          ),
+
+        sliderInput(
+          "coral_cover_slider_ga_gbr",
+          label = span(
+            h5(
+              strong(
+                "Coral cover"
+              )
+            ),
+            tags$i(
+              h6(
+                textOutput(
+                  "corcov_value_ga_gbr"
+                )
+              )
+            )
+          ),
+          min = 5,
+          max = 95,
+          step = 15,
+          post = " %",
+          value = 35,
+          width = "275px"
+          )
         ),
-        
+
+        # Scenarios - WS, GBR --------------------
         conditionalPanel(
-          condition = "input.Region == 'Great Barrier Reef, Australia' & 
+          condition = "input.Region == 'Great Barrier Reef, Australia' &
           input.Disease == 'White syndromes'",
           
-          sliderInput("j",
-                      label = "j:", 
-                      min = 0, max = 1,step = 1, value = 0),
+          sliderInput(
+            "coral_cover_slider_ws_gbr",
+            label = span(
+              h5(
+                strong(
+                  "Coral cover"
+                )
+              ),
+              tags$i(
+                h6(
+                  textOutput(
+                    "corcov_value_ws_gbr"
+                  )
+                )
+              )
+            ),
+            min = 5,
+            max = 65,
+            step = 15,
+            post = " %",
+            value = 20,
+            width = "275px"
+          ),
           
-          sliderInput("k",
-                      "k:", 
-                      min = 0, max = 1,step = 1, value = 0),
+          bsTooltip(
+            id = "coral_cover_slider_ws_gbr",
+            title = "Percent of live coral cover with plating and table morphologies",
+            placement = "right",
+            trigger = "hover"
+          ),
+
+          sliderInput(
+            "herb_fish_slider_ws_gbr",
+            label = span(
+              h5(
+                strong(
+                  "Herbivorous fish abundance"
+                )
+              ),
+              tags$i(
+                h6(
+                  htmlOutput(
+                    "herb_fish_value_ws_gbr"
+                  )
+                )
+              )
+            ),
+            min = 400,
+            max = 800,
+            step = 100,
+            post = "",
+            value = 600,
+            width = "275px"
+          ),
           
-          sliderInput("l",
-                      "l:", 
-                      min = 0, max = 1,step = 1, value = 0)
-        )
-        
-      ),
+          bsTooltip(
+            id = "herb_fish_slider_ws_gbr",
+            title = "Fish count within ~2km",
+            placement = "right",
+            trigger = "hover"
+          ),
+          
+          sliderInput(
+            "turbidity_slider_ws_gbr", # three week kd variability
+            label = span(
+              h5(
+                strong(
+                  "Turbidity"
+                )
+              ),
+              tags$i(
+                h6(
+                  htmlOutput(
+                    "kd_value_ws_gbr"
+                  )
+                )
+              ),
+              div(
+                style = 'width:250px;',
+                div(
+                  h6(
+                    style ='float:left;',
+                    'Less'
+                  )
+                ),
+                div(
+                  h6(
+                    style = 'float:right;',
+                    'More'
+                  )
+                )
+              )
+            ),
+            min = 0,
+            max = 2,
+            step = 0.5,
+            post = " m<sup>-1</sup>",
+            value = 0,
+            width = "275px"
+            ),
+          
+          # this works with title = 'actual text' but not referencing text variable
+          bsTooltip(
+            id = "turbidity_slider_ga_gbr",
+            title = 'Turbidity is represented by the diffuse attenuation coefficient at 490 nm (Kd490). Higher value indicate lower clarity of ocean water.',
+            placement = "right",
+            trigger = "hover"
+            )
+          )
+        ),
+
       column(
         width = 8,
-        style = "border-left: 2px double #00172D;
-        border-bottom: 2px double #00172D;
-        padding: 15px;",
+        style = "padding: 15px;",
         leafletOutput(
           "management_map", 
           height = "300px"
@@ -237,12 +658,12 @@ ui <- navbarPage(
           ) %>% 
           withSpinner(
             color = spinColor
-          )
+            )
         )
       )
     ),
-  # )#,
-    
+  
+  # old scenarios ---------------------------  
   # tabPanel(
   #   "Investigating scenarios original", #HTML("Long-term mitigation<br/>potential"),
   #   leafletOutput(
@@ -638,7 +1059,8 @@ ui <- navbarPage(
   #     )
   #   )
   # ),
-  # Historical data page
+  
+  # Historical data page --------------------
   tabPanel(
     "Historical data",
     div(
@@ -650,8 +1072,8 @@ ui <- navbarPage(
       ),
       leafletOutput(
         "historical_data_map", 
-        width="100%", 
-        height="100%"
+        width = "100%", 
+        height = "100%"
       )
     ),
     absolutePanel(
@@ -687,24 +1109,43 @@ ui <- navbarPage(
       )
     )
   ),
-  # About the project page
+  
+  # About the project page --------------------
   tabPanel(
     "About",
-    h3("Coral disease information:"),
-    imageOutput("cdz_images"),
+    h3(
+      "Coral disease information:"
+      ),
+    imageOutput(
+      "cdz_images"
+      ),
     disease_info_text,
     photo_credit,
     br(),
-    h3("Funding:"),
-    uiOutput("funding_statement"),
+    h3(
+      "Funding:"
+      ),
+    uiOutput(
+      "funding_statement"
+      ),
     br(),
-    h3("Publications:"),
-    uiOutput("cite1"),
+    h3(
+      "Publications:"
+      ),
+    uiOutput(
+      "cite1"
+      ),
     br(),
-    uiOutput("cite2"),
+    uiOutput(
+      "cite2"
+      ),
     br(),
-    uiOutput("cite3"),
+    uiOutput(
+      "cite3"
+      ),
     br(),
-    uiOutput("cite4")
+    uiOutput(
+      "cite4"
+      )
   )
 )

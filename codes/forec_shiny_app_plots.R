@@ -314,7 +314,62 @@ bound0100 <- function(x){
   x
 }
 
-# function to display barplots for change in disease risk with new conditions -----
+# Scenarios plots ------------------------------
+
+scenarios_barplot_fun <- function(df, baselineValue, riskType){
+  # format data
+  # df <- do.call("rbind", df)
+  df <- df[, c('Response', 'disease_risk_change', 'sd')]
+  df[nrow(df)+1, ] <- NA
+  df$Response[nrow(df)] <- 'Combined'
+  df$disease_risk_change[nrow(df)] <- sum(df$disease_risk_change, na.rm = T)
+  df$sd[nrow(df)] <- sum(df$sd, na.rm = T)
+  # baseplot
+  baseplot <- plot_ly(
+    data = df,
+    x = ~Response,
+    y = ~disease_risk_change,
+    error_y = list(value = ~sd),
+    type = "bar",
+    color = I('#003152')
+  ) %>%
+    layout(
+      xaxis = list(
+        showgrid = F,
+        title = "",
+        categoryorder = "array",
+        categoryarray = ~df$Response
+      ), 
+      yaxis = list(
+        showline = T,
+        showgrid = F,
+        range = c(-100, 100),
+        title = "Change in disease risk<br>(from current conditions)"
+      ),
+      font = list(size = 10),
+      showlegend = FALSE)
+  
+  if(riskType == 'percent'){
+   scenario_plot <- baseplot %>% layout(    
+      title = paste0("<br>Baseline disease risk = ",
+                     round(baselineValue),
+                     "%<br>Combined adjusted disease risk = ",
+                     round(t$disease_risk_change + c$disease_risk_change + f$disease_risk_change),
+                     "%")
+      )
+  } else if(riskType == 'abundance'){
+    scenario_plot <- baseplot %>% layout(    
+      title = paste0("<br>Baseline disease risk = ",
+                     round(baselineValue),
+                     " colonies/50m<br>Combined adjusted disease risk = ",
+                     round(t$disease_risk_change + c$disease_risk_change + f$disease_risk_change),
+                     " colonies/50m")
+      )
+  }
+  scenario_plot  
+}  
+
+
 mitigation_plot_fun <- function(w, f, c, p){
   plot_ly(
     data = w,
@@ -363,38 +418,21 @@ mitigation_plot_fun <- function(w, f, c, p){
 
 # empty barplot to display before any pixel or conditions is selected -------------
 scenarios_placeholder_plot <- plot_ly(
-  x = "Water quality",
+  x = "",
   y = 0, 
-  type = "bar", 
-  color = I("deepskyblue4")
+  type = "bar"
   ) %>%
-  add_trace(x = "Fish abundance", 
-            y = 0, 
-            color = I("darkred")
-            ) %>%
-  add_trace(x = "Coral", 
-            y = 0, 
-            color = I("black")
-            ) %>%
-  add_trace(x = "Combined", 
-            y = 0, 
-            color = I("goldenrod1")
-            ) %>%
   layout(
-    xaxis = list(showgrid = F, 
-                 title = "",
-                 categoryorder = "array",
-                 categoryarray = ~c("Water quality",
-                                    "Fish abundance",
-                                    "Coral",
-                                    "Combined"
-                                    )
-                 ), 
-    yaxis = list(showline = T, 
-                 showgrid = F, 
-                 range = c(-100, 100),
-                 title = "Change in disease risk<br>(from current conditions)"
-                 ),
+    xaxis = list(
+      showgrid = F,
+      title = ""
+      ), 
+    yaxis = list(
+      showline = T,
+      showgrid = F,
+      range = c(-100, 100),
+      title = "Change in disease risk<br>(from current conditions)"
+      ),
     font = list(size = 14),
     showlegend = FALSE) 
 

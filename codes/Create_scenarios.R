@@ -30,6 +30,10 @@ source("./codes/Final_covariates_by_disease_and_region.R")
 # custom function for creating scenarios 
 source("./codes/custom_functions/fun_create_scenarios.R")
 
+# load pixel information
+load("../uh-noaa-shiny-app/forec_shiny_app_data/Static_data/pixels_in_management_areas_polygons.RData")
+load("../uh-noaa-shiny-app/forec_shiny_app_data/Static_data/pixels_in_gbrmpa_park_zones_polygons.RData")
+
 # GA Pacific -------------------------------------
 # dataset generation will get replaced once crw data is available --
 ga_pac <- subset(grid_with_static_covariates, Region != 'gbr')
@@ -47,6 +51,29 @@ ga_pac$value[ga_pac$value < 0] <- 0
 colnames(ga_pac) <- gsub("Poritidae_|_Poritidae", "", colnames(ga_pac))
 # end of dataset generation ----------
 
+# Base values ----------------------------
+# Save base values for each pixel for covariates with sliders
+ga_pac_basevals_ID <- ga_pac[, c('ID'
+                                 , 'Median_colony_size'
+                                 , 'mean_cover'
+                                 , 'H_abund'
+                                 , 'BlackMarble_2016_3km_geo.3'
+                                 , 'value')]
+
+ga_pac_basevals_ID$value <- round(ga_pac_basevals_ID$value*100)
+save(ga_pac_basevals_ID, file = "../uh-noaa-shiny-app/forec_shiny_app_data/Scenarios/ga_pac_basevals_ID.RData")
+
+# Save base values for management zones
+ga_pac_basevals_management <- merge(
+  ga_pac_basevals_ID
+  , management_area_poly_pix_ids
+  , by.x = "ID"
+  , by.y = "PixelID"
+  )
+
+save(ga_pac_basevals_management, file = "../uh-noaa-shiny-app/forec_shiny_app_data/Scenarios/ga_pac_basevals_management.RData")
+# ----------------------------------------
+
 ga_pac_scenarios <- data.frame()
 
 # Colony size
@@ -56,7 +83,7 @@ ga_pac_scenarios <- add_scenario_levels(
   df = ga_pac
   , scenario_levels = ga_pac_coral_size_levels
   , col_name = 'Median_colony_size'
-  , response_name = 'colony_size'
+  , response_name = 'Coral size'
   , scenarios_df = ga_pac_scenarios
 )
 
@@ -67,7 +94,7 @@ ga_pac_scenarios <- add_scenario_levels(
   df = ga_pac
   , scenario_levels = ga_pac_coral_cover_levels
   , col_name = 'mean_cover'
-  , response_name = 'coral_cover'
+  , response_name = 'Coral cover'
   , scenarios_df = ga_pac_scenarios
 )
 
@@ -78,7 +105,7 @@ ga_pac_scenarios <- add_scenario_levels(
   df = ga_pac
   , scenario_levels = ga_pac_herb_fish_levels
   , col_name = 'H_abund'
-  , response_name = 'herb_fish'
+  , response_name = 'Fish'
   , scenarios_df = ga_pac_scenarios
 )
 
@@ -89,18 +116,18 @@ ga_pac_scenarios <- add_scenario_levels(
   df = ga_pac
   , scenario_levels = ga_pac_development_levels
   , col_name = 'BlackMarble_2016_3km_geo.3'
-  , response_name = 'development'
+  , response_name = 'Development'
   , scenarios_df = ga_pac_scenarios
 )
 
 # make up disease risk data rather than running for now
 ga_pac_scenarios$estimate <- rnorm(nrow(ga_pac_scenarios), mean = 0.08, sd = 0.04)
 ga_pac_scenarios$estimate[ga_pac_scenarios$estimate < 0] <- 0
-ga_pac_scenarios$sd <- rnorm(nrow(ga_pac_scenarios), mean = 0.02, sd = 0.01)
+ga_pac_scenarios$sd <- round(rnorm(nrow(ga_pac_scenarios), mean = 0.02, sd = 0.01), 2)
 ga_pac_scenarios$sd[ga_pac_scenarios$sd < 0] <- 0
 
 # pre-calculate disease risk change
-ga_pac_scenarios$disease_risk_change <- (ga_pac_scenarios$estimate - ga_pac_scenarios$value) * 100
+ga_pac_scenarios$disease_risk_change <- round((ga_pac_scenarios$estimate - ga_pac_scenarios$value) * 100)
 ga_pac_scenarios$disease_risk_change[ga_pac_scenarios$disease_risk_change < -100] <- 0
 
 # save data to run and then replace with same name
@@ -127,6 +154,29 @@ ws_pac$value[ws_pac$value < 0] <- 0
 colnames(ws_pac) <- gsub("Acroporidae_|_Acroporidae", "", colnames(ws_pac))
 # end of dataset generation ------------
 
+# Base values ----------------------------
+# Save base values for each pixel for covariates with sliders
+ws_pac_basevals_ID <- ws_pac[, c('ID'
+                                 , 'Median_colony_size'
+                                 , 'Long_Term_Kd_Median'
+                                 , 'Parrotfish_abund'
+                                 , 'H_abund'
+                                 , 'value')]
+
+ws_pac_basevals_ID$value <- round(ws_pac_basevals_ID$value*100)
+save(ws_pac_basevals_ID, file = "../uh-noaa-shiny-app/forec_shiny_app_data/Scenarios/ws_pac_basevals_ID.RData")
+
+# Save base values for management zones
+ws_pac_basevals_management <- merge(
+  ws_pac_basevals_ID
+  , management_area_poly_pix_ids
+  , by.x = "ID"
+  , by.y = "PixelID"
+)
+
+save(ws_pac_basevals_management, file = "../uh-noaa-shiny-app/forec_shiny_app_data/Scenarios/ws_pac_basevals_management.RData")
+# ----------------------------------------
+
 ws_pac_scenarios <- data.frame()
 
 # colony size
@@ -136,7 +186,7 @@ ws_pac_scenarios <- add_scenario_levels(
   df = ws_pac
   , scenario_levels = ws_pac_coral_size_levels
   , col_name = 'Median_colony_size'
-  , response_name = 'development'
+  , response_name = 'Coral size'
   , scenarios_df = ws_pac_scenarios
   )
 
@@ -147,7 +197,7 @@ ws_pac_scenarios <- add_scenario_levels(
   df = ws_pac
   , scenario_levels = ws_pac_turbidity_levels
   , col_name = 'Long_Term_Kd_Median'
-  , response_name = 'turbidity'
+  , response_name = 'Turbidity'
   , scenarios_df = ws_pac_scenarios
 )
 
@@ -158,7 +208,7 @@ ws_pac_scenarios <- add_scenario_levels(
   df = ws_pac
   , scenario_levels = ws_pac_parrotfish_levels
   , col_name = 'Parrotfish_abund'
-  , response_name = 'parrotfish'
+  , response_name = 'Parrotfish'
   , scenarios_df = ws_pac_scenarios
 )
 
@@ -169,18 +219,18 @@ ws_pac_scenarios <- add_scenario_levels(
   df = ws_pac
   , scenario_levels = ws_pac_herb_fish_levels
   , col_name = 'H_abund'
-  , response_name = 'herb_fish'
+  , response_name = 'Herb. fish'
   , scenarios_df = ws_pac_scenarios
 )
 
 # make up disease risk data rather than running for now
 ws_pac_scenarios$estimate <- rnorm(nrow(ws_pac_scenarios), mean = 0.08, sd = 0.04)
 ws_pac_scenarios$estimate[ws_pac_scenarios$estimate < 0] <- 0
-ws_pac_scenarios$sd <- rnorm(nrow(ws_pac_scenarios), mean = 0.02, sd = 0.01)
+ws_pac_scenarios$sd <- round(rnorm(nrow(ws_pac_scenarios), mean = 0.02, sd = 0.01), 2)
 ws_pac_scenarios$sd[ws_pac_scenarios$sd < 0] <- 0
 
 # pre-calculate disease risk change
-ws_pac_scenarios$disease_risk_change <- (ws_pac_scenarios$estimate - ws_pac_scenarios$value) * 100
+ws_pac_scenarios$disease_risk_change <- round((ws_pac_scenarios$estimate - ws_pac_scenarios$value) * 100)
 ws_pac_scenarios$disease_risk_change[ws_pac_scenarios$disease_risk_change < -100] <- 0
 
 # save data to run and then replace with same name
@@ -202,6 +252,38 @@ ga_gbr$value[ga_gbr$value < 0] <- 0
 
 # end of dataset generation ----------
 
+# Base values ----------------------------
+# Save base values for each pixel for covariates with sliders
+ga_gbr_basevals_ID <- ga_gbr[, c('ID'
+                                 , 'Fish_abund'
+                                 , 'Three_Week_Kd_Variability'
+                                 , 'Coral_cover'
+                                 , 'value')]
+
+save(ga_gbr_basevals_ID, file = "../uh-noaa-shiny-app/forec_shiny_app_data/Scenarios/ga_gbr_basevals_ID.RData")
+
+# Save base values for gbrmpa zones
+ga_gbr_basevals_gbrmpa <- merge(
+  ga_gbr_basevals_ID
+  , gbrmpa_park_zones_poly_pix_ids
+  , by.x = "ID"
+  , by.y = "PixelID"
+)
+
+save(ga_gbr_basevals_gbrmpa, file = "../uh-noaa-shiny-app/forec_shiny_app_data/Scenarios/ga_gbr_basevals_gbrmpa.RData")
+
+# Save base values for management zones
+ga_gbr_basevals_management <- merge(
+  ga_gbr_basevals_ID
+  , management_area_poly_pix_ids
+  , by.x = "ID"
+  , by.y = "PixelID"
+)
+
+save(ga_gbr_basevals_management, file = "../uh-noaa-shiny-app/forec_shiny_app_data/Scenarios/ga_gbr_basevals_management.RData")
+
+# ----------------------------------------
+
 ga_gbr_scenarios <- data.frame()
 
 # Fish abundance
@@ -211,7 +293,7 @@ ga_gbr_scenarios <- add_scenario_levels(
   df = ga_gbr
   , scenario_levels = ga_gbr_fish_levels
   , col_name = 'Fish_abund'
-  , response_name = 'fish'
+  , response_name = 'Fish'
   , scenarios_df = ga_gbr_scenarios
 )
 
@@ -222,7 +304,7 @@ ga_gbr_scenarios <- add_scenario_levels(
   df = ga_gbr
   , scenario_levels = ga_gbr_turbidity_levels
   , col_name = 'Three_Week_Kd_Variability'
-  , response_name = 'turbidity'
+  , response_name = 'Turbidity'
   , scenarios_df = ga_gbr_scenarios
 )
 
@@ -233,7 +315,7 @@ ga_gbr_scenarios <- add_scenario_levels(
   df = ga_gbr
   , scenario_levels = ga_gbr_coral_cover_levels
   , col_name = 'Coral_cover'
-  , response_name = 'coral_cover'
+  , response_name = 'Coral cover'
   , scenarios_df = ga_gbr_scenarios
 )
 
@@ -241,11 +323,11 @@ ga_gbr_scenarios <- add_scenario_levels(
 # make up disease risk data rather than running for now
 ga_gbr_scenarios$estimate <- rnorm(nrow(ga_gbr_scenarios), mean = 5, sd = 2)
 ga_gbr_scenarios$estimate[ga_gbr_scenarios$estimate < 0] <- 0
-ga_gbr_scenarios$sd <- rnorm(nrow(ga_gbr_scenarios), mean = 1, sd = 0.5)
+ga_gbr_scenarios$sd <- round(rnorm(nrow(ga_gbr_scenarios), mean = 1, sd = 0.5), 2)
 ga_gbr_scenarios$sd[ga_gbr_scenarios$sd < 0] <- 0
 
 # pre-calculate disease risk change
-ga_gbr_scenarios$disease_risk_change <- (ga_gbr_scenarios$estimate - ga_gbr_scenarios$value) * 10
+ga_gbr_scenarios$disease_risk_change <- round((ga_gbr_scenarios$estimate - ga_gbr_scenarios$value) * 10)
 # can't decrease more than 100%
 ga_gbr_scenarios$disease_risk_change[ga_gbr_scenarios$disease_risk_change < -100] <- -100
 # save data to run and then replace with same name
@@ -267,6 +349,38 @@ ws_gbr$value <- rnorm(nrow(ws_gbr), mean = 10, sd = 3)
 ws_gbr$value[ws_gbr$value < 0] <- 0
 # end of dataset generation ----------
 
+# Base values ----------------------------
+# Save base values for each pixel for covariates with sliders
+ws_gbr_basevals_ID <- ws_gbr[, c('ID'
+                                 , 'Coral_cover'
+                                 , 'Fish_abund'
+                                 , 'Three_Week_Kd_Variability'
+                                 , 'value')]
+
+save(ws_gbr_basevals_ID, file = "../uh-noaa-shiny-app/forec_shiny_app_data/Scenarios/ws_gbr_basevals_ID.RData")
+
+# Save base values for gbrmpa zones
+ws_gbr_basevals_gbrmpa <- merge(
+  ws_gbr_basevals_ID
+  , gbrmpa_park_zones_poly_pix_ids
+  , by.x = "ID"
+  , by.y = "PixelID"
+)
+
+save(ws_gbr_basevals_gbrmpa, file = "../uh-noaa-shiny-app/forec_shiny_app_data/Scenarios/ws_gbr_basevals_gbrmpa.RData")
+
+# Save base values for management zones
+ws_gbr_basevals_management <- merge(
+  ws_gbr_basevals_ID
+  , management_area_poly_pix_ids
+  , by.x = "ID"
+  , by.y = "PixelID"
+)
+
+save(ws_gbr_basevals_management, file = "../uh-noaa-shiny-app/forec_shiny_app_data/Scenarios/ws_gbr_basevals_management.RData")
+
+# ----------------------------------------
+
 ws_gbr_scenarios <- data.frame()
 
 # coral cover
@@ -276,7 +390,7 @@ ws_gbr_scenarios <- add_scenario_levels(
   df = ws_gbr
   , scenario_levels = ws_gbr_coral_cover_levels
   , col_name = 'Coral_cover'
-  , response_name = 'coral_cover'
+  , response_name = 'Coral cover'
   , scenarios_df = ws_gbr_scenarios
 )
 
@@ -287,7 +401,7 @@ ws_gbr_scenarios <- add_scenario_levels(
   df = ws_gbr
   , scenario_levels = ws_gbr_fish_levels
   , col_name = 'Fish_abund'
-  , response_name = 'fish'
+  , response_name = 'Fish'
   , scenarios_df = ws_gbr_scenarios
 )
 
@@ -298,18 +412,18 @@ ws_gbr_scenarios <- add_scenario_levels(
   df = ws_gbr
   , scenario_levels = ws_gbr_turbidity_levels
   , col_name = 'Three_Week_Kd_Variability'
-  , response_name = 'turbidity'
+  , response_name = 'Turbidity'
   , scenarios_df = ws_gbr_scenarios
 )
 
 # make up disease risk data rather than running for now
 ws_gbr_scenarios$estimate <- rnorm(nrow(ws_gbr_scenarios), mean = 5, sd = 2)
 ws_gbr_scenarios$estimate[ws_gbr_scenarios$estimate < 0] <- 0
-ws_gbr_scenarios$sd <- rnorm(nrow(ws_gbr_scenarios), mean = 1, sd = 0.5)
+ws_gbr_scenarios$sd <- round(rnorm(nrow(ws_gbr_scenarios), mean = 1, sd = 0.5), 2)
 ws_gbr_scenarios$sd[ws_gbr_scenarios$sd < 0] <- 0
 
 # pre-calculate disease risk change
-ws_gbr_scenarios$disease_risk_change <- (ws_gbr_scenarios$estimate - ws_gbr_scenarios$value) * 10
+ws_gbr_scenarios$disease_risk_change <- round((ws_gbr_scenarios$estimate - ws_gbr_scenarios$value) * 10)
 # can't decrease more than 100%
 ws_gbr_scenarios$disease_risk_change[ws_gbr_scenarios$disease_risk_change < -100] <- -100
 # save data to run and then replace with same name

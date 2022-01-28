@@ -15,9 +15,7 @@ and click on survey points for pop-up information.'
 historical_data_txt3 <- 'There is less uncertainty in disease forecasts for 
 locations with more surveys.'
 
-wq_hover_txt <- "Adjust me!"
-fish_hover_txt <- "Adjust me!"
-coral_hover_txt <- "Adjust me!"
+turbidity_hover_txt <- 'Turbidity is represented by the diffuse attenuation coefficient at 490 nm (Kd490). Higher value indicate lower clarity of ocean water.'
 
 # create text for about page ---------------------------------------------------------------
 # about coral diseases

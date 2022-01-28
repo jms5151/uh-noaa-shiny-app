@@ -361,7 +361,7 @@ ui <- navbarPage(
           
           bsTooltip(
             id = "turbidity_slider_ws_pac",
-            title = 'Turbidity is represented by the diffuse attenuation coefficient at 490 nm (Kd490). Higher value indicate lower clarity of ocean water.',
+            title = turbidity_hover_txt,
             placement = "right",
             trigger = "hover"
           ),
@@ -425,17 +425,17 @@ ui <- navbarPage(
           input.Disease == 'Growth anomalies'",
 
           sliderInput(
-            "herb_fish_slider_ga_gbr",
+            "fish_slider_ga_gbr",
             label = span(
               h5(
                 strong(
-                  "Herbivorous fish abundance"
+                  "Fish abundance"
                 )
               ),
               tags$i(
                 h6(
                   htmlOutput(
-                    "herb_fish_value_ga_gbr"
+                    "fish_value_ga_gbr"
                   )
                 )
               )
@@ -449,7 +449,7 @@ ui <- navbarPage(
           ),
           
           bsTooltip(
-            id = "herb_fish_slider_ga_gbr",
+            id = "fish_slider_ga_gbr",
             title = "Fish count within ~2km",
             placement = "right",
             trigger = "hover"
@@ -496,7 +496,7 @@ ui <- navbarPage(
           
           bsTooltip(
             id = "turbidity_slider_ga_gbr",
-            title = 'Turbidity is represented by the diffuse attenuation coefficient at 490 nm (Kd490). Higher value indicate lower clarity of ocean water.',
+            title = turbidity_hover_txt,
             placement = "right",
             trigger = "hover"
           ),
@@ -563,17 +563,17 @@ ui <- navbarPage(
           ),
 
           sliderInput(
-            "herb_fish_slider_ws_gbr",
+            "fish_slider_ws_gbr",
             label = span(
               h5(
                 strong(
-                  "Herbivorous fish abundance"
+                  "Fish abundance"
                 )
               ),
               tags$i(
                 h6(
                   htmlOutput(
-                    "herb_fish_value_ws_gbr"
+                    "fish_value_ws_gbr"
                   )
                 )
               )
@@ -587,7 +587,7 @@ ui <- navbarPage(
           ),
           
           bsTooltip(
-            id = "herb_fish_slider_ws_gbr",
+            id = "fish_slider_ws_gbr",
             title = "Fish count within ~2km",
             placement = "right",
             trigger = "hover"
@@ -632,10 +632,9 @@ ui <- navbarPage(
             width = "275px"
             ),
           
-          # this works with title = 'actual text' but not referencing text variable
           bsTooltip(
             id = "turbidity_slider_ga_gbr",
-            title = 'Turbidity is represented by the diffuse attenuation coefficient at 490 nm (Kd490). Higher value indicate lower clarity of ocean water.',
+            title = turbidity_hover_txt,
             placement = "right",
             trigger = "hover"
             )
@@ -653,7 +652,7 @@ ui <- navbarPage(
             color = spinColor
             ),
         plotlyOutput(
-          "barplot",
+          "scenarios_barplot",
           height = "300px"
           ) %>% 
           withSpinner(

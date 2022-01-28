@@ -1,0 +1,6 @@
+Warning level,"Growth anomalies, GBR Australia","Growth anomalies, U.S. Pacific","White syndrome, GBR Australia","White syndromes, U.S. Pacific"
+No stress,0 - 5 colonies,0 - 5 %,0 - 1 colonies,0 - 1 %
+Warning,6 - 15 colonies,6 - 10 %,2 - 5 colonies,2 - 5 %
+Watch,16 - 25 colonies,11 - 15 %,6 - 10 colonies,6 - 10 %
+Alert level 1,26 - 50 colonies,16 - 25 %,11 - 20 colonies,11 - 15 %
+Alert level 2,>50 colonies,>25 %,>20 colonies,>15 %

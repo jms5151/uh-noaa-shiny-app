@@ -32,7 +32,13 @@ plotly_margins <- list(
 )
 
 # function to plot line graph of near-term foreensembles -------------------------------
+# will need to update to properly show abundance or prevalence
 diseaseRisk_plotly <- function(df, titleName){
+  if(unique(df$Region) == 'gbr'){
+    newTitle <- "Disease risk\n(#/50m)"
+  } else {
+    newTitle <- "Disease risk\n(%)"
+  }
   plot_ly() %>%
     add_trace(data = df, 
               x = ~Date, 
@@ -42,12 +48,12 @@ diseaseRisk_plotly <- function(df, titleName){
               type = 'scatter', 
               mode = 'lines',
               color = ~type,
-              colors = c("Salmon", "Midnight blue"),
+              colors = c("darkolivegreen", "darkslategray"),
               text = ~paste("Date:", Date,
                             "<br>Disease risk:",
-                            "<br>90th percentile", round(Upr), "%", # IQR90
-                            "<br>75th percentile", round(value), "%", #IQR75
-                            "<br>50th percentile", round(Lwr), "%" #IQR50
+                            "<br>90th percentile", round(Upr), #"%", # IQR90
+                            "<br>75th percentile", round(value), #"%", #IQR75
+                            "<br>50th percentile", round(Lwr)#, "%" #IQR50
               ),
               hoverinfo = "text") %>%
     add_ribbons(data = df, 
@@ -56,7 +62,7 @@ diseaseRisk_plotly <- function(df, titleName){
                 ymin = ~round(Lwr), 
                 ymax = ~round(Upr),
                 color = ~type,
-                colors = c("blue", "darkslategrey"),
+                colors = c("Salmon", "Midnight blue"),
                 opacity = 0.3,
                 hoverinfo='skip') %>%
     layout(title = titleName,
@@ -65,10 +71,10 @@ diseaseRisk_plotly <- function(df, titleName){
            yaxis = list(showline = T, 
                         showgrid = F, 
                         range = c(0, 40),
-                        title = "Disease risk\n(#/50m)"),
-           font = list(size = 14),
+                        title = newTitle),
+           font = list(size = 11),
            showlegend = FALSE,
-           updatemenus = button_info, 
+           # updatemenus = button_info, 
            margin = plotly_margins)      
 }
 
@@ -85,7 +91,7 @@ diseaseRisk_placeholder_plot <- function(titleName, dateRange) {
            yaxis = list(showline = T, 
                         showgrid = F, 
                         range = c(0, 40),
-                        title = "Disease risk\n(#/50m)"),
+                        title = "Disease risk"),
            font = list(size = 14),
            showlegend = FALSE,
            margin = plotly_margins)
@@ -318,7 +324,6 @@ bound0100 <- function(x){
 
 scenarios_barplot_fun <- function(df, baselineValue, riskType){
   # format data
-  # df <- do.call("rbind", df)
   df <- df[, c('Response', 'disease_risk_change', 'sd')]
   df[nrow(df)+1, ] <- NA
   df$Response[nrow(df)] <- 'Combined'
@@ -346,75 +351,35 @@ scenarios_barplot_fun <- function(df, baselineValue, riskType){
         range = c(-100, 100),
         title = "Change in disease risk<br>(from current conditions)"
       ),
-      font = list(size = 10),
+      font = list(size = 12),
       showlegend = FALSE)
   
   if(riskType == 'percent'){
-   scenario_plot <- baseplot %>% layout(    
+    adjusted_disease_risk <- round(baselineValue + df$disease_risk_change[df$Response == "Combined"])
+    adjusted_disease_risk[adjusted_disease_risk < 0] <- 0
+    adjusted_disease_risk[adjusted_disease_risk > 100] <- 100
+    
+    scenario_plot <- baseplot %>% layout(    
       title = paste0("<br>Baseline disease risk = ",
                      round(baselineValue),
                      "%<br>Combined adjusted disease risk = ",
-                     round(t$disease_risk_change + c$disease_risk_change + f$disease_risk_change),
+                     adjusted_disease_risk,
                      "%")
       )
   } else if(riskType == 'abundance'){
+    adjusted_disease_risk <- round(baselineValue + df$disease_risk_change[df$Response == "Combined"])
+    adjusted_disease_risk[adjusted_disease_risk < 0] <- 0
+
     scenario_plot <- baseplot %>% layout(    
       title = paste0("<br>Baseline disease risk = ",
                      round(baselineValue),
                      " colonies/50m<br>Combined adjusted disease risk = ",
-                     round(t$disease_risk_change + c$disease_risk_change + f$disease_risk_change),
+                     adjusted_disease_risk,
                      " colonies/50m")
       )
   }
   scenario_plot  
 }  
-
-
-mitigation_plot_fun <- function(w, f, c, p){
-  plot_ly(
-    data = w,
-    x = ~Response,
-    y = ~round(estimate*100),
-    error_y = list(value = ~round(sd*100)),
-    type = "bar",
-    color = I("deepskyblue4")
-    ) %>%
-    add_trace(data = f, 
-              y = ~round(estimate*100), 
-              color = I("darkred")
-              ) %>%
-    add_trace(data = c, 
-              y = ~round(estimate*100), 
-              color = I("black")
-              ) %>%
-    add_trace(x = "Combined", 
-              y = ~round(w$estimate*100 + f$estimate*100 + c$estimate*100), 
-              error_y = list(value = ~round(w$sd*100 + f$sd*100 + c$sd*100)), 
-              color = I("goldenrod1")) %>%
-    layout(
-      title = paste0("<br>Baseline disease risk = ", 
-                     p, 
-                     "%<br>Combined adjusted disease risk = ",
-                     bound0100(round(p * (1 + w$estimate + f$estimate + c$estimate))),
-                     "%"
-                     ),
-      xaxis = list(showgrid = F, 
-                   title = "",
-                   categoryorder = "array",
-                   categoryarray = ~c("Water quality",
-                                      "Fish abundance",
-                                      "Coral",
-                                      "Combined"
-                                      )
-                   ), 
-      yaxis = list(showline = T, 
-                   showgrid = F, 
-                   range = c(-100, 100),
-                   title = "Change in disease risk<br>(from current conditions)"
-                   ),
-      font = list(size = 14),
-      showlegend = FALSE) 
-}
 
 # empty barplot to display before any pixel or conditions is selected -------------
 scenarios_placeholder_plot <- plot_ly(

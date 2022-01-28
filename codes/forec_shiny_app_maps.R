@@ -103,7 +103,7 @@ leaf_reefs <- leaflet() %>%
     position = c("bottomright")) %>%
   hideGroup(c("Management area forecasts", 
               "GBRMPA park zoning forecasts")) %>%
-  leaflet::addLegend("bottomright", 
+  leaflet::addLegend("topleft", 
                      pal = pal, 
                      values = polygons_5km$drisk,
                      title = "Disease risk",

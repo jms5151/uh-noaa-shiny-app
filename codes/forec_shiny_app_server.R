@@ -125,6 +125,7 @@ server <- function(input, output, session) {
     last_update_txt
   })
 
+  
   # Investigating scenarios outputs -------------------------------
 
   output$management_map <- renderLeaflet({
@@ -140,11 +141,10 @@ server <- function(input, output, session) {
     groups = vector()
   )
   
-  # testing for new scenarios page ----------------
   observeEvent(
     input$management_map_shape_click,
       {
-        # 5 km map ------
+        # 5 km map -------------------------------------
         if(input$management_map_shape_click$group == "5km forecasts")
         {
           # 5km map, GA, Pacific ----
@@ -152,15 +152,17 @@ server <- function(input, output, session) {
              input$Disease == 'Growth anomalies')
           {
             
-            baseVals <- subset(
-              ga_pac_basevals_ID,
-              ID == input$management_map_shape_click$id
-            )
+            baseVals <- reactive({
+              subset(
+                ga_pac_basevals_ID,
+                ID == input$management_map_shape_click$id
+                )
+            })
             
             output$corsize_value_ga_pac <- renderText({
               paste0(
                 "Location-specific size = ",
-                round(baseVals$Median_colony_size),
+                round(baseVals()$Median_colony_size),
                 "  cm"
               )
             })
@@ -168,7 +170,7 @@ server <- function(input, output, session) {
             output$corcov_value_ga_pac <- renderText({
               paste0(
                 "Location-specific cover = ",
-                round(baseVals$mean_cover),
+                round(baseVals()$mean_cover),
                 "  %"
               )
             })
@@ -176,7 +178,7 @@ server <- function(input, output, session) {
             output$herb_fish_value_ga_pac <- renderText({
               paste0(
                 "Location-specific density = ",
-                round(baseVals$H_abund, 2),
+                round(baseVals()$H_abund, 2),
                 " fish/m<sup>2<sup>"
               )
             })
@@ -184,9 +186,63 @@ server <- function(input, output, session) {
             output$dev_value_ga_pac <- renderText({
               paste0(
                 "Location-specific development = ",
-                round((baseVals$BlackMarble_2016_3km_geo.3/255), 1)
+                round((baseVals()$BlackMarble_2016_3km_geo.3/255), 1)
               )
             })
+            
+            size_ga_pac <- reactive({
+              subset(
+                ga_pac_scenarios,
+                ID == input$management_map_shape_click$id &
+                  Response == 'Coral size' &
+                  Response_level == input$coral_size_slider_ga_pac
+              )
+            })
+            
+            cover_ga_pac <- reactive({
+              subset(
+                ga_pac_scenarios,
+                ID == input$management_map_shape_click$id &
+                  Response == 'Coral cover' &
+                  Response_level == input$coral_cover_slider_ga_pac
+              )
+            })
+            
+            fish_ga_pac <- reactive({
+              subset(
+                ga_pac_scenarios,
+                ID == input$management_map_shape_click$id &
+                  Response == 'Fish' &
+                  Response_level == input$herb_fish_slider_ga_pac
+              )
+            })
+            
+            development_ga_pac <- reactive({
+              subset(
+                ga_pac_scenarios,
+                ID == input$management_map_shape_click$id &
+                  Response == 'Development' &
+                  Response_level == input$dev_slider_ga_pac
+              )
+            })
+            
+            df_ga_pac <- reactive({
+              rbind(
+                size_ga_pac(),
+                cover_ga_pac(),
+                fish_ga_pac(),
+                development_ga_pac()
+              )
+            })
+            
+            output$scenarios_barplot <- renderPlotly({
+              scenarios_barplot_fun(
+                df = df_ga_pac(),
+                baselineValue = baseVals()$value,
+                riskType = 'abundance'
+              )
+            })
+            
           }
 
           # 5km map, WS, Pacific ----
@@ -194,15 +250,17 @@ server <- function(input, output, session) {
              input$Disease == 'White syndromes')
           {
             
-            baseVals <- subset(
-              ws_pac_basevals_ID,
-              ID == input$management_map_shape_click$id
-            )
+            baseVals <- reactive({
+              subset(
+                ws_pac_basevals_ID,
+                ID == input$management_map_shape_click$id
+              )
+            })
             
             output$corsize_value_ws_pac <- renderText({
               paste0(
                 "Location-specific size = ",
-                round(baseVals$Median_colony_size),
+                round(baseVals()$Median_colony_size),
                 "  cm"
               )
             })
@@ -210,7 +268,7 @@ server <- function(input, output, session) {
             output$kd_value_ws_pac <- renderText({
               paste0(
                 "Location-specific turbidity = ",
-                round(baseVals$Long_Term_Kd_Median, 2),
+                round(baseVals()$Long_Term_Kd_Median, 2),
                 "  m<sup>-1</sup>"
               )
             })
@@ -218,26 +276,73 @@ server <- function(input, output, session) {
             output$parrotfish_value_ws_pac <- renderText({
               paste0(
                 "Location-specific density = ",
-                round(baseVals$mean_cover),
+                round(baseVals()$Parrotfish_abund),
                 " fish/m<sup>2<sup>"
-              )
-            })
-            
-            output$herb_fish_value_ga_pac <- renderText({
-              paste0(
-                "Location-specific density = ",
-                round(baseVals$H_abund, 2),
-                "/m<sup>2<sup>"
               )
             })
             
             output$herb_fish_value_ws_pac <- renderText({
               paste0(
                 "Location-specific density = ",
-                round(baseVals$H_abund, 2),
+                round(baseVals()$H_abund, 2),
                 "/m<sup>2<sup>"
               )
             })
+            
+            size_ws_pac <- reactive({
+              subset(
+                ws_pac_scenarios,
+                ID == input$management_map_shape_click$id &
+                  Response == 'Coral size' &
+                  Response_level == input$coral_size_slider_ws_pac
+              )
+            })
+            
+            turbidity_ws_pac <- reactive({
+              subset(
+                ws_pac_scenarios,
+                ID == input$management_map_shape_click$id &
+                  Response == 'Turbidity' &
+                  Response_level == input$turbidity_slider_ws_pac
+              )
+            })
+            
+            parrotfish_ws_pac <- reactive({
+              subset(
+                ws_pac_scenarios,
+                ID == input$management_map_shape_click$id &
+                  Response == 'Parrotfish' &
+                  Response_level == input$parrotfish_slider_ws_pac
+              )
+            })
+            
+            herb_fish_ws_pac <- reactive({
+              subset(
+                ws_pac_scenarios,
+                ID == input$management_map_shape_click$id &
+                  Response == 'Herb. fish' &
+                  Response_level == input$herb_fish_slider_ws_pac
+              )
+            })
+            
+            df_ws_pac <- reactive({
+              rbind(
+                size_ws_pac(),
+                turbidity_ws_pac(),
+                parrotfish_ws_pac(),
+                herb_fish_ws_pac()
+              )
+            })
+            
+            output$scenarios_barplot <- renderPlotly({
+              scenarios_barplot_fun(
+                df = df_ws_pac(),
+                baselineValue = baseVals()$value,
+                riskType = 'abundance'
+              )
+            })
+            
+            
           }
           
           # 5km map, GA, GBR ----
@@ -245,15 +350,17 @@ server <- function(input, output, session) {
              input$Disease == 'Growth anomalies')
             {
             
-            baseVals <- subset(
-              ga_gbr_basevals_ID,
-              ID == input$management_map_shape_click$id
-              )
+            baseVals <- reactive({
+              subset(
+                ga_gbr_basevals_ID,
+                ID == input$management_map_shape_click$id
+                )
+            })
 
             output$fish_value_ga_gbr <- renderText({
               paste0(
                 "Location-specific abundance = ",
-                round(baseVals$Fish_abund),
+                round(baseVals()$Fish_abund),
                 " fish"
                 )
               })
@@ -261,7 +368,7 @@ server <- function(input, output, session) {
             output$kd_value_ga_gbr <- renderText({
               paste0(
                 "Location-specific turbidity = ",
-                round(baseVals$Three_Week_Kd_Variability, 2),
+                round(baseVals()$Three_Week_Kd_Variability, 2),
                 "  m<sup>-1</sup>"
               )
             })
@@ -269,70 +376,72 @@ server <- function(input, output, session) {
             output$corcov_value_ga_gbr <- renderText({
               paste0(
                 "Location-specific cover = ",
-                round(baseVals$Coral_cover),
+                round(baseVals()$Coral_cover),
                 "  %"
               )
             })
             
-            f <- reactive({
+            fish_ga_gbr <- reactive({
               subset(
                 ga_gbr_scenarios,
                 ID == input$management_map_shape_click$id &
                   Response == 'Fish' &
                   Response_level == input$fish_slider_ga_gbr
-                )
+              )
             })
-
-            t <- reactive({
+            
+            turbidity_ga_gbr <- reactive({
               subset(
                 ga_gbr_scenarios,
                 ID == input$management_map_shape_click$id &
                   Response == 'Turbidity' &
                   Response_level == input$turbidity_slider_ga_gbr
-                )
+              )
             })
 
-
-            c <- reactive({
+            cover_ga_gbr <- reactive({
               subset(
                 ga_gbr_scenarios,
                 ID == input$management_map_shape_click$id &
                   Response == 'Coral cover' &
                   Response_level == input$coral_cover_slider_ga_gbr
-                )
+              )
             })
-            
+                  
             df_ga_gbr <- reactive({
               rbind(
-                f(), 
-                t(), 
-                c()
+                fish_ga_gbr(),
+                turbidity_ga_gbr(),
+                cover_ga_gbr()
                 )
+              })
+            
+            output$scenarios_barplot <- renderPlotly({
+              scenarios_barplot_fun(
+                df = df_ga_gbr(),
+                baselineValue = baseVals()$value,
+                riskType = 'abundance'
+              )
             })
 
-            output$scenarios_barplot <- renderPlotly({
-                    scenarios_barplot_fun(
-                      df = df_ga_gbr(),
-                      baselineValue = baseVals$value, 
-                      riskType = 'abundance'
-                    )
-                  })
           }
           
           # 5km map, WS, GBR ----
           if(input$Region == 'Great Barrier Reef, Australia' & 
              input$Disease == 'White syndromes')
           {
-            
-            baseVals <- subset(
-              ws_gbr_basevals_ID,
-              ID == input$management_map_shape_click$id
-            )
+
+            baseVals <- reactive({
+              subset(
+                ws_gbr_basevals_ID,
+                ID == input$management_map_shape_click$id
+                )
+            })
             
             output$corcov_value_ws_gbr <- renderText({
               paste0(
                 "Location-specific cover = ",
-                round(baseVals$Coral_cover),
+                round(baseVals()$Coral_cover),
                 "  %"
               )
             })
@@ -340,7 +449,7 @@ server <- function(input, output, session) {
             output$fish_value_ws_gbr <- renderText({
               paste0(
                 "Location-specific abundance = ",
-                round(baseVals$Fish_abund),
+                round(baseVals()$Fish_abund),
                 " fish"
               )
             })
@@ -348,609 +457,607 @@ server <- function(input, output, session) {
             output$kd_value_ws_gbr <- renderText({
               paste0(
                 "Location-specific turbidity = ",
-                round(baseVals$Three_Week_Kd_Variability, 2),
+                round(baseVals()$Three_Week_Kd_Variability, 2),
                 "  m<sup>-1</sup>"
                 )
               })
+            
+            cover_ws_gbr <- reactive({
+              subset(
+                ws_gbr_scenarios,
+                ID == input$management_map_shape_click$id &
+                  Response == 'Coral cover' &
+                  Response_level == input$coral_cover_slider_ws_gbr
+              )
+            })
+            
+            fish_ws_gbr <- reactive({
+              subset(
+                ws_gbr_scenarios,
+                ID == input$management_map_shape_click$id &
+                  Response == 'Fish' &
+                  Response_level == input$fish_slider_ws_gbr
+              )
+            })
+            
+            turbidity_ws_gbr <- reactive({
+              subset(
+                ws_gbr_scenarios,
+                ID == input$management_map_shape_click$id &
+                  Response == 'Turbidity' &
+                  Response_level == input$turbidity_slider_ws_gbr
+              )
+            })
+            
+            df_ws_gbr <- reactive({
+              rbind(
+                cover_ws_gbr(),
+                fish_ws_gbr(),
+                turbidity_ws_gbr()
+              )
+            })
+            
+            output$scenarios_barplot <- renderPlotly({
+              scenarios_barplot_fun(
+                df = df_ws_gbr(),
+                baselineValue = baseVals()$value,
+                riskType = 'abundance'
+              )
+            })
+            
             }
+        }
+        # management areas map ---------------------------------
+        if(input$management_map_shape_click$group == "Management area forecasts")
+        {
+          # management map, GA, Pacific ----
+          if(input$Region == 'U.S. Pacific' & 
+             input$Disease == 'Growth anomalies')
+          {
+            
+            baseVals <- reactive({
+              subset(
+                ga_pac_basevals_management,
+                ID == input$management_map_shape_click$id
+              )
+            })
+            
+            output$corsize_value_ga_pac <- renderText({
+              paste0(
+                "Location-specific size = ",
+                round(baseVals()$Median_colony_size),
+                "  cm"
+              )
+            })
+            
+            output$corcov_value_ga_pac <- renderText({
+              paste0(
+                "Location-specific cover = ",
+                round(baseVals()$mean_cover),
+                "  %"
+              )
+            })
+            
+            output$herb_fish_value_ga_pac <- renderText({
+              paste0(
+                "Location-specific density = ",
+                round(baseVals()$H_abund, 2),
+                " fish/m<sup>2<sup>"
+              )
+            })
+            
+            output$dev_value_ga_pac <- renderText({
+              paste0(
+                "Location-specific development = ",
+                round((baseVals()$BlackMarble_2016_3km_geo.3/255), 1)
+              )
+            })
+            
+            size_ga_pac <- reactive({
+              subset(
+                ga_pac_scenarios_aggregated_to_management_zones,
+                ID == input$management_map_shape_click$id &
+                  Response == 'Coral size' &
+                  Response_level == input$coral_size_slider_ga_pac
+              )
+            })
+            
+            cover_ga_pac <- reactive({
+              subset(
+                ga_pac_scenarios_aggregated_to_management_zones,
+                ID == input$management_map_shape_click$id &
+                  Response == 'Coral cover' &
+                  Response_level == input$coral_cover_slider_ga_pac
+              )
+            })
+            
+            fish_ga_pac <- reactive({
+              subset(
+                ga_pac_scenarios_aggregated_to_management_zones,
+                ID == input$management_map_shape_click$id &
+                  Response == 'Fish' &
+                  Response_level == input$herb_fish_slider_ga_pac
+              )
+            })
+            
+            development_ga_pac <- reactive({
+              subset(
+                ga_pac_scenarios_aggregated_to_management_zones,
+                ID == input$management_map_shape_click$id &
+                  Response == 'Development' &
+                  Response_level == input$dev_slider_ga_pac
+              )
+            })
+            
+            df_ga_pac <- reactive({
+              rbind(
+                size_ga_pac(),
+                cover_ga_pac(),
+                fish_ga_pac(),
+                development_ga_pac()
+              )
+            })
+            
+            output$scenarios_barplot <- renderPlotly({
+              scenarios_barplot_fun(
+                df = df_ga_pac(),
+                baselineValue = baseVals()$value,
+                riskType = 'abundance'
+              )
+            })
+            
+          }
+          
+          # management map, WS, Pacific ----
+          if(input$Region == 'U.S. Pacific' & 
+             input$Disease == 'White syndromes')
+          {
+            
+            baseVals <- reactive({
+              subset(
+                ws_pac_basevals_management,
+                ID == input$management_map_shape_click$id
+              )
+            })
+            
+            output$corsize_value_ws_pac <- renderText({
+              paste0(
+                "Location-specific size = ",
+                round(baseVals()$Median_colony_size),
+                "  cm"
+              )
+            })
+            
+            output$kd_value_ws_pac <- renderText({
+              paste0(
+                "Location-specific turbidity = ",
+                round(baseVals()$Long_Term_Kd_Median, 2),
+                "  m<sup>-1</sup>"
+              )
+            })
+            
+            output$parrotfish_value_ws_pac <- renderText({
+              paste0(
+                "Location-specific density = ",
+                round(baseVals()$Parrotfish_abund),
+                " fish/m<sup>2<sup>"
+              )
+            })
+            
+            output$herb_fish_value_ws_pac <- renderText({
+              paste0(
+                "Location-specific density = ",
+                round(baseVals()$H_abund, 2),
+                "/m<sup>2<sup>"
+              )
+            })
+            
+            size_ws_pac <- reactive({
+              subset(
+                ws_pac_scenarios_aggregated_to_management_zones,
+                ID == input$management_map_shape_click$id &
+                  Response == 'Coral size' &
+                  Response_level == input$coral_size_slider_ws_pac
+              )
+            })
+            
+            turbidity_ws_pac <- reactive({
+              subset(
+                ws_pac_scenarios_aggregated_to_management_zones,
+                ID == input$management_map_shape_click$id &
+                  Response == 'Turbidity' &
+                  Response_level == input$turbidity_slider_ws_pac
+              )
+            })
+            
+            parrotfish_ws_pac <- reactive({
+              subset(
+                ws_pac_scenarios_aggregated_to_management_zones,
+                ID == input$management_map_shape_click$id &
+                  Response == 'Parrotfish' &
+                  Response_level == input$parrotfish_slider_ws_pac
+              )
+            })
+            
+            herb_fish_ws_pac <- reactive({
+              subset(
+                ws_pac_scenarios_aggregated_to_management_zones,
+                ID == input$management_map_shape_click$id &
+                  Response == 'Herb. fish' &
+                  Response_level == input$herb_fish_slider_ws_pac
+              )
+            })
+            
+            df_ws_pac <- reactive({
+              rbind(
+                size_ws_pac(),
+                turbidity_ws_pac(),
+                parrotfish_ws_pac(),
+                herb_fish_ws_pac()
+              )
+            })
+            
+            output$scenarios_barplot <- renderPlotly({
+              scenarios_barplot_fun(
+                df = df_ws_pac(),
+                baselineValue = baseVals()$value,
+                riskType = 'abundance'
+              )
+            })
+            
+            
+          }
+          
+          # management map, GA, GBR ----
+          if(input$Region == 'Great Barrier Reef, Australia' & 
+             input$Disease == 'Growth anomalies')
+          {
+            
+            baseVals <- reactive({
+              subset(
+                ga_gbr_basevals_management,
+                ID == input$management_map_shape_click$id
+              )
+            })
+            
+            output$fish_value_ga_gbr <- renderText({
+              paste0(
+                "Location-specific abundance = ",
+                round(baseVals()$Fish_abund),
+                " fish"
+              )
+            })
+            
+            output$kd_value_ga_gbr <- renderText({
+              paste0(
+                "Location-specific turbidity = ",
+                round(baseVals()$Three_Week_Kd_Variability, 2),
+                "  m<sup>-1</sup>"
+              )
+            })
+            
+            output$corcov_value_ga_gbr <- renderText({
+              paste0(
+                "Location-specific cover = ",
+                round(baseVals()$Coral_cover),
+                "  %"
+              )
+            })
+            
+            fish_ga_gbr <- reactive({
+              subset(
+                ga_gbr_scenarios_aggregated_to_management_zones,
+                ID == input$management_map_shape_click$id &
+                  Response == 'Fish' &
+                  Response_level == input$fish_slider_ga_gbr
+              )
+            })
+            
+            turbidity_ga_gbr <- reactive({
+              subset(
+                ga_gbr_scenarios_aggregated_to_management_zones,
+                ID == input$management_map_shape_click$id &
+                  Response == 'Turbidity' &
+                  Response_level == input$turbidity_slider_ga_gbr
+              )
+            })
+            
+            cover_ga_gbr <- reactive({
+              subset(
+                ga_gbr_scenarios_aggregated_to_management_zones,
+                ID == input$management_map_shape_click$id &
+                  Response == 'Coral cover' &
+                  Response_level == input$coral_cover_slider_ga_gbr
+              )
+            })
+            
+            df_ga_gbr <- reactive({
+              rbind(
+                fish_ga_gbr(),
+                turbidity_ga_gbr(),
+                cover_ga_gbr()
+              )
+            })
+            
+            output$scenarios_barplot <- renderPlotly({
+              scenarios_barplot_fun(
+                df = df_ga_gbr(),
+                baselineValue = baseVals()$value,
+                riskType = 'abundance'
+              )
+            })
+            
+          }
+          
+          # management map, WS, GBR ----
+          if(input$Region == 'Great Barrier Reef, Australia' & 
+             input$Disease == 'White syndromes')
+          {
+            
+            baseVals <- reactive({
+              subset(
+                ws_gbr_basevals_management,
+                ID == input$management_map_shape_click$id
+              )
+            })
+            
+            output$corcov_value_ws_gbr <- renderText({
+              paste0(
+                "Location-specific cover = ",
+                round(baseVals()$Coral_cover),
+                "  %"
+              )
+            })
+            
+            output$fish_value_ws_gbr <- renderText({
+              paste0(
+                "Location-specific abundance = ",
+                round(baseVals()$Fish_abund),
+                " fish"
+              )
+            })
+            
+            output$kd_value_ws_gbr <- renderText({
+              paste0(
+                "Location-specific turbidity = ",
+                round(baseVals()$Three_Week_Kd_Variability, 2),
+                "  m<sup>-1</sup>"
+              )
+            })
+            
+            cover_ws_gbr <- reactive({
+              subset(
+                ws_gbr_scenarios_aggregated_to_management_zones,
+                ID == input$management_map_shape_click$id &
+                  Response == 'Coral cover' &
+                  Response_level == input$coral_cover_slider_ws_gbr
+              )
+            })
+            
+            fish_ws_gbr <- reactive({
+              subset(
+                ws_gbr_scenarios_aggregated_to_management_zones,
+                ID == input$management_map_shape_click$id &
+                  Response == 'Fish' &
+                  Response_level == input$fish_slider_ws_gbr
+              )
+            })
+            
+            turbidity_ws_gbr <- reactive({
+              subset(
+                ws_gbr_scenarios_aggregated_to_management_zones,
+                ID == input$management_map_shape_click$id &
+                  Response == 'Turbidity' &
+                  Response_level == input$turbidity_slider_ws_gbr
+              )
+            })
+            
+            df_ws_gbr <- reactive({
+              rbind(
+                cover_ws_gbr(),
+                fish_ws_gbr(),
+                turbidity_ws_gbr()
+              )
+            })
+            
+            output$scenarios_barplot <- renderPlotly({
+              scenarios_barplot_fun(
+                df = df_ws_gbr(),
+                baselineValue = baseVals()$value,
+                riskType = 'abundance'
+              )
+            })
+            
           }
         }
+        
+        # gbrmpa map ---------------------------------
+        if(input$management_map_shape_click$group == "GBRMPA park zoning forecasts")
+        {
+          # gbrmpa map, GA, GBR ----
+          if(input$Region == 'Great Barrier Reef, Australia' & 
+             input$Disease == 'Growth anomalies')
+          {
+            
+            baseVals <- reactive({
+              subset(
+                ga_gbr_basevals_gbrmpa,
+                ID == input$management_map_shape_click$id
+              )
+            })
+            
+            output$fish_value_ga_gbr <- renderText({
+              paste0(
+                "Location-specific abundance = ",
+                round(baseVals()$Fish_abund),
+                " fish"
+              )
+            })
+            
+            output$kd_value_ga_gbr <- renderText({
+              paste0(
+                "Location-specific turbidity = ",
+                round(baseVals()$Three_Week_Kd_Variability, 2),
+                "  m<sup>-1</sup>"
+              )
+            })
+            
+            output$corcov_value_ga_gbr <- renderText({
+              paste0(
+                "Location-specific cover = ",
+                round(baseVals()$Coral_cover),
+                "  %"
+              )
+            })
+            
+            fish_ga_gbr <- reactive({
+              subset(
+                ga_gbr_scenarios_aggregated_to_gbrmpa_park_zones,
+                ID == input$management_map_shape_click$id &
+                  Response == 'Fish' &
+                  Response_level == input$fish_slider_ga_gbr
+              )
+            })
+            
+            turbidity_ga_gbr <- reactive({
+              subset(
+                ga_gbr_scenarios_aggregated_to_gbrmpa_park_zones,
+                ID == input$management_map_shape_click$id &
+                  Response == 'Turbidity' &
+                  Response_level == input$turbidity_slider_ga_gbr
+              )
+            })
+            
+            cover_ga_gbr <- reactive({
+              subset(
+                ga_gbr_scenarios_aggregated_to_gbrmpa_park_zones,
+                ID == input$management_map_shape_click$id &
+                  Response == 'Coral cover' &
+                  Response_level == input$coral_cover_slider_ga_gbr
+              )
+            })
+            
+            df_ga_gbr <- reactive({
+              rbind(
+                fish_ga_gbr(),
+                turbidity_ga_gbr(),
+                cover_ga_gbr()
+              )
+            })
+            
+            output$scenarios_barplot <- renderPlotly({
+              scenarios_barplot_fun(
+                df = df_ga_gbr(),
+                baselineValue = baseVals()$value,
+                riskType = 'abundance'
+              )
+            })
+            
+          }
+          
+          # gbrmpa map, WS, GBR ----
+          if(input$Region == 'Great Barrier Reef, Australia' & 
+             input$Disease == 'White syndromes')
+          {
+            
+            baseVals <- reactive({
+              subset(
+                ws_gbr_basevals_gbrmpa,
+                ID == input$management_map_shape_click$id
+              )
+            })
+            
+            output$corcov_value_ws_gbr <- renderText({
+              paste0(
+                "Location-specific cover = ",
+                round(baseVals()$Coral_cover),
+                "  %"
+              )
+            })
+            
+            output$fish_value_ws_gbr <- renderText({
+              paste0(
+                "Location-specific abundance = ",
+                round(baseVals()$Fish_abund),
+                " fish"
+              )
+            })
+            
+            output$kd_value_ws_gbr <- renderText({
+              paste0(
+                "Location-specific turbidity = ",
+                round(baseVals()$Three_Week_Kd_Variability, 2),
+                "  m<sup>-1</sup>"
+              )
+            })
+            
+            cover_ws_gbr <- reactive({
+              subset(
+                ws_gbr_scenarios_aggregated_to_gbrmpa_park_zones,
+                ID == input$management_map_shape_click$id &
+                  Response == 'Coral cover' &
+                  Response_level == input$coral_cover_slider_ws_gbr
+              )
+            })
+            
+            fish_ws_gbr <- reactive({
+              subset(
+                ws_gbr_scenarios_aggregated_to_gbrmpa_park_zones,
+                ID == input$management_map_shape_click$id &
+                  Response == 'Fish' &
+                  Response_level == input$fish_slider_ws_gbr
+              )
+            })
+            
+            turbidity_ws_gbr <- reactive({
+              subset(
+                ws_gbr_scenarios_aggregated_to_gbrmpa_park_zones,
+                ID == input$management_map_shape_click$id &
+                  Response == 'Turbidity' &
+                  Response_level == input$turbidity_slider_ws_gbr
+              )
+            })
+            
+            df_ws_gbr <- reactive({
+              rbind(
+                cover_ws_gbr(),
+                fish_ws_gbr(),
+                turbidity_ws_gbr()
+              )
+            })
+            
+            output$scenarios_barplot <- renderPlotly({
+              scenarios_barplot_fun(
+                df = df_ws_gbr(),
+                baselineValue = baseVals()$value,
+                riskType = 'abundance'
+              )
+            })
+          }
+        }
+        }
     )
-  # end testing for new scenarios page ------------
-  
-  # observeEvent(
-  #   input$management_map_shape_click,
-  #   {
-  #     if(input$management_map_shape_click$group == "5km forecasts")
-  #     {
-  #       
-  #       # GA tab
-  #       mitigate <- subset(
-  #         ga_scenarios, 
-  #         ID == input$management_map_shape_click$id
-  #       )
-  #       
-  #       baseVals <- subset(
-  #         ga_pac_scenarios, 
-  #         ID == input$management_map_shape_click$id
-  #       )
-  #       
-  #       reactive_w_ga <- reactive({
-  #         subset(
-  #           mitigate, 
-  #           Response == "Water quality" & 
-  #             Response_level == input$wq_slider_ga
-  #         )
-  #       })
-  #       
-  #       reactive_f_ga <- reactive({
-  #         subset(
-  #           mitigate, 
-  #           Response == "Fish abundance" & 
-  #             Response_level == input$fish_slider_ga
-  #         )
-  #       })
-  #       
-  #       reactive_c_ga <- reactive({
-  #         subset(
-  #           mitigate, 
-  #           Response == "Coral" & 
-  #             Response_level == input$coral_slider_ga
-  #         )
-  #       })
-  #       
-  #       output$barplot_ga <- renderPlotly({
-  #         mitigation_plot_fun(
-  #           reactive_w_ga(), 
-  #           reactive_f_ga(), 
-  #           reactive_c_ga(), 
-  #           round(baseVals$p*100)
-  #         )
-  #       })
-  #       
-  #       # output$table_ga <- renderDataTable(iris)
-  #       
-  #       output$chlA_value_ga <- renderText({
-  #         paste0(
-  #           "chl-a: baseline = ",
-  #           round(baseVals$chla, 2),
-  #           " mg/m<sup>3</sup>; adjusted = ",
-  #           round(baseVals$chla - baseVals$chla * (input$wq_slider_ga/100), 2),
-  #           " mg/m<sup>3</sup>"
-  #         )
-  #       })
-  #       
-  #       output$kd_value_ga <- renderText({
-  #         paste0(
-  #           "kd(490): baseline = ",
-  #           round(baseVals$kd490, 2),
-  #           " m<sup>-1</sup>; adjusted = ",
-  #           round(baseVals$kd490 - baseVals$kd490 * (input$wq_slider_ga/100), 2),
-  #           " m<sup>-1</sup>"
-  #         )
-  #       })
-  #       
-  #       output$fish_value_ga <- renderText({
-  #         paste0(
-  #           "baseline = ",
-  #           round(baseVals$fish),
-  #           " m<sup>2</sup>; adjusted = ",
-  #           round(baseVals$fish + baseVals$fish * (input$fish_slider_ga/100)),
-  #           " m<sup>2</sup>"
-  #         )
-  #       })
-  #       
-  #       output$corsize_value_ga <- renderText({
-  #         paste0(
-  #           "Median colony size: baseline = ", 
-  #           round(baseVals$coral_size),
-  #           " cm; adjusted = ",
-  #           round(baseVals$coral_size + baseVals$coral_size * (input$coral_slider_ga/100)),
-  #           " cm"
-  #         )
-  #       })
-  #       
-  #       output$corcov_value_ga <- renderText({
-  #         paste0(
-  #           "Host cover: baseline = ", 
-  #           round(baseVals$host_cover),
-  #           " %; adjusted = ",
-  #           round(baseVals$host_cover + baseVals$host_cover * (input$coral_slider_ga/100)),
-  #           " %"
-  #         )
-  #       })
-  #       
-  #       # WS tab
-  #       mitigate <- subset(
-  #         ws_scenarios, 
-  #         ID == input$management_map_shape_click$id
-  #       )
-  #       
-  #       baseVals <- subset(
-  #         ws_scenarios_baseline_vals, 
-  #         ID == input$management_map_shape_click$id
-  #       )
-  #       
-  #       reactive_w_ws <- reactive({
-  #         subset(
-  #           mitigate, 
-  #           Response == "Water quality" & 
-  #             Response_level == input$wq_slider_ws
-  #         )
-  #       })
-  #       
-  #       reactive_f_ws <- reactive({
-  #         subset(
-  #           mitigate, 
-  #           Response == "Fish abundance" & 
-  #             Response_level == input$fish_slider_ws
-  #         )
-  #       })
-  #       
-  #       reactive_c_ws <- reactive({
-  #         subset(
-  #           mitigate, 
-  #           Response == "Coral" & 
-  #             Response_level == input$coral_slider_ws
-  #         )
-  #       })
-  #       
-  #       output$barplot_ws <- renderPlotly({
-  #         mitigation_plot_fun(
-  #           reactive_w_ws(), 
-  #           reactive_f_ws(), 
-  #           reactive_c_ws(), 
-  #           round(baseVals$p*100)
-  #         )
-  #       })
-  #       
-  #       output$chlA_value_ws <- renderText({
-  #         paste0(
-  #           "chl-a: baseline = ", 
-  #           round(baseVals$chla, 2),
-  #           " mg/m<sup>3</sup>; adjusted = ",
-  #           round(baseVals$chla - baseVals$chla * (input$wq_slider_ws/100), 2),
-  #           " mg/m<sup>3</sup>"
-  #         )
-  #       })
-  #       
-  #       output$kd_value_ws <- renderText({
-  #         paste0(
-  #           "kd(490): baseline = ", 
-  #           round(baseVals$kd490, 2),
-  #           " m<sup>-1</sup>; adjusted = ",
-  #           round(baseVals$kd490 - baseVals$kd490 * (input$wq_slider_ws/100), 2),
-  #           " m<sup>-1</sup>"
-  #         )
-  #       })
-  #       
-  #       output$fish_value_ws <- renderText({
-  #         paste0(
-  #           "baseline = ", 
-  #           round(baseVals$fish),
-  #           " m<sup>2</sup>; adjusted = ",
-  #           round(baseVals$fish + baseVals$fish * (input$fish_slider_ws/100)),
-  #           " m<sup>2</sup>"
-  #         )
-  #       })
-  #       
-  #       output$corsize_value_ws <- renderText({
-  #         paste0(
-  #           "Median colony size: baseline = ", 
-  #           round(baseVals$coral_size),
-  #           " cm; adjusted = ",
-  #           round(baseVals$coral_size + baseVals$coral_size * (input$coral_slider_ws/100)),
-  #           " cm"
-  #         )
-  #       })
-  #       
-  #       output$corcov_value_ws <- renderText({
-  #         paste0(
-  #           "Host cover: baseline = ", 
-  #           round(baseVals$host_cover),
-  #           " %; adjusted = ",
-  #           round(baseVals$host_cover + baseVals$host_cover * (input$coral_slider_ws/100)),
-  #           " %"
-  #         )
-  #       })
-  #     }
-  #     
-  #     else if(input$management_map_shape_click$group == "Management area forecasts")
-  #     {
-  #       
-  #       # GA tab
-  #       mitigate <- subset(
-  #         ga_scenarios_baseline_vals_aggregated_to_management_zones, 
-  #         PolygonID == input$management_map_shape_click$id
-  #       )
-  #       
-  #       baseVals <- subset(
-  #         ga_scenarios_baseline_vals_aggregated_to_management_zones, 
-  #         PolygonID == input$management_map_shape_click$id
-  #       )
-  #       
-  #       reactive_w_ga <- reactive({
-  #         subset(
-  #           mitigate, 
-  #           Response == "Water quality" & 
-  #             Response_level == input$wq_slider_ga
-  #         )
-  #       })
-  #       
-  #       reactive_f_ga <- reactive({
-  #         subset(
-  #           mitigate, 
-  #           Response == "Fish abundance" & 
-  #             Response_level == input$fish_slider_ga
-  #         )
-  #       })
-  #       
-  #       reactive_c_ga <- reactive({
-  #         subset(
-  #           mitigate, 
-  #           Response == "Coral" & 
-  #             Response_level == input$coral_slider_ga
-  #         )
-  #       })
-  #       
-  #       output$barplot_ga <- renderPlotly({
-  #         mitigation_plot_fun(
-  #           reactive_w_ga(), 
-  #           reactive_f_ga(), 
-  #           reactive_c_ga(), 
-  #           round(baseVals$p*100)
-  #         )
-  #       })
-  #       
-  #       output$chlA_value_ga <- renderText({
-  #         paste0(
-  #           "chl-a: baseline = ",
-  #           round(baseVals$chla, 2),
-  #           " mg/m<sup>3</sup>; adjusted = ",
-  #           round(baseVals$chla - baseVals$chla * (input$wq_slider_ga/100), 2),
-  #           " mg/m<sup>3</sup>"
-  #         )
-  #       })
-  #       
-  #       output$kd_value_ga <- renderText({
-  #         paste0(
-  #           "kd(490): baseline = ",
-  #           round(baseVals$kd490, 2),
-  #           " m<sup>-1</sup>; adjusted = ",
-  #           round(baseVals$kd490 - baseVals$kd490 * (input$wq_slider_ga/100), 2),
-  #           " m<sup>-1</sup>"
-  #         )
-  #       })
-  #       
-  #       output$fish_value_ga <- renderText({
-  #         paste0(
-  #           "baseline = ",
-  #           round(baseVals$fish),
-  #           " m<sup>2</sup>; adjusted = ",
-  #           round(baseVals$fish + baseVals$fish * (input$fish_slider_ga/100)),
-  #           " m<sup>2</sup>"
-  #         )
-  #       })
-  #       
-  #       output$corsize_value_ga <- renderText({
-  #         paste0(
-  #           "Median colony size: baseline = ", 
-  #           round(baseVals$coral_size),
-  #           " cm; adjusted = ",
-  #           round(baseVals$coral_size + baseVals$coral_size * (input$coral_slider_ga/100)),
-  #           " cm"
-  #         )
-  #       })
-  #       
-  #       output$corcov_value_ga <- renderText({
-  #         paste0(
-  #           "Host cover: baseline = ", 
-  #           round(baseVals$host_cover),
-  #           " %; adjusted = ",
-  #           round(baseVals$host_cover + baseVals$host_cover * (input$coral_slider_ga/100)),
-  #           " %"
-  #         )
-  #       })
-  #       
-  #       # WS tab
-  #       mitigate <- subset(
-  #         ws_scenarios_aggregated_to_management_zones, 
-  #         PolygonID == input$management_map_shape_click$id
-  #       )
-  #       
-  #       baseVals <- subset(
-  #         ws_scenarios_baseline_vals_aggregated_to_management_zones, 
-  #         PolygonID == input$management_map_shape_click$id
-  #       )
-  #       
-  #       reactive_w_ws <- reactive({
-  #         subset(
-  #           mitigate, 
-  #           Response == "Water quality" & 
-  #             Response_level == input$wq_slider_ws
-  #         )
-  #       })
-  #       
-  #       reactive_f_ws <- reactive({
-  #         subset(
-  #           mitigate, 
-  #           Response == "Fish abundance" & 
-  #             Response_level == input$fish_slider_ws
-  #         )
-  #       })
-  #       
-  #       reactive_c_ws <- reactive({
-  #         subset(
-  #           mitigate, 
-  #           Response == "Coral" & 
-  #             Response_level == input$coral_slider_ws
-  #         )
-  #       })
-  #       
-  #       output$barplot_ws <- renderPlotly({
-  #         mitigation_plot_fun(
-  #           reactive_w_ws(), 
-  #           reactive_f_ws(), 
-  #           reactive_c_ws(), 
-  #           round(baseVals$p*100)
-  #         )
-  #       })
-  #       
-  #       output$chlA_value_ws <- renderText({
-  #         paste0(
-  #           "chl-a: baseline = ", 
-  #           round(baseVals$chla, 2),
-  #           " mg/m<sup>3</sup>; adjusted = ",
-  #           round(baseVals$chla - baseVals$chla * (input$wq_slider_ws/100), 2),
-  #           " mg/m<sup>3</sup>"
-  #         )
-  #       })
-  #       
-  #       output$kd_value_ws <- renderText({
-  #         paste0(
-  #           "kd(490): baseline = ", 
-  #           round(baseVals$kd490, 2),
-  #           " m<sup>-1</sup>; adjusted = ",
-  #           round(baseVals$kd490 - baseVals$kd490 * (input$wq_slider_ws/100), 2),
-  #           " m<sup>-1</sup>"
-  #         )
-  #       })
-  #       
-  #       output$fish_value_ws <- renderText({
-  #         paste0(
-  #           "baseline = ", 
-  #           round(baseVals$fish),
-  #           " m<sup>2</sup>; adjusted = ",
-  #           round(baseVals$fish + baseVals$fish * (input$fish_slider_ws/100)),
-  #           " m<sup>2</sup>"
-  #         )
-  #       })
-  #       
-  #       output$corsize_value_ws <- renderText({
-  #         paste0(
-  #           "Median colony size: baseline = ", 
-  #           round(baseVals$coral_size),
-  #           " cm; adjusted = ",
-  #           round(baseVals$coral_size + baseVals$coral_size * (input$coral_slider_ws/100)),
-  #           " cm"
-  #         )
-  #       })
-  #       
-  #       output$corcov_value_ws <- renderText({
-  #         paste0(
-  #           "Host cover: baseline = ", 
-  #           round(baseVals$host_cover),
-  #           " %; adjusted = ",
-  #           round(baseVals$host_cover + baseVals$host_cover * (input$coral_slider_ws/100)),
-  #           " %"
-  #         )
-  #       })
-  #     }
-  #     
-  #     else if(input$management_map_shape_click$group == "GBRMPA park zoning forecasts")
-  #     {
-  #       
-  #       # GA tab
-  #       mitigate <- subset(
-  #         ga_scenarios_baseline_vals_aggregated_to_gbrmpa_park_zones, 
-  #         PolygonID == input$management_map_shape_click$id
-  #       )
-  #       
-  #       baseVals <- subset(
-  #         ga_scenarios_baseline_vals_aggregated_to_gbrmpa_park_zones, 
-  #         PolygonID == input$management_map_shape_click$id
-  #       )
-  #       
-  #       reactive_w_ga <- reactive({
-  #         subset(
-  #           mitigate, 
-  #           Response == "Water quality" & 
-  #             Response_level == input$wq_slider_ga
-  #         )
-  #       })
-  #       
-  #       reactive_f_ga <- reactive({
-  #         subset(
-  #           mitigate, 
-  #           Response == "Fish abundance" & 
-  #             Response_level == input$fish_slider_ga
-  #         )
-  #       })
-  #       
-  #       reactive_c_ga <- reactive({
-  #         subset(
-  #           mitigate, 
-  #           Response == "Coral" & 
-  #             Response_level == input$coral_slider_ga
-  #         )
-  #       })
-  #       
-  #       output$barplot_ga <- renderPlotly({
-  #         mitigation_plot_fun(
-  #           reactive_w_ga(), 
-  #           reactive_f_ga(), 
-  #           reactive_c_ga(), 
-  #           round(baseVals$p*100)
-  #         )
-  #       })
-  #       
-  #       output$chlA_value_ga <- renderText({
-  #         paste0(
-  #           "chl-a: baseline = ",
-  #           round(baseVals$chla, 2),
-  #           " mg/m<sup>3</sup>; adjusted = ",
-  #           round(baseVals$chla - baseVals$chla * (input$wq_slider_ga/100), 2),
-  #           " mg/m<sup>3</sup>"
-  #         )
-  #       })
-  #       
-  #       output$kd_value_ga <- renderText({
-  #         paste0(
-  #           "kd(490): baseline = ",
-  #           round(baseVals$kd490, 2),
-  #           " m<sup>-1</sup>; adjusted = ",
-  #           round(baseVals$kd490 - baseVals$kd490 * (input$wq_slider_ga/100), 2),
-  #           " m<sup>-1</sup>"
-  #         )
-  #       })
-  #       
-  #       output$fish_value_ga <- renderText({
-  #         paste0(
-  #           "baseline = ",
-  #           round(baseVals$fish),
-  #           " m<sup>2</sup>; adjusted = ",
-  #           round(baseVals$fish + baseVals$fish * (input$fish_slider_ga/100)),
-  #           " m<sup>2</sup>"
-  #         )
-  #       })
-  #       
-  #       output$corsize_value_ga <- renderText({
-  #         paste0(
-  #           "Median colony size: baseline = ", 
-  #           round(baseVals$coral_size),
-  #           " cm; adjusted = ",
-  #           round(baseVals$coral_size + baseVals$coral_size * (input$coral_slider_ga/100)),
-  #           " cm"
-  #         )
-  #       })
-  #       
-  #       output$corcov_value_ga <- renderText({
-  #         paste0(
-  #           "Host cover: baseline = ", 
-  #           round(baseVals$host_cover),
-  #           " %; adjusted = ",
-  #           round(baseVals$host_cover + baseVals$host_cover * (input$coral_slider_ga/100)),
-  #           " %"
-  #         )
-  #       })
-  #       
-  #       # WS tab
-  #       mitigate <- subset(
-  #         ws_scenarios_aggregated_to_gbrmpa_park_zones, 
-  #         PolygonID == input$management_map_shape_click$id
-  #       )
-  #       
-  #       baseVals <- subset(
-  #         ws_scenarios_baseline_vals_aggregated_to_gbrmpa_park_zones, 
-  #         PolygonID == input$management_map_shape_click$id
-  #       )
-  #       
-  #       reactive_w_ws <- reactive({
-  #         subset(
-  #           mitigate, 
-  #           Response == "Water quality" & 
-  #             Response_level == input$wq_slider_ws
-  #         )
-  #       })
-  #       
-  #       reactive_f_ws <- reactive({
-  #         subset(
-  #           mitigate, 
-  #           Response == "Fish abundance" & 
-  #             Response_level == input$fish_slider_ws
-  #         )
-  #       })
-  #       
-  #       reactive_c_ws <- reactive({
-  #         subset(
-  #           mitigate, 
-  #           Response == "Coral" & 
-  #             Response_level == input$coral_slider_ws
-  #         )
-  #       })
-  #       
-  #       output$barplot_ws <- renderPlotly({
-  #         mitigation_plot_fun(
-  #           reactive_w_ws(), 
-  #           reactive_f_ws(), 
-  #           reactive_c_ws(), 
-  #           round(baseVals$p*100)
-  #         )
-  #       })
-  #       
-  #       output$chlA_value_ws <- renderText({
-  #         paste0(
-  #           "chl-a: baseline = ", 
-  #           round(baseVals$chla, 2),
-  #           " mg/m<sup>3</sup>; adjusted = ",
-  #           round(baseVals$chla - baseVals$chla * (input$wq_slider_ws/100), 2),
-  #           " mg/m<sup>3</sup>"
-  #         )
-  #       })
-  #       
-  #       output$kd_value_ws <- renderText({
-  #         paste0(
-  #           "kd(490): baseline = ", 
-  #           round(baseVals$kd490, 2),
-  #           " m<sup>-1</sup>; adjusted = ",
-  #           round(baseVals$kd490 - baseVals$kd490 * (input$wq_slider_ws/100), 2),
-  #           " m<sup>-1</sup>"
-  #         )
-  #       })
-  #       
-  #       output$fish_value_ws <- renderText({
-  #         paste0(
-  #           "baseline = ", 
-  #           round(baseVals$fish),
-  #           " m<sup>2</sup>; adjusted = ",
-  #           round(baseVals$fish + baseVals$fish * (input$fish_slider_ws/100)),
-  #           " m<sup>2</sup>"
-  #         )
-  #       })
-  #       
-  #       output$corsize_value_ws <- renderText({
-  #         paste0(
-  #           "Median colony size: baseline = ", 
-  #           round(baseVals$coral_size),
-  #           " cm; adjusted = ",
-  #           round(baseVals$coral_size + baseVals$coral_size * (input$coral_slider_ws/100)),
-  #           " cm"
-  #         )
-  #       })
-  #       
-  #       output$corcov_value_ws <- renderText({
-  #         paste0(
-  #           "Host cover: baseline = ", 
-  #           round(baseVals$host_cover),
-  #           " %; adjusted = ",
-  #           round(baseVals$host_cover + baseVals$host_cover * (input$coral_slider_ws/100)),
-  #           " %"
-  #         )
-  #       })
-  #     }
-  #   })
-  
-  # map historical data
+  # map historical data -------------
   output$historical_data_map <- renderLeaflet({
     historicalMap
   })
   
-  # about page
+  # about page ----------------
   output$cdz_images <- renderImage({
-    filename <- "../forec_shiny_app_data/disease_pictures.png"
+    filename <- "./forec_shiny_app_data/disease_pictures.png"
+    # filename <- "../forec_shiny_app_data/disease_pictures.png"
     list(src = filename)
     }, 
   deleteFile = FALSE
+  )
+  
+  output$warning_levels_table <- renderDataTable(
+    warning_table, 
+    options(
+      paging = FALSE,
+      searching = FALSE
+    )
+    
   )
   
   output$funding_statement <- renderUI({

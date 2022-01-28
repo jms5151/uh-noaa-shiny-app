@@ -122,17 +122,21 @@ ui <- navbarPage(
     #   )
     ),
   # Management scenarios page --------------------
-  # this is how to do conditional sliders based on region and disease:
-  # https://stackoverflow.com/questions/68250593/how-to-show-slider-inputs-based-on-selected-radio-buttons-in-shiny-r
   tabPanel(
-    "Investigating scenarios new",
+    "Investigating scenarios",
     fluidRow(
-      style = "border-top: 2px double #00172D;",
       column(
-        width = 4,
-        style = "border-right: 2px double #00172D;
+        width = 1
+      ),
+      
+      column(
+        width = 3,
+        style = "height: 800px;
+        border: 2px double #00172D;
         padding-top: 15px;
-        padding-left: 20px;",
+        padding-left: 20px;
+        padding-bottom: 10px;", # background-color: lightgrey;
+
         selectInput(
           inputId = "Region",
           label = "Select region",
@@ -642,422 +646,41 @@ ui <- navbarPage(
         ),
 
       column(
-        width = 8,
-        style = "padding: 15px;",
+        width = 7,
+        style = "height: 800px;
+        border-top: 2px double #00172D;
+        border-right: 2px double #00172D;
+        border-bottom: 2px double #00172D;
+        padding: 25px;",
         leafletOutput(
           "management_map", 
-          height = "300px"
+          height = "325px"
         ) %>% 
           withSpinner(
             color = spinColor
             ),
+        hr(),
         plotlyOutput(
           "scenarios_barplot",
-          height = "300px"
+          height = "350px"
           ) %>% 
           withSpinner(
             color = spinColor
             )
+        ),
+      
+      column(
+        width = 1
         )
-      )
-    ),
-  
-  # old scenarios ---------------------------  
-  # tabPanel(
-  #   "Investigating scenarios original", #HTML("Long-term mitigation<br/>potential"),
-  #   leafletOutput(
-  #     "management_map", 
-  #     height = "300px"
-  #   ) %>% 
-  #     withSpinner(
-  #       color = spinColor
-  #     ),
-  #   # set all slider colors at once, colors = deepskyblue4, dark red, black repeated\
-  #   setSliderColor(
-  #     c("#00688B", "#8B0000", "#000000", "#00688B", "#8B0000", "#000000"),
-  #     c(1, 2, 3, 4, 5, 6)
-  #   ),
-  #   hr(),
-  #   tabsetPanel(
-  #     type = "tabs",
-  #     tabPanel(
-  #       "Growth anomalies",
-  #       fluidRow(
-  #         column(
-  #           4,
-  #           wellPanel(
-  #             class = "dropdown",
-  #             dropMenu(
-  #               dropdownButton(
-  #                 "Info2",
-  #                 icon = icon(
-  #                   'info'
-  #                 ),
-  #                 size = "xs"
-  #               ),
-  #               h3(
-  #                 strong(
-  #                   'Information'
-  #                 )
-  #               ),
-  #               h5(
-  #                 scenarios_page_info_txt
-  #               )
-  #             ),
-  #             span(
-  #               h5(
-  #                 strong(
-  #                   "Targets:"
-  #                 )
-  #               ),
-  #             ),
-  #             sliderInput(
-  #               "wq_slider_ga",
-  #               label = span(
-  #                 h5(
-  #                   strong(
-  #                     "Water quality"
-  #                   )
-  #                 ),
-  #                 tags$i(
-  #                   h6(
-  #                     htmlOutput(
-  #                       "chlA_value_ga"
-  #                     )
-  #                   )
-  #                 ),
-  #                 tags$i(
-  #                   h6(
-  #                     htmlOutput(
-  #                       "kd_value_ga"
-  #                     )
-  #                   )
-  #                 ),
-  #                 style = "color:#00688B",
-  #                 div(
-  #                   style = 'width:250px;',
-  #                   div(
-  #                     h6(
-  #                       style ='float:left;', 
-  #                       'Worse'
-  #                     )
-  #                   ),
-  #                   div(
-  #                     h6(
-  #                       style = 'float:right;', 
-  #                       'Better'
-  #                     )
-  #                   )
-  #                 )
-  #               ),
-  #               min = -100,
-  #               max = 100,
-  #               step = 20,
-  #               post = " %",
-  #               value = 0,
-  #               width = "250px"
-  #             ),
-  #             bsTooltip(
-  #               "wq_slider_ga",
-  #               wq_hover_txt,
-  #               placement = "bottom",
-  #               trigger = "hover",
-  #               options = NULL
-  #             ),
-  #             sliderInput(
-  #               "fish_slider_ga",
-  #               label = span(
-  #                 h5(
-  #                   strong(
-  #                     "Herbivorous fish"
-  #                   )
-  #                 ),
-  #                 tags$i(
-  #                   h6(
-  #                     htmlOutput(
-  #                       "fish_value_ga"
-  #                     )
-  #                   )
-  #                 ),
-  #                 style = "color:#8B0000",
-  #                 div(
-  #                   style = 'width:250px;',
-  #                   div(
-  #                     h6(
-  #                       style = 'float:left;', 
-  #                       'Less'
-  #                     )
-  #                   ),
-  #                   div(
-  #                     h6(
-  #                       style = 'float:right;', 
-  #                       'More'
-  #                     )
-  #                   )
-  #                 )
-  #               ),
-  #               min = -100,
-  #               max = 100,
-  #               step = 20,
-  #               post = " %",
-  #               value = 0,
-  #               width = "250px"
-  #             ),
-  #             bsTooltip(
-  #               "fish_slider_ga",
-  #               fish_hover_txt,
-  #               placement = "bottom",
-  #               trigger = "hover",
-  #               options = NULL
-  #             ),
-  #             sliderInput(
-  #               "coral_slider_ga",
-  #               label = span(
-  #                 h5(
-  #                   strong(
-  #                     "Coral"
-  #                   )
-  #                 ),
-  #                 tags$i(
-  #                   h6(
-  #                     textOutput(
-  #                       "corsize_value_ga"
-  #                     )
-  #                   )
-  #                 ),
-  #                 tags$i(
-  #                   h6(
-  #                     textOutput(
-  #                       "corcov_value_ga"
-  #                     )
-  #                   )
-  #                 ),
-  #                 style = "color:#000000",
-  #                 div(
-  #                   style = 'width:250px;',
-  #                   div(
-  #                     h6(
-  #                       style = 'float:left;', 
-  #                       'Less'
-  #                     )
-  #                   ),
-  #                   div(
-  #                     h6(
-  #                       style = 'float:right;', 
-  #                       'More'
-  #                     )
-  #                   )
-  #                 )
-  #               ),
-  #               min = -100, 
-  #               max = 100, 
-  #               step = 20, 
-  #               post = " %", 
-  #               value = 0, 
-  #               width = "250px"
-  #             ),
-  #             bsTooltip(
-  #               "coral_slider_ga", 
-  #               coral_hover_txt, 
-  #               placement = "bottom", 
-  #               trigger = "hover", 
-  #               options = NULL
-  #             ),
-  #             style = "background: white"
-  #           )
-  #         ),
-  #         column(
-  #           8, 
-  #           wellPanel(
-  #             plotlyOutput(
-  #               "barplot_ga"
-  #             ),
-  #             style = "background: white",
-  #             # tableOutput(
-  #             #   "table_ga"
-  #             # )
-  #           )
-  #         )
-  #       )
-  #     ),
-  #     tabPanel(
-  #       "White syndromes",
-  #       column(
-  #         4, 
-  #         wellPanel(
-  #           span(
-  #             h5(
-  #               strong(
-  #                 "Targets:"
-  #               )
-  #             ),
-  #           ),
-  #           sliderInput(
-  #             "wq_slider_ws",
-  #             label = span(
-  #               h5(
-  #                 strong(
-  #                   "Water quality"
-  #                 )
-  #               ),
-  #               tags$i(
-  #                 h6(
-  #                   htmlOutput(
-  #                     "chlA_value_ws"
-  #                   )
-  #                 )
-  #               ),
-  #               tags$i(
-  #                 h6(
-  #                   htmlOutput(
-  #                     "kd_value_ws"
-  #                   )
-  #                 )
-  #               ),
-  #               style = "color:#00688B",
-  #               div(style = 'width:250px;',
-  #                   div(
-  #                     h6(
-  #                       style = 'float:left;', 
-  #                       'Worse'
-  #                     )
-  #                   ),
-  #                   div(
-  #                     h6(
-  #                       style = 'float:right;', 
-  #                       'Better'
-  #                     )
-  #                   )
-  #               )
-  #             ),
-  #             min = -100, 
-  #             max = 100, 
-  #             step = 20, 
-  #             post = " %", 
-  #             value = 0, 
-  #             width = "250px"
-  #           ),
-  #           bsTooltip(
-  #             "wq_slider_ga", 
-  #             wq_hover_txt, 
-  #             placement = "bottom", 
-  #             trigger = "hover", 
-  #             options = NULL
-  #           ),
-  #           sliderInput(
-  #             "fish_slider_ws",
-  #             label = span(
-  #               h5(
-  #                 strong(
-  #                   "Herbivorous fish"
-  #                 )
-  #               ),
-  #               tags$i(
-  #                 h6(
-  #                   htmlOutput(
-  #                     "fish_value_ws"
-  #                   )
-  #                 )
-  #               ),
-  #               style = "color:#8B0000",
-  #               div(
-  #                 style = 'width:250px;',
-  #                 div(
-  #                   h6(
-  #                     style = 'float:left;', 
-  #                     'Less'
-  #                   )
-  #                 ),
-  #                 div(
-  #                   h6(
-  #                     style = 'float:right;', 
-  #                     'More'
-  #                   )
-  #                 )
-  #               )
-  #             ),
-  #             min = -100, 
-  #             max = 100, 
-  #             step = 20, 
-  #             post = " %", 
-  #             value = 0, 
-  #             width = "250px"
-  #           ),
-  #           bsTooltip(
-  #             "fish_slider_ga", 
-  #             fish_hover_txt, 
-  #             placement = "bottom", 
-  #             trigger = "hover", 
-  #             options = NULL
-  #           ),
-  #           sliderInput(
-  #             "coral_slider_ws",
-  #             label = span(
-  #               h5(
-  #                 strong(
-  #                   "Coral"
-  #                 )
-  #               ),
-  #               tags$i(
-  #                 h6(
-  #                   textOutput(
-  #                     "corsize_value_ws"
-  #                   )
-  #                 )
-  #               ),
-  #               tags$i(
-  #                 h6(
-  #                   textOutput(
-  #                     "corcov_value_ws"
-  #                   )
-  #                 )
-  #               ),
-  #               style = "color:#000000",
-  #               div(
-  #                 style = 'width:250px;',
-  #                 div(
-  #                   h6(
-  #                     style = 'float:left;', 
-  #                     'Less'
-  #                   )
-  #                 ),
-  #                 div(
-  #                   h6(
-  #                     style = 'float:right;', 
-  #                     'More'
-  #                   )
-  #                 )
-  #               )
-  #             ),
-  #             min = -100, 
-  #             max = 100, 
-  #             step = 20, 
-  #             post = " %", 
-  #             value = 0, 
-  #             width = "250px"
-  #           ),
-  #           bsTooltip(
-  #             "coral_slider_ga", 
-  #             coral_hover_txt, 
-  #             placement = "bottom", 
-  #             trigger = "hover", 
-  #             options = NULL
-  #           ),
-  #           style = "background: white"
-  #         )
-  #       ),
-  #       column(
-  #         8, 
-  #         wellPanel(
-  #           plotlyOutput(
-  #             "barplot_ws"
-  #           ),
-  #           style = "background: white"
-  #         )
-  #       )
-  #     )
-  #   )
-  # ),
+      
+      ),
+    
+    fluidRow(
+      hr()
+    )
+    
+    
+    ), # this closes the scenarios page
   
   # Historical data page --------------------
   tabPanel(
@@ -1117,10 +740,28 @@ ui <- navbarPage(
       ),
     imageOutput(
       "cdz_images"
+      ) %>% 
+      withSpinner(
+        color = spinColor
       ),
     disease_info_text,
     photo_credit,
+    h3(
+      "Disease risk warning levels:"
+       ),
+    dataTableOutput(
+      "warning_levels_table"
+    ) %>% 
+      withSpinner(
+        color = spinColor
+      ),
     br(),
+    warning_levels_text,
+    br(),
+    h3(
+      "Model description:"
+    ),
+    about_models_text,
     h3(
       "Funding:"
       ),

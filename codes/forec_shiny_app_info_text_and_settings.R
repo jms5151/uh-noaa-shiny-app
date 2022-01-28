@@ -6,8 +6,8 @@ landing_page_info_txt <- 'Click on a pixel to explore near-real time coral disea
 
 scenarios_page_info_txt <- 'Click on a pixel and adjust sliders to explore coral disease mitigation potential.'
 
-historical_data_txt1 <- 'This map shows the locations, data collectors, and time range for the survey
-data that we used to build the coral disease models.'
+historical_data_txt1 <- 'This map shows the locations, data collectors, and 
+time range for the survey data that was used to build the coral disease models.'
 
 historical_data_txt2 <- 'You can zoom in and out to explore different regions 
 and click on survey points for pop-up information.' 
@@ -27,6 +27,21 @@ that reduce growth, fecundity, and survival. Tissue loss diseases,
 or white syndromes, are characterized by progressive tissue loss 
 across the coral colony with lesions progressing slowly (chronic 
 to subacute or rapidly (acute)."
+
+warning_levels_text <- "Disease on the Great Barrier Reef (GBR) is measured as
+an abundance (total number of diseased colonies), while disease in the 
+U.S. Pacific is measured as prevalence (total number of diseased colonies 
+divided by total number of colonies observed). Abundance pertains to specific 
+morphologies where applicable. Prevalence pertains to specific families."
+
+about_models_text <- "Quantile regresson forest models are used to estimate 
+disease risk in this product. Quantile regression forests use tree-based 
+ensemble methods to estimate conditional quantiles. Quantile regression forest 
+models were built using a subset of data shown in the Historical data page of 
+this application, the remaining data was used for validation. There are 
+separate models used for each disease-region group (i.e., growth anomalies in 
+Australia, growth anomalies in the U.S. Pacific, white syndromes in Australia, 
+and white syndromes in the U.S. Pacific."
 
 # funding
 himb_url <- a("Hawaii Institute of Marine Biology, University of Hawaii",
@@ -54,7 +69,7 @@ funding_statement_txt <- tagList('Funding for this product is from the',
 Geigeretal2021 <- a('Optimal Spatiotemporal Scales to Aggregate Satellite Ocean Color Data for Nearshore Reefs and Tropical Coastal Waters: Two Case Studies.',
                     href = 'https://www.frontiersin.org/articles/10.3389/fmars.2021.643302/full')
 
-Geigeretal2021_citation <- tagList('1. Geiger EF, Heron SF, HernÃ¡ndez WJ, Caldwell JM, Falinski K, Callender T, Greene AL, Liu G, De La Cour JL, Armstrong RA, Donahue MJ, Eakin CM. (2021)', 
+Geigeretal2021_citation <- tagList('1. Geiger EF, Heron SF, Hernandez WJ, Caldwell JM, Falinski K, Callender T, Greene AL, Liu G, De La Cour JL, Armstrong RA, Donahue MJ, Eakin CM. (2021)', 
                                    Geigeretal2021,
                                    'Frontiers in Marine Science.'
 )
@@ -90,19 +105,5 @@ Caldwelletal2020_citation <- tagList('4. Caldwell JM, Aeby G, Heron SF, and Dona
 # Brodnicke OB, Bourne DG, Heron SF, Pears RJ, Stella JS, Smith HA, Willis BL. Unravelling the links between heat stress, bleaching and disease: fate of tabular corals following a combined disease and bleaching event. Coral Reefs. 2019 Aug 15;38(4):591-603. 
 # NOAA Coral Reef Watch, CoralTemp: A Daily Global 5km Sea Surface Temperature Dataset. CoralTemp: A Daily Global 5km Sea Surface Temperature Dataset (2018) available at https://coralreefwatch.noaa.gov/satellite/coraltemp.php.
 
-
 # settings
 spinColor <- "#D3D3D3"
-
-# testFun <- function(variableName, variableVal, units){
-#   paste0(
-#     variableName,
-#     ": baseline = ",
-#     round(variableVal, 2),
-#     " ",
-#     units,
-#     "; adjusted = ",
-#     round(variableVal + variableVal , 2),
-#     units
-#   )
-# }

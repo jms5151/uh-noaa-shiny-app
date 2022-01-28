@@ -9,11 +9,11 @@
 
 # should load most up-to-date nowcast, using forecast inputs for covariates
 # and forecast outputs for disease risk values, 
-y <- load("../compiled_data/forecast_inputs/ga_gbr_grid_week_1_ensemble_0")
-grid_dz_covars <- get(y)
-
-y <- load("../compiled_data/forecast_outputs/ga_gbr_grid_week_1_ensemble_0")
-grid_dz <- get(y)
+# y <- load("../compiled_data/forecast_inputs/ga_gbr_grid_week_1_ensemble_0")
+# grid_dz_covars <- get(y)
+# 
+# y <- load("../compiled_data/forecast_outputs/ga_gbr_grid_week_1_ensemble_0")
+# grid_dz <- get(y)
 
 # but use below as placeholder
 load("../compiled_data/grid_covariate_data/grid_with_static_covariates.RData")
@@ -69,7 +69,15 @@ ga_pac_basevals_management <- merge(
   , management_area_poly_pix_ids
   , by.x = "ID"
   , by.y = "PixelID"
-  )
+  ) 
+
+ga_pac_basevals_management <- ga_pac_basevals_management %>%
+  mutate(ID = NULL,
+         ID = PolygonID,
+         PolygonID = NULL) %>%
+  group_by(ID) %>%
+  summarise_all(mean) %>%
+  as.data.frame()
 
 save(ga_pac_basevals_management, file = "../uh-noaa-shiny-app/forec_shiny_app_data/Scenarios/ga_pac_basevals_management.RData")
 # ----------------------------------------
@@ -172,7 +180,15 @@ ws_pac_basevals_management <- merge(
   , management_area_poly_pix_ids
   , by.x = "ID"
   , by.y = "PixelID"
-)
+) 
+
+ws_pac_basevals_management <- ws_pac_basevals_management %>%
+  mutate(ID = NULL,
+         ID = PolygonID,
+         PolygonID = NULL) %>%
+  group_by(ID) %>%
+  summarise_all(mean) %>%
+  as.data.frame()
 
 save(ws_pac_basevals_management, file = "../uh-noaa-shiny-app/forec_shiny_app_data/Scenarios/ws_pac_basevals_management.RData")
 # ----------------------------------------
@@ -270,6 +286,14 @@ ga_gbr_basevals_gbrmpa <- merge(
   , by.y = "PixelID"
 )
 
+ga_gbr_basevals_gbrmpa <- ga_gbr_basevals_gbrmpa %>%
+  mutate(ID = NULL,
+         ID = PolygonID,
+         PolygonID = NULL) %>%
+  group_by(ID) %>%
+  summarise_all(mean) %>%
+  as.data.frame()
+
 save(ga_gbr_basevals_gbrmpa, file = "../uh-noaa-shiny-app/forec_shiny_app_data/Scenarios/ga_gbr_basevals_gbrmpa.RData")
 
 # Save base values for management zones
@@ -279,6 +303,14 @@ ga_gbr_basevals_management <- merge(
   , by.x = "ID"
   , by.y = "PixelID"
 )
+
+ga_gbr_basevals_management <- ga_gbr_basevals_management %>%
+  mutate(ID = NULL,
+         ID = PolygonID,
+         PolygonID = NULL) %>%
+  group_by(ID) %>%
+  summarise_all(mean) %>%
+  as.data.frame()
 
 save(ga_gbr_basevals_management, file = "../uh-noaa-shiny-app/forec_shiny_app_data/Scenarios/ga_gbr_basevals_management.RData")
 
@@ -367,6 +399,14 @@ ws_gbr_basevals_gbrmpa <- merge(
   , by.y = "PixelID"
 )
 
+ws_gbr_basevals_gbrmpa <- ws_gbr_basevals_gbrmpa %>%
+  mutate(ID = NULL,
+         ID = PolygonID,
+         PolygonID = NULL) %>%
+  group_by(ID) %>%
+  summarise_all(mean) %>%
+  as.data.frame()
+
 save(ws_gbr_basevals_gbrmpa, file = "../uh-noaa-shiny-app/forec_shiny_app_data/Scenarios/ws_gbr_basevals_gbrmpa.RData")
 
 # Save base values for management zones
@@ -376,6 +416,15 @@ ws_gbr_basevals_management <- merge(
   , by.x = "ID"
   , by.y = "PixelID"
 )
+
+ws_gbr_basevals_management <- ws_gbr_basevals_management %>%
+  mutate(ID = NULL,
+         ID = PolygonID,
+         PolygonID = NULL) %>%
+  group_by(ID) %>%
+  summarise_all(mean) %>%
+  as.data.frame()
+
 
 save(ws_gbr_basevals_management, file = "../uh-noaa-shiny-app/forec_shiny_app_data/Scenarios/ws_gbr_basevals_management.RData")
 

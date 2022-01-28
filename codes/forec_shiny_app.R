@@ -10,6 +10,9 @@ filenames <- c(filenames, list.files("../forec_shiny_app_data/Static_data/", ful
 # load files into global environment
 lapply(filenames, load, .GlobalEnv)
 
+# temporary addition, eventually all data will be CSV and other forms
+warning_table <- read.csv("./forec_shiny_app_data/Static_data/warning_levels_table.csv", check.names = FALSE)
+
 # load functions, maps, plots, user interface and server for shiny app ------------
 # load maps & mapping functions
 source("../codes/forec_shiny_app_maps.R")

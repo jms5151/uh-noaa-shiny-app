@@ -24,10 +24,10 @@ source("../codes/forec_shiny_app_plots.R")
 source("../codes/forec_shiny_app_info_text_and_settings.R")
 
 # load user interface
-source("./codes/forec_shiny_app_user_interface.R")
+source("../codes/forec_shiny_app_user_interface.R")
 
 # load server
-source("./codes/forec_shiny_app_server.R")
+source("../codes/forec_shiny_app_server.R")
 
 # run shiny app -------------------------------------------------------------------
 shinyApp(ui, server)

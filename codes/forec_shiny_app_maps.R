@@ -113,6 +113,12 @@ leaf_reefs <- leaflet() %>%
 # create map for scenarios page ------------------------------------------------------------
 leaf_scenarios <- leaf_reefs
 
+# x <- leaflet() %>%
+#   # addTiles(group = "OpenStreetMap") %>%
+#   addTiles(urlTemplate="http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}", group = "Satellite") %>%
+#   addScaleBar("topright") %>%
+#   setView(lng = -170, lat = 0, zoom = 2)
+
 # create map of historical disease surveys -------------------------------------------------
 historicalMap = leaflet() %>%
   addTiles(urlTemplate = "http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}") %>%

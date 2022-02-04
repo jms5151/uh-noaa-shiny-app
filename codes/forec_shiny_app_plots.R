@@ -31,7 +31,7 @@ plotly_margins <- list(
   t = 60
 )
 
-# function to plot line graph of near-term foreensembles -------------------------------
+# function to plot line graph of near-term forecasts -------------------------------
 # will need to update to properly show abundance or prevalence
 diseaseRisk_plotly <- function(df, titleName){
   if(unique(df$Region) == 'gbr'){
@@ -324,17 +324,17 @@ bound0100 <- function(x){
 
 scenarios_barplot_fun <- function(df, baselineValue, riskType){
   # format data
-  df <- df[, c('Response', 'disease_risk_change', 'sd')]
+  df <- df[, c('Response', 'disease_risk_change')]
   df[nrow(df)+1, ] <- NA
   df$Response[nrow(df)] <- 'Combined'
   df$disease_risk_change[nrow(df)] <- sum(df$disease_risk_change, na.rm = T)
-  df$sd[nrow(df)] <- sum(df$sd, na.rm = T)
+  # df$sd[nrow(df)] <- sum(df$sd, na.rm = T)
   # baseplot
   baseplot <- plot_ly(
     data = df,
     x = ~Response,
     y = ~disease_risk_change,
-    error_y = list(value = ~sd),
+    # error_y = list(value = ~sd),
     type = "bar",
     color = I('#003152')
   ) %>%

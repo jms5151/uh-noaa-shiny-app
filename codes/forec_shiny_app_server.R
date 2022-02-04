@@ -35,26 +35,26 @@ server <- function(input, output, session) {
       if(input$map1_shape_click$group == "5km forecasts")
       {
         
-        z <- subset(
+        ga_5km_forecast <- subset(
           ga_forecast, 
           ID == input$map1_shape_click$id
         )
         
-        z2 <- subset(
+        ws_5km_forecast <- subset(
           ws_forecast, 
           ID == input$map1_shape_click$id
         )
         
         output$plotlyGA <- renderPlotly({
           diseaseRisk_plotly(
-            z, 
+            ga_5km_forecast, 
             "Growth anomalies"
           )
         })
         
         output$plotlyWS <- renderPlotly({
           diseaseRisk_plotly(
-            z2, 
+            ws_5km_forecast, 
             "White syndromes"
           )
         })
@@ -63,26 +63,26 @@ server <- function(input, output, session) {
       else if(input$map1_shape_click$group == "Management area forecasts")
       {
         
-        z5 <- subset(
+        ga_management_forecasts <- subset(
           ga_forecast_aggregated_to_management_zones, 
           PolygonID == input$map1_shape_click$id
         )
         
-        z6  <- subset(
+        ws_management_forecasts  <- subset(
           ws_forecast_aggregated_to_management_zones, 
           PolygonID == input$map1_shape_click$id
         )
         
         output$plotlyGA <- renderPlotly({
           diseaseRisk_plotly(
-            z5, 
+            ga_management_forecasts, 
             "Growth anomalies"
           )
         })
         
         output$plotlyWS <- renderPlotly({
           diseaseRisk_plotly(
-            z6, 
+            ws_management_forecasts, 
             "White syndromes"
           )
         })
@@ -91,26 +91,26 @@ server <- function(input, output, session) {
       else if(input$map1_shape_click$group == "GBRMPA park zoning forecasts")
       {
         
-        z3 <- subset(
-          ga_forecast_aggregated_to_gbrmpa_park_zones, 
+        ga_gbrmpa_forecast <- subset(
+          ga_gbr_forecast_aggregated_to_gbrmpa_park_zones,
           PolygonID == input$map1_shape_click$id
-        )
-        
-        z4 <- subset(
-          ws_forecast_aggregated_to_gbrmpa_park_zones, 
+          )
+
+        ws_gbrmpa_forecast <- subset(
+          ws_gbr_forecast_aggregated_to_gbrmpa_park_zones, 
           PolygonID == input$map1_shape_click$id
         )
         
         output$plotlyGA <- renderPlotly({
           diseaseRisk_plotly(
-            z3, 
+            ga_gbrmpa_forecast(), 
             "Growth anomalies"
           )
         })
         
         output$plotlyWS <- renderPlotly({
           diseaseRisk_plotly(
-            z4, 
+            ws_gbrmpa_forecast, 
             "White syndromes"
           )
         })
@@ -249,7 +249,7 @@ server <- function(input, output, session) {
           if(input$Region == 'U.S. Pacific' & 
              input$Disease == 'White syndromes')
           {
-            
+
             baseVals <- reactive({
               subset(
                 ws_pac_basevals_ID,

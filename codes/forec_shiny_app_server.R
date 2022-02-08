@@ -249,7 +249,7 @@ server <- function(input, output, session) {
           if(input$Region == 'U.S. Pacific' & 
              input$Disease == 'White syndromes')
           {
-
+            
             baseVals <- reactive({
               subset(
                 ws_pac_basevals_ID,

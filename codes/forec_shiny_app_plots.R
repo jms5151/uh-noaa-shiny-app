@@ -35,7 +35,7 @@ plotly_margins <- list(
 # will need to update to properly show abundance or prevalence
 diseaseRisk_plotly <- function(df, titleName){
   if(unique(df$Region) == 'gbr'){
-    newTitle <- "Disease risk\n(#/50m)"
+    newTitle <- "Disease risk\n(#/75m<sup>2</sup>)"
   } else {
     newTitle <- "Disease risk\n(%)"
   }
@@ -70,7 +70,7 @@ diseaseRisk_plotly <- function(df, titleName){
                         title = ""), 
            yaxis = list(showline = T, 
                         showgrid = F, 
-                        range = c(0, 40),
+                        range = c(0, 12),
                         title = newTitle),
            font = list(size = 11),
            showlegend = FALSE,
@@ -90,7 +90,7 @@ diseaseRisk_placeholder_plot <- function(titleName, dateRange) {
                         title = ""), 
            yaxis = list(showline = T, 
                         showgrid = F, 
-                        range = c(0, 40),
+                        range = c(0, 12),
                         title = "Disease risk"),
            font = list(size = 14),
            showlegend = FALSE,
@@ -373,9 +373,9 @@ scenarios_barplot_fun <- function(df, baselineValue, riskType){
     scenario_plot <- baseplot %>% layout(    
       title = paste0("<br>Baseline disease risk = ",
                      round(baselineValue),
-                     " colonies/50m<br>Combined adjusted disease risk = ",
+                     " colonies/75m<sup>2</sup><br>Combined adjusted disease risk = ",
                      adjusted_disease_risk,
-                     " colonies/50m")
+                     " colonies/75m<sup>2<sup>")
       )
   }
   scenario_plot  

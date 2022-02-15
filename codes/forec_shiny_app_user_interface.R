@@ -1,5 +1,7 @@
+library(shiny)
+
 ui <- navbarPage(
-  theme = shinytheme(
+  theme = shinythemes::shinytheme(
     "flatly"
   ), 
   collapsible = TRUE, 
@@ -48,7 +50,7 @@ ui <- navbarPage(
         width = 3,
         style = "border-right: 2px double #00172D;
         border-bottom: 2px double #00172D;
-        padding-bottom: 15px;", 
+        padding-bottom: 15px;",
         plotlyOutput(
           "gauge_plots",
           height = 400
@@ -90,7 +92,7 @@ ui <- navbarPage(
             )
         )
     ),
-    hr(),
+    shiny::hr(),
     textOutput(
       "last_update"
       )
@@ -128,7 +130,7 @@ ui <- navbarPage(
       column(
         width = 1
       ),
-      
+
       column(
         width = 3,
         style = "height: 800px;
@@ -146,7 +148,7 @@ ui <- navbarPage(
             "Great Barrier Reef, Australia"
           )
         ),
-        
+
         selectInput(
           "Disease",
           "Select disease type",
@@ -155,14 +157,14 @@ ui <- navbarPage(
             "White syndromes"
           )
         ),
-        
+
         setSliderColor(c(rep("#003152", 14)), c(1:14)),
-        
+
         # Scenarios - GA, Pacific -------------------
         conditionalPanel(
-          condition = "input.Region == 'U.S. Pacific' & 
+          condition = "input.Region == 'U.S. Pacific' &
           input.Disease == 'Growth anomalies'",
-          
+
           sliderInput(
             "coral_size_slider_ga_pac",
             label = span(
@@ -186,15 +188,15 @@ ui <- navbarPage(
             value = 15,
             width = "275px"
             ),
-          
+
           bsTooltip(
             id = "coral_size_slider_ga_pac",
             title = "Median colony size of corals in the family Poritidae",
             placement = "right",
             trigger = "hover"
           ),
-          
-          
+
+
           sliderInput(
             "coral_cover_slider_ga_pac",
             label = span(
@@ -221,7 +223,7 @@ ui <- navbarPage(
             value = 15,
             width = "275px"
           ),
-          
+
           sliderInput(
             "herb_fish_slider_ga_pac",
             label = span(
@@ -247,7 +249,7 @@ ui <- navbarPage(
             value = 0.3,
             width = "275px"
             ),
-          
+
           sliderInput(
             "dev_slider_ga_pac",
             label = span(
@@ -290,9 +292,9 @@ ui <- navbarPage(
 
         # Scenarios - WS, Pacific -------------------
         conditionalPanel(
-          condition = "input.Region == 'U.S. Pacific' & 
+          condition = "input.Region == 'U.S. Pacific' &
           input.Disease == 'White syndromes'",
-          
+
           sliderInput(
             "coral_size_slider_ws_pac",
             label = span(
@@ -316,14 +318,14 @@ ui <- navbarPage(
             value = 10,
             width = "275px"
           ),
-          
+
           bsTooltip(
             id = "coral_size_slider_ws_pac",
             title = "Median colony size of corals in the family Acroporidae",
             placement = "right",
             trigger = "hover"
           ),
-          
+
           sliderInput(
             "turbidity_slider_ws_pac", # long term kd median
             label = span(
@@ -362,14 +364,14 @@ ui <- navbarPage(
             value = 0.5,
             width = "275px"
             ),
-          
+
           bsTooltip(
             id = "turbidity_slider_ws_pac",
             title = turbidity_hover_txt,
             placement = "right",
             trigger = "hover"
           ),
-          
+
           sliderInput(
             "parrotfish_slider_ws_pac",
             label = span(
@@ -395,7 +397,7 @@ ui <- navbarPage(
             value = 0.02,
             width = "275px"
             ),
-          
+
           sliderInput(
             "herb_fish_slider_ws_pac",
             label = span(
@@ -451,7 +453,7 @@ ui <- navbarPage(
             value = 600,
             width = "275px"
           ),
-          
+
           bsTooltip(
             id = "fish_slider_ga_gbr",
             title = "Fish count within ~2km",
@@ -460,7 +462,7 @@ ui <- navbarPage(
           ),
 
           sliderInput(
-            "turbidity_slider_ga_gbr", # three week kd variability 
+            "turbidity_slider_ga_gbr", # three week kd variability
             label = span(
               h5(
                 strong(
@@ -497,7 +499,7 @@ ui <- navbarPage(
             value = 0.5,
             width = "275px"
           ),
-          
+
           bsTooltip(
             id = "turbidity_slider_ga_gbr",
             title = turbidity_hover_txt,
@@ -534,7 +536,7 @@ ui <- navbarPage(
         conditionalPanel(
           condition = "input.Region == 'Great Barrier Reef, Australia' &
           input.Disease == 'White syndromes'",
-          
+
           sliderInput(
             "coral_cover_slider_ws_gbr",
             label = span(
@@ -558,7 +560,7 @@ ui <- navbarPage(
             value = 20,
             width = "275px"
           ),
-          
+
           bsTooltip(
             id = "coral_cover_slider_ws_gbr",
             title = "Percent of live coral cover with plating and table morphologies",
@@ -589,14 +591,14 @@ ui <- navbarPage(
             value = 600,
             width = "275px"
           ),
-          
+
           bsTooltip(
             id = "fish_slider_ws_gbr",
             title = "Fish count within ~2km",
             placement = "right",
             trigger = "hover"
           ),
-          
+
           sliderInput(
             "turbidity_slider_ws_gbr", # three week kd variability
             label = span(
@@ -635,7 +637,7 @@ ui <- navbarPage(
             value = 0,
             width = "275px"
             ),
-          
+
           bsTooltip(
             id = "turbidity_slider_ga_gbr",
             title = turbidity_hover_txt,
@@ -653,35 +655,35 @@ ui <- navbarPage(
         border-bottom: 2px double #00172D;
         padding: 25px;",
         leafletOutput(
-          "management_map", 
+          "management_map",
           height = "325px"
-        ) %>% 
+        ) %>%
           withSpinner(
             color = spinColor
             ),
-        hr(),
+        shiny::hr(),
         plotlyOutput(
           "scenarios_barplot",
           height = "350px"
-          ) %>% 
+          ) %>%
           withSpinner(
             color = spinColor
             )
         ),
-      
+
       column(
         width = 1
         )
-      
+
       ),
-    
+
     fluidRow(
-      hr()
+      shiny::hr()
     )
-    
-    
+
+
     ), # this closes the scenarios page
-  
+
   # Historical data page --------------------
   tabPanel(
     "Historical data",
@@ -693,25 +695,25 @@ ui <- navbarPage(
         )
       ),
       leafletOutput(
-        "historical_data_map", 
-        width = "100%", 
+        "historical_data_map",
+        width = "100%",
         height = "100%"
       )
     ),
     absolutePanel(
-      id = "controls", 
+      id = "controls",
       class = "panel panel-default",
-      top = 80, 
-      left = 60, 
+      top = 80,
+      left = 60,
       fixed = TRUE,
-      draggable = FALSE, 
+      draggable = FALSE,
       height = "auto",
       class = "dropdown",
       dropMenu(
         dropdownButton(
           icon = icon(
             'info'
-          ), 
+          ),
           size = "xs"
         ),
         h3(
@@ -731,7 +733,7 @@ ui <- navbarPage(
       )
     )
   ),
-  
+
   # About the project page --------------------
   tabPanel(
     "About",
@@ -740,7 +742,7 @@ ui <- navbarPage(
       ),
     imageOutput(
       "cdz_images"
-      ) %>% 
+      ) %>%
       withSpinner(
         color = spinColor
       ),
@@ -749,9 +751,9 @@ ui <- navbarPage(
     h3(
       "Disease risk warning levels:"
        ),
-    dataTableOutput(
+    shiny::dataTableOutput(
       "warning_levels_table"
-    ) %>% 
+    ) %>%
       withSpinner(
         color = spinColor
       ),

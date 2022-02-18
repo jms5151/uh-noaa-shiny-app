@@ -33,22 +33,59 @@ plotly_margins <- list(
 
 # function to plot line graph of near-term forecasts -------------------------------
 # will need to update to properly show abundance or prevalence
+hline <- function(y, color) {
+  list(
+    type = "line", 
+    x0 = 0, 
+    x1 = 1, 
+    xref = "paper",
+    y0 = y, 
+    y1 = y, 
+    line = list(
+      color = color, 
+      dash = "dot"
+      )
+  )
+}
+
 diseaseRisk_plotly <- function(df, titleName){
+  df <- data.frame(df)
+  yMax <- max(df$Upr) + 2
   if(unique(df$Region) == 'gbr'){
     newTitle <- "Disease risk\n(#/75m<sup>2</sup>)"
+    if(titleName == "Growth anomalies"){
+      watchThreshold = 5
+      warningThreshold = 15
+      alert1Threshold = 25
+      alert2Threshold = 50
+    } else {
+      watchThreshold = 1
+      warningThreshold = 5
+      alert1Threshold = 10
+      alert2Threshold = 20
+    }
   } else {
     newTitle <- "Disease risk\n(%)"
+    if(titleName == "Growth anomalies"){
+      watchThreshold = 5
+      warningThreshold = 10
+      alert1Threshold = 15
+      alert2Threshold = 25
+    } else {
+      watchThreshold = 1
+      warningThreshold = 5
+      alert1Threshold = 10
+      alert2Threshold = 15
+    }
   }
   plot_ly() %>%
-    add_trace(data = df, 
-              x = ~Date, 
+    add_trace(data = df,
+              x = ~Date,
               y = ~value,
-              y = ~round(value),
-              split = ~ensemble, 
-              type = 'scatter', 
-              mode = 'lines',
+              type = 'scatter',
+              mode = 'lines+markers',
               color = ~type,
-              colors = c("darkolivegreen", "darkslategray"),
+              colors = c("midnightblue", "midnightblue"),
               text = ~paste("Date:", Date,
                             "<br>Disease risk:",
                             "<br>90th percentile", round(Upr), #"%", # IQR90
@@ -57,12 +94,10 @@ diseaseRisk_plotly <- function(df, titleName){
               ),
               hoverinfo = "text") %>%
     add_ribbons(data = df, 
-                x= ~Date, 
-                split = ~ensemble, 
-                ymin = ~round(Lwr), 
-                ymax = ~round(Upr),
+                x = ~Date, 
+                ymin = ~Lwr, 
+                ymax = ~Upr,
                 color = ~type,
-                colors = c("Salmon", "Midnight blue"),
                 opacity = 0.3,
                 hoverinfo='skip') %>%
     layout(title = titleName,
@@ -70,13 +105,34 @@ diseaseRisk_plotly <- function(df, titleName){
                         title = ""), 
            yaxis = list(showline = T, 
                         showgrid = F, 
-                        range = c(0, 12),
+                        range = c(0, yMax),
                         title = newTitle),
            font = list(size = 11),
            showlegend = FALSE,
            # updatemenus = button_info, 
-           margin = plotly_margins)      
-}
+           margin = plotly_margins,
+           shapes = list(
+             hline(
+               y = watchThreshold, 
+               color = "#FFEF00"
+               ),
+             hline(
+               y = warningThreshold, 
+               color = "#FFB300"
+             ),
+             hline(
+               y = alert1Threshold, 
+               color = "#EB1F08"
+             ),
+             hline(
+               y = alert2Threshold,
+               color = "#8D1002"
+             )
+             
+             )
+           )
+    
+  }
 
 # empty plot to display line graph before any pixel is selected -------------------
 diseaseRisk_placeholder_plot <- function(titleName, dateRange) {
@@ -328,13 +384,10 @@ scenarios_barplot_fun <- function(df, baselineValue, riskType){
   df[nrow(df)+1, ] <- NA
   df$Response[nrow(df)] <- 'Combined'
   df$disease_risk_change[nrow(df)] <- sum(df$disease_risk_change, na.rm = T)
-  # df$sd[nrow(df)] <- sum(df$sd, na.rm = T)
-  # baseplot
   baseplot <- plot_ly(
     data = df,
     x = ~Response,
     y = ~disease_risk_change,
-    # error_y = list(value = ~sd),
     type = "bar",
     color = I('#003152')
   ) %>%

@@ -16,7 +16,7 @@ ui <- navbarPage(
         width = 3,
         style = "border-right: 2px double #00172D;",
         h4(
-          "Risk nowcast",
+          "Risk nowcast (region, disease)",
           align = "center",
           style = "background-color: #00172D;
           color: white;
@@ -26,7 +26,7 @@ ui <- navbarPage(
       column(
         width = 6,
         h4(
-          "Risk map",
+          "Risk map (total disease)",
           align = "center",
           style = "background-color: #00172D;
           color: white;
@@ -182,7 +182,7 @@ ui <- navbarPage(
                 ),
               ),
             min = 5,
-            max = 55,
+            max = 65,
             step = 10,
             post = " cm",
             value = 15,
@@ -217,7 +217,7 @@ ui <- navbarPage(
                 )
             ),
             min = 5,
-            max = 45,
+            max = 65,
             step = 10,
             post = " %",
             value = 15,
@@ -244,7 +244,7 @@ ui <- navbarPage(
               ),
             min = 0.1,
             max = 0.7,
-            step = 0.2,
+            step = 0.1,
             # post = " fish/m<sup>2</sup>",
             value = 0.3,
             width = "275px"
@@ -282,8 +282,8 @@ ui <- navbarPage(
               )
             ),
             min = 0.0,
-            max = 0.9,
-            step = 0.3,
+            max = 1.0,
+            step = 0.1,
             # post = "",
             value = 0.3,
             width = "275px"
@@ -312,7 +312,7 @@ ui <- navbarPage(
               ),
             ),
             min = 5,
-            max = 55,
+            max = 65,
             step = 10,
             post = " cm",
             value = 10,
@@ -359,7 +359,7 @@ ui <- navbarPage(
             ),
             min = 0,
             max = 2,
-            step = 0.5,
+            step = 0.1,
             post = " m<sup>-1</sup>",
             value = 0.5,
             width = "275px"
@@ -392,7 +392,7 @@ ui <- navbarPage(
               ),
             min = 0.00,
             max = 0.06,
-            step = 0.02,
+            step = 0.01,
             # post = " fish/m<sup>2</sup>",
             value = 0.02,
             width = "275px"
@@ -418,7 +418,7 @@ ui <- navbarPage(
             ),
             min = 0.0,
             max = 0.6,
-            step = 0.2,
+            step = 0.1,
             # post = "",
             value = 0.4,
             width = "275px"
@@ -448,7 +448,7 @@ ui <- navbarPage(
             ),
             min = 400,
             max = 800,
-            step = 100,
+            step = 50,
             # post = "",
             value = 600,
             width = "275px"
@@ -494,7 +494,7 @@ ui <- navbarPage(
             ),
             min = 0,
             max = 2,
-            step = 0.5,
+            step = 0.1,
             post = " m<sup>-1</sup>",
             value = 0.5,
             width = "275px"
@@ -525,7 +525,7 @@ ui <- navbarPage(
           ),
           min = 5,
           max = 95,
-          step = 15,
+          step = 10,
           post = " %",
           value = 35,
           width = "275px"
@@ -554,8 +554,8 @@ ui <- navbarPage(
               )
             ),
             min = 5,
-            max = 65,
-            step = 15,
+            max = 95,
+            step = 10,
             post = " %",
             value = 20,
             width = "275px"
@@ -586,7 +586,7 @@ ui <- navbarPage(
             ),
             min = 400,
             max = 800,
-            step = 100,
+            step = 50,
             post = "",
             value = 600,
             width = "275px"
@@ -632,7 +632,7 @@ ui <- navbarPage(
             ),
             min = 0,
             max = 2,
-            step = 0.5,
+            step = 0.1,
             post = " m<sup>-1</sup>",
             value = 0,
             width = "275px"
@@ -758,7 +758,11 @@ ui <- navbarPage(
         color = spinColor
       ),
     br(),
-    warning_levels_text,
+
+    htmlOutput(
+          "warning_levels_text",
+    ),
+    
     br(),
     h3(
       "Model description:"

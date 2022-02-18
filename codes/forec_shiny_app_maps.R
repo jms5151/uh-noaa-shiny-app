@@ -6,9 +6,9 @@
 
 # polygons and data layers required (added in forec_shiny_app.R): 
 # load("./forec_shiny_app_data/Static_data/historical_surveys.RData")
-# load("./forec_shiny_app_data/Forecasts/polygons_5km.Rds")
+# load("./forec_shiny_app_data/Forecasts/nowcast_polygons_5km.Rds")
 # load("./forec_shiny_app_data/Static_data/polygons_management_areas.Rds")
-# load("./forec_shiny_app_data/Static_data/polygons_GBRMPA_park_zoning.Rds")
+# load("./forec_shiny_app_data/Static_data/polygons_GBRMPA_zoning.Rds")
 
 # function to add scale bar that adjusts with zoom ---------------------------------------
 addScaleBar = function(map,
@@ -25,7 +25,7 @@ scaleBarOptions = function(maxWidth = 100, metric = TRUE, imperial = TRUE,
        updateWhenIdle=updateWhenIdle)
 }
 
-# set colors for different polygon layers -------------------------------------------------
+# set colors & labels ----------------------------------------------------------
 bins <- seq(from = 0,
             to = 4, 
             by = 1
@@ -38,14 +38,13 @@ cols <- c("#CCFFFF",
           "#8D1002"
           )
 
-#colorBin function is from leaflet!
+# colorBin function is from leaflet
 pal <- colorBin(cols, 
-                domain = polygons_5km$drisk, 
+                domain = nowcast_polygons_5km$drisk, 
                 bins = bins, 
                 na.color = "transparent"
                 )
 
-# legendLabels <- c("0-5", "6-10", "11-15", "16-25", "26-50", "51-75", "76-100", "NA")
 legendLabels <- c("No stress", 
                   "Watch", 
                   "Warning", 
@@ -53,73 +52,217 @@ legendLabels <- c("No stress",
                   "Alert Level 2"
                   )
 
-gbrmpa_zone_pal <- colorBin(cols,
-                            domain = polygons_GBRMPA_park_zoning$drisk,
-                            bins = bins,
-                            na.color = "transparent"
-                            )
-
-
-management_zone_pal <- colorBin(cols,
-                                domain = polygons_management_zoning$drisk,
-                                bins = bins,
-                                na.color = "transparent"
-                                )
-
-# create landing page map of near-term forecasts ------------------------------------------
-leaf_reefs <- leaflet() %>%
+# base map ---------------------------------------------------------------------
+reefs_basemap <- leaflet() %>%
   addTiles(group = "OpenStreetMap") %>%
   addTiles(urlTemplate="http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}", group = "Satellite") %>%
-  addScaleBar("topright") %>% # bottomleft
-  addPolygons(data = polygons_5km,
+  addScaleBar("topright") %>%
+  leaflet::addLegend("topleft",
+                     colors = cols,
+                     labels = legendLabels,
+                     title = "Disease risk",
+                     opacity = 1)
+
+# Map of nowcasts and near-term forecasts --------------------------------------
+leaf_reefs <- reefs_basemap %>%
+  addPolygons(data = nowcast_polygons_5km,
               layerId = ~ID,
-              fillColor = ~pal(polygons_5km$drisk),
+              fillColor = ~pal(nowcast_polygons_5km$drisk),
               weight = 2,
               opacity = 1,
-              color = ~pal(polygons_5km$drisk),
+              color = ~pal(nowcast_polygons_5km$drisk),
               fillOpacity = 0.7,
-              group = "5km forecasts",
+              group = "Nowcast",
               highlightOptions = highlightOptions(color = "black", weight = 3, bringToFront = TRUE)
   ) %>%
-  addPolygons(data = polygons_GBRMPA_park_zoning,
-              group = "GBRMPA park zoning forecasts",
+  addPolygons(data = one_month_forecast_polygons_5km,
               layerId = ~ID,
-              color = ~gbrmpa_zone_pal(polygons_GBRMPA_park_zoning$drisk),
+              fillColor = ~pal(one_month_forecast_polygons_5km$drisk),
+              weight = 2,
+              opacity = 1,
+              color = ~pal(one_month_forecast_polygons_5km$drisk),
+              fillOpacity = 0.7,
+              group = "One month forecast",
+              highlightOptions = highlightOptions(color = "black", weight = 3, bringToFront = TRUE)
+  ) %>%
+  addPolygons(data = two_month_forecast_polygons_5km,
+              layerId = ~ID,
+              fillColor = ~pal(two_month_forecast_polygons_5km$drisk),
+              weight = 2,
+              opacity = 1,
+              color = ~pal(two_month_forecast_polygons_5km$drisk),
+              fillOpacity = 0.7,
+              group = "Two month forecast",
+              highlightOptions = highlightOptions(color = "black", weight = 3, bringToFront = TRUE)
+  ) %>%
+  addPolygons(data = polygons_GBRMPA_zoning,
+              group = "GBRMPA nowcast",
+              layerId = ~ID,
+              color = ~pal(polygons_GBRMPA_zoning$drisk),
               highlightOptions = highlightOptions(color = "black", weight = 2, bringToFront = TRUE)
   ) %>%
-  addPolygons(data = polygons_management_zoning,
-              group = "Management area forecasts",
+  addPolygons(data = three_month_forecast_polygons_5km,
               layerId = ~ID,
-              color = ~management_zone_pal(polygons_management_zoning$drisk),
+              fillColor = ~pal(three_month_forecast_polygons_5km$drisk),
+              weight = 2,
+              opacity = 1,
+              color = ~pal(three_month_forecast_polygons_5km$drisk),
+              fillOpacity = 0.7,
+              group = "Three month forecast",
+              highlightOptions = highlightOptions(color = "black", weight = 3, bringToFront = TRUE)
+  ) %>%
+  addPolygons(data = polygons_management_zoning,
+              group = "Management area nowcast",
+              layerId = ~ID,
+              color = ~pal(polygons_management_zoning$drisk),
               highlightOptions = highlightOptions(color = "black", weight = 2, bringToFront = TRUE)
   ) %>%
   addLayersControl(
-    overlayGroups = c("5km forecasts", 
-                      "Management area forecasts", 
-                      "GBRMPA park zoning forecasts"),
+    overlayGroups = c("Nowcast",
+                      "One month forecast", 
+                      "Two month forecast", 
+                      "Three month forecast", 
+                      "Management area nowcast", 
+                      "GBRMPA nowcast"),
     baseGroups = c("Satellite", 
                    "OpenStreetMap"),
     options = layersControlOptions(collapsed = FALSE), # icon versus buttons with text
     position = c("bottomright")) %>%
-  hideGroup(c("Management area forecasts", 
-              "GBRMPA park zoning forecasts")) %>%
-  leaflet::addLegend("topleft", 
-                     pal = pal, 
-                     values = polygons_5km$drisk,
-                     title = "Disease risk",
-                     labFormat = function(type, cuts, p) {  # Here's the trick
-                       paste0(legendLabels) }) 
+  hideGroup(c("One month forecast", 
+              "Two month forecast", 
+              "Three month forecast", 
+              "Management area nowcast", 
+              "GBRMPA nowcast"))
 
-# create map for scenarios page ------------------------------------------------------------
-leaf_scenarios <- leaf_reefs
+# Scenarios maps ---------------------------------------------------------------
+# leaf_scenarios <- leaf_reefs
+scenarios_placeholder_map <- reefs_basemap %>%
+  setView(lng = -150, lat = 0, zoom = 3)
 
-# x <- leaflet() %>%
-#   # addTiles(group = "OpenStreetMap") %>%
-#   addTiles(urlTemplate="http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}", group = "Satellite") %>%
-#   addScaleBar("topright") %>%
-#   setView(lng = -170, lat = 0, zoom = 2)
+# ga gbr
+scenarios_ga_gbr_map <- reefs_basemap %>% 
+  addPolygons(data = ga_gbr_nowcast_polygons_5km,
+              layerId = ~ID,
+              fillColor = ~pal(ga_gbr_nowcast_polygons_5km$drisk),
+              weight = 2,
+              opacity = 1,
+              color = ~pal(ga_gbr_nowcast_polygons_5km$drisk),
+              fillOpacity = 0.7,
+              group = "GA GBR nowcast",
+              highlightOptions = highlightOptions(color = "black", weight = 3, bringToFront = TRUE)
+  ) %>%
+  addPolygons(data = ga_gbr_polygons_GBRMPA_zoning,
+              group = "GA GBRMPA nowcast",
+              layerId = ~ID,
+              color = ~pal(ga_gbr_polygons_GBRMPA_zoning$drisk),
+              highlightOptions = highlightOptions(color = "black", weight = 2, bringToFront = TRUE)
+  ) %>%
+  addPolygons(data = ga_gbr_polygons_management_zoning,
+              group = "GA GBR management area nowcast",
+              layerId = ~ID,
+              color = ~pal(ga_gbr_polygons_management_zoning$drisk),
+              highlightOptions = highlightOptions(color = "black", weight = 2, bringToFront = TRUE)
+  ) %>%
+  addLayersControl(
+    overlayGroups = c("GA GBR nowcast",
+                      "GA GBR management area nowcast", 
+                      "GA GBRMPA nowcast"),
+    baseGroups = c("Satellite", 
+                   "OpenStreetMap"),
+    options = layersControlOptions(collapsed = FALSE), # icon versus buttons with text
+    position = c("bottomright")) %>%
+  hideGroup(c("GA GBR management area nowcast", 
+              "GA GBRMPA nowcast"))
+# ws gbr
+scenarios_ws_gbr_map <- reefs_basemap %>% 
+  addPolygons(data = ws_gbr_nowcast_polygons_5km,
+              layerId = ~ID,
+              fillColor = ~pal(ws_gbr_nowcast_polygons_5km$drisk),
+              weight = 2,
+              opacity = 1,
+              color = ~pal(ws_gbr_nowcast_polygons_5km$drisk),
+              fillOpacity = 0.7,
+              group = "WS GBR nowcast",
+              highlightOptions = highlightOptions(color = "black", weight = 3, bringToFront = TRUE)
+  ) %>%
+  addPolygons(data = ws_gbr_polygons_GBRMPA_zoning,
+              group = "WS GBRMPA nowcast",
+              layerId = ~ID,
+              color = ~pal(ws_gbr_polygons_GBRMPA_zoning$drisk),
+              highlightOptions = highlightOptions(color = "black", weight = 2, bringToFront = TRUE)
+  ) %>%
+  addPolygons(data = ws_gbr_polygons_management_zoning,
+              group = "WS GBR management area nowcast",
+              layerId = ~ID,
+              color = ~pal(ws_gbr_polygons_management_zoning$drisk),
+              highlightOptions = highlightOptions(color = "black", weight = 2, bringToFront = TRUE)
+  ) %>%
+  addLayersControl(
+    overlayGroups = c("WS GBR nowcast",
+                      "WS GBR management area nowcast", 
+                      "WS GBRMPA nowcast"),
+    baseGroups = c("Satellite", 
+                   "OpenStreetMap"),
+    options = layersControlOptions(collapsed = FALSE), # icon versus buttons with text
+    position = c("bottomright")) %>%
+  hideGroup(c("WS GBR management area nowcast", 
+              "WS GBRMPA nowcast"))
 
-# create map of historical disease surveys -------------------------------------------------
+# ga pac
+scenarios_ga_pac_map <- reefs_basemap %>% 
+  addPolygons(data = ga_pac_nowcast_polygons_5km,
+              layerId = ~ID,
+              fillColor = ~pal(ga_pac_nowcast_polygons_5km$drisk),
+              weight = 2,
+              opacity = 1,
+              color = ~pal(ga_pac_nowcast_polygons_5km$drisk),
+              fillOpacity = 0.7,
+              group = "GA Pacific nowcast",
+              highlightOptions = highlightOptions(color = "black", weight = 3, bringToFront = TRUE)
+  ) %>%
+  addPolygons(data = ga_pac_polygons_management_zoning,
+              group = "GA Pacific management area nowcast",
+              layerId = ~ID,
+              color = ~pal(ga_pac_polygons_management_zoning$drisk),
+              highlightOptions = highlightOptions(color = "black", weight = 2, bringToFront = TRUE)
+  ) %>%
+  addLayersControl(
+    overlayGroups = c("GA Pacific nowcast",
+                      "GA Pacific management area nowcast"),
+    baseGroups = c("Satellite", 
+                   "OpenStreetMap"),
+    options = layersControlOptions(collapsed = FALSE), # icon versus buttons with text
+    position = c("bottomright")) %>%
+  hideGroup("GA Pacific management area nowcast")
+
+# ws pac
+scenarios_ws_pac_map <- reefs_basemap %>% 
+  addPolygons(data = ws_pac_nowcast_polygons_5km,
+              layerId = ~ID,
+              fillColor = ~pal(ws_pac_nowcast_polygons_5km$drisk),
+              weight = 2,
+              opacity = 1,
+              color = ~pal(ws_pac_nowcast_polygons_5km$drisk),
+              fillOpacity = 0.7,
+              group = "WS Pacific nowcast",
+              highlightOptions = highlightOptions(color = "black", weight = 3, bringToFront = TRUE)
+  ) %>%
+  addPolygons(data = ws_pac_polygons_management_zoning,
+              group = "WS Pacific management area nowcast",
+              layerId = ~ID,
+              color = ~pal(ws_pac_polygons_management_zoning$drisk),
+              highlightOptions = highlightOptions(color = "black", weight = 2, bringToFront = TRUE)
+  ) %>%
+  addLayersControl(
+    overlayGroups = c("WS Pacific nowcast",
+                      "WS Pacific management area nowcast"),
+    baseGroups = c("Satellite", 
+                   "OpenStreetMap"),
+    options = layersControlOptions(collapsed = FALSE), # icon versus buttons with text
+    position = c("bottomright")) %>%
+  hideGroup("WS Pacific management area nowcast")
+
+# Historical disease surveys map -----------------------------------------------
 historicalMap = leaflet() %>%
   addTiles(urlTemplate = "http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}") %>%
   addCircleMarkers(data = historical_data, 

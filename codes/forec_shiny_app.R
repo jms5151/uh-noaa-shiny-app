@@ -1,7 +1,7 @@
 # Fore-C interactive explorer -----------------------------------------------------
 # load libraries (and install if not already installed) 
 source("./codes/forec_shiny_app_packages.R", local = TRUE)
-# 
+
 # # load data -----------------------------------------------------------------------
 filenames <- list.files("./forec_shiny_app_data/Forecasts/", full.names=TRUE)
 filenames <- c(filenames, list.files("./forec_shiny_app_data/Scenarios/", full.names=TRUE))
@@ -24,12 +24,10 @@ source("./codes/forec_shiny_app_plots.R", local = TRUE)
 source("./codes/forec_shiny_app_info_text_and_settings.R", local = TRUE)
 
 # load user interface
-source("./codes/ui.R", local = TRUE)
-# source("./codes/forec_shiny_app_user_interface.R", local = TRUE)
+source("./codes/forec_shiny_app_user_interface.R", local = TRUE)
 
 # load server
-source("./codes/server.R", local = TRUE)
-# source("./codes/forec_shiny_app_server.R", local = TRUE)
+source("./codes/forec_shiny_app_server.R", local = TRUE)
 
 # run shiny app -------------------------------------------------------------------
 shinyApp(ui, server)

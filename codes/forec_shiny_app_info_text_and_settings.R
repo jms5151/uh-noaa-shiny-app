@@ -1,6 +1,8 @@
 # create text blocks for Fore-C shiny app information buttons and hover text -------------------
-last_update_date <- Sys.time()
-last_update_txt <- paste0('Last update: ', last_update_date, 'EST')
+last_update_date <- ga_forecast[which(ga_forecast$Date == max(ga_forecast$Date[ga_forecast$type == "nowcast"]))[1], "Date"] + 1
+last_update_date <- as.Date(last_update_date[[1]], "%Y-%m-%d")
+
+last_update_txt <- paste0('Last update: ', last_update_date)
 
 landing_page_info_txt <- 'Click on a pixel to explore near-real time coral disease forecasts for a given location'
 
@@ -28,12 +30,13 @@ or white syndromes, are characterized by progressive tissue loss
 across the coral colony with lesions progressing slowly (chronic 
 to subacute or rapidly (acute)."
 
-warning_levels_text <- "Disease on the Great Barrier Reef (GBR) is measured as
-an abundance (total number of diseased colonies), while disease in the 
-U.S. Pacific is measured as prevalence (total number of diseased colonies 
-divided by total number of colonies observed). Abundance pertains to specific 
-morphologies where applicable. Prevalence pertains to specific families."
-
+warning_levels_txt <- "Disease on the Great Barrier Reef (GBR) is measured as
+a density (total number of diseased colonies per 75m<sup>2</sup>), while 
+disease in the U.S. Pacific is measured as prevalence (total number of 
+diseased colonies divided by total number of colonies observed). Abundance 
+pertains to specificmorphologies where applicable. Prevalence pertains to 
+specific families."
+  
 about_models_text <- "Quantile regresson forest models are used to estimate 
 disease risk in this product. Quantile regression forests use tree-based 
 ensemble methods to estimate conditional quantiles. Quantile regression forest 

@@ -1086,8 +1086,8 @@ server <- function(input, output, session) {
 
   # about page ----------------
   output$cdz_images <- renderImage({
-    filename <- "./forec_shiny_app_data/disease_pictures.png"
-    # filename <- "../forec_shiny_app_data/disease_pictures.png"
+    # filename <- "./forec_shiny_app_data/disease_pictures.png"
+    filename <- "../forec_shiny_app_data/disease_pictures.png"
     list(src = filename)
     },
   deleteFile = FALSE

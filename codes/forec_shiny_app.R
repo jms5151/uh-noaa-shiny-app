@@ -7,6 +7,8 @@ filenames <- list.files("../forec_shiny_app_data/Forecasts/", full.names=TRUE)
 filenames <- c(filenames, list.files("../forec_shiny_app_data/Scenarios/", full.names=TRUE))
 filenames <- c(filenames, list.files("../forec_shiny_app_data/Static_data/", full.names=TRUE))
 
+filenames <- filenames[grep(".RData|.Rds", filenames)]
+
 # load files into global environment
 lapply(filenames, load, .GlobalEnv)
 
@@ -15,7 +17,7 @@ warning_table <- read.csv("../forec_shiny_app_data/Static_data/warning_levels_ta
 
 # load functions, maps, plots, user interface and server for shiny app ------------
 # load maps & mapping functions
-source("../codes/forec_shiny_app_maps.R", local = TRUE)
+# source("../codes/forec_shiny_app_maps.R", local = TRUE)
 
 # load plots and plotting functions
 source("../codes/forec_shiny_app_plots.R", local = TRUE)

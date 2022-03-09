@@ -1,19 +1,19 @@
 # # create maps for Fore-C shiny app --------------------------------------------------------
 # 
-# # function to add scale bar that adjusts with zoom ---------------------------------------
-# addScaleBar = function(map,
-#                        position = c('topright', 'bottomright', 'bottomleft', 'topleft'),
-#                        options = scaleBarOptions()) {
-#   
-#   options = c(options, list(position = match.arg(position)))
-#   invokeMethod(map, getMapData(map), 'addScaleBar', options)
-# }
-# 
-# scaleBarOptions = function(maxWidth = 100, metric = TRUE, imperial = TRUE,
-#                            updateWhenIdle = TRUE) {
-#   list(maxWidth=maxWidth, metric=metric, imperial=imperial,
-#        updateWhenIdle=updateWhenIdle)
-# }
+# function to add scale bar that adjusts with zoom ---------------------------------------
+addScaleBar = function(map,
+                       position = c('topright', 'bottomright', 'bottomleft', 'topleft'),
+                       options = scaleBarOptions()) {
+
+  options = c(options, list(position = match.arg(position)))
+  invokeMethod(map, getMapData(map), 'addScaleBar', options)
+}
+
+scaleBarOptions = function(maxWidth = 100, metric = TRUE, imperial = TRUE,
+                           updateWhenIdle = TRUE) {
+  list(maxWidth=maxWidth, metric=metric, imperial=imperial,
+       updateWhenIdle=updateWhenIdle)
+}
 # 
 # # set colors & labels ----------------------------------------------------------
 # bins <- seq(from = 0,
@@ -252,15 +252,15 @@
 #     position = c("bottomright")) %>%
 #   hideGroup("WS Pacific management area nowcast")
 # 
-# # Historical disease surveys map -----------------------------------------------
-# historicalMap = leaflet() %>%
-#   addTiles(urlTemplate = "http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}") %>%
-#   addCircleMarkers(data = historical_data, 
-#                    lat = ~Latitude, 
-#                    lng = ~Longitude, 
-#                    radius = ~sqrt(N), 
-#                    color = ~'white', 
-#                    popup = ~survey_text, 
-#                    clusterOptions = markerClusterOptions()) %>%
-#   addScaleBar() %>%
-#   setView(lng = -180, lat = 16.4502 , zoom = 3)
+# Historical disease surveys map -----------------------------------------------
+historicalMap = leaflet() %>%
+  addTiles(urlTemplate = "http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}") %>%
+  addCircleMarkers(data = historical_data,
+                   lat = ~Latitude,
+                   lng = ~Longitude,
+                   radius = ~sqrt(N),
+                   color = ~'white',
+                   popup = ~survey_text,
+                   clusterOptions = markerClusterOptions()) %>%
+  addScaleBar() %>%
+  setView(lng = -180, lat = 16.4502 , zoom = 3)

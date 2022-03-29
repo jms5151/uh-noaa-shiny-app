@@ -13,7 +13,8 @@ jobs:
 
       # Build the Docker image
       - name: Build container image
-        run: DOCKER_BUILDKIT=1 docker build \
+        run: |
+          DOCKER_BUILDKIT=1 docker build \
           --tag jamiecaldwell/uh-crw:latest \
           --cache-from jamiecaldwell/uh-crw:latest
           --build-arg BUILDKIT_INLINE_CACHE=1 .

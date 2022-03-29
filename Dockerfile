@@ -1,4 +1,4 @@
-FROM rocker/r-ubuntu:20.04
+FROM rocker/r-base:latest
 
 # ~2s
 RUN echo "Updating apt sources." && apt-get -qq update

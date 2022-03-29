@@ -5,7 +5,7 @@ on:
       - main
 
 jobs:
-  test:
+  build:
     runs-on: ubuntu-latest
     steps:
       # Check out GitHub reportiory
@@ -13,15 +13,18 @@ jobs:
 
       # Build the Docker image
       - name: Build container image
-        run: docker build -t repo/image:latest .
+        run: DOCKER_BUILDKIT=1 docker build \
+          --tag jamiecaldwell/uh-crw:latest \
+          --cache-from jamiecaldwell/uh-crw:latest
+          --build-arg BUILDKIT_INLINE_CACHE=1 .
 
       # # Login to DockerHub
       # - name: Login to DockerHub
       #   uses: docker/login-action@v1
       #   with:
-      #     username: myusername
+      #     username: jamiecaldwell
       #     password: ${{ secrets.DOCKER_PASSWORD }}
 
       # # Push the image to DockerHub
       # - name: Push container image
-      #   run: docker push repo/image:latest
+      #   run: docker push jamiecaldwell/uh-crw:latest

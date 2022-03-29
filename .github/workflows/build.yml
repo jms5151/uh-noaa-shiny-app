@@ -1,0 +1,27 @@
+name: Build
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      # Check out GitHub reportiory
+      - uses: actions/checkout@v2
+
+      # Build the Docker image
+      - name: Build container image
+        run: docker build -t repo/image:latest .
+
+      # # Login to DockerHub
+      # - name: Login to DockerHub
+      #   uses: docker/login-action@v1
+      #   with:
+      #     username: myusername
+      #     password: ${{ secrets.DOCKER_PASSWORD }}
+
+      # # Push the image to DockerHub
+      # - name: Push container image
+      #   run: docker push repo/image:latest

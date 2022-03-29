@@ -1,8 +1,11 @@
-FROM openanalytics/r-base
+FROM rocker/r-ubuntu:20.04
 
-# system libraries of general use
-RUN apt-get update && apt-get install -y \
-    sudo \
+# ~2s
+RUN echo "Updating apt sources." && apt-get -qq update
+
+# ~55s
+RUN echo "Installing R package dependencies." && \
+    apt-get -qq install \
     pandoc \
     pandoc-citeproc \
     libcurl4-gnutls-dev \
@@ -17,26 +20,33 @@ RUN apt-get update && apt-get install -y \
     libgdal-dev \
     libproj-dev
 
-# system library dependency for the euler app
-# RUN apt-get update && apt-get install -y \
-#    libmpfr-dev
 
-# basic shiny functionality
-RUN R -e "install.packages(c('shiny', 'shinythemes', 'leaflet', 'flexdashboard', 'tidyverse'), repos='https://cloud.r-project.org/')"
+# Install pak package manager - ~5s
+RUN R -e 'install.packages("pak", repos = "https://r-lib.github.io/p/pak/dev")'
 
-RUN R -e "install.packages(c('shinyWidgets', 'plotly', 'xts', 'shinydashboard', 'shinycssloaders', 'shinyBS'), repos='https://cloud.r-project.org/')"
+# Install R packages - ~550s (~2x faster using pak::pkg_install vs install.packages)
+RUN R -e \
+    'pak::pkg_install(c(\
+    "shiny",\
+    "shinythemes",\
+    "leaflet",\
+    "flexdashboard",\
+    "tidyverse",\
+    "shinyWidgets",\
+    "plotly",\
+    "xts",\
+    "shinydashboard",\
+    "shinycssloaders",\
+    "shinyBS"\
+    ))'
 
-# copy the app to the image
-RUN mkdir /root/uh-noaa-shiny-app
-RUN mkdir /root/uh-noaa-shiny-app/codes
-RUN mkdir /root/uh-noaa-shiny-app/forec_shiny_app_data
-COPY codes /root/uh-noaa-shiny-app/codes
-COPY forec_shiny_app_data /root/uh-noaa-shiny-app/forec_shiny_app_data
-COPY styles.css /root/uh-noaa-shiny-app/styles.css
+WORKDIR /app
 
+COPY codes /app/codes
+COPY forec_shiny_app_data /app/forec_shiny_app_data
+COPY styles.css /app/styles.css
 COPY Rprofile.site /usr/lib/R/etc/
-
 
 EXPOSE 3838
 
-CMD ["R", "-e", "shiny::runApp('/root/uh-noaa-shiny-app/codes/forec_shiny_app.R', host = '0.0.0.0', port = 3838)"]
+CMD ["R", "-e", "shiny::runApp('/app/codes/forec_shiny_app.R', host = '0.0.0.0', port = 3838)"]

@@ -19,13 +19,13 @@ jobs:
           --cache-from jamiecaldwell/uh-crw:latest \
           --build-arg BUILDKIT_INLINE_CACHE=1 .
 
-      # # Login to DockerHub
-      # - name: Login to DockerHub
-      #   uses: docker/login-action@v1
-      #   with:
-      #     username: jamiecaldwell
-      #     password: ${{ secrets.DOCKER_PASSWORD }}
+      # Login to DockerHub
+      - name: Login to DockerHub
+        uses: docker/login-action@v1
+        with:
+          username: jamiecaldwell
+          password: ${{ secrets.DOCKER_PASSWORD }}
 
-      # # Push the image to DockerHub
-      # - name: Push container image
-      #   run: docker push jamiecaldwell/uh-crw:latest
+      # Push the image to DockerHub
+      - name: Push container image
+        run: docker push jamiecaldwell/uh-crw:latest

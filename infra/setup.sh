@@ -8,6 +8,7 @@ echo -e "\n>>> Setting up $HOST"
 echo -e "\n>>> Uploading infra files to $HOST"
 ssh root@$HOST mkdir -p /srv/
 ssh root@$HOST mkdir -p /srv/deploy/
+ssh root@$HOST mkdir -p /srv/socks
 ssh root@$HOST rm -rf /srv/infra/
 scp -r infra/ root@$HOST:/srv/infra/
 

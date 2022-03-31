@@ -1,0 +1,1 @@
+infra/id_rsa*   filter=crypt diff=crypt merge=crypt

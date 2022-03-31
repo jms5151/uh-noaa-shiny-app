@@ -24,3 +24,13 @@ docker run -p 3838:3838 jamiecaldwell/uh-crw:latest
 ```
 
 Visit [http://localhost:3838](http://localhost:3838) to view the dashboard.
+
+## Secrets
+
+Secrets are encrypted using [transcrypt](https://github.com/elasticdog/transcrypt). You can see encryoted files with `transcrypt --list`.
+
+To intialise the repository on cloning run
+
+```bash
+transcrypt -c aes-256-cbc -p $TRANSCRYPT_PASSWORD
+```

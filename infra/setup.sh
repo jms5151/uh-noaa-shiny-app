@@ -20,4 +20,7 @@ ssh root@$HOST /srv/infra/setup-nginx.sh
 echo -e "\n>>> Setting up Docker on $HOST"
 ssh root@$HOST /srv/infra/setup-docker.sh
 
+echo -e "\n>>> Hardening server on $HOST"
+ssh root@$HOST /srv/infra/setup-secure.sh
+
 echo -e "\n>>> Finished setting up $HOST"

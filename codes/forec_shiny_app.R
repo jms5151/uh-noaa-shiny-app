@@ -32,4 +32,5 @@ source("./forec_shiny_app_user_interface.R", local = TRUE)
 source("./forec_shiny_app_server.R", local = TRUE)
 
 # run shiny app -------------------------------------------------------------------
+shinyOptions(cache = cachem::cache_mem(max_size = 500e6))
 shinyApp(ui, server)

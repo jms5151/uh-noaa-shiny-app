@@ -4,7 +4,7 @@ about_page <- function(input, output) {
     list(src = filename)
     },
   deleteFile = FALSE
-  ) %>% bindCache("disease_pictures")
+  )
 
   output$warning_levels_table <- renderDataTable(
     warning_table,
@@ -13,7 +13,7 @@ about_page <- function(input, output) {
       searching = FALSE,
       info = FALSE
     )
-  ) %>% bindCache("warning_table")
+  )
   
   output$warning_levels_text <- renderText({
     paste0(

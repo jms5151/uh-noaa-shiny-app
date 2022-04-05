@@ -1,14 +1,14 @@
 server <- function(input, output, session) {
 
   # Nowcasts/forecasts outputs -------------------------------
-
   output$gauge_plots <- renderPlotly({
     gaugePlots
   })
 
+  # Cache reef map to avoid re-rendering.
   output$map1 <- renderLeaflet({
     leaf_reefs
-  })
+  }) %>% bindCache("reef-map")
 
   #create empty vector to hold all click ids
   selected <- reactiveValues(
@@ -120,9 +120,6 @@ server <- function(input, output, session) {
       }
     })
 
-  output$gauge_plots <- renderPlotly({
-    gaugePlots
-  })
 
   output$last_update <- renderText({
     last_update_txt
@@ -130,7 +127,6 @@ server <- function(input, output, session) {
 
 
   # Investigating scenarios outputs -------------------------------
-
   output$scenarios_barplot <- renderPlotly({
     scenarios_placeholder_plot
   })
@@ -1129,5 +1125,4 @@ server <- function(input, output, session) {
   output$cite4 <- renderUI({
     Caldwelletal2020_citation
   })
-
 }

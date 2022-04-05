@@ -33,4 +33,3 @@ source("../codes/forec_shiny_app_server.R", local = TRUE)
 
 # run shiny app -------------------------------------------------------------------
 shinyApp(ui, server)
-

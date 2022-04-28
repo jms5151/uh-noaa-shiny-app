@@ -39,7 +39,7 @@ ssh -o StrictHostKeyChecking=no -i infra/id_rsa root@$HOST /bin/bash << EOF
     set -e
     cd $DEPLOY_DIR
     echo "$DOCKER_PASSWORD" | docker login --username $DOCKER_ID --password-stdin
-    rm /srv/socks/shiny.sock
+    rm -f /srv/socks/shiny.sock
     docker stack deploy --with-registry-auth --compose-file docker-compose.prod.yml $DOCKER_STACK_NAME
 EOF
 

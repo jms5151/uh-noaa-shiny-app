@@ -37,7 +37,7 @@ ui <- navbarPage(
         width = 3,
         style = "border-left: 2px double #00172D",
         h4(
-          "Risk forecast",
+          "Risk predictions",
           align = "center",
           style = "background-color: #00172D;
           color: white;

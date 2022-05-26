@@ -110,7 +110,7 @@ diseaseRisk_plotly <- function(df, titleName){
            , annotations = list(
              x = c(df$Date[7], df$Date[16])
              , y = c(yMax, yMax)
-             , text = c("Near-real time\npredictions", "Forecasts")
+             , text = c("Nowcasts", "Forecasts")
              , showarrow = c(FALSE, FALSE)
              , xanchor = c("right", 'right')
              )

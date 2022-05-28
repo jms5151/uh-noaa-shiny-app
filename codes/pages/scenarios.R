@@ -80,7 +80,7 @@ handle_map_click <- function(input, output) {
   if(input$management_map_shape_click$group == "GA Pacific nowcast")
   {
     
-    baseVals <- reactive({
+  baseVals <- reactive({
       subset(
         ga_pac_basevals_ID,
         ID == input$management_map_shape_click$id
@@ -102,14 +102,7 @@ handle_map_click <- function(input, output) {
       "  %"
     )
   })
-  
-  output$herb_fish_value_ga_pac <- renderText({
-    paste0(
-      "Location-specific density, ",
-      round(baseVals()$H_abund, 2),
-      " fish/m<sup>2<sup>"
-    )
-  })
+
   
   output$dev_value_ga_pac <- renderText({
     paste0(
@@ -136,14 +129,6 @@ handle_map_click <- function(input, output) {
     )
   })
   
-  fish_ga_pac <- reactive({
-    subset(
-      ga_pac_scenarios,
-      ID == input$management_map_shape_click$id &
-        Response == 'Fish' &
-        Response_level == input$herb_fish_slider_ga_pac
-    )
-  })
   
   development_ga_pac <- reactive({
     subset(
@@ -158,7 +143,6 @@ handle_map_click <- function(input, output) {
     rbind(
       size_ga_pac(),
       cover_ga_pac(),
-      fish_ga_pac(),
       development_ga_pac()
     )
   })
@@ -199,19 +183,21 @@ handle_map_click <- function(input, output) {
         )
       })
 
-      output$parrotfish_value_ws_pac <- renderText({
-        paste0(
-          "Location-specific density, ",
-          round(baseVals()$Parrotfish_abund),
-          " fish/m<sup>2<sup>"
-        )
-      })
 
       output$herb_fish_value_ws_pac <- renderText({
         paste0(
           "Location-specific density, ",
           round(baseVals()$H_abund, 2),
           "/m<sup>2<sup>"
+        )
+      })
+
+      
+      output$corcov_value_ws_pac <- renderText({
+        paste0(
+          "Location-specific cover, ",
+          round(baseVals()$mean_cover),
+          "  %"
         )
       })
 
@@ -233,12 +219,13 @@ handle_map_click <- function(input, output) {
         )
       })
 
-      parrotfish_ws_pac <- reactive({
+      
+      cover_ws_pac <- reactive({
         subset(
           ws_pac_scenarios,
           ID == input$management_map_shape_click$id &
-            Response == 'Parrotfish' &
-            Response_level == input$parrotfish_slider_ws_pac
+            Response == 'Coral cover' &
+            Response_level == input$coral_cover_slider_ws_pac
         )
       })
 
@@ -255,7 +242,7 @@ handle_map_click <- function(input, output) {
         rbind(
           size_ws_pac(),
           turbidity_ws_pac(),
-          parrotfish_ws_pac(),
+          cover_ws_pac(),
           herb_fish_ws_pac()
         )
       })
@@ -291,16 +278,8 @@ handle_map_click <- function(input, output) {
     output$kd_value_ga_gbr <- renderText({
       paste0(
         "Location-specific turbidity, ",
-        round(baseVals()$Three_Week_Kd_Variability, 2),
+        round(baseVals()$Long_Term_Kd_Variability, 2),
         "  m<sup>-1</sup>"
-      )
-    })
-    
-    output$corcov_value_ga_gbr <- renderText({
-      paste0(
-        "Location-specific cover, ",
-        round(baseVals()$Coral_cover),
-        "  %"
       )
     })
     
@@ -334,8 +313,7 @@ handle_map_click <- function(input, output) {
     df_ga_gbr <- reactive({
       rbind(
         fish_ga_gbr(),
-        turbidity_ga_gbr(),
-        cover_ga_gbr()
+        turbidity_ga_gbr()
       )
     })
     
@@ -456,14 +434,6 @@ handle_map_click <- function(input, output) {
       )
     })
     
-    output$herb_fish_value_ga_pac <- renderText({
-      paste0(
-        "Location-specific density, ",
-        round(baseVals()$H_abund, 2),
-        " fish/m<sup>2<sup>"
-      )
-    })
-    
     output$dev_value_ga_pac <- renderText({
       paste0(
         "Location-specific development, ",
@@ -488,16 +458,7 @@ handle_map_click <- function(input, output) {
           Response_level == input$coral_cover_slider_ga_pac
       )
     })
-    
-    fish_ga_pac <- reactive({
-      subset(
-        ga_pac_scenarios_aggregated_to_management_zones,
-        ID == input$management_map_shape_click$id &
-          Response == 'Fish' &
-          Response_level == input$herb_fish_slider_ga_pac
-      )
-    })
-    
+
     development_ga_pac <- reactive({
       subset(
         ga_pac_scenarios_aggregated_to_management_zones,
@@ -511,7 +472,6 @@ handle_map_click <- function(input, output) {
       rbind(
         size_ga_pac(),
         cover_ga_pac(),
-        fish_ga_pac(),
         development_ga_pac()
       )
     })
@@ -553,11 +513,11 @@ handle_map_click <- function(input, output) {
         )
       })
       
-      output$parrotfish_value_ws_pac <- renderText({
+      output$corcov_value_ws_pac <- renderText({
         paste0(
-          "Location-specific density, ",
-          round(baseVals()$Parrotfish_abund),
-          " fish/m<sup>2<sup>"
+          "Location-specific cover, ",
+          round(baseVals()$mean_cover),
+          "  %"
         )
       })
       
@@ -587,12 +547,13 @@ handle_map_click <- function(input, output) {
         )
       })
       
-      parrotfish_ws_pac <- reactive({
+      
+      cover_ws_pac <- reactive({
         subset(
           ws_pac_scenarios_aggregated_to_management_zones,
           ID == input$management_map_shape_click$id &
-            Response == 'Parrotfish' &
-            Response_level == input$parrotfish_slider_ws_pac
+            Response == 'Coral cover' &
+            Response_level == input$coral_cover_slider_ws_pac
         )
       })
       
@@ -609,7 +570,7 @@ handle_map_click <- function(input, output) {
         rbind(
           size_ws_pac(),
           turbidity_ws_pac(),
-          parrotfish_ws_pac(),
+          cover_ws_pac(),
           herb_fish_ws_pac()
         )
       })
@@ -645,16 +606,8 @@ handle_map_click <- function(input, output) {
       output$kd_value_ga_gbr <- renderText({
         paste0(
           "Location-specific turbidity, ",
-          round(baseVals()$Three_Week_Kd_Variability, 2),
+          round(baseVals()$Long_Term_Kd_Variability, 2),
           "  m<sup>-1</sup>"
-        )
-      })
-      
-      output$corcov_value_ga_gbr <- renderText({
-        paste0(
-          "Location-specific cover, ",
-          round(baseVals()$Coral_cover),
-          "  %"
         )
       })
       
@@ -676,20 +629,10 @@ handle_map_click <- function(input, output) {
         )
       })
       
-      cover_ga_gbr <- reactive({
-        subset(
-          ga_gbr_scenarios_aggregated_to_management_zones,
-          ID == input$management_map_shape_click$id &
-            Response == 'Coral cover' &
-            Response_level == input$coral_cover_slider_ga_gbr
-        )
-      })
-      
       df_ga_gbr <- reactive({
         rbind(
           fish_ga_gbr(),
-          turbidity_ga_gbr(),
-          cover_ga_gbr()
+          turbidity_ga_gbr()
         )
       })
       
@@ -802,16 +745,8 @@ handle_map_click <- function(input, output) {
     output$kd_value_ga_gbr <- renderText({
       paste0(
         "Location-specific turbidity, ",
-        round(baseVals()$Three_Week_Kd_Variability, 2),
+        round(baseVals()$Long_Term_Kd_Variability, 2),
         "  m<sup>-1</sup>"
-      )
-    })
-    
-    output$corcov_value_ga_gbr <- renderText({
-      paste0(
-        "Location-specific cover, ",
-        round(baseVals()$Coral_cover),
-        "  %"
       )
     })
     
@@ -833,20 +768,10 @@ handle_map_click <- function(input, output) {
       )
     })
     
-    cover_ga_gbr <- reactive({
-      subset(
-        ga_gbr_scenarios_aggregated_to_gbrmpa_park_zones,
-        ID == input$management_map_shape_click$id &
-          Response == 'Coral cover' &
-          Response_level == input$coral_cover_slider_ga_gbr
-      )
-    })
-    
     df_ga_gbr <- reactive({
       rbind(
         fish_ga_gbr(),
-        turbidity_ga_gbr(),
-        cover_ga_gbr()
+        turbidity_ga_gbr()
       )
     })
     

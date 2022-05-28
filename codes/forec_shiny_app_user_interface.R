@@ -203,7 +203,7 @@ ui <- navbarPage(
               h5(
                 strong(
                   tags$em(
-                    "Porites"
+                    "Poritidae"
                     ),
                   "coral cover"
                 )
@@ -223,32 +223,6 @@ ui <- navbarPage(
             value = 15,
             width = "275px"
           ),
-
-          sliderInput(
-            "herb_fish_slider_ga_pac",
-            label = span(
-              h5(
-                strong(
-                  "Herbivorous fish density (fish/m",
-                  tags$sup("2"),
-                  ")"
-                  )
-                ),
-              tags$i(
-                h6(
-                  htmlOutput(
-                    "herb_fish_value_ga_pac"
-                    )
-                  )
-                )
-              ),
-            min = 0.1,
-            max = 0.7,
-            step = 0.1,
-            # post = " fish/m<sup>2</sup>",
-            value = 0.3,
-            width = "275px"
-            ),
 
           sliderInput(
             "dev_slider_ga_pac",
@@ -319,13 +293,6 @@ ui <- navbarPage(
             width = "275px"
           ),
 
-          bsTooltip(
-            id = "coral_size_slider_ws_pac",
-            title = "Median colony size of corals in the family Acroporidae",
-            placement = "right",
-            trigger = "hover"
-          ),
-
           sliderInput(
             "turbidity_slider_ws_pac", # long term kd median
             label = span(
@@ -373,32 +340,6 @@ ui <- navbarPage(
           ),
 
           sliderInput(
-            "parrotfish_slider_ws_pac",
-            label = span(
-              h5(
-                strong(
-                  "Parrotfish density (fish/m",
-                  tags$sup("2"),
-                  ")"
-                  )
-                ),
-              tags$i(
-                h6(
-                  htmlOutput(
-                    "parrotfish_value_ws_pac"
-                    )
-                  )
-                )
-              ),
-            min = 0.00,
-            max = 0.06,
-            step = 0.01,
-            # post = " fish/m<sup>2</sup>",
-            value = 0.02,
-            width = "275px"
-            ),
-
-          sliderInput(
             "herb_fish_slider_ws_pac",
             label = span(
               h5(
@@ -422,44 +363,49 @@ ui <- navbarPage(
             # post = "",
             value = 0.4,
             width = "275px"
+            ),
+
+        bsTooltip(
+          id = "coral_size_slider_ws_pac",
+          title = "Median colony size of corals in the family Acroporidae",
+          placement = "right",
+          trigger = "hover"
+        ),
+        
+        
+        sliderInput(
+          "coral_cover_slider_ws_pac",
+          label = span(
+            h5(
+              strong(
+                tags$em(
+                  "Acroporidae"
+                ),
+                "coral cover"
+              )
+            ),
+            tags$i(
+              h6(
+                textOutput(
+                  "corcov_value_ws_pac"
+                )
+              )
             )
           ),
+          min = 5,
+          max = 65,
+          step = 10,
+          post = " %",
+          value = 15,
+          width = "275px"
+          )
+        ),
+        
 
         # Scenarios - GA, GBR -------------------
         conditionalPanel(
           condition = "input.Region == 'Great Barrier Reef, Australia' &
           input.Disease == 'Growth anomalies'",
-
-          sliderInput(
-            "fish_slider_ga_gbr",
-            label = span(
-              h5(
-                strong(
-                  "Fish abundance"
-                )
-              ),
-              tags$i(
-                h6(
-                  htmlOutput(
-                    "fish_value_ga_gbr"
-                  )
-                )
-              )
-            ),
-            min = 400,
-            max = 800,
-            step = 50,
-            # post = "",
-            value = 600,
-            width = "275px"
-          ),
-
-          bsTooltip(
-            id = "fish_slider_ga_gbr",
-            title = "Fish count within ~2km",
-            placement = "right",
-            trigger = "hover"
-          ),
 
           sliderInput(
             "turbidity_slider_ga_gbr", # three week kd variability

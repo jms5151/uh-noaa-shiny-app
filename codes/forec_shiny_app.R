@@ -17,7 +17,7 @@ warning_table <- read.csv("../forec_shiny_app_data/Static_data/warning_levels_ta
 
 # load functions, maps, plots, user interface and server for shiny app ------------
 # load maps & mapping functions
-source("./forec_shiny_app_maps.R", local = TRUE)
+# source("./forec_shiny_app_maps.R", local = TRUE)
 
 # load plots and plotting functions
 source("./forec_shiny_app_plots.R", local = TRUE)

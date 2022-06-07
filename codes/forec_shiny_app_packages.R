@@ -7,6 +7,6 @@ if (!require("shinycssloaders")) install.packages("shinycssloaders"); library(sh
 if (!require("shinydashboard")) install.packages("shinydashboard"); library(plotly)
 if (!require("shinythemes")) install.packages("shinythemes"); library(shinythemes)
 if (!require("shinyWidgets")) install.packages("shinyWidgets"); library(shinyWidgets)
-if (!require("sf")) install.packages("sf"); library(shinyWidgets)
+if (!require("sf")) install.packages("sf"); library(sf)
 if (!require("tidyverse")) install.packages("tidyverse"); library(tidyverse)
 if (!require("xts")) install.packages("xts"); library(xts)

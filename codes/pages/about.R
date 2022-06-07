@@ -7,7 +7,7 @@ about_page <- function(input, output) {
   )
 
   output$warning_levels_table <- renderDataTable(
-    warning_table,
+    warning_levels_table,
     options(
       paging = FALSE,
       searching = FALSE,

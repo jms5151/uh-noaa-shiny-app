@@ -62,12 +62,12 @@ handle_map_shape_click <- function(input, output) {
       # Management area polygons
       ga_management_forecasts <- subset(
           ga_nowcast_aggregated_to_management_zones,
-          PolygonID == input$map1_shape_click$id
+          ID == input$map1_shape_click$id # PolygonID
       )
 
       ws_management_forecasts  <- subset(
           ws_nowcast_aggregated_to_management_zones,
-          PolygonID == input$map1_shape_click$id
+          ID == input$map1_shape_click$id # PolygonID
       )
 
       output$plotlyGA <- renderPlotly({
@@ -87,12 +87,12 @@ handle_map_shape_click <- function(input, output) {
       # GBRMPA polygons
       ga_gbrmpa_forecast <- subset(
           ga_gbr_nowcast_aggregated_to_gbrmpa_park_zones,
-          PolygonID == input$map1_shape_click$id
+          ID == input$map1_shape_click$id # PolygonID
           )
 
       ws_gbrmpa_forecast <- subset(
           ws_gbr_nowcast_aggregated_to_gbrmpa_park_zones,
-          PolygonID == input$map1_shape_click$id
+          ID == input$map1_shape_click$id # PolygonID
       )
 
       output$plotlyGA <- renderPlotly({

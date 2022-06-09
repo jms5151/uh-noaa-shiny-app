@@ -20,6 +20,9 @@ for(i in 1:length(filenames)){
     load(filenames[i])
   } else {
     x <- st_read(filenames[i])
+    x <- st_simplify(nowcast_polygons_5km)
+    names(st_geometry(x)) = NULL
+    
   }
   
   if(length(grep('Date', colnames(x))) == 1){

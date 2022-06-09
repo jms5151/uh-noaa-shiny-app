@@ -37,8 +37,9 @@ RUN R -e \
     "xts",\
     "shinydashboard",\
     "shinycssloaders",\
-    "shinyBS"\
-	"sf"\
+    "shinyBS",\
+	"sf",\
+	"rmapshaper"\
     ))'
 
 WORKDIR /app

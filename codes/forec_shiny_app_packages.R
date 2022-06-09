@@ -1,6 +1,7 @@
 if (!require("flexdashboard")) install.packages("flexdashboard"); library(flexdashboard)
 if (!require("leaflet")) install.packages("leaflet"); library(leaflet)
 if (!require("plotly")) install.packages("plotly"); library(plotly)
+if (!require("rmapshaper")) install.packages("rmapshaper"); library(plotly)
 if (!require("shiny")) install.packages("shiny"); library(shiny)
 if (!require("shinyBS")) install.packages("shinyBS"); library(shinyBS) # for hover text
 if (!require("shinycssloaders")) install.packages("shinycssloaders"); library(shinycssloaders)

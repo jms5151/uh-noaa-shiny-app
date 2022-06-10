@@ -18,7 +18,8 @@ RUN echo "Installing R package dependencies." && \
     gdal-bin \
     proj-bin \
     libgdal-dev \
-    libproj-dev
+    libproj-dev \
+    libudunits2-dev
 
 
 # Install pak package manager - ~5s

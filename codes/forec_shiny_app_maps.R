@@ -250,21 +250,3 @@ scenarios_ws_pac_map <- reefs_basemap %>%
     options = layersControlOptions(collapsed = FALSE), # icon versus buttons with text
     position = c("bottomright")) %>%
   hideGroup("WS Pacific management area nowcast")
-
-# remove individual shapefiles to free up space
-rm(nowcast_polygons_5km)
-rm(one_month_forecast_polygons_5km)
-rm(two_month_forecast_polygons_5km)
-rm(three_month_forecast_polygons_5km)
-rm(polygons_GBRMPA_zoning)
-rm(polygons_management_zoning)
-rm(ga_gbr_nowcast_polygons_5km)
-rm(ga_gbr_polygons_GBRMPA_zoning)
-rm(ga_gbr_polygons_management_zoning)
-rm(ws_gbr_nowcast_polygons_5km)
-rm(ws_gbr_polygons_GBRMPA_zoning)
-rm(ws_gbr_polygons_management_zoning)
-rm(ga_pac_nowcast_polygons_5km)
-rm(ga_pac_polygons_management_zoning)
-rm(ws_pac_nowcast_polygons_5km)
-rm(ws_pac_polygons_management_zoning)

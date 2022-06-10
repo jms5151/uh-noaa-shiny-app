@@ -12,6 +12,31 @@ filenames <- filenames[grep(".csv|.shp|historicalMap|placeholder", filenames)]
 
 # load files into global environment
 # lapply(filenames, load, .GlobalEnv)
+# this is faster without update_shpfile function, much slower with the function
+# st <- Sys.time()
+# shp_filenames <- filenames[grep(".shp", filenames)]
+# rds_filenames <- filenames[grep("historicalMap|placeholder", filenames)]
+# csv_filenames <- filenames[grep(".csv", filenames)]
+# x <- lapply(shp_filenames, st_read)
+# update_shpfile <- function(df){
+#   df <- st_simplify(df)
+#   names(st_geometry(df)) = NULL
+# }
+# x2 <- lapply(x, function(x) update_shpfile(df = x))
+# lapply(rds_filenames, load, .GlobalEnv)
+# y <- lapply(csv_filenames, read.csv)
+# newname <- gsub('.*Forecasts|.*Scenarios|.*Static_data|.csv|.shp', '', csv_filenames)
+# newname <- gsub('/', '', newname, fixed = TRUE)
+# names(y) <- newname
+# fix_date_fun <- function(df){
+#   if(length(grep('Date', colnames(df))) == 1){
+#     df$Date <- as.Date(df$Date, '%Y-%m-%d')
+#   }
+#   return(df)
+# }
+# y2 <- lapply(y, function(x) fix_date_fun(df = x)) 
+# et <- Sys.time()
+# et-st
 
 for(i in 1:length(filenames)){
   if(length(grep('.csv', filenames[i])) == 1){
@@ -20,7 +45,7 @@ for(i in 1:length(filenames)){
     load(filenames[i])
   } else {
     x <- st_read(filenames[i])
-    x <- st_simplify(nowcast_polygons_5km)
+    x <- st_simplify(x)
     names(st_geometry(x)) = NULL
     
   }

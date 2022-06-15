@@ -13,11 +13,13 @@ filenames <- filenames[grep(".csv|.shp|historicalMap|placeholder", filenames)]
 # load files into global environment
 # lapply(filenames, load, .GlobalEnv)
 # this is faster without update_shpfile function, much slower with the function
+# st_simplify might not be helpful, may want to use rasters instead
 # st <- Sys.time()
 # shp_filenames <- filenames[grep(".shp", filenames)]
 # rds_filenames <- filenames[grep("historicalMap|placeholder", filenames)]
 # csv_filenames <- filenames[grep(".csv", filenames)]
 # x <- lapply(shp_filenames, st_read)
+# 
 # update_shpfile <- function(df){
 #   df <- st_simplify(df)
 #   names(st_geometry(df)) = NULL
@@ -34,7 +36,7 @@ filenames <- filenames[grep(".csv|.shp|historicalMap|placeholder", filenames)]
 #   }
 #   return(df)
 # }
-# y2 <- lapply(y, function(x) fix_date_fun(df = x)) 
+# y2 <- lapply(y, function(x) fix_date_fun(df = x))
 # et <- Sys.time()
 # et-st
 
@@ -45,8 +47,12 @@ for(i in 1:length(filenames)){
     load(filenames[i])
   } else {
     x <- st_read(filenames[i])
-    x <- st_simplify(x)
-    names(st_geometry(x)) = NULL
+    # do this
+    # x <- st_simplify(x)
+    # names(st_geometry(x)) = NULL
+    # or this to turn into SpatialPolygonsDataFrame, which is slower to load but
+    # might be faster with leaflet?
+    # x <- as(x, 'Spatial')
     
   }
   

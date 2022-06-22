@@ -251,6 +251,19 @@ scenarios_ws_pac_map <- reefs_basemap %>%
     position = c("bottomright")) %>%
   hideGroup("WS Pacific management area nowcast")
 
+# Historical disease surveys map -----------------------------------------------
+historicalMap = leaflet() %>%
+  addTiles(urlTemplate = "http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}") %>%
+  addCircleMarkers(data = historical_data,
+                   lat = ~Latitude,
+                   lng = ~Longitude,
+                   radius = ~sqrt(N),
+                   color = ~'white',
+                   popup = ~survey_text,
+                   clusterOptions = markerClusterOptions()) %>%
+  addScaleBar() %>%
+  setView(lng = -180, lat = 16.4502 , zoom = 3)
+
 # remove individual shapefiles to free up space
 rm(nowcast_polygons_5km)
 rm(one_month_forecast_polygons_5km)

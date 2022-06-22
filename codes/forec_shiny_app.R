@@ -8,7 +8,7 @@ filenames <- c(filenames, list.files("../forec_shiny_app_data/Scenarios/", full.
 filenames <- c(filenames, list.files("../forec_shiny_app_data/Static_data/", full.names=TRUE))
 
 # filenames <- filenames[grep(".RData|.Rds", filenames)]
-filenames <- filenames[grep(".csv|.shp|historicalMap|placeholder", filenames)]
+filenames <- filenames[grep(".csv|.shp|historical|placeholder", filenames)]
 
 # load files into global environment
 # lapply(filenames, load, .GlobalEnv)
@@ -43,7 +43,7 @@ filenames <- filenames[grep(".csv|.shp|historicalMap|placeholder", filenames)]
 for(i in 1:length(filenames)){
   if(length(grep('.csv', filenames[i])) == 1){
     x <- read.csv(filenames[i], check.names = FALSE)
-  } else if(length(grep('.Rds', filenames[i])) == 1){
+  } else if(length(grep('.Rds|.RData', filenames[i])) == 1){
     load(filenames[i])
   } else {
     x <- st_read(filenames[i])

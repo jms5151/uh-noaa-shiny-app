@@ -201,7 +201,14 @@ ui <- navbarPage(
             value = 15,
             width = "275px"
             ),
-
+          
+          bsTooltip(
+            id = "coral_size_slider_ga_pac",
+            title = "Median colony size of corals in the family Poritidae.",
+            placement = "right",
+            trigger = "hover"
+          ),
+          
           sliderInput(
             "dev_slider_ga_pac",
             label = span(
@@ -240,6 +247,13 @@ ui <- navbarPage(
             value = 0.3,
             width = "275px"
             ),
+          
+          bsTooltip(
+            id = "dev_slider_ga_pac",
+            title = "Proxy of coastal development based on artifical light.",
+            placement = "right",
+            trigger = "hover"
+          ),
           
           sliderInput(
             "herb_fish_slider_ga_pac",
@@ -307,7 +321,7 @@ ui <- navbarPage(
           ),
           
           bsTooltip(
-            id = "turbidity_slider_ws_pac",
+            id = "turbidity_slider_ga_pac",
             title = turbidity_hover_txt,
             placement = "right",
             trigger = "hover"
@@ -345,7 +359,7 @@ ui <- navbarPage(
           
           bsTooltip(
             id = "coral_size_slider_ws_pac",
-            title = "Median colony size of corals in the family Acroporidae",
+            title = "Median colony size of corals in the family Acroporidae.",
             placement = "right",
             trigger = "hover"
           ),
@@ -508,7 +522,7 @@ ui <- navbarPage(
           
           bsTooltip(
             id = "fish_slider_ga_gbr",
-            title = "Fish count within ~2km",
+            title = "Fish count within ~2km.",
             placement = "right",
             trigger = "hover"
           ),
@@ -615,7 +629,7 @@ ui <- navbarPage(
 
           bsTooltip(
             id = "coral_cover_slider_ws_gbr",
-            title = "Percent of live coral cover with plating and table morphologies",
+            title = "Percent of live coral cover with plating and table morphologies.",
             placement = "right",
             trigger = "hover"
           ),
@@ -646,7 +660,7 @@ ui <- navbarPage(
 
           bsTooltip(
             id = "fish_slider_ws_gbr",
-            title = "Fish count within ~2km",
+            title = "Fish count within ~2km.",
             placement = "right",
             trigger = "hover"
           ),
@@ -691,7 +705,7 @@ ui <- navbarPage(
             ),
 
           bsTooltip(
-            id = "turbidity_slider_ga_gbr",
+            id = "turbidity_slider_ws_gbr",
             title = turbidity_hover_txt,
             placement = "right",
             trigger = "hover"

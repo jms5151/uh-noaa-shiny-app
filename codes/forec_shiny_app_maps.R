@@ -257,8 +257,8 @@ historicalMap = leaflet() %>%
   addCircleMarkers(data = historical_data,
                    lat = ~Latitude,
                    lng = ~Longitude,
-                   radius = ~sqrt(N),
-                   color = ~'white',
+                   radius = ~9, #sqrt(N)
+                   color = ~'yellow',
                    popup = ~survey_text,
                    clusterOptions = markerClusterOptions()) %>%
   addScaleBar() %>%

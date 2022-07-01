@@ -93,13 +93,38 @@ ui <- navbarPage(
         )
     ),
     shiny::hr(),
+    h5(
+      forecast_page_explainer_txt
+    ),
     textOutput(
       "last_update"
+      ),
+    imageOutput(
+      "logo_images"
       )
     ),
   # Management scenarios page --------------------
   tabPanel(
     "Investigating scenarios",
+    
+    fluidRow(
+      column(
+        width = 1
+      ),
+      
+      column(
+        width = 10,
+        h4(
+          strong(
+            scenarios_page_explainer_txt
+            , style = "color: #009999;"
+            )
+          )
+        )
+      ),
+    
+    br(),
+
     fluidRow(
       column(
         width = 1
@@ -107,11 +132,18 @@ ui <- navbarPage(
 
       column(
         width = 3,
-        style = "height: 800px;
+        style = "height: 1050px;
         border: 2px double #00172D;
         padding-top: 15px;
         padding-left: 20px;
         padding-bottom: 10px;", # background-color: lightgrey;
+        
+        h4(
+          strong(
+            scenarios_step_1_txt
+            , style = "color: #009999;"
+          )
+        ),
 
         selectInput(
           inputId = "Region",
@@ -131,8 +163,15 @@ ui <- navbarPage(
             "White syndromes"
           )
         ),
+        
+        h4(
+          strong(
+            scenarios_step_3_txt
+            , style = "color: #009999;"
+          )
+        ),
 
-        setSliderColor(c(rep("#003152", 14)), c(1:14)),
+        setSliderColor(c(rep("#003152", 15)), c(1:15)),
 
         # Scenarios - GA, Pacific -------------------
         conditionalPanel(
@@ -239,7 +278,7 @@ ui <- navbarPage(
               tags$i(
                 h6(
                   htmlOutput(
-                    "kd_value_ga_pac"
+                    "turbidity_value_ga_pac"
                   )
                 )
               ),
@@ -662,11 +701,22 @@ ui <- navbarPage(
 
       column(
         width = 7,
-        style = "height: 800px;
+        style = "height: 1050px;
         border-top: 2px double #00172D;
         border-right: 2px double #00172D;
         border-bottom: 2px double #00172D;
-        padding: 25px;",
+        padding-top: 15px;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-bottom: 25px;",
+
+        h4(
+          strong(
+            scenarios_step_2_txt
+            , style = "color: #009999;"
+          )
+        ),
+        
         leafletOutput(
           "management_map",
           height = "325px"
@@ -674,7 +724,16 @@ ui <- navbarPage(
           withSpinner(
             color = spinColor
             ),
+        
         shiny::hr(),
+        
+        h4(
+          strong(
+            scenarios_step_4_txt
+            , style = "color: #009999;"
+          )
+        ),
+        
         plotlyOutput(
           "scenarios_barplot",
           height = "350px"
@@ -689,6 +748,19 @@ ui <- navbarPage(
         )
 
       ),
+    
+    fluidRow(
+      column(
+        width = 1
+      ),
+      
+      column(
+        width = 10,
+        h5(
+            scenarios_page_explainer_txt_2
+        )
+      )
+    ),
 
     fluidRow(
       shiny::hr()

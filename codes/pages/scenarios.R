@@ -1,5 +1,6 @@
 # Investigating scenarios outputs
 scenarios_page <- function(input, output) {
+  
   output$scenarios_barplot <- renderPlotly({
     scenarios_placeholder_plot
   }) %>% bindCache("placeholder-bar-plot")
@@ -79,98 +80,97 @@ handle_map_click <- function(input, output) {
   # 5km map, GA, Pacific ----
   if(input$management_map_shape_click$group == "GA Pacific nowcast")
   {
-    
-  baseVals <- reactive({
+    baseVals <- reactive({
       subset(
         ga_pac_basevals_ID,
         ID == input$management_map_shape_click$id
+        )
+      })
+    
+    output$corsize_value_ga_pac <- renderText({
+      paste0(
+        "Location-specific size, ",
+        round(baseVals()$Median_colony_size),
+        "  cm"
+        )
+      })
+    
+    output$dev_value_ga_pac <- renderText({
+      paste0(
+        "Location-specific development, ",
+        round((baseVals()$BlackMarble_2016_3km_geo.3/255), 1)
+        )
+      })
+    
+    output$herb_fish_value_ga_pac <- renderText({
+      paste0(
+        "Location-specific density, ",
+        round(baseVals()$H_abund, 2),
+        " fish/m<sup>2<sup>"
+        )
+      })
+    
+    output$turbidity_value_ga_pac <- renderText({
+      paste0(
+        "Location-specific turbidity, ",
+        round(baseVals()$Long_Term_Kd_Median),
+        " m<sup>-1</sup>"
       )
     })
     
-  output$corsize_value_ga_pac <- renderText({
-    paste0(
-      "Location-specific size, ",
-      round(baseVals()$Median_colony_size),
-      "  cm"
-    )
-  })
-  
-  output$dev_value_ga_pac <- renderText({
-    paste0(
-      "Location-specific development, ",
-      round((baseVals()$BlackMarble_2016_3km_geo.3/255), 1)
-    )
-  })
-  
-  output$herb_fish_value_ga_pac <- renderText({
-    paste0(
-      "Location-specific density, ",
-      round(baseVals()$H_abund, 2),
-      " fish/m<sup>2<sup>"
-    )
-  })
-  
-  output$turbidity_slider_ga_pac <- renderText({
-    paste0(
-      "Location-specific turbidity, ",
-      round(baseVals()$Long_Term_Kd_Median, 2),
-      "  m<sup>-1</sup>"
-    )
-  })
-
-  size_ga_pac <- reactive({
-    subset(
-      ga_pac_scenarios,
-      ID == input$management_map_shape_click$id &
-        Response == 'Coral size' &
-        Response_level == input$coral_size_slider_ga_pac
-    )
-  })
-
-  development_ga_pac <- reactive({
-    subset(
-      ga_pac_scenarios,
-      ID == input$management_map_shape_click$id &
-        Response == 'Development' &
-        Response_level == input$dev_slider_ga_pac
-    )
-  })
-  
-  fish_ga_pac <- reactive({
-    subset(
-      ga_pac_scenarios,
-      ID == input$management_map_shape_click$id &
-        Response == 'Fish' &
-        Response_level == input$herb_fish_slider_ga_pac
-    )
-  })
-  
-  turbidity_ga_pac <- reactive({
-    subset(
-      ga_pac_scenarios,
-      ID == input$management_map_shape_click$id &
-        Response == 'Turbidity' &
-        Response_level == input$turbidity_slider_ga_pac
-    )
-  })
-
-  df_ga_pac <- reactive({
-    rbind(
-      size_ga_pac(),
-      development_ga_pac(),
-      fish_ga_pac(),
-      turbidity_ga_pac()
-    )
-  })
-  
-  output$scenarios_barplot <- renderPlotly({
-    scenarios_barplot_fun(
-      df = df_ga_pac(),
-      baselineValue = baseVals()$value,
-      riskType = 'percent'
-    )
-  })
-  }
+    size_ga_pac <- reactive({
+      subset(
+        ga_pac_scenarios,
+        ID == input$management_map_shape_click$id &
+          Response == 'Coral size' &
+          Response_level == input$coral_size_slider_ga_pac
+      )
+    })
+    
+    development_ga_pac <- reactive({
+      subset(
+        ga_pac_scenarios,
+        ID == input$management_map_shape_click$id &
+          Response == 'Development' &
+          Response_level == input$dev_slider_ga_pac
+      )
+    })
+    
+    fish_ga_pac <- reactive({
+      subset(
+        ga_pac_scenarios,
+        ID == input$management_map_shape_click$id &
+          Response == 'Fish' &
+          Response_level == input$herb_fish_slider_ga_pac
+      )
+    })
+    
+    turbidity_ga_pac <- reactive({
+      subset(
+        ga_pac_scenarios,
+        ID == input$management_map_shape_click$id &
+          Response == 'Turbidity' &
+          Response_level == input$turbidity_slider_ga_pac
+      )
+    })
+    
+    df_ga_pac <- reactive({
+      rbind(
+        size_ga_pac(),
+        development_ga_pac(),
+        fish_ga_pac(),
+        turbidity_ga_pac()
+      )
+    })
+    
+    output$scenarios_barplot <- renderPlotly({
+      scenarios_barplot_fun(
+        df = df_ga_pac(),
+        baselineValue = baseVals()$value,
+        riskType = 'percent'
+        )
+      })
+    }
 
   # 5km map, WS, Pacific ----
     if(input$management_map_shape_click$group == "WS Pacific nowcast")
@@ -446,7 +446,7 @@ handle_map_click <- function(input, output) {
       )
     })
 
-    }
+  }
 
   # management areas map ---------------------------------
   # management map, GA, Pacific
@@ -482,14 +482,68 @@ handle_map_click <- function(input, output) {
       )
     })
     
-    output$kd_value_ga_pac <- renderText({
+    output$turbidity_value_ga_pac <- renderText({
       paste0(
         "Location-specific turbidity, ",
         round(baseVals()$Long_Term_Kd_Median),
-        "  %"
+        "  m<sup>-1</sup>"
       )
     })
 
+    # size_ga_pac <- reactive({
+    #   subset(
+    #     ga_pac_scenarios_aggregated_to_management_zones,
+    #     ID == input$management_map_shape_click$id &
+    #       Response == 'Coral size' &
+    #       Response_level == input$coral_size_slider_ga_pac
+    #   )
+    # })
+    # 
+    # development_ga_pac <- reactive({
+    #   subset(
+    #     ga_pac_scenarios_aggregated_to_management_zones,
+    #     ID == input$management_map_shape_click$id &
+    #       Response == 'Development' &
+    #       Response_level == input$dev_slider_ga_pac
+    #   )
+    # })
+    # 
+    # fish_ga_pac <- reactive({
+    #   subset(
+    #     ga_pac_scenarios_aggregated_to_management_zones,
+    #     ID == input$management_map_shape_click$id &
+    #       Response == 'Fish' &
+    #       Response_level == input$herb_fish_slider_ga_pac
+    #   )
+    # })
+    # 
+    # 
+    # turbidity_ga_pac <- renderText({
+    #   subset(
+    #     ga_pac_scenarios_aggregated_to_management_zones,
+    #     ID == input$management_map_shape_click$id &
+    #       Response == 'Turbidity' &
+    #       Response_level == input$turbidity_slider_ga_pac
+    #   )
+    # })
+    # 
+    # df_ga_pac <- reactive({
+    #   rbind(
+    #     size_ga_pac(),
+    #     development_ga_pac(),
+    #     fish_ga_pac(),
+    #     turbidity_ga_pac()
+    #   )
+    # })
+    # 
+    # output$scenarios_barplot <- renderPlotly({
+    #   scenarios_barplot_fun(
+    #     df = df_ga_pac(),
+    #     baselineValue = baseVals()$value,
+    #     riskType = 'percent'
+    #   )
+    # })
+    
     size_ga_pac <- reactive({
       subset(
         ga_pac_scenarios_aggregated_to_management_zones,
@@ -498,7 +552,7 @@ handle_map_click <- function(input, output) {
           Response_level == input$coral_size_slider_ga_pac
       )
     })
-
+    
     development_ga_pac <- reactive({
       subset(
         ga_pac_scenarios_aggregated_to_management_zones,
@@ -517,8 +571,7 @@ handle_map_click <- function(input, output) {
       )
     })
     
-    
-    turbidity_ga_pac <- renderText({
+    turbidity_ga_pac <- reactive({
       subset(
         ga_pac_scenarios_aggregated_to_management_zones,
         ID == input$management_map_shape_click$id &
@@ -543,7 +596,7 @@ handle_map_click <- function(input, output) {
         riskType = 'percent'
       )
     })
-    
+  # }
   }
 
   # management map, WS, Pacific ----

@@ -23,6 +23,13 @@ forecast_page <- function(input, output) {
   })  %>% bindCache("White syndromes")
 
   output$last_update <- renderText({ last_update_txt })
+  
+  output$logo_images <- renderImage({
+    filename <- "../forec_shiny_app_data/logos.png"
+    list(src = filename)
+  },
+  deleteFile = FALSE
+  )
 
   # Handle click on map shapes - update risk forecast
   observeEvent(input$map1_shape_click, handle_map_shape_click(input, output))

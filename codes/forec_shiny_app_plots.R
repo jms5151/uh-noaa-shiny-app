@@ -161,19 +161,27 @@ scenarios_barplot_fun <- function(df, baselineValue, riskType){
       yaxis = list(
         showline = T,
         showgrid = F,
-        range = c(-100, 100),
+        range = c(-100, 200),
         title = "Change in disease risk<br>(from current conditions)"
       ),
       font = list(size = 12),
-      showlegend = FALSE)
+      showlegend = FALSE) %>%
+    add_text(
+      text = ~disease_risk_change
+      , hoverinfo = 'none'
+      , textposition = 'top'
+      , showlegend = FALSE
+      , textfont = list(size = 15, color = "black")
+      )
   
   if(riskType == 'percent'){
     adjusted_disease_risk <- round(baselineValue + df$disease_risk_change[df$Response == "Combined"])
     adjusted_disease_risk[adjusted_disease_risk < 0] <- 0
     adjusted_disease_risk[adjusted_disease_risk > 100] <- 100
     
-    scenario_plot <- baseplot %>% layout(    
-      title = paste0("<br>Baseline disease risk = ",
+    scenario_plot <- baseplot %>% 
+      layout(
+        title = paste0("<br>Baseline disease risk = ",
                      round(baselineValue),
                      "%<br>Combined adjusted disease risk = ",
                      adjusted_disease_risk,
@@ -183,8 +191,9 @@ scenarios_barplot_fun <- function(df, baselineValue, riskType){
     adjusted_disease_risk <- round(baselineValue + df$disease_risk_change[df$Response == "Combined"])
     adjusted_disease_risk[adjusted_disease_risk < 0] <- 0
 
-    scenario_plot <- baseplot %>% layout(    
-      title = paste0("<br>Baseline disease risk = ",
+    scenario_plot <- baseplot %>% 
+      layout(
+        title = paste0("<br>Baseline disease risk = ",
                      round(baselineValue),
                      " colonies/75m<sup>2</sup><br>Combined adjusted disease risk = ",
                      adjusted_disease_risk,
@@ -469,7 +478,18 @@ rm(gauge_ga_cnmi)
 rm(gauge_ws_cnmi)
 rm(gauge_ga_gbr)
 rm(gauge_ga_hi)
+rm(gauge_ws_hi)
 rm(gauge_ws_gbr)
 rm(gauge_ga_prias)
 rm(gauge_ws_prias)
+rm(gauge_samoas_ga)
+rm(gauge_samoas_ws)
+rm(gauge_cnmi_ga)
+rm(gauge_cnmi_ws)
+rm(gauge_gbr_ga)
+rm(gauge_hi_ga)
+rm(gauge_hi_ws)
+rm(gauge_gbr_ws)
+rm(gauge_prias_ga)
+rm(gauge_prias_ws)
 

@@ -2,11 +2,28 @@
 last_update_date <- ga_forecast[which(ga_forecast$Date == max(ga_forecast$Date[ga_forecast$type == "nowcast"]))[1], "Date"] + 1
 last_update_date <- as.Date(last_update_date[[1]], "%Y-%m-%d")
 
+forecast_page_explainer_txt <- 'Nowcasts indicate disease risk predictions that use observed
+(including satellite) data.\nForecasts indicate disease risk predictions that use modeled 
+future conditions.'
+
 last_update_txt <- paste0('Last update: ', last_update_date)
 
 landing_page_info_txt <- 'Click on a pixel to explore near-real time coral disease forecasts for a given location'
 
 scenarios_page_info_txt <- 'Click on a pixel and adjust sliders to explore coral disease mitigation potential.'
+
+scenarios_page_explainer_txt <- 'Use this tool to refine nowcast predictions based on 
+local conditions and to assess intervention strategies.'
+
+scenarios_step_1_txt <- 'Step 1: Select a region & disease.'
+
+scenarios_step_2_txt <- 'Step 2: Select a location.'
+
+scenarios_step_3_txt <- 'Step 3: Adjust local conditions.'
+
+scenarios_step_4_txt <- 'Step 4: Assess changes in disease risk due to changes in local conditions.'
+
+scenarios_page_explainer_txt_2 <- 'Location-specific condition values may not update on per-pixel (or management zone) basis because the spatial scale of the underlying data may be larger than a pixel (or management zone).'
 
 historical_data_txt1 <- 'This map shows the locations, data collectors, and 
 time range for the survey data that was used to build the coral disease models.'

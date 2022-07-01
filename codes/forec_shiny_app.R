@@ -43,6 +43,7 @@ filenames <- filenames[grep(".csv|.shp|historical|placeholder", filenames)]
 for(i in 1:length(filenames)){
   if(length(grep('.csv', filenames[i])) == 1){
     x <- read.csv(filenames[i], check.names = FALSE)
+    # x <- x[!duplicated(x), ]
   } else if(length(grep('.Rds|.RData', filenames[i])) == 1){
     load(filenames[i])
   } else {

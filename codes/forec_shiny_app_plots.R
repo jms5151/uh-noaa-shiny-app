@@ -69,7 +69,9 @@ diseaseRisk_plotly <- function(df, titleName){
                             "<br>75th percentile", round(value), #"%", #IQR75
                             "<br>50th percentile", round(Lwr)#, "%" #IQR50
               ),
-              hoverinfo = "text") %>%
+              hoverinfo = "text"
+
+              ) %>%
     add_ribbons(data = df, 
                 x = ~Date, 
                 ymin = ~Lwr, 
@@ -149,7 +151,8 @@ scenarios_barplot_fun <- function(df, baselineValue, riskType){
     x = ~Response,
     y = ~disease_risk_change,
     type = "bar",
-    color = I('#003152')
+    color = I('#003152'),
+    # hoverinfo = 'none'
   ) %>%
     layout(
       xaxis = list(
@@ -165,13 +168,14 @@ scenarios_barplot_fun <- function(df, baselineValue, riskType){
         title = "Change in disease risk<br>(from current conditions)"
       ),
       font = list(size = 12),
-      showlegend = FALSE) %>%
+      showlegend = FALSE
+      ) %>%
     add_text(
       text = ~disease_risk_change
       , hoverinfo = 'none'
       , textposition = 'top'
       , showlegend = FALSE
-      , textfont = list(size = 15, color = "black")
+      , textfont = list(size = 15, color = "grey")
       )
   
   if(riskType == 'percent'){

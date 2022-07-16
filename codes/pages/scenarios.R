@@ -212,7 +212,7 @@ handle_map_click <- function(input, output) {
         paste0(
           "Location-specific density, ",
           round(baseVals()$H_abund, 2),
-          "/m<sup>2<sup>"
+          " fish/m<sup>2<sup>"
         )
       })
       
@@ -638,7 +638,7 @@ handle_map_click <- function(input, output) {
         paste0(
           "Location-specific density, ",
           round(baseVals()$H_abund, 2),
-          "/m<sup>2<sup>"
+          " fish/m<sup>2<sup>"
         )
       })
       

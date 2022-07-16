@@ -1,14 +1,26 @@
 # create text blocks for Fore-C shiny app information buttons and hover text -------------------
-last_update_date <- ga_forecast[which(ga_forecast$Date == max(ga_forecast$Date[ga_forecast$type == "nowcast"]))[1], "Date"] + 1
-last_update_date <- as.Date(last_update_date[[1]], "%Y-%m-%d")
+landing_page_info_txt <- 'Use this tool to explore current and future coral disease risk.'
 
 forecast_page_explainer_txt <- 'Nowcasts indicate disease risk predictions that use observed
 (including satellite) data.\nForecasts indicate disease risk predictions that use modeled 
 future conditions.'
 
-last_update_txt <- paste0('Last update: ', last_update_date)
+forecasts_step_1_txt <- '1. Overview of current regional disease conditions.'
 
-landing_page_info_txt <- 'Click on a pixel to explore near-real time coral disease forecasts for a given location'
+forecasts_step_1_txt_sub <- 'Hover mouse over bars to see percentage of pixels in each risk category.'
+
+forecasts_step_2_txt <- '2. Spatial variation in current and future disease risk.' 
+
+forecasts_step_2_txt_sub <- 'Toggle among map layers at different space and time scales (in map legend).'
+
+forecasts_step_3_txt <- '3. Location-specific seasonal disease projections.'
+
+forecasts_step_3_txt_sub <- 'Click on a polygon on the map to see disease projections through time.'
+  
+last_update_date <- ga_forecast[which(ga_forecast$Date == max(ga_forecast$Date[ga_forecast$type == "nowcast"]))[1], "Date"] + 1
+last_update_date <- as.Date(last_update_date[[1]], "%Y-%m-%d")
+
+last_update_txt <- paste0('Last update: ', last_update_date)
 
 scenarios_page_info_txt <- 'Click on a pixel and adjust sliders to explore coral disease mitigation potential.'
 

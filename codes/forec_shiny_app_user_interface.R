@@ -10,46 +10,91 @@ ui <- navbarPage(
   # Nowcasts and forecasts page --------------------
   tabPanel(
     "Coral disease predictions",
+    
+    fluidRow(
+      column(
+        width = 12,
+        h4(
+          strong(
+            landing_page_info_txt
+            , style = "color: #009999;"
+          )
+        ),
+        h5(
+          forecast_page_explainer_txt
+          , style = "color: #009999;"
+        )
+      )
+    ),
+    
+    br(),
+    
     fluidRow(
       style = "border-top: 2px double #00172D;",
       column(
         width = 3,
-        style = "border-right: 2px double #00172D;",
+        # style = "border-right: 2px double #00172D;",
         h4(
           "Risk nowcast (region, disease)",
           align = "center",
           style = "background-color: #00172D;
           color: white;
           padding-bottom: 3px"
+          ),
+        h4(
+          forecasts_step_1_txt
+          , style = "color: #009999;"
+          ),
+        h6(
+          forecasts_step_1_txt_sub
+          , style = "color: #009999;"
           )
         ),
       column(
         width = 6,
+        style = "border-right: 2px double #00172D;
+        border-left: 2px double #00172D;",
         h4(
           "Risk map (total disease)",
           align = "center",
           style = "background-color: #00172D;
           color: white;
           padding-bottom: 3px"
+          ),
+        h4(
+          forecasts_step_2_txt
+          , style = "color: #009999;"
+        ),
+        h6(
+          forecasts_step_2_txt_sub
+          , style = "color: #009999;"
           )
         ),
       column(
         width = 3,
-        style = "border-left: 2px double #00172D",
+        # style = "border-left: 2px double #00172D",
         h4(
           "Risk predictions",
           align = "center",
           style = "background-color: #00172D;
           color: white;
           padding-bottom: 3px"
+          ),
+        h4(
+          forecasts_step_3_txt
+          , style = "color: #009999;"
+          ),
+        h6(
+          forecasts_step_3_txt_sub
+          , style = "color: #009999;"
           )
         )
       ),
     fluidRow(
       column(
         width = 3,
-        style = "border-right: 2px double #00172D;
-        border-bottom: 2px double #00172D;
+        style = #border-right: 2px double #00172D;
+        "border-bottom: 2px double #00172D;
         padding-bottom: 15px;",
         plotlyOutput(
           "gauge_plots",
@@ -60,7 +105,9 @@ ui <- navbarPage(
           )
         ),
       column(
-        style = "border-bottom: 2px double #00172D;
+        style = "border-right: 2px double #00172D;
+        border-left: 2px double #00172D;
+        border-bottom: 2px double #00172D;
         padding-bottom: 15px;",
         width = 6,
         height = 500,
@@ -73,8 +120,8 @@ ui <- navbarPage(
         ),
       column(
         width = 3,
-        style = "border-left: 2px double #00172D;
-        border-bottom: 2px double #00172D;
+        style = #border-left: 2px double #00172D; 
+        "border-bottom: 2px double #00172D;
         padding-bottom: 15px;",
         plotlyOutput(
           "plotlyGA",
@@ -93,9 +140,6 @@ ui <- navbarPage(
         )
     ),
     shiny::hr(),
-    h5(
-      forecast_page_explainer_txt
-    ),
     textOutput(
       "last_update"
       ),

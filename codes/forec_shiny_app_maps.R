@@ -29,7 +29,7 @@ cols <- c("#CCFFFF",
 )
 
 pal <- colorBin(cols, 
-                domain = nowcast_polygons_5km$drisk, 
+                domain = shpFiles[['nowcast_polygons_5km']]$drisk, 
                 bins = bins, 
                 na.color = "transparent"
 )
@@ -54,56 +54,56 @@ reefs_basemap <- leaflet() %>%
 
 # Map of nowcasts and near-term forecasts --------------------------------------
 leaf_reefs <- reefs_basemap %>%
-  addPolygons(data = nowcast_polygons_5km,
+  addPolygons(data = shpFiles[['nowcast_polygons_5km']],
               layerId = ~ID,
-              fillColor = ~pal(nowcast_polygons_5km$drisk),
+              fillColor = ~pal(shpFiles[['nowcast_polygons_5km']]$drisk),
               weight = 2,
               opacity = 1,
-              color = ~pal(nowcast_polygons_5km$drisk),
+              color = ~pal(shpFiles[['nowcast_polygons_5km']]$drisk),
               fillOpacity = 0.7,
               group = "Nowcast",
               highlightOptions = highlightOptions(color = "black", weight = 3, bringToFront = TRUE)
   ) %>%
-  addPolygons(data = one_month_forecast_polygons_5km,
+  addPolygons(data = shpFiles[['one_month_forecast_polygons_5km']],
               layerId = ~ID,
-              fillColor = ~pal(one_month_forecast_polygons_5km$drisk),
+              fillColor = ~pal(shpFiles[['one_month_forecast_polygons_5km']]$drisk),
               weight = 2,
               opacity = 1,
-              color = ~pal(one_month_forecast_polygons_5km$drisk),
+              color = ~pal(shpFiles[['one_month_forecast_polygons_5km']]$drisk),
               fillOpacity = 0.7,
               group = "One month forecast",
               highlightOptions = highlightOptions(color = "black", weight = 3, bringToFront = TRUE)
   ) %>%
-  addPolygons(data = two_month_forecast_polygons_5km,
+  addPolygons(data = shpFiles[['two_month_forecast_polygons_5km']],
               layerId = ~ID,
-              fillColor = ~pal(two_month_forecast_polygons_5km$drisk),
+              fillColor = ~pal(shpFiles[['two_month_forecast_polygons_5km']]$drisk),
               weight = 2,
               opacity = 1,
-              color = ~pal(two_month_forecast_polygons_5km$drisk),
+              color = ~pal(shpFiles[['two_month_forecast_polygons_5km']]$drisk),
               fillOpacity = 0.7,
               group = "Two month forecast",
               highlightOptions = highlightOptions(color = "black", weight = 3, bringToFront = TRUE)
   ) %>%
-  addPolygons(data = polygons_GBRMPA_zoning,
+  addPolygons(data = shpFiles[['polygons_GBRMPA_zoning']],
               group = "GBRMPA nowcast",
               layerId = ~ID,
-              color = ~pal(polygons_GBRMPA_zoning$drisk),
+              color = ~pal(shpFiles[['polygons_GBRMPA_zoning']]$drisk),
               highlightOptions = highlightOptions(color = "black", weight = 2, bringToFront = TRUE)
   ) %>%
-  addPolygons(data = three_month_forecast_polygons_5km,
+  addPolygons(data = shpFiles[['three_month_forecast_polygons_5km']],
               layerId = ~ID,
-              fillColor = ~pal(three_month_forecast_polygons_5km$drisk),
+              fillColor = ~pal(shpFiles[['three_month_forecast_polygons_5km']]$drisk),
               weight = 2,
               opacity = 1,
-              color = ~pal(three_month_forecast_polygons_5km$drisk),
+              color = ~pal(shpFiles[['three_month_forecast_polygons_5km']]$drisk),
               fillOpacity = 0.7,
               group = "Three month forecast",
               highlightOptions = highlightOptions(color = "black", weight = 3, bringToFront = TRUE)
   ) %>%
-  addPolygons(data = polygons_management_zoning,
+  addPolygons(data = shpFiles[['polygons_management_zoning']],
               group = "Management area nowcast",
               layerId = ~ID,
-              color = ~pal(polygons_management_zoning$drisk),
+              color = ~pal(shpFiles[['polygons_management_zoning']]$drisk),
               highlightOptions = highlightOptions(color = "black", weight = 2, bringToFront = TRUE)
   ) %>%
   addLayersControl(
@@ -129,26 +129,26 @@ scenarios_placeholder_map <- reefs_basemap %>%
 
 # ga gbr
 scenarios_ga_gbr_map <- reefs_basemap %>% 
-  addPolygons(data = ga_gbr_nowcast_polygons_5km,
+  addPolygons(data = shpFiles[['ga_gbr_nowcast_polygons_5km']],
               layerId = ~ID,
-              fillColor = ~pal(ga_gbr_nowcast_polygons_5km$drisk),
+              fillColor = ~pal(shpFiles[['ga_gbr_nowcast_polygons_5km']]$drisk),
               weight = 2,
               opacity = 1,
-              color = ~pal(ga_gbr_nowcast_polygons_5km$drisk),
+              color = ~pal(shpFiles[['ga_gbr_nowcast_polygons_5km']]$drisk),
               fillOpacity = 0.7,
               group = "GA GBR nowcast",
               highlightOptions = highlightOptions(color = "black", weight = 3, bringToFront = TRUE)
   ) %>%
-  addPolygons(data = ga_gbr_polygons_GBRMPA_zoning,
+  addPolygons(data = shpFiles[['ga_gbr_polygons_GBRMPA_zoning']],
               group = "GA GBRMPA nowcast",
               layerId = ~ID,
-              color = ~pal(ga_gbr_polygons_GBRMPA_zoning$drisk),
+              color = ~pal(shpFiles[['ga_gbr_polygons_GBRMPA_zoning']]$drisk),
               highlightOptions = highlightOptions(color = "black", weight = 2, bringToFront = TRUE)
   ) %>%
-  addPolygons(data = ga_gbr_polygons_management_zoning,
+  addPolygons(data = shpFiles[['ga_gbr_polygons_management_zoning']],
               group = "GA GBR management area nowcast",
               layerId = ~ID,
-              color = ~pal(ga_gbr_polygons_management_zoning$drisk),
+              color = ~pal(shpFiles[['ga_gbr_polygons_management_zoning']]$drisk),
               highlightOptions = highlightOptions(color = "black", weight = 2, bringToFront = TRUE)
   ) %>%
   addLayersControl(
@@ -164,26 +164,26 @@ scenarios_ga_gbr_map <- reefs_basemap %>%
 
 # ws gbr
 scenarios_ws_gbr_map <- reefs_basemap %>% 
-  addPolygons(data = ws_gbr_nowcast_polygons_5km,
+  addPolygons(data = shpFiles[['ws_gbr_nowcast_polygons_5km']],
               layerId = ~ID,
-              fillColor = ~pal(ws_gbr_nowcast_polygons_5km$drisk),
+              fillColor = ~pal(shpFiles[['ws_gbr_nowcast_polygons_5km']]$drisk),
               weight = 2,
               opacity = 1,
-              color = ~pal(ws_gbr_nowcast_polygons_5km$drisk),
+              color = ~pal(shpFiles[['ws_gbr_nowcast_polygons_5km']]$drisk),
               fillOpacity = 0.7,
               group = "WS GBR nowcast",
               highlightOptions = highlightOptions(color = "black", weight = 3, bringToFront = TRUE)
   ) %>%
-  addPolygons(data = ws_gbr_polygons_GBRMPA_zoning,
+  addPolygons(data = shpFiles[['ws_gbr_polygons_GBRMPA_zoning']],
               group = "WS GBRMPA nowcast",
               layerId = ~ID,
-              color = ~pal(ws_gbr_polygons_GBRMPA_zoning$drisk),
+              color = ~pal(shpFiles[['ws_gbr_polygons_GBRMPA_zoning']]$drisk),
               highlightOptions = highlightOptions(color = "black", weight = 2, bringToFront = TRUE)
   ) %>%
-  addPolygons(data = ws_gbr_polygons_management_zoning,
+  addPolygons(data = shpFiles[['ws_gbr_polygons_management_zoning']],
               group = "WS GBR management area nowcast",
               layerId = ~ID,
-              color = ~pal(ws_gbr_polygons_management_zoning$drisk),
+              color = ~pal(shpFiles[['ws_gbr_polygons_management_zoning']]$drisk),
               highlightOptions = highlightOptions(color = "black", weight = 2, bringToFront = TRUE)
   ) %>%
   addLayersControl(
@@ -199,20 +199,20 @@ scenarios_ws_gbr_map <- reefs_basemap %>%
 
 # ga pac
 scenarios_ga_pac_map <- reefs_basemap %>% 
-  addPolygons(data = ga_pac_nowcast_polygons_5km,
+  addPolygons(data = shpFiles[['ga_pac_nowcast_polygons_5km']],
               layerId = ~ID,
-              fillColor = ~pal(ga_pac_nowcast_polygons_5km$drisk),
+              fillColor = ~pal(shpFiles[['ga_pac_nowcast_polygons_5km']]$drisk),
               weight = 2,
               opacity = 1,
-              color = ~pal(ga_pac_nowcast_polygons_5km$drisk),
+              color = ~pal(shpFiles[['ga_pac_nowcast_polygons_5km']]$drisk),
               fillOpacity = 0.7,
               group = "GA Pacific nowcast",
               highlightOptions = highlightOptions(color = "black", weight = 3, bringToFront = TRUE)
   ) %>%
-  addPolygons(data = ga_pac_polygons_management_zoning,
+  addPolygons(data = shpFiles[['ga_pac_polygons_management_zoning']],
               group = "GA Pacific management area nowcast",
               layerId = ~ID,
-              color = ~pal(ga_pac_polygons_management_zoning$drisk),
+              color = ~pal(shpFiles[['ga_pac_polygons_management_zoning']]$drisk),
               highlightOptions = highlightOptions(color = "black", weight = 2, bringToFront = TRUE)
   ) %>%
   addLayersControl(
@@ -226,20 +226,20 @@ scenarios_ga_pac_map <- reefs_basemap %>%
 
 # ws pac
 scenarios_ws_pac_map <- reefs_basemap %>% 
-  addPolygons(data = ws_pac_nowcast_polygons_5km,
+  addPolygons(data = shpFiles[['ws_pac_nowcast_polygons_5km']],
               layerId = ~ID,
-              fillColor = ~pal(ws_pac_nowcast_polygons_5km$drisk),
+              fillColor = ~pal(shpFiles[['ws_pac_nowcast_polygons_5km']]$drisk),
               weight = 2,
               opacity = 1,
-              color = ~pal(ws_pac_nowcast_polygons_5km$drisk),
+              color = ~pal(shpFiles[['ws_pac_nowcast_polygons_5km']]$drisk),
               fillOpacity = 0.7,
               group = "WS Pacific nowcast",
               highlightOptions = highlightOptions(color = "black", weight = 3, bringToFront = TRUE)
   ) %>%
-  addPolygons(data = ws_pac_polygons_management_zoning,
+  addPolygons(data = shpFiles[['ws_pac_polygons_management_zoning']],
               group = "WS Pacific management area nowcast",
               layerId = ~ID,
-              color = ~pal(ws_pac_polygons_management_zoning$drisk),
+              color = ~pal(shpFiles[['ws_pac_polygons_management_zoning']]$drisk),
               highlightOptions = highlightOptions(color = "black", weight = 2, bringToFront = TRUE)
   ) %>%
   addLayersControl(
@@ -263,21 +263,3 @@ historicalMap = leaflet() %>%
                    clusterOptions = markerClusterOptions()) %>%
   addScaleBar() %>%
   setView(lng = -180, lat = 16.4502 , zoom = 3)
-
-# remove individual shapefiles to free up space
-rm(nowcast_polygons_5km)
-rm(one_month_forecast_polygons_5km)
-rm(two_month_forecast_polygons_5km)
-rm(three_month_forecast_polygons_5km)
-rm(polygons_GBRMPA_zoning)
-rm(polygons_management_zoning)
-rm(ga_gbr_nowcast_polygons_5km)
-rm(ga_gbr_polygons_GBRMPA_zoning)
-rm(ga_gbr_polygons_management_zoning)
-rm(ws_gbr_nowcast_polygons_5km)
-rm(ws_gbr_polygons_GBRMPA_zoning)
-rm(ws_gbr_polygons_management_zoning)
-rm(ga_pac_nowcast_polygons_5km)
-rm(ga_pac_polygons_management_zoning)
-rm(ws_pac_nowcast_polygons_5km)
-rm(ws_pac_polygons_management_zoning) 

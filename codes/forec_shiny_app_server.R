@@ -1,5 +1,5 @@
 source("./pages/forecasts.R", local = TRUE)
-source("./codes/pages/scenarios.R", local = TRUE)
+source("./pages/scenarios.R", local = TRUE)
 source("./pages/historical_data.R", local = TRUE)
 source("./pages/about.R", local = TRUE)
 

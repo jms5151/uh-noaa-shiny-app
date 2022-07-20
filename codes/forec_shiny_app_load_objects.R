@@ -13,6 +13,7 @@ lapply(rds_filenames, load, .GlobalEnv)
 shp_filenames <- filenames[grep(".shp", filenames)]
 shpFiles <- lapply(shp_filenames, st_read)
 names(shpFiles) <- gsub('.*\\/|\\.shp', '', shp_filenames)
+list2env(shpFiles, envir = .GlobalEnv)
 
 # load csv files
 csv_filenames <- filenames[grep(".csv", filenames)]

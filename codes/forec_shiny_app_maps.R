@@ -16,17 +16,17 @@ scaleBarOptions = function(maxWidth = 100, metric = TRUE, imperial = TRUE,
 }
 
 # Function to add polygon layers to a basemap -----
-mapFun <- function(basemap, layerNames, groupNames){
+mapFun <- function(layerNames, groupNames){
   newMap <- reefs_basemap
   
   for(i in 1:length(layerNames)){
     newMap <- newMap %>%
-      addPolygons(data = shpFiles[layerNames[i]],
+      addPolygons(data = shpFiles[[layerNames[i]]],
                   layerId = ~ID,
-                  fillColor = ~pal(shpFiles[layerNames[i]]$drisk),
+                  fillColor = ~pal(shpFiles[[layerNames[i]]]$drisk),
                   weight = 2,
                   opacity = 1,
-                  color = ~pal(shpFiles[layerNames[i]]$drisk),
+                  color = ~pal(shpFiles[[layerNames[i]]]$drisk),
                   fillOpacity = 0.7,
                   group = groupNames[i],
                   highlightOptions = highlightOptions(color = "black", weight = 3, bringToFront = TRUE)
@@ -62,7 +62,7 @@ cols <- c("#CCFFFF",
 )
 
 pal <- colorBin(cols, 
-                domain = nowcast_polygons_5km$drisk, 
+                domain = shpFiles[['nowcast_polygons_5km']]$drisk, 
                 bins = bins, 
                 na.color = "transparent")
 
@@ -136,7 +136,6 @@ scenarios_ws_pac_map <- mapFun(
   , groupNames = c('WS Pacific nowcast'
                    , 'WS Pacific management area nowcast')
 )
-
 
 # Historical disease surveys map ------- 
 historicalMap = leaflet() %>%

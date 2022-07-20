@@ -1,9 +1,9 @@
 # load all data -----------------------------------------------------------------------
 
 # list files
-filenames <- list.files("./forec_shiny_app_data/Forecasts/", full.names=TRUE)
-filenames <- c(filenames, list.files("./forec_shiny_app_data/Scenarios/", full.names=TRUE))
-filenames <- c(filenames, list.files("./forec_shiny_app_data/Static_data/", full.names=TRUE))
+filenames <- list.files("../forec_shiny_app_data/Forecasts/", full.names=TRUE)
+filenames <- c(filenames, list.files("../forec_shiny_app_data/Scenarios/", full.names=TRUE))
+filenames <- c(filenames, list.files("../forec_shiny_app_data/Static_data/", full.names=TRUE))
 
 # load rds files
 rds_filenames <- filenames[grep("historical|placeholder", filenames)]

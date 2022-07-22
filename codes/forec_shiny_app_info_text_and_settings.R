@@ -50,14 +50,17 @@ turbidity_hover_txt <- 'Turbidity is represented by the diffuse attenuation coef
 
 # create text for about page ---------------------------------------------------------------
 # about coral diseases
-photo_credit <- "Photos courtesy of Courtney Couch."
+photo_credit <- "Photos courtesy of Courtney Couch and Laurie Raymundo."
 
 disease_info_text <- "Growth anomalies are chronic, protuberant 
 masses of coral skeletons (i.e., tumors) 
-that reduce growth, fecundity, and survival. Tissue loss diseases, 
-or white syndromes, are characterized by progressive tissue loss 
-across the coral colony with lesions progressing slowly (chronic 
-to subacute or rapidly (acute)."
+that reduce growth, fecundity, and survival. White syndromes are 
+characterized by progressive tissue loss across the coral colony 
+with lesions progressing slowly (chronic to subacute) or rapidly (acute).
+
+The top row of images show lesion manifestation on host taxa modeled in
+this application while the second row of images shows how this disease 
+appears on different coral taxa."
 
 warning_levels_txt <- "Disease on the Great Barrier Reef (GBR) is measured as
 a density (total number of diseased colonies per 75m<sup>2</sup>), while 
@@ -73,7 +76,7 @@ models were built using a subset of data shown in the Historical data page of
 this application, the remaining data was used for validation. There are 
 separate models used for each disease-region group (i.e., growth anomalies in 
 Australia, growth anomalies in the U.S. Pacific, white syndromes in Australia, 
-and white syndromes in the U.S. Pacific."
+and white syndromes in the U.S. Pacific)."
 
 # funding
 himb_url <- a("Hawaii Institute of Marine Biology, University of Hawaii",

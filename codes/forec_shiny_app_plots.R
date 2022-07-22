@@ -151,8 +151,9 @@ scenarios_barplot_fun <- function(df, baselineValue, riskType){
     x = ~Response,
     y = ~disease_risk_change,
     type = "bar",
-    color = I('#003152')
-    # hoverinfo = 'none'
+    color = I('#003152'),
+    text = ~paste(Response, ', ', disease_risk_change),
+    hoverinfo = 'text'
   ) %>%
     layout(
       xaxis = list(

@@ -39,3 +39,6 @@ csvFiles <- lapply(csvFiles, function(x) update_date(df = x))
 
 # load individual dataframes from list of csv files 
 list2env(csvFiles, envir = .GlobalEnv)
+
+# fix columns names in warning levels table
+colnames(warning_levels_table) <- gsub('\\_', ' ', colnames(warning_levels_table))

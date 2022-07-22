@@ -28,39 +28,45 @@ ui <- navbarPage(
     ),
     
     br(),
-    
+
     fluidRow(
-      style = "border-top: 2px double #00172D;",
+      style = "border-style: double; border-color: #00172D;",
       column(
+        style = "border-right: double; border-color: #00172D;",
         width = 3,
-        # style = "border-right: 2px double #00172D;",
         h4(
           "Risk nowcast (region, disease)",
           align = "center",
           style = "background-color: #00172D;
           color: white;
           padding-bottom: 3px"
-          ),
+        ),
         h4(
           forecasts_step_1_txt
           , style = "color: #009999;"
-          ),
+        ),
         h6(
           forecasts_step_1_txt_sub
           , style = "color: #009999;"
-          )
         ),
+        plotlyOutput(
+          "gauge_plots",
+          height = 400
+        ) %>%
+          withSpinner(
+            color = spinColor
+          ),
+        br()
+      ),
       column(
         width = 6,
-        style = "border-right: 2px double #00172D;
-        border-left: 2px double #00172D;",
         h4(
           "Risk map (total disease)",
           align = "center",
           style = "background-color: #00172D;
           color: white;
           padding-bottom: 3px"
-          ),
+        ),
         h4(
           forecasts_step_2_txt
           , style = "color: #009999;"
@@ -68,77 +74,51 @@ ui <- navbarPage(
         h6(
           forecasts_step_2_txt_sub
           , style = "color: #009999;"
-          )
         ),
+        leafletOutput(
+          "map1"
+          ) %>%
+          withSpinner(
+            color = spinColor
+          ),
+        br()
+      ),
       column(
+        style = "border-left: double; border-color: #00172D;",
         width = 3,
-        # style = "border-left: 2px double #00172D",
         h4(
           "Risk predictions",
           align = "center",
           style = "background-color: #00172D;
           color: white;
           padding-bottom: 3px"
-          ),
+        ),
         h4(
           forecasts_step_3_txt
           , style = "color: #009999;"
-          ),
+        ),
         h6(
           forecasts_step_3_txt_sub
           , style = "color: #009999;"
-          )
-        )
-      ),
-    fluidRow(
-      column(
-        width = 3,
-        style = #border-right: 2px double #00172D;
-        "border-bottom: 2px double #00172D;
-        padding-bottom: 15px;",
-        plotlyOutput(
-          "gauge_plots",
-          height = 400
-          ) %>%
-          withSpinner(
-            color = spinColor
-          )
         ),
-      column(
-        style = "border-right: 2px double #00172D;
-        border-left: 2px double #00172D;
-        border-bottom: 2px double #00172D;
-        padding-bottom: 15px;",
-        width = 6,
-        height = 500,
-        leafletOutput(
-          "map1"
-          ) %>%
-          withSpinner(
-            color = spinColor
-            )
-        ),
-      column(
-        width = 3,
-        style = #border-left: 2px double #00172D; 
-        "border-bottom: 2px double #00172D;
-        padding-bottom: 15px;",
         plotlyOutput(
           "plotlyGA",
           height = 200
-          ) %>%
+        ) %>%
           withSpinner(
             color = spinColor
-            ),
+          ),
         plotlyOutput(
           "plotlyWS",
           height = 200
-          ) %>%
+        ) %>%
           withSpinner(
             color = spinColor
-            )
-        )
+          ),
+        br()
+      )
     ),
+
     shiny::hr(),
     textOutput(
       "last_update"
@@ -180,7 +160,7 @@ ui <- navbarPage(
         border: 2px double #00172D;
         padding-top: 15px;
         padding-left: 20px;
-        padding-bottom: 10px;", # background-color: lightgrey;
+        padding-bottom: 10px;",
         
         h4(
           strong(
@@ -935,6 +915,7 @@ ui <- navbarPage(
     br(),
     uiOutput(
       "cite4"
-      )
+      ),
+    br()
   )
 )

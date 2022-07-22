@@ -4,13 +4,13 @@ if [ -z "$DOCKER_PASSWORD" ]
 then
     echo -e "\nDOCKER_PASSWORD envar is required - exiting"
     exit 1
-fi   
+fi
 if [ -z "$DOCKER_USERNAME" ]
 then
     echo -e "\nDOCKER_USERNAME envar is required - exiting"
     exit 1
-fi   
-export DOCKER_BUILDKIT=1 
+fi
+export DOCKER_BUILDKIT=1
 
 docker build \
     --tag jamiecaldwell/uh-crw:latest \

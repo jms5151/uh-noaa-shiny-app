@@ -14,17 +14,20 @@ ui <- navbarPage(
     fluidRow(
       column(
         width = 12,
-        h4(
+        h2(
           strong(
-            landing_page_info_txt
+            welcome_txt
             , style = "color: #009999;"
           )
         ),
         h5(
-          forecast_page_explainer_txt
-          , style = "color: #009999;"
+            landing_page_info_txt
+            , style = "color: #009999;"
+        ),
+        uiOutput(
+          'noaa_ref'
+          )
         )
-      )
     ),
     
     br(),
@@ -127,6 +130,7 @@ ui <- navbarPage(
       "logo_images"
       )
     ),
+  
   # Management scenarios page --------------------
   tabPanel(
     "Investigating scenarios",

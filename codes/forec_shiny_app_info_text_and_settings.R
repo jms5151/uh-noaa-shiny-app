@@ -1,9 +1,18 @@
 # create text blocks for Fore-C shiny app information buttons and hover text -------------------
-landing_page_info_txt <- 'Use this tool to explore current and future coral disease risk.'
+welcome_txt <- 'Welcome to the Multi-Factor Coral Disease Forecast data explorer'
 
-forecast_page_explainer_txt <- 'Nowcasts indicate disease risk predictions that use observed
-(including satellite) data.\nForecasts indicate disease risk predictions that use modeled 
-future conditions.'
+landing_page_info_txt <- 'Use this tool to explore current and future coral disease risk.
+Nowcasts indicate disease risk predictions that use observed (including satellite) data. 
+Forecasts indicate disease risk predictions that use modeled future conditions.'
+
+# forecast_page_explainer_txt <- 'Nowcasts indicate disease risk predictions that use observed
+# (including satellite) data. Forecasts indicate disease risk predictions that use modeled
+# future conditions.'
+
+# replace this link when avaialble
+mfdz_url <- a("NOAA Coral Reef Watch", href = 'https://coralreefwatch.noaa.gov/')
+
+noaa_return <- tagList('Return to ', mfdz_url, '.')
 
 forecasts_step_1_txt <- '1. Overview of current regional disease conditions.'
 

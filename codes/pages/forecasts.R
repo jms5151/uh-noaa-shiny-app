@@ -1,4 +1,8 @@
 forecast_page <- function(input, output) {
+  output$noaa_ref <- renderUI({
+    noaa_return
+  })
+
   # Initial render, cache to prevent expensive re-render
   output$gauge_plots <- renderPlotly({
     gaugePlots

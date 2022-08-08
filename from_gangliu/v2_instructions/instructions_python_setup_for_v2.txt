@@ -1,0 +1,350 @@
+==============================================================================================
+                                        Instructions
+                         Python setup for v2 on a Linux environment
+==============================================================================================
+Prerequirements: conda needs to be set up first.
+
+     1) Download the latest Miniconda installer:
+
+           Miniconda3-latest-Linux-x86_64.sh
+
+     from  https://docs.conda.io/en/latest/miniconda.html
+
+     2) Install Miniconda:
+
+          bash Miniconda3-latest-Linux-x86_64.sh
+
+---------------------------------------------------------------------------------------------- 
+Linux operationa system at the time of the Python setup for v2:
+
+     NAME="CentOS Linux"
+     VERSION="7 (Core)"
+     ID="centos"
+     ID_LIKE="rhel fedora"
+     VERSION_ID="7"
+     PRETTY_NAME="CentOS Linux 7 (Core)"
+     ANSI_COLOR="0;31"
+     CPE_NAME="cpe:/o:centos:centos:7"
+     HOME_URL="https://www.centos.org/"
+     BUG_REPORT_URL="https://bugs.centos.org/"
+
+     CENTOS_MANTISBT_PROJECT="CentOS-7"
+     CENTOS_MANTISBT_PROJECT_VERSION="7"
+     REDHAT_SUPPORT_PRODUCT="centos"
+     REDHAT_SUPPORT_PRODUCT_VERSION="7"
+
+==============================================================================================
+This installation was conducted in two steps: 
+(a) set up the base environment using env__forec_model_v20220624.yml
+(b) pip install the following two libraries, after activate the forec_model_v20220624 environment:
+(b-1) pip install scikit-garden
+(b-2) pip install wget
+
+See details below:
+
+Step 1) set up the base environment using env__forec_model_v20220624.yml:
+
+1) .yml file:
+
+- Location of environment.yml file: 	/data/home004/gang.liu/software_setup/miniconda/file_env
+- Filename of the .yml file:		env__forec_model_v20220624.yml
+- File content:
+
+$ more env__forec_model_v20220624.yml
+
+name: forec_model_v20220624
+channels: 	[Note: The order of conda-forge and defaults seems to matter.]
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.8.8
+  - geopandas=0.6.1
+  - joblib=1.1.0
+  - netcdf4=1.5.8
+  - numpy=1.21.5
+  - pandas=1.4.2
+  - requests=2.27.1
+  - bs4=4.11.1
+  - scikit-learn=1.0.2
+  - cython=0.29.30
+  - wget=1.21.3
+  - setuptools=61.2.0
+  - scipy=1.7.3
+$
+
+[Note: os, glob, and runpy are automatically installed.]
+[Note: See notes of earlier phases.]
+
+2) Installation of the environment:
+
+Note: It is a dash “-“ before “f”.     
+Note: 	Sometime, for some reason, the command acts up and complains about invalid argument. Simply run it again.
+
+conda env create -f /data/home004/gang.liu/software_setup/miniconda/file_env/env__forec_model_v20220624.yml
+
+if “cd f /data/home004/gang.liu/software_setup/miniconda/file_env” first, simply run:
+
+conda env create -f env__forec_model_v20220624.yml
+
+Note: 	If need to reinstall, run the following command to remove the environment first:         
+
+conda remove --name forec_model_v20220624 --all
+
+3) Location of the installed environment:
+
+/data/home004/gang.liu/miniconda3/envs/forec_model_v20220624
+
+4) Check installed environments:
+
+$ conda info --envs
+# conda environments:
+#
+base            	*  /data/home004/gang.liu/miniconda3
+5km_v3.1_op_plus_dz_plus_v20220218     
+ 		/data/home004/gang.liu/miniconda3/envs/5km_v3.1_op_plus_dz_plus_v20220218
+5km_v3.1_op_plus_dz_plus_v20220224    
+ 		/data/home004/gang.liu/miniconda3/envs/5km_v3.1_op_plus_dz_plus_v20220224
+5km_v3.1_op_plus_dz_v20210406     
+ 		/data/home004/gang.liu/miniconda3/envs/5km_v3.1_op_plus_dz_v20210406
+5km_v3.1_op_v20210108     
+ 		/data/home004/gang.liu/miniconda3/envs/5km_v3.1_op_v20210108
+forec_model_v20220624     
+ 		/data/home004/gang.liu/miniconda3/envs/forec_model_v20220624
+forec_model_v20220624_test      
+ 		/data/home004/gang.liu/miniconda3/envs/forec_model_v20220624_test
+tutorialenv	/data/home004/gang.liu/miniconda3/envs/tutorialenv
+
+5) Activate environment 5km_v3.1_op_plus_dz_plus_v20220224:
+
+$ conda activate forec_model_v20220624     
+(forec_model_v20220624) $
+
+Step_2) pip install two additional libraries, after activate the forec_model_v20220624 environment:
+(b-1) pip install scikit-garden
+(b-2) pip install wget
+
+6) Install scikit-garden:
+
+ (forec_model_v20220624) $ pip install scikit-garden
+
+[Installation log output:]
+
+Collecting scikit-garden
+Downloading scikit-garden-0.1.3.tar.gz (317 kB)
+
+317.1/317.1 kB 17.1 MB/s eta 0:00:00
+Preparing metadata (setup.py) ... done
+Requirement already satisfied: numpy in 
+    /data/home004/gang.liu/miniconda3/envs/forec_model_v20220624/lib/python3.8/site-packages (from scikit-garden) (1.21.5)
+Requirement already satisfied: scipy in 
+    /data/home004/gang.liu/miniconda3/envs/forec_model_v20220624/lib/python3.8/site-packages (from scikit-garden) (1.7.3)
+Requirement already satisfied: scikit-learn>=0.18 in    
+    /data/home004/gang.liu/miniconda3/envs/forec_model_v20220624/lib/python3.8/site-packages (from scikit-garden) (1.0.2)
+Requirement already satisfied: cython in 
+    /data/home004/gang.liu/miniconda3/envs/forec_model_v20220624/lib/python3.8/site-packages (from scikit-garden) (0.29.30)
+Requirement already satisfied: threadpoolctl>=2.0.0 in 
+    /data/home004/gang.liu/miniconda3/envs/forec_model_v20220624/lib/python3.8/site-packages (from scikit-learn>=0.18->scikit-garden) (3.1.0)
+Requirement already satisfied: joblib>=0.11 in 
+    /data/home004/gang.liu/miniconda3/envs/forec_model_v20220624/lib/python3.8/site-packages (from scikit-learn>=0.18->scikit-garden) (1.1.0)
+Building wheels for collected packages: scikit-garden
+Building wheel for scikit-garden (setup.py) ... done
+Created wheel for scikit-garden: filename=scikit_garden-0.1.3-cp38-cp38-linux_x86_64.whl size=694605 sha256=d70da1ea4af66ecb508abf5b399b9d5ee7849ef2e1bf1b3d5ee8bb95e5b1a670
+Stored in directory: /data/home004/gang.liu/.cache/pip/wheels/54/ff/a6/00baae3f7f8d52f8281af8a3d4c21adf0495f1606eb16a443d
+Successfully built scikit-garden
+Installing collected packages: scikit-garden
+Successfully installed scikit-garden-0.1.3
+(forec_model_v20220624) $
+
+-----------------------------
+
+7) Install wget:
+
+ (forec_model_v20220624) $ pip install wget
+
+[Installation log output:]
+
+Collecting wget
+  Downloading wget-3.2.zip (10 kB)
+  Preparing metadata (setup.py) ... done
+Building wheels for collected packages: wget
+  Building wheel for wget (setup.py) ... done
+  Created wheel for wget: filename=wget-3.2-py3-none-any.whl size=9675 sha256=11f86024f8d140f090b87f2e2280c3bd6091a9456551af0a840b47630d54e448
+  Stored in directory: /data/home004/gang.liu/.cache/pip/wheels/bd/a8/c3/3cf2c14a1837a4e04bd98631724e81f33f462d86a1d895fae0
+Successfully built wget
+Installing collected packages: wget
+Successfully installed wget-3.2
+
+---------------------------
+
+8) Check installation (installed packages:
+
+(forec_model_v20220624) $ conda list
+
+# packages in environment at /data/home004/gang.liu/miniconda3/envs/forec_model_v20220624:
+#
+# Name                    Version                   Build  Channel
+_libgcc_mutex             0.1                 conda_forge    conda-forge
+_openmp_mutex             4.5                       2_gnu    conda-forge
+attrs                     22.1.0             pyh71513ae_0    conda-forge
+beautifulsoup4            4.11.1             pyha770c72_0    conda-forge
+boost-cpp                 1.74.0               h312852a_4    conda-forge
+brotlipy                  0.7.0           py38h0a891b7_1004    conda-forge
+bs4                       4.11.1               hd8ed1ab_0    conda-forge
+bzip2                     1.0.8                h7f98852_4    conda-forge
+c-ares                    1.18.1               h7f98852_0    conda-forge
+ca-certificates           2022.6.15            ha878542_0    conda-forge
+cairo                     1.16.0            h6cf1ce9_1008    conda-forge
+certifi                   2022.6.15        py38h578d9bd_0    conda-forge
+cffi                      1.14.6           py38ha65f79e_0    conda-forge
+cfitsio                   4.0.0                h9a35b8e_0    conda-forge
+cftime                    1.6.1            py38h71d37f0_0    conda-forge
+charset-normalizer        2.0.12             pyhd8ed1ab_0    conda-forge
+click                     8.1.3            py38h578d9bd_0    conda-forge
+click-plugins             1.1.1                      py_0    conda-forge
+cligj                     0.7.2              pyhd8ed1ab_1    conda-forge
+cryptography              37.0.4           py38h2b5fc30_0    conda-forge
+curl                      7.83.1               h7bff187_0    conda-forge
+cython                    0.29.30          py38hfa26641_0    conda-forge
+expat                     2.4.8                h27087fc_0    conda-forge
+fiona                     1.8.20           py38hbb147eb_2    conda-forge
+font-ttf-dejavu-sans-mono 2.37                 hab24e00_0    conda-forge
+font-ttf-inconsolata      3.000                h77eed37_0    conda-forge
+font-ttf-source-code-pro  2.038                h77eed37_0    conda-forge
+font-ttf-ubuntu           0.83                 hab24e00_0    conda-forge
+fontconfig                2.14.0               h8e229c2_0    conda-forge
+fonts-conda-ecosystem     1                             0    conda-forge
+fonts-conda-forge         1                             0    conda-forge
+freetype                  2.10.4               h0708190_1    conda-forge
+freexl                    1.0.6                h7f98852_0    conda-forge
+gdal                      3.3.3            py38hcf2042a_2    conda-forge
+geopandas                 0.6.1                      py_1    conda-forge
+geos                      3.10.0               h9c3ff4c_0    conda-forge
+geotiff                   1.7.0                hcfb7246_3    conda-forge
+gettext                   0.19.8.1          h0b5b191_1005    conda-forge
+giflib                    5.2.1                h36c2ea0_2    conda-forge
+hdf4                      4.2.15               h10796ff_3    conda-forge
+hdf5                      1.12.1          nompi_h2386368_104    conda-forge
+icu                       68.2                 h9c3ff4c_0    conda-forge
+idna                      3.3                pyhd8ed1ab_0    conda-forge
+joblib                    1.1.0              pyhd8ed1ab_0    conda-forge
+jpeg                      9e                   h166bdaf_2    conda-forge
+json-c                    0.15                 h98cffda_0    conda-forge
+kealib                    1.4.15               hfe1a663_0    conda-forge
+keyutils                  1.6.1                h166bdaf_0    conda-forge
+krb5                      1.19.3               h3790be6_0    conda-forge
+lcms2                     2.12                 hddcbb42_0    conda-forge
+ld_impl_linux-64          2.36.1               hea4e1c9_2    conda-forge
+lerc                      4.0.0                h27087fc_0    conda-forge
+libblas                   3.9.0           15_linux64_openblas    conda-forge
+libcblas                  3.9.0           15_linux64_openblas    conda-forge
+libcurl                   7.83.1               h7bff187_0    conda-forge
+libdap4                   3.20.6               hd7c4107_2    conda-forge
+libdeflate                1.12                 h166bdaf_0    conda-forge
+libedit                   3.1.20191231         he28a2e2_2    conda-forge
+libev                     4.33                 h516909a_1    conda-forge
+libffi                    3.3                  h58526e2_2    conda-forge
+libgcc-ng                 12.1.0              h8d9b700_16    conda-forge
+libgdal                   3.3.3                h18e3bf0_2    conda-forge
+libgfortran-ng            12.1.0              h69a702a_16    conda-forge
+libgfortran5              12.1.0              hdcd56e2_16    conda-forge
+libglib                   2.68.4               h3e27bee_0    conda-forge
+libgomp                   12.1.0              h8d9b700_16    conda-forge
+libiconv                  1.16                 h516909a_0    conda-forge
+libidn2                   2.3.3                h166bdaf_0    conda-forge
+libkml                    1.3.0             h238a007_1014    conda-forge
+liblapack                 3.9.0           15_linux64_openblas    conda-forge
+libnetcdf                 4.8.1           nompi_h329d8a1_102    conda-forge
+libnghttp2                1.47.0               h727a467_0    conda-forge
+libnsl                    2.0.0                h7f98852_0    conda-forge
+libopenblas               0.3.20          pthreads_h78a6416_1    conda-forge
+libpng                    1.6.37               h753d276_3    conda-forge
+libpq                     13.5                 hd57d9b9_1    conda-forge
+librttopo                 1.1.0                h0ad649c_7    conda-forge
+libspatialindex           1.9.3                h9c3ff4c_4    conda-forge
+libspatialite             5.0.1               h1d9e4f1_10    conda-forge
+libssh2                   1.10.0               ha56f1ee_2    conda-forge
+libstdcxx-ng              12.1.0              ha89aaad_16    conda-forge
+libtiff                   4.4.0                h0d92c0b_2    conda-forge
+libunistring              0.9.10               h7f98852_0    conda-forge
+libuuid                   2.32.1            h7f98852_1000    conda-forge
+libwebp-base              1.2.3                h166bdaf_2    conda-forge
+libxcb                    1.13              h7f98852_1004    conda-forge
+libxml2                   2.9.12               h72842e0_0    conda-forge
+libzip                    1.9.2                hc869a4a_0    conda-forge
+libzlib                   1.2.12               h166bdaf_2    conda-forge
+lz4-c                     1.9.3                h9c3ff4c_1    conda-forge
+munch                     2.5.0                      py_0    conda-forge
+ncurses                   6.3                  h27087fc_1    conda-forge
+netcdf4                   1.5.8           nompi_py38h2823cc8_101    conda-forge
+nspr                      4.32                 h9c3ff4c_1    conda-forge
+nss                       3.78                 h2350873_0    conda-forge
+numpy                     1.21.5           py38h1d589f8_1    conda-forge
+openjpeg                  2.4.0                hb52868f_1    conda-forge
+openssl                   1.1.1q               h166bdaf_0    conda-forge
+pandas                    1.4.2            py38h47df419_2    conda-forge
+pcre                      8.45                 h9c3ff4c_0    conda-forge
+pip                       22.2.1             pyhd8ed1ab_0    conda-forge
+pixman                    0.40.0               h36c2ea0_0    conda-forge
+poppler                   21.09.0              ha39eefc_3    conda-forge
+poppler-data              0.4.11               hd8ed1ab_0    conda-forge
+postgresql                13.5                 h2510834_1    conda-forge
+proj                      8.1.1                h277dcde_2    conda-forge
+pthread-stubs             0.4               h36c2ea0_1001    conda-forge
+pycparser                 2.21               pyhd8ed1ab_0    conda-forge
+pyopenssl                 22.0.0             pyhd8ed1ab_0    conda-forge
+pyproj                    3.2.1            py38h80797bf_2    conda-forge
+pysocks                   1.7.1            py38h578d9bd_5    conda-forge
+python                    3.8.8           hffdb5ce_0_cpython    conda-forge
+python-dateutil           2.8.2              pyhd8ed1ab_0    conda-forge
+python_abi                3.8                      2_cp38    conda-forge
+pytz                      2022.1             pyhd8ed1ab_0    conda-forge
+readline                  8.1.2                h0f457ee_0    conda-forge
+requests                  2.27.1             pyhd8ed1ab_0    conda-forge
+rtree                     1.0.0            py38h02d302b_1    conda-forge
+scikit-garden             0.1.3                    pypi_0    pypi
+scikit-learn              1.0.2            py38h1561384_0    conda-forge
+scipy                     1.7.3            py38h56a6a73_0    conda-forge
+setuptools                61.2.0           py38h578d9bd_3    conda-forge
+shapely                   1.8.0            py38hf7953bd_2    conda-forge
+six                       1.16.0             pyh6c4a22f_0    conda-forge
+soupsieve                 2.3.2.post1        pyhd8ed1ab_0    conda-forge
+sqlite                    3.39.2               h4ff8645_0    conda-forge
+threadpoolctl             3.1.0              pyh8a188c0_0    conda-forge
+tiledb                    2.3.4                he87e0bf_0    conda-forge
+tk                        8.6.12               h27826a3_0    conda-forge
+tzcode                    2022a                h166bdaf_0    conda-forge
+tzdata                    2022a                h191b570_0    conda-forge
+urllib3                   1.26.11            pyhd8ed1ab_0    conda-forge
+wget                      3.2                      pypi_0    pypi
+wheel                     0.37.1             pyhd8ed1ab_0    conda-forge
+xerces-c                  3.2.3                h9d8b166_3    conda-forge
+xorg-kbproto              1.0.7             h7f98852_1002    conda-forge
+xorg-libice               1.0.10               h7f98852_0    conda-forge
+xorg-libsm                1.2.3             hd9c2040_1000    conda-forge
+xorg-libx11               1.7.2                h7f98852_0    conda-forge
+xorg-libxau               1.0.9                h7f98852_0    conda-forge
+xorg-libxdmcp             1.1.3                h7f98852_0    conda-forge
+xorg-libxext              1.3.4                h7f98852_1    conda-forge
+xorg-libxrender           0.9.10            h7f98852_1003    conda-forge
+xorg-renderproto          0.11.1            h7f98852_1002    conda-forge
+xorg-xextproto            7.3.0             h7f98852_1002    conda-forge
+xorg-xproto               7.0.31            h7f98852_1007    conda-forge
+xz                        5.2.5                h516909a_1    conda-forge
+zlib                      1.2.12               h166bdaf_2    conda-forge
+zstd                      1.5.2                h8a70e8d_2    conda-forge
+(forec_model_v20220624) [gang.liu@rhw1352 ~]$
+
+
+--------------------------------------------------------------------------------------------------------
+A test version installed a little earlier with the following difference:
+
+attrs                     21.4.0             pyhd8ed1ab_0    conda-forge
+lerc                      3.0                  h9c3ff4c_0    conda-forge
+libwebp-base              1.2.2                h7f98852_1    conda-forge
+soupsieve                 2.3.1              pyhd8ed1ab_0    conda-forge
+sqlite                    3.39.0               h4ff8645_0    conda-forge
+urllib3                   1.26.10            pyhd8ed1ab_0    conda-forge
+
+==============================================================================================
+The end
+

@@ -1,0 +1,78 @@
+==============================================================================================
+                                          Instructions 
+==============================================================================================
+
+ Instructions on what to be revised after the codes are replaced by newer codes pulled from 
+ the master repository in Github.
+
+==============================================================================================
+Instructions History:   (latest version at the top)
+
+2022/08/01 Gang Liu : Initial development.
+
+==============================================================================================
+
+                       **********    Important    *********
+
+ Before replacing the current v2 folder with a new updated copy of the model, move and rename
+ the v2 folder to v2_yyyymmdd:
+ 
+ A symbolic link has been placed in this folder to track the version date of the v2 folder, 
+ for example, 
+
+         v2_20220725 -> v2
+ 
+ Rename the current v2 model folder before creating a new v2 folder to hold new updated codes,
+ based on the date included in the symbolic link, for instance,
+ 
+         if v2_20220725 -> v2, then run
+
+         mv v2 v2_20220725
+
+                      ************************************
+
+ Once a new v2 folder is in place, set up a symbolic link in the following format to track
+ the date of the new version:
+
+         ln -s v2 v2_yyyymmdd
+
+
+                      ************************************
+
+----------------------------------------------------------------------------------------------
+For the model pulled on 2022/07/25: 
+
+Only the following 3 files are needed to be modified after pulled from github:
+
+   1) ForeC_master_code.py
+   2) Grid_covariates_ocean_color_dynamic.py
+   3) Unzip_files.py
+
+See the previous version on what to change. 
+
+   1) ForeC_master_code.py: -- add print statements
+                         -- comment out unzipping files 
+                              #runpy.run_path(path_name = 'Unzip_files.py')
+                         -- comment out the following deletions:
+                              #delete_dir(input_path)
+                              #delete_dir(models_path)
+
+   2) Grid_covariates_ocean_color_dynamic.py:
+                         -- change in path:
+                            reefsDF = pd.read_csv('/data/data568/crwdir/product/forec/   \
+                                     model/v2/ancillary/unpacked/input_data/grid.csv')
+
+   3) Unzip_files.py:
+                         -- changes in pathes. 
+                            unzip_dir(zip_filepath = '/data/data568/crwdir/product/      \
+                                forec/model/v2/ancillary/compressed/model_objects.zip',  \
+                                dest_filepath = '/data/data568/crwdir/product/forec/     \
+                                model/v2/ancillary/unpacked/')
+                            unzip_dir(zip_filepath = '/data/data568/crwdir/product/      \
+                                forec/model/v2/ancillary/compressed/input_data.zip',     \
+                                dest_filepath = '/data/data568/crwdir/product/forec/     \
+                                model/v2/ancillary/unpacked/')
+
+==============================================================================================
+The end
+

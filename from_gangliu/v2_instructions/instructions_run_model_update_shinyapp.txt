@@ -1,0 +1,267 @@
+==============================================================================================
+                           instructions_run_model_gangliu.txt
+==============================================================================================
+
+Instrutions History:   (latest version at the top)
+
+2022/08/01 Gang Liu : Initial development.
+
+==============================================================================================
+
+Follow the following steps to run processing every Monday (late afternoon/evening) or Tuesday.
+
+----------------------------------------------------------------------------------------------
+1) Check if the latest folder is dated current Monday's date:
+       yyyymmdd       (such as 20220801)
+   in 
+       https://www.star.nesdis.noaa.gov/pub/sod/mecb/crw/data/for_forec/shiny_app/
+
+   --> If not: Stop. Wait until the folder shows up.
+
+----------------------------------------------------------------------------------------------
+2) Check if there are 6 x 9 = 54 files in there:
+
+    For example,
+
+    cfsv2_hotsnap_gbr_reef-id_20220730.nc                              5.6M
+    cfsv2_hotsnap_guam_cnmi_reef-id_20220730.nc                        158K
+    cfsv2_hotsnap_hawaii_reef-id_20220730.nc                           296K
+    cfsv2_hotsnap_howland_baker_reef-id_20220730.nc                     25K
+    cfsv2_hotsnap_jarvis_reef-id_20220730.nc5                           20K
+    cfsv2_hotsnap_johnston_reef-id_20220730.nc                          23K
+    cfsv2_hotsnap_palmyra_kingman_reef-id_20220730.nc                   20K
+    cfsv2_hotsnap_samoas_reef-id_20220730.nc                            59K
+    cfsv2_hotsnap_wake_reef-id_20220730.nc                              24K
+    cfsv2_mean-90d_gbr_reef-id_20220730.nc                             9.0M
+    cfsv2_mean-90d_guam_cnmi_reef-id_20220730.nc                       323K
+    cfsv2_mean-90d_hawaii_reef-id_20220730.nc                          1.2M
+    cfsv2_mean-90d_howland_baker_reef-id_20220730.nc                    43K
+    cfsv2_mean-90d_jarvis_reef-id_20220730.nc                           24K
+    cfsv2_mean-90d_johnston_reef-id_20220730.nc                         59K
+    cfsv2_mean-90d_palmyra_kingman_reef-id_20220730.nc                  52K
+    cfsv2_mean-90d_samoas_reef-id_20220730.nc                          115K
+    cfsv2_mean-90d_wake_reef-id_20220730.nc                             31K
+    cfsv2_wintcond_gbr_reef-id_20220730.nc                              11M
+    cfsv2_wintcond_guam_cnmi_reef-id_20220730.nc                       368K
+    cfsv2_wintcond_hawaii_reef-id_20220730.nc                          1.4M
+    cfsv2_wintcond_howland_baker_reef-id_20220730.nc                    51K
+    cfsv2_wintcond_jarvis_reef-id_20220730.nc                           25K
+    cfsv2_wintcond_johnston_reef-id_20220730.nc                         67K
+    cfsv2_wintcond_palmyra_kingman_reef-id_20220730.nc                  68K
+    cfsv2_wintcond_samoas_reef-id_20220730.nc                          168K
+    cfsv2_wintcond_wake_reef-id_20220730.nc                             33K
+    dz-v3.0_hdw_gbr_reef-id_20220731.nc                                 36K
+    dz-v3.0_hdw_guam_cnmi_reef-id_20220731.nc                           23K
+    dz-v3.0_hdw_hawaii_reef-id_20220731.nc                              23K
+    dz-v3.0_hdw_howland_baker_reef-id_20220731.nc                       22K
+    dz-v3.0_hdw_jarvis_reef-id_20220731.nc                              22K
+    dz-v3.0_hdw_johnston_reef-id_20220731.nc                            22K
+    dz-v3.0_hdw_palmyra_kingman_reef-id_20220731.nc                     22K
+    dz-v3.0_hdw_samoas_reef-id_20220731.nc                              22K
+    dz-v3.0_hdw_wake_reef-id_20220731.nc                                22K
+    dz-v3.0_wdw_gbr_reef-id_20220731.nc                                 37K
+    dz-v3.0_wdw_guam_cnmi_reef-id_20220731.nc                           23K
+    dz-v3.0_wdw_hawaii_reef-id_20220731.nc                              24K
+    dz-v3.0_wdw_howland_baker_reef-id_20220731.nc                       22K
+    dz-v3.0_wdw_jarvis_reef-id_20220731.nc                              22K
+    dz-v3.0_wdw_johnston_reef-id_20220731.nc                            22K
+    dz-v3.0_wdw_palmyra_kingman_reef-id_20220731.nc                     22K
+    dz-v3.0_wdw_samoas_reef-id_20220731.nc                              22K
+    dz-v3.0_wdw_wake_reef-id_20220731.nc                                22K
+    forec5km_sst-mean-90d_v1.0_gbr_reef-id_20220731.nc                  31K
+    forec5km_sst-mean-90d_v1.0_guam_cnmi_reef-id_20220731.nc            23K
+    forec5km_sst-mean-90d_v1.0_hawaii_reef-id_20220731.nc               24K
+    forec5km_sst-mean-90d_v1.0_howland_baker_reef-id_20220731.nc        23K
+    forec5km_sst-mean-90d_v1.0_jarvis_reef-id_20220731.nc               23K
+    forec5km_sst-mean-90d_v1.0_johnston_reef-id_20220731.nc             23K
+    forec5km_sst-mean-90d_v1.0_palmyra_kingman_reef-id_20220731.nc      23K
+    forec5km_sst-mean-90d_v1.0_samoas_reef-id_20220731.nc 	        23K
+    forec5km_sst-mean-90d_v1.0_wake_reef-id_20220731.nc 	        23K
+
+   --> If not: Stop. Check what is wrong with the data files.
+
+----------------------------------------------------------------------------------------------
+3) Make sure all 54 files are not zero in size.
+
+   --> If any file with zero size: Stop. Check what is wrong with the data files.
+
+----------------------------------------------------------------------------------------------
+4) Get onto rhw1352
+5) cd /data/data568/crw/code/proc_nrt/forec/model/v2
+6) conda activate forec_model_v20220624
+7) Run the model:   --- It usually takes about 10-15 minutes to run.
+
+   (forec_model_v20220624_test) [gang.liu@rhw1352 v2]$ python ForeC_master_code.py
+
+   Screen print out (of the current version of the code):
+
+   ---------------------------------------------
+  Hello, I am in!
+
+  tmp_path:  /data/data568/crwdir/product/forec/model/v2/temp_files/
+
+  unzip files in repository:
+             ---- This is not needed for now. unpacked files will stay permanently without removal after each run.
+
+  compile NRT & forecasted SST metrics:
+100% [..............................................................................] 23112 / 23112finished cfsv2_hotsnap_gbr_reef-id_20220730.nc
+finished cfsv2_hotsnap_guam_cnmi_reef-id_20220730.nc
+finished cfsv2_hotsnap_hawaii_reef-id_20220730.nc
+finished cfsv2_hotsnap_howland_baker_reef-id_20220730.nc
+finished cfsv2_hotsnap_jarvis_reef-id_20220730.nc
+finished cfsv2_hotsnap_johnston_reef-id_20220730.nc
+finished cfsv2_hotsnap_palmyra_kingman_reef-id_20220730.nc
+finished cfsv2_hotsnap_samoas_reef-id_20220730.nc
+finished cfsv2_hotsnap_wake_reef-id_20220730.nc
+finished cfsv2_mean-90d_gbr_reef-id_20220730.nc
+finished cfsv2_mean-90d_guam_cnmi_reef-id_20220730.nc
+finished cfsv2_mean-90d_hawaii_reef-id_20220730.nc
+finished cfsv2_mean-90d_howland_baker_reef-id_20220730.nc
+finished cfsv2_mean-90d_jarvis_reef-id_20220730.nc
+finished cfsv2_mean-90d_johnston_reef-id_20220730.nc
+finished cfsv2_mean-90d_palmyra_kingman_reef-id_20220730.nc
+finished cfsv2_mean-90d_samoas_reef-id_20220730.nc
+finished cfsv2_mean-90d_wake_reef-id_20220730.nc
+finished cfsv2_wintcond_gbr_reef-id_20220730.nc
+finished cfsv2_wintcond_guam_cnmi_reef-id_20220730.nc
+finished cfsv2_wintcond_hawaii_reef-id_20220730.nc
+finished cfsv2_wintcond_howland_baker_reef-id_20220730.nc
+finished cfsv2_wintcond_jarvis_reef-id_20220730.nc
+finished cfsv2_wintcond_johnston_reef-id_20220730.nc
+finished cfsv2_wintcond_palmyra_kingman_reef-id_20220730.nc
+finished cfsv2_wintcond_samoas_reef-id_20220730.nc
+finished cfsv2_wintcond_wake_reef-id_20220730.nc
+finished dz-v3.0_hdw_gbr_reef-id_20220731.nc
+finished dz-v3.0_hdw_guam_cnmi_reef-id_20220731.nc
+finished dz-v3.0_hdw_hawaii_reef-id_20220731.nc
+finished dz-v3.0_hdw_howland_baker_reef-id_20220731.nc
+finished dz-v3.0_hdw_jarvis_reef-id_20220731.nc
+finished dz-v3.0_hdw_johnston_reef-id_20220731.nc
+finished dz-v3.0_hdw_palmyra_kingman_reef-id_20220731.nc
+finished dz-v3.0_hdw_samoas_reef-id_20220731.nc
+finished dz-v3.0_hdw_wake_reef-id_20220731.nc
+finished dz-v3.0_wdw_gbr_reef-id_20220731.nc
+finished dz-v3.0_wdw_guam_cnmi_reef-id_20220731.nc
+finished dz-v3.0_wdw_hawaii_reef-id_20220731.nc
+finished dz-v3.0_wdw_howland_baker_reef-id_20220731.nc
+finished dz-v3.0_wdw_jarvis_reef-id_20220731.nc
+finished dz-v3.0_wdw_johnston_reef-id_20220731.nc
+finished dz-v3.0_wdw_palmyra_kingman_reef-id_20220731.nc
+finished dz-v3.0_wdw_samoas_reef-id_20220731.nc
+finished dz-v3.0_wdw_wake_reef-id_20220731.nc
+finished forec5km_sst-mean-90d_v1.0_gbr_reef-id_20220731.nc
+finished forec5km_sst-mean-90d_v1.0_guam_cnmi_reef-id_20220731.nc
+finished forec5km_sst-mean-90d_v1.0_hawaii_reef-id_20220731.nc
+finished forec5km_sst-mean-90d_v1.0_howland_baker_reef-id_20220731.nc
+finished forec5km_sst-mean-90d_v1.0_jarvis_reef-id_20220731.nc
+finished forec5km_sst-mean-90d_v1.0_johnston_reef-id_20220731.nc
+finished forec5km_sst-mean-90d_v1.0_palmyra_kingman_reef-id_20220731.nc
+finished forec5km_sst-mean-90d_v1.0_samoas_reef-id_20220731.nc
+finished forec5km_sst-mean-90d_v1.0_wake_reef-id_20220731.nc
+
+  compile seasonal ocean color metrics:
+
+  compile predictor data:
+
+
+  run model predictions:
+
+
+
+  run model predictions:
+
+  run scenarios:
+
+  Create shiny outputs: predictions
+
+  Create shiny outputs: scenarios
+
+  Create shiny outputs: polygons
+/data/home004/gang.liu/miniconda3/envs/forec_model_v20220624_test/lib/python3.8/site-packages/geopandas/array.py:85: ShapelyDeprecationWarning: __len__ for multi-part geometries is deprecated and will be removed in Shapely 2.0. Check the length of the `geoms` property instead to get the  number of parts of a multi-part geometry.
+  aout[:] = out
+/data/home004/gang.liu/miniconda3/envs/forec_model_v20220624_test/lib/python3.8/site-packages/geopandas/array.py:85: ShapelyDeprecationWarning: __len__ for multi-part geometries is deprecated and will be removed in Shapely 2.0. Check the length of the `geoms` property instead to get the  number of parts of a multi-part geometry.
+  aout[:] = out
+
+  CRW outputs:
+(forec_model_v20220624_test) [gang.liu@rhw1352 v2]$
+
+----------------------------------------------------------------------------------------------
+8) cd /data/home004/gang.liu/crw_github_jms5151/uh-noaa-shiny-app
+9) git pull
+      Enter passphrase for key '/data/home004/gang.liu/.ssh/id_rsa':
+      Already up-to-date.         --------------- if there is no update in the master depository in Github.
+10) cd /data/data568/crwdir/product/forec/model/v2/uh-noaa-shiny-app/forec_shiny_app_data
+11) ls
+           Forecasts  Scenarios
+      You will see only these two directories there.
+12) Check if the files are up to today's date:
+      ls -l Forecasts
+      ls -l Scenarios
+13) rsync -a Forecasts /data/home004/gang.liu/crw_github_jms5151/uh-noaa-shiny-app/forec_shiny_app_data/
+14) rsync -a Scenarios /data/home004/gang.liu/crw_github_jms5151/uh-noaa-shiny-app/forec_shiny_app_data/
+15) Check content and date of the files in the two destination folders:
+     ls -l /data/home004/gang.liu/crw_github_jms5151/uh-noaa-shiny-app/forec_shiny_app_data/Forecasts
+     ls -l /data/home004/gang.liu/crw_github_jms5151/uh-noaa-shiny-app/forec_shiny_app_data/Scenarios
+16) cd /data/home004/gang.liu/crw_github_jms5151/uh-noaa-shiny-app
+17) git add .
+18) git commit -m "Weekly data update of yyyy/mm/dd."
+      [gang.liu@rhw1237 uh-noaa-shiny-app]$ git commit -m "Weekly data update of 2022/08/01."
+      [main 05cd3d3] Weekly data update of 2022/08/01.
+      46 files changed, 262784 insertions(+), 262784 deletions(-)
+      rewrite forec_shiny_app_data/Scenarios/ga_gbr_scenarios_aggregated_to_gbrmpa_park_zones.csv (60%)
+      rewrite forec_shiny_app_data/Scenarios/ga_gbr_scenarios_aggregated_to_management_zones.csv (67%)
+19) git status
+      # On branch main
+      # Your branch is ahead of 'origin/main' by 1 commit.
+      #   (use "git push" to publish your local commits)
+      #
+      nothing to commit, working directory clean
+20) git push
+      warning: push.default is unset; its implicit value is changing in
+      Git 2.0 from 'matching' to 'simple'. To squelch this message
+      and maintain the current behavior after the default changes, use:
+
+        git config --global push.default matching
+
+      To squelch this message and adopt the new behavior now, use:
+
+        git config --global push.default simple
+
+      See 'git help config' and search for 'push.default' for further information.
+      (the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+      'current' instead of 'simple' if you sometimes use older versions of Git)
+
+      Enter passphrase for key '/data/home004/gang.liu/.ssh/id_rsa':
+      Counting objects: 65, done.
+      Delta compression using up to 24 threads.
+      Compressing objects: 100% (50/50), done.
+      Writing objects: 100% (50/50), 3.59 MiB | 1.93 MiB/s, done.
+      Total 50 (delta 34), reused 0 (delta 0)
+      remote: Resolving deltas: 100% (34/34), completed with 14 local objects.
+      To git@github.com:jms5151/uh-noaa-shiny-app
+      a220ad8..05cd3d3  main -> main
+
+----------------------------------------------------------------------------------------------
+21) Get onto GitHub web account:
+22) Enter repository:  jms5151/uh-noaa-shiny-app 
+23) Click on "Actions" in the top horizonal navigation bar.
+24) On this webpage, in the main part of the browser window, you may see a spinning "Build" 
+    or a just-completed green-checked "Build". It may take a few minutes to 20+ minutes. Wait 
+    until it completes.
+25) Once "build" completes, click on "Deploy" in the left navigation bar.
+26) In the top right area of the main window, click on "Run workflow" pull-down menu.
+27) Click on "Run workflow" button. Wait for a few seconds, a spinning "Deploy" will appear. 
+    May need to click on refresh button of the browser to see the spinning "deploy". It 
+    usually runs for a couple to a few minutes.
+
+----------------------------------------------------------------------------------------------
+28) Get onto Shiny App web page: https://coraldisease.com
+29) Click on any data grid (oragne colored grid preferred to see the border (a gap) between 
+    observations and predictions on the lower right panel. 
+
+----------------------------------------------------------------------------------------------
+30) If the data are updated on the website, all good! Wati until the next Monday or Tuesday
+    for the next update.
+ 
+==============================================================================================
+The end

@@ -7,6 +7,12 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      HOST: "66.228.47.179"
+      DOCKER_STACK_NAME: coral
+      DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+      DOCKER_ID: jamiecaldwell
+
     steps:
       # Check out GitHub reportiory
       - uses: actions/checkout@v2

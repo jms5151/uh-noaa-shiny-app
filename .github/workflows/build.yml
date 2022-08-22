@@ -17,6 +17,15 @@ jobs:
       # Check out GitHub reportiory
       - uses: actions/checkout@v2
 
+      - name: Checkout transcrypt
+        uses: actions/checkout@v2
+        with:
+          repository: elasticdog/transcrypt
+          path: transcrypt
+
+      - name: Initialise transcrypt
+        run: ./transcrypt/transcrypt -c aes-256-cbc -p '${{ secrets.TRANSCRYPT_PASSWORD }}' --yes
+
       # Build the Docker image
       - name: Build container image
         run: |

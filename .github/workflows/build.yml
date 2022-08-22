@@ -1,4 +1,4 @@
-name: Build
+name: Build and Deploy
 on:
   push:
     branches:
@@ -29,3 +29,8 @@ jobs:
       # Push the image to DockerHub
       - name: Push container image
         run: docker push jamiecaldwell/uh-crw:latest
+
+      # Deploy the image to the webserver.
+      - name: Run deploy script
+        run: ./infra/deploy.sh
+        shell: bash

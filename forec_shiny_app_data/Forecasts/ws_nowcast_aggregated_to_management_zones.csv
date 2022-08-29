@@ -1,5 +1,4 @@
 ID,Region,Date,type,Lwr,value,Upr,drisk
-cnmi_1,guam_cnmi,2022-06-05,nowcast,0.8,1.6,3.2,1
 cnmi_1,guam_cnmi,2022-06-12,nowcast,0.8,1.6,3.2,1
 cnmi_1,guam_cnmi,2022-06-19,nowcast,0.8,1.6,3.2,1
 cnmi_1,guam_cnmi,2022-06-26,nowcast,0.8,1.6,3.2,1
@@ -11,11 +10,11 @@ cnmi_1,guam_cnmi,2022-07-31,nowcast,0.8,1.6,3.2,1
 cnmi_1,guam_cnmi,2022-08-07,nowcast,0.8,1.6,3.2,1
 cnmi_1,guam_cnmi,2022-08-14,nowcast,0.8,1.6,3.2,1
 cnmi_1,guam_cnmi,2022-08-21,nowcast,0.8,1.6,3.4000000000000004,1
-cnmi_1,guam_cnmi,2022-08-28,forecast,0.8,1.6,3.4000000000000004,1
+cnmi_1,guam_cnmi,2022-08-28,nowcast,0.8,1.6,3.4000000000000004,1
 cnmi_1,guam_cnmi,2022-09-04,forecast,0.8,1.6,3.2,1
 cnmi_1,guam_cnmi,2022-09-11,forecast,0.8,1.6,3.2,1
-cnmi_1,guam_cnmi,2022-09-18,forecast,0.8,1.6,7.0,1
-cnmi_1,guam_cnmi,2022-09-25,forecast,0.8,6.0,17.0,2
+cnmi_1,guam_cnmi,2022-09-18,forecast,0.8,1.6,3.2,1
+cnmi_1,guam_cnmi,2022-09-25,forecast,0.8,1.6,7.0,1
 cnmi_1,guam_cnmi,2022-10-02,forecast,0.8,4.0,17.0,1
 cnmi_1,guam_cnmi,2022-10-09,forecast,0.8,4.0,17.0,1
 cnmi_1,guam_cnmi,2022-10-16,forecast,0.8,4.0,17.0,1
@@ -23,7 +22,7 @@ cnmi_1,guam_cnmi,2022-10-23,forecast,0.0,4.0,17.0,1
 cnmi_1,guam_cnmi,2022-10-30,forecast,0.8,4.0,17.0,1
 cnmi_1,guam_cnmi,2022-11-06,forecast,1.0,4.0,17.0,1
 cnmi_1,guam_cnmi,2022-11-13,forecast,1.0,4.0,17.0,1
-cnmi_10,guam_cnmi,2022-06-05,nowcast,0.9,1.8,3.7,1
+cnmi_1,guam_cnmi,2022-11-20,forecast,1.0,4.0,17.0,1
 cnmi_10,guam_cnmi,2022-06-12,nowcast,0.9,1.8,3.7,1
 cnmi_10,guam_cnmi,2022-06-19,nowcast,0.9,1.8,3.7,1
 cnmi_10,guam_cnmi,2022-06-26,nowcast,0.9,1.8,3.7,1
@@ -35,11 +34,11 @@ cnmi_10,guam_cnmi,2022-07-31,nowcast,0.9,1.8,3.7,1
 cnmi_10,guam_cnmi,2022-08-07,nowcast,0.9,1.8,3.7,1
 cnmi_10,guam_cnmi,2022-08-14,nowcast,0.9,1.8,3.7,1
 cnmi_10,guam_cnmi,2022-08-21,nowcast,0.9,1.8,3.7,1
-cnmi_10,guam_cnmi,2022-08-28,forecast,0.9,1.8,3.7,1
+cnmi_10,guam_cnmi,2022-08-28,nowcast,0.9,1.8,3.7,1
 cnmi_10,guam_cnmi,2022-09-04,forecast,0.9,1.8,3.7,1
 cnmi_10,guam_cnmi,2022-09-11,forecast,0.9,1.8,3.7,1
-cnmi_10,guam_cnmi,2022-09-18,forecast,0.9,3.8,6.9,1
-cnmi_10,guam_cnmi,2022-09-25,forecast,0.9,5.8,17.0,2
+cnmi_10,guam_cnmi,2022-09-18,forecast,0.9,1.9,3.8,1
+cnmi_10,guam_cnmi,2022-09-25,forecast,0.9,3.7,6.9,1
 cnmi_10,guam_cnmi,2022-10-02,forecast,0.9,5.8,17.0,2
 cnmi_10,guam_cnmi,2022-10-09,forecast,0.9,5.8,17.0,2
 cnmi_10,guam_cnmi,2022-10-16,forecast,0.9,5.8,17.0,2
@@ -47,7 +46,7 @@ cnmi_10,guam_cnmi,2022-10-23,forecast,0.9,5.8,17.0,2
 cnmi_10,guam_cnmi,2022-10-30,forecast,0.9,5.8,17.0,2
 cnmi_10,guam_cnmi,2022-11-06,forecast,1.0,4.0,17.0,1
 cnmi_10,guam_cnmi,2022-11-13,forecast,1.0,4.0,17.0,1
-cnmi_2,guam_cnmi,2022-06-05,nowcast,0.0,0.0,1.0,0
+cnmi_10,guam_cnmi,2022-11-20,forecast,1.0,4.0,17.0,1
 cnmi_2,guam_cnmi,2022-06-12,nowcast,0.0,0.0,1.0,0
 cnmi_2,guam_cnmi,2022-06-19,nowcast,0.0,0.0,1.0,0
 cnmi_2,guam_cnmi,2022-06-26,nowcast,0.0,0.0,1.0,0
@@ -59,11 +58,11 @@ cnmi_2,guam_cnmi,2022-07-31,nowcast,0.0,0.0,1.0,0
 cnmi_2,guam_cnmi,2022-08-07,nowcast,0.0,0.0,1.0,0
 cnmi_2,guam_cnmi,2022-08-14,nowcast,0.0,0.0,1.0,0
 cnmi_2,guam_cnmi,2022-08-21,nowcast,0.0,0.0,1.0,0
-cnmi_2,guam_cnmi,2022-08-28,forecast,0.0,0.0,1.0,0
+cnmi_2,guam_cnmi,2022-08-28,nowcast,0.0,0.0,1.0,0
 cnmi_2,guam_cnmi,2022-09-04,forecast,0.0,0.0,1.0,0
 cnmi_2,guam_cnmi,2022-09-11,forecast,0.0,0.0,1.0,0
-cnmi_2,guam_cnmi,2022-09-18,forecast,0.0,1.0,7.0,0
-cnmi_2,guam_cnmi,2022-09-25,forecast,0.0,6.0,17.0,2
+cnmi_2,guam_cnmi,2022-09-18,forecast,0.0,0.0,1.0,0
+cnmi_2,guam_cnmi,2022-09-25,forecast,0.0,1.0,7.0,0
 cnmi_2,guam_cnmi,2022-10-02,forecast,0.0,4.0,17.0,1
 cnmi_2,guam_cnmi,2022-10-09,forecast,0.0,4.0,17.0,1
 cnmi_2,guam_cnmi,2022-10-16,forecast,0.0,4.0,17.0,1
@@ -71,7 +70,7 @@ cnmi_2,guam_cnmi,2022-10-23,forecast,0.0,4.0,17.0,1
 cnmi_2,guam_cnmi,2022-10-30,forecast,0.0,4.0,17.0,1
 cnmi_2,guam_cnmi,2022-11-06,forecast,1.0,4.0,17.0,1
 cnmi_2,guam_cnmi,2022-11-13,forecast,1.0,4.0,17.0,1
-cnmi_3,guam_cnmi,2022-06-05,nowcast,0.0,0.0,1.0,0
+cnmi_2,guam_cnmi,2022-11-20,forecast,1.0,4.0,17.0,1
 cnmi_3,guam_cnmi,2022-06-12,nowcast,0.0,0.0,1.0,0
 cnmi_3,guam_cnmi,2022-06-19,nowcast,0.0,0.0,1.0,0
 cnmi_3,guam_cnmi,2022-06-26,nowcast,0.0,0.0,1.0,0
@@ -83,11 +82,11 @@ cnmi_3,guam_cnmi,2022-07-31,nowcast,0.0,0.0,1.0,0
 cnmi_3,guam_cnmi,2022-08-07,nowcast,0.0,0.0,1.0,0
 cnmi_3,guam_cnmi,2022-08-14,nowcast,0.0,0.0,1.0,0
 cnmi_3,guam_cnmi,2022-08-21,nowcast,0.0,0.0,1.0,0
-cnmi_3,guam_cnmi,2022-08-28,forecast,0.0,0.0,1.0,0
+cnmi_3,guam_cnmi,2022-08-28,nowcast,0.0,0.0,1.0,0
 cnmi_3,guam_cnmi,2022-09-04,forecast,0.0,0.0,1.0,0
 cnmi_3,guam_cnmi,2022-09-11,forecast,0.0,0.0,1.0,0
-cnmi_3,guam_cnmi,2022-09-18,forecast,0.0,1.0,7.0,0
-cnmi_3,guam_cnmi,2022-09-25,forecast,0.0,6.0,17.0,2
+cnmi_3,guam_cnmi,2022-09-18,forecast,0.0,0.0,1.0,0
+cnmi_3,guam_cnmi,2022-09-25,forecast,0.0,1.0,7.0,0
 cnmi_3,guam_cnmi,2022-10-02,forecast,0.0,4.0,17.0,1
 cnmi_3,guam_cnmi,2022-10-09,forecast,0.0,4.0,17.0,1
 cnmi_3,guam_cnmi,2022-10-16,forecast,0.0,4.0,17.0,1
@@ -95,7 +94,7 @@ cnmi_3,guam_cnmi,2022-10-23,forecast,0.0,4.0,17.0,1
 cnmi_3,guam_cnmi,2022-10-30,forecast,0.0,4.0,17.0,1
 cnmi_3,guam_cnmi,2022-11-06,forecast,1.0,4.0,17.0,1
 cnmi_3,guam_cnmi,2022-11-13,forecast,1.0,4.0,17.0,1
-cnmi_4,guam_cnmi,2022-06-05,nowcast,0.0,0.0,0.9,0
+cnmi_3,guam_cnmi,2022-11-20,forecast,1.0,4.0,17.0,1
 cnmi_4,guam_cnmi,2022-06-12,nowcast,0.0,0.0,0.9,0
 cnmi_4,guam_cnmi,2022-06-19,nowcast,0.0,0.0,0.9,0
 cnmi_4,guam_cnmi,2022-06-26,nowcast,0.0,0.0,0.9,0
@@ -107,11 +106,11 @@ cnmi_4,guam_cnmi,2022-07-31,nowcast,0.0,0.0,1.0,0
 cnmi_4,guam_cnmi,2022-08-07,nowcast,0.0,0.0,0.9,0
 cnmi_4,guam_cnmi,2022-08-14,nowcast,0.0,0.0,0.9,0
 cnmi_4,guam_cnmi,2022-08-21,nowcast,0.0,0.0,0.9,0
-cnmi_4,guam_cnmi,2022-08-28,forecast,0.0,0.0,1.0,0
+cnmi_4,guam_cnmi,2022-08-28,nowcast,0.0,0.0,1.0,0
 cnmi_4,guam_cnmi,2022-09-04,forecast,0.0,0.0,1.0,0
 cnmi_4,guam_cnmi,2022-09-11,forecast,0.0,0.0,0.9,0
-cnmi_4,guam_cnmi,2022-09-18,forecast,0.0,1.0,7.0,0
-cnmi_4,guam_cnmi,2022-09-25,forecast,0.0,6.0,17.0,2
+cnmi_4,guam_cnmi,2022-09-18,forecast,0.0,0.0,0.9,0
+cnmi_4,guam_cnmi,2022-09-25,forecast,0.0,0.9,7.0,0
 cnmi_4,guam_cnmi,2022-10-02,forecast,0.0,4.0,17.0,1
 cnmi_4,guam_cnmi,2022-10-09,forecast,0.0,4.0,17.0,1
 cnmi_4,guam_cnmi,2022-10-16,forecast,0.0,4.0,17.0,1
@@ -119,7 +118,7 @@ cnmi_4,guam_cnmi,2022-10-23,forecast,0.0,4.0,17.0,1
 cnmi_4,guam_cnmi,2022-10-30,forecast,0.0,4.0,17.0,1
 cnmi_4,guam_cnmi,2022-11-06,forecast,1.0,4.0,17.0,1
 cnmi_4,guam_cnmi,2022-11-13,forecast,1.0,4.0,17.0,1
-cnmi_5,guam_cnmi,2022-06-05,nowcast,0.0,0.0,1.0,0
+cnmi_4,guam_cnmi,2022-11-20,forecast,1.0,4.0,17.0,1
 cnmi_5,guam_cnmi,2022-06-12,nowcast,0.0,0.0,1.0,0
 cnmi_5,guam_cnmi,2022-06-19,nowcast,0.0,0.0,1.0,0
 cnmi_5,guam_cnmi,2022-06-26,nowcast,0.0,0.0,1.0,0
@@ -131,11 +130,11 @@ cnmi_5,guam_cnmi,2022-07-31,nowcast,0.0,0.0,1.0,0
 cnmi_5,guam_cnmi,2022-08-07,nowcast,0.0,0.0,1.0,0
 cnmi_5,guam_cnmi,2022-08-14,nowcast,0.0,0.0,1.0,0
 cnmi_5,guam_cnmi,2022-08-21,nowcast,0.0,0.0,1.0,0
-cnmi_5,guam_cnmi,2022-08-28,forecast,0.0,0.0,1.0,0
+cnmi_5,guam_cnmi,2022-08-28,nowcast,0.0,0.0,1.0,0
 cnmi_5,guam_cnmi,2022-09-04,forecast,0.0,0.0,0.0,0
 cnmi_5,guam_cnmi,2022-09-11,forecast,0.0,0.0,1.0,0
-cnmi_5,guam_cnmi,2022-09-18,forecast,0.0,1.0,7.0,0
-cnmi_5,guam_cnmi,2022-09-25,forecast,0.0,6.0,17.0,2
+cnmi_5,guam_cnmi,2022-09-18,forecast,0.0,0.0,1.0,0
+cnmi_5,guam_cnmi,2022-09-25,forecast,0.0,1.0,7.0,0
 cnmi_5,guam_cnmi,2022-10-02,forecast,0.0,4.0,17.0,1
 cnmi_5,guam_cnmi,2022-10-09,forecast,0.0,4.0,17.0,1
 cnmi_5,guam_cnmi,2022-10-16,forecast,0.0,4.0,17.0,1
@@ -143,7 +142,7 @@ cnmi_5,guam_cnmi,2022-10-23,forecast,0.0,4.0,17.0,1
 cnmi_5,guam_cnmi,2022-10-30,forecast,0.0,4.0,17.0,1
 cnmi_5,guam_cnmi,2022-11-06,forecast,1.0,4.0,17.0,1
 cnmi_5,guam_cnmi,2022-11-13,forecast,1.0,4.0,17.0,1
-cnmi_7,guam_cnmi,2022-06-05,nowcast,0.0,0.0,0.9,0
+cnmi_5,guam_cnmi,2022-11-20,forecast,1.0,4.0,17.0,1
 cnmi_7,guam_cnmi,2022-06-12,nowcast,0.0,0.0,0.9,0
 cnmi_7,guam_cnmi,2022-06-19,nowcast,0.0,0.0,0.9,0
 cnmi_7,guam_cnmi,2022-06-26,nowcast,0.0,0.0,0.9,0
@@ -155,11 +154,11 @@ cnmi_7,guam_cnmi,2022-07-31,nowcast,0.0,0.0,1.0,0
 cnmi_7,guam_cnmi,2022-08-07,nowcast,0.0,0.0,0.9,0
 cnmi_7,guam_cnmi,2022-08-14,nowcast,0.0,0.0,0.9,0
 cnmi_7,guam_cnmi,2022-08-21,nowcast,0.0,0.0,0.9,0
-cnmi_7,guam_cnmi,2022-08-28,forecast,0.0,0.0,1.0,0
+cnmi_7,guam_cnmi,2022-08-28,nowcast,0.0,0.0,1.0,0
 cnmi_7,guam_cnmi,2022-09-04,forecast,0.0,0.0,1.0,0
 cnmi_7,guam_cnmi,2022-09-11,forecast,0.0,0.0,0.9,0
-cnmi_7,guam_cnmi,2022-09-18,forecast,0.0,1.0,7.0,0
-cnmi_7,guam_cnmi,2022-09-25,forecast,0.0,6.0,17.0,2
+cnmi_7,guam_cnmi,2022-09-18,forecast,0.0,0.0,0.9,0
+cnmi_7,guam_cnmi,2022-09-25,forecast,0.0,0.9,7.0,0
 cnmi_7,guam_cnmi,2022-10-02,forecast,0.0,4.0,17.0,1
 cnmi_7,guam_cnmi,2022-10-09,forecast,0.0,4.0,17.0,1
 cnmi_7,guam_cnmi,2022-10-16,forecast,0.0,4.0,17.0,1
@@ -167,7 +166,7 @@ cnmi_7,guam_cnmi,2022-10-23,forecast,0.0,4.0,17.0,1
 cnmi_7,guam_cnmi,2022-10-30,forecast,0.0,4.0,17.0,1
 cnmi_7,guam_cnmi,2022-11-06,forecast,1.0,4.0,17.0,1
 cnmi_7,guam_cnmi,2022-11-13,forecast,1.0,4.0,17.0,1
-cnmi_9,guam_cnmi,2022-06-05,nowcast,0.0,0.0,0.0,0
+cnmi_7,guam_cnmi,2022-11-20,forecast,1.0,4.0,17.0,1
 cnmi_9,guam_cnmi,2022-06-12,nowcast,0.0,0.0,0.0,0
 cnmi_9,guam_cnmi,2022-06-19,nowcast,0.0,0.0,0.0,0
 cnmi_9,guam_cnmi,2022-06-26,nowcast,0.0,0.0,0.0,0
@@ -179,11 +178,11 @@ cnmi_9,guam_cnmi,2022-07-31,nowcast,0.0,0.0,1.0,0
 cnmi_9,guam_cnmi,2022-08-07,nowcast,0.0,0.0,0.0,0
 cnmi_9,guam_cnmi,2022-08-14,nowcast,0.0,0.0,0.0,0
 cnmi_9,guam_cnmi,2022-08-21,nowcast,0.0,0.0,0.0,0
-cnmi_9,guam_cnmi,2022-08-28,forecast,0.0,0.0,1.0,0
+cnmi_9,guam_cnmi,2022-08-28,nowcast,0.0,0.0,1.0,0
 cnmi_9,guam_cnmi,2022-09-04,forecast,0.0,0.0,1.0,0
 cnmi_9,guam_cnmi,2022-09-11,forecast,0.0,0.0,0.0,0
-cnmi_9,guam_cnmi,2022-09-18,forecast,0.0,1.0,7.0,0
-cnmi_9,guam_cnmi,2022-09-25,forecast,0.0,6.0,17.0,2
+cnmi_9,guam_cnmi,2022-09-18,forecast,0.0,0.0,0.0,0
+cnmi_9,guam_cnmi,2022-09-25,forecast,0.0,0.0,7.0,0
 cnmi_9,guam_cnmi,2022-10-02,forecast,0.0,4.0,17.0,1
 cnmi_9,guam_cnmi,2022-10-09,forecast,0.0,4.0,17.0,1
 cnmi_9,guam_cnmi,2022-10-16,forecast,0.0,4.0,17.0,1
@@ -191,7 +190,7 @@ cnmi_9,guam_cnmi,2022-10-23,forecast,0.0,4.0,17.0,1
 cnmi_9,guam_cnmi,2022-10-30,forecast,0.0,4.0,17.0,1
 cnmi_9,guam_cnmi,2022-11-06,forecast,1.0,4.0,17.0,1
 cnmi_9,guam_cnmi,2022-11-13,forecast,1.0,4.0,17.0,1
-gbr_1,gbr,2022-06-05,nowcast,0.0,0.0,1.0,0
+cnmi_9,guam_cnmi,2022-11-20,forecast,1.0,4.0,17.0,1
 gbr_1,gbr,2022-06-12,nowcast,0.0,0.0,1.0,0
 gbr_1,gbr,2022-06-19,nowcast,0.0,0.0,1.0,0
 gbr_1,gbr,2022-06-26,nowcast,0.0,0.0,1.0,0
@@ -203,19 +202,19 @@ gbr_1,gbr,2022-07-31,nowcast,0.0,0.0,2.0,0
 gbr_1,gbr,2022-08-07,nowcast,0.0,0.0,2.0,0
 gbr_1,gbr,2022-08-14,nowcast,0.0,0.0,2.0,0
 gbr_1,gbr,2022-08-21,nowcast,0.0,0.0,1.0,0
-gbr_1,gbr,2022-08-28,forecast,0.0,0.0,2.0,0
+gbr_1,gbr,2022-08-28,nowcast,0.0,0.0,1.0,0
 gbr_1,gbr,2022-09-04,forecast,0.0,1.0,2.0,0
 gbr_1,gbr,2022-09-11,forecast,0.0,1.0,2.0,0
 gbr_1,gbr,2022-09-18,forecast,0.0,1.0,2.0,0
 gbr_1,gbr,2022-09-25,forecast,0.0,1.0,2.0,0
 gbr_1,gbr,2022-10-02,forecast,0.0,1.0,2.0,0
-gbr_1,gbr,2022-10-09,forecast,0.0,6.0,7.0,2
+gbr_1,gbr,2022-10-09,forecast,0.0,6.0,18.0,2
 gbr_1,gbr,2022-10-16,forecast,1.0,20.0,20.0,3
 gbr_1,gbr,2022-10-23,forecast,1.0,20.0,20.0,3
 gbr_1,gbr,2022-10-30,forecast,1.0,20.0,20.0,3
 gbr_1,gbr,2022-11-06,forecast,20.0,20.0,20.0,3
 gbr_1,gbr,2022-11-13,forecast,20.0,20.0,20.0,3
-gbr_2,gbr,2022-06-05,nowcast,0.0,0.0,1.0,0
+gbr_1,gbr,2022-11-20,forecast,20.0,20.0,20.0,3
 gbr_2,gbr,2022-06-12,nowcast,0.0,0.0,1.0,0
 gbr_2,gbr,2022-06-19,nowcast,0.0,0.0,1.0,0
 gbr_2,gbr,2022-06-26,nowcast,0.0,0.0,1.0,0
@@ -227,19 +226,19 @@ gbr_2,gbr,2022-07-31,nowcast,0.0,0.0,1.0,0
 gbr_2,gbr,2022-08-07,nowcast,0.0,0.0,1.0,0
 gbr_2,gbr,2022-08-14,nowcast,0.0,0.0,1.0,0
 gbr_2,gbr,2022-08-21,nowcast,0.0,0.0,1.0,0
-gbr_2,gbr,2022-08-28,forecast,0.0,0.0,1.0,0
+gbr_2,gbr,2022-08-28,nowcast,0.0,0.0,1.0,0
 gbr_2,gbr,2022-09-04,forecast,0.0,0.0,1.0,0
 gbr_2,gbr,2022-09-11,forecast,0.0,0.0,1.0,0
 gbr_2,gbr,2022-09-18,forecast,0.0,0.0,1.0,0
 gbr_2,gbr,2022-09-25,forecast,0.0,0.0,1.0,0
-gbr_2,gbr,2022-10-02,forecast,1.0,19.100000000000023,20.0,3
+gbr_2,gbr,2022-10-02,forecast,1.0,18.0,18.0,3
 gbr_2,gbr,2022-10-09,forecast,2.0,20.0,20.0,3
-gbr_2,gbr,2022-10-16,forecast,3.0,20.0,20.0,3
+gbr_2,gbr,2022-10-16,forecast,2.0,20.0,20.0,3
 gbr_2,gbr,2022-10-23,forecast,3.0,20.0,20.0,3
 gbr_2,gbr,2022-10-30,forecast,3.0,20.0,20.0,3
 gbr_2,gbr,2022-11-06,forecast,20.0,20.0,20.0,3
 gbr_2,gbr,2022-11-13,forecast,20.0,20.0,20.0,3
-gbr_3,gbr,2022-06-05,nowcast,0.0,0.0,0.0,0
+gbr_2,gbr,2022-11-20,forecast,20.0,20.0,20.0,3
 gbr_3,gbr,2022-06-12,nowcast,0.0,0.0,0.0,0
 gbr_3,gbr,2022-06-19,nowcast,0.0,0.0,0.0,0
 gbr_3,gbr,2022-06-26,nowcast,0.0,0.0,1.0,0
@@ -251,19 +250,19 @@ gbr_3,gbr,2022-07-31,nowcast,0.0,0.0,1.0,0
 gbr_3,gbr,2022-08-07,nowcast,0.0,0.0,1.0,0
 gbr_3,gbr,2022-08-14,nowcast,0.0,0.0,1.0,0
 gbr_3,gbr,2022-08-21,nowcast,0.0,0.0,1.0,0
-gbr_3,gbr,2022-08-28,forecast,0.0,0.0,1.0,0
+gbr_3,gbr,2022-08-28,nowcast,0.0,0.0,1.0,0
 gbr_3,gbr,2022-09-04,forecast,0.0,0.0,1.0,0
 gbr_3,gbr,2022-09-11,forecast,0.0,0.0,1.0,0
-gbr_3,gbr,2022-09-18,forecast,0.0,1.0,1.0,0
-gbr_3,gbr,2022-09-25,forecast,1.0,1.0,1.0,0
+gbr_3,gbr,2022-09-18,forecast,0.0,0.0,1.0,0
+gbr_3,gbr,2022-09-25,forecast,0.0,1.0,1.0,0
 gbr_3,gbr,2022-10-02,forecast,3.0,20.0,20.0,3
-gbr_3,gbr,2022-10-09,forecast,3.0,20.0,20.0,3
+gbr_3,gbr,2022-10-09,forecast,2.0,20.0,20.0,3
 gbr_3,gbr,2022-10-16,forecast,2.0,20.0,20.0,3
 gbr_3,gbr,2022-10-23,forecast,2.0,20.0,20.0,3
 gbr_3,gbr,2022-10-30,forecast,2.0,20.0,20.0,3
 gbr_3,gbr,2022-11-06,forecast,20.0,20.0,20.0,3
 gbr_3,gbr,2022-11-13,forecast,20.0,20.0,20.0,3
-gbr_4,gbr,2022-06-05,nowcast,0.0,0.0,0.0,0
+gbr_3,gbr,2022-11-20,forecast,20.0,20.0,20.0,3
 gbr_4,gbr,2022-06-12,nowcast,0.0,0.0,0.0,0
 gbr_4,gbr,2022-06-19,nowcast,0.0,0.0,0.0,0
 gbr_4,gbr,2022-06-26,nowcast,0.0,0.0,1.0,0
@@ -275,7 +274,7 @@ gbr_4,gbr,2022-07-31,nowcast,0.0,0.0,1.0,0
 gbr_4,gbr,2022-08-07,nowcast,0.0,0.0,1.0,0
 gbr_4,gbr,2022-08-14,nowcast,0.0,0.7999999999999545,2.0,0
 gbr_4,gbr,2022-08-21,nowcast,2.0,4.0,20.0,1
-gbr_4,gbr,2022-08-28,forecast,2.0,4.0,19.0,1
+gbr_4,gbr,2022-08-28,nowcast,2.0,4.0,20.0,1
 gbr_4,gbr,2022-09-04,forecast,2.0,4.0,19.0,1
 gbr_4,gbr,2022-09-11,forecast,2.0,4.0,19.0,1
 gbr_4,gbr,2022-09-18,forecast,2.0,4.0,19.0,1
@@ -287,7 +286,7 @@ gbr_4,gbr,2022-10-23,forecast,18.0,18.0,19.0,3
 gbr_4,gbr,2022-10-30,forecast,18.0,18.0,19.0,3
 gbr_4,gbr,2022-11-06,forecast,18.0,19.0,20.0,3
 gbr_4,gbr,2022-11-13,forecast,18.0,19.0,20.0,3
-guam_Achang Reef Flat Marine Preserve,guam_cnmi,2022-06-05,nowcast,0.0,0.0,8.0,0
+gbr_4,gbr,2022-11-20,forecast,18.0,19.0,20.0,3
 guam_Achang Reef Flat Marine Preserve,guam_cnmi,2022-06-12,nowcast,0.0,0.9,8.0,0
 guam_Achang Reef Flat Marine Preserve,guam_cnmi,2022-06-19,nowcast,0.0,0.9,8.0,0
 guam_Achang Reef Flat Marine Preserve,guam_cnmi,2022-06-26,nowcast,0.0,0.9,8.0,0
@@ -299,10 +298,10 @@ guam_Achang Reef Flat Marine Preserve,guam_cnmi,2022-07-31,nowcast,0.0,0.0,8.0,0
 guam_Achang Reef Flat Marine Preserve,guam_cnmi,2022-08-07,nowcast,0.0,0.0,8.0,0
 guam_Achang Reef Flat Marine Preserve,guam_cnmi,2022-08-14,nowcast,0.0,0.9,8.0,0
 guam_Achang Reef Flat Marine Preserve,guam_cnmi,2022-08-21,nowcast,0.0,0.0,8.0,0
-guam_Achang Reef Flat Marine Preserve,guam_cnmi,2022-08-28,forecast,0.0,0.0,8.0,0
+guam_Achang Reef Flat Marine Preserve,guam_cnmi,2022-08-28,nowcast,0.0,0.0,8.0,0
 guam_Achang Reef Flat Marine Preserve,guam_cnmi,2022-09-04,forecast,0.0,0.0,7.0,0
 guam_Achang Reef Flat Marine Preserve,guam_cnmi,2022-09-11,forecast,0.0,0.0,7.0,0
-guam_Achang Reef Flat Marine Preserve,guam_cnmi,2022-09-18,forecast,0.0,6.0,17.0,2
+guam_Achang Reef Flat Marine Preserve,guam_cnmi,2022-09-18,forecast,0.0,0.0,7.0,0
 guam_Achang Reef Flat Marine Preserve,guam_cnmi,2022-09-25,forecast,0.0,6.0,17.0,2
 guam_Achang Reef Flat Marine Preserve,guam_cnmi,2022-10-02,forecast,0.0,3.0,17.0,1
 guam_Achang Reef Flat Marine Preserve,guam_cnmi,2022-10-09,forecast,0.0,3.0,17.0,1
@@ -311,7 +310,7 @@ guam_Achang Reef Flat Marine Preserve,guam_cnmi,2022-10-23,forecast,0.0,3.0,17.0
 guam_Achang Reef Flat Marine Preserve,guam_cnmi,2022-10-30,forecast,0.0,3.0,17.0,1
 guam_Achang Reef Flat Marine Preserve,guam_cnmi,2022-11-06,forecast,0.0,4.0,17.0,1
 guam_Achang Reef Flat Marine Preserve,guam_cnmi,2022-11-13,forecast,0.0,4.0,17.0,1
-guam_Pati Point Marine Preserve,guam_cnmi,2022-06-05,nowcast,1.0,2.0,8.0,1
+guam_Achang Reef Flat Marine Preserve,guam_cnmi,2022-11-20,forecast,0.0,4.0,17.0,1
 guam_Pati Point Marine Preserve,guam_cnmi,2022-06-12,nowcast,1.0,2.0,8.0,1
 guam_Pati Point Marine Preserve,guam_cnmi,2022-06-19,nowcast,1.0,2.0,8.0,1
 guam_Pati Point Marine Preserve,guam_cnmi,2022-06-26,nowcast,1.0,2.0,8.0,1
@@ -323,10 +322,10 @@ guam_Pati Point Marine Preserve,guam_cnmi,2022-07-31,nowcast,1.0,2.5,8.0,1
 guam_Pati Point Marine Preserve,guam_cnmi,2022-08-07,nowcast,1.0,2.5,8.0,1
 guam_Pati Point Marine Preserve,guam_cnmi,2022-08-14,nowcast,1.0,2.5,8.0,1
 guam_Pati Point Marine Preserve,guam_cnmi,2022-08-21,nowcast,1.0,2.0,8.0,1
-guam_Pati Point Marine Preserve,guam_cnmi,2022-08-28,forecast,1.0,2.0,8.0,1
+guam_Pati Point Marine Preserve,guam_cnmi,2022-08-28,nowcast,1.0,2.0,8.0,1
 guam_Pati Point Marine Preserve,guam_cnmi,2022-09-04,forecast,1.0,2.0,7.0,1
 guam_Pati Point Marine Preserve,guam_cnmi,2022-09-11,forecast,1.0,2.0,7.0,1
-guam_Pati Point Marine Preserve,guam_cnmi,2022-09-18,forecast,1.0,6.0,17.0,2
+guam_Pati Point Marine Preserve,guam_cnmi,2022-09-18,forecast,1.0,2.0,7.0,1
 guam_Pati Point Marine Preserve,guam_cnmi,2022-09-25,forecast,1.0,6.0,17.0,2
 guam_Pati Point Marine Preserve,guam_cnmi,2022-10-02,forecast,1.0,4.0,17.0,1
 guam_Pati Point Marine Preserve,guam_cnmi,2022-10-09,forecast,1.0,4.0,17.0,1
@@ -335,7 +334,7 @@ guam_Pati Point Marine Preserve,guam_cnmi,2022-10-23,forecast,1.0,4.0,17.0,1
 guam_Pati Point Marine Preserve,guam_cnmi,2022-10-30,forecast,1.0,4.0,17.0,1
 guam_Pati Point Marine Preserve,guam_cnmi,2022-11-06,forecast,1.0,4.0,17.0,1
 guam_Pati Point Marine Preserve,guam_cnmi,2022-11-13,forecast,1.0,4.0,17.0,1
-guam_Piti Bomb Holes Marine Preserve,guam_cnmi,2022-06-05,nowcast,0.0,1.9,25.1,1
+guam_Pati Point Marine Preserve,guam_cnmi,2022-11-20,forecast,1.0,4.0,17.0,1
 guam_Piti Bomb Holes Marine Preserve,guam_cnmi,2022-06-12,nowcast,0.0,1.9,25.1,1
 guam_Piti Bomb Holes Marine Preserve,guam_cnmi,2022-06-19,nowcast,0.0,1.9,25.1,1
 guam_Piti Bomb Holes Marine Preserve,guam_cnmi,2022-06-26,nowcast,0.0,1.9,25.1,1
@@ -347,10 +346,10 @@ guam_Piti Bomb Holes Marine Preserve,guam_cnmi,2022-07-31,nowcast,0.0,1.9,27.8,1
 guam_Piti Bomb Holes Marine Preserve,guam_cnmi,2022-08-07,nowcast,0.0,1.9,17.9,1
 guam_Piti Bomb Holes Marine Preserve,guam_cnmi,2022-08-14,nowcast,0.0,1.9,19.700000000000003,1
 guam_Piti Bomb Holes Marine Preserve,guam_cnmi,2022-08-21,nowcast,0.0,1.9,19.700000000000003,1
-guam_Piti Bomb Holes Marine Preserve,guam_cnmi,2022-08-28,forecast,0.0,1.9,19.700000000000003,1
+guam_Piti Bomb Holes Marine Preserve,guam_cnmi,2022-08-28,nowcast,0.0,1.9,19.700000000000003,1
 guam_Piti Bomb Holes Marine Preserve,guam_cnmi,2022-09-04,forecast,0.0,1.9,19.6,1
 guam_Piti Bomb Holes Marine Preserve,guam_cnmi,2022-09-11,forecast,0.0,1.9,19.6,1
-guam_Piti Bomb Holes Marine Preserve,guam_cnmi,2022-09-18,forecast,0.0,5.6,20.6,2
+guam_Piti Bomb Holes Marine Preserve,guam_cnmi,2022-09-18,forecast,0.0,1.9,19.6,1
 guam_Piti Bomb Holes Marine Preserve,guam_cnmi,2022-09-25,forecast,0.0,5.7,19.7,2
 guam_Piti Bomb Holes Marine Preserve,guam_cnmi,2022-10-02,forecast,0.0,3.9,19.7,1
 guam_Piti Bomb Holes Marine Preserve,guam_cnmi,2022-10-09,forecast,0.0,3.9,20.6,1
@@ -359,7 +358,7 @@ guam_Piti Bomb Holes Marine Preserve,guam_cnmi,2022-10-23,forecast,0.0,3.8,20.6,
 guam_Piti Bomb Holes Marine Preserve,guam_cnmi,2022-10-30,forecast,0.0,3.8,20.6,1
 guam_Piti Bomb Holes Marine Preserve,guam_cnmi,2022-11-06,forecast,0.9,3.8,19.7,1
 guam_Piti Bomb Holes Marine Preserve,guam_cnmi,2022-11-13,forecast,0.9,3.8,19.7,1
-guam_Sasa Bay Marine Preserve,guam_cnmi,2022-06-05,nowcast,0.0,1.0,8.0,0
+guam_Piti Bomb Holes Marine Preserve,guam_cnmi,2022-11-20,forecast,0.9,3.8,19.7,1
 guam_Sasa Bay Marine Preserve,guam_cnmi,2022-06-12,nowcast,0.0,1.0,8.0,0
 guam_Sasa Bay Marine Preserve,guam_cnmi,2022-06-19,nowcast,0.0,1.0,8.0,0
 guam_Sasa Bay Marine Preserve,guam_cnmi,2022-06-26,nowcast,0.0,1.0,8.0,0
@@ -371,10 +370,10 @@ guam_Sasa Bay Marine Preserve,guam_cnmi,2022-07-31,nowcast,0.0,1.0,8.0,0
 guam_Sasa Bay Marine Preserve,guam_cnmi,2022-08-07,nowcast,0.0,1.0,8.0,0
 guam_Sasa Bay Marine Preserve,guam_cnmi,2022-08-14,nowcast,0.0,1.0,8.0,0
 guam_Sasa Bay Marine Preserve,guam_cnmi,2022-08-21,nowcast,0.0,1.0,8.0,0
-guam_Sasa Bay Marine Preserve,guam_cnmi,2022-08-28,forecast,0.0,1.0,8.0,0
+guam_Sasa Bay Marine Preserve,guam_cnmi,2022-08-28,nowcast,0.0,1.0,8.0,0
 guam_Sasa Bay Marine Preserve,guam_cnmi,2022-09-04,forecast,0.0,1.0,7.0,0
 guam_Sasa Bay Marine Preserve,guam_cnmi,2022-09-11,forecast,0.0,1.0,7.0,0
-guam_Sasa Bay Marine Preserve,guam_cnmi,2022-09-18,forecast,0.0,6.0,17.0,2
+guam_Sasa Bay Marine Preserve,guam_cnmi,2022-09-18,forecast,0.0,1.0,7.0,0
 guam_Sasa Bay Marine Preserve,guam_cnmi,2022-09-25,forecast,0.0,6.0,17.0,2
 guam_Sasa Bay Marine Preserve,guam_cnmi,2022-10-02,forecast,0.0,4.0,17.0,1
 guam_Sasa Bay Marine Preserve,guam_cnmi,2022-10-09,forecast,0.0,4.0,17.0,1
@@ -383,7 +382,7 @@ guam_Sasa Bay Marine Preserve,guam_cnmi,2022-10-23,forecast,0.0,4.0,17.0,1
 guam_Sasa Bay Marine Preserve,guam_cnmi,2022-10-30,forecast,0.0,4.0,17.0,1
 guam_Sasa Bay Marine Preserve,guam_cnmi,2022-11-06,forecast,1.0,4.0,17.0,1
 guam_Sasa Bay Marine Preserve,guam_cnmi,2022-11-13,forecast,1.0,4.0,17.0,1
-guam_Tumon Bay Marine Preserve,guam_cnmi,2022-06-05,nowcast,0.9,2.8,7.8,1
+guam_Sasa Bay Marine Preserve,guam_cnmi,2022-11-20,forecast,1.0,4.0,17.0,1
 guam_Tumon Bay Marine Preserve,guam_cnmi,2022-06-12,nowcast,0.9,2.8,7.8,1
 guam_Tumon Bay Marine Preserve,guam_cnmi,2022-06-19,nowcast,0.9,2.8,7.8,1
 guam_Tumon Bay Marine Preserve,guam_cnmi,2022-06-26,nowcast,0.9,2.8,7.8,1
@@ -395,10 +394,10 @@ guam_Tumon Bay Marine Preserve,guam_cnmi,2022-07-31,nowcast,0.9,3.7,7.8,1
 guam_Tumon Bay Marine Preserve,guam_cnmi,2022-08-07,nowcast,0.9,3.7,7.8,1
 guam_Tumon Bay Marine Preserve,guam_cnmi,2022-08-14,nowcast,0.9,3.7,7.8,1
 guam_Tumon Bay Marine Preserve,guam_cnmi,2022-08-21,nowcast,0.9,3.7,7.8,1
-guam_Tumon Bay Marine Preserve,guam_cnmi,2022-08-28,forecast,0.9,3.7,7.8,1
+guam_Tumon Bay Marine Preserve,guam_cnmi,2022-08-28,nowcast,0.9,3.7,7.8,1
 guam_Tumon Bay Marine Preserve,guam_cnmi,2022-09-04,forecast,0.9,2.8,6.9,1
-guam_Tumon Bay Marine Preserve,guam_cnmi,2022-09-11,forecast,0.9,3.7,6.9,1
-guam_Tumon Bay Marine Preserve,guam_cnmi,2022-09-18,forecast,0.9,5.8,17.0,2
+guam_Tumon Bay Marine Preserve,guam_cnmi,2022-09-11,forecast,0.9,2.8,6.9,1
+guam_Tumon Bay Marine Preserve,guam_cnmi,2022-09-18,forecast,0.9,2.8,6.9,1
 guam_Tumon Bay Marine Preserve,guam_cnmi,2022-09-25,forecast,0.9,5.8,17.0,2
 guam_Tumon Bay Marine Preserve,guam_cnmi,2022-10-02,forecast,0.9,4.0,17.0,1
 guam_Tumon Bay Marine Preserve,guam_cnmi,2022-10-09,forecast,0.9,4.0,17.0,1
@@ -407,7 +406,7 @@ guam_Tumon Bay Marine Preserve,guam_cnmi,2022-10-23,forecast,0.9,4.0,17.0,1
 guam_Tumon Bay Marine Preserve,guam_cnmi,2022-10-30,forecast,0.9,4.0,17.0,1
 guam_Tumon Bay Marine Preserve,guam_cnmi,2022-11-06,forecast,1.0,4.0,17.0,1
 guam_Tumon Bay Marine Preserve,guam_cnmi,2022-11-13,forecast,1.0,4.0,17.0,1
-hawaii_Ahihi-Kinau NAR,hawaii,2022-06-05,nowcast,0.0,0.0,0.0,0
+guam_Tumon Bay Marine Preserve,guam_cnmi,2022-11-20,forecast,1.0,4.0,17.0,1
 hawaii_Ahihi-Kinau NAR,hawaii,2022-06-12,nowcast,0.0,0.0,0.0,0
 hawaii_Ahihi-Kinau NAR,hawaii,2022-06-19,nowcast,0.0,0.0,0.0,0
 hawaii_Ahihi-Kinau NAR,hawaii,2022-06-26,nowcast,0.0,0.0,0.0,0
@@ -419,19 +418,19 @@ hawaii_Ahihi-Kinau NAR,hawaii,2022-07-31,nowcast,0.0,0.0,0.0,0
 hawaii_Ahihi-Kinau NAR,hawaii,2022-08-07,nowcast,0.0,0.0,0.0,0
 hawaii_Ahihi-Kinau NAR,hawaii,2022-08-14,nowcast,0.0,0.0,0.0,0
 hawaii_Ahihi-Kinau NAR,hawaii,2022-08-21,nowcast,0.0,0.0,0.0,0
-hawaii_Ahihi-Kinau NAR,hawaii,2022-08-28,forecast,0.0,0.0,0.0,0
+hawaii_Ahihi-Kinau NAR,hawaii,2022-08-28,nowcast,0.0,0.0,0.0,0
 hawaii_Ahihi-Kinau NAR,hawaii,2022-09-04,forecast,0.0,0.0,0.0,0
 hawaii_Ahihi-Kinau NAR,hawaii,2022-09-11,forecast,0.0,0.0,0.0,0
 hawaii_Ahihi-Kinau NAR,hawaii,2022-09-18,forecast,0.0,0.0,0.0,0
-hawaii_Ahihi-Kinau NAR,hawaii,2022-09-25,forecast,0.0,0.0,7.0,0
-hawaii_Ahihi-Kinau NAR,hawaii,2022-10-02,forecast,0.0,3.0,17.0,1
+hawaii_Ahihi-Kinau NAR,hawaii,2022-09-25,forecast,0.0,0.0,0.0,0
+hawaii_Ahihi-Kinau NAR,hawaii,2022-10-02,forecast,0.0,0.0,7.0,0
 hawaii_Ahihi-Kinau NAR,hawaii,2022-10-09,forecast,0.0,3.0,17.0,1
 hawaii_Ahihi-Kinau NAR,hawaii,2022-10-16,forecast,0.0,3.0,17.0,1
 hawaii_Ahihi-Kinau NAR,hawaii,2022-10-23,forecast,0.0,3.0,17.0,1
 hawaii_Ahihi-Kinau NAR,hawaii,2022-10-30,forecast,0.0,3.0,17.0,1
 hawaii_Ahihi-Kinau NAR,hawaii,2022-11-06,forecast,0.0,4.0,17.0,1
 hawaii_Ahihi-Kinau NAR,hawaii,2022-11-13,forecast,0.0,4.0,17.0,1
-hawaii_Haena CBFA,hawaii,2022-06-05,nowcast,0.9,2.0,26.0,1
+hawaii_Ahihi-Kinau NAR,hawaii,2022-11-20,forecast,0.0,4.0,17.0,1
 hawaii_Haena CBFA,hawaii,2022-06-12,nowcast,0.9,1.8,26.0,1
 hawaii_Haena CBFA,hawaii,2022-06-19,nowcast,0.9,2.0,26.0,1
 hawaii_Haena CBFA,hawaii,2022-06-26,nowcast,0.9,2.0,26.0,1
@@ -443,10 +442,10 @@ hawaii_Haena CBFA,hawaii,2022-07-31,nowcast,0.9,2.9,26.0,1
 hawaii_Haena CBFA,hawaii,2022-08-07,nowcast,0.9,2.0,17.0,1
 hawaii_Haena CBFA,hawaii,2022-08-14,nowcast,0.9,2.0,17.0,1
 hawaii_Haena CBFA,hawaii,2022-08-21,nowcast,0.9,2.0,17.0,1
-hawaii_Haena CBFA,hawaii,2022-08-28,forecast,0.9,2.0,17.0,1
+hawaii_Haena CBFA,hawaii,2022-08-28,nowcast,0.9,2.0,17.0,1
 hawaii_Haena CBFA,hawaii,2022-09-04,forecast,0.9,1.9,19.6,1
 hawaii_Haena CBFA,hawaii,2022-09-11,forecast,0.9,2.0,19.6,1
-hawaii_Haena CBFA,hawaii,2022-09-18,forecast,0.9,5.6,20.6,2
+hawaii_Haena CBFA,hawaii,2022-09-18,forecast,0.9,1.9,19.6,1
 hawaii_Haena CBFA,hawaii,2022-09-25,forecast,0.9,5.6,19.7,2
 hawaii_Haena CBFA,hawaii,2022-10-02,forecast,0.9,5.6,16.2,2
 hawaii_Haena CBFA,hawaii,2022-10-09,forecast,0.9,5.6,16.2,2
@@ -455,7 +454,7 @@ hawaii_Haena CBFA,hawaii,2022-10-23,forecast,0.9,5.6,16.2,2
 hawaii_Haena CBFA,hawaii,2022-10-30,forecast,0.9,5.6,16.2,2
 hawaii_Haena CBFA,hawaii,2022-11-06,forecast,0.9,5.6,16.2,2
 hawaii_Haena CBFA,hawaii,2022-11-13,forecast,0.9,5.6,16.2,2
-hawaii_Haena CBFA: Makua Puuhonua,hawaii,2022-06-05,nowcast,1.0,2.0,28.0,1
+hawaii_Haena CBFA,hawaii,2022-11-20,forecast,0.9,5.6,16.3,2
 hawaii_Haena CBFA: Makua Puuhonua,hawaii,2022-06-12,nowcast,1.0,2.0,28.0,1
 hawaii_Haena CBFA: Makua Puuhonua,hawaii,2022-06-19,nowcast,1.0,2.0,28.0,1
 hawaii_Haena CBFA: Makua Puuhonua,hawaii,2022-06-26,nowcast,1.0,2.0,28.0,1
@@ -467,7 +466,7 @@ hawaii_Haena CBFA: Makua Puuhonua,hawaii,2022-07-31,nowcast,1.0,3.0,28.0,1
 hawaii_Haena CBFA: Makua Puuhonua,hawaii,2022-08-07,nowcast,1.0,2.0,18.0,1
 hawaii_Haena CBFA: Makua Puuhonua,hawaii,2022-08-14,nowcast,1.0,2.0,18.0,1
 hawaii_Haena CBFA: Makua Puuhonua,hawaii,2022-08-21,nowcast,1.0,2.0,18.0,1
-hawaii_Haena CBFA: Makua Puuhonua,hawaii,2022-08-28,forecast,1.0,2.0,18.0,1
+hawaii_Haena CBFA: Makua Puuhonua,hawaii,2022-08-28,nowcast,1.0,2.0,18.0,1
 hawaii_Haena CBFA: Makua Puuhonua,hawaii,2022-09-04,forecast,1.0,2.0,21.0,1
 hawaii_Haena CBFA: Makua Puuhonua,hawaii,2022-09-11,forecast,1.0,2.0,21.0,1
 hawaii_Haena CBFA: Makua Puuhonua,hawaii,2022-09-18,forecast,1.0,2.0,21.0,1
@@ -479,7 +478,7 @@ hawaii_Haena CBFA: Makua Puuhonua,hawaii,2022-10-23,forecast,1.0,2.0,9.0,1
 hawaii_Haena CBFA: Makua Puuhonua,hawaii,2022-10-30,forecast,1.0,2.0,9.0,1
 hawaii_Haena CBFA: Makua Puuhonua,hawaii,2022-11-06,forecast,1.0,2.0,9.0,1
 hawaii_Haena CBFA: Makua Puuhonua,hawaii,2022-11-13,forecast,1.0,2.0,9.0,1
-hawaii_Haena CBFA: Opihi Management Area,hawaii,2022-06-05,nowcast,1.0,2.0,28.0,1
+hawaii_Haena CBFA: Makua Puuhonua,hawaii,2022-11-20,forecast,1.0,2.0,10.0,1
 hawaii_Haena CBFA: Opihi Management Area,hawaii,2022-06-12,nowcast,1.0,2.0,28.0,1
 hawaii_Haena CBFA: Opihi Management Area,hawaii,2022-06-19,nowcast,1.0,2.0,28.0,1
 hawaii_Haena CBFA: Opihi Management Area,hawaii,2022-06-26,nowcast,1.0,2.0,28.0,1
@@ -491,7 +490,7 @@ hawaii_Haena CBFA: Opihi Management Area,hawaii,2022-07-31,nowcast,1.0,3.0,28.0,
 hawaii_Haena CBFA: Opihi Management Area,hawaii,2022-08-07,nowcast,1.0,2.0,18.0,1
 hawaii_Haena CBFA: Opihi Management Area,hawaii,2022-08-14,nowcast,1.0,2.0,18.0,1
 hawaii_Haena CBFA: Opihi Management Area,hawaii,2022-08-21,nowcast,1.0,2.0,18.0,1
-hawaii_Haena CBFA: Opihi Management Area,hawaii,2022-08-28,forecast,1.0,2.0,18.0,1
+hawaii_Haena CBFA: Opihi Management Area,hawaii,2022-08-28,nowcast,1.0,2.0,18.0,1
 hawaii_Haena CBFA: Opihi Management Area,hawaii,2022-09-04,forecast,1.0,2.0,21.0,1
 hawaii_Haena CBFA: Opihi Management Area,hawaii,2022-09-11,forecast,1.0,2.0,21.0,1
 hawaii_Haena CBFA: Opihi Management Area,hawaii,2022-09-18,forecast,1.0,2.0,21.0,1
@@ -503,7 +502,7 @@ hawaii_Haena CBFA: Opihi Management Area,hawaii,2022-10-23,forecast,1.0,2.0,9.0,
 hawaii_Haena CBFA: Opihi Management Area,hawaii,2022-10-30,forecast,1.0,2.0,9.0,1
 hawaii_Haena CBFA: Opihi Management Area,hawaii,2022-11-06,forecast,1.0,2.0,9.0,1
 hawaii_Haena CBFA: Opihi Management Area,hawaii,2022-11-13,forecast,1.0,2.0,9.0,1
-hawaii_Haena CBFA: Vessel Transit Boundary,hawaii,2022-06-05,nowcast,1.0,2.0,28.0,1
+hawaii_Haena CBFA: Opihi Management Area,hawaii,2022-11-20,forecast,1.0,2.0,10.0,1
 hawaii_Haena CBFA: Vessel Transit Boundary,hawaii,2022-06-12,nowcast,1.0,2.0,28.0,1
 hawaii_Haena CBFA: Vessel Transit Boundary,hawaii,2022-06-19,nowcast,1.0,2.0,28.0,1
 hawaii_Haena CBFA: Vessel Transit Boundary,hawaii,2022-06-26,nowcast,1.0,2.0,28.0,1
@@ -515,7 +514,7 @@ hawaii_Haena CBFA: Vessel Transit Boundary,hawaii,2022-07-31,nowcast,1.0,3.0,28.
 hawaii_Haena CBFA: Vessel Transit Boundary,hawaii,2022-08-07,nowcast,1.0,2.0,18.0,1
 hawaii_Haena CBFA: Vessel Transit Boundary,hawaii,2022-08-14,nowcast,1.0,2.0,18.0,1
 hawaii_Haena CBFA: Vessel Transit Boundary,hawaii,2022-08-21,nowcast,1.0,2.0,18.0,1
-hawaii_Haena CBFA: Vessel Transit Boundary,hawaii,2022-08-28,forecast,1.0,2.0,18.0,1
+hawaii_Haena CBFA: Vessel Transit Boundary,hawaii,2022-08-28,nowcast,1.0,2.0,18.0,1
 hawaii_Haena CBFA: Vessel Transit Boundary,hawaii,2022-09-04,forecast,1.0,2.0,21.0,1
 hawaii_Haena CBFA: Vessel Transit Boundary,hawaii,2022-09-11,forecast,1.0,2.0,21.0,1
 hawaii_Haena CBFA: Vessel Transit Boundary,hawaii,2022-09-18,forecast,1.0,2.0,21.0,1
@@ -527,7 +526,7 @@ hawaii_Haena CBFA: Vessel Transit Boundary,hawaii,2022-10-23,forecast,1.0,2.0,9.
 hawaii_Haena CBFA: Vessel Transit Boundary,hawaii,2022-10-30,forecast,1.0,2.0,9.0,1
 hawaii_Haena CBFA: Vessel Transit Boundary,hawaii,2022-11-06,forecast,1.0,2.0,9.0,1
 hawaii_Haena CBFA: Vessel Transit Boundary,hawaii,2022-11-13,forecast,1.0,2.0,9.0,1
-hawaii_Hanamalo Pt-Kanewaa Pt NRA,hawaii,2022-06-05,nowcast,0.0,0.0,0.0,0
+hawaii_Haena CBFA: Vessel Transit Boundary,hawaii,2022-11-20,forecast,1.0,2.0,10.0,1
 hawaii_Hanamalo Pt-Kanewaa Pt NRA,hawaii,2022-06-12,nowcast,0.0,0.0,0.0,0
 hawaii_Hanamalo Pt-Kanewaa Pt NRA,hawaii,2022-06-19,nowcast,0.0,0.0,0.0,0
 hawaii_Hanamalo Pt-Kanewaa Pt NRA,hawaii,2022-06-26,nowcast,0.0,0.0,0.0,0
@@ -539,11 +538,11 @@ hawaii_Hanamalo Pt-Kanewaa Pt NRA,hawaii,2022-07-31,nowcast,0.0,0.0,0.0,0
 hawaii_Hanamalo Pt-Kanewaa Pt NRA,hawaii,2022-08-07,nowcast,0.0,0.0,0.0,0
 hawaii_Hanamalo Pt-Kanewaa Pt NRA,hawaii,2022-08-14,nowcast,0.0,0.0,0.0,0
 hawaii_Hanamalo Pt-Kanewaa Pt NRA,hawaii,2022-08-21,nowcast,0.0,0.0,0.0,0
-hawaii_Hanamalo Pt-Kanewaa Pt NRA,hawaii,2022-08-28,forecast,0.0,0.0,0.0,0
+hawaii_Hanamalo Pt-Kanewaa Pt NRA,hawaii,2022-08-28,nowcast,0.0,0.0,0.0,0
 hawaii_Hanamalo Pt-Kanewaa Pt NRA,hawaii,2022-09-04,forecast,0.0,0.0,0.0,0
 hawaii_Hanamalo Pt-Kanewaa Pt NRA,hawaii,2022-09-11,forecast,0.0,0.0,0.0,0
-hawaii_Hanamalo Pt-Kanewaa Pt NRA,hawaii,2022-09-18,forecast,0.0,0.0,7.0,0
-hawaii_Hanamalo Pt-Kanewaa Pt NRA,hawaii,2022-09-25,forecast,0.0,6.0,17.0,2
+hawaii_Hanamalo Pt-Kanewaa Pt NRA,hawaii,2022-09-18,forecast,0.0,0.0,0.0,0
+hawaii_Hanamalo Pt-Kanewaa Pt NRA,hawaii,2022-09-25,forecast,0.0,0.0,7.0,0
 hawaii_Hanamalo Pt-Kanewaa Pt NRA,hawaii,2022-10-02,forecast,0.0,4.0,17.0,1
 hawaii_Hanamalo Pt-Kanewaa Pt NRA,hawaii,2022-10-09,forecast,0.0,4.0,17.0,1
 hawaii_Hanamalo Pt-Kanewaa Pt NRA,hawaii,2022-10-16,forecast,0.0,4.0,17.0,1
@@ -551,7 +550,7 @@ hawaii_Hanamalo Pt-Kanewaa Pt NRA,hawaii,2022-10-23,forecast,0.0,4.0,17.0,1
 hawaii_Hanamalo Pt-Kanewaa Pt NRA,hawaii,2022-10-30,forecast,0.0,4.0,17.0,1
 hawaii_Hanamalo Pt-Kanewaa Pt NRA,hawaii,2022-11-06,forecast,0.0,4.0,17.0,1
 hawaii_Hanamalo Pt-Kanewaa Pt NRA,hawaii,2022-11-13,forecast,0.0,4.0,17.0,1
-hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 1,hawaii,2022-06-05,nowcast,0.0,0.0,2.0,0
+hawaii_Hanamalo Pt-Kanewaa Pt NRA,hawaii,2022-11-20,forecast,0.0,4.0,17.0,1
 hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 1,hawaii,2022-06-12,nowcast,0.0,1.0,3.0,0
 hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 1,hawaii,2022-06-19,nowcast,0.0,0.0,2.0,0
 hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 1,hawaii,2022-06-26,nowcast,0.0,1.0,3.0,0
@@ -563,11 +562,11 @@ hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 1,hawaii,2022-07-31,n
 hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 1,hawaii,2022-08-07,nowcast,0.0,0.0,2.0,0
 hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 1,hawaii,2022-08-14,nowcast,0.0,0.0,2.0,0
 hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 1,hawaii,2022-08-21,nowcast,0.0,0.0,2.0,0
-hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 1,hawaii,2022-08-28,forecast,0.0,0.0,2.0,0
+hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 1,hawaii,2022-08-28,nowcast,0.0,0.0,2.0,0
 hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 1,hawaii,2022-09-04,forecast,0.0,1.0,4.0,0
 hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 1,hawaii,2022-09-11,forecast,0.0,1.0,4.0,0
-hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 1,hawaii,2022-09-18,forecast,0.0,2.0,7.0,1
-hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 1,hawaii,2022-09-25,forecast,0.0,6.0,17.0,2
+hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 1,hawaii,2022-09-18,forecast,0.0,1.0,4.0,0
+hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 1,hawaii,2022-09-25,forecast,0.0,2.0,7.0,1
 hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 1,hawaii,2022-10-02,forecast,0.0,6.0,17.0,2
 hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 1,hawaii,2022-10-09,forecast,0.0,6.0,17.0,2
 hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 1,hawaii,2022-10-16,forecast,0.0,6.0,17.0,2
@@ -575,7 +574,7 @@ hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 1,hawaii,2022-10-23,f
 hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 1,hawaii,2022-10-30,forecast,0.0,6.0,17.0,2
 hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 1,hawaii,2022-11-06,forecast,1.0,5.0,17.0,1
 hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 1,hawaii,2022-11-13,forecast,1.0,5.0,17.0,1
-hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 2,hawaii,2022-06-05,nowcast,0.0,0.0,2.0,0
+hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 1,hawaii,2022-11-20,forecast,1.0,5.0,17.0,1
 hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 2,hawaii,2022-06-12,nowcast,0.0,1.0,3.0,0
 hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 2,hawaii,2022-06-19,nowcast,0.0,0.0,2.0,0
 hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 2,hawaii,2022-06-26,nowcast,0.0,1.0,3.0,0
@@ -587,11 +586,11 @@ hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 2,hawaii,2022-07-31,n
 hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 2,hawaii,2022-08-07,nowcast,0.0,0.0,2.0,0
 hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 2,hawaii,2022-08-14,nowcast,0.0,0.0,2.0,0
 hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 2,hawaii,2022-08-21,nowcast,0.0,0.0,2.0,0
-hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 2,hawaii,2022-08-28,forecast,0.0,0.0,2.0,0
+hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 2,hawaii,2022-08-28,nowcast,0.0,0.0,2.0,0
 hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 2,hawaii,2022-09-04,forecast,0.0,1.0,4.0,0
 hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 2,hawaii,2022-09-11,forecast,0.0,1.0,4.0,0
-hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 2,hawaii,2022-09-18,forecast,0.0,2.0,7.0,1
-hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 2,hawaii,2022-09-25,forecast,0.0,6.0,17.0,2
+hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 2,hawaii,2022-09-18,forecast,0.0,1.0,4.0,0
+hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 2,hawaii,2022-09-25,forecast,0.0,2.0,7.0,1
 hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 2,hawaii,2022-10-02,forecast,0.0,6.0,17.0,2
 hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 2,hawaii,2022-10-09,forecast,0.0,6.0,17.0,2
 hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 2,hawaii,2022-10-16,forecast,0.0,6.0,17.0,2
@@ -599,7 +598,7 @@ hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 2,hawaii,2022-10-23,f
 hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 2,hawaii,2022-10-30,forecast,0.0,6.0,17.0,2
 hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 2,hawaii,2022-11-06,forecast,1.0,5.0,17.0,1
 hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 2,hawaii,2022-11-13,forecast,1.0,5.0,17.0,1
-hawaii_Hanauma Bay MLCD,hawaii,2022-06-05,nowcast,0.0,0.0,1.0,0
+hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 2,hawaii,2022-11-20,forecast,1.0,5.0,17.0,1
 hawaii_Hanauma Bay MLCD,hawaii,2022-06-12,nowcast,0.0,0.0,1.0,0
 hawaii_Hanauma Bay MLCD,hawaii,2022-06-19,nowcast,0.0,0.0,1.0,0
 hawaii_Hanauma Bay MLCD,hawaii,2022-06-26,nowcast,0.0,0.0,1.0,0
@@ -611,11 +610,11 @@ hawaii_Hanauma Bay MLCD,hawaii,2022-07-31,nowcast,0.0,0.0,0.0,0
 hawaii_Hanauma Bay MLCD,hawaii,2022-08-07,nowcast,0.0,0.0,1.0,0
 hawaii_Hanauma Bay MLCD,hawaii,2022-08-14,nowcast,0.0,0.0,1.0,0
 hawaii_Hanauma Bay MLCD,hawaii,2022-08-21,nowcast,0.0,0.0,1.0,0
-hawaii_Hanauma Bay MLCD,hawaii,2022-08-28,forecast,0.0,0.0,1.0,0
+hawaii_Hanauma Bay MLCD,hawaii,2022-08-28,nowcast,0.0,0.0,1.0,0
 hawaii_Hanauma Bay MLCD,hawaii,2022-09-04,forecast,0.0,0.0,1.0,0
 hawaii_Hanauma Bay MLCD,hawaii,2022-09-11,forecast,0.0,0.0,0.0,0
-hawaii_Hanauma Bay MLCD,hawaii,2022-09-18,forecast,0.0,1.0,7.0,0
-hawaii_Hanauma Bay MLCD,hawaii,2022-09-25,forecast,0.0,6.0,17.0,2
+hawaii_Hanauma Bay MLCD,hawaii,2022-09-18,forecast,0.0,0.0,0.0,0
+hawaii_Hanauma Bay MLCD,hawaii,2022-09-25,forecast,0.0,1.0,7.0,0
 hawaii_Hanauma Bay MLCD,hawaii,2022-10-02,forecast,0.0,6.0,17.0,2
 hawaii_Hanauma Bay MLCD,hawaii,2022-10-09,forecast,0.0,6.0,17.0,2
 hawaii_Hanauma Bay MLCD,hawaii,2022-10-16,forecast,0.0,6.0,17.0,2
@@ -623,7 +622,7 @@ hawaii_Hanauma Bay MLCD,hawaii,2022-10-23,forecast,0.0,6.0,17.0,2
 hawaii_Hanauma Bay MLCD,hawaii,2022-10-30,forecast,0.0,6.0,17.0,2
 hawaii_Hanauma Bay MLCD,hawaii,2022-11-06,forecast,1.0,4.0,17.0,1
 hawaii_Hanauma Bay MLCD,hawaii,2022-11-13,forecast,1.0,4.0,17.0,1
-"hawaii_Hilo Harbor, Wailoa River & Wailuku River",hawaii,2022-06-05,nowcast,40.0,60.0,68.0,4
+hawaii_Hanauma Bay MLCD,hawaii,2022-11-20,forecast,1.0,4.0,17.0,1
 "hawaii_Hilo Harbor, Wailoa River & Wailuku River",hawaii,2022-06-12,nowcast,40.0,60.0,68.0,4
 "hawaii_Hilo Harbor, Wailoa River & Wailuku River",hawaii,2022-06-19,nowcast,40.0,60.0,68.0,4
 "hawaii_Hilo Harbor, Wailoa River & Wailuku River",hawaii,2022-06-26,nowcast,40.0,60.0,68.0,4
@@ -635,7 +634,7 @@ hawaii_Hanauma Bay MLCD,hawaii,2022-11-13,forecast,1.0,4.0,17.0,1
 "hawaii_Hilo Harbor, Wailoa River & Wailuku River",hawaii,2022-08-07,nowcast,18.0,68.0,80.0,4
 "hawaii_Hilo Harbor, Wailoa River & Wailuku River",hawaii,2022-08-14,nowcast,18.0,68.0,80.0,4
 "hawaii_Hilo Harbor, Wailoa River & Wailuku River",hawaii,2022-08-21,nowcast,18.0,68.0,80.0,4
-"hawaii_Hilo Harbor, Wailoa River & Wailuku River",hawaii,2022-08-28,forecast,18.0,68.0,80.0,4
+"hawaii_Hilo Harbor, Wailoa River & Wailuku River",hawaii,2022-08-28,nowcast,18.0,68.0,80.0,4
 "hawaii_Hilo Harbor, Wailoa River & Wailuku River",hawaii,2022-09-04,forecast,16.0,68.0,82.0,4
 "hawaii_Hilo Harbor, Wailoa River & Wailuku River",hawaii,2022-09-11,forecast,16.0,68.0,82.0,4
 "hawaii_Hilo Harbor, Wailoa River & Wailuku River",hawaii,2022-09-18,forecast,16.0,68.0,82.0,4
@@ -647,7 +646,7 @@ hawaii_Hanauma Bay MLCD,hawaii,2022-11-13,forecast,1.0,4.0,17.0,1
 "hawaii_Hilo Harbor, Wailoa River & Wailuku River",hawaii,2022-10-30,forecast,16.0,68.0,82.0,4
 "hawaii_Hilo Harbor, Wailoa River & Wailuku River",hawaii,2022-11-06,forecast,5.0,67.0,80.0,4
 "hawaii_Hilo Harbor, Wailoa River & Wailuku River",hawaii,2022-11-13,forecast,5.0,67.0,80.0,4
-hawaii_Honolua-Mokuleia Bay MLCD,hawaii,2022-06-05,nowcast,0.0,0.0,2.0,0
+"hawaii_Hilo Harbor, Wailoa River & Wailuku River",hawaii,2022-11-20,forecast,5.0,67.0,80.0,4
 hawaii_Honolua-Mokuleia Bay MLCD,hawaii,2022-06-12,nowcast,0.0,0.0,2.0,0
 hawaii_Honolua-Mokuleia Bay MLCD,hawaii,2022-06-19,nowcast,0.0,0.0,2.0,0
 hawaii_Honolua-Mokuleia Bay MLCD,hawaii,2022-06-26,nowcast,0.0,0.0,2.0,0
@@ -659,19 +658,19 @@ hawaii_Honolua-Mokuleia Bay MLCD,hawaii,2022-07-31,nowcast,0.0,0.0,2.0,0
 hawaii_Honolua-Mokuleia Bay MLCD,hawaii,2022-08-07,nowcast,0.0,0.0,2.0,0
 hawaii_Honolua-Mokuleia Bay MLCD,hawaii,2022-08-14,nowcast,0.0,0.0,2.0,0
 hawaii_Honolua-Mokuleia Bay MLCD,hawaii,2022-08-21,nowcast,0.0,0.0,2.0,0
-hawaii_Honolua-Mokuleia Bay MLCD,hawaii,2022-08-28,forecast,0.0,1.0,3.0,0
+hawaii_Honolua-Mokuleia Bay MLCD,hawaii,2022-08-28,nowcast,0.0,1.0,3.0,0
 hawaii_Honolua-Mokuleia Bay MLCD,hawaii,2022-09-04,forecast,0.0,0.0,2.0,0
 hawaii_Honolua-Mokuleia Bay MLCD,hawaii,2022-09-11,forecast,0.0,0.0,2.0,0
-hawaii_Honolua-Mokuleia Bay MLCD,hawaii,2022-09-18,forecast,0.0,2.0,7.0,1
-hawaii_Honolua-Mokuleia Bay MLCD,hawaii,2022-09-25,forecast,0.0,6.0,17.0,2
-hawaii_Honolua-Mokuleia Bay MLCD,hawaii,2022-10-02,forecast,0.0,6.0,17.0,2
+hawaii_Honolua-Mokuleia Bay MLCD,hawaii,2022-09-18,forecast,0.0,0.0,2.0,0
+hawaii_Honolua-Mokuleia Bay MLCD,hawaii,2022-09-25,forecast,0.0,2.0,7.0,1
+hawaii_Honolua-Mokuleia Bay MLCD,hawaii,2022-10-02,forecast,0.0,2.0,8.0,1
 hawaii_Honolua-Mokuleia Bay MLCD,hawaii,2022-10-09,forecast,0.0,6.0,17.0,2
 hawaii_Honolua-Mokuleia Bay MLCD,hawaii,2022-10-16,forecast,0.0,6.0,17.0,2
 hawaii_Honolua-Mokuleia Bay MLCD,hawaii,2022-10-23,forecast,0.0,6.0,17.0,2
 hawaii_Honolua-Mokuleia Bay MLCD,hawaii,2022-10-30,forecast,0.0,6.0,17.0,2
 hawaii_Honolua-Mokuleia Bay MLCD,hawaii,2022-11-06,forecast,1.0,6.0,17.0,2
 hawaii_Honolua-Mokuleia Bay MLCD,hawaii,2022-11-13,forecast,1.0,6.0,17.0,2
-hawaii_Honolulu Harbor,hawaii,2022-06-05,nowcast,0.0,0.0,0.0,0
+hawaii_Honolua-Mokuleia Bay MLCD,hawaii,2022-11-20,forecast,1.0,6.0,17.0,2
 hawaii_Honolulu Harbor,hawaii,2022-06-12,nowcast,0.0,0.0,0.0,0
 hawaii_Honolulu Harbor,hawaii,2022-06-19,nowcast,0.0,0.0,0.0,0
 hawaii_Honolulu Harbor,hawaii,2022-06-26,nowcast,0.0,0.0,0.0,0
@@ -683,11 +682,11 @@ hawaii_Honolulu Harbor,hawaii,2022-07-31,nowcast,0.0,0.0,0.0,0
 hawaii_Honolulu Harbor,hawaii,2022-08-07,nowcast,0.0,0.0,0.0,0
 hawaii_Honolulu Harbor,hawaii,2022-08-14,nowcast,0.0,0.0,0.0,0
 hawaii_Honolulu Harbor,hawaii,2022-08-21,nowcast,0.0,0.0,0.0,0
-hawaii_Honolulu Harbor,hawaii,2022-08-28,forecast,0.0,0.0,0.0,0
+hawaii_Honolulu Harbor,hawaii,2022-08-28,nowcast,0.0,0.0,0.0,0
 hawaii_Honolulu Harbor,hawaii,2022-09-04,forecast,0.0,0.0,0.0,0
 hawaii_Honolulu Harbor,hawaii,2022-09-11,forecast,0.0,0.0,0.0,0
-hawaii_Honolulu Harbor,hawaii,2022-09-18,forecast,0.0,0.0,7.0,0
-hawaii_Honolulu Harbor,hawaii,2022-09-25,forecast,0.0,6.0,17.0,2
+hawaii_Honolulu Harbor,hawaii,2022-09-18,forecast,0.0,0.0,0.0,0
+hawaii_Honolulu Harbor,hawaii,2022-09-25,forecast,0.0,0.0,7.0,0
 hawaii_Honolulu Harbor,hawaii,2022-10-02,forecast,0.0,3.0,17.0,1
 hawaii_Honolulu Harbor,hawaii,2022-10-09,forecast,0.0,3.0,17.0,1
 hawaii_Honolulu Harbor,hawaii,2022-10-16,forecast,0.0,3.0,17.0,1
@@ -695,7 +694,7 @@ hawaii_Honolulu Harbor,hawaii,2022-10-23,forecast,0.0,3.0,17.0,1
 hawaii_Honolulu Harbor,hawaii,2022-10-30,forecast,0.0,3.0,17.0,1
 hawaii_Honolulu Harbor,hawaii,2022-11-06,forecast,0.0,4.0,17.0,1
 hawaii_Honolulu Harbor,hawaii,2022-11-13,forecast,0.0,4.0,17.0,1
-hawaii_Hookena FRA,hawaii,2022-06-05,nowcast,0.0,0.0,0.0,0
+hawaii_Honolulu Harbor,hawaii,2022-11-20,forecast,0.0,4.0,17.0,1
 hawaii_Hookena FRA,hawaii,2022-06-12,nowcast,0.0,0.0,0.0,0
 hawaii_Hookena FRA,hawaii,2022-06-19,nowcast,0.0,0.0,0.0,0
 hawaii_Hookena FRA,hawaii,2022-06-26,nowcast,0.0,0.0,0.0,0
@@ -707,11 +706,11 @@ hawaii_Hookena FRA,hawaii,2022-07-31,nowcast,0.0,0.0,0.0,0
 hawaii_Hookena FRA,hawaii,2022-08-07,nowcast,0.0,0.0,0.0,0
 hawaii_Hookena FRA,hawaii,2022-08-14,nowcast,0.0,0.0,0.0,0
 hawaii_Hookena FRA,hawaii,2022-08-21,nowcast,0.0,0.0,0.0,0
-hawaii_Hookena FRA,hawaii,2022-08-28,forecast,0.0,0.0,0.0,0
+hawaii_Hookena FRA,hawaii,2022-08-28,nowcast,0.0,0.0,0.0,0
 hawaii_Hookena FRA,hawaii,2022-09-04,forecast,0.0,0.0,0.0,0
 hawaii_Hookena FRA,hawaii,2022-09-11,forecast,0.0,0.0,0.0,0
-hawaii_Hookena FRA,hawaii,2022-09-18,forecast,0.0,0.0,7.0,0
-hawaii_Hookena FRA,hawaii,2022-09-25,forecast,0.0,6.0,17.0,2
+hawaii_Hookena FRA,hawaii,2022-09-18,forecast,0.0,0.0,0.0,0
+hawaii_Hookena FRA,hawaii,2022-09-25,forecast,0.0,0.0,7.0,0
 hawaii_Hookena FRA,hawaii,2022-10-02,forecast,0.0,4.0,17.0,1
 hawaii_Hookena FRA,hawaii,2022-10-09,forecast,0.0,4.0,17.0,1
 hawaii_Hookena FRA,hawaii,2022-10-16,forecast,0.0,4.0,17.0,1
@@ -719,7 +718,7 @@ hawaii_Hookena FRA,hawaii,2022-10-23,forecast,0.0,4.0,17.0,1
 hawaii_Hookena FRA,hawaii,2022-10-30,forecast,0.0,4.0,17.0,1
 hawaii_Hookena FRA,hawaii,2022-11-06,forecast,0.0,4.0,17.0,1
 hawaii_Hookena FRA,hawaii,2022-11-13,forecast,0.0,4.0,17.0,1
-hawaii_Ka Lae (South Pt) (BRFA M),hawaii,2022-06-05,nowcast,0.0,0.0,0.0,0
+hawaii_Hookena FRA,hawaii,2022-11-20,forecast,0.0,4.0,17.0,1
 hawaii_Ka Lae (South Pt) (BRFA M),hawaii,2022-06-12,nowcast,0.0,0.0,0.0,0
 hawaii_Ka Lae (South Pt) (BRFA M),hawaii,2022-06-19,nowcast,0.0,0.0,0.0,0
 hawaii_Ka Lae (South Pt) (BRFA M),hawaii,2022-06-26,nowcast,0.0,0.0,0.0,0
@@ -731,19 +730,19 @@ hawaii_Ka Lae (South Pt) (BRFA M),hawaii,2022-07-31,nowcast,0.0,0.0,0.7000000000
 hawaii_Ka Lae (South Pt) (BRFA M),hawaii,2022-08-07,nowcast,0.0,0.0,0.7000000000000002,0
 hawaii_Ka Lae (South Pt) (BRFA M),hawaii,2022-08-14,nowcast,0.0,0.0,0.0,0
 hawaii_Ka Lae (South Pt) (BRFA M),hawaii,2022-08-21,nowcast,0.0,0.0,0.0,0
-hawaii_Ka Lae (South Pt) (BRFA M),hawaii,2022-08-28,forecast,0.0,0.0,0.0,0
+hawaii_Ka Lae (South Pt) (BRFA M),hawaii,2022-08-28,nowcast,0.0,0.0,0.0,0
 hawaii_Ka Lae (South Pt) (BRFA M),hawaii,2022-09-04,forecast,0.0,0.0,0.0,0
 hawaii_Ka Lae (South Pt) (BRFA M),hawaii,2022-09-11,forecast,0.0,0.0,0.0,0
 hawaii_Ka Lae (South Pt) (BRFA M),hawaii,2022-09-18,forecast,0.0,0.0,0.0,0
-hawaii_Ka Lae (South Pt) (BRFA M),hawaii,2022-09-25,forecast,0.0,0.0,7.0,0
-hawaii_Ka Lae (South Pt) (BRFA M),hawaii,2022-10-02,forecast,0.0,4.0,17.0,1
+hawaii_Ka Lae (South Pt) (BRFA M),hawaii,2022-09-25,forecast,0.0,0.0,0.0,0
+hawaii_Ka Lae (South Pt) (BRFA M),hawaii,2022-10-02,forecast,0.0,0.0,7.0,0
 hawaii_Ka Lae (South Pt) (BRFA M),hawaii,2022-10-09,forecast,0.0,4.0,17.0,1
 hawaii_Ka Lae (South Pt) (BRFA M),hawaii,2022-10-16,forecast,0.0,4.0,17.0,1
 hawaii_Ka Lae (South Pt) (BRFA M),hawaii,2022-10-23,forecast,0.0,4.0,17.0,1
 hawaii_Ka Lae (South Pt) (BRFA M),hawaii,2022-10-30,forecast,0.0,4.0,17.0,1
 hawaii_Ka Lae (South Pt) (BRFA M),hawaii,2022-11-06,forecast,0.0,4.0,17.0,1
 hawaii_Ka Lae (South Pt) (BRFA M),hawaii,2022-11-13,forecast,0.0,4.0,17.0,1
-hawaii_Kaena Pt (BRFA D),hawaii,2022-06-05,nowcast,0.0,0.0,0.0,0
+hawaii_Ka Lae (South Pt) (BRFA M),hawaii,2022-11-20,forecast,0.0,4.0,17.0,1
 hawaii_Kaena Pt (BRFA D),hawaii,2022-06-12,nowcast,0.0,0.0,0.0,0
 hawaii_Kaena Pt (BRFA D),hawaii,2022-06-19,nowcast,0.0,0.0,0.0,0
 hawaii_Kaena Pt (BRFA D),hawaii,2022-06-26,nowcast,0.0,0.0,0.0,0
@@ -755,11 +754,11 @@ hawaii_Kaena Pt (BRFA D),hawaii,2022-07-31,nowcast,0.0,0.0,0.0,0
 hawaii_Kaena Pt (BRFA D),hawaii,2022-08-07,nowcast,0.0,0.0,0.0,0
 hawaii_Kaena Pt (BRFA D),hawaii,2022-08-14,nowcast,0.0,0.0,0.0,0
 hawaii_Kaena Pt (BRFA D),hawaii,2022-08-21,nowcast,0.0,0.0,0.0,0
-hawaii_Kaena Pt (BRFA D),hawaii,2022-08-28,forecast,0.0,0.0,0.0,0
+hawaii_Kaena Pt (BRFA D),hawaii,2022-08-28,nowcast,0.0,0.0,0.0,0
 hawaii_Kaena Pt (BRFA D),hawaii,2022-09-04,forecast,0.0,0.0,0.0,0
 hawaii_Kaena Pt (BRFA D),hawaii,2022-09-11,forecast,0.0,0.0,0.0,0
-hawaii_Kaena Pt (BRFA D),hawaii,2022-09-18,forecast,0.0,0.0,7.0,0
-hawaii_Kaena Pt (BRFA D),hawaii,2022-09-25,forecast,0.0,6.0,17.0,2
+hawaii_Kaena Pt (BRFA D),hawaii,2022-09-18,forecast,0.0,0.0,0.0,0
+hawaii_Kaena Pt (BRFA D),hawaii,2022-09-25,forecast,0.0,0.0,7.0,0
 hawaii_Kaena Pt (BRFA D),hawaii,2022-10-02,forecast,0.0,3.0,17.0,1
 hawaii_Kaena Pt (BRFA D),hawaii,2022-10-09,forecast,0.0,3.0,17.0,1
 hawaii_Kaena Pt (BRFA D),hawaii,2022-10-16,forecast,0.0,3.0,17.0,1
@@ -767,7 +766,7 @@ hawaii_Kaena Pt (BRFA D),hawaii,2022-10-23,forecast,0.0,3.0,17.0,1
 hawaii_Kaena Pt (BRFA D),hawaii,2022-10-30,forecast,0.0,3.0,17.0,1
 hawaii_Kaena Pt (BRFA D),hawaii,2022-11-06,forecast,0.0,4.0,17.0,1
 hawaii_Kaena Pt (BRFA D),hawaii,2022-11-13,forecast,0.0,4.0,17.0,1
-hawaii_Kahekili Herbivore FMA,hawaii,2022-06-05,nowcast,0.0,0.0,19.0,0
+hawaii_Kaena Pt (BRFA D),hawaii,2022-11-20,forecast,0.0,4.0,17.0,1
 hawaii_Kahekili Herbivore FMA,hawaii,2022-06-12,nowcast,0.0,0.0,19.0,0
 hawaii_Kahekili Herbivore FMA,hawaii,2022-06-19,nowcast,0.0,0.0,19.0,0
 hawaii_Kahekili Herbivore FMA,hawaii,2022-06-26,nowcast,0.0,0.0,19.0,0
@@ -779,7 +778,7 @@ hawaii_Kahekili Herbivore FMA,hawaii,2022-07-31,nowcast,0.0,0.0,19.0,0
 hawaii_Kahekili Herbivore FMA,hawaii,2022-08-07,nowcast,0.0,0.0,19.0,0
 hawaii_Kahekili Herbivore FMA,hawaii,2022-08-14,nowcast,0.0,0.0,19.0,0
 hawaii_Kahekili Herbivore FMA,hawaii,2022-08-21,nowcast,0.0,0.0,19.0,0
-hawaii_Kahekili Herbivore FMA,hawaii,2022-08-28,forecast,0.0,0.0,19.0,0
+hawaii_Kahekili Herbivore FMA,hawaii,2022-08-28,nowcast,0.0,0.0,19.0,0
 hawaii_Kahekili Herbivore FMA,hawaii,2022-09-04,forecast,0.0,0.0,13.0,0
 hawaii_Kahekili Herbivore FMA,hawaii,2022-09-11,forecast,0.0,0.0,13.0,0
 hawaii_Kahekili Herbivore FMA,hawaii,2022-09-18,forecast,0.0,0.0,13.0,0
@@ -791,7 +790,7 @@ hawaii_Kahekili Herbivore FMA,hawaii,2022-10-23,forecast,0.0,0.0,12.0,0
 hawaii_Kahekili Herbivore FMA,hawaii,2022-10-30,forecast,0.0,0.0,12.0,0
 hawaii_Kahekili Herbivore FMA,hawaii,2022-11-06,forecast,0.0,0.0,12.0,0
 hawaii_Kahekili Herbivore FMA,hawaii,2022-11-13,forecast,0.0,0.0,12.0,0
-hawaii_Kahoolawe Island Reserve: Zone A,hawaii,2022-06-05,nowcast,0.0,0.0,0.20000000000000018,0
+hawaii_Kahekili Herbivore FMA,hawaii,2022-11-20,forecast,0.0,0.0,12.0,0
 hawaii_Kahoolawe Island Reserve: Zone A,hawaii,2022-06-12,nowcast,0.0,0.0,0.20000000000000018,0
 hawaii_Kahoolawe Island Reserve: Zone A,hawaii,2022-06-19,nowcast,0.0,0.0,0.20000000000000018,0
 hawaii_Kahoolawe Island Reserve: Zone A,hawaii,2022-06-26,nowcast,0.0,0.0,0.20000000000000018,0
@@ -803,19 +802,19 @@ hawaii_Kahoolawe Island Reserve: Zone A,hawaii,2022-07-31,nowcast,0.0,0.0,0.4000
 hawaii_Kahoolawe Island Reserve: Zone A,hawaii,2022-08-07,nowcast,0.0,0.0,1.2000000000000002,0
 hawaii_Kahoolawe Island Reserve: Zone A,hawaii,2022-08-14,nowcast,0.0,0.0,0.40000000000000036,0
 hawaii_Kahoolawe Island Reserve: Zone A,hawaii,2022-08-21,nowcast,0.0,0.0,0.40000000000000036,0
-hawaii_Kahoolawe Island Reserve: Zone A,hawaii,2022-08-28,forecast,0.0,0.0,0.40000000000000036,0
+hawaii_Kahoolawe Island Reserve: Zone A,hawaii,2022-08-28,nowcast,0.0,0.0,0.40000000000000036,0
 hawaii_Kahoolawe Island Reserve: Zone A,hawaii,2022-09-04,forecast,0.0,0.0,1.0,0
 hawaii_Kahoolawe Island Reserve: Zone A,hawaii,2022-09-11,forecast,0.0,0.0,0.20000000000000018,0
-hawaii_Kahoolawe Island Reserve: Zone A,hawaii,2022-09-18,forecast,0.0,0.0,1.2000000000000002,0
-hawaii_Kahoolawe Island Reserve: Zone A,hawaii,2022-09-25,forecast,0.0,2.8000000000000007,11.400000000000002,1
-hawaii_Kahoolawe Island Reserve: Zone A,hawaii,2022-10-02,forecast,0.0,3.0,17.0,1
+hawaii_Kahoolawe Island Reserve: Zone A,hawaii,2022-09-18,forecast,0.0,0.0,0.20000000000000018,0
+hawaii_Kahoolawe Island Reserve: Zone A,hawaii,2022-09-25,forecast,0.0,0.0,1.0,0
+hawaii_Kahoolawe Island Reserve: Zone A,hawaii,2022-10-02,forecast,0.0,0.0,7.0,0
 hawaii_Kahoolawe Island Reserve: Zone A,hawaii,2022-10-09,forecast,0.0,3.0,17.0,1
 hawaii_Kahoolawe Island Reserve: Zone A,hawaii,2022-10-16,forecast,0.0,3.0,17.0,1
 hawaii_Kahoolawe Island Reserve: Zone A,hawaii,2022-10-23,forecast,0.0,3.0,17.0,1
 hawaii_Kahoolawe Island Reserve: Zone A,hawaii,2022-10-30,forecast,0.0,3.0,17.0,1
 hawaii_Kahoolawe Island Reserve: Zone A,hawaii,2022-11-06,forecast,0.0,4.0,17.0,1
 hawaii_Kahoolawe Island Reserve: Zone A,hawaii,2022-11-13,forecast,0.0,4.0,17.0,1
-hawaii_Kahoolawe Island Reserve: Zone B,hawaii,2022-06-05,nowcast,0.0,0.0,0.0,0
+hawaii_Kahoolawe Island Reserve: Zone A,hawaii,2022-11-20,forecast,0.0,4.0,17.0,1
 hawaii_Kahoolawe Island Reserve: Zone B,hawaii,2022-06-12,nowcast,0.0,0.0,0.0,0
 hawaii_Kahoolawe Island Reserve: Zone B,hawaii,2022-06-19,nowcast,0.0,0.0,0.0,0
 hawaii_Kahoolawe Island Reserve: Zone B,hawaii,2022-06-26,nowcast,0.0,0.0,0.0,0
@@ -827,19 +826,19 @@ hawaii_Kahoolawe Island Reserve: Zone B,hawaii,2022-07-31,nowcast,0.0,0.0,0.0,0
 hawaii_Kahoolawe Island Reserve: Zone B,hawaii,2022-08-07,nowcast,0.0,0.0,0.5,0
 hawaii_Kahoolawe Island Reserve: Zone B,hawaii,2022-08-14,nowcast,0.0,0.0,0.0,0
 hawaii_Kahoolawe Island Reserve: Zone B,hawaii,2022-08-21,nowcast,0.0,0.0,0.0,0
-hawaii_Kahoolawe Island Reserve: Zone B,hawaii,2022-08-28,forecast,0.0,0.0,0.0,0
+hawaii_Kahoolawe Island Reserve: Zone B,hawaii,2022-08-28,nowcast,0.0,0.0,0.0,0
 hawaii_Kahoolawe Island Reserve: Zone B,hawaii,2022-09-04,forecast,0.0,0.0,0.5,0
 hawaii_Kahoolawe Island Reserve: Zone B,hawaii,2022-09-11,forecast,0.0,0.0,0.0,0
-hawaii_Kahoolawe Island Reserve: Zone B,hawaii,2022-09-18,forecast,0.0,0.0,2.5,0
-hawaii_Kahoolawe Island Reserve: Zone B,hawaii,2022-09-25,forecast,0.0,6.0,17.0,2
-hawaii_Kahoolawe Island Reserve: Zone B,hawaii,2022-10-02,forecast,0.0,3.0,17.0,1
+hawaii_Kahoolawe Island Reserve: Zone B,hawaii,2022-09-18,forecast,0.0,0.0,0.0,0
+hawaii_Kahoolawe Island Reserve: Zone B,hawaii,2022-09-25,forecast,0.0,0.0,1.0,0
+hawaii_Kahoolawe Island Reserve: Zone B,hawaii,2022-10-02,forecast,0.0,0.0,7.0,0
 hawaii_Kahoolawe Island Reserve: Zone B,hawaii,2022-10-09,forecast,0.0,3.0,17.0,1
 hawaii_Kahoolawe Island Reserve: Zone B,hawaii,2022-10-16,forecast,0.0,3.0,17.0,1
 hawaii_Kahoolawe Island Reserve: Zone B,hawaii,2022-10-23,forecast,0.0,3.0,17.0,1
 hawaii_Kahoolawe Island Reserve: Zone B,hawaii,2022-10-30,forecast,0.0,3.0,17.0,1
 hawaii_Kahoolawe Island Reserve: Zone B,hawaii,2022-11-06,forecast,0.0,4.0,17.0,1
 hawaii_Kahoolawe Island Reserve: Zone B,hawaii,2022-11-13,forecast,0.0,4.0,17.0,1
-hawaii_Kahului Harbor FMA,hawaii,2022-06-05,nowcast,0.0,0.0,1.0,0
+hawaii_Kahoolawe Island Reserve: Zone B,hawaii,2022-11-20,forecast,0.0,4.0,17.0,1
 hawaii_Kahului Harbor FMA,hawaii,2022-06-12,nowcast,0.0,0.0,0.0,0
 hawaii_Kahului Harbor FMA,hawaii,2022-06-19,nowcast,0.0,0.0,0.0,0
 hawaii_Kahului Harbor FMA,hawaii,2022-06-26,nowcast,0.0,0.0,0.0,0
@@ -851,7 +850,7 @@ hawaii_Kahului Harbor FMA,hawaii,2022-07-31,nowcast,0.0,0.0,0.0,0
 hawaii_Kahului Harbor FMA,hawaii,2022-08-07,nowcast,0.0,0.0,0.0,0
 hawaii_Kahului Harbor FMA,hawaii,2022-08-14,nowcast,0.0,0.0,0.0,0
 hawaii_Kahului Harbor FMA,hawaii,2022-08-21,nowcast,0.0,0.0,1.0,0
-hawaii_Kahului Harbor FMA,hawaii,2022-08-28,forecast,0.0,0.0,1.0,0
+hawaii_Kahului Harbor FMA,hawaii,2022-08-28,nowcast,0.0,0.0,1.0,0
 hawaii_Kahului Harbor FMA,hawaii,2022-09-04,forecast,0.0,0.0,1.0,0
 hawaii_Kahului Harbor FMA,hawaii,2022-09-11,forecast,0.0,0.0,1.0,0
 hawaii_Kahului Harbor FMA,hawaii,2022-09-18,forecast,0.0,0.0,0.0,0
@@ -863,7 +862,7 @@ hawaii_Kahului Harbor FMA,hawaii,2022-10-23,forecast,0.0,0.0,1.0,0
 hawaii_Kahului Harbor FMA,hawaii,2022-10-30,forecast,0.0,0.0,1.0,0
 hawaii_Kahului Harbor FMA,hawaii,2022-11-06,forecast,0.0,0.0,1.0,0
 hawaii_Kahului Harbor FMA,hawaii,2022-11-13,forecast,0.0,0.0,1.0,0
-hawaii_Kailua Bay FMA,hawaii,2022-06-05,nowcast,0.0,0.0,0.0,0
+hawaii_Kahului Harbor FMA,hawaii,2022-11-20,forecast,0.0,0.0,1.0,0
 hawaii_Kailua Bay FMA,hawaii,2022-06-12,nowcast,0.0,0.0,0.0,0
 hawaii_Kailua Bay FMA,hawaii,2022-06-19,nowcast,0.0,0.0,0.0,0
 hawaii_Kailua Bay FMA,hawaii,2022-06-26,nowcast,0.0,0.0,0.0,0
@@ -875,11 +874,11 @@ hawaii_Kailua Bay FMA,hawaii,2022-07-31,nowcast,0.0,0.0,0.0,0
 hawaii_Kailua Bay FMA,hawaii,2022-08-07,nowcast,0.0,0.0,0.0,0
 hawaii_Kailua Bay FMA,hawaii,2022-08-14,nowcast,0.0,0.0,0.0,0
 hawaii_Kailua Bay FMA,hawaii,2022-08-21,nowcast,0.0,0.0,0.0,0
-hawaii_Kailua Bay FMA,hawaii,2022-08-28,forecast,0.0,0.0,0.0,0
+hawaii_Kailua Bay FMA,hawaii,2022-08-28,nowcast,0.0,0.0,0.0,0
 hawaii_Kailua Bay FMA,hawaii,2022-09-04,forecast,0.0,0.0,0.0,0
 hawaii_Kailua Bay FMA,hawaii,2022-09-11,forecast,0.0,0.0,0.0,0
-hawaii_Kailua Bay FMA,hawaii,2022-09-18,forecast,0.0,0.0,7.0,0
-hawaii_Kailua Bay FMA,hawaii,2022-09-25,forecast,0.0,6.0,17.0,2
+hawaii_Kailua Bay FMA,hawaii,2022-09-18,forecast,0.0,0.0,0.0,0
+hawaii_Kailua Bay FMA,hawaii,2022-09-25,forecast,0.0,0.0,7.0,0
 hawaii_Kailua Bay FMA,hawaii,2022-10-02,forecast,0.0,4.0,17.0,1
 hawaii_Kailua Bay FMA,hawaii,2022-10-09,forecast,0.0,4.0,17.0,1
 hawaii_Kailua Bay FMA,hawaii,2022-10-16,forecast,0.0,4.0,17.0,1
@@ -887,7 +886,7 @@ hawaii_Kailua Bay FMA,hawaii,2022-10-23,forecast,0.0,4.0,17.0,1
 hawaii_Kailua Bay FMA,hawaii,2022-10-30,forecast,0.0,4.0,17.0,1
 hawaii_Kailua Bay FMA,hawaii,2022-11-06,forecast,0.0,4.0,17.0,1
 hawaii_Kailua Bay FMA,hawaii,2022-11-13,forecast,0.0,4.0,17.0,1
-hawaii_Kailua Bay FMA: Zone B,hawaii,2022-06-05,nowcast,0.0,0.0,0.0,0
+hawaii_Kailua Bay FMA,hawaii,2022-11-20,forecast,0.0,4.0,17.0,1
 hawaii_Kailua Bay FMA: Zone B,hawaii,2022-06-12,nowcast,0.0,0.0,0.0,0
 hawaii_Kailua Bay FMA: Zone B,hawaii,2022-06-19,nowcast,0.0,0.0,0.0,0
 hawaii_Kailua Bay FMA: Zone B,hawaii,2022-06-26,nowcast,0.0,0.0,0.0,0
@@ -899,11 +898,11 @@ hawaii_Kailua Bay FMA: Zone B,hawaii,2022-07-31,nowcast,0.0,0.0,0.0,0
 hawaii_Kailua Bay FMA: Zone B,hawaii,2022-08-07,nowcast,0.0,0.0,0.0,0
 hawaii_Kailua Bay FMA: Zone B,hawaii,2022-08-14,nowcast,0.0,0.0,0.0,0
 hawaii_Kailua Bay FMA: Zone B,hawaii,2022-08-21,nowcast,0.0,0.0,0.0,0
-hawaii_Kailua Bay FMA: Zone B,hawaii,2022-08-28,forecast,0.0,0.0,0.0,0
+hawaii_Kailua Bay FMA: Zone B,hawaii,2022-08-28,nowcast,0.0,0.0,0.0,0
 hawaii_Kailua Bay FMA: Zone B,hawaii,2022-09-04,forecast,0.0,0.0,0.0,0
 hawaii_Kailua Bay FMA: Zone B,hawaii,2022-09-11,forecast,0.0,0.0,0.0,0
-hawaii_Kailua Bay FMA: Zone B,hawaii,2022-09-18,forecast,0.0,0.0,7.0,0
-hawaii_Kailua Bay FMA: Zone B,hawaii,2022-09-25,forecast,0.0,6.0,17.0,2
+hawaii_Kailua Bay FMA: Zone B,hawaii,2022-09-18,forecast,0.0,0.0,0.0,0
+hawaii_Kailua Bay FMA: Zone B,hawaii,2022-09-25,forecast,0.0,0.0,7.0,0
 hawaii_Kailua Bay FMA: Zone B,hawaii,2022-10-02,forecast,0.0,4.0,17.0,1
 hawaii_Kailua Bay FMA: Zone B,hawaii,2022-10-09,forecast,0.0,4.0,17.0,1
 hawaii_Kailua Bay FMA: Zone B,hawaii,2022-10-16,forecast,0.0,4.0,17.0,1
@@ -911,7 +910,7 @@ hawaii_Kailua Bay FMA: Zone B,hawaii,2022-10-23,forecast,0.0,4.0,17.0,1
 hawaii_Kailua Bay FMA: Zone B,hawaii,2022-10-30,forecast,0.0,4.0,17.0,1
 hawaii_Kailua Bay FMA: Zone B,hawaii,2022-11-06,forecast,0.0,4.0,17.0,1
 hawaii_Kailua Bay FMA: Zone B,hawaii,2022-11-13,forecast,0.0,4.0,17.0,1
-hawaii_Kailua-Keauhou FRA,hawaii,2022-06-05,nowcast,0.0,0.0,0.0,0
+hawaii_Kailua Bay FMA: Zone B,hawaii,2022-11-20,forecast,0.0,4.0,17.0,1
 hawaii_Kailua-Keauhou FRA,hawaii,2022-06-12,nowcast,0.0,0.0,0.0,0
 hawaii_Kailua-Keauhou FRA,hawaii,2022-06-19,nowcast,0.0,0.0,0.0,0
 hawaii_Kailua-Keauhou FRA,hawaii,2022-06-26,nowcast,0.0,0.0,0.7000000000000002,0
@@ -923,11 +922,11 @@ hawaii_Kailua-Keauhou FRA,hawaii,2022-07-31,nowcast,0.0,0.0,0.0,0
 hawaii_Kailua-Keauhou FRA,hawaii,2022-08-07,nowcast,0.0,0.0,0.0,0
 hawaii_Kailua-Keauhou FRA,hawaii,2022-08-14,nowcast,0.0,0.0,0.0,0
 hawaii_Kailua-Keauhou FRA,hawaii,2022-08-21,nowcast,0.0,0.0,0.0,0
-hawaii_Kailua-Keauhou FRA,hawaii,2022-08-28,forecast,0.0,0.0,0.0,0
+hawaii_Kailua-Keauhou FRA,hawaii,2022-08-28,nowcast,0.0,0.0,0.0,0
 hawaii_Kailua-Keauhou FRA,hawaii,2022-09-04,forecast,0.0,0.0,0.0,0
 hawaii_Kailua-Keauhou FRA,hawaii,2022-09-11,forecast,0.0,0.0,0.0,0
-hawaii_Kailua-Keauhou FRA,hawaii,2022-09-18,forecast,0.0,0.0,7.0,0
-hawaii_Kailua-Keauhou FRA,hawaii,2022-09-25,forecast,0.0,6.0,17.0,2
+hawaii_Kailua-Keauhou FRA,hawaii,2022-09-18,forecast,0.0,0.0,0.0,0
+hawaii_Kailua-Keauhou FRA,hawaii,2022-09-25,forecast,0.0,0.0,7.0,0
 hawaii_Kailua-Keauhou FRA,hawaii,2022-10-02,forecast,0.0,4.0,17.0,1
 hawaii_Kailua-Keauhou FRA,hawaii,2022-10-09,forecast,0.0,4.0,17.0,1
 hawaii_Kailua-Keauhou FRA,hawaii,2022-10-16,forecast,0.0,4.0,17.0,1
@@ -935,7 +934,7 @@ hawaii_Kailua-Keauhou FRA,hawaii,2022-10-23,forecast,0.0,4.0,17.0,1
 hawaii_Kailua-Keauhou FRA,hawaii,2022-10-30,forecast,0.0,4.0,17.0,1
 hawaii_Kailua-Keauhou FRA,hawaii,2022-11-06,forecast,0.0,4.0,17.0,1
 hawaii_Kailua-Keauhou FRA,hawaii,2022-11-13,forecast,0.0,4.0,17.0,1
-hawaii_Kalaupapa (BRFA G),hawaii,2022-06-05,nowcast,0.0,0.0,0.6000000000000001,0
+hawaii_Kailua-Keauhou FRA,hawaii,2022-11-20,forecast,0.0,4.0,17.0,1
 hawaii_Kalaupapa (BRFA G),hawaii,2022-06-12,nowcast,0.0,0.0,0.6000000000000001,0
 hawaii_Kalaupapa (BRFA G),hawaii,2022-06-19,nowcast,0.0,0.0,0.6000000000000001,0
 hawaii_Kalaupapa (BRFA G),hawaii,2022-06-26,nowcast,0.0,0.0,0.6000000000000001,0
@@ -947,19 +946,19 @@ hawaii_Kalaupapa (BRFA G),hawaii,2022-07-31,nowcast,0.0,0.0,0.6000000000000001,0
 hawaii_Kalaupapa (BRFA G),hawaii,2022-08-07,nowcast,0.0,0.0,0.0,0
 hawaii_Kalaupapa (BRFA G),hawaii,2022-08-14,nowcast,0.0,0.0,0.6000000000000001,0
 hawaii_Kalaupapa (BRFA G),hawaii,2022-08-21,nowcast,0.0,0.0,0.6000000000000001,0
-hawaii_Kalaupapa (BRFA G),hawaii,2022-08-28,forecast,0.0,0.0,0.0,0
+hawaii_Kalaupapa (BRFA G),hawaii,2022-08-28,nowcast,0.0,0.0,0.0,0
 hawaii_Kalaupapa (BRFA G),hawaii,2022-09-04,forecast,0.0,0.0,0.6000000000000001,0
 hawaii_Kalaupapa (BRFA G),hawaii,2022-09-11,forecast,0.0,0.0,0.6000000000000001,0
-hawaii_Kalaupapa (BRFA G),hawaii,2022-09-18,forecast,0.0,0.0,7.0,0
-hawaii_Kalaupapa (BRFA G),hawaii,2022-09-25,forecast,0.0,6.0,17.0,2
-hawaii_Kalaupapa (BRFA G),hawaii,2022-10-02,forecast,0.0,3.0,17.0,1
+hawaii_Kalaupapa (BRFA G),hawaii,2022-09-18,forecast,0.0,0.0,0.6000000000000001,0
+hawaii_Kalaupapa (BRFA G),hawaii,2022-09-25,forecast,0.0,0.0,2.6,0
+hawaii_Kalaupapa (BRFA G),hawaii,2022-10-02,forecast,0.0,0.6000000000000001,8.8,0
 hawaii_Kalaupapa (BRFA G),hawaii,2022-10-09,forecast,0.0,3.0,17.0,1
 hawaii_Kalaupapa (BRFA G),hawaii,2022-10-16,forecast,0.0,3.0,17.0,1
 hawaii_Kalaupapa (BRFA G),hawaii,2022-10-23,forecast,0.0,3.6,17.0,1
 hawaii_Kalaupapa (BRFA G),hawaii,2022-10-30,forecast,0.0,3.6,17.0,1
 hawaii_Kalaupapa (BRFA G),hawaii,2022-11-06,forecast,0.0,4.0,17.0,1
 hawaii_Kalaupapa (BRFA G),hawaii,2022-11-13,forecast,0.0,4.0,17.0,1
-hawaii_Kaloko-Honokohau FRA / NRA,hawaii,2022-06-05,nowcast,0.0,0.0,0.0,0
+hawaii_Kalaupapa (BRFA G),hawaii,2022-11-20,forecast,0.0,4.0,17.0,1
 hawaii_Kaloko-Honokohau FRA / NRA,hawaii,2022-06-12,nowcast,0.0,0.0,0.0,0
 hawaii_Kaloko-Honokohau FRA / NRA,hawaii,2022-06-19,nowcast,0.0,0.0,0.0,0
 hawaii_Kaloko-Honokohau FRA / NRA,hawaii,2022-06-26,nowcast,0.0,0.0,0.0,0
@@ -971,11 +970,11 @@ hawaii_Kaloko-Honokohau FRA / NRA,hawaii,2022-07-31,nowcast,0.0,0.0,0.0,0
 hawaii_Kaloko-Honokohau FRA / NRA,hawaii,2022-08-07,nowcast,0.0,0.0,0.0,0
 hawaii_Kaloko-Honokohau FRA / NRA,hawaii,2022-08-14,nowcast,0.0,0.0,0.0,0
 hawaii_Kaloko-Honokohau FRA / NRA,hawaii,2022-08-21,nowcast,0.0,0.0,0.0,0
-hawaii_Kaloko-Honokohau FRA / NRA,hawaii,2022-08-28,forecast,0.0,0.0,0.0,0
+hawaii_Kaloko-Honokohau FRA / NRA,hawaii,2022-08-28,nowcast,0.0,0.0,0.0,0
 hawaii_Kaloko-Honokohau FRA / NRA,hawaii,2022-09-04,forecast,0.0,0.0,0.0,0
 hawaii_Kaloko-Honokohau FRA / NRA,hawaii,2022-09-11,forecast,0.0,0.0,0.0,0
-hawaii_Kaloko-Honokohau FRA / NRA,hawaii,2022-09-18,forecast,0.0,0.0,7.0,0
-hawaii_Kaloko-Honokohau FRA / NRA,hawaii,2022-09-25,forecast,0.0,6.0,17.0,2
+hawaii_Kaloko-Honokohau FRA / NRA,hawaii,2022-09-18,forecast,0.0,0.0,0.0,0
+hawaii_Kaloko-Honokohau FRA / NRA,hawaii,2022-09-25,forecast,0.0,0.0,7.0,0
 hawaii_Kaloko-Honokohau FRA / NRA,hawaii,2022-10-02,forecast,0.0,4.0,17.0,1
 hawaii_Kaloko-Honokohau FRA / NRA,hawaii,2022-10-09,forecast,0.0,4.0,17.0,1
 hawaii_Kaloko-Honokohau FRA / NRA,hawaii,2022-10-16,forecast,0.0,4.0,17.0,1
@@ -983,7 +982,7 @@ hawaii_Kaloko-Honokohau FRA / NRA,hawaii,2022-10-23,forecast,0.0,4.0,17.0,1
 hawaii_Kaloko-Honokohau FRA / NRA,hawaii,2022-10-30,forecast,0.0,4.0,17.0,1
 hawaii_Kaloko-Honokohau FRA / NRA,hawaii,2022-11-06,forecast,0.0,4.0,17.0,1
 hawaii_Kaloko-Honokohau FRA / NRA,hawaii,2022-11-13,forecast,0.0,4.0,17.0,1
-hawaii_Kanonone-Kalipoa (Ka Lae) NRA,hawaii,2022-06-05,nowcast,0.0,0.0,0.0,0
+hawaii_Kaloko-Honokohau FRA / NRA,hawaii,2022-11-20,forecast,0.0,4.0,17.0,1
 hawaii_Kanonone-Kalipoa (Ka Lae) NRA,hawaii,2022-06-12,nowcast,0.0,0.0,0.0,0
 hawaii_Kanonone-Kalipoa (Ka Lae) NRA,hawaii,2022-06-19,nowcast,0.0,0.0,0.0,0
 hawaii_Kanonone-Kalipoa (Ka Lae) NRA,hawaii,2022-06-26,nowcast,0.0,0.0,0.0,0
@@ -995,19 +994,19 @@ hawaii_Kanonone-Kalipoa (Ka Lae) NRA,hawaii,2022-07-31,nowcast,0.0,0.0,0.0,0
 hawaii_Kanonone-Kalipoa (Ka Lae) NRA,hawaii,2022-08-07,nowcast,0.0,0.0,0.0,0
 hawaii_Kanonone-Kalipoa (Ka Lae) NRA,hawaii,2022-08-14,nowcast,0.0,0.0,0.0,0
 hawaii_Kanonone-Kalipoa (Ka Lae) NRA,hawaii,2022-08-21,nowcast,0.0,0.0,0.0,0
-hawaii_Kanonone-Kalipoa (Ka Lae) NRA,hawaii,2022-08-28,forecast,0.0,0.0,0.0,0
+hawaii_Kanonone-Kalipoa (Ka Lae) NRA,hawaii,2022-08-28,nowcast,0.0,0.0,0.0,0
 hawaii_Kanonone-Kalipoa (Ka Lae) NRA,hawaii,2022-09-04,forecast,0.0,0.0,0.0,0
 hawaii_Kanonone-Kalipoa (Ka Lae) NRA,hawaii,2022-09-11,forecast,0.0,0.0,0.0,0
 hawaii_Kanonone-Kalipoa (Ka Lae) NRA,hawaii,2022-09-18,forecast,0.0,0.0,0.0,0
-hawaii_Kanonone-Kalipoa (Ka Lae) NRA,hawaii,2022-09-25,forecast,0.0,0.0,7.0,0
-hawaii_Kanonone-Kalipoa (Ka Lae) NRA,hawaii,2022-10-02,forecast,0.0,4.0,17.0,1
+hawaii_Kanonone-Kalipoa (Ka Lae) NRA,hawaii,2022-09-25,forecast,0.0,0.0,0.0,0
+hawaii_Kanonone-Kalipoa (Ka Lae) NRA,hawaii,2022-10-02,forecast,0.0,0.0,7.0,0
 hawaii_Kanonone-Kalipoa (Ka Lae) NRA,hawaii,2022-10-09,forecast,0.0,4.0,17.0,1
 hawaii_Kanonone-Kalipoa (Ka Lae) NRA,hawaii,2022-10-16,forecast,0.0,4.0,17.0,1
 hawaii_Kanonone-Kalipoa (Ka Lae) NRA,hawaii,2022-10-23,forecast,0.0,4.0,17.0,1
 hawaii_Kanonone-Kalipoa (Ka Lae) NRA,hawaii,2022-10-30,forecast,0.0,4.0,17.0,1
 hawaii_Kanonone-Kalipoa (Ka Lae) NRA,hawaii,2022-11-06,forecast,0.0,4.0,17.0,1
 hawaii_Kanonone-Kalipoa (Ka Lae) NRA,hawaii,2022-11-13,forecast,0.0,4.0,17.0,1
-hawaii_Kaula Rock (BRFA A),hawaii,2022-06-05,nowcast,0.0,1.0,8.0,0
+hawaii_Kanonone-Kalipoa (Ka Lae) NRA,hawaii,2022-11-20,forecast,0.0,4.0,17.0,1
 hawaii_Kaula Rock (BRFA A),hawaii,2022-06-12,nowcast,0.0,1.0,8.0,0
 hawaii_Kaula Rock (BRFA A),hawaii,2022-06-19,nowcast,0.0,1.0,8.0,0
 hawaii_Kaula Rock (BRFA A),hawaii,2022-06-26,nowcast,0.0,1.0,8.0,0
@@ -1019,10 +1018,10 @@ hawaii_Kaula Rock (BRFA A),hawaii,2022-07-31,nowcast,0.0,1.0,8.0,0
 hawaii_Kaula Rock (BRFA A),hawaii,2022-08-07,nowcast,0.0,1.0,8.0,0
 hawaii_Kaula Rock (BRFA A),hawaii,2022-08-14,nowcast,0.0,1.0,8.0,0
 hawaii_Kaula Rock (BRFA A),hawaii,2022-08-21,nowcast,0.0,1.0,8.0,0
-hawaii_Kaula Rock (BRFA A),hawaii,2022-08-28,forecast,0.0,1.0,8.0,0
+hawaii_Kaula Rock (BRFA A),hawaii,2022-08-28,nowcast,0.0,1.0,8.0,0
 hawaii_Kaula Rock (BRFA A),hawaii,2022-09-04,forecast,0.0,1.0,7.0,0
 hawaii_Kaula Rock (BRFA A),hawaii,2022-09-11,forecast,0.0,1.0,7.0,0
-hawaii_Kaula Rock (BRFA A),hawaii,2022-09-18,forecast,0.0,6.0,17.0,2
+hawaii_Kaula Rock (BRFA A),hawaii,2022-09-18,forecast,0.0,1.0,7.0,0
 hawaii_Kaula Rock (BRFA A),hawaii,2022-09-25,forecast,0.0,6.0,17.0,2
 hawaii_Kaula Rock (BRFA A),hawaii,2022-10-02,forecast,0.0,4.0,17.0,1
 hawaii_Kaula Rock (BRFA A),hawaii,2022-10-09,forecast,0.0,4.0,17.0,1
@@ -1031,7 +1030,7 @@ hawaii_Kaula Rock (BRFA A),hawaii,2022-10-23,forecast,0.0,4.0,17.0,1
 hawaii_Kaula Rock (BRFA A),hawaii,2022-10-30,forecast,0.0,4.0,17.0,1
 hawaii_Kaula Rock (BRFA A),hawaii,2022-11-06,forecast,1.0,4.0,17.0,1
 hawaii_Kaula Rock (BRFA A),hawaii,2022-11-13,forecast,1.0,4.0,17.0,1
-hawaii_Kaunakakai Harbor FMA: Area 1A,hawaii,2022-06-05,nowcast,49.0,55.0,61.0,4
+hawaii_Kaula Rock (BRFA A),hawaii,2022-11-20,forecast,1.0,4.0,17.0,1
 hawaii_Kaunakakai Harbor FMA: Area 1A,hawaii,2022-06-12,nowcast,49.0,55.0,61.0,4
 hawaii_Kaunakakai Harbor FMA: Area 1A,hawaii,2022-06-19,nowcast,49.0,55.0,61.0,4
 hawaii_Kaunakakai Harbor FMA: Area 1A,hawaii,2022-06-26,nowcast,51.0,56.0,61.0,4
@@ -1043,7 +1042,7 @@ hawaii_Kaunakakai Harbor FMA: Area 1A,hawaii,2022-07-31,nowcast,49.0,55.0,61.0,4
 hawaii_Kaunakakai Harbor FMA: Area 1A,hawaii,2022-08-07,nowcast,3.0,4.0,57.0,1
 hawaii_Kaunakakai Harbor FMA: Area 1A,hawaii,2022-08-14,nowcast,3.0,4.0,57.0,1
 hawaii_Kaunakakai Harbor FMA: Area 1A,hawaii,2022-08-21,nowcast,3.0,4.0,57.0,1
-hawaii_Kaunakakai Harbor FMA: Area 1A,hawaii,2022-08-28,forecast,3.0,4.0,57.0,1
+hawaii_Kaunakakai Harbor FMA: Area 1A,hawaii,2022-08-28,nowcast,3.0,4.0,57.0,1
 hawaii_Kaunakakai Harbor FMA: Area 1A,hawaii,2022-09-04,forecast,3.0,4.0,58.0,1
 hawaii_Kaunakakai Harbor FMA: Area 1A,hawaii,2022-09-11,forecast,3.0,4.0,58.0,1
 hawaii_Kaunakakai Harbor FMA: Area 1A,hawaii,2022-09-18,forecast,3.0,4.0,58.0,1
@@ -1055,7 +1054,7 @@ hawaii_Kaunakakai Harbor FMA: Area 1A,hawaii,2022-10-23,forecast,3.0,4.0,58.0,1
 hawaii_Kaunakakai Harbor FMA: Area 1A,hawaii,2022-10-30,forecast,3.0,4.0,58.0,1
 hawaii_Kaunakakai Harbor FMA: Area 1A,hawaii,2022-11-06,forecast,3.0,4.0,34.0,1
 hawaii_Kaunakakai Harbor FMA: Area 1A,hawaii,2022-11-13,forecast,3.0,4.0,38.0,1
-hawaii_Kaunakakai Harbor FMA: Area 1B,hawaii,2022-06-05,nowcast,49.0,55.0,61.0,4
+hawaii_Kaunakakai Harbor FMA: Area 1A,hawaii,2022-11-20,forecast,3.0,4.0,38.0,1
 hawaii_Kaunakakai Harbor FMA: Area 1B,hawaii,2022-06-12,nowcast,49.0,55.0,61.0,4
 hawaii_Kaunakakai Harbor FMA: Area 1B,hawaii,2022-06-19,nowcast,49.0,55.0,61.0,4
 hawaii_Kaunakakai Harbor FMA: Area 1B,hawaii,2022-06-26,nowcast,51.0,56.0,61.0,4
@@ -1067,7 +1066,7 @@ hawaii_Kaunakakai Harbor FMA: Area 1B,hawaii,2022-07-31,nowcast,49.0,55.0,61.0,4
 hawaii_Kaunakakai Harbor FMA: Area 1B,hawaii,2022-08-07,nowcast,3.0,4.0,57.0,1
 hawaii_Kaunakakai Harbor FMA: Area 1B,hawaii,2022-08-14,nowcast,3.0,4.0,57.0,1
 hawaii_Kaunakakai Harbor FMA: Area 1B,hawaii,2022-08-21,nowcast,3.0,4.0,57.0,1
-hawaii_Kaunakakai Harbor FMA: Area 1B,hawaii,2022-08-28,forecast,3.0,4.0,57.0,1
+hawaii_Kaunakakai Harbor FMA: Area 1B,hawaii,2022-08-28,nowcast,3.0,4.0,57.0,1
 hawaii_Kaunakakai Harbor FMA: Area 1B,hawaii,2022-09-04,forecast,3.0,4.0,58.0,1
 hawaii_Kaunakakai Harbor FMA: Area 1B,hawaii,2022-09-11,forecast,3.0,4.0,58.0,1
 hawaii_Kaunakakai Harbor FMA: Area 1B,hawaii,2022-09-18,forecast,3.0,4.0,58.0,1
@@ -1079,7 +1078,7 @@ hawaii_Kaunakakai Harbor FMA: Area 1B,hawaii,2022-10-23,forecast,3.0,4.0,58.0,1
 hawaii_Kaunakakai Harbor FMA: Area 1B,hawaii,2022-10-30,forecast,3.0,4.0,58.0,1
 hawaii_Kaunakakai Harbor FMA: Area 1B,hawaii,2022-11-06,forecast,3.0,4.0,34.0,1
 hawaii_Kaunakakai Harbor FMA: Area 1B,hawaii,2022-11-13,forecast,3.0,4.0,38.0,1
-hawaii_Kaunakakai Harbor FMA: Area 2,hawaii,2022-06-05,nowcast,49.0,55.0,61.0,4
+hawaii_Kaunakakai Harbor FMA: Area 1B,hawaii,2022-11-20,forecast,3.0,4.0,38.0,1
 hawaii_Kaunakakai Harbor FMA: Area 2,hawaii,2022-06-12,nowcast,49.0,55.0,61.0,4
 hawaii_Kaunakakai Harbor FMA: Area 2,hawaii,2022-06-19,nowcast,49.0,55.0,61.0,4
 hawaii_Kaunakakai Harbor FMA: Area 2,hawaii,2022-06-26,nowcast,51.0,56.0,61.0,4
@@ -1091,7 +1090,7 @@ hawaii_Kaunakakai Harbor FMA: Area 2,hawaii,2022-07-31,nowcast,49.0,55.0,61.0,4
 hawaii_Kaunakakai Harbor FMA: Area 2,hawaii,2022-08-07,nowcast,3.0,4.0,57.0,1
 hawaii_Kaunakakai Harbor FMA: Area 2,hawaii,2022-08-14,nowcast,3.0,4.0,57.0,1
 hawaii_Kaunakakai Harbor FMA: Area 2,hawaii,2022-08-21,nowcast,3.0,4.0,57.0,1
-hawaii_Kaunakakai Harbor FMA: Area 2,hawaii,2022-08-28,forecast,3.0,4.0,57.0,1
+hawaii_Kaunakakai Harbor FMA: Area 2,hawaii,2022-08-28,nowcast,3.0,4.0,57.0,1
 hawaii_Kaunakakai Harbor FMA: Area 2,hawaii,2022-09-04,forecast,3.0,4.0,58.0,1
 hawaii_Kaunakakai Harbor FMA: Area 2,hawaii,2022-09-11,forecast,3.0,4.0,58.0,1
 hawaii_Kaunakakai Harbor FMA: Area 2,hawaii,2022-09-18,forecast,3.0,4.0,58.0,1
@@ -1103,7 +1102,7 @@ hawaii_Kaunakakai Harbor FMA: Area 2,hawaii,2022-10-23,forecast,3.0,4.0,58.0,1
 hawaii_Kaunakakai Harbor FMA: Area 2,hawaii,2022-10-30,forecast,3.0,4.0,58.0,1
 hawaii_Kaunakakai Harbor FMA: Area 2,hawaii,2022-11-06,forecast,3.0,4.0,34.0,1
 hawaii_Kaunakakai Harbor FMA: Area 2,hawaii,2022-11-13,forecast,3.0,4.0,38.0,1
-hawaii_Kauplehu Marine Reserve,hawaii,2022-06-05,nowcast,0.0,0.0,0.0,0
+hawaii_Kaunakakai Harbor FMA: Area 2,hawaii,2022-11-20,forecast,3.0,4.0,38.0,1
 hawaii_Kauplehu Marine Reserve,hawaii,2022-06-12,nowcast,0.0,0.0,0.0,0
 hawaii_Kauplehu Marine Reserve,hawaii,2022-06-19,nowcast,0.0,0.0,0.0,0
 hawaii_Kauplehu Marine Reserve,hawaii,2022-06-26,nowcast,0.0,0.0,0.0,0
@@ -1115,11 +1114,11 @@ hawaii_Kauplehu Marine Reserve,hawaii,2022-07-31,nowcast,0.0,0.0,0.0,0
 hawaii_Kauplehu Marine Reserve,hawaii,2022-08-07,nowcast,0.0,0.0,0.0,0
 hawaii_Kauplehu Marine Reserve,hawaii,2022-08-14,nowcast,0.0,0.0,0.0,0
 hawaii_Kauplehu Marine Reserve,hawaii,2022-08-21,nowcast,0.0,0.0,0.0,0
-hawaii_Kauplehu Marine Reserve,hawaii,2022-08-28,forecast,0.0,0.0,0.0,0
+hawaii_Kauplehu Marine Reserve,hawaii,2022-08-28,nowcast,0.0,0.0,0.0,0
 hawaii_Kauplehu Marine Reserve,hawaii,2022-09-04,forecast,0.0,0.0,0.0,0
 hawaii_Kauplehu Marine Reserve,hawaii,2022-09-11,forecast,0.0,0.0,0.0,0
-hawaii_Kauplehu Marine Reserve,hawaii,2022-09-18,forecast,0.0,0.0,7.0,0
-hawaii_Kauplehu Marine Reserve,hawaii,2022-09-25,forecast,0.0,6.0,17.0,2
+hawaii_Kauplehu Marine Reserve,hawaii,2022-09-18,forecast,0.0,0.0,0.0,0
+hawaii_Kauplehu Marine Reserve,hawaii,2022-09-25,forecast,0.0,0.0,7.0,0
 hawaii_Kauplehu Marine Reserve,hawaii,2022-10-02,forecast,0.0,4.0,17.0,1
 hawaii_Kauplehu Marine Reserve,hawaii,2022-10-09,forecast,0.0,4.0,17.0,1
 hawaii_Kauplehu Marine Reserve,hawaii,2022-10-16,forecast,0.0,4.0,17.0,1
@@ -1127,7 +1126,7 @@ hawaii_Kauplehu Marine Reserve,hawaii,2022-10-23,forecast,0.0,4.0,17.0,1
 hawaii_Kauplehu Marine Reserve,hawaii,2022-10-30,forecast,0.0,4.0,17.0,1
 hawaii_Kauplehu Marine Reserve,hawaii,2022-11-06,forecast,0.0,4.0,17.0,1
 hawaii_Kauplehu Marine Reserve,hawaii,2022-11-13,forecast,0.0,4.0,17.0,1
-hawaii_Kealakekua Bay MLCD: Zone A,hawaii,2022-06-05,nowcast,0.0,0.0,0.0,0
+hawaii_Kauplehu Marine Reserve,hawaii,2022-11-20,forecast,0.0,4.0,17.0,1
 hawaii_Kealakekua Bay MLCD: Zone A,hawaii,2022-06-12,nowcast,0.0,0.0,0.0,0
 hawaii_Kealakekua Bay MLCD: Zone A,hawaii,2022-06-19,nowcast,0.0,1.0,3.0,0
 hawaii_Kealakekua Bay MLCD: Zone A,hawaii,2022-06-26,nowcast,0.0,1.0,3.0,0
@@ -1139,11 +1138,11 @@ hawaii_Kealakekua Bay MLCD: Zone A,hawaii,2022-07-31,nowcast,0.0,0.0,1.0,0
 hawaii_Kealakekua Bay MLCD: Zone A,hawaii,2022-08-07,nowcast,0.0,0.0,0.0,0
 hawaii_Kealakekua Bay MLCD: Zone A,hawaii,2022-08-14,nowcast,0.0,0.0,0.0,0
 hawaii_Kealakekua Bay MLCD: Zone A,hawaii,2022-08-21,nowcast,0.0,0.0,0.0,0
-hawaii_Kealakekua Bay MLCD: Zone A,hawaii,2022-08-28,forecast,0.0,0.0,0.0,0
+hawaii_Kealakekua Bay MLCD: Zone A,hawaii,2022-08-28,nowcast,0.0,0.0,0.0,0
 hawaii_Kealakekua Bay MLCD: Zone A,hawaii,2022-09-04,forecast,0.0,0.0,0.0,0
 hawaii_Kealakekua Bay MLCD: Zone A,hawaii,2022-09-11,forecast,0.0,0.0,0.0,0
-hawaii_Kealakekua Bay MLCD: Zone A,hawaii,2022-09-18,forecast,0.0,0.0,7.0,0
-hawaii_Kealakekua Bay MLCD: Zone A,hawaii,2022-09-25,forecast,0.0,6.0,17.0,2
+hawaii_Kealakekua Bay MLCD: Zone A,hawaii,2022-09-18,forecast,0.0,0.0,0.0,0
+hawaii_Kealakekua Bay MLCD: Zone A,hawaii,2022-09-25,forecast,0.0,0.0,7.0,0
 hawaii_Kealakekua Bay MLCD: Zone A,hawaii,2022-10-02,forecast,0.0,4.0,17.0,1
 hawaii_Kealakekua Bay MLCD: Zone A,hawaii,2022-10-09,forecast,0.0,4.0,17.0,1
 hawaii_Kealakekua Bay MLCD: Zone A,hawaii,2022-10-16,forecast,0.0,4.0,17.0,1
@@ -1151,7 +1150,7 @@ hawaii_Kealakekua Bay MLCD: Zone A,hawaii,2022-10-23,forecast,0.0,4.0,17.0,1
 hawaii_Kealakekua Bay MLCD: Zone A,hawaii,2022-10-30,forecast,0.0,4.0,17.0,1
 hawaii_Kealakekua Bay MLCD: Zone A,hawaii,2022-11-06,forecast,0.0,4.0,17.0,1
 hawaii_Kealakekua Bay MLCD: Zone A,hawaii,2022-11-13,forecast,0.0,4.0,17.0,1
-hawaii_Kealakekua Bay MLCD: Zone B,hawaii,2022-06-05,nowcast,0.0,0.0,0.0,0
+hawaii_Kealakekua Bay MLCD: Zone A,hawaii,2022-11-20,forecast,0.0,4.0,17.0,1
 hawaii_Kealakekua Bay MLCD: Zone B,hawaii,2022-06-12,nowcast,0.0,0.0,0.0,0
 hawaii_Kealakekua Bay MLCD: Zone B,hawaii,2022-06-19,nowcast,0.0,1.0,3.0,0
 hawaii_Kealakekua Bay MLCD: Zone B,hawaii,2022-06-26,nowcast,0.0,1.0,3.0,0
@@ -1163,11 +1162,11 @@ hawaii_Kealakekua Bay MLCD: Zone B,hawaii,2022-07-31,nowcast,0.0,0.0,1.0,0
 hawaii_Kealakekua Bay MLCD: Zone B,hawaii,2022-08-07,nowcast,0.0,0.0,0.0,0
 hawaii_Kealakekua Bay MLCD: Zone B,hawaii,2022-08-14,nowcast,0.0,0.0,0.0,0
 hawaii_Kealakekua Bay MLCD: Zone B,hawaii,2022-08-21,nowcast,0.0,0.0,0.0,0
-hawaii_Kealakekua Bay MLCD: Zone B,hawaii,2022-08-28,forecast,0.0,0.0,0.0,0
+hawaii_Kealakekua Bay MLCD: Zone B,hawaii,2022-08-28,nowcast,0.0,0.0,0.0,0
 hawaii_Kealakekua Bay MLCD: Zone B,hawaii,2022-09-04,forecast,0.0,0.0,0.0,0
 hawaii_Kealakekua Bay MLCD: Zone B,hawaii,2022-09-11,forecast,0.0,0.0,0.0,0
-hawaii_Kealakekua Bay MLCD: Zone B,hawaii,2022-09-18,forecast,0.0,0.0,7.0,0
-hawaii_Kealakekua Bay MLCD: Zone B,hawaii,2022-09-25,forecast,0.0,6.0,17.0,2
+hawaii_Kealakekua Bay MLCD: Zone B,hawaii,2022-09-18,forecast,0.0,0.0,0.0,0
+hawaii_Kealakekua Bay MLCD: Zone B,hawaii,2022-09-25,forecast,0.0,0.0,7.0,0
 hawaii_Kealakekua Bay MLCD: Zone B,hawaii,2022-10-02,forecast,0.0,4.0,17.0,1
 hawaii_Kealakekua Bay MLCD: Zone B,hawaii,2022-10-09,forecast,0.0,4.0,17.0,1
 hawaii_Kealakekua Bay MLCD: Zone B,hawaii,2022-10-16,forecast,0.0,4.0,17.0,1
@@ -1175,7 +1174,7 @@ hawaii_Kealakekua Bay MLCD: Zone B,hawaii,2022-10-23,forecast,0.0,4.0,17.0,1
 hawaii_Kealakekua Bay MLCD: Zone B,hawaii,2022-10-30,forecast,0.0,4.0,17.0,1
 hawaii_Kealakekua Bay MLCD: Zone B,hawaii,2022-11-06,forecast,0.0,4.0,17.0,1
 hawaii_Kealakekua Bay MLCD: Zone B,hawaii,2022-11-13,forecast,0.0,4.0,17.0,1
-hawaii_Keauhou Bay FMA,hawaii,2022-06-05,nowcast,0.0,0.0,0.0,0
+hawaii_Kealakekua Bay MLCD: Zone B,hawaii,2022-11-20,forecast,0.0,4.0,17.0,1
 hawaii_Keauhou Bay FMA,hawaii,2022-06-12,nowcast,0.0,0.0,0.0,0
 hawaii_Keauhou Bay FMA,hawaii,2022-06-19,nowcast,0.0,0.0,0.0,0
 hawaii_Keauhou Bay FMA,hawaii,2022-06-26,nowcast,0.0,0.0,1.0,0
@@ -1187,11 +1186,11 @@ hawaii_Keauhou Bay FMA,hawaii,2022-07-31,nowcast,0.0,0.0,0.0,0
 hawaii_Keauhou Bay FMA,hawaii,2022-08-07,nowcast,0.0,0.0,0.0,0
 hawaii_Keauhou Bay FMA,hawaii,2022-08-14,nowcast,0.0,0.0,0.0,0
 hawaii_Keauhou Bay FMA,hawaii,2022-08-21,nowcast,0.0,0.0,0.0,0
-hawaii_Keauhou Bay FMA,hawaii,2022-08-28,forecast,0.0,0.0,0.0,0
+hawaii_Keauhou Bay FMA,hawaii,2022-08-28,nowcast,0.0,0.0,0.0,0
 hawaii_Keauhou Bay FMA,hawaii,2022-09-04,forecast,0.0,0.0,0.0,0
 hawaii_Keauhou Bay FMA,hawaii,2022-09-11,forecast,0.0,0.0,0.0,0
-hawaii_Keauhou Bay FMA,hawaii,2022-09-18,forecast,0.0,0.0,7.0,0
-hawaii_Keauhou Bay FMA,hawaii,2022-09-25,forecast,0.0,6.0,17.0,2
+hawaii_Keauhou Bay FMA,hawaii,2022-09-18,forecast,0.0,0.0,0.0,0
+hawaii_Keauhou Bay FMA,hawaii,2022-09-25,forecast,0.0,0.0,7.0,0
 hawaii_Keauhou Bay FMA,hawaii,2022-10-02,forecast,0.0,4.0,17.0,1
 hawaii_Keauhou Bay FMA,hawaii,2022-10-09,forecast,0.0,4.0,17.0,1
 hawaii_Keauhou Bay FMA,hawaii,2022-10-16,forecast,0.0,4.0,17.0,1
@@ -1199,7 +1198,7 @@ hawaii_Keauhou Bay FMA,hawaii,2022-10-23,forecast,0.0,4.0,17.0,1
 hawaii_Keauhou Bay FMA,hawaii,2022-10-30,forecast,0.0,4.0,17.0,1
 hawaii_Keauhou Bay FMA,hawaii,2022-11-06,forecast,0.0,4.0,17.0,1
 hawaii_Keauhou Bay FMA,hawaii,2022-11-13,forecast,0.0,4.0,17.0,1
-hawaii_Keauhou Bay FMA: Thrownetting Zone,hawaii,2022-06-05,nowcast,0.0,0.0,0.0,0
+hawaii_Keauhou Bay FMA,hawaii,2022-11-20,forecast,0.0,4.0,17.0,1
 hawaii_Keauhou Bay FMA: Thrownetting Zone,hawaii,2022-06-12,nowcast,0.0,0.0,0.0,0
 hawaii_Keauhou Bay FMA: Thrownetting Zone,hawaii,2022-06-19,nowcast,0.0,0.0,0.0,0
 hawaii_Keauhou Bay FMA: Thrownetting Zone,hawaii,2022-06-26,nowcast,0.0,0.0,1.0,0
@@ -1211,11 +1210,11 @@ hawaii_Keauhou Bay FMA: Thrownetting Zone,hawaii,2022-07-31,nowcast,0.0,0.0,0.0,
 hawaii_Keauhou Bay FMA: Thrownetting Zone,hawaii,2022-08-07,nowcast,0.0,0.0,0.0,0
 hawaii_Keauhou Bay FMA: Thrownetting Zone,hawaii,2022-08-14,nowcast,0.0,0.0,0.0,0
 hawaii_Keauhou Bay FMA: Thrownetting Zone,hawaii,2022-08-21,nowcast,0.0,0.0,0.0,0
-hawaii_Keauhou Bay FMA: Thrownetting Zone,hawaii,2022-08-28,forecast,0.0,0.0,0.0,0
+hawaii_Keauhou Bay FMA: Thrownetting Zone,hawaii,2022-08-28,nowcast,0.0,0.0,0.0,0
 hawaii_Keauhou Bay FMA: Thrownetting Zone,hawaii,2022-09-04,forecast,0.0,0.0,0.0,0
 hawaii_Keauhou Bay FMA: Thrownetting Zone,hawaii,2022-09-11,forecast,0.0,0.0,0.0,0
-hawaii_Keauhou Bay FMA: Thrownetting Zone,hawaii,2022-09-18,forecast,0.0,0.0,7.0,0
-hawaii_Keauhou Bay FMA: Thrownetting Zone,hawaii,2022-09-25,forecast,0.0,6.0,17.0,2
+hawaii_Keauhou Bay FMA: Thrownetting Zone,hawaii,2022-09-18,forecast,0.0,0.0,0.0,0
+hawaii_Keauhou Bay FMA: Thrownetting Zone,hawaii,2022-09-25,forecast,0.0,0.0,7.0,0
 hawaii_Keauhou Bay FMA: Thrownetting Zone,hawaii,2022-10-02,forecast,0.0,4.0,17.0,1
 hawaii_Keauhou Bay FMA: Thrownetting Zone,hawaii,2022-10-09,forecast,0.0,4.0,17.0,1
 hawaii_Keauhou Bay FMA: Thrownetting Zone,hawaii,2022-10-16,forecast,0.0,4.0,17.0,1
@@ -1223,7 +1222,7 @@ hawaii_Keauhou Bay FMA: Thrownetting Zone,hawaii,2022-10-23,forecast,0.0,4.0,17.
 hawaii_Keauhou Bay FMA: Thrownetting Zone,hawaii,2022-10-30,forecast,0.0,4.0,17.0,1
 hawaii_Keauhou Bay FMA: Thrownetting Zone,hawaii,2022-11-06,forecast,0.0,4.0,17.0,1
 hawaii_Keauhou Bay FMA: Thrownetting Zone,hawaii,2022-11-13,forecast,0.0,4.0,17.0,1
-hawaii_Kiholo Bay FMA,hawaii,2022-06-05,nowcast,0.0,0.0,2.0,0
+hawaii_Keauhou Bay FMA: Thrownetting Zone,hawaii,2022-11-20,forecast,0.0,4.0,17.0,1
 hawaii_Kiholo Bay FMA,hawaii,2022-06-12,nowcast,0.0,0.0,2.0,0
 hawaii_Kiholo Bay FMA,hawaii,2022-06-19,nowcast,0.0,0.0,2.0,0
 hawaii_Kiholo Bay FMA,hawaii,2022-06-26,nowcast,0.0,0.0,2.0,0
@@ -1235,11 +1234,11 @@ hawaii_Kiholo Bay FMA,hawaii,2022-07-31,nowcast,0.0,0.0,0.0,0
 hawaii_Kiholo Bay FMA,hawaii,2022-08-07,nowcast,0.0,0.0,2.0,0
 hawaii_Kiholo Bay FMA,hawaii,2022-08-14,nowcast,0.0,0.0,2.0,0
 hawaii_Kiholo Bay FMA,hawaii,2022-08-21,nowcast,0.0,0.0,2.0,0
-hawaii_Kiholo Bay FMA,hawaii,2022-08-28,forecast,0.0,0.0,2.0,0
+hawaii_Kiholo Bay FMA,hawaii,2022-08-28,nowcast,0.0,0.0,2.0,0
 hawaii_Kiholo Bay FMA,hawaii,2022-09-04,forecast,0.0,0.0,2.0,0
 hawaii_Kiholo Bay FMA,hawaii,2022-09-11,forecast,0.0,0.0,2.0,0
-hawaii_Kiholo Bay FMA,hawaii,2022-09-18,forecast,0.0,2.0,7.0,1
-hawaii_Kiholo Bay FMA,hawaii,2022-09-25,forecast,0.0,6.0,17.0,2
+hawaii_Kiholo Bay FMA,hawaii,2022-09-18,forecast,0.0,0.0,2.0,0
+hawaii_Kiholo Bay FMA,hawaii,2022-09-25,forecast,0.0,0.0,7.0,0
 hawaii_Kiholo Bay FMA,hawaii,2022-10-02,forecast,0.0,6.0,17.0,2
 hawaii_Kiholo Bay FMA,hawaii,2022-10-09,forecast,0.0,6.0,17.0,2
 hawaii_Kiholo Bay FMA,hawaii,2022-10-16,forecast,0.0,6.0,17.0,2
@@ -1247,7 +1246,7 @@ hawaii_Kiholo Bay FMA,hawaii,2022-10-23,forecast,0.0,6.0,17.0,2
 hawaii_Kiholo Bay FMA,hawaii,2022-10-30,forecast,0.0,6.0,17.0,2
 hawaii_Kiholo Bay FMA,hawaii,2022-11-06,forecast,1.0,6.0,17.0,2
 hawaii_Kiholo Bay FMA,hawaii,2022-11-13,forecast,1.0,6.0,17.0,2
-hawaii_Kikaua Pt-Makolea NRA,hawaii,2022-06-05,nowcast,0.0,0.0,0.0,0
+hawaii_Kiholo Bay FMA,hawaii,2022-11-20,forecast,1.0,6.0,17.0,2
 hawaii_Kikaua Pt-Makolea NRA,hawaii,2022-06-12,nowcast,0.0,0.0,0.0,0
 hawaii_Kikaua Pt-Makolea NRA,hawaii,2022-06-19,nowcast,0.0,0.0,0.0,0
 hawaii_Kikaua Pt-Makolea NRA,hawaii,2022-06-26,nowcast,0.0,0.0,0.0,0
@@ -1259,11 +1258,11 @@ hawaii_Kikaua Pt-Makolea NRA,hawaii,2022-07-31,nowcast,0.0,0.0,0.0,0
 hawaii_Kikaua Pt-Makolea NRA,hawaii,2022-08-07,nowcast,0.0,0.0,0.0,0
 hawaii_Kikaua Pt-Makolea NRA,hawaii,2022-08-14,nowcast,0.0,0.0,0.0,0
 hawaii_Kikaua Pt-Makolea NRA,hawaii,2022-08-21,nowcast,0.0,0.0,0.0,0
-hawaii_Kikaua Pt-Makolea NRA,hawaii,2022-08-28,forecast,0.0,0.0,0.0,0
+hawaii_Kikaua Pt-Makolea NRA,hawaii,2022-08-28,nowcast,0.0,0.0,0.0,0
 hawaii_Kikaua Pt-Makolea NRA,hawaii,2022-09-04,forecast,0.0,0.0,0.0,0
 hawaii_Kikaua Pt-Makolea NRA,hawaii,2022-09-11,forecast,0.0,0.0,0.0,0
-hawaii_Kikaua Pt-Makolea NRA,hawaii,2022-09-18,forecast,0.0,0.0,7.0,0
-hawaii_Kikaua Pt-Makolea NRA,hawaii,2022-09-25,forecast,0.0,6.0,17.0,2
+hawaii_Kikaua Pt-Makolea NRA,hawaii,2022-09-18,forecast,0.0,0.0,0.0,0
+hawaii_Kikaua Pt-Makolea NRA,hawaii,2022-09-25,forecast,0.0,0.0,7.0,0
 hawaii_Kikaua Pt-Makolea NRA,hawaii,2022-10-02,forecast,0.0,4.0,17.0,1
 hawaii_Kikaua Pt-Makolea NRA,hawaii,2022-10-09,forecast,0.0,4.0,17.0,1
 hawaii_Kikaua Pt-Makolea NRA,hawaii,2022-10-16,forecast,0.0,4.0,17.0,1
@@ -1271,7 +1270,7 @@ hawaii_Kikaua Pt-Makolea NRA,hawaii,2022-10-23,forecast,0.0,4.0,17.0,1
 hawaii_Kikaua Pt-Makolea NRA,hawaii,2022-10-30,forecast,0.0,4.0,17.0,1
 hawaii_Kikaua Pt-Makolea NRA,hawaii,2022-11-06,forecast,0.0,4.0,17.0,1
 hawaii_Kikaua Pt-Makolea NRA,hawaii,2022-11-13,forecast,0.0,4.0,17.0,1
-hawaii_LNFPA: Maui,hawaii,2022-06-05,nowcast,0.0,0.0,1.0,0
+hawaii_Kikaua Pt-Makolea NRA,hawaii,2022-11-20,forecast,0.0,4.0,17.0,1
 hawaii_LNFPA: Maui,hawaii,2022-06-12,nowcast,0.0,0.0,1.0,0
 hawaii_LNFPA: Maui,hawaii,2022-06-19,nowcast,0.0,0.0,1.0,0
 hawaii_LNFPA: Maui,hawaii,2022-06-26,nowcast,0.0,0.0,1.0,0
@@ -1283,19 +1282,19 @@ hawaii_LNFPA: Maui,hawaii,2022-07-31,nowcast,0.0,0.0,1.0,0
 hawaii_LNFPA: Maui,hawaii,2022-08-07,nowcast,0.0,0.0,1.0,0
 hawaii_LNFPA: Maui,hawaii,2022-08-14,nowcast,0.0,0.0,1.0,0
 hawaii_LNFPA: Maui,hawaii,2022-08-21,nowcast,0.0,0.0,1.0,0
-hawaii_LNFPA: Maui,hawaii,2022-08-28,forecast,0.0,0.0,1.0,0
+hawaii_LNFPA: Maui,hawaii,2022-08-28,nowcast,0.0,0.0,1.0,0
 hawaii_LNFPA: Maui,hawaii,2022-09-04,forecast,0.0,0.0,1.0,0
 hawaii_LNFPA: Maui,hawaii,2022-09-11,forecast,0.0,0.0,1.0,0
-hawaii_LNFPA: Maui,hawaii,2022-09-18,forecast,0.0,0.0,7.0,0
-hawaii_LNFPA: Maui,hawaii,2022-09-25,forecast,0.0,6.0,17.0,2
-hawaii_LNFPA: Maui,hawaii,2022-10-02,forecast,0.0,4.0,17.0,1
+hawaii_LNFPA: Maui,hawaii,2022-09-18,forecast,0.0,0.0,1.0,0
+hawaii_LNFPA: Maui,hawaii,2022-09-25,forecast,0.0,0.0,7.0,0
+hawaii_LNFPA: Maui,hawaii,2022-10-02,forecast,0.0,3.0,17.0,1
 hawaii_LNFPA: Maui,hawaii,2022-10-09,forecast,0.0,4.0,17.0,1
 hawaii_LNFPA: Maui,hawaii,2022-10-16,forecast,0.0,4.0,17.0,1
 hawaii_LNFPA: Maui,hawaii,2022-10-23,forecast,0.0,4.0,17.0,1
 hawaii_LNFPA: Maui,hawaii,2022-10-30,forecast,0.0,4.0,17.0,1
 hawaii_LNFPA: Maui,hawaii,2022-11-06,forecast,1.0,4.0,17.0,1
 hawaii_LNFPA: Maui,hawaii,2022-11-13,forecast,1.0,4.0,17.0,1
-hawaii_LNFPA: Oahu,hawaii,2022-06-05,nowcast,20.80000000000004,57.500000000000014,62.30000000000001,4
+hawaii_LNFPA: Maui,hawaii,2022-11-20,forecast,1.0,4.0,17.0,1
 hawaii_LNFPA: Oahu,hawaii,2022-06-12,nowcast,20.80000000000004,57.500000000000014,62.30000000000001,4
 hawaii_LNFPA: Oahu,hawaii,2022-06-19,nowcast,20.80000000000004,57.500000000000014,62.30000000000001,4
 hawaii_LNFPA: Oahu,hawaii,2022-06-26,nowcast,20.80000000000004,58.20000000000001,63.00000000000001,4
@@ -1307,7 +1306,7 @@ hawaii_LNFPA: Oahu,hawaii,2022-07-31,nowcast,20.80000000000004,56.80000000000001
 hawaii_LNFPA: Oahu,hawaii,2022-08-07,nowcast,2.3000000000000007,24.20000000000004,62.500000000000014,4
 hawaii_LNFPA: Oahu,hawaii,2022-08-14,nowcast,2.3000000000000007,24.900000000000038,62.500000000000014,4
 hawaii_LNFPA: Oahu,hawaii,2022-08-21,nowcast,2.3000000000000007,25.50000000000004,62.500000000000014,4
-hawaii_LNFPA: Oahu,hawaii,2022-08-28,forecast,2.3000000000000007,25.50000000000004,62.500000000000014,4
+hawaii_LNFPA: Oahu,hawaii,2022-08-28,nowcast,2.3000000000000007,25.50000000000004,62.500000000000014,4
 hawaii_LNFPA: Oahu,hawaii,2022-09-04,forecast,2.3000000000000007,23.80000000000004,65.10000000000002,4
 hawaii_LNFPA: Oahu,hawaii,2022-09-11,forecast,2.3000000000000007,23.80000000000004,65.10000000000002,4
 hawaii_LNFPA: Oahu,hawaii,2022-09-18,forecast,2.3000000000000007,23.80000000000004,65.10000000000002,4
@@ -1319,7 +1318,7 @@ hawaii_LNFPA: Oahu,hawaii,2022-10-23,forecast,2.3000000000000007,23.500000000000
 hawaii_LNFPA: Oahu,hawaii,2022-10-30,forecast,2.3000000000000007,23.50000000000004,65.80000000000001,4
 hawaii_LNFPA: Oahu,hawaii,2022-11-06,forecast,2.3000000000000007,13.200000000000017,56.200000000000024,3
 hawaii_LNFPA: Oahu,hawaii,2022-11-13,forecast,2.3000000000000007,13.200000000000017,55.50000000000003,3
-hawaii_Lapakahi MLCD: Zone A,hawaii,2022-06-05,nowcast,0.0,0.0,0.0,0
+hawaii_LNFPA: Oahu,hawaii,2022-11-20,forecast,2.3000000000000007,13.200000000000017,55.50000000000003,3
 hawaii_Lapakahi MLCD: Zone A,hawaii,2022-06-12,nowcast,0.0,0.0,0.0,0
 hawaii_Lapakahi MLCD: Zone A,hawaii,2022-06-19,nowcast,0.0,0.0,0.0,0
 hawaii_Lapakahi MLCD: Zone A,hawaii,2022-06-26,nowcast,0.0,0.0,0.0,0
@@ -1331,19 +1330,19 @@ hawaii_Lapakahi MLCD: Zone A,hawaii,2022-07-31,nowcast,0.0,0.0,0.0,0
 hawaii_Lapakahi MLCD: Zone A,hawaii,2022-08-07,nowcast,0.0,0.0,0.0,0
 hawaii_Lapakahi MLCD: Zone A,hawaii,2022-08-14,nowcast,0.0,0.0,0.0,0
 hawaii_Lapakahi MLCD: Zone A,hawaii,2022-08-21,nowcast,0.0,0.0,0.0,0
-hawaii_Lapakahi MLCD: Zone A,hawaii,2022-08-28,forecast,0.0,0.0,0.0,0
+hawaii_Lapakahi MLCD: Zone A,hawaii,2022-08-28,nowcast,0.0,0.0,0.0,0
 hawaii_Lapakahi MLCD: Zone A,hawaii,2022-09-04,forecast,0.0,0.0,0.0,0
 hawaii_Lapakahi MLCD: Zone A,hawaii,2022-09-11,forecast,0.0,0.0,0.0,0
-hawaii_Lapakahi MLCD: Zone A,hawaii,2022-09-18,forecast,0.0,0.0,7.0,0
-hawaii_Lapakahi MLCD: Zone A,hawaii,2022-09-25,forecast,0.0,0.0,8.0,0
-hawaii_Lapakahi MLCD: Zone A,hawaii,2022-10-02,forecast,0.0,4.0,17.0,1
+hawaii_Lapakahi MLCD: Zone A,hawaii,2022-09-18,forecast,0.0,0.0,0.0,0
+hawaii_Lapakahi MLCD: Zone A,hawaii,2022-09-25,forecast,0.0,0.0,2.0,0
+hawaii_Lapakahi MLCD: Zone A,hawaii,2022-10-02,forecast,0.0,0.0,7.0,0
 hawaii_Lapakahi MLCD: Zone A,hawaii,2022-10-09,forecast,0.0,4.0,17.0,1
 hawaii_Lapakahi MLCD: Zone A,hawaii,2022-10-16,forecast,0.0,4.0,17.0,1
 hawaii_Lapakahi MLCD: Zone A,hawaii,2022-10-23,forecast,0.0,4.0,17.0,1
 hawaii_Lapakahi MLCD: Zone A,hawaii,2022-10-30,forecast,0.0,4.0,17.0,1
 hawaii_Lapakahi MLCD: Zone A,hawaii,2022-11-06,forecast,0.0,4.0,17.0,1
 hawaii_Lapakahi MLCD: Zone A,hawaii,2022-11-13,forecast,0.0,4.0,17.0,1
-hawaii_Lapakahi MLCD: Zone B,hawaii,2022-06-05,nowcast,0.0,0.0,0.0,0
+hawaii_Lapakahi MLCD: Zone A,hawaii,2022-11-20,forecast,0.0,4.0,17.0,1
 hawaii_Lapakahi MLCD: Zone B,hawaii,2022-06-12,nowcast,0.0,0.0,0.0,0
 hawaii_Lapakahi MLCD: Zone B,hawaii,2022-06-19,nowcast,0.0,0.0,0.0,0
 hawaii_Lapakahi MLCD: Zone B,hawaii,2022-06-26,nowcast,0.0,0.0,0.0,0
@@ -1355,19 +1354,19 @@ hawaii_Lapakahi MLCD: Zone B,hawaii,2022-07-31,nowcast,0.0,0.0,0.0,0
 hawaii_Lapakahi MLCD: Zone B,hawaii,2022-08-07,nowcast,0.0,0.0,0.0,0
 hawaii_Lapakahi MLCD: Zone B,hawaii,2022-08-14,nowcast,0.0,0.0,0.0,0
 hawaii_Lapakahi MLCD: Zone B,hawaii,2022-08-21,nowcast,0.0,0.0,0.0,0
-hawaii_Lapakahi MLCD: Zone B,hawaii,2022-08-28,forecast,0.0,0.0,0.0,0
+hawaii_Lapakahi MLCD: Zone B,hawaii,2022-08-28,nowcast,0.0,0.0,0.0,0
 hawaii_Lapakahi MLCD: Zone B,hawaii,2022-09-04,forecast,0.0,0.0,0.0,0
 hawaii_Lapakahi MLCD: Zone B,hawaii,2022-09-11,forecast,0.0,0.0,0.0,0
-hawaii_Lapakahi MLCD: Zone B,hawaii,2022-09-18,forecast,0.0,0.0,7.0,0
-hawaii_Lapakahi MLCD: Zone B,hawaii,2022-09-25,forecast,0.0,0.0,8.0,0
-hawaii_Lapakahi MLCD: Zone B,hawaii,2022-10-02,forecast,0.0,4.0,17.0,1
+hawaii_Lapakahi MLCD: Zone B,hawaii,2022-09-18,forecast,0.0,0.0,0.0,0
+hawaii_Lapakahi MLCD: Zone B,hawaii,2022-09-25,forecast,0.0,0.0,2.0,0
+hawaii_Lapakahi MLCD: Zone B,hawaii,2022-10-02,forecast,0.0,0.0,7.0,0
 hawaii_Lapakahi MLCD: Zone B,hawaii,2022-10-09,forecast,0.0,4.0,17.0,1
 hawaii_Lapakahi MLCD: Zone B,hawaii,2022-10-16,forecast,0.0,4.0,17.0,1
 hawaii_Lapakahi MLCD: Zone B,hawaii,2022-10-23,forecast,0.0,4.0,17.0,1
 hawaii_Lapakahi MLCD: Zone B,hawaii,2022-10-30,forecast,0.0,4.0,17.0,1
 hawaii_Lapakahi MLCD: Zone B,hawaii,2022-11-06,forecast,0.0,4.0,17.0,1
 hawaii_Lapakahi MLCD: Zone B,hawaii,2022-11-13,forecast,0.0,4.0,17.0,1
-hawaii_Leleiwi Pt (BRFA L),hawaii,2022-06-05,nowcast,0.0,0.0,0.6000000000000001,0
+hawaii_Lapakahi MLCD: Zone B,hawaii,2022-11-20,forecast,0.0,4.0,17.0,1
 hawaii_Leleiwi Pt (BRFA L),hawaii,2022-06-12,nowcast,0.0,0.0,0.6000000000000001,0
 hawaii_Leleiwi Pt (BRFA L),hawaii,2022-06-19,nowcast,0.0,0.0,0.0,0
 hawaii_Leleiwi Pt (BRFA L),hawaii,2022-06-26,nowcast,0.0,0.0,0.0,0
@@ -1379,19 +1378,19 @@ hawaii_Leleiwi Pt (BRFA L),hawaii,2022-07-31,nowcast,0.0,0.6000000000000001,1.80
 hawaii_Leleiwi Pt (BRFA L),hawaii,2022-08-07,nowcast,0.0,0.0,1.6,0
 hawaii_Leleiwi Pt (BRFA L),hawaii,2022-08-14,nowcast,0.0,0.0,1.6,0
 hawaii_Leleiwi Pt (BRFA L),hawaii,2022-08-21,nowcast,0.0,0.0,1.2000000000000002,0
-hawaii_Leleiwi Pt (BRFA L),hawaii,2022-08-28,forecast,0.0,0.0,1.2000000000000002,0
+hawaii_Leleiwi Pt (BRFA L),hawaii,2022-08-28,nowcast,0.0,0.0,1.2000000000000002,0
 hawaii_Leleiwi Pt (BRFA L),hawaii,2022-09-04,forecast,0.0,0.0,0.6000000000000001,0
 hawaii_Leleiwi Pt (BRFA L),hawaii,2022-09-11,forecast,0.0,0.0,1.2000000000000002,0
-hawaii_Leleiwi Pt (BRFA L),hawaii,2022-09-18,forecast,0.0,0.6000000000000001,1.6,0
-hawaii_Leleiwi Pt (BRFA L),hawaii,2022-09-25,forecast,0.0,1.2000000000000002,7.0,1
-hawaii_Leleiwi Pt (BRFA L),hawaii,2022-10-02,forecast,0.0,4.800000000000001,17.0,1
+hawaii_Leleiwi Pt (BRFA L),hawaii,2022-09-18,forecast,0.0,0.0,1.2000000000000002,0
+hawaii_Leleiwi Pt (BRFA L),hawaii,2022-09-25,forecast,0.0,0.0,1.2000000000000002,0
+hawaii_Leleiwi Pt (BRFA L),hawaii,2022-10-02,forecast,0.0,0.6000000000000001,7.0,0
 hawaii_Leleiwi Pt (BRFA L),hawaii,2022-10-09,forecast,0.0,4.800000000000001,17.0,1
 hawaii_Leleiwi Pt (BRFA L),hawaii,2022-10-16,forecast,0.0,4.800000000000001,17.0,1
 hawaii_Leleiwi Pt (BRFA L),hawaii,2022-10-23,forecast,0.0,4.800000000000001,17.0,1
 hawaii_Leleiwi Pt (BRFA L),hawaii,2022-10-30,forecast,0.0,4.800000000000001,17.0,1
 hawaii_Leleiwi Pt (BRFA L),hawaii,2022-11-06,forecast,0.0,5.2,17.0,2
 hawaii_Leleiwi Pt (BRFA L),hawaii,2022-11-13,forecast,0.6000000000000001,5.2,17.0,2
-hawaii_Makahuena (BRFA C),hawaii,2022-06-05,nowcast,0.0,0.0,1.0,0
+hawaii_Leleiwi Pt (BRFA L),hawaii,2022-11-20,forecast,0.6000000000000001,5.2,17.0,2
 hawaii_Makahuena (BRFA C),hawaii,2022-06-12,nowcast,0.0,0.0,1.0,0
 hawaii_Makahuena (BRFA C),hawaii,2022-06-19,nowcast,0.0,0.0,1.0,0
 hawaii_Makahuena (BRFA C),hawaii,2022-06-26,nowcast,0.0,0.0,1.0,0
@@ -1403,10 +1402,10 @@ hawaii_Makahuena (BRFA C),hawaii,2022-07-31,nowcast,0.0,0.0,1.0,0
 hawaii_Makahuena (BRFA C),hawaii,2022-08-07,nowcast,0.0,0.0,1.0,0
 hawaii_Makahuena (BRFA C),hawaii,2022-08-14,nowcast,0.0,0.0,1.0,0
 hawaii_Makahuena (BRFA C),hawaii,2022-08-21,nowcast,0.0,0.0,1.0,0
-hawaii_Makahuena (BRFA C),hawaii,2022-08-28,forecast,0.0,0.0,1.0,0
+hawaii_Makahuena (BRFA C),hawaii,2022-08-28,nowcast,0.0,0.0,1.0,0
 hawaii_Makahuena (BRFA C),hawaii,2022-09-04,forecast,0.0,0.0,1.0,0
 hawaii_Makahuena (BRFA C),hawaii,2022-09-11,forecast,0.0,0.0,1.0,0
-hawaii_Makahuena (BRFA C),hawaii,2022-09-18,forecast,0.0,6.0,17.0,2
+hawaii_Makahuena (BRFA C),hawaii,2022-09-18,forecast,0.0,0.0,1.0,0
 hawaii_Makahuena (BRFA C),hawaii,2022-09-25,forecast,0.0,6.0,17.0,2
 hawaii_Makahuena (BRFA C),hawaii,2022-10-02,forecast,0.0,3.4000000000000004,17.0,1
 hawaii_Makahuena (BRFA C),hawaii,2022-10-09,forecast,0.0,3.4000000000000004,17.0,1
@@ -1415,7 +1414,7 @@ hawaii_Makahuena (BRFA C),hawaii,2022-10-23,forecast,0.0,3.4000000000000004,17.0
 hawaii_Makahuena (BRFA C),hawaii,2022-10-30,forecast,0.0,3.4000000000000004,17.0,1
 hawaii_Makahuena (BRFA C),hawaii,2022-11-06,forecast,0.0,4.0,17.0,1
 hawaii_Makahuena (BRFA C),hawaii,2022-11-13,forecast,0.0,4.0,17.0,1
-hawaii_Makapuu Pt (BRFA E),hawaii,2022-06-05,nowcast,0.6000000000000001,1.6,3.2,1
+hawaii_Makahuena (BRFA C),hawaii,2022-11-20,forecast,0.0,4.0,17.0,1
 hawaii_Makapuu Pt (BRFA E),hawaii,2022-06-12,nowcast,0.6000000000000001,1.6,3.2,1
 hawaii_Makapuu Pt (BRFA E),hawaii,2022-06-19,nowcast,0.6000000000000001,1.6,3.6,1
 hawaii_Makapuu Pt (BRFA E),hawaii,2022-06-26,nowcast,0.6000000000000001,1.6,3.2,1
@@ -1427,11 +1426,11 @@ hawaii_Makapuu Pt (BRFA E),hawaii,2022-07-31,nowcast,0.6000000000000001,1.6,4.0,
 hawaii_Makapuu Pt (BRFA E),hawaii,2022-08-07,nowcast,0.6000000000000001,1.6,3.6,1
 hawaii_Makapuu Pt (BRFA E),hawaii,2022-08-14,nowcast,0.6000000000000001,1.6,3.6,1
 hawaii_Makapuu Pt (BRFA E),hawaii,2022-08-21,nowcast,0.6000000000000001,1.6,3.2,1
-hawaii_Makapuu Pt (BRFA E),hawaii,2022-08-28,forecast,0.6000000000000001,1.6,3.2,1
+hawaii_Makapuu Pt (BRFA E),hawaii,2022-08-28,nowcast,0.6000000000000001,1.6,3.2,1
 hawaii_Makapuu Pt (BRFA E),hawaii,2022-09-04,forecast,0.6000000000000001,1.6,4.0,1
 hawaii_Makapuu Pt (BRFA E),hawaii,2022-09-11,forecast,0.6000000000000001,1.6,3.6,1
-hawaii_Makapuu Pt (BRFA E),hawaii,2022-09-18,forecast,0.6000000000000001,1.6,7.0,1
-hawaii_Makapuu Pt (BRFA E),hawaii,2022-09-25,forecast,0.6000000000000001,6.0,17.0,2
+hawaii_Makapuu Pt (BRFA E),hawaii,2022-09-18,forecast,0.6000000000000001,1.6,3.6,1
+hawaii_Makapuu Pt (BRFA E),hawaii,2022-09-25,forecast,0.6000000000000001,1.6,7.0,1
 hawaii_Makapuu Pt (BRFA E),hawaii,2022-10-02,forecast,0.6000000000000001,6.0,17.0,2
 hawaii_Makapuu Pt (BRFA E),hawaii,2022-10-09,forecast,0.6000000000000001,6.0,17.0,2
 hawaii_Makapuu Pt (BRFA E),hawaii,2022-10-16,forecast,0.6000000000000001,6.0,17.0,2
@@ -1439,7 +1438,7 @@ hawaii_Makapuu Pt (BRFA E),hawaii,2022-10-23,forecast,0.6000000000000001,6.0,17.
 hawaii_Makapuu Pt (BRFA E),hawaii,2022-10-30,forecast,0.6000000000000001,6.0,17.0,2
 hawaii_Makapuu Pt (BRFA E),hawaii,2022-11-06,forecast,1.0,4.0,17.0,1
 hawaii_Makapuu Pt (BRFA E),hawaii,2022-11-13,forecast,1.0,4.0,17.0,1
-hawaii_Manele Harbor FMA: Area 1,hawaii,2022-06-05,nowcast,0.0,0.0,0.0,0
+hawaii_Makapuu Pt (BRFA E),hawaii,2022-11-20,forecast,1.0,4.0,17.0,1
 hawaii_Manele Harbor FMA: Area 1,hawaii,2022-06-12,nowcast,0.0,0.0,0.0,0
 hawaii_Manele Harbor FMA: Area 1,hawaii,2022-06-19,nowcast,0.0,0.0,0.0,0
 hawaii_Manele Harbor FMA: Area 1,hawaii,2022-06-26,nowcast,0.0,0.0,0.0,0
@@ -1451,19 +1450,19 @@ hawaii_Manele Harbor FMA: Area 1,hawaii,2022-07-31,nowcast,0.0,0.0,0.0,0
 hawaii_Manele Harbor FMA: Area 1,hawaii,2022-08-07,nowcast,0.0,0.0,0.0,0
 hawaii_Manele Harbor FMA: Area 1,hawaii,2022-08-14,nowcast,0.0,0.0,0.0,0
 hawaii_Manele Harbor FMA: Area 1,hawaii,2022-08-21,nowcast,0.0,0.0,0.0,0
-hawaii_Manele Harbor FMA: Area 1,hawaii,2022-08-28,forecast,0.0,0.0,0.0,0
+hawaii_Manele Harbor FMA: Area 1,hawaii,2022-08-28,nowcast,0.0,0.0,0.0,0
 hawaii_Manele Harbor FMA: Area 1,hawaii,2022-09-04,forecast,0.0,0.0,0.0,0
 hawaii_Manele Harbor FMA: Area 1,hawaii,2022-09-11,forecast,0.0,0.0,0.0,0
-hawaii_Manele Harbor FMA: Area 1,hawaii,2022-09-18,forecast,0.0,0.0,3.0,0
-hawaii_Manele Harbor FMA: Area 1,hawaii,2022-09-25,forecast,0.0,6.0,17.0,2
-hawaii_Manele Harbor FMA: Area 1,hawaii,2022-10-02,forecast,0.0,4.0,17.0,1
+hawaii_Manele Harbor FMA: Area 1,hawaii,2022-09-18,forecast,0.0,0.0,0.0,0
+hawaii_Manele Harbor FMA: Area 1,hawaii,2022-09-25,forecast,0.0,0.0,1.0,0
+hawaii_Manele Harbor FMA: Area 1,hawaii,2022-10-02,forecast,0.0,0.0,7.0,0
 hawaii_Manele Harbor FMA: Area 1,hawaii,2022-10-09,forecast,0.0,4.0,17.0,1
 hawaii_Manele Harbor FMA: Area 1,hawaii,2022-10-16,forecast,0.0,4.0,17.0,1
 hawaii_Manele Harbor FMA: Area 1,hawaii,2022-10-23,forecast,0.0,4.0,17.0,1
 hawaii_Manele Harbor FMA: Area 1,hawaii,2022-10-30,forecast,0.0,4.0,17.0,1
 hawaii_Manele Harbor FMA: Area 1,hawaii,2022-11-06,forecast,0.0,4.0,17.0,1
 hawaii_Manele Harbor FMA: Area 1,hawaii,2022-11-13,forecast,0.0,4.0,17.0,1
-hawaii_Manele Harbor FMA: Area 2,hawaii,2022-06-05,nowcast,0.0,0.0,0.0,0
+hawaii_Manele Harbor FMA: Area 1,hawaii,2022-11-20,forecast,0.0,4.0,17.0,1
 hawaii_Manele Harbor FMA: Area 2,hawaii,2022-06-12,nowcast,0.0,0.0,0.0,0
 hawaii_Manele Harbor FMA: Area 2,hawaii,2022-06-19,nowcast,0.0,0.0,0.0,0
 hawaii_Manele Harbor FMA: Area 2,hawaii,2022-06-26,nowcast,0.0,0.0,0.0,0
@@ -1475,19 +1474,19 @@ hawaii_Manele Harbor FMA: Area 2,hawaii,2022-07-31,nowcast,0.0,0.0,0.0,0
 hawaii_Manele Harbor FMA: Area 2,hawaii,2022-08-07,nowcast,0.0,0.0,0.0,0
 hawaii_Manele Harbor FMA: Area 2,hawaii,2022-08-14,nowcast,0.0,0.0,0.0,0
 hawaii_Manele Harbor FMA: Area 2,hawaii,2022-08-21,nowcast,0.0,0.0,0.0,0
-hawaii_Manele Harbor FMA: Area 2,hawaii,2022-08-28,forecast,0.0,0.0,0.0,0
+hawaii_Manele Harbor FMA: Area 2,hawaii,2022-08-28,nowcast,0.0,0.0,0.0,0
 hawaii_Manele Harbor FMA: Area 2,hawaii,2022-09-04,forecast,0.0,0.0,0.0,0
 hawaii_Manele Harbor FMA: Area 2,hawaii,2022-09-11,forecast,0.0,0.0,0.0,0
-hawaii_Manele Harbor FMA: Area 2,hawaii,2022-09-18,forecast,0.0,0.0,3.0,0
-hawaii_Manele Harbor FMA: Area 2,hawaii,2022-09-25,forecast,0.0,6.0,17.0,2
-hawaii_Manele Harbor FMA: Area 2,hawaii,2022-10-02,forecast,0.0,4.0,17.0,1
+hawaii_Manele Harbor FMA: Area 2,hawaii,2022-09-18,forecast,0.0,0.0,0.0,0
+hawaii_Manele Harbor FMA: Area 2,hawaii,2022-09-25,forecast,0.0,0.0,1.0,0
+hawaii_Manele Harbor FMA: Area 2,hawaii,2022-10-02,forecast,0.0,0.0,7.0,0
 hawaii_Manele Harbor FMA: Area 2,hawaii,2022-10-09,forecast,0.0,4.0,17.0,1
 hawaii_Manele Harbor FMA: Area 2,hawaii,2022-10-16,forecast,0.0,4.0,17.0,1
 hawaii_Manele Harbor FMA: Area 2,hawaii,2022-10-23,forecast,0.0,4.0,17.0,1
 hawaii_Manele Harbor FMA: Area 2,hawaii,2022-10-30,forecast,0.0,4.0,17.0,1
 hawaii_Manele Harbor FMA: Area 2,hawaii,2022-11-06,forecast,0.0,4.0,17.0,1
 hawaii_Manele Harbor FMA: Area 2,hawaii,2022-11-13,forecast,0.0,4.0,17.0,1
-hawaii_Manele-Hulopoe MLCD: Zone A (Hulopoe Bay),hawaii,2022-06-05,nowcast,0.0,0.0,0.0,0
+hawaii_Manele Harbor FMA: Area 2,hawaii,2022-11-20,forecast,0.0,4.0,17.0,1
 hawaii_Manele-Hulopoe MLCD: Zone A (Hulopoe Bay),hawaii,2022-06-12,nowcast,0.0,0.0,0.0,0
 hawaii_Manele-Hulopoe MLCD: Zone A (Hulopoe Bay),hawaii,2022-06-19,nowcast,0.0,0.0,0.0,0
 hawaii_Manele-Hulopoe MLCD: Zone A (Hulopoe Bay),hawaii,2022-06-26,nowcast,0.0,0.0,0.0,0
@@ -1499,19 +1498,19 @@ hawaii_Manele-Hulopoe MLCD: Zone A (Hulopoe Bay),hawaii,2022-07-31,nowcast,0.0,0
 hawaii_Manele-Hulopoe MLCD: Zone A (Hulopoe Bay),hawaii,2022-08-07,nowcast,0.0,0.0,0.0,0
 hawaii_Manele-Hulopoe MLCD: Zone A (Hulopoe Bay),hawaii,2022-08-14,nowcast,0.0,0.0,0.0,0
 hawaii_Manele-Hulopoe MLCD: Zone A (Hulopoe Bay),hawaii,2022-08-21,nowcast,0.0,0.0,0.0,0
-hawaii_Manele-Hulopoe MLCD: Zone A (Hulopoe Bay),hawaii,2022-08-28,forecast,0.0,0.0,0.0,0
+hawaii_Manele-Hulopoe MLCD: Zone A (Hulopoe Bay),hawaii,2022-08-28,nowcast,0.0,0.0,0.0,0
 hawaii_Manele-Hulopoe MLCD: Zone A (Hulopoe Bay),hawaii,2022-09-04,forecast,0.0,0.0,0.0,0
 hawaii_Manele-Hulopoe MLCD: Zone A (Hulopoe Bay),hawaii,2022-09-11,forecast,0.0,0.0,0.0,0
-hawaii_Manele-Hulopoe MLCD: Zone A (Hulopoe Bay),hawaii,2022-09-18,forecast,0.0,0.0,2.9,0
-hawaii_Manele-Hulopoe MLCD: Zone A (Hulopoe Bay),hawaii,2022-09-25,forecast,0.0,6.0,17.0,2
-hawaii_Manele-Hulopoe MLCD: Zone A (Hulopoe Bay),hawaii,2022-10-02,forecast,0.0,4.0,17.0,1
+hawaii_Manele-Hulopoe MLCD: Zone A (Hulopoe Bay),hawaii,2022-09-18,forecast,0.0,0.0,0.0,0
+hawaii_Manele-Hulopoe MLCD: Zone A (Hulopoe Bay),hawaii,2022-09-25,forecast,0.0,0.0,1.0,0
+hawaii_Manele-Hulopoe MLCD: Zone A (Hulopoe Bay),hawaii,2022-10-02,forecast,0.0,0.0,7.0,0
 hawaii_Manele-Hulopoe MLCD: Zone A (Hulopoe Bay),hawaii,2022-10-09,forecast,0.0,4.0,17.0,1
 hawaii_Manele-Hulopoe MLCD: Zone A (Hulopoe Bay),hawaii,2022-10-16,forecast,0.0,4.0,17.0,1
 hawaii_Manele-Hulopoe MLCD: Zone A (Hulopoe Bay),hawaii,2022-10-23,forecast,0.0,4.0,17.0,1
 hawaii_Manele-Hulopoe MLCD: Zone A (Hulopoe Bay),hawaii,2022-10-30,forecast,0.0,4.0,17.0,1
 hawaii_Manele-Hulopoe MLCD: Zone A (Hulopoe Bay),hawaii,2022-11-06,forecast,0.0,4.0,17.0,1
 hawaii_Manele-Hulopoe MLCD: Zone A (Hulopoe Bay),hawaii,2022-11-13,forecast,0.0,4.0,17.0,1
-hawaii_Manele-Hulopoe MLCD: Zone B (Manele Bay),hawaii,2022-06-05,nowcast,0.0,0.0,0.0,0
+hawaii_Manele-Hulopoe MLCD: Zone A (Hulopoe Bay),hawaii,2022-11-20,forecast,0.0,4.0,17.0,1
 hawaii_Manele-Hulopoe MLCD: Zone B (Manele Bay),hawaii,2022-06-12,nowcast,0.0,0.0,0.0,0
 hawaii_Manele-Hulopoe MLCD: Zone B (Manele Bay),hawaii,2022-06-19,nowcast,0.0,0.0,0.0,0
 hawaii_Manele-Hulopoe MLCD: Zone B (Manele Bay),hawaii,2022-06-26,nowcast,0.0,0.0,0.0,0
@@ -1523,19 +1522,19 @@ hawaii_Manele-Hulopoe MLCD: Zone B (Manele Bay),hawaii,2022-07-31,nowcast,0.0,0.
 hawaii_Manele-Hulopoe MLCD: Zone B (Manele Bay),hawaii,2022-08-07,nowcast,0.0,0.0,0.0,0
 hawaii_Manele-Hulopoe MLCD: Zone B (Manele Bay),hawaii,2022-08-14,nowcast,0.0,0.0,0.0,0
 hawaii_Manele-Hulopoe MLCD: Zone B (Manele Bay),hawaii,2022-08-21,nowcast,0.0,0.0,0.0,0
-hawaii_Manele-Hulopoe MLCD: Zone B (Manele Bay),hawaii,2022-08-28,forecast,0.0,0.0,0.0,0
+hawaii_Manele-Hulopoe MLCD: Zone B (Manele Bay),hawaii,2022-08-28,nowcast,0.0,0.0,0.0,0
 hawaii_Manele-Hulopoe MLCD: Zone B (Manele Bay),hawaii,2022-09-04,forecast,0.0,0.0,0.0,0
 hawaii_Manele-Hulopoe MLCD: Zone B (Manele Bay),hawaii,2022-09-11,forecast,0.0,0.0,0.0,0
-hawaii_Manele-Hulopoe MLCD: Zone B (Manele Bay),hawaii,2022-09-18,forecast,0.0,0.0,3.0,0
-hawaii_Manele-Hulopoe MLCD: Zone B (Manele Bay),hawaii,2022-09-25,forecast,0.0,6.0,17.0,2
-hawaii_Manele-Hulopoe MLCD: Zone B (Manele Bay),hawaii,2022-10-02,forecast,0.0,4.0,17.0,1
+hawaii_Manele-Hulopoe MLCD: Zone B (Manele Bay),hawaii,2022-09-18,forecast,0.0,0.0,0.0,0
+hawaii_Manele-Hulopoe MLCD: Zone B (Manele Bay),hawaii,2022-09-25,forecast,0.0,0.0,1.0,0
+hawaii_Manele-Hulopoe MLCD: Zone B (Manele Bay),hawaii,2022-10-02,forecast,0.0,0.0,7.0,0
 hawaii_Manele-Hulopoe MLCD: Zone B (Manele Bay),hawaii,2022-10-09,forecast,0.0,4.0,17.0,1
 hawaii_Manele-Hulopoe MLCD: Zone B (Manele Bay),hawaii,2022-10-16,forecast,0.0,4.0,17.0,1
 hawaii_Manele-Hulopoe MLCD: Zone B (Manele Bay),hawaii,2022-10-23,forecast,0.0,4.0,17.0,1
 hawaii_Manele-Hulopoe MLCD: Zone B (Manele Bay),hawaii,2022-10-30,forecast,0.0,4.0,17.0,1
 hawaii_Manele-Hulopoe MLCD: Zone B (Manele Bay),hawaii,2022-11-06,forecast,0.0,4.0,17.0,1
 hawaii_Manele-Hulopoe MLCD: Zone B (Manele Bay),hawaii,2022-11-13,forecast,0.0,4.0,17.0,1
-hawaii_Milolii FRA,hawaii,2022-06-05,nowcast,0.0,0.0,0.0,0
+hawaii_Manele-Hulopoe MLCD: Zone B (Manele Bay),hawaii,2022-11-20,forecast,0.0,4.0,17.0,1
 hawaii_Milolii FRA,hawaii,2022-06-12,nowcast,0.0,0.0,0.0,0
 hawaii_Milolii FRA,hawaii,2022-06-19,nowcast,0.0,0.0,0.0,0
 hawaii_Milolii FRA,hawaii,2022-06-26,nowcast,0.0,0.0,0.0,0
@@ -1547,11 +1546,11 @@ hawaii_Milolii FRA,hawaii,2022-07-31,nowcast,0.0,0.0,0.0,0
 hawaii_Milolii FRA,hawaii,2022-08-07,nowcast,0.0,0.0,0.0,0
 hawaii_Milolii FRA,hawaii,2022-08-14,nowcast,0.0,0.0,0.0,0
 hawaii_Milolii FRA,hawaii,2022-08-21,nowcast,0.0,0.0,0.0,0
-hawaii_Milolii FRA,hawaii,2022-08-28,forecast,0.0,0.0,0.0,0
+hawaii_Milolii FRA,hawaii,2022-08-28,nowcast,0.0,0.0,0.0,0
 hawaii_Milolii FRA,hawaii,2022-09-04,forecast,0.0,0.0,0.0,0
 hawaii_Milolii FRA,hawaii,2022-09-11,forecast,0.0,0.0,0.0,0
-hawaii_Milolii FRA,hawaii,2022-09-18,forecast,0.0,0.0,7.0,0
-hawaii_Milolii FRA,hawaii,2022-09-25,forecast,0.0,6.0,17.0,2
+hawaii_Milolii FRA,hawaii,2022-09-18,forecast,0.0,0.0,0.0,0
+hawaii_Milolii FRA,hawaii,2022-09-25,forecast,0.0,0.0,7.0,0
 hawaii_Milolii FRA,hawaii,2022-10-02,forecast,0.0,4.0,17.0,1
 hawaii_Milolii FRA,hawaii,2022-10-09,forecast,0.0,4.0,17.0,1
 hawaii_Milolii FRA,hawaii,2022-10-16,forecast,0.0,4.0,17.0,1
@@ -1559,7 +1558,7 @@ hawaii_Milolii FRA,hawaii,2022-10-23,forecast,0.0,4.0,17.0,1
 hawaii_Milolii FRA,hawaii,2022-10-30,forecast,0.0,4.0,17.0,1
 hawaii_Milolii FRA,hawaii,2022-11-06,forecast,0.0,4.0,17.0,1
 hawaii_Milolii FRA,hawaii,2022-11-13,forecast,0.0,4.0,17.0,1
-hawaii_Moku Hooniki-Lipoa Pt (BRFA H),hawaii,2022-06-05,nowcast,0.0,0.6000000000000001,16.0,0
+hawaii_Milolii FRA,hawaii,2022-11-20,forecast,0.0,4.0,17.0,1
 hawaii_Moku Hooniki-Lipoa Pt (BRFA H),hawaii,2022-06-12,nowcast,0.0,0.6000000000000001,16.0,0
 hawaii_Moku Hooniki-Lipoa Pt (BRFA H),hawaii,2022-06-19,nowcast,0.0,0.6000000000000001,16.0,0
 hawaii_Moku Hooniki-Lipoa Pt (BRFA H),hawaii,2022-06-26,nowcast,0.0,0.6000000000000001,16.0,0
@@ -1571,19 +1570,19 @@ hawaii_Moku Hooniki-Lipoa Pt (BRFA H),hawaii,2022-07-31,nowcast,0.0,0.0,16.0,0
 hawaii_Moku Hooniki-Lipoa Pt (BRFA H),hawaii,2022-08-07,nowcast,0.0,0.0,15.0,0
 hawaii_Moku Hooniki-Lipoa Pt (BRFA H),hawaii,2022-08-14,nowcast,0.0,0.0,15.0,0
 hawaii_Moku Hooniki-Lipoa Pt (BRFA H),hawaii,2022-08-21,nowcast,0.0,0.0,15.0,0
-hawaii_Moku Hooniki-Lipoa Pt (BRFA H),hawaii,2022-08-28,forecast,0.0,0.0,15.0,0
+hawaii_Moku Hooniki-Lipoa Pt (BRFA H),hawaii,2022-08-28,nowcast,0.0,0.0,15.0,0
 hawaii_Moku Hooniki-Lipoa Pt (BRFA H),hawaii,2022-09-04,forecast,0.0,0.0,15.0,0
 hawaii_Moku Hooniki-Lipoa Pt (BRFA H),hawaii,2022-09-11,forecast,0.0,0.0,15.0,0
-hawaii_Moku Hooniki-Lipoa Pt (BRFA H),hawaii,2022-09-18,forecast,0.0,11.0,16.0,3
-hawaii_Moku Hooniki-Lipoa Pt (BRFA H),hawaii,2022-09-25,forecast,4.4,17.0,17.0,4
-hawaii_Moku Hooniki-Lipoa Pt (BRFA H),hawaii,2022-10-02,forecast,4.0,17.0,17.0,4
+hawaii_Moku Hooniki-Lipoa Pt (BRFA H),hawaii,2022-09-18,forecast,0.0,0.0,15.0,0
+hawaii_Moku Hooniki-Lipoa Pt (BRFA H),hawaii,2022-09-25,forecast,0.0,11.0,16.0,3
+hawaii_Moku Hooniki-Lipoa Pt (BRFA H),hawaii,2022-10-02,forecast,1.6,16.0,17.0,4
 hawaii_Moku Hooniki-Lipoa Pt (BRFA H),hawaii,2022-10-09,forecast,4.0,17.0,17.0,4
 hawaii_Moku Hooniki-Lipoa Pt (BRFA H),hawaii,2022-10-16,forecast,4.0,17.0,17.0,4
 hawaii_Moku Hooniki-Lipoa Pt (BRFA H),hawaii,2022-10-23,forecast,4.0,17.0,17.0,4
 hawaii_Moku Hooniki-Lipoa Pt (BRFA H),hawaii,2022-10-30,forecast,4.0,17.0,17.0,4
 hawaii_Moku Hooniki-Lipoa Pt (BRFA H),hawaii,2022-11-06,forecast,4.0,17.0,17.0,4
 hawaii_Moku Hooniki-Lipoa Pt (BRFA H),hawaii,2022-11-13,forecast,4.0,17.0,17.0,4
-hawaii_Mokumana-Umalei Pt (BRFA J),hawaii,2022-06-05,nowcast,0.0,0.0,0.2999999999999998,0
+hawaii_Moku Hooniki-Lipoa Pt (BRFA H),hawaii,2022-11-20,forecast,4.0,17.0,17.0,4
 hawaii_Mokumana-Umalei Pt (BRFA J),hawaii,2022-06-12,nowcast,0.0,0.0,0.2999999999999998,0
 hawaii_Mokumana-Umalei Pt (BRFA J),hawaii,2022-06-19,nowcast,0.0,0.0,0.2999999999999998,0
 hawaii_Mokumana-Umalei Pt (BRFA J),hawaii,2022-06-26,nowcast,0.0,0.0,0.2999999999999998,0
@@ -1595,19 +1594,19 @@ hawaii_Mokumana-Umalei Pt (BRFA J),hawaii,2022-07-31,nowcast,0.0,0.0,0.299999999
 hawaii_Mokumana-Umalei Pt (BRFA J),hawaii,2022-08-07,nowcast,0.0,0.0,0.2999999999999998,0
 hawaii_Mokumana-Umalei Pt (BRFA J),hawaii,2022-08-14,nowcast,0.0,0.0,0.2999999999999998,0
 hawaii_Mokumana-Umalei Pt (BRFA J),hawaii,2022-08-21,nowcast,0.0,0.0,0.2999999999999998,0
-hawaii_Mokumana-Umalei Pt (BRFA J),hawaii,2022-08-28,forecast,0.0,0.0,0.2999999999999998,0
+hawaii_Mokumana-Umalei Pt (BRFA J),hawaii,2022-08-28,nowcast,0.0,0.0,0.2999999999999998,0
 hawaii_Mokumana-Umalei Pt (BRFA J),hawaii,2022-09-04,forecast,0.0,0.0,0.2999999999999998,0
 hawaii_Mokumana-Umalei Pt (BRFA J),hawaii,2022-09-11,forecast,0.0,0.0,0.2999999999999998,0
 hawaii_Mokumana-Umalei Pt (BRFA J),hawaii,2022-09-18,forecast,0.0,0.0,1.2999999999999998,0
-hawaii_Mokumana-Umalei Pt (BRFA J),hawaii,2022-09-25,forecast,0.0,0.2999999999999998,7.0,0
-hawaii_Mokumana-Umalei Pt (BRFA J),hawaii,2022-10-02,forecast,0.0,4.6,17.0,1
+hawaii_Mokumana-Umalei Pt (BRFA J),hawaii,2022-09-25,forecast,0.0,0.0,1.0,0
+hawaii_Mokumana-Umalei Pt (BRFA J),hawaii,2022-10-02,forecast,0.0,1.2999999999999998,7.0,1
 hawaii_Mokumana-Umalei Pt (BRFA J),hawaii,2022-10-09,forecast,0.0,4.6,17.0,1
 hawaii_Mokumana-Umalei Pt (BRFA J),hawaii,2022-10-16,forecast,0.0,4.6,17.0,1
 hawaii_Mokumana-Umalei Pt (BRFA J),hawaii,2022-10-23,forecast,0.0,4.6,17.0,1
 hawaii_Mokumana-Umalei Pt (BRFA J),hawaii,2022-10-30,forecast,0.0,4.6,17.0,1
 hawaii_Mokumana-Umalei Pt (BRFA J),hawaii,2022-11-06,forecast,1.0,4.6,17.0,1
 hawaii_Mokumana-Umalei Pt (BRFA J),hawaii,2022-11-13,forecast,1.0,4.6,17.0,1
-hawaii_Mokuoloe (Coconut Island) MLR,hawaii,2022-06-05,nowcast,60.0,68.0,70.0,4
+hawaii_Mokumana-Umalei Pt (BRFA J),hawaii,2022-11-20,forecast,1.0,4.6,17.0,1
 hawaii_Mokuoloe (Coconut Island) MLR,hawaii,2022-06-12,nowcast,60.0,68.0,70.0,4
 hawaii_Mokuoloe (Coconut Island) MLR,hawaii,2022-06-19,nowcast,60.0,68.0,70.0,4
 hawaii_Mokuoloe (Coconut Island) MLR,hawaii,2022-06-26,nowcast,60.0,68.0,70.0,4
@@ -1619,7 +1618,7 @@ hawaii_Mokuoloe (Coconut Island) MLR,hawaii,2022-07-31,nowcast,60.0,68.0,70.0,4
 hawaii_Mokuoloe (Coconut Island) MLR,hawaii,2022-08-07,nowcast,3.0,62.0,83.0,4
 hawaii_Mokuoloe (Coconut Island) MLR,hawaii,2022-08-14,nowcast,3.0,62.0,88.0,4
 hawaii_Mokuoloe (Coconut Island) MLR,hawaii,2022-08-21,nowcast,3.0,75.0,95.0,4
-hawaii_Mokuoloe (Coconut Island) MLR,hawaii,2022-08-28,forecast,3.0,75.0,95.0,4
+hawaii_Mokuoloe (Coconut Island) MLR,hawaii,2022-08-28,nowcast,3.0,75.0,95.0,4
 hawaii_Mokuoloe (Coconut Island) MLR,hawaii,2022-09-04,forecast,3.0,76.0,98.0,4
 hawaii_Mokuoloe (Coconut Island) MLR,hawaii,2022-09-11,forecast,3.0,76.0,98.0,4
 hawaii_Mokuoloe (Coconut Island) MLR,hawaii,2022-09-18,forecast,3.0,76.0,98.0,4
@@ -1631,7 +1630,7 @@ hawaii_Mokuoloe (Coconut Island) MLR,hawaii,2022-10-23,forecast,3.0,62.0,86.0,4
 hawaii_Mokuoloe (Coconut Island) MLR,hawaii,2022-10-30,forecast,3.0,62.0,86.0,4
 hawaii_Mokuoloe (Coconut Island) MLR,hawaii,2022-11-06,forecast,3.0,30.0,83.0,4
 hawaii_Mokuoloe (Coconut Island) MLR,hawaii,2022-11-13,forecast,3.0,53.0,95.0,4
-hawaii_Molokini Shoal MLCD: Zone A,hawaii,2022-06-05,nowcast,0.0,0.0,0.0,0
+hawaii_Mokuoloe (Coconut Island) MLR,hawaii,2022-11-20,forecast,3.0,30.0,83.0,4
 hawaii_Molokini Shoal MLCD: Zone A,hawaii,2022-06-12,nowcast,0.0,0.0,0.0,0
 hawaii_Molokini Shoal MLCD: Zone A,hawaii,2022-06-19,nowcast,0.0,0.0,0.0,0
 hawaii_Molokini Shoal MLCD: Zone A,hawaii,2022-06-26,nowcast,0.0,0.0,0.0,0
@@ -1643,19 +1642,19 @@ hawaii_Molokini Shoal MLCD: Zone A,hawaii,2022-07-31,nowcast,0.0,0.0,0.0,0
 hawaii_Molokini Shoal MLCD: Zone A,hawaii,2022-08-07,nowcast,0.0,0.0,0.0,0
 hawaii_Molokini Shoal MLCD: Zone A,hawaii,2022-08-14,nowcast,0.0,0.0,0.0,0
 hawaii_Molokini Shoal MLCD: Zone A,hawaii,2022-08-21,nowcast,0.0,0.0,0.0,0
-hawaii_Molokini Shoal MLCD: Zone A,hawaii,2022-08-28,forecast,0.0,0.0,0.0,0
+hawaii_Molokini Shoal MLCD: Zone A,hawaii,2022-08-28,nowcast,0.0,0.0,0.0,0
 hawaii_Molokini Shoal MLCD: Zone A,hawaii,2022-09-04,forecast,0.0,0.0,0.0,0
 hawaii_Molokini Shoal MLCD: Zone A,hawaii,2022-09-11,forecast,0.0,0.0,0.0,0
 hawaii_Molokini Shoal MLCD: Zone A,hawaii,2022-09-18,forecast,0.0,0.0,0.0,0
-hawaii_Molokini Shoal MLCD: Zone A,hawaii,2022-09-25,forecast,0.0,0.0,7.0,0
-hawaii_Molokini Shoal MLCD: Zone A,hawaii,2022-10-02,forecast,0.0,3.0,17.0,1
+hawaii_Molokini Shoal MLCD: Zone A,hawaii,2022-09-25,forecast,0.0,0.0,0.0,0
+hawaii_Molokini Shoal MLCD: Zone A,hawaii,2022-10-02,forecast,0.0,0.0,7.0,0
 hawaii_Molokini Shoal MLCD: Zone A,hawaii,2022-10-09,forecast,0.0,3.0,17.0,1
 hawaii_Molokini Shoal MLCD: Zone A,hawaii,2022-10-16,forecast,0.0,3.0,17.0,1
 hawaii_Molokini Shoal MLCD: Zone A,hawaii,2022-10-23,forecast,0.0,3.0,17.0,1
 hawaii_Molokini Shoal MLCD: Zone A,hawaii,2022-10-30,forecast,0.0,3.0,17.0,1
 hawaii_Molokini Shoal MLCD: Zone A,hawaii,2022-11-06,forecast,0.0,4.0,17.0,1
 hawaii_Molokini Shoal MLCD: Zone A,hawaii,2022-11-13,forecast,0.0,4.0,17.0,1
-hawaii_Molokini Shoal MLCD: Zone B,hawaii,2022-06-05,nowcast,0.0,0.0,0.0,0
+hawaii_Molokini Shoal MLCD: Zone A,hawaii,2022-11-20,forecast,0.0,4.0,17.0,1
 hawaii_Molokini Shoal MLCD: Zone B,hawaii,2022-06-12,nowcast,0.0,0.0,0.0,0
 hawaii_Molokini Shoal MLCD: Zone B,hawaii,2022-06-19,nowcast,0.0,0.0,0.0,0
 hawaii_Molokini Shoal MLCD: Zone B,hawaii,2022-06-26,nowcast,0.0,0.0,0.0,0
@@ -1667,19 +1666,19 @@ hawaii_Molokini Shoal MLCD: Zone B,hawaii,2022-07-31,nowcast,0.0,0.0,0.0,0
 hawaii_Molokini Shoal MLCD: Zone B,hawaii,2022-08-07,nowcast,0.0,0.0,0.0,0
 hawaii_Molokini Shoal MLCD: Zone B,hawaii,2022-08-14,nowcast,0.0,0.0,0.0,0
 hawaii_Molokini Shoal MLCD: Zone B,hawaii,2022-08-21,nowcast,0.0,0.0,0.0,0
-hawaii_Molokini Shoal MLCD: Zone B,hawaii,2022-08-28,forecast,0.0,0.0,0.0,0
+hawaii_Molokini Shoal MLCD: Zone B,hawaii,2022-08-28,nowcast,0.0,0.0,0.0,0
 hawaii_Molokini Shoal MLCD: Zone B,hawaii,2022-09-04,forecast,0.0,0.0,0.0,0
 hawaii_Molokini Shoal MLCD: Zone B,hawaii,2022-09-11,forecast,0.0,0.0,0.0,0
 hawaii_Molokini Shoal MLCD: Zone B,hawaii,2022-09-18,forecast,0.0,0.0,0.0,0
-hawaii_Molokini Shoal MLCD: Zone B,hawaii,2022-09-25,forecast,0.0,0.0,7.0,0
-hawaii_Molokini Shoal MLCD: Zone B,hawaii,2022-10-02,forecast,0.0,3.0,17.0,1
+hawaii_Molokini Shoal MLCD: Zone B,hawaii,2022-09-25,forecast,0.0,0.0,0.0,0
+hawaii_Molokini Shoal MLCD: Zone B,hawaii,2022-10-02,forecast,0.0,0.0,7.0,0
 hawaii_Molokini Shoal MLCD: Zone B,hawaii,2022-10-09,forecast,0.0,3.0,17.0,1
 hawaii_Molokini Shoal MLCD: Zone B,hawaii,2022-10-16,forecast,0.0,3.0,17.0,1
 hawaii_Molokini Shoal MLCD: Zone B,hawaii,2022-10-23,forecast,0.0,3.0,17.0,1
 hawaii_Molokini Shoal MLCD: Zone B,hawaii,2022-10-30,forecast,0.0,3.0,17.0,1
 hawaii_Molokini Shoal MLCD: Zone B,hawaii,2022-11-06,forecast,0.0,4.0,17.0,1
 hawaii_Molokini Shoal MLCD: Zone B,hawaii,2022-11-13,forecast,0.0,4.0,17.0,1
-hawaii_Napoopoo-Honaunau FRA,hawaii,2022-06-05,nowcast,0.0,0.0,0.0,0
+hawaii_Molokini Shoal MLCD: Zone B,hawaii,2022-11-20,forecast,0.0,4.0,17.0,1
 hawaii_Napoopoo-Honaunau FRA,hawaii,2022-06-12,nowcast,0.0,0.0,0.0,0
 hawaii_Napoopoo-Honaunau FRA,hawaii,2022-06-19,nowcast,0.0,0.9,2.7,0
 hawaii_Napoopoo-Honaunau FRA,hawaii,2022-06-26,nowcast,0.0,0.9,2.7,0
@@ -1691,11 +1690,11 @@ hawaii_Napoopoo-Honaunau FRA,hawaii,2022-07-31,nowcast,0.0,0.0,0.9,0
 hawaii_Napoopoo-Honaunau FRA,hawaii,2022-08-07,nowcast,0.0,0.0,0.0,0
 hawaii_Napoopoo-Honaunau FRA,hawaii,2022-08-14,nowcast,0.0,0.0,0.0,0
 hawaii_Napoopoo-Honaunau FRA,hawaii,2022-08-21,nowcast,0.0,0.0,0.0,0
-hawaii_Napoopoo-Honaunau FRA,hawaii,2022-08-28,forecast,0.0,0.0,0.0,0
+hawaii_Napoopoo-Honaunau FRA,hawaii,2022-08-28,nowcast,0.0,0.0,0.0,0
 hawaii_Napoopoo-Honaunau FRA,hawaii,2022-09-04,forecast,0.0,0.0,0.0,0
 hawaii_Napoopoo-Honaunau FRA,hawaii,2022-09-11,forecast,0.0,0.0,0.0,0
-hawaii_Napoopoo-Honaunau FRA,hawaii,2022-09-18,forecast,0.0,0.0,7.0,0
-hawaii_Napoopoo-Honaunau FRA,hawaii,2022-09-25,forecast,0.0,6.0,17.0,2
+hawaii_Napoopoo-Honaunau FRA,hawaii,2022-09-18,forecast,0.0,0.0,0.0,0
+hawaii_Napoopoo-Honaunau FRA,hawaii,2022-09-25,forecast,0.0,0.0,7.0,0
 hawaii_Napoopoo-Honaunau FRA,hawaii,2022-10-02,forecast,0.0,4.0,17.0,1
 hawaii_Napoopoo-Honaunau FRA,hawaii,2022-10-09,forecast,0.0,4.0,17.0,1
 hawaii_Napoopoo-Honaunau FRA,hawaii,2022-10-16,forecast,0.0,4.0,17.0,1
@@ -1703,7 +1702,7 @@ hawaii_Napoopoo-Honaunau FRA,hawaii,2022-10-23,forecast,0.0,4.0,17.0,1
 hawaii_Napoopoo-Honaunau FRA,hawaii,2022-10-30,forecast,0.0,4.0,17.0,1
 hawaii_Napoopoo-Honaunau FRA,hawaii,2022-11-06,forecast,0.0,4.0,17.0,1
 hawaii_Napoopoo-Honaunau FRA,hawaii,2022-11-13,forecast,0.0,4.0,17.0,1
-hawaii_Nawiliwili Harbor FMA,hawaii,2022-06-05,nowcast,0.0,1.0,3.0,0
+hawaii_Napoopoo-Honaunau FRA,hawaii,2022-11-20,forecast,0.0,4.0,17.0,1
 hawaii_Nawiliwili Harbor FMA,hawaii,2022-06-12,nowcast,0.0,1.0,3.0,0
 hawaii_Nawiliwili Harbor FMA,hawaii,2022-06-19,nowcast,0.0,1.0,3.0,0
 hawaii_Nawiliwili Harbor FMA,hawaii,2022-06-26,nowcast,0.0,0.0,2.0,0
@@ -1715,11 +1714,11 @@ hawaii_Nawiliwili Harbor FMA,hawaii,2022-07-31,nowcast,0.0,0.0,2.0,0
 hawaii_Nawiliwili Harbor FMA,hawaii,2022-08-07,nowcast,0.0,0.0,2.0,0
 hawaii_Nawiliwili Harbor FMA,hawaii,2022-08-14,nowcast,0.0,0.0,2.0,0
 hawaii_Nawiliwili Harbor FMA,hawaii,2022-08-21,nowcast,0.0,0.0,2.0,0
-hawaii_Nawiliwili Harbor FMA,hawaii,2022-08-28,forecast,0.0,0.0,2.0,0
+hawaii_Nawiliwili Harbor FMA,hawaii,2022-08-28,nowcast,0.0,0.0,2.0,0
 hawaii_Nawiliwili Harbor FMA,hawaii,2022-09-04,forecast,0.0,0.0,2.0,0
 hawaii_Nawiliwili Harbor FMA,hawaii,2022-09-11,forecast,0.0,0.0,2.0,0
-hawaii_Nawiliwili Harbor FMA,hawaii,2022-09-18,forecast,0.0,2.0,7.0,1
-hawaii_Nawiliwili Harbor FMA,hawaii,2022-09-25,forecast,0.0,6.0,17.0,2
+hawaii_Nawiliwili Harbor FMA,hawaii,2022-09-18,forecast,0.0,0.0,2.0,0
+hawaii_Nawiliwili Harbor FMA,hawaii,2022-09-25,forecast,0.0,3.0,7.0,1
 hawaii_Nawiliwili Harbor FMA,hawaii,2022-10-02,forecast,0.0,6.0,17.0,2
 hawaii_Nawiliwili Harbor FMA,hawaii,2022-10-09,forecast,0.0,6.0,17.0,2
 hawaii_Nawiliwili Harbor FMA,hawaii,2022-10-16,forecast,0.0,6.0,17.0,2
@@ -1727,7 +1726,7 @@ hawaii_Nawiliwili Harbor FMA,hawaii,2022-10-23,forecast,0.0,6.0,17.0,2
 hawaii_Nawiliwili Harbor FMA,hawaii,2022-10-30,forecast,0.0,6.0,17.0,2
 hawaii_Nawiliwili Harbor FMA,hawaii,2022-11-06,forecast,1.0,6.0,17.0,2
 hawaii_Nawiliwili Harbor FMA,hawaii,2022-11-13,forecast,1.0,6.0,17.0,2
-hawaii_Nenue Point-Kealakekua Bay NRA,hawaii,2022-06-05,nowcast,0.0,0.0,0.0,0
+hawaii_Nawiliwili Harbor FMA,hawaii,2022-11-20,forecast,1.0,6.0,17.0,2
 hawaii_Nenue Point-Kealakekua Bay NRA,hawaii,2022-06-12,nowcast,0.0,0.0,0.0,0
 hawaii_Nenue Point-Kealakekua Bay NRA,hawaii,2022-06-19,nowcast,0.0,0.8,2.4000000000000004,0
 hawaii_Nenue Point-Kealakekua Bay NRA,hawaii,2022-06-26,nowcast,0.0,0.8,2.4000000000000004,0
@@ -1739,11 +1738,11 @@ hawaii_Nenue Point-Kealakekua Bay NRA,hawaii,2022-07-31,nowcast,0.0,0.0,0.8,0
 hawaii_Nenue Point-Kealakekua Bay NRA,hawaii,2022-08-07,nowcast,0.0,0.0,0.0,0
 hawaii_Nenue Point-Kealakekua Bay NRA,hawaii,2022-08-14,nowcast,0.0,0.0,0.0,0
 hawaii_Nenue Point-Kealakekua Bay NRA,hawaii,2022-08-21,nowcast,0.0,0.0,0.0,0
-hawaii_Nenue Point-Kealakekua Bay NRA,hawaii,2022-08-28,forecast,0.0,0.0,0.0,0
+hawaii_Nenue Point-Kealakekua Bay NRA,hawaii,2022-08-28,nowcast,0.0,0.0,0.0,0
 hawaii_Nenue Point-Kealakekua Bay NRA,hawaii,2022-09-04,forecast,0.0,0.0,0.0,0
 hawaii_Nenue Point-Kealakekua Bay NRA,hawaii,2022-09-11,forecast,0.0,0.0,0.0,0
-hawaii_Nenue Point-Kealakekua Bay NRA,hawaii,2022-09-18,forecast,0.0,0.0,7.0,0
-hawaii_Nenue Point-Kealakekua Bay NRA,hawaii,2022-09-25,forecast,0.0,6.0,17.0,2
+hawaii_Nenue Point-Kealakekua Bay NRA,hawaii,2022-09-18,forecast,0.0,0.0,0.0,0
+hawaii_Nenue Point-Kealakekua Bay NRA,hawaii,2022-09-25,forecast,0.0,0.0,7.0,0
 hawaii_Nenue Point-Kealakekua Bay NRA,hawaii,2022-10-02,forecast,0.0,4.0,17.0,1
 hawaii_Nenue Point-Kealakekua Bay NRA,hawaii,2022-10-09,forecast,0.0,4.0,17.0,1
 hawaii_Nenue Point-Kealakekua Bay NRA,hawaii,2022-10-16,forecast,0.0,4.0,17.0,1
@@ -1751,7 +1750,7 @@ hawaii_Nenue Point-Kealakekua Bay NRA,hawaii,2022-10-23,forecast,0.0,4.0,17.0,1
 hawaii_Nenue Point-Kealakekua Bay NRA,hawaii,2022-10-30,forecast,0.0,4.0,17.0,1
 hawaii_Nenue Point-Kealakekua Bay NRA,hawaii,2022-11-06,forecast,0.0,4.0,17.0,1
 hawaii_Nenue Point-Kealakekua Bay NRA,hawaii,2022-11-13,forecast,0.0,4.0,17.0,1
-hawaii_Niihau (BRFA B),hawaii,2022-06-05,nowcast,0.0,2.8,13.0,1
+hawaii_Nenue Point-Kealakekua Bay NRA,hawaii,2022-11-20,forecast,0.0,4.0,17.0,1
 hawaii_Niihau (BRFA B),hawaii,2022-06-12,nowcast,0.0,2.8,13.0,1
 hawaii_Niihau (BRFA B),hawaii,2022-06-19,nowcast,0.0,2.8,13.0,1
 hawaii_Niihau (BRFA B),hawaii,2022-06-26,nowcast,0.0,2.8,13.0,1
@@ -1763,10 +1762,10 @@ hawaii_Niihau (BRFA B),hawaii,2022-07-31,nowcast,0.0,2.8,13.0,1
 hawaii_Niihau (BRFA B),hawaii,2022-08-07,nowcast,0.0,2.8,13.0,1
 hawaii_Niihau (BRFA B),hawaii,2022-08-14,nowcast,0.0,2.8,13.0,1
 hawaii_Niihau (BRFA B),hawaii,2022-08-21,nowcast,0.0,2.8,13.0,1
-hawaii_Niihau (BRFA B),hawaii,2022-08-28,forecast,0.0,2.8,13.0,1
+hawaii_Niihau (BRFA B),hawaii,2022-08-28,nowcast,0.0,2.8,13.0,1
 hawaii_Niihau (BRFA B),hawaii,2022-09-04,forecast,0.0,0.0,11.0,0
 hawaii_Niihau (BRFA B),hawaii,2022-09-11,forecast,0.0,0.0,11.0,0
-hawaii_Niihau (BRFA B),hawaii,2022-09-18,forecast,0.0,15.0,17.0,3
+hawaii_Niihau (BRFA B),hawaii,2022-09-18,forecast,0.0,0.0,11.0,0
 hawaii_Niihau (BRFA B),hawaii,2022-09-25,forecast,0.0,15.0,17.0,3
 hawaii_Niihau (BRFA B),hawaii,2022-10-02,forecast,0.0,14.0,17.0,3
 hawaii_Niihau (BRFA B),hawaii,2022-10-09,forecast,0.0,14.0,17.0,3
@@ -1775,7 +1774,7 @@ hawaii_Niihau (BRFA B),hawaii,2022-10-23,forecast,0.0,14.0,17.0,3
 hawaii_Niihau (BRFA B),hawaii,2022-10-30,forecast,0.0,14.0,17.0,3
 hawaii_Niihau (BRFA B),hawaii,2022-11-06,forecast,0.0,14.0,17.0,3
 hawaii_Niihau (BRFA B),hawaii,2022-11-13,forecast,0.0,14.0,17.0,3
-hawaii_North Kohala FRA,hawaii,2022-06-05,nowcast,0.0,0.0,0.0,0
+hawaii_Niihau (BRFA B),hawaii,2022-11-20,forecast,0.0,14.0,17.0,3
 hawaii_North Kohala FRA,hawaii,2022-06-12,nowcast,0.0,0.0,0.0,0
 hawaii_North Kohala FRA,hawaii,2022-06-19,nowcast,0.0,0.0,0.0,0
 hawaii_North Kohala FRA,hawaii,2022-06-26,nowcast,0.0,0.0,0.0,0
@@ -1787,11 +1786,11 @@ hawaii_North Kohala FRA,hawaii,2022-07-31,nowcast,0.0,0.0,0.0,0
 hawaii_North Kohala FRA,hawaii,2022-08-07,nowcast,0.0,0.0,0.0,0
 hawaii_North Kohala FRA,hawaii,2022-08-14,nowcast,0.0,0.0,0.0,0
 hawaii_North Kohala FRA,hawaii,2022-08-21,nowcast,0.0,0.0,0.0,0
-hawaii_North Kohala FRA,hawaii,2022-08-28,forecast,0.0,0.0,0.0,0
+hawaii_North Kohala FRA,hawaii,2022-08-28,nowcast,0.0,0.0,0.0,0
 hawaii_North Kohala FRA,hawaii,2022-09-04,forecast,0.0,0.0,0.0,0
 hawaii_North Kohala FRA,hawaii,2022-09-11,forecast,0.0,0.0,0.0,0
-hawaii_North Kohala FRA,hawaii,2022-09-18,forecast,0.0,0.0,7.0,0
-hawaii_North Kohala FRA,hawaii,2022-09-25,forecast,0.0,6.0,17.0,2
+hawaii_North Kohala FRA,hawaii,2022-09-18,forecast,0.0,0.0,0.0,0
+hawaii_North Kohala FRA,hawaii,2022-09-25,forecast,0.0,0.0,7.0,0
 hawaii_North Kohala FRA,hawaii,2022-10-02,forecast,0.0,4.0,17.0,1
 hawaii_North Kohala FRA,hawaii,2022-10-09,forecast,0.0,4.0,17.0,1
 hawaii_North Kohala FRA,hawaii,2022-10-16,forecast,0.0,4.0,17.0,1
@@ -1799,7 +1798,7 @@ hawaii_North Kohala FRA,hawaii,2022-10-23,forecast,0.0,4.0,17.0,1
 hawaii_North Kohala FRA,hawaii,2022-10-30,forecast,0.0,4.0,17.0,1
 hawaii_North Kohala FRA,hawaii,2022-11-06,forecast,0.0,4.0,17.0,1
 hawaii_North Kohala FRA,hawaii,2022-11-13,forecast,0.0,4.0,17.0,1
-hawaii_Old Kona Airport MLCD,hawaii,2022-06-05,nowcast,0.0,0.0,0.0,0
+hawaii_North Kohala FRA,hawaii,2022-11-20,forecast,0.0,4.0,17.0,1
 hawaii_Old Kona Airport MLCD,hawaii,2022-06-12,nowcast,0.0,0.0,0.0,0
 hawaii_Old Kona Airport MLCD,hawaii,2022-06-19,nowcast,0.0,0.0,0.0,0
 hawaii_Old Kona Airport MLCD,hawaii,2022-06-26,nowcast,0.0,0.0,0.0,0
@@ -1811,11 +1810,11 @@ hawaii_Old Kona Airport MLCD,hawaii,2022-07-31,nowcast,0.0,0.0,0.0,0
 hawaii_Old Kona Airport MLCD,hawaii,2022-08-07,nowcast,0.0,0.0,0.0,0
 hawaii_Old Kona Airport MLCD,hawaii,2022-08-14,nowcast,0.0,0.0,0.0,0
 hawaii_Old Kona Airport MLCD,hawaii,2022-08-21,nowcast,0.0,0.0,0.0,0
-hawaii_Old Kona Airport MLCD,hawaii,2022-08-28,forecast,0.0,0.0,0.0,0
+hawaii_Old Kona Airport MLCD,hawaii,2022-08-28,nowcast,0.0,0.0,0.0,0
 hawaii_Old Kona Airport MLCD,hawaii,2022-09-04,forecast,0.0,0.0,0.0,0
 hawaii_Old Kona Airport MLCD,hawaii,2022-09-11,forecast,0.0,0.0,0.0,0
-hawaii_Old Kona Airport MLCD,hawaii,2022-09-18,forecast,0.0,0.0,7.0,0
-hawaii_Old Kona Airport MLCD,hawaii,2022-09-25,forecast,0.0,6.0,17.0,2
+hawaii_Old Kona Airport MLCD,hawaii,2022-09-18,forecast,0.0,0.0,0.0,0
+hawaii_Old Kona Airport MLCD,hawaii,2022-09-25,forecast,0.0,0.0,7.0,0
 hawaii_Old Kona Airport MLCD,hawaii,2022-10-02,forecast,0.0,4.0,17.0,1
 hawaii_Old Kona Airport MLCD,hawaii,2022-10-09,forecast,0.0,4.0,17.0,1
 hawaii_Old Kona Airport MLCD,hawaii,2022-10-16,forecast,0.0,4.0,17.0,1
@@ -1823,7 +1822,7 @@ hawaii_Old Kona Airport MLCD,hawaii,2022-10-23,forecast,0.0,4.0,17.0,1
 hawaii_Old Kona Airport MLCD,hawaii,2022-10-30,forecast,0.0,4.0,17.0,1
 hawaii_Old Kona Airport MLCD,hawaii,2022-11-06,forecast,0.0,4.0,17.0,1
 hawaii_Old Kona Airport MLCD,hawaii,2022-11-13,forecast,0.0,4.0,17.0,1
-hawaii_Old Kona Airport MLCD: No Boating Zone,hawaii,2022-06-05,nowcast,0.0,0.0,0.0,0
+hawaii_Old Kona Airport MLCD,hawaii,2022-11-20,forecast,0.0,4.0,17.0,1
 hawaii_Old Kona Airport MLCD: No Boating Zone,hawaii,2022-06-12,nowcast,0.0,0.0,0.0,0
 hawaii_Old Kona Airport MLCD: No Boating Zone,hawaii,2022-06-19,nowcast,0.0,0.0,0.0,0
 hawaii_Old Kona Airport MLCD: No Boating Zone,hawaii,2022-06-26,nowcast,0.0,0.0,0.0,0
@@ -1835,11 +1834,11 @@ hawaii_Old Kona Airport MLCD: No Boating Zone,hawaii,2022-07-31,nowcast,0.0,0.0,
 hawaii_Old Kona Airport MLCD: No Boating Zone,hawaii,2022-08-07,nowcast,0.0,0.0,0.0,0
 hawaii_Old Kona Airport MLCD: No Boating Zone,hawaii,2022-08-14,nowcast,0.0,0.0,0.0,0
 hawaii_Old Kona Airport MLCD: No Boating Zone,hawaii,2022-08-21,nowcast,0.0,0.0,0.0,0
-hawaii_Old Kona Airport MLCD: No Boating Zone,hawaii,2022-08-28,forecast,0.0,0.0,0.0,0
+hawaii_Old Kona Airport MLCD: No Boating Zone,hawaii,2022-08-28,nowcast,0.0,0.0,0.0,0
 hawaii_Old Kona Airport MLCD: No Boating Zone,hawaii,2022-09-04,forecast,0.0,0.0,0.0,0
 hawaii_Old Kona Airport MLCD: No Boating Zone,hawaii,2022-09-11,forecast,0.0,0.0,0.0,0
-hawaii_Old Kona Airport MLCD: No Boating Zone,hawaii,2022-09-18,forecast,0.0,0.0,7.0,0
-hawaii_Old Kona Airport MLCD: No Boating Zone,hawaii,2022-09-25,forecast,0.0,6.0,17.0,2
+hawaii_Old Kona Airport MLCD: No Boating Zone,hawaii,2022-09-18,forecast,0.0,0.0,0.0,0
+hawaii_Old Kona Airport MLCD: No Boating Zone,hawaii,2022-09-25,forecast,0.0,0.0,7.0,0
 hawaii_Old Kona Airport MLCD: No Boating Zone,hawaii,2022-10-02,forecast,0.0,4.0,17.0,1
 hawaii_Old Kona Airport MLCD: No Boating Zone,hawaii,2022-10-09,forecast,0.0,4.0,17.0,1
 hawaii_Old Kona Airport MLCD: No Boating Zone,hawaii,2022-10-16,forecast,0.0,4.0,17.0,1
@@ -1847,7 +1846,7 @@ hawaii_Old Kona Airport MLCD: No Boating Zone,hawaii,2022-10-23,forecast,0.0,4.0
 hawaii_Old Kona Airport MLCD: No Boating Zone,hawaii,2022-10-30,forecast,0.0,4.0,17.0,1
 hawaii_Old Kona Airport MLCD: No Boating Zone,hawaii,2022-11-06,forecast,0.0,4.0,17.0,1
 hawaii_Old Kona Airport MLCD: No Boating Zone,hawaii,2022-11-13,forecast,0.0,4.0,17.0,1
-hawaii_Paiko Lagoon WS,hawaii,2022-06-05,nowcast,2.0,30.0,31.0,4
+hawaii_Old Kona Airport MLCD: No Boating Zone,hawaii,2022-11-20,forecast,0.0,4.0,17.0,1
 hawaii_Paiko Lagoon WS,hawaii,2022-06-12,nowcast,2.0,30.0,32.0,4
 hawaii_Paiko Lagoon WS,hawaii,2022-06-19,nowcast,2.0,30.0,32.0,4
 hawaii_Paiko Lagoon WS,hawaii,2022-06-26,nowcast,2.0,30.0,32.0,4
@@ -1859,7 +1858,7 @@ hawaii_Paiko Lagoon WS,hawaii,2022-07-31,nowcast,2.0,30.0,32.0,4
 hawaii_Paiko Lagoon WS,hawaii,2022-08-07,nowcast,1.0,7.0,25.0,2
 hawaii_Paiko Lagoon WS,hawaii,2022-08-14,nowcast,1.0,9.0,25.0,2
 hawaii_Paiko Lagoon WS,hawaii,2022-08-21,nowcast,1.0,9.0,25.0,2
-hawaii_Paiko Lagoon WS,hawaii,2022-08-28,forecast,1.0,9.0,25.0,2
+hawaii_Paiko Lagoon WS,hawaii,2022-08-28,nowcast,1.0,9.0,25.0,2
 hawaii_Paiko Lagoon WS,hawaii,2022-09-04,forecast,2.0,6.0,23.0,2
 hawaii_Paiko Lagoon WS,hawaii,2022-09-11,forecast,2.0,6.0,23.0,2
 hawaii_Paiko Lagoon WS,hawaii,2022-09-18,forecast,1.0,7.0,25.0,2
@@ -1871,7 +1870,7 @@ hawaii_Paiko Lagoon WS,hawaii,2022-10-23,forecast,2.0,7.0,25.0,2
 hawaii_Paiko Lagoon WS,hawaii,2022-10-30,forecast,2.0,7.0,25.0,2
 hawaii_Paiko Lagoon WS,hawaii,2022-11-06,forecast,1.0,3.0,22.0,1
 hawaii_Paiko Lagoon WS,hawaii,2022-11-13,forecast,1.0,3.0,22.0,1
-hawaii_Papawai Bay FMA,hawaii,2022-06-05,nowcast,0.0,0.0,0.0,0
+hawaii_Paiko Lagoon WS,hawaii,2022-11-20,forecast,1.0,3.0,22.0,1
 hawaii_Papawai Bay FMA,hawaii,2022-06-12,nowcast,0.0,0.0,0.0,0
 hawaii_Papawai Bay FMA,hawaii,2022-06-19,nowcast,0.0,0.0,0.0,0
 hawaii_Papawai Bay FMA,hawaii,2022-06-26,nowcast,0.0,0.0,0.0,0
@@ -1883,11 +1882,11 @@ hawaii_Papawai Bay FMA,hawaii,2022-07-31,nowcast,0.0,0.0,0.0,0
 hawaii_Papawai Bay FMA,hawaii,2022-08-07,nowcast,0.0,0.0,0.0,0
 hawaii_Papawai Bay FMA,hawaii,2022-08-14,nowcast,0.0,0.0,0.0,0
 hawaii_Papawai Bay FMA,hawaii,2022-08-21,nowcast,0.0,0.0,0.0,0
-hawaii_Papawai Bay FMA,hawaii,2022-08-28,forecast,0.0,0.0,0.0,0
+hawaii_Papawai Bay FMA,hawaii,2022-08-28,nowcast,0.0,0.0,0.0,0
 hawaii_Papawai Bay FMA,hawaii,2022-09-04,forecast,0.0,0.0,0.0,0
 hawaii_Papawai Bay FMA,hawaii,2022-09-11,forecast,0.0,0.0,0.0,0
-hawaii_Papawai Bay FMA,hawaii,2022-09-18,forecast,0.0,0.0,7.0,0
-hawaii_Papawai Bay FMA,hawaii,2022-09-25,forecast,0.0,6.0,17.0,2
+hawaii_Papawai Bay FMA,hawaii,2022-09-18,forecast,0.0,0.0,0.0,0
+hawaii_Papawai Bay FMA,hawaii,2022-09-25,forecast,0.0,0.0,7.0,0
 hawaii_Papawai Bay FMA,hawaii,2022-10-02,forecast,0.0,4.0,17.0,1
 hawaii_Papawai Bay FMA,hawaii,2022-10-09,forecast,0.0,4.0,17.0,1
 hawaii_Papawai Bay FMA,hawaii,2022-10-16,forecast,0.0,4.0,17.0,1
@@ -1895,7 +1894,7 @@ hawaii_Papawai Bay FMA,hawaii,2022-10-23,forecast,0.0,4.0,17.0,1
 hawaii_Papawai Bay FMA,hawaii,2022-10-30,forecast,0.0,4.0,17.0,1
 hawaii_Papawai Bay FMA,hawaii,2022-11-06,forecast,0.0,4.0,17.0,1
 hawaii_Papawai Bay FMA,hawaii,2022-11-13,forecast,0.0,4.0,17.0,1
-hawaii_Pokai Bay,hawaii,2022-06-05,nowcast,0.0,0.9,3.8,0
+hawaii_Papawai Bay FMA,hawaii,2022-11-20,forecast,0.0,4.0,17.0,1
 hawaii_Pokai Bay,hawaii,2022-06-12,nowcast,0.0,0.9,3.8,0
 hawaii_Pokai Bay,hawaii,2022-06-19,nowcast,0.0,0.9,3.8,0
 hawaii_Pokai Bay,hawaii,2022-06-26,nowcast,0.0,0.9,2.9,0
@@ -1907,11 +1906,11 @@ hawaii_Pokai Bay,hawaii,2022-07-31,nowcast,0.0,0.0,2.0,0
 hawaii_Pokai Bay,hawaii,2022-08-07,nowcast,0.0,0.0,2.0,0
 hawaii_Pokai Bay,hawaii,2022-08-14,nowcast,0.0,0.9,2.9,0
 hawaii_Pokai Bay,hawaii,2022-08-21,nowcast,0.0,0.9,2.9,0
-hawaii_Pokai Bay,hawaii,2022-08-28,forecast,0.0,0.9,2.9,0
+hawaii_Pokai Bay,hawaii,2022-08-28,nowcast,0.0,0.9,2.9,0
 hawaii_Pokai Bay,hawaii,2022-09-04,forecast,0.0,0.9,2.9,0
 hawaii_Pokai Bay,hawaii,2022-09-11,forecast,0.0,0.9,3.8,0
-hawaii_Pokai Bay,hawaii,2022-09-18,forecast,0.0,5.6,16.0,2
-hawaii_Pokai Bay,hawaii,2022-09-25,forecast,0.0,6.0,17.0,2
+hawaii_Pokai Bay,hawaii,2022-09-18,forecast,0.0,0.9,2.9,0
+hawaii_Pokai Bay,hawaii,2022-09-25,forecast,0.0,5.6,16.0,2
 hawaii_Pokai Bay,hawaii,2022-10-02,forecast,0.0,5.7,17.0,2
 hawaii_Pokai Bay,hawaii,2022-10-09,forecast,0.0,5.7,17.0,2
 hawaii_Pokai Bay,hawaii,2022-10-16,forecast,0.0,5.7,17.0,2
@@ -1919,7 +1918,7 @@ hawaii_Pokai Bay,hawaii,2022-10-23,forecast,0.0,5.7,17.0,2
 hawaii_Pokai Bay,hawaii,2022-10-30,forecast,0.0,5.7,17.0,2
 hawaii_Pokai Bay,hawaii,2022-11-06,forecast,0.9,4.9,17.0,1
 hawaii_Pokai Bay,hawaii,2022-11-13,forecast,0.9,4.9,17.0,1
-hawaii_Port Allen FMA,hawaii,2022-06-05,nowcast,0.0,0.0,2.0,0
+hawaii_Pokai Bay,hawaii,2022-11-20,forecast,0.9,4.9,17.0,1
 hawaii_Port Allen FMA,hawaii,2022-06-12,nowcast,0.0,0.0,2.0,0
 hawaii_Port Allen FMA,hawaii,2022-06-19,nowcast,0.0,0.0,2.0,0
 hawaii_Port Allen FMA,hawaii,2022-06-26,nowcast,0.0,0.0,2.0,0
@@ -1931,10 +1930,10 @@ hawaii_Port Allen FMA,hawaii,2022-07-31,nowcast,0.0,0.0,2.0,0
 hawaii_Port Allen FMA,hawaii,2022-08-07,nowcast,0.0,0.0,2.0,0
 hawaii_Port Allen FMA,hawaii,2022-08-14,nowcast,0.0,0.0,2.0,0
 hawaii_Port Allen FMA,hawaii,2022-08-21,nowcast,0.0,0.0,2.0,0
-hawaii_Port Allen FMA,hawaii,2022-08-28,forecast,0.0,0.0,2.0,0
+hawaii_Port Allen FMA,hawaii,2022-08-28,nowcast,0.0,0.0,2.0,0
 hawaii_Port Allen FMA,hawaii,2022-09-04,forecast,0.0,0.0,2.0,0
 hawaii_Port Allen FMA,hawaii,2022-09-11,forecast,0.0,0.0,2.0,0
-hawaii_Port Allen FMA,hawaii,2022-09-18,forecast,0.0,6.0,17.0,2
+hawaii_Port Allen FMA,hawaii,2022-09-18,forecast,0.0,0.0,2.0,0
 hawaii_Port Allen FMA,hawaii,2022-09-25,forecast,0.0,6.0,17.0,2
 hawaii_Port Allen FMA,hawaii,2022-10-02,forecast,0.0,3.0,17.0,1
 hawaii_Port Allen FMA,hawaii,2022-10-09,forecast,0.0,3.0,17.0,1
@@ -1943,7 +1942,7 @@ hawaii_Port Allen FMA,hawaii,2022-10-23,forecast,0.0,3.0,17.0,1
 hawaii_Port Allen FMA,hawaii,2022-10-30,forecast,0.0,3.0,17.0,1
 hawaii_Port Allen FMA,hawaii,2022-11-06,forecast,0.0,4.0,17.0,1
 hawaii_Port Allen FMA,hawaii,2022-11-13,forecast,0.0,4.0,17.0,1
-hawaii_Puako Bay and Puako Reef FMA,hawaii,2022-06-05,nowcast,0.0,0.0,0.0,0
+hawaii_Port Allen FMA,hawaii,2022-11-20,forecast,0.0,4.0,17.0,1
 hawaii_Puako Bay and Puako Reef FMA,hawaii,2022-06-12,nowcast,0.0,0.0,0.0,0
 hawaii_Puako Bay and Puako Reef FMA,hawaii,2022-06-19,nowcast,0.0,0.0,0.0,0
 hawaii_Puako Bay and Puako Reef FMA,hawaii,2022-06-26,nowcast,0.0,0.0,0.0,0
@@ -1955,11 +1954,11 @@ hawaii_Puako Bay and Puako Reef FMA,hawaii,2022-07-31,nowcast,0.0,0.0,0.0,0
 hawaii_Puako Bay and Puako Reef FMA,hawaii,2022-08-07,nowcast,0.0,0.0,0.0,0
 hawaii_Puako Bay and Puako Reef FMA,hawaii,2022-08-14,nowcast,0.0,0.0,0.0,0
 hawaii_Puako Bay and Puako Reef FMA,hawaii,2022-08-21,nowcast,0.0,0.0,0.0,0
-hawaii_Puako Bay and Puako Reef FMA,hawaii,2022-08-28,forecast,0.0,0.0,0.0,0
+hawaii_Puako Bay and Puako Reef FMA,hawaii,2022-08-28,nowcast,0.0,0.0,0.0,0
 hawaii_Puako Bay and Puako Reef FMA,hawaii,2022-09-04,forecast,0.0,0.0,0.0,0
 hawaii_Puako Bay and Puako Reef FMA,hawaii,2022-09-11,forecast,0.0,0.0,0.0,0
-hawaii_Puako Bay and Puako Reef FMA,hawaii,2022-09-18,forecast,0.0,0.0,7.0,0
-hawaii_Puako Bay and Puako Reef FMA,hawaii,2022-09-25,forecast,0.0,6.0,17.0,2
+hawaii_Puako Bay and Puako Reef FMA,hawaii,2022-09-18,forecast,0.0,0.0,0.0,0
+hawaii_Puako Bay and Puako Reef FMA,hawaii,2022-09-25,forecast,0.0,0.0,7.0,0
 hawaii_Puako Bay and Puako Reef FMA,hawaii,2022-10-02,forecast,0.0,4.0,17.0,1
 hawaii_Puako Bay and Puako Reef FMA,hawaii,2022-10-09,forecast,0.0,4.0,17.0,1
 hawaii_Puako Bay and Puako Reef FMA,hawaii,2022-10-16,forecast,0.0,4.0,17.0,1
@@ -1967,7 +1966,7 @@ hawaii_Puako Bay and Puako Reef FMA,hawaii,2022-10-23,forecast,0.0,4.0,17.0,1
 hawaii_Puako Bay and Puako Reef FMA,hawaii,2022-10-30,forecast,0.0,4.0,17.0,1
 hawaii_Puako Bay and Puako Reef FMA,hawaii,2022-11-06,forecast,0.0,4.0,17.0,1
 hawaii_Puako Bay and Puako Reef FMA,hawaii,2022-11-13,forecast,0.0,4.0,17.0,1
-hawaii_Puako-Anaehoomalu FRA / NRA,hawaii,2022-06-05,nowcast,0.0,0.0,0.0,0
+hawaii_Puako Bay and Puako Reef FMA,hawaii,2022-11-20,forecast,0.0,4.0,17.0,1
 hawaii_Puako-Anaehoomalu FRA / NRA,hawaii,2022-06-12,nowcast,0.0,0.0,0.0,0
 hawaii_Puako-Anaehoomalu FRA / NRA,hawaii,2022-06-19,nowcast,0.0,0.0,0.0,0
 hawaii_Puako-Anaehoomalu FRA / NRA,hawaii,2022-06-26,nowcast,0.0,0.0,0.0,0
@@ -1979,11 +1978,11 @@ hawaii_Puako-Anaehoomalu FRA / NRA,hawaii,2022-07-31,nowcast,0.0,0.0,0.0,0
 hawaii_Puako-Anaehoomalu FRA / NRA,hawaii,2022-08-07,nowcast,0.0,0.0,0.0,0
 hawaii_Puako-Anaehoomalu FRA / NRA,hawaii,2022-08-14,nowcast,0.0,0.0,0.0,0
 hawaii_Puako-Anaehoomalu FRA / NRA,hawaii,2022-08-21,nowcast,0.0,0.0,0.0,0
-hawaii_Puako-Anaehoomalu FRA / NRA,hawaii,2022-08-28,forecast,0.0,0.0,0.0,0
+hawaii_Puako-Anaehoomalu FRA / NRA,hawaii,2022-08-28,nowcast,0.0,0.0,0.0,0
 hawaii_Puako-Anaehoomalu FRA / NRA,hawaii,2022-09-04,forecast,0.0,0.0,0.0,0
 hawaii_Puako-Anaehoomalu FRA / NRA,hawaii,2022-09-11,forecast,0.0,0.0,0.0,0
-hawaii_Puako-Anaehoomalu FRA / NRA,hawaii,2022-09-18,forecast,0.0,0.0,7.0,0
-hawaii_Puako-Anaehoomalu FRA / NRA,hawaii,2022-09-25,forecast,0.0,6.0,17.0,2
+hawaii_Puako-Anaehoomalu FRA / NRA,hawaii,2022-09-18,forecast,0.0,0.0,0.0,0
+hawaii_Puako-Anaehoomalu FRA / NRA,hawaii,2022-09-25,forecast,0.0,0.0,7.0,0
 hawaii_Puako-Anaehoomalu FRA / NRA,hawaii,2022-10-02,forecast,0.0,4.0,17.0,1
 hawaii_Puako-Anaehoomalu FRA / NRA,hawaii,2022-10-09,forecast,0.0,4.0,17.0,1
 hawaii_Puako-Anaehoomalu FRA / NRA,hawaii,2022-10-16,forecast,0.0,4.0,17.0,1
@@ -1991,7 +1990,7 @@ hawaii_Puako-Anaehoomalu FRA / NRA,hawaii,2022-10-23,forecast,0.0,4.0,17.0,1
 hawaii_Puako-Anaehoomalu FRA / NRA,hawaii,2022-10-30,forecast,0.0,4.0,17.0,1
 hawaii_Puako-Anaehoomalu FRA / NRA,hawaii,2022-11-06,forecast,0.0,4.0,17.0,1
 hawaii_Puako-Anaehoomalu FRA / NRA,hawaii,2022-11-13,forecast,0.0,4.0,17.0,1
-hawaii_Pupukea MLCD: Shark's Cove & Three Tables,hawaii,2022-06-05,nowcast,0.0,0.0,0.0,0
+hawaii_Puako-Anaehoomalu FRA / NRA,hawaii,2022-11-20,forecast,0.0,4.0,17.0,1
 hawaii_Pupukea MLCD: Shark's Cove & Three Tables,hawaii,2022-06-12,nowcast,0.0,0.0,0.0,0
 hawaii_Pupukea MLCD: Shark's Cove & Three Tables,hawaii,2022-06-19,nowcast,0.0,0.0,0.0,0
 hawaii_Pupukea MLCD: Shark's Cove & Three Tables,hawaii,2022-06-26,nowcast,0.0,0.0,0.0,0
@@ -2003,11 +2002,11 @@ hawaii_Pupukea MLCD: Shark's Cove & Three Tables,hawaii,2022-07-31,nowcast,0.0,0
 hawaii_Pupukea MLCD: Shark's Cove & Three Tables,hawaii,2022-08-07,nowcast,0.0,0.0,0.0,0
 hawaii_Pupukea MLCD: Shark's Cove & Three Tables,hawaii,2022-08-14,nowcast,0.0,0.0,0.0,0
 hawaii_Pupukea MLCD: Shark's Cove & Three Tables,hawaii,2022-08-21,nowcast,0.0,0.0,0.0,0
-hawaii_Pupukea MLCD: Shark's Cove & Three Tables,hawaii,2022-08-28,forecast,0.0,0.0,0.0,0
+hawaii_Pupukea MLCD: Shark's Cove & Three Tables,hawaii,2022-08-28,nowcast,0.0,0.0,0.0,0
 hawaii_Pupukea MLCD: Shark's Cove & Three Tables,hawaii,2022-09-04,forecast,0.0,0.0,0.0,0
 hawaii_Pupukea MLCD: Shark's Cove & Three Tables,hawaii,2022-09-11,forecast,0.0,0.0,0.0,0
-hawaii_Pupukea MLCD: Shark's Cove & Three Tables,hawaii,2022-09-18,forecast,0.0,0.0,7.0,0
-hawaii_Pupukea MLCD: Shark's Cove & Three Tables,hawaii,2022-09-25,forecast,0.0,6.0,17.0,2
+hawaii_Pupukea MLCD: Shark's Cove & Three Tables,hawaii,2022-09-18,forecast,0.0,0.0,0.0,0
+hawaii_Pupukea MLCD: Shark's Cove & Three Tables,hawaii,2022-09-25,forecast,0.0,0.0,7.0,0
 hawaii_Pupukea MLCD: Shark's Cove & Three Tables,hawaii,2022-10-02,forecast,0.0,3.0,17.0,1
 hawaii_Pupukea MLCD: Shark's Cove & Three Tables,hawaii,2022-10-09,forecast,0.0,3.0,17.0,1
 hawaii_Pupukea MLCD: Shark's Cove & Three Tables,hawaii,2022-10-16,forecast,0.0,3.0,17.0,1
@@ -2015,7 +2014,7 @@ hawaii_Pupukea MLCD: Shark's Cove & Three Tables,hawaii,2022-10-23,forecast,0.0,
 hawaii_Pupukea MLCD: Shark's Cove & Three Tables,hawaii,2022-10-30,forecast,0.0,3.0,17.0,1
 hawaii_Pupukea MLCD: Shark's Cove & Three Tables,hawaii,2022-11-06,forecast,0.0,4.0,17.0,1
 hawaii_Pupukea MLCD: Shark's Cove & Three Tables,hawaii,2022-11-13,forecast,0.0,4.0,17.0,1
-hawaii_Red Hill FMA,hawaii,2022-06-05,nowcast,0.0,0.0,0.0,0
+hawaii_Pupukea MLCD: Shark's Cove & Three Tables,hawaii,2022-11-20,forecast,0.0,4.0,17.0,1
 hawaii_Red Hill FMA,hawaii,2022-06-12,nowcast,0.0,0.0,0.0,0
 hawaii_Red Hill FMA,hawaii,2022-06-19,nowcast,0.0,0.8,2.4000000000000004,0
 hawaii_Red Hill FMA,hawaii,2022-06-26,nowcast,0.0,0.8,2.4000000000000004,0
@@ -2027,11 +2026,11 @@ hawaii_Red Hill FMA,hawaii,2022-07-31,nowcast,0.0,0.0,0.8,0
 hawaii_Red Hill FMA,hawaii,2022-08-07,nowcast,0.0,0.0,0.0,0
 hawaii_Red Hill FMA,hawaii,2022-08-14,nowcast,0.0,0.0,0.0,0
 hawaii_Red Hill FMA,hawaii,2022-08-21,nowcast,0.0,0.0,0.0,0
-hawaii_Red Hill FMA,hawaii,2022-08-28,forecast,0.0,0.0,0.0,0
+hawaii_Red Hill FMA,hawaii,2022-08-28,nowcast,0.0,0.0,0.0,0
 hawaii_Red Hill FMA,hawaii,2022-09-04,forecast,0.0,0.0,0.0,0
 hawaii_Red Hill FMA,hawaii,2022-09-11,forecast,0.0,0.0,0.0,0
-hawaii_Red Hill FMA,hawaii,2022-09-18,forecast,0.0,0.0,7.0,0
-hawaii_Red Hill FMA,hawaii,2022-09-25,forecast,0.0,6.0,17.0,2
+hawaii_Red Hill FMA,hawaii,2022-09-18,forecast,0.0,0.0,0.0,0
+hawaii_Red Hill FMA,hawaii,2022-09-25,forecast,0.0,0.0,7.0,0
 hawaii_Red Hill FMA,hawaii,2022-10-02,forecast,0.0,4.0,17.0,1
 hawaii_Red Hill FMA,hawaii,2022-10-09,forecast,0.0,4.0,17.0,1
 hawaii_Red Hill FMA,hawaii,2022-10-16,forecast,0.0,4.0,17.0,1
@@ -2039,7 +2038,7 @@ hawaii_Red Hill FMA,hawaii,2022-10-23,forecast,0.0,4.0,17.0,1
 hawaii_Red Hill FMA,hawaii,2022-10-30,forecast,0.0,4.0,17.0,1
 hawaii_Red Hill FMA,hawaii,2022-11-06,forecast,0.0,4.0,17.0,1
 hawaii_Red Hill FMA,hawaii,2022-11-13,forecast,0.0,4.0,17.0,1
-hawaii_Red Hill FRA,hawaii,2022-06-05,nowcast,0.0,0.0,0.0,0
+hawaii_Red Hill FMA,hawaii,2022-11-20,forecast,0.0,4.0,17.0,1
 hawaii_Red Hill FRA,hawaii,2022-06-12,nowcast,0.0,0.0,0.0,0
 hawaii_Red Hill FRA,hawaii,2022-06-19,nowcast,0.0,0.8,2.4000000000000004,0
 hawaii_Red Hill FRA,hawaii,2022-06-26,nowcast,0.0,0.8,2.4000000000000004,0
@@ -2051,11 +2050,11 @@ hawaii_Red Hill FRA,hawaii,2022-07-31,nowcast,0.0,0.0,0.8,0
 hawaii_Red Hill FRA,hawaii,2022-08-07,nowcast,0.0,0.0,0.0,0
 hawaii_Red Hill FRA,hawaii,2022-08-14,nowcast,0.0,0.0,0.0,0
 hawaii_Red Hill FRA,hawaii,2022-08-21,nowcast,0.0,0.0,0.0,0
-hawaii_Red Hill FRA,hawaii,2022-08-28,forecast,0.0,0.0,0.0,0
+hawaii_Red Hill FRA,hawaii,2022-08-28,nowcast,0.0,0.0,0.0,0
 hawaii_Red Hill FRA,hawaii,2022-09-04,forecast,0.0,0.0,0.0,0
 hawaii_Red Hill FRA,hawaii,2022-09-11,forecast,0.0,0.0,0.0,0
-hawaii_Red Hill FRA,hawaii,2022-09-18,forecast,0.0,0.0,7.0,0
-hawaii_Red Hill FRA,hawaii,2022-09-25,forecast,0.0,6.0,17.0,2
+hawaii_Red Hill FRA,hawaii,2022-09-18,forecast,0.0,0.0,0.0,0
+hawaii_Red Hill FRA,hawaii,2022-09-25,forecast,0.0,0.0,7.0,0
 hawaii_Red Hill FRA,hawaii,2022-10-02,forecast,0.0,4.0,17.0,1
 hawaii_Red Hill FRA,hawaii,2022-10-09,forecast,0.0,4.0,17.0,1
 hawaii_Red Hill FRA,hawaii,2022-10-16,forecast,0.0,4.0,17.0,1
@@ -2063,7 +2062,7 @@ hawaii_Red Hill FRA,hawaii,2022-10-23,forecast,0.0,4.0,17.0,1
 hawaii_Red Hill FRA,hawaii,2022-10-30,forecast,0.0,4.0,17.0,1
 hawaii_Red Hill FRA,hawaii,2022-11-06,forecast,0.0,4.0,17.0,1
 hawaii_Red Hill FRA,hawaii,2022-11-13,forecast,0.0,4.0,17.0,1
-hawaii_South Kona Opelu Mgmt Special Rules,hawaii,2022-06-05,nowcast,0.0,0.0,0.0,0
+hawaii_Red Hill FRA,hawaii,2022-11-20,forecast,0.0,4.0,17.0,1
 hawaii_South Kona Opelu Mgmt Special Rules,hawaii,2022-06-12,nowcast,0.0,0.0,0.0,0
 hawaii_South Kona Opelu Mgmt Special Rules,hawaii,2022-06-19,nowcast,0.0,0.0,0.0,0
 hawaii_South Kona Opelu Mgmt Special Rules,hawaii,2022-06-26,nowcast,0.0,0.0,0.0,0
@@ -2075,11 +2074,11 @@ hawaii_South Kona Opelu Mgmt Special Rules,hawaii,2022-07-31,nowcast,0.0,0.0,0.0
 hawaii_South Kona Opelu Mgmt Special Rules,hawaii,2022-08-07,nowcast,0.0,0.0,0.0,0
 hawaii_South Kona Opelu Mgmt Special Rules,hawaii,2022-08-14,nowcast,0.0,0.0,0.0,0
 hawaii_South Kona Opelu Mgmt Special Rules,hawaii,2022-08-21,nowcast,0.0,0.0,0.0,0
-hawaii_South Kona Opelu Mgmt Special Rules,hawaii,2022-08-28,forecast,0.0,0.0,0.0,0
+hawaii_South Kona Opelu Mgmt Special Rules,hawaii,2022-08-28,nowcast,0.0,0.0,0.0,0
 hawaii_South Kona Opelu Mgmt Special Rules,hawaii,2022-09-04,forecast,0.0,0.0,0.0,0
 hawaii_South Kona Opelu Mgmt Special Rules,hawaii,2022-09-11,forecast,0.0,0.0,0.0,0
-hawaii_South Kona Opelu Mgmt Special Rules,hawaii,2022-09-18,forecast,0.0,0.0,7.0,0
-hawaii_South Kona Opelu Mgmt Special Rules,hawaii,2022-09-25,forecast,0.0,6.0,17.0,2
+hawaii_South Kona Opelu Mgmt Special Rules,hawaii,2022-09-18,forecast,0.0,0.0,0.0,0
+hawaii_South Kona Opelu Mgmt Special Rules,hawaii,2022-09-25,forecast,0.0,0.0,7.0,0
 hawaii_South Kona Opelu Mgmt Special Rules,hawaii,2022-10-02,forecast,0.0,4.0,17.0,1
 hawaii_South Kona Opelu Mgmt Special Rules,hawaii,2022-10-09,forecast,0.0,4.0,17.0,1
 hawaii_South Kona Opelu Mgmt Special Rules,hawaii,2022-10-16,forecast,0.0,4.0,17.0,1
@@ -2087,7 +2086,7 @@ hawaii_South Kona Opelu Mgmt Special Rules,hawaii,2022-10-23,forecast,0.0,4.0,17
 hawaii_South Kona Opelu Mgmt Special Rules,hawaii,2022-10-30,forecast,0.0,4.0,17.0,1
 hawaii_South Kona Opelu Mgmt Special Rules,hawaii,2022-11-06,forecast,0.0,4.0,17.0,1
 hawaii_South Kona Opelu Mgmt Special Rules,hawaii,2022-11-13,forecast,0.0,4.0,17.0,1
-hawaii_Upolu Pt (BRFA K),hawaii,2022-06-05,nowcast,0.0,0.0,0.0,0
+hawaii_South Kona Opelu Mgmt Special Rules,hawaii,2022-11-20,forecast,0.0,4.0,17.0,1
 hawaii_Upolu Pt (BRFA K),hawaii,2022-06-12,nowcast,0.0,0.0,0.0,0
 hawaii_Upolu Pt (BRFA K),hawaii,2022-06-19,nowcast,0.0,0.0,0.0,0
 hawaii_Upolu Pt (BRFA K),hawaii,2022-06-26,nowcast,0.0,0.0,0.0,0
@@ -2099,19 +2098,19 @@ hawaii_Upolu Pt (BRFA K),hawaii,2022-07-31,nowcast,0.0,0.0,0.0,0
 hawaii_Upolu Pt (BRFA K),hawaii,2022-08-07,nowcast,0.0,0.0,0.0,0
 hawaii_Upolu Pt (BRFA K),hawaii,2022-08-14,nowcast,0.0,0.0,0.0,0
 hawaii_Upolu Pt (BRFA K),hawaii,2022-08-21,nowcast,0.0,0.0,0.0,0
-hawaii_Upolu Pt (BRFA K),hawaii,2022-08-28,forecast,0.0,0.0,0.0,0
+hawaii_Upolu Pt (BRFA K),hawaii,2022-08-28,nowcast,0.0,0.0,0.0,0
 hawaii_Upolu Pt (BRFA K),hawaii,2022-09-04,forecast,0.0,0.0,0.0,0
 hawaii_Upolu Pt (BRFA K),hawaii,2022-09-11,forecast,0.0,0.0,0.0,0
-hawaii_Upolu Pt (BRFA K),hawaii,2022-09-18,forecast,0.0,0.0,1.0,0
-hawaii_Upolu Pt (BRFA K),hawaii,2022-09-25,forecast,0.0,0.0,7.0,0
-hawaii_Upolu Pt (BRFA K),hawaii,2022-10-02,forecast,0.0,3.1000000000000014,17.0,1
+hawaii_Upolu Pt (BRFA K),hawaii,2022-09-18,forecast,0.0,0.0,0.0,0
+hawaii_Upolu Pt (BRFA K),hawaii,2022-09-25,forecast,0.0,0.0,0.0,0
+hawaii_Upolu Pt (BRFA K),hawaii,2022-10-02,forecast,0.0,0.0,7.0,0
 hawaii_Upolu Pt (BRFA K),hawaii,2022-10-09,forecast,0.0,3.1000000000000014,17.0,1
 hawaii_Upolu Pt (BRFA K),hawaii,2022-10-16,forecast,0.0,3.1000000000000014,17.0,1
 hawaii_Upolu Pt (BRFA K),hawaii,2022-10-23,forecast,0.0,3.1000000000000014,17.0,1
 hawaii_Upolu Pt (BRFA K),hawaii,2022-10-30,forecast,0.0,3.1000000000000014,17.0,1
 hawaii_Upolu Pt (BRFA K),hawaii,2022-11-06,forecast,0.0,4.0,17.0,1
 hawaii_Upolu Pt (BRFA K),hawaii,2022-11-13,forecast,0.0,4.0,17.0,1
-hawaii_Waiakea PFA,hawaii,2022-06-05,nowcast,40.0,60.0,68.0,4
+hawaii_Upolu Pt (BRFA K),hawaii,2022-11-20,forecast,0.0,4.0,17.0,1
 hawaii_Waiakea PFA,hawaii,2022-06-12,nowcast,40.0,60.0,68.0,4
 hawaii_Waiakea PFA,hawaii,2022-06-19,nowcast,40.0,60.0,68.0,4
 hawaii_Waiakea PFA,hawaii,2022-06-26,nowcast,40.0,60.0,68.0,4
@@ -2123,7 +2122,7 @@ hawaii_Waiakea PFA,hawaii,2022-07-31,nowcast,39.0,60.0,68.0,4
 hawaii_Waiakea PFA,hawaii,2022-08-07,nowcast,18.0,68.0,80.0,4
 hawaii_Waiakea PFA,hawaii,2022-08-14,nowcast,18.0,68.0,80.0,4
 hawaii_Waiakea PFA,hawaii,2022-08-21,nowcast,18.0,68.0,80.0,4
-hawaii_Waiakea PFA,hawaii,2022-08-28,forecast,18.0,68.0,80.0,4
+hawaii_Waiakea PFA,hawaii,2022-08-28,nowcast,18.0,68.0,80.0,4
 hawaii_Waiakea PFA,hawaii,2022-09-04,forecast,16.0,68.0,82.0,4
 hawaii_Waiakea PFA,hawaii,2022-09-11,forecast,16.0,68.0,82.0,4
 hawaii_Waiakea PFA,hawaii,2022-09-18,forecast,16.0,68.0,82.0,4
@@ -2135,7 +2134,7 @@ hawaii_Waiakea PFA,hawaii,2022-10-23,forecast,16.0,68.0,82.0,4
 hawaii_Waiakea PFA,hawaii,2022-10-30,forecast,16.0,68.0,82.0,4
 hawaii_Waiakea PFA,hawaii,2022-11-06,forecast,5.0,67.0,80.0,4
 hawaii_Waiakea PFA,hawaii,2022-11-13,forecast,5.0,67.0,80.0,4
-hawaii_Wawaloli FMA,hawaii,2022-06-05,nowcast,0.0,0.0,0.0,0
+hawaii_Waiakea PFA,hawaii,2022-11-20,forecast,5.0,67.0,80.0,4
 hawaii_Wawaloli FMA,hawaii,2022-06-12,nowcast,0.0,0.0,0.0,0
 hawaii_Wawaloli FMA,hawaii,2022-06-19,nowcast,0.0,0.0,0.0,0
 hawaii_Wawaloli FMA,hawaii,2022-06-26,nowcast,0.0,0.0,0.0,0
@@ -2147,11 +2146,11 @@ hawaii_Wawaloli FMA,hawaii,2022-07-31,nowcast,0.0,0.0,0.0,0
 hawaii_Wawaloli FMA,hawaii,2022-08-07,nowcast,0.0,0.0,0.0,0
 hawaii_Wawaloli FMA,hawaii,2022-08-14,nowcast,0.0,0.0,0.0,0
 hawaii_Wawaloli FMA,hawaii,2022-08-21,nowcast,0.0,0.0,0.0,0
-hawaii_Wawaloli FMA,hawaii,2022-08-28,forecast,0.0,0.0,0.0,0
+hawaii_Wawaloli FMA,hawaii,2022-08-28,nowcast,0.0,0.0,0.0,0
 hawaii_Wawaloli FMA,hawaii,2022-09-04,forecast,0.0,0.0,0.0,0
 hawaii_Wawaloli FMA,hawaii,2022-09-11,forecast,0.0,0.0,0.0,0
-hawaii_Wawaloli FMA,hawaii,2022-09-18,forecast,0.0,0.0,7.0,0
-hawaii_Wawaloli FMA,hawaii,2022-09-25,forecast,0.0,6.0,17.0,2
+hawaii_Wawaloli FMA,hawaii,2022-09-18,forecast,0.0,0.0,0.0,0
+hawaii_Wawaloli FMA,hawaii,2022-09-25,forecast,0.0,0.0,7.0,0
 hawaii_Wawaloli FMA,hawaii,2022-10-02,forecast,0.0,4.0,17.0,1
 hawaii_Wawaloli FMA,hawaii,2022-10-09,forecast,0.0,4.0,17.0,1
 hawaii_Wawaloli FMA,hawaii,2022-10-16,forecast,0.0,4.0,17.0,1
@@ -2159,7 +2158,7 @@ hawaii_Wawaloli FMA,hawaii,2022-10-23,forecast,0.0,4.0,17.0,1
 hawaii_Wawaloli FMA,hawaii,2022-10-30,forecast,0.0,4.0,17.0,1
 hawaii_Wawaloli FMA,hawaii,2022-11-06,forecast,0.0,4.0,17.0,1
 hawaii_Wawaloli FMA,hawaii,2022-11-13,forecast,0.0,4.0,17.0,1
-hawaii_West Hawaii Regional FMA,hawaii,2022-06-05,nowcast,0.0,0.0,0.0,0
+hawaii_Wawaloli FMA,hawaii,2022-11-20,forecast,0.0,4.0,17.0,1
 hawaii_West Hawaii Regional FMA,hawaii,2022-06-12,nowcast,0.0,0.0,0.0,0
 hawaii_West Hawaii Regional FMA,hawaii,2022-06-19,nowcast,0.0,0.0,0.0,0
 hawaii_West Hawaii Regional FMA,hawaii,2022-06-26,nowcast,0.0,0.0,0.0,0
@@ -2171,11 +2170,11 @@ hawaii_West Hawaii Regional FMA,hawaii,2022-07-31,nowcast,0.0,0.0,0.0,0
 hawaii_West Hawaii Regional FMA,hawaii,2022-08-07,nowcast,0.0,0.0,0.0,0
 hawaii_West Hawaii Regional FMA,hawaii,2022-08-14,nowcast,0.0,0.0,0.0,0
 hawaii_West Hawaii Regional FMA,hawaii,2022-08-21,nowcast,0.0,0.0,0.0,0
-hawaii_West Hawaii Regional FMA,hawaii,2022-08-28,forecast,0.0,0.0,0.0,0
+hawaii_West Hawaii Regional FMA,hawaii,2022-08-28,nowcast,0.0,0.0,0.0,0
 hawaii_West Hawaii Regional FMA,hawaii,2022-09-04,forecast,0.0,0.0,0.0,0
 hawaii_West Hawaii Regional FMA,hawaii,2022-09-11,forecast,0.0,0.0,0.0,0
-hawaii_West Hawaii Regional FMA,hawaii,2022-09-18,forecast,0.0,0.0,7.0,0
-hawaii_West Hawaii Regional FMA,hawaii,2022-09-25,forecast,0.0,6.0,17.0,2
+hawaii_West Hawaii Regional FMA,hawaii,2022-09-18,forecast,0.0,0.0,0.0,0
+hawaii_West Hawaii Regional FMA,hawaii,2022-09-25,forecast,0.0,0.0,7.0,0
 hawaii_West Hawaii Regional FMA,hawaii,2022-10-02,forecast,0.0,4.0,17.0,1
 hawaii_West Hawaii Regional FMA,hawaii,2022-10-09,forecast,0.0,4.0,17.0,1
 hawaii_West Hawaii Regional FMA,hawaii,2022-10-16,forecast,0.0,4.0,17.0,1
@@ -2183,3 +2182,4 @@ hawaii_West Hawaii Regional FMA,hawaii,2022-10-23,forecast,0.0,4.0,17.0,1
 hawaii_West Hawaii Regional FMA,hawaii,2022-10-30,forecast,0.0,4.0,17.0,1
 hawaii_West Hawaii Regional FMA,hawaii,2022-11-06,forecast,0.0,4.0,17.0,1
 hawaii_West Hawaii Regional FMA,hawaii,2022-11-13,forecast,0.0,4.0,17.0,1
+hawaii_West Hawaii Regional FMA,hawaii,2022-11-20,forecast,0.0,4.0,17.0,1

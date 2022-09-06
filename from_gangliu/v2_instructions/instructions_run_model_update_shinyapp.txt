@@ -4,6 +4,7 @@
 
 Instrutions History:   (latest version at the top)
 
+2022/08/22 Gang Liu : Updated, after Matt implemented full automation in GitHub.
 2022/08/01 Gang Liu : Initial development.
 
 ==============================================================================================
@@ -204,7 +205,7 @@ finished forec5km_sst-mean-90d_v1.0_wake_reef-id_20220731.nc
      ls -l /data/home004/gang.liu/crw_github_jms5151/uh-noaa-shiny-app/forec_shiny_app_data/Scenarios
 16) cd /data/home004/gang.liu/crw_github_jms5151/uh-noaa-shiny-app
 17) git add .
-18) git commit -m "Weekly data update of yyyy/mm/dd."
+18) git commit -m "Weekly data update of Monday yyyy/mm/dd."
       [gang.liu@rhw1237 uh-noaa-shiny-app]$ git commit -m "Weekly data update of 2022/08/01."
       [main 05cd3d3] Weekly data update of 2022/08/01.
       46 files changed, 262784 insertions(+), 262784 deletions(-)
@@ -242,26 +243,47 @@ finished forec5km_sst-mean-90d_v1.0_wake_reef-id_20220731.nc
       a220ad8..05cd3d3  main -> main
 
 ----------------------------------------------------------------------------------------------
-21) Get onto GitHub web account:
+21) Get onto GitHub web account: https://github/com
 22) Enter repository:  jms5151/uh-noaa-shiny-app 
 23) Click on "Actions" in the top horizonal navigation bar.
-24) On this webpage, in the main part of the browser window, you may see a spinning "Build" 
-    or a just-completed green-checked "Build". It may take a few minutes to 20+ minutes. Wait 
-    until it completes.
-25) Once "build" completes, click on "Deploy" in the left navigation bar.
-26) In the top right area of the main window, click on "Run workflow" pull-down menu.
-27) Click on "Run workflow" button. Wait for a few seconds, a spinning "Deploy" will appear. 
-    May need to click on refresh button of the browser to see the spinning "deploy". It 
-    usually runs for a couple to a few minutes.
+
+24) On this webpage, in the main part of the browser window titled "Build and Deploy", you 
+    may see a spinning action item at the top of the list, named with text entered at the 
+    git commit in Step 18 above.
+
+    It may take a few minutes to 20+ minutes. Wait until it completes.
+
+    It may have already completed when you check it.
 
 ----------------------------------------------------------------------------------------------
-28) Get onto Shiny App web page: https://coraldisease.com
-29) Click on any data grid (oragne colored grid preferred to see the border (a gap) between 
+25) Get onto Shiny App web page: https://coraldisease.com
+26) Click on any data grid (oragne colored grid preferred to see the border (a gap) between 
     observations and predictions on the lower right panel. 
 
 ----------------------------------------------------------------------------------------------
-30) If the data are updated on the website, all good! Wati until the next Monday or Tuesday
+27) If the data are updated on the website, all good! Wati until the next Monday or Tuesday
     for the next update.
+
+==============================================================================================
+
+
+
+
+==============================================================================================
+Previous processing before processing improvement:
+
+2022-08-22:
+The following 4 steps have been replaced by one automated action taking care of both "build"
+and "deploy" (work done by Matt):
+
+24) On this webpage, in the main part of the browser window, you may see a spinning "Build"
+    or a just-completed green-checked "Build". It may take a few minutes to 20+ minutes. Wait
+    until it completes.
+25) Once "build" completes, click on "Deploy" in the left navigation bar.
+26) In the top right area of the main window, click on "Run workflow" pull-down menu.
+27) Click on "Run workflow" button. Wait for a few seconds, a spinning "Deploy" will appear.
+    May need to click on refresh button of the browser to see the spinning "deploy". It
+    usually runs for a couple to a few minutes.
  
 ==============================================================================================
 The end

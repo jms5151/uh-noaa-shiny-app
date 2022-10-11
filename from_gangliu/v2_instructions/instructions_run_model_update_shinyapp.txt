@@ -87,14 +87,46 @@ Follow the following steps to run processing every Monday (late afternoon/evenin
    --> If any file with zero size: Stop. Check what is wrong with the data files.
 
 ----------------------------------------------------------------------------------------------
-4) Get onto rhw1352
+4) Get onto rhw1321 (that contains internally data568; or rhw1352)
 5) cd /data/data568/crw/code/proc_nrt/forec/model/v2
 6) conda activate forec_model_v20220624
 7) Run the model:   --- It usually takes about 10-15 minutes to run.
 
-   (forec_model_v20220624_test) [gang.liu@rhw1352 v2]$ python ForeC_master_code.py
+   (forec_model_v20220624) [gang.liu@rhw1321 v2]$ python ForeC_master_code.py
 
    Screen print out (of the current version of the code):
+
+
+
+   ****************************************
+   *****  to be looked into:
+
+   This is new, stated on Oct 3, 2022 run:
+
+/data/home004/gang.liu/miniconda3/envs/forec_model_v20220624/lib/python3.8/site-packages/geopandas/array.py:85: ShapelyDeprecationWarning: __len__ for multi-part geometries is deprec
+ated and will be removed in Shapely 2.0. Check the length of the `geoms` property instead to get the  number of parts of a multi-part geometry.
+  aout[:] = out
+/data/home004/gang.liu/miniconda3/envs/forec_model_v20220624/lib/python3.8/site-packages/geopandas/array.py:85: ShapelyDeprecationWarning: __len__ for multi-part geometries is deprec
+ated and will be removed in Shapely 2.0. Check the length of the `geoms` property instead to get the  number of parts of a multi-part geometry.
+  aout[:] = out
+
+
+  ***************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
    ---------------------------------------------
   Hello, I am in!
@@ -184,7 +216,7 @@ finished forec5km_sst-mean-90d_v1.0_wake_reef-id_20220731.nc
   aout[:] = out
 
   CRW outputs:
-(forec_model_v20220624_test) [gang.liu@rhw1352 v2]$
+(forec_model_v20220624) [gang.liu@rhw1321 v2]$
 
 ----------------------------------------------------------------------------------------------
 8) cd /data/home004/gang.liu/crw_github_jms5151/uh-noaa-shiny-app

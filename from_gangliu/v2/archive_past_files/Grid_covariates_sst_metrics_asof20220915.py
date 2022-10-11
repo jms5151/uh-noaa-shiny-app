@@ -2,18 +2,6 @@
 """
 Download and format SST data from satellite observations and CFS
 Last update: 2022-June-23
-
-==============================================================================================
-#
-#  Programming history
-#
-#  (At the Coral Reef Watch implemention)
-#
-#  2022/09/26 Gang Liu : Added a component to read date tracking file to determine which
-#                      : Monday to process. This is to enable automatied processing.
-#
-#=============================================================================================
-
 """
 
 # load modules
@@ -29,58 +17,17 @@ from functions.fun_winter_condition_offset import winter_condition_offset
 # set temporary filepath
 from filepaths import tmp_path, input_path
 
-##=============================================================================================
-## This section is replaced by the following section for automated processing:
-##
-## list weekly SST files --------------------------------------
-##
-## list directories, named by date
-## parent_ftp_filepath = 'https://www.star.nesdis.noaa.gov/pub/sod/mecb/crw/data/for_forec/shiny_app/'
-## 
-## files = list_ftp_files(parent_ftp_filepath)
-## 
-## parent_file = [i for i in files if i.startswith('2')][-1]
-##
-## child_ftp_filepath = parent_ftp_filepath + parent_file
-##
-##============================================================================================
+# list weekly SST files --------------------------------------
 
-#=============================================================================================
-# New section to enable automated processing through reading date from a date track file:
-
-import os
-from datetime import datetime, date, timedelta
-
+# list directories, named by date
 parent_ftp_filepath = 'https://www.star.nesdis.noaa.gov/pub/sod/mecb/crw/data/for_forec/shiny_app/'
 
-path_track_date = '/data/data568/crw/code/proc_nrt/forec/model/v2/track_date_auto'
-file_track_date = 'track_date_forec_model_run_auto.txt'
-filepathname_track_date = os.path.join(path_track_date, file_track_date)
-print("Read date tracking file: ", filepathname_track_date)
+files = list_ftp_files(parent_ftp_filepath)
 
-if os.path.isfile(filepathname_track_date):         # or: if os.path.exists(filepathname_track_date):
-    fdate = open(filepathname_track_date, "rt")
-    val = fdate.read().split()[0]
-    s_date_last_processing = val[0:8]
-    print("\nThe last processed date (read from date tracking file):      ", s_date_last_processing)
-    date_last_processing = date(int(val[0:4]),int(val[4:6]),int(val[6:8]))
-    print("The last processed date (input from date tracking file):     ", date_last_processing)
+parent_file = [i for i in files if i.startswith('2')][-1]
 
-    date_to_be_processed = date_last_processing + timedelta(days=7)
-    date_filepath = '%04d%02d%02d' % (date_to_be_processed.year, \
-                                        date_to_be_processed.month, date_to_be_processed.day) + '/'
-    fdate.close()
-else:
-    raise OSError(404, "File not found", filepathname_track_date)
-
-print('date_filepath', date_filepath)
-
-child_ftp_filepath = parent_ftp_filepath + date_filepath
-
-#=============================================================================================
-
-#---------------------------------------------------------------------------------------------
-
+child_ftp_filepath = parent_ftp_filepath + parent_file
+ 
 files = list_ftp_files(child_ftp_filepath)
 
 # remove extraneous file names
@@ -91,7 +38,7 @@ for jj in files:
     # download file
     nc_source_filepath = child_ftp_filepath + jj
     nc_dest_filepath = tmp_path + jj
-    wget.download(nc_source_filepath, out=nc_dest_filepath)
+    wget.download(nc_source_filepath, out = nc_dest_filepath)
 
 # format data ------------------------------------------------
 

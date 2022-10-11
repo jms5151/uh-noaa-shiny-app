@@ -1,0 +1,743 @@
+  
+                   Executing:   starter_run_forec_model_v2.sh
+  
+  ======================================================================================
+                        Activate Python environment first:
+  ======================================================================================
+  
+  $HOME = /data/home004/gang.liu
+  Python version of the forec_model_v20220624 environment:
+# conda environments:
+#
+base                     /data/home004/gang.liu/miniconda3
+5km_v3.1_op_plus_dz_plus_v20220218     /data/home004/gang.liu/miniconda3/envs/5km_v3.1_op_plus_dz_plus_v20220218
+5km_v3.1_op_plus_dz_plus_v20220224     /data/home004/gang.liu/miniconda3/envs/5km_v3.1_op_plus_dz_plus_v20220224
+5km_v3.1_op_plus_dz_v20210406     /data/home004/gang.liu/miniconda3/envs/5km_v3.1_op_plus_dz_v20210406
+5km_v3.1_op_v20210108     /data/home004/gang.liu/miniconda3/envs/5km_v3.1_op_v20210108
+forec_model_v20220624  *  /data/home004/gang.liu/miniconda3/envs/forec_model_v20220624
+forec_model_v20220624_test     /data/home004/gang.liu/miniconda3/envs/forec_model_v20220624_test
+tutorialenv              /data/home004/gang.liu/miniconda3/envs/tutorialenv
+
+Python 3.8.8
+  
+  =====================================================================================
+                        Execute model run:
+  =====================================================================================
+  
+ 
+  ======================================================================================
+  =========================== Run weekly FORE-C update =================================
+                             (in run_forec_model_v2.sh)
+  ======================================================================================
+  
+  -- Starting time: Mon Oct 10 21:30:11 UTC 2022
+  
+  User's home directory: /data/home004/gang.liu
+  Host name:             rhw1321.star1.nesdis.noaa.gov
+  
+  Running script: ./run_forec_model_v2.sh
+
+  There are 0 arguments passed to ./run_forec_model_v2.sh: 
+            
+ 
+  =====================================================================================
+  Section 1. Set up directories:
+  -------------------------------------------------------------------------------------
+  
+  dir_code: /data/data568/crw/code/proc_nrt/forec/model/v2
+  dir_root_source_data_to_examine: /data/aftp/socd/mecb/crw/data/for_forec/shiny_app
+  
+  pathfile_log_date: /data/data568/crw/code/proc_nrt/forec/model/v2/track_date_auto/track_date_forec_model_run_auto.txt
+  dir_log_error:     /data/data568/crw/code/proc_nrt/forec/model/v2/track_error_auto
+  
+  dir_root_output_shinyapp: /data/data568/crwdir/product/forec/model/v2/uh-noaa-shiny-app/forec_shiny_app_data
+  dir_root_output_crw:      /data/data568/crwdir/product/forec/model/v2/crw_outputs
+  
+
+  ======================================================================================
+  Section 2. Examine weekly input source data files and determine whether to run model:
+  --------------------------------------------------------------------------------------
+
+  ----- Today's system date: 20221010
+
+  ----------------------------------------------------------------
+  
+  ----- Date of the last successfully processed Monday:           20221003
+  
+  ----- Date to be processed processed Monday:  20221010
+  ----- Date to be read Sunday   (satellite):   20221009
+  ----- Date to be read Saturday (prediction):  20221008
+
+  ----- Proceed to processing:
+  
+  Regions to check:            gbr
+  
+  # of variables to check (should be 6):     6
+  Variables to check:          cfsv2_hotsnap cfsv2_mean-90d cfsv2_wintcond dz-v3.0_hdw dz-v3.0_wdw forec5km_sst-mean-90d_v1.0
+  Dates of variables:          20221008 20221008 20221008 20221009 20221009 20221009
+  Expected minimum file sizes: 900000 7000000 9000000 10000 10000 10000
+  
+  Search and examine file: /data/aftp/socd/mecb/crw/data/for_forec/shiny_app/20221010/cfsv2_hotsnap_gbr_reef-id_20221008.nc
+  --- Found file!
+      --- Good file size: 9974916 - larger than minimum expected (900000).
+  Search and examine file: /data/aftp/socd/mecb/crw/data/for_forec/shiny_app/20221010/cfsv2_mean-90d_gbr_reef-id_20221008.nc
+  --- Found file!
+      --- Good file size: 9255017 - larger than minimum expected (7000000).
+  Search and examine file: /data/aftp/socd/mecb/crw/data/for_forec/shiny_app/20221010/cfsv2_wintcond_gbr_reef-id_20221008.nc
+  --- Found file!
+      --- Good file size: 10178990 - larger than minimum expected (9000000).
+  Search and examine file: /data/aftp/socd/mecb/crw/data/for_forec/shiny_app/20221010/dz-v3.0_hdw_gbr_reef-id_20221009.nc
+  --- Found file!
+      --- Good file size: 23497 - larger than minimum expected (10000).
+  Search and examine file: /data/aftp/socd/mecb/crw/data/for_forec/shiny_app/20221010/dz-v3.0_wdw_gbr_reef-id_20221009.nc
+  --- Found file!
+      --- Good file size: 37422 - larger than minimum expected (10000).
+  Search and examine file: /data/aftp/socd/mecb/crw/data/for_forec/shiny_app/20221010/forec5km_sst-mean-90d_v1.0_gbr_reef-id_20221009.nc
+  --- Found file!
+      --- Good file size: 31312 - larger than minimum expected (10000).
+  
+  Regions to check:            guam_cnmi
+  
+  # of variables to check (should be 6):     6
+  Variables to check:          cfsv2_hotsnap cfsv2_mean-90d cfsv2_wintcond dz-v3.0_hdw dz-v3.0_wdw forec5km_sst-mean-90d_v1.0
+  Dates of variables:          20221008 20221008 20221008 20221009 20221009 20221009
+  Expected minimum file sizes: 40000 100000 100000 10000 10000 10000
+  
+  Search and examine file: /data/aftp/socd/mecb/crw/data/for_forec/shiny_app/20221010/cfsv2_hotsnap_guam_cnmi_reef-id_20221008.nc
+  --- Found file!
+      --- Good file size: 41821 - larger than minimum expected (40000).
+  Search and examine file: /data/aftp/socd/mecb/crw/data/for_forec/shiny_app/20221010/cfsv2_mean-90d_guam_cnmi_reef-id_20221008.nc
+  --- Found file!
+      --- Good file size: 328350 - larger than minimum expected (100000).
+  Search and examine file: /data/aftp/socd/mecb/crw/data/for_forec/shiny_app/20221010/cfsv2_wintcond_guam_cnmi_reef-id_20221008.nc
+  --- Found file!
+      --- Good file size: 403267 - larger than minimum expected (100000).
+  Search and examine file: /data/aftp/socd/mecb/crw/data/for_forec/shiny_app/20221010/dz-v3.0_hdw_guam_cnmi_reef-id_20221009.nc
+  --- Found file!
+      --- Good file size: 23308 - larger than minimum expected (10000).
+  Search and examine file: /data/aftp/socd/mecb/crw/data/for_forec/shiny_app/20221010/dz-v3.0_wdw_guam_cnmi_reef-id_20221009.nc
+  --- Found file!
+      --- Good file size: 22804 - larger than minimum expected (10000).
+  Search and examine file: /data/aftp/socd/mecb/crw/data/for_forec/shiny_app/20221010/forec5km_sst-mean-90d_v1.0_guam_cnmi_reef-id_20221009.nc
+  --- Found file!
+      --- Good file size: 23506 - larger than minimum expected (10000).
+  
+  Regions to check:            hawaii
+  
+  # of variables to check (should be 6):     6
+  Variables to check:          cfsv2_hotsnap cfsv2_mean-90d cfsv2_wintcond dz-v3.0_hdw dz-v3.0_wdw forec5km_sst-mean-90d_v1.0
+  Dates of variables:          20221008 20221008 20221008 20221009 20221009 20221009
+  Expected minimum file sizes: 10000 800000 800000 10000 10000 10000
+  
+  Search and examine file: /data/aftp/socd/mecb/crw/data/for_forec/shiny_app/20221010/cfsv2_hotsnap_hawaii_reef-id_20221008.nc
+  --- Found file!
+      --- Good file size: 167837 - larger than minimum expected (10000).
+  Search and examine file: /data/aftp/socd/mecb/crw/data/for_forec/shiny_app/20221010/cfsv2_mean-90d_hawaii_reef-id_20221008.nc
+  --- Found file!
+      --- Good file size: 1290571 - larger than minimum expected (800000).
+  Search and examine file: /data/aftp/socd/mecb/crw/data/for_forec/shiny_app/20221010/cfsv2_wintcond_hawaii_reef-id_20221008.nc
+  --- Found file!
+      --- Good file size: 1576229 - larger than minimum expected (800000).
+  Search and examine file: /data/aftp/socd/mecb/crw/data/for_forec/shiny_app/20221010/dz-v3.0_hdw_hawaii_reef-id_20221009.nc
+  --- Found file!
+      --- Good file size: 25017 - larger than minimum expected (10000).
+  Search and examine file: /data/aftp/socd/mecb/crw/data/for_forec/shiny_app/20221010/dz-v3.0_wdw_hawaii_reef-id_20221009.nc
+  --- Found file!
+      --- Good file size: 24936 - larger than minimum expected (10000).
+  Search and examine file: /data/aftp/socd/mecb/crw/data/for_forec/shiny_app/20221010/forec5km_sst-mean-90d_v1.0_hawaii_reef-id_20221009.nc
+  --- Found file!
+      --- Good file size: 24459 - larger than minimum expected (10000).
+  
+  Regions to check:            howland_baker
+  
+  # of variables to check (should be 6):     6
+  Variables to check:          cfsv2_hotsnap cfsv2_mean-90d cfsv2_wintcond dz-v3.0_hdw dz-v3.0_wdw forec5km_sst-mean-90d_v1.0
+  Dates of variables:          20221008 20221008 20221008 20221009 20221009 20221009
+  Expected minimum file sizes: 10000 20000 30000 10000 10000 10000
+  
+  Search and examine file: /data/aftp/socd/mecb/crw/data/for_forec/shiny_app/20221010/cfsv2_hotsnap_howland_baker_reef-id_20221008.nc
+  --- Found file!
+      --- Good file size: 26442 - larger than minimum expected (10000).
+  Search and examine file: /data/aftp/socd/mecb/crw/data/for_forec/shiny_app/20221010/cfsv2_mean-90d_howland_baker_reef-id_20221008.nc
+  --- Found file!
+      --- Good file size: 40658 - larger than minimum expected (20000).
+  Search and examine file: /data/aftp/socd/mecb/crw/data/for_forec/shiny_app/20221010/cfsv2_wintcond_howland_baker_reef-id_20221008.nc
+  --- Found file!
+      --- Good file size: 53133 - larger than minimum expected (30000).
+  Search and examine file: /data/aftp/socd/mecb/crw/data/for_forec/shiny_app/20221010/dz-v3.0_hdw_howland_baker_reef-id_20221009.nc
+  --- Found file!
+      --- Good file size: 22639 - larger than minimum expected (10000).
+  Search and examine file: /data/aftp/socd/mecb/crw/data/for_forec/shiny_app/20221010/dz-v3.0_wdw_howland_baker_reef-id_20221009.nc
+  --- Found file!
+      --- Good file size: 22685 - larger than minimum expected (10000).
+  Search and examine file: /data/aftp/socd/mecb/crw/data/for_forec/shiny_app/20221010/forec5km_sst-mean-90d_v1.0_howland_baker_reef-id_20221009.nc
+  --- Found file!
+      --- Good file size: 23140 - larger than minimum expected (10000).
+  
+  Regions to check:            jarvis
+  
+  # of variables to check (should be 6):     6
+  Variables to check:          cfsv2_hotsnap cfsv2_mean-90d cfsv2_wintcond dz-v3.0_hdw dz-v3.0_wdw forec5km_sst-mean-90d_v1.0
+  Dates of variables:          20221008 20221008 20221008 20221009 20221009 20221009
+  Expected minimum file sizes: 10000 10000 10000 10000 10000 10000
+  
+  Search and examine file: /data/aftp/socd/mecb/crw/data/for_forec/shiny_app/20221010/cfsv2_hotsnap_jarvis_reef-id_20221008.nc
+  --- Found file!
+      --- Good file size: 20850 - larger than minimum expected (10000).
+  Search and examine file: /data/aftp/socd/mecb/crw/data/for_forec/shiny_app/20221010/cfsv2_mean-90d_jarvis_reef-id_20221008.nc
+  --- Found file!
+      --- Good file size: 24829 - larger than minimum expected (10000).
+  Search and examine file: /data/aftp/socd/mecb/crw/data/for_forec/shiny_app/20221010/cfsv2_wintcond_jarvis_reef-id_20221008.nc
+  --- Found file!
+      --- Good file size: 26075 - larger than minimum expected (10000).
+  Search and examine file: /data/aftp/socd/mecb/crw/data/for_forec/shiny_app/20221010/dz-v3.0_hdw_jarvis_reef-id_20221009.nc
+  --- Found file!
+      --- Good file size: 22618 - larger than minimum expected (10000).
+  Search and examine file: /data/aftp/socd/mecb/crw/data/for_forec/shiny_app/20221010/dz-v3.0_wdw_jarvis_reef-id_20221009.nc
+  --- Found file!
+      --- Good file size: 22632 - larger than minimum expected (10000).
+  Search and examine file: /data/aftp/socd/mecb/crw/data/for_forec/shiny_app/20221010/forec5km_sst-mean-90d_v1.0_jarvis_reef-id_20221009.nc
+  --- Found file!
+      --- Good file size: 23100 - larger than minimum expected (10000).
+  
+  Regions to check:            johnston
+  
+  # of variables to check (should be 6):     6
+  Variables to check:          cfsv2_hotsnap cfsv2_mean-90d cfsv2_wintcond dz-v3.0_hdw dz-v3.0_wdw forec5km_sst-mean-90d_v1.0
+  Dates of variables:          20221008 20221008 20221008 20221009 20221009 20221009
+  Expected minimum file sizes: 10000 40000 10000 10000 10000 10000
+  
+  Search and examine file: /data/aftp/socd/mecb/crw/data/for_forec/shiny_app/20221010/cfsv2_hotsnap_johnston_reef-id_20221008.nc
+  --- Found file!
+      --- Good file size: 22773 - larger than minimum expected (10000).
+  Search and examine file: /data/aftp/socd/mecb/crw/data/for_forec/shiny_app/20221010/cfsv2_mean-90d_johnston_reef-id_20221008.nc
+  --- Found file!
+      --- Good file size: 59205 - larger than minimum expected (40000).
+  Search and examine file: /data/aftp/socd/mecb/crw/data/for_forec/shiny_app/20221010/cfsv2_wintcond_johnston_reef-id_20221008.nc
+  --- Found file!
+      --- Good file size: 72376 - larger than minimum expected (10000).
+  Search and examine file: /data/aftp/socd/mecb/crw/data/for_forec/shiny_app/20221010/dz-v3.0_hdw_johnston_reef-id_20221009.nc
+  --- Found file!
+      --- Good file size: 22726 - larger than minimum expected (10000).
+  Search and examine file: /data/aftp/socd/mecb/crw/data/for_forec/shiny_app/20221010/dz-v3.0_wdw_johnston_reef-id_20221009.nc
+  --- Found file!
+      --- Good file size: 22656 - larger than minimum expected (10000).
+  Search and examine file: /data/aftp/socd/mecb/crw/data/for_forec/shiny_app/20221010/forec5km_sst-mean-90d_v1.0_johnston_reef-id_20221009.nc
+  --- Found file!
+      --- Good file size: 23165 - larger than minimum expected (10000).
+  
+  Regions to check:            palmyra_kingman
+  
+  # of variables to check (should be 6):     6
+  Variables to check:          cfsv2_hotsnap cfsv2_mean-90d cfsv2_wintcond dz-v3.0_hdw dz-v3.0_wdw forec5km_sst-mean-90d_v1.0
+  Dates of variables:          20221008 20221008 20221008 20221009 20221009 20221009
+  Expected minimum file sizes: 10000 30000 50000 10000 10000 10000
+  
+  Search and examine file: /data/aftp/socd/mecb/crw/data/for_forec/shiny_app/20221010/cfsv2_hotsnap_palmyra_kingman_reef-id_20221008.nc
+  --- Found file!
+      --- Good file size: 25700 - larger than minimum expected (10000).
+  Search and examine file: /data/aftp/socd/mecb/crw/data/for_forec/shiny_app/20221010/cfsv2_mean-90d_palmyra_kingman_reef-id_20221008.nc
+  --- Found file!
+      --- Good file size: 53657 - larger than minimum expected (30000).
+  Search and examine file: /data/aftp/socd/mecb/crw/data/for_forec/shiny_app/20221010/cfsv2_wintcond_palmyra_kingman_reef-id_20221008.nc
+  --- Found file!
+      --- Good file size: 69321 - larger than minimum expected (50000).
+  Search and examine file: /data/aftp/socd/mecb/crw/data/for_forec/shiny_app/20221010/dz-v3.0_hdw_palmyra_kingman_reef-id_20221009.nc
+  --- Found file!
+      --- Good file size: 22648 - larger than minimum expected (10000).
+  Search and examine file: /data/aftp/socd/mecb/crw/data/for_forec/shiny_app/20221010/dz-v3.0_wdw_palmyra_kingman_reef-id_20221009.nc
+  --- Found file!
+      --- Good file size: 22713 - larger than minimum expected (10000).
+  Search and examine file: /data/aftp/socd/mecb/crw/data/for_forec/shiny_app/20221010/forec5km_sst-mean-90d_v1.0_palmyra_kingman_reef-id_20221009.nc
+  --- Found file!
+      --- Good file size: 23160 - larger than minimum expected (10000).
+  
+  Regions to check:            samoas
+  
+  # of variables to check (should be 6):     6
+  Variables to check:          cfsv2_hotsnap cfsv2_mean-90d cfsv2_wintcond dz-v3.0_hdw dz-v3.0_wdw forec5km_sst-mean-90d_v1.0
+  Dates of variables:          20221008 20221008 20221008 20221009 20221009 20221009
+  Expected minimum file sizes: 10000 90000 140000 10000 10000 10000
+  
+  Search and examine file: /data/aftp/socd/mecb/crw/data/for_forec/shiny_app/20221010/cfsv2_hotsnap_samoas_reef-id_20221008.nc
+  --- Found file!
+      --- Good file size: 82789 - larger than minimum expected (10000).
+  Search and examine file: /data/aftp/socd/mecb/crw/data/for_forec/shiny_app/20221010/cfsv2_mean-90d_samoas_reef-id_20221008.nc
+  --- Found file!
+      --- Good file size: 119856 - larger than minimum expected (90000).
+  Search and examine file: /data/aftp/socd/mecb/crw/data/for_forec/shiny_app/20221010/cfsv2_wintcond_samoas_reef-id_20221008.nc
+  --- Found file!
+      --- Good file size: 163901 - larger than minimum expected (140000).
+  Search and examine file: /data/aftp/socd/mecb/crw/data/for_forec/shiny_app/20221010/dz-v3.0_hdw_samoas_reef-id_20221009.nc
+  --- Found file!
+      --- Good file size: 22679 - larger than minimum expected (10000).
+  Search and examine file: /data/aftp/socd/mecb/crw/data/for_forec/shiny_app/20221010/dz-v3.0_wdw_samoas_reef-id_20221009.nc
+  --- Found file!
+      --- Good file size: 22872 - larger than minimum expected (10000).
+  Search and examine file: /data/aftp/socd/mecb/crw/data/for_forec/shiny_app/20221010/forec5km_sst-mean-90d_v1.0_samoas_reef-id_20221009.nc
+  --- Found file!
+      --- Good file size: 23271 - larger than minimum expected (10000).
+  
+  Regions to check:            wake
+  
+  # of variables to check (should be 6):     6
+  Variables to check:          cfsv2_hotsnap cfsv2_mean-90d cfsv2_wintcond dz-v3.0_hdw dz-v3.0_wdw forec5km_sst-mean-90d_v1.0
+  Dates of variables:          20221008 20221008 20221008 20221009 20221009 20221009
+  Expected minimum file sizes: 10000 10000 10000 10000 10000 10000
+  
+  Search and examine file: /data/aftp/socd/mecb/crw/data/for_forec/shiny_app/20221010/cfsv2_hotsnap_wake_reef-id_20221008.nc
+  --- Found file!
+      --- Good file size: 20305 - larger than minimum expected (10000).
+  Search and examine file: /data/aftp/socd/mecb/crw/data/for_forec/shiny_app/20221010/cfsv2_mean-90d_wake_reef-id_20221008.nc
+  --- Found file!
+      --- Good file size: 31684 - larger than minimum expected (10000).
+  Search and examine file: /data/aftp/socd/mecb/crw/data/for_forec/shiny_app/20221010/cfsv2_wintcond_wake_reef-id_20221008.nc
+  --- Found file!
+      --- Good file size: 34918 - larger than minimum expected (10000).
+  Search and examine file: /data/aftp/socd/mecb/crw/data/for_forec/shiny_app/20221010/dz-v3.0_hdw_wake_reef-id_20221009.nc
+  --- Found file!
+      --- Good file size: 22639 - larger than minimum expected (10000).
+  Search and examine file: /data/aftp/socd/mecb/crw/data/for_forec/shiny_app/20221010/dz-v3.0_wdw_wake_reef-id_20221009.nc
+  --- Found file!
+      --- Good file size: 22630 - larger than minimum expected (10000).
+  Search and examine file: /data/aftp/socd/mecb/crw/data/for_forec/shiny_app/20221010/forec5km_sst-mean-90d_v1.0_wake_reef-id_20221009.nc
+  --- Found file!
+      --- Good file size: 23109 - larger than minimum expected (10000).
+  
+  Total number of files counted (54 files = 9 regions x 6 variable are expected):   54
+  
+  ************************************************************************************
+  GOOD! All files passed inspection! 
+  -----> processing to start:
+  
+
+  ======================================================================================
+  Section 3. Run FORE-C model v2.0.:
+  --------------------------------------------------------------------------------------
+/data/home004/gang.liu/miniconda3/envs/forec_model_v20220624/lib/python3.8/site-packages/geopandas/array.py:85: ShapelyDeprecationWarning: __len__ for multi-part geometries is deprecated and will be removed in Shapely 2.0. Check the length of the `geoms` property instead to get the  number of parts of a multi-part geometry.
+  aout[:] = out
+/data/home004/gang.liu/miniconda3/envs/forec_model_v20220624/lib/python3.8/site-packages/geopandas/array.py:85: ShapelyDeprecationWarning: __len__ for multi-part geometries is deprecated and will be removed in Shapely 2.0. Check the length of the `geoms` property instead to get the  number of parts of a multi-part geometry.
+  aout[:] = out
+
+  Running model in core processing stage: 
+
+  -- 1) Create tmp_path for temporary holding data, removed right after processing: 
+       /data/data568/crwdir/product/forec/model/v2/temp_files/
+
+  -- 2) Unzip files in repository: 
+       ---- Not needed for now. unpacked files will stay permanently without removal after each run.
+
+  -- 3) Compile NRT & forecasted SST metrics: Grid_covariates_sst_metrics.py
+Read date tracking file:  /data/data568/crw/code/proc_nrt/forec/model/v2/track_date_auto/track_date_forec_model_run_auto.txt
+
+The last processed date (read from date tracking file):       20221003
+The last processed date (input from date tracking file):      2022-10-03
+date_filepath 20221010/
+finished cfsv2_hotsnap_gbr_reef-id_20221008.nc
+finished cfsv2_hotsnap_guam_cnmi_reef-id_20221008.nc
+finished cfsv2_hotsnap_hawaii_reef-id_20221008.nc
+finished cfsv2_hotsnap_howland_baker_reef-id_20221008.nc
+finished cfsv2_hotsnap_jarvis_reef-id_20221008.nc
+finished cfsv2_hotsnap_johnston_reef-id_20221008.nc
+finished cfsv2_hotsnap_palmyra_kingman_reef-id_20221008.nc
+finished cfsv2_hotsnap_samoas_reef-id_20221008.nc
+finished cfsv2_hotsnap_wake_reef-id_20221008.nc
+finished cfsv2_mean-90d_gbr_reef-id_20221008.nc
+finished cfsv2_mean-90d_guam_cnmi_reef-id_20221008.nc
+finished cfsv2_mean-90d_hawaii_reef-id_20221008.nc
+finished cfsv2_mean-90d_howland_baker_reef-id_20221008.nc
+finished cfsv2_mean-90d_jarvis_reef-id_20221008.nc
+finished cfsv2_mean-90d_johnston_reef-id_20221008.nc
+finished cfsv2_mean-90d_palmyra_kingman_reef-id_20221008.nc
+finished cfsv2_mean-90d_samoas_reef-id_20221008.nc
+finished cfsv2_mean-90d_wake_reef-id_20221008.nc
+finished cfsv2_wintcond_gbr_reef-id_20221008.nc
+finished cfsv2_wintcond_guam_cnmi_reef-id_20221008.nc
+finished cfsv2_wintcond_hawaii_reef-id_20221008.nc
+finished cfsv2_wintcond_howland_baker_reef-id_20221008.nc
+finished cfsv2_wintcond_jarvis_reef-id_20221008.nc
+finished cfsv2_wintcond_johnston_reef-id_20221008.nc
+finished cfsv2_wintcond_palmyra_kingman_reef-id_20221008.nc
+finished cfsv2_wintcond_samoas_reef-id_20221008.nc
+finished cfsv2_wintcond_wake_reef-id_20221008.nc
+finished dz-v3.0_hdw_gbr_reef-id_20221009.nc
+finished dz-v3.0_hdw_guam_cnmi_reef-id_20221009.nc
+finished dz-v3.0_hdw_hawaii_reef-id_20221009.nc
+finished dz-v3.0_hdw_howland_baker_reef-id_20221009.nc
+finished dz-v3.0_hdw_jarvis_reef-id_20221009.nc
+finished dz-v3.0_hdw_johnston_reef-id_20221009.nc
+finished dz-v3.0_hdw_palmyra_kingman_reef-id_20221009.nc
+finished dz-v3.0_hdw_samoas_reef-id_20221009.nc
+finished dz-v3.0_hdw_wake_reef-id_20221009.nc
+finished dz-v3.0_wdw_gbr_reef-id_20221009.nc
+finished dz-v3.0_wdw_guam_cnmi_reef-id_20221009.nc
+finished dz-v3.0_wdw_hawaii_reef-id_20221009.nc
+finished dz-v3.0_wdw_howland_baker_reef-id_20221009.nc
+finished dz-v3.0_wdw_jarvis_reef-id_20221009.nc
+finished dz-v3.0_wdw_johnston_reef-id_20221009.nc
+finished dz-v3.0_wdw_palmyra_kingman_reef-id_20221009.nc
+finished dz-v3.0_wdw_samoas_reef-id_20221009.nc
+finished dz-v3.0_wdw_wake_reef-id_20221009.nc
+finished forec5km_sst-mean-90d_v1.0_gbr_reef-id_20221009.nc
+finished forec5km_sst-mean-90d_v1.0_guam_cnmi_reef-id_20221009.nc
+finished forec5km_sst-mean-90d_v1.0_hawaii_reef-id_20221009.nc
+finished forec5km_sst-mean-90d_v1.0_howland_baker_reef-id_20221009.nc
+finished forec5km_sst-mean-90d_v1.0_jarvis_reef-id_20221009.nc
+finished forec5km_sst-mean-90d_v1.0_johnston_reef-id_20221009.nc
+finished forec5km_sst-mean-90d_v1.0_palmyra_kingman_reef-id_20221009.nc
+finished forec5km_sst-mean-90d_v1.0_samoas_reef-id_20221009.nc
+finished forec5km_sst-mean-90d_v1.0_wake_reef-id_20221009.nc
+
+  -- 4) Compile seasonal ocean color metrics: Grid_covariates_ocean_color_dynamic.py
+
+  -- 5) compile predictor data: Grid_concat_dynamic_covariates.py
+
+  -- 6) Run model predictions: Run_model_forecasts.py
+
+  -- 7) Create model scenarios: Create_scenarios.py
+
+  -- 8) Run scenarios: Run_model_scenarios.py
+
+  -- 9) Create shiny outputs - predictions: Shiny_inputs_aggregate_predictions.py 
+
+  -- 10) Create shiny outputs - scenarios: Shiny_inputs_aggregate_scenarios.py 
+
+  -- 11) Create shiny outputs - polygons: Shiny_inputs_update_polygons.py 
+
+  -- 12) CRW outputs: Output_forecasts_for_CRW.py
+
+  -- 13) Remove temporary folder:  /data/data568/crwdir/product/forec/model/v2/temp_files/
+  
+
+  ======================================================================================
+  Section 4. Check if all the output files are all updated:
+  --------------------------------------------------------------------------------------
+
+  Check dates of the data file in the Forecasts folder:
+  The Forecasts file are updated: ga_forecast.csv
+  The Forecasts file are updated: ga_gbr_nowcast_aggregated_to_gbrmpa_park_zones.csv
+  The Forecasts file are updated: ga_gbr_nowcast_aggregated_to_management_zones.csv
+  The Forecasts file are updated: ga_gbr_nowcast_polygons_5km.cpg
+  The Forecasts file are updated: ga_gbr_nowcast_polygons_5km.dbf
+  The Forecasts file are updated: ga_gbr_nowcast_polygons_5km.prj
+  The Forecasts file are updated: ga_gbr_nowcast_polygons_5km.shp
+  The Forecasts file are updated: ga_gbr_nowcast_polygons_5km.shx
+  The Forecasts file are updated: ga_gbr_polygons_GBRMPA_zoning.cpg
+  The Forecasts file are updated: ga_gbr_polygons_GBRMPA_zoning.dbf
+  The Forecasts file are updated: ga_gbr_polygons_GBRMPA_zoning.prj
+  The Forecasts file are updated: ga_gbr_polygons_GBRMPA_zoning.shp
+  The Forecasts file are updated: ga_gbr_polygons_GBRMPA_zoning.shx
+  The Forecasts file are updated: ga_gbr_polygons_management_zoning.cpg
+  The Forecasts file are updated: ga_gbr_polygons_management_zoning.dbf
+  The Forecasts file are updated: ga_gbr_polygons_management_zoning.prj
+  The Forecasts file are updated: ga_gbr_polygons_management_zoning.shp
+  The Forecasts file are updated: ga_gbr_polygons_management_zoning.shx
+  The Forecasts file are updated: ga_nowcast_aggregated_to_management_zones.csv
+  The Forecasts file are updated: ga_pac_nowcast_aggregated_to_management_zones.csv
+  The Forecasts file are updated: ga_pac_nowcast_polygons_5km.cpg
+  The Forecasts file are updated: ga_pac_nowcast_polygons_5km.dbf
+  The Forecasts file are updated: ga_pac_nowcast_polygons_5km.prj
+  The Forecasts file are updated: ga_pac_nowcast_polygons_5km.shp
+  The Forecasts file are updated: ga_pac_nowcast_polygons_5km.shx
+  The Forecasts file are updated: ga_pac_polygons_management_zoning.cpg
+  The Forecasts file are updated: ga_pac_polygons_management_zoning.dbf
+  The Forecasts file are updated: ga_pac_polygons_management_zoning.prj
+  The Forecasts file are updated: ga_pac_polygons_management_zoning.shp
+  The Forecasts file are updated: ga_pac_polygons_management_zoning.shx
+  The Forecasts file are updated: nowcast_polygons_5km.cpg
+  The Forecasts file are updated: nowcast_polygons_5km.dbf
+  The Forecasts file are updated: nowcast_polygons_5km.prj
+  The Forecasts file are updated: nowcast_polygons_5km.shp
+  The Forecasts file are updated: nowcast_polygons_5km.shx
+  The Forecasts file are updated: one_month_forecast_polygons_5km.cpg
+  The Forecasts file are updated: one_month_forecast_polygons_5km.dbf
+  The Forecasts file are updated: one_month_forecast_polygons_5km.prj
+  The Forecasts file are updated: one_month_forecast_polygons_5km.shp
+  The Forecasts file are updated: one_month_forecast_polygons_5km.shx
+  The Forecasts file are updated: polygons_GBRMPA_zoning.cpg
+  The Forecasts file are updated: polygons_GBRMPA_zoning.dbf
+  The Forecasts file are updated: polygons_GBRMPA_zoning.prj
+  The Forecasts file are updated: polygons_GBRMPA_zoning.shp
+  The Forecasts file are updated: polygons_GBRMPA_zoning.shx
+  The Forecasts file are updated: polygons_management_zoning.cpg
+  The Forecasts file are updated: polygons_management_zoning.dbf
+  The Forecasts file are updated: polygons_management_zoning.prj
+  The Forecasts file are updated: polygons_management_zoning.shp
+  The Forecasts file are updated: polygons_management_zoning.shx
+  The Forecasts file are updated: three_month_forecast_polygons_5km.cpg
+  The Forecasts file are updated: three_month_forecast_polygons_5km.dbf
+  The Forecasts file are updated: three_month_forecast_polygons_5km.prj
+  The Forecasts file are updated: three_month_forecast_polygons_5km.shp
+  The Forecasts file are updated: three_month_forecast_polygons_5km.shx
+  The Forecasts file are updated: two_month_forecast_polygons_5km.cpg
+  The Forecasts file are updated: two_month_forecast_polygons_5km.dbf
+  The Forecasts file are updated: two_month_forecast_polygons_5km.prj
+  The Forecasts file are updated: two_month_forecast_polygons_5km.shp
+  The Forecasts file are updated: two_month_forecast_polygons_5km.shx
+  The Forecasts file are updated: ws_forecast.csv
+  The Forecasts file are updated: ws_gbr_nowcast_aggregated_to_gbrmpa_park_zones.csv
+  The Forecasts file are updated: ws_gbr_nowcast_aggregated_to_management_zones.csv
+  The Forecasts file are updated: ws_gbr_nowcast_polygons_5km.cpg
+  The Forecasts file are updated: ws_gbr_nowcast_polygons_5km.dbf
+  The Forecasts file are updated: ws_gbr_nowcast_polygons_5km.prj
+  The Forecasts file are updated: ws_gbr_nowcast_polygons_5km.shp
+  The Forecasts file are updated: ws_gbr_nowcast_polygons_5km.shx
+  The Forecasts file are updated: ws_gbr_polygons_GBRMPA_zoning.cpg
+  The Forecasts file are updated: ws_gbr_polygons_GBRMPA_zoning.dbf
+  The Forecasts file are updated: ws_gbr_polygons_GBRMPA_zoning.prj
+  The Forecasts file are updated: ws_gbr_polygons_GBRMPA_zoning.shp
+  The Forecasts file are updated: ws_gbr_polygons_GBRMPA_zoning.shx
+  The Forecasts file are updated: ws_gbr_polygons_management_zoning.cpg
+  The Forecasts file are updated: ws_gbr_polygons_management_zoning.dbf
+  The Forecasts file are updated: ws_gbr_polygons_management_zoning.prj
+  The Forecasts file are updated: ws_gbr_polygons_management_zoning.shp
+  The Forecasts file are updated: ws_gbr_polygons_management_zoning.shx
+  The Forecasts file are updated: ws_nowcast_aggregated_to_management_zones.csv
+  The Forecasts file are updated: ws_pac_nowcast_aggregated_to_management_zones.csv
+  The Forecasts file are updated: ws_pac_nowcast_polygons_5km.cpg
+  The Forecasts file are updated: ws_pac_nowcast_polygons_5km.dbf
+  The Forecasts file are updated: ws_pac_nowcast_polygons_5km.prj
+  The Forecasts file are updated: ws_pac_nowcast_polygons_5km.shp
+  The Forecasts file are updated: ws_pac_nowcast_polygons_5km.shx
+  The Forecasts file are updated: ws_pac_polygons_management_zoning.cpg
+  The Forecasts file are updated: ws_pac_polygons_management_zoning.dbf
+  The Forecasts file are updated: ws_pac_polygons_management_zoning.prj
+  The Forecasts file are updated: ws_pac_polygons_management_zoning.shp
+  The Forecasts file are updated: ws_pac_polygons_management_zoning.shx
+
+  Check dates of the data file in the Scenarios folder:
+  The Scenarios file are updated: ga_gbr_basevals_gbrmpa.csv
+  The Scenarios file are updated: ga_gbr_basevals_ID.csv
+  The Scenarios file are updated: ga_gbr_basevals_management.csv
+  The Scenarios file are updated: ga_gbr_scenarios_aggregated_to_gbrmpa_park_zones.csv
+  The Scenarios file are updated: ga_gbr_scenarios_aggregated_to_management_zones.csv
+  The Scenarios file are updated: ga_gbr_scenarios.csv
+  The Scenarios file are updated: ga_pac_basevals_ID.csv
+  The Scenarios file are updated: ga_pac_basevals_management.csv
+  The Scenarios file are updated: ga_pac_scenarios_aggregated_to_management_zones.csv
+  The Scenarios file are updated: ga_pac_scenarios.csv
+  The Scenarios file are updated: ws_gbr_basevals_gbrmpa.csv
+  The Scenarios file are updated: ws_gbr_basevals_ID.csv
+  The Scenarios file are updated: ws_gbr_basevals_management.csv
+  The Scenarios file are updated: ws_gbr_scenarios_aggregated_to_gbrmpa_park_zones.csv
+  The Scenarios file are updated: ws_gbr_scenarios_aggregated_to_management_zones.csv
+  The Scenarios file are updated: ws_gbr_scenarios.csv
+  The Scenarios file are updated: ws_pac_basevals_ID.csv
+  The Scenarios file are updated: ws_pac_basevals_management.csv
+  The Scenarios file are updated: ws_pac_scenarios_aggregated_to_management_zones.csv
+  The Scenarios file are updated: ws_pac_scenarios.csv
+
+  Check dates of the data file in the crw_outputs folder:
+  The crw_outputs file are updated: forec_5km_nowcasts_and_forcasts_gbr.csv
+  The crw_outputs file are updated: forec_5km_nowcasts_and_forcasts_guam_cnmi.csv
+  The crw_outputs file are updated: forec_5km_nowcasts_and_forcasts_hawaii.csv
+  The crw_outputs file are updated: forec_5km_nowcasts_and_forcasts_johnston.csv
+  The crw_outputs file are updated: forec_5km_nowcasts_and_forcasts_prias.csv
+  The crw_outputs file are updated: forec_5km_nowcasts_and_forcasts_samoas.csv
+  The crw_outputs file are updated: forec_5km_nowcasts_and_forcasts_wake.csv
+  The crw_outputs file are updated: forec_YTD_regional_disease_predictions_gbr.csv
+  The crw_outputs file are updated: forec_YTD_regional_disease_predictions_guam_cnmi.csv
+  The crw_outputs file are updated: forec_YTD_regional_disease_predictions_hawaii.csv
+  The crw_outputs file are updated: forec_YTD_regional_disease_predictions_johnston.csv
+  The crw_outputs file are updated: forec_YTD_regional_disease_predictions_prias.csv
+  The crw_outputs file are updated: forec_YTD_regional_disease_predictions_samoas.csv
+  The crw_outputs file are updated: forec_YTD_regional_disease_predictions_wake.csv
+  
+
+  ======================================================================================
+  Section 5. Update date tracking file:
+  --------------------------------------------------------------------------------------
+ 
+  ----- Date of the 'new' successfully processed Monday:    20221010
+  Model run is successful!
+  
+
+  =====================================================================================
+  Section 6. Push the weekly update into GitHub:
+  -------------------------------------------------------------------------------------
+ 
+ ===============================================================================
+ ---------  Run FORE-C Github update :                                               
+ ===============================================================================
+ -- Starting time for Run FORE-C Github update: Mon Oct 10 21:40:20 UTC 2022
+ 
+ 
+ ----- Date of the latest successfully processed Monday:           20221010
+ Github local location:  /data/home004/gang.liu/crw_github_jms5151/uh-noaa-shiny-app
+ 
+ ** Exist: Github local folder exists:  /data/home004/gang.liu/crw_github_jms5151/uh-noaa-shiny-app
+ 
+ Load agent for password-less access:
+Agent pid 67663
+
+ in folder: /data/home004/gang.liu/crw_github_jms5151/uh-noaa-shiny-app
+
+ Run: git pull:
+Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+  
+  ====================================================================================
+  Now in this Github local folder to pull updated Shiny App data files over: 
+/data/home004/gang.liu/crw_github_jms5151/uh-noaa-shiny-app/forec_shiny_app_data
+  
+  ====================================================================================
+  Now check file dates: 
+
+  Now in this folding checking file dates:
+/data/home004/gang.liu/crw_github_jms5151/uh-noaa-shiny-app/forec_shiny_app_data/Forecasts
+ This file in Forecasts is updated: ga_forecast.csv
+ This file in Forecasts is updated: ga_gbr_nowcast_aggregated_to_gbrmpa_park_zones.csv
+ This file in Forecasts is updated: ga_gbr_nowcast_aggregated_to_management_zones.csv
+ This file in Forecasts is updated: ga_gbr_nowcast_polygons_5km.cpg
+ This file in Forecasts is updated: ga_gbr_nowcast_polygons_5km.dbf
+ This file in Forecasts is updated: ga_gbr_nowcast_polygons_5km.prj
+ This file in Forecasts is updated: ga_gbr_nowcast_polygons_5km.shp
+ This file in Forecasts is updated: ga_gbr_nowcast_polygons_5km.shx
+ This file in Forecasts is updated: ga_gbr_polygons_GBRMPA_zoning.cpg
+ This file in Forecasts is updated: ga_gbr_polygons_GBRMPA_zoning.dbf
+ This file in Forecasts is updated: ga_gbr_polygons_GBRMPA_zoning.prj
+ This file in Forecasts is updated: ga_gbr_polygons_GBRMPA_zoning.shp
+ This file in Forecasts is updated: ga_gbr_polygons_GBRMPA_zoning.shx
+ This file in Forecasts is updated: ga_gbr_polygons_management_zoning.cpg
+ This file in Forecasts is updated: ga_gbr_polygons_management_zoning.dbf
+ This file in Forecasts is updated: ga_gbr_polygons_management_zoning.prj
+ This file in Forecasts is updated: ga_gbr_polygons_management_zoning.shp
+ This file in Forecasts is updated: ga_gbr_polygons_management_zoning.shx
+ This file in Forecasts is updated: ga_nowcast_aggregated_to_management_zones.csv
+ This file in Forecasts is updated: ga_pac_nowcast_aggregated_to_management_zones.csv
+ This file in Forecasts is updated: ga_pac_nowcast_polygons_5km.cpg
+ This file in Forecasts is updated: ga_pac_nowcast_polygons_5km.dbf
+ This file in Forecasts is updated: ga_pac_nowcast_polygons_5km.prj
+ This file in Forecasts is updated: ga_pac_nowcast_polygons_5km.shp
+ This file in Forecasts is updated: ga_pac_nowcast_polygons_5km.shx
+ This file in Forecasts is updated: ga_pac_polygons_management_zoning.cpg
+ This file in Forecasts is updated: ga_pac_polygons_management_zoning.dbf
+ This file in Forecasts is updated: ga_pac_polygons_management_zoning.prj
+ This file in Forecasts is updated: ga_pac_polygons_management_zoning.shp
+ This file in Forecasts is updated: ga_pac_polygons_management_zoning.shx
+ This file in Forecasts is updated: nowcast_polygons_5km.cpg
+ This file in Forecasts is updated: nowcast_polygons_5km.dbf
+ This file in Forecasts is updated: nowcast_polygons_5km.prj
+ This file in Forecasts is updated: nowcast_polygons_5km.shp
+ This file in Forecasts is updated: nowcast_polygons_5km.shx
+ This file in Forecasts is updated: one_month_forecast_polygons_5km.cpg
+ This file in Forecasts is updated: one_month_forecast_polygons_5km.dbf
+ This file in Forecasts is updated: one_month_forecast_polygons_5km.prj
+ This file in Forecasts is updated: one_month_forecast_polygons_5km.shp
+ This file in Forecasts is updated: one_month_forecast_polygons_5km.shx
+ This file in Forecasts is updated: polygons_GBRMPA_zoning.cpg
+ This file in Forecasts is updated: polygons_GBRMPA_zoning.dbf
+ This file in Forecasts is updated: polygons_GBRMPA_zoning.prj
+ This file in Forecasts is updated: polygons_GBRMPA_zoning.shp
+ This file in Forecasts is updated: polygons_GBRMPA_zoning.shx
+ This file in Forecasts is updated: polygons_management_zoning.cpg
+ This file in Forecasts is updated: polygons_management_zoning.dbf
+ This file in Forecasts is updated: polygons_management_zoning.prj
+ This file in Forecasts is updated: polygons_management_zoning.shp
+ This file in Forecasts is updated: polygons_management_zoning.shx
+ This file in Forecasts is updated: three_month_forecast_polygons_5km.cpg
+ This file in Forecasts is updated: three_month_forecast_polygons_5km.dbf
+ This file in Forecasts is updated: three_month_forecast_polygons_5km.prj
+ This file in Forecasts is updated: three_month_forecast_polygons_5km.shp
+ This file in Forecasts is updated: three_month_forecast_polygons_5km.shx
+ This file in Forecasts is updated: two_month_forecast_polygons_5km.cpg
+ This file in Forecasts is updated: two_month_forecast_polygons_5km.dbf
+ This file in Forecasts is updated: two_month_forecast_polygons_5km.prj
+ This file in Forecasts is updated: two_month_forecast_polygons_5km.shp
+ This file in Forecasts is updated: two_month_forecast_polygons_5km.shx
+ This file in Forecasts is updated: ws_forecast.csv
+ This file in Forecasts is updated: ws_gbr_nowcast_aggregated_to_gbrmpa_park_zones.csv
+ This file in Forecasts is updated: ws_gbr_nowcast_aggregated_to_management_zones.csv
+ This file in Forecasts is updated: ws_gbr_nowcast_polygons_5km.cpg
+ This file in Forecasts is updated: ws_gbr_nowcast_polygons_5km.dbf
+ This file in Forecasts is updated: ws_gbr_nowcast_polygons_5km.prj
+ This file in Forecasts is updated: ws_gbr_nowcast_polygons_5km.shp
+ This file in Forecasts is updated: ws_gbr_nowcast_polygons_5km.shx
+ This file in Forecasts is updated: ws_gbr_polygons_GBRMPA_zoning.cpg
+ This file in Forecasts is updated: ws_gbr_polygons_GBRMPA_zoning.dbf
+ This file in Forecasts is updated: ws_gbr_polygons_GBRMPA_zoning.prj
+ This file in Forecasts is updated: ws_gbr_polygons_GBRMPA_zoning.shp
+ This file in Forecasts is updated: ws_gbr_polygons_GBRMPA_zoning.shx
+ This file in Forecasts is updated: ws_gbr_polygons_management_zoning.cpg
+ This file in Forecasts is updated: ws_gbr_polygons_management_zoning.dbf
+ This file in Forecasts is updated: ws_gbr_polygons_management_zoning.prj
+ This file in Forecasts is updated: ws_gbr_polygons_management_zoning.shp
+ This file in Forecasts is updated: ws_gbr_polygons_management_zoning.shx
+ This file in Forecasts is updated: ws_nowcast_aggregated_to_management_zones.csv
+ This file in Forecasts is updated: ws_pac_nowcast_aggregated_to_management_zones.csv
+ This file in Forecasts is updated: ws_pac_nowcast_polygons_5km.cpg
+ This file in Forecasts is updated: ws_pac_nowcast_polygons_5km.dbf
+ This file in Forecasts is updated: ws_pac_nowcast_polygons_5km.prj
+ This file in Forecasts is updated: ws_pac_nowcast_polygons_5km.shp
+ This file in Forecasts is updated: ws_pac_nowcast_polygons_5km.shx
+ This file in Forecasts is updated: ws_pac_polygons_management_zoning.cpg
+ This file in Forecasts is updated: ws_pac_polygons_management_zoning.dbf
+ This file in Forecasts is updated: ws_pac_polygons_management_zoning.prj
+ This file in Forecasts is updated: ws_pac_polygons_management_zoning.shp
+ This file in Forecasts is updated: ws_pac_polygons_management_zoning.shx
+
+  Now in this folding checking file dates:
+/data/home004/gang.liu/crw_github_jms5151/uh-noaa-shiny-app/forec_shiny_app_data/Scenarios
+ This file in Scenarios is updated: ga_gbr_basevals_gbrmpa.csv
+ This file in Scenarios is updated: ga_gbr_basevals_ID.csv
+ This file in Scenarios is updated: ga_gbr_basevals_management.csv
+ This file in Scenarios is updated: ga_gbr_scenarios_aggregated_to_gbrmpa_park_zones.csv
+ This file in Scenarios is updated: ga_gbr_scenarios_aggregated_to_management_zones.csv
+ This file in Scenarios is updated: ga_gbr_scenarios.csv
+ This file in Scenarios is updated: ga_pac_basevals_ID.csv
+ This file in Scenarios is updated: ga_pac_basevals_management.csv
+ This file in Scenarios is updated: ga_pac_scenarios_aggregated_to_management_zones.csv
+ This file in Scenarios is updated: ga_pac_scenarios.csv
+ This file in Scenarios is updated: ws_gbr_basevals_gbrmpa.csv
+ This file in Scenarios is updated: ws_gbr_basevals_ID.csv
+ This file in Scenarios is updated: ws_gbr_basevals_management.csv
+ This file in Scenarios is updated: ws_gbr_scenarios_aggregated_to_gbrmpa_park_zones.csv
+ This file in Scenarios is updated: ws_gbr_scenarios_aggregated_to_management_zones.csv
+ This file in Scenarios is updated: ws_gbr_scenarios.csv
+ This file in Scenarios is updated: ws_pac_basevals_ID.csv
+ This file in Scenarios is updated: ws_pac_basevals_management.csv
+ This file in Scenarios is updated: ws_pac_scenarios_aggregated_to_management_zones.csv
+ This file in Scenarios is updated: ws_pac_scenarios.csv
+
+ in folder: /data/home004/gang.liu/crw_github_jms5151/uh-noaa-shiny-app
+ Run: git add .:
+ Run: commit -m Weekly data update of Monday 2022/10/10.
+[main 9783980] Weekly data update of Monday 2022/10/10.
+ 45 files changed, 152858 insertions(+), 152858 deletions(-)
+ rewrite forec_shiny_app_data/Forecasts/ga_gbr_nowcast_polygons_5km.dbf (95%)
+ rewrite forec_shiny_app_data/Forecasts/ga_gbr_polygons_management_zoning.dbf (76%)
+ rewrite forec_shiny_app_data/Forecasts/ga_pac_nowcast_polygons_5km.dbf (99%)
+ rewrite forec_shiny_app_data/Forecasts/ga_pac_polygons_management_zoning.dbf (76%)
+ rewrite forec_shiny_app_data/Forecasts/nowcast_polygons_5km.dbf (94%)
+ rewrite forec_shiny_app_data/Forecasts/one_month_forecast_polygons_5km.dbf (94%)
+ rewrite forec_shiny_app_data/Forecasts/polygons_management_zoning.dbf (83%)
+ rewrite forec_shiny_app_data/Forecasts/three_month_forecast_polygons_5km.dbf (95%)
+ rewrite forec_shiny_app_data/Forecasts/two_month_forecast_polygons_5km.dbf (94%)
+ rewrite forec_shiny_app_data/Forecasts/ws_gbr_nowcast_polygons_5km.dbf (95%)
+ rewrite forec_shiny_app_data/Forecasts/ws_gbr_polygons_management_zoning.dbf (76%)
+ rewrite forec_shiny_app_data/Forecasts/ws_pac_nowcast_polygons_5km.dbf (99%)
+ rewrite forec_shiny_app_data/Forecasts/ws_pac_polygons_management_zoning.dbf (78%)
+ rewrite forec_shiny_app_data/Scenarios/ga_gbr_scenarios_aggregated_to_management_zones.csv (68%)
+ Run: git status:
+# On branch main
+# Your branch is ahead of 'origin/main' by 1 commit.
+#   (use "git push" to publish your local commits)
+#
+nothing to commit, working directory clean
+ Run: git push:
+ 
+ 
+ ===============================================================================
+ -- Ending time for Run FORE-C Github update:   Mon Oct 10 21:40:35 UTC 2022
+ 
+ ===============================================================================
+ Done:  Run FORE-C Github update! 
+ ===============================================================================
+  
+
+  ======================== Done: Run weekly FORE-C update =============================
+  =====================================================================================
+  

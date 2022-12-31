@@ -7,7 +7,6 @@ RUN echo "Updating apt sources." && apt-get -qq update
 RUN echo "Installing R package dependencies." && \
     apt-get -qq install \
     pandoc \
-    pandoc-citeproc \
     libcurl4-gnutls-dev \
     libcairo2-dev \
     libxt-dev \

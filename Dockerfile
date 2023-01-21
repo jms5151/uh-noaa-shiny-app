@@ -3,6 +3,13 @@ FROM rocker/r-base:latest
 # ~2s
 RUN echo "Updating apt sources." && apt-get -qq update
 
+
+# Install libss1.1
+ENV LIBSSL_URL=http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1-1ubuntu2.1\~18.04.20_amd64.deb
+ENV LIBSSL_FILE=libssl1.1_1.1.1-1ubuntu2.1~18.04.20_amd64.deb
+RUN wget $LIBSSL_URL
+RUN dpkg -i $LIBSSL_FILE
+
 # ~55s
 RUN echo "Installing R package dependencies." && \
     apt-get -qq install \
@@ -13,7 +20,6 @@ RUN echo "Installing R package dependencies." && \
     libssl-dev \
     libssh2-1-dev \
     libxml2-dev \
-    libssl1.1 \
     gdal-bin \
     proj-bin \
     libgdal-dev \

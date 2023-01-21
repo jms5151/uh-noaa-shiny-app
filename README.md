@@ -20,7 +20,7 @@ DOCKER_BUILDKIT=1 docker build \
 After that you can run the container
 
 ```bash
-docker run -p 3838:3838 jamiecaldwell/uh-crw:latest
+docker run --rm -p 3838:3838 jamiecaldwell/uh-crw:latest
 ```
 
 Visit [http://localhost:3838](http://localhost:3838) to view the dashboard.
@@ -33,4 +33,14 @@ To intialise the repository on cloning run
 
 ```bash
 transcrypt -c aes-256-cbc -p $TRANSCRYPT_PASSWORD
+```
+
+## Build from scratch
+
+```bash
+DOCKER_ID="jamiecaldwell"
+DOCKER_PASSWORD="xxx"
+DOCKER_BUILDKIT=1 docker build --tag jamiecaldwell/uh-crw:latest
+echo "$DOCKER_PASSWORD" | docker login --username $DOCKER_ID --password-stdin
+docker push jamiecaldwell/uh-crw:latest
 ```

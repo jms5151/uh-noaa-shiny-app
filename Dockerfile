@@ -3,10 +3,9 @@ FROM rocker/r-base:latest
 # ~2s
 RUN echo "Updating apt sources." && apt-get -qq update
 
-
 # Install libss1.1
-ENV LIBSSL_URL=http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1-1ubuntu2.1\~18.04.20_amd64.deb
-ENV LIBSSL_FILE=libssl1.1_1.1.1-1ubuntu2.1~18.04.20_amd64.deb
+ENV LIBSSL_URL=http://launchpadlibrarian.net/650099131/libssl1.1_1.1.1-1ubuntu2.1~18.04.21_amd64.deb
+ENV LIBSSL_FILE=libssl1.1_1.1.1-1ubuntu2.1~18.04.21_amd64.deb
 RUN wget $LIBSSL_URL
 RUN dpkg -i $LIBSSL_FILE
 
@@ -24,8 +23,9 @@ RUN echo "Installing R package dependencies." && \
     proj-bin \
     libgdal-dev \
     libproj-dev \
-    libudunits2-dev
-
+    libudunits2-dev \
+    libharfbuzz-dev \
+    libfribidi-dev
 
 # Install pak package manager - ~5s
 RUN R -e 'install.packages("pak", repos = "https://r-lib.github.io/p/pak/dev")'

@@ -40,7 +40,7 @@ transcrypt -c aes-256-cbc -p $TRANSCRYPT_PASSWORD
 ```bash
 DOCKER_ID="jamiecaldwell"
 DOCKER_PASSWORD="xxx"
-DOCKER_BUILDKIT=1 docker build --tag jamiecaldwell/uh-crw:latest
+DOCKER_BUILDKIT=1 docker build --no-cache --tag jamiecaldwell/uh-crw:latest
 echo "$DOCKER_PASSWORD" | docker login --username $DOCKER_ID --password-stdin
 docker push jamiecaldwell/uh-crw:latest
 ```

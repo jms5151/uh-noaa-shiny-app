@@ -1,0 +1,76 @@
+  
+                   Executing:   starter_run_forec_model_v2.sh
+  
+  ======================================================================================
+                        Activate Python environment first:
+  ======================================================================================
+  
+  $HOME = /data/home004/gang.liu
+  Python version of the forec_model_v20220624 environment:
+# conda environments:
+#
+base                     /data/home004/gang.liu/miniconda3
+5km_v3.1_op_plus_dz_plus_v20220218     /data/home004/gang.liu/miniconda3/envs/5km_v3.1_op_plus_dz_plus_v20220218
+5km_v3.1_op_plus_dz_plus_v20220224     /data/home004/gang.liu/miniconda3/envs/5km_v3.1_op_plus_dz_plus_v20220224
+5km_v3.1_op_plus_dz_v20210406     /data/home004/gang.liu/miniconda3/envs/5km_v3.1_op_plus_dz_v20210406
+5km_v3.1_op_v20210108     /data/home004/gang.liu/miniconda3/envs/5km_v3.1_op_v20210108
+forec_model_v20220624  *  /data/home004/gang.liu/miniconda3/envs/forec_model_v20220624
+forec_model_v20220624_test     /data/home004/gang.liu/miniconda3/envs/forec_model_v20220624_test
+tutorialenv              /data/home004/gang.liu/miniconda3/envs/tutorialenv
+
+Python 3.8.8
+  
+  =====================================================================================
+                        Execute model run:
+  =====================================================================================
+  
+ 
+  ======================================================================================
+  =========================== Run weekly FORE-C update =================================
+                             (in run_forec_model_v2.sh)
+  ======================================================================================
+  
+  -- Starting time: Mon Apr 17 23:01:22 UTC 2023
+  
+  User's home directory: /data/home004/gang.liu
+  Host name:             rhw1321.star1.nesdis.noaa.gov
+  
+  Running script: ./run_forec_model_v2.sh
+
+  There are 0 arguments passed to ./run_forec_model_v2.sh: 
+            
+ 
+  =====================================================================================
+  Section 1. Set up directories:
+  -------------------------------------------------------------------------------------
+  
+  dir_code: /data/data568/crw/code/proc_nrt/forec/model/v2
+  dir_root_source_data_to_examine: /data/aftp/socd/mecb/crw/data/for_forec/shiny_app
+  
+  pathfile_log_date: /data/data568/crw/code/proc_nrt/forec/model/v2/track_date_auto/track_date_forec_model_run_auto.txt
+  dir_log_error:     /data/data568/crw/code/proc_nrt/forec/model/v2/track_error_auto
+  
+  dir_root_output_shinyapp: /data/data568/crwdir/product/forec/model/v2/uh-noaa-shiny-app/forec_shiny_app_data
+  dir_root_output_crw:      /data/data568/crwdir/product/forec/model/v2/crw_outputs
+  
+
+  ======================================================================================
+  Section 2. Examine weekly input source data files and determine whether to run model:
+  --------------------------------------------------------------------------------------
+
+  ----- Today's system date: 20230417
+
+  ----------------------------------------------------------------
+  
+  ----- Date of the last successfully processed Monday:           20230417
+  
+  ----- Date to be processed processed Monday:  20230424
+  ----- Date to be read Sunday   (satellite):   20230423
+  ----- Date to be read Saturday (prediction):  20230422
+
+  ----- Already_updated! Exit without processing!
+  
+
+  ======================== Done: Run weekly FORE-C update =============================
+  =====================================================================================
+  

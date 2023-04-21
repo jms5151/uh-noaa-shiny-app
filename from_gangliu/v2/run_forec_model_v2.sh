@@ -345,7 +345,7 @@ foreach region ($list_regions)
     set list_file_size_expected_min  = ('900000' '7000000' '9000000' '10000' '10000' '10000')
     breaksw
   case 'guam_cnmi':
-    set list_file_size_expected_min  = ( '40000'  '100000'  '100000' '10000' '10000' '10000')
+    set list_file_size_expected_min  = ( '20000'  '100000'  '100000' '10000' '10000' '10000')
     breaksw
   case 'hawaii':
     set list_file_size_expected_min  = ( '10000'  '800000'  '800000' '10000' '10000' '10000')

@@ -1,12 +1,14 @@
 # -*- coding: utf-8 -*-
 """
 Format data for NOAA CRW regional virtual stations
-Last update: 2023-April-07
+Last update: 2022-July-05
 """
 
 # load module
+import os
 import pandas as pd # v 1.4.2
 import numpy as np
+from datetime import date
 
 # set filepaths
 from filepaths import shiny_path, crw_path
@@ -60,23 +62,22 @@ values = ['Nowcast', '4 week forecast', '8 week forecast', '12 week forecast']
 # create a new column and use np.select to assign values to it using our lists as arguments
 reef_forecast['Prediction'] = np.select(conditions, values)
 
-# save
-reef_forecast.to_csv(crw_path + 'forec_5km_nowcasts_and_forcasts.csv', index = False)
+# save by region
+regions = reef_forecast['Region'].unique()
+
+for i in regions:
+    x = reef_forecast[reef_forecast['Region'] == i]
+    x.to_csv(crw_path + 'forec_5km_nowcasts_and_forcasts_' + i + '.csv', index = False)
 
 # time series ------------------------------------------------------------------
-def update_vs_region(df):
-    # separate NWHI from Hawaii
-    nwhi_ind = df.index[(df.Latitude > 22.5) & (df.Latitude < 30) & (df.Longitude > -175.5) & (df.Longitude < -161)].tolist()
-    df.loc[nwhi_ind , 'Region'] = 'nwhi'
-    # separate guam and cnmi, first change all pixels to guam, then rename cnmi pixels
-    guam_cnmi_ind = df.index[df.Region == 'guam_cnmi'].tolist()
-    df.loc[guam_cnmi_ind, 'Region'] = 'guam'
-    cnmi_ind = df.index[(df.Latitude > 13) & (df.Latitude < 13.5) & (df.Longitude > 144) & (df.Longitude < 145.5)].tolist()
-    df.loc[cnmi_ind, 'Region'] = 'cnmi'
-    return(df)
-        
+
 def format_ts_predictions(df, diseaseName):
+    # determine first day of year
+    yr = date.today().year
+    cutoff_date = str(yr) + '-01-01'
+    # format data
     df = df.rename(columns = {'Date':'Data_date'})
+    df = df.loc[df['Data_date'] >= cutoff_date]
     df = df.groupby(['Region', 'Data_date'])[['value', 'Lwr', 'Upr']].quantile(0.90).reset_index()
     df = df.rename(columns = {'value': diseaseName + '75'
                               , 'Lwr': diseaseName + '50'
@@ -84,10 +85,8 @@ def format_ts_predictions(df, diseaseName):
     df['Prediction'] = np.where(df['Data_date'] <= current_nowcast_date, 'Nowcast', 'Forecast')
     return(df)
 
-ga_forecast = update_vs_region(df = ga_forecast)
 ga_ts = format_ts_predictions(df = ga_forecast, diseaseName = 'GA')
 
-ws_forecast = update_vs_region(df = ws_forecast)
 ws_ts = format_ts_predictions(df = ws_forecast, diseaseName = 'WS')
 
 predictions_ts = pd.merge(left = ga_ts, right = ws_ts)
@@ -97,5 +96,12 @@ regions = predictions_ts['Region'].unique()
 
 for i in regions:
   x = predictions_ts[predictions_ts['Region'] == i]
-  ts_filepath = crw_path + 'forec_regional_24wk_disease_predictions_' + i + '.csv'
+  ts_filepath = crw_path + 'forec_YTD_regional_disease_predictions_' + i + '.csv'
+  if os.path.exists(ts_filepath):
+    x_old = pd.read_csv(ts_filepath)
+    x_old = x_old[x_old['Prediction'] == 'Nowcast']
+    x_old = x_old.drop_duplicates() # not sure this is needed
+    max_x_old_date = x_old['Data_date'].max()
+    x_new = x[x['Data_date'] > max_x_old_date]
+    x = pd.concat([x_old, x_new])
   x.to_csv(ts_filepath, index = False)

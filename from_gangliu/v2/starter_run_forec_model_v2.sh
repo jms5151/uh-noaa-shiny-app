@@ -7,6 +7,8 @@
 #       syntax error message.:
 #                   source $HOME/.bash_profile
 #                   source $HOME/.bashrc
+#       As a result this separate script (starter_run_forec_model_v2.sh) is used to launch
+#                   ./run_forec_model_v2.sh       
 #
 # Note: 
 # Currently each run of the processing (./run_forec_model_v2.sh) called by this script will 

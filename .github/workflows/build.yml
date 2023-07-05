@@ -46,11 +46,11 @@ jobs:
 
       # Push the image to DockerHub
       - name: Push container image
-        if: ${{ github.event_name == 'pull_request' }}
-        run: echo hi
-    #    run: docker push jamiecaldwell/uh-crw:latest
+        if: ${{ github.event_name == 'release' }}
+        run: docker push jamiecaldwell/uh-crw:latest
 
       # Deploy the image to the webserver.
-    #  - name: Run deploy script
-    #    run: ./infra/deploy.sh
-    #    shell: bash
+      - name: Run deploy script
+        if: ${{ github.event_name == 'release' }}
+        run: ./infra/deploy.sh
+        shell: bash

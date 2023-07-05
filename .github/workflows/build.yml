@@ -1,8 +1,11 @@
 name: Build and Deploy
 on:
   push:
-    branches:
-      - main
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  release:
+    types: [ published ]
 
 jobs:
   build:
@@ -42,7 +45,9 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       # Push the image to DockerHub
-    #  - name: Push container image
+      - name: Push container image
+        if: ${{ github.event_name == 'release' }}
+        run: echo hi
     #    run: docker push jamiecaldwell/uh-crw:latest
 
       # Deploy the image to the webserver.

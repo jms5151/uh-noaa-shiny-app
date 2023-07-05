@@ -46,7 +46,7 @@ jobs:
 
       # Push the image to DockerHub
       - name: Push container image
-        if: ${{ github.event_name == 'release' }}
+        if: ${{ github.event_name == 'pull_request' }}
         run: echo hi
     #    run: docker push jamiecaldwell/uh-crw:latest
 

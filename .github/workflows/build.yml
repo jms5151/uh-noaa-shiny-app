@@ -36,16 +36,16 @@ jobs:
 
       # Login to DockerHub
       - name: Login to DockerHub
-        uses: docker/login-action@v1
+        uses: docker/login-action@v2
         with:
           username: jamiecaldwell
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       # Push the image to DockerHub
-      - name: Push container image
-        run: docker push jamiecaldwell/uh-crw:latest
+    #  - name: Push container image
+    #    run: docker push jamiecaldwell/uh-crw:latest
 
       # Deploy the image to the webserver.
-      - name: Run deploy script
-        run: ./infra/deploy.sh
-        shell: bash
+    #  - name: Run deploy script
+    #    run: ./infra/deploy.sh
+    #    shell: bash

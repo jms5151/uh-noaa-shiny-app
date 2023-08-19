@@ -21,7 +21,6 @@ RUN R -e 'install.packages("pak", repos = "https://r-lib.github.io/p/pak/dev")'
 # Install R packages - ~550s (~2x faster using pak::pkg_install vs install.packages)
 RUN R -e \
     'pak::pkg_install(c(\
-    "shiny",\
     "shinythemes",\
     "leaflet",\
     "flexdashboard",\

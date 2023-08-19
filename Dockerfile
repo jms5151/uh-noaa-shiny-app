@@ -12,7 +12,6 @@ RUN dpkg -i $LIBSSL_FILE
 # ~55s
 RUN echo "Installing R package dependencies." && \
     apt-get -qq install \
-    pandoc \
     libcurl4-gnutls-dev \
     libcairo2-dev \
     libxt-dev \

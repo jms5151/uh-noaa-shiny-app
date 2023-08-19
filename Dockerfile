@@ -1,4 +1,4 @@
-FROM rocker/tidyverse:latest AS tidyverse
+FROM rocker/geospatial:latest
 
 # ~2s
 RUN echo "Updating apt sources." && apt-get -qq update
@@ -13,18 +13,7 @@ RUN dpkg -i $LIBSSL_FILE
 RUN echo "Installing R package dependencies." && \
     apt-get -qq install \
     libcurl4-gnutls-dev \
-    libcairo2-dev \
-    libxt-dev \
-    libssl-dev \
-    libssh2-1-dev \
-    libxml2-dev \
-    gdal-bin \
-    proj-bin \
-    libgdal-dev \
-    libproj-dev \
-    libudunits2-dev \
-    libharfbuzz-dev \
-    libfribidi-dev
+    proj-bin 
 
 # Install pak package manager - ~5s
 RUN R -e 'install.packages("pak", repos = "https://r-lib.github.io/p/pak/dev")'

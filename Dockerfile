@@ -1,4 +1,4 @@
-FROM rocker/r-base:latest
+FROM rocker/tidyverse:latest AS tidyverse
 
 # ~2s
 RUN echo "Updating apt sources." && apt-get -qq update

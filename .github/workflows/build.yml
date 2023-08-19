@@ -1,4 +1,5 @@
 name: Build and Deploy
+
 on:
   push:
     branches: [ main ]
@@ -15,13 +16,16 @@ jobs:
       DOCKER_STACK_NAME: coral
       DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
       DOCKER_ID: jamiecaldwell
+      R_KEEP_PKG_SOURCE: yes
 
     steps:
-      # Check out GitHub reportiory
-      - uses: actions/checkout@v2
+      # Check out GitHub repository
+      - uses: actions/checkout@v3
+
+      - uses: r-lib/actions/setup-pandoc@v2
 
       - name: Checkout transcrypt
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           repository: elasticdog/transcrypt
           path: transcrypt

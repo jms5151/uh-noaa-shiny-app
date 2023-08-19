@@ -1,6 +1,12 @@
+# This is a manual action that requires a 'button push' workflow dispatch.
+# The action *does not* build the docker image, it simply deploys the existing image to the shiny server.
+# The build.yml action does both the building and deploying.
+
 name: Deploy
+
 on:
   - workflow_dispatch
+
 jobs:
   deploy:
     runs-on: ubuntu-latest

@@ -65,6 +65,6 @@ jobs:
 
 
       - name: Deploy the image to the webserver
-        if: ${{ github.event_name == 'release' }}
+      #  if: ${{ github.event_name == 'release' }}
         run: ./infra/deploy.sh
         shell: bash

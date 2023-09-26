@@ -33,7 +33,7 @@ ssh -o StrictHostKeyChecking=no -i infra/id_rsa root@$HOST mkdir -p $DEPLOY_DIR
 scp -o StrictHostKeyChecking=no -i infra/id_rsa \
     infra/docker-compose.prod.yml \
     root@$HOST:${DEPLOY_DIR}/docker-compose.prod.yml
-
+exit 1
 echo -e "\n>>> Updating Docker Swarm stack $DOCKER_STACK_NAME"
 ssh -o StrictHostKeyChecking=no -i infra/id_rsa root@$HOST /bin/bash << EOF
     set -e

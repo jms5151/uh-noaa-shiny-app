@@ -12,10 +12,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-    #  HOST: "66.228.47.179"
-    #  DOCKER_STACK_NAME: coral
-      #DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
-      #DOCKER_ID: jamiecaldwell
       R_KEEP_PKG_SOURCE: yes
 
     steps:
@@ -64,8 +60,8 @@ jobs:
           push: ${{ github.event_name == 'release' }}
 
 
-      - name: Deploy the image to the webserver
-      #  if: ${{ github.event_name == 'release' }}
+      - name: Deploy the image to the webserver on a tagged release
+        if: ${{ github.event_name == 'release' }}
         run: ./infra/deploy.sh
         shell: bash
         env: 

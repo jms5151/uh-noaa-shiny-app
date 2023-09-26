@@ -70,3 +70,4 @@ jobs:
         shell: bash
         env: 
           HOST: "66.228.47.179"
+          DOCKER_STACK_NAME: coral

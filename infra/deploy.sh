@@ -24,7 +24,7 @@ then
 fi
 
     echo "\n>>> Error: Intentional break."
-    exit 1
+    exit 0
 
 echo -e "\n>>> Deploying Docker Stack $DOCKER_STACK_NAME to $HOST"
 DEPLOY_DIR="/srv/deploy/$(date +%s)"

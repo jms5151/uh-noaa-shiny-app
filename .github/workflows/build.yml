@@ -68,5 +68,5 @@ jobs:
       #  if: ${{ github.event_name == 'release' }}
         run: ./infra/deploy.sh
         shell: bash
-        with: 
+        env: 
           HOST: "66.228.47.179"

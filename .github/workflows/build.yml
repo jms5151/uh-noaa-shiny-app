@@ -22,18 +22,6 @@ jobs:
       - name: Checkout GitHub repository
         uses: actions/checkout@v3
 
-      - name: Define Docker metadata
-        id: docker_metadata
-        uses: docker/metadata-action@v4
-        with:
-          tags: |
-            type=raw,value=latest
-            type=semver,pattern={{raw}} 
-
-
-      - name: echo_test
-        run: echo "hi hello  ${{ steps.docker_metadata.outputs.tags }}"
-
       - uses: r-lib/actions/setup-pandoc@v2
 
       - name: Checkout transcrypt
@@ -57,6 +45,17 @@ jobs:
         with:
           username: jamiecaldwell
           password: ${{ secrets.DOCKER_PASSWORD }}
+
+      - name: Define Docker metadata
+        id: docker_metadata
+        uses: docker/metadata-action@v4
+        with:
+          tags: |
+            type=raw,value=latest
+            type=semver,pattern={{raw}} 
+
+      - name: echo_test
+        run: echo "hi hello  ${{ steps.docker_metadata.outputs.tags }}"
 
       - name: Push image to DockerHub
         if: ${{ github.event_name == 'release' }}

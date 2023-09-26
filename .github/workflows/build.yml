@@ -32,10 +32,6 @@ jobs:
             type=semver,pattern={{raw}} 
 
 
-      - name: echo_test
-        run: echo "hi hello  ${{ steps.docker_metadata.outputs.tags }}"
-
-
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
 
@@ -58,18 +54,15 @@ jobs:
         run: ./transcrypt/transcrypt -c aes-256-cbc -p '${{ secrets.TRANSCRYPT_PASSWORD }}' --yes
 
 
-      - name: Build container image
+      - name: Build container image and push to dockerhub on a tagged release
         uses: docker/build-push-action@v5
         with:
           context: .
           tags: ${{ steps.docker_metadata.outputs.tags }}
           cache-from: type=registry,ref=jamiecaldwell/uh-crw:latest
           cache-to: type=inline
+          push: ${{ github.event_name == 'release' }}
 
-
-      - name: Push image to DockerHub
-        if: ${{ github.event_name == 'release' }}
-        run: docker push jamiecaldwell/uh-crw:latest
 
       - name: Deploy the image to the webserver
         if: ${{ github.event_name == 'release' }}

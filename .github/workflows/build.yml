@@ -22,6 +22,9 @@ jobs:
       # Check out GitHub repository
       - uses: actions/checkout@v3
 
+      - name: echo_test
+        run: echo "hi hello"
+
       - uses: r-lib/actions/setup-pandoc@v2
 
       - name: Checkout transcrypt

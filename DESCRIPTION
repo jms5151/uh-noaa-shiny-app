@@ -1,12 +1,24 @@
 Package: uh-noaa-shiny-app
-Title: UH NOAA Shiny App
+Title: Multi-Factor Coral Disease Forecast Data Explorer
 Version: 0.2.0.9000
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+    person("Caldwell", "Jamie", email = "jamie.sziklay@gmail.com", role = c("aut", "cre"))
+Description: A shiny application to visualize and explore near term coral disease forecasts associated with the NOAA Coral Reef Watch experimental product, 'Multi-Factor Coral Disease Forecast', developed in collaboration with researchers from the University of Hawaii at Manoa (USA) and James Cook University (Australia). The application has four components: 1) visualizations through space and time of Pacific coral reef diseases; 2) scenarios for refining predictions or assessing interventions; 3) historical data records that were used to build the disease risk models; and 4) supportiving information about the product.
+License: file LICENSE
+URL: https://coraldisease.com/
 Encoding: UTF-8
+Imports:
+  flexdashboard,
+  leaflet,
+  plotly,
+  sf,
+  shiny,
+  shinyBS,
+  shinycssloaders,
+  shinydashboard,
+  shinythemes,
+  shinyWidgets,
+  tidyverse,
+  xts
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3

@@ -1,5 +1,4 @@
-if(FALSE){
-# files preprended with zzz_ are loose code
+
 
 # create maps ------------------------------------------------------------------
 
@@ -104,4 +103,3 @@ historicalMap = leaflet() %>%
                    clusterOptions = markerClusterOptions()) %>%
   addScaleBar() %>%
   setView(lng = -180, lat = 16.4502 , zoom = 3)
-}

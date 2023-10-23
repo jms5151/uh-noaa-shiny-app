@@ -1,4 +1,4 @@
-if(FALSE){
+
 # load all data -----------------------------------------------------------------------
 
 # list files
@@ -32,4 +32,3 @@ list2env(csvFiles, envir = .GlobalEnv)
 
 # fix columns names in warning levels table
 colnames(warning_levels_table) <- gsub('\\_', ' ', colnames(warning_levels_table))
-}

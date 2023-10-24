@@ -1,15 +1,79 @@
-app_server <- function (input,
-                        output,
-                        session) {
 
-  forecast_page(input, output)
-  scenarios_page(input, output)
-  historical_data_page(input, output)
-  about_page(input, output)
+nowcasts_and_forecasts_panel <- function (app_text     = app_text( ),
+                                          app_settings = app_settings( )) {
+
+  tabPanel(title = "Coral disease predictions",
+           fluidRow(column(width = 12,
+                           h2(strong(app_text$welcome_txt, 
+                                     style = "color: #009999;")),
+                           h5(app_text$landing_page_info_txt, 
+                              style = "color: #009999;"))), 
+                           uiOutput("noaa_ref"),
+           br( ),
+           fluidRow(style = "border-style: double; border-color: #00172D;"),
+                    column(width = 3,
+                           style = "border-right: double; border-color: #00172D;",
+                           h4("Risk nowcast (region, disease)",
+                              align = "center",
+                              style = "background-color: #00172D;
+                              color: white;
+                              padding-bottom: 3px"),
+                           h4(app_text$forecasts_step_1_txt, 
+                              style = "color: #009999;"),
+                           h6(app_text$forecasts_step_1_txt_sub, 
+                              style = "color: #009999;"), 
+                           br( )),
+                    column(width = 6,
+                           h4("Risk map (total disease)",
+                              align = "center",
+                              style = "background-color: #00172D;
+                              color: white;
+                              padding-bottom: 3px"),
+                           h4(app_text$forecasts_step_2_txt, 
+                              style = "color: #009999;"),
+                           h6(app_text$forecasts_step_2_txt_sub, 
+                              style = "color: #009999;"), 
+                           br( )),
+                    column(width = 3,
+                           style = "border-left: double; border-color: #00172D;",
+                           h4("Risk predictions",
+                              align = "center",
+                              style = "background-color: #00172D;
+                              color: white;
+                              padding-bottom: 3px"),
+                           h4(app_text$forecasts_step_3_txt,
+                              style = "color: #009999;"),
+                           h6(app_text$forecasts_step_3_txt_sub,
+                              style = "color: #009999;"),
+                           br( )),
+
+           hr( ),
+           textOutput(outputId = "last_update"))
+
 
 
 }
 
+
+  forecast_page(input, output)
+
+forecast_page <- function(input, output) {
+
+
+  # replace this link when avaialble
+  mfdz_url <- a("NOAA Coral Reef Watch", href = 'https://coralreefwatch.noaa.gov/')
+
+  noaa_return <- tagList('Return to ', mfdz_url, '.')
+
+
+  output$noaa_ref <- renderUI({
+    noaa_return
+  })
+
+
+  output$last_update <- renderText({ "hi" })
+
+}
 about_page <- function(input, output) {
   output$cdz_images <- renderImage({
     filename <- "../forec_shiny_app_data/disease_pictures.png"
@@ -1084,15 +1148,12 @@ if(input$management_map_shape_click$group == "WS GBRMPA nowcast")
 }
 }
 
-forecast_page <- function(input, output) {
-  output$noaa_ref <- renderUI({
-    noaa_return
-  })
+
+
+
 
   # Initial render, cache to prevent expensive re-render
-  output$gauge_plots <- renderPlotly({
-    gaugePlots
-  }) %>% bindCache("gaugePlots")
+
 
   output$map1 <- renderLeaflet({
     leaf_reefs
@@ -1206,4 +1267,4 @@ handle_map_shape_click <- function(input, output) {
           )
       })
     }
-}
+

@@ -1,7 +1,7 @@
 # This file launches the shiny app from a clean R session.
 # running library on the package installs all necessary R dependencies and sources all internal functions 
-
-library("uhnoaashinyapp")
+# but on the way to production we need to check that everythings present
+# library("uhnoaashinyapp")
 
 # here is where any additional code can be run
 

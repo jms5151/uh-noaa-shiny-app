@@ -12,6 +12,7 @@ Depends:
 Imports:
   cachem,
   flexdashboard,
+  htmltools,
   leaflet,
   plotly,
   sf,

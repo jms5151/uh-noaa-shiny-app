@@ -1,20 +1,34 @@
 
 #' @importFrom cachem cache_mem
-# @importFrom flexdashboard
-#' @importFrom leaflet addCircleMarkers addLegend addPolygons addScaleBar addTiles colorBin highlightOptions invokeMethod leaflet leafletOutput markerClusterOptions renderLeaflet setView
+#' @importFrom htmltools br div includeCSS h2 h4 h5 h6 HTML strong
+#' @importFrom leaflet addCircleMarkers addLegend addPolygons addScaleBar 
+#'               addTiles colorBin highlightOptions invokeMethod leaflet
+#'               leafletOutput markerClusterOptions renderLeaflet 
+#'               setView
 #' @importFrom magrittr `%>%`
-#' @importFrom plotly add_ribbons add_trace layout plot_ly plotlyOutput renderPlotly
+#' @importFrom plotly add_ribbons add_trace layout plot_ly plotlyOutput 
+#'               renderPlotly
 #' @importFrom sf st_read
-#' @importFrom shiny bindCache observeEvent reactive renderDataTable renderImage renderText renderUI runApp shinyOptions
-# @importFrom shinyBS
+#' @importFrom shiny absolutePanel bindCache column fluidRow hr imageOutput 
+#'               navbarPage observeEvent reactive renderDataTable renderImage 
+#'               renderText renderUI runApp shinyApp shinyOptions 
+#'               tabPanel textOutput uiOutput 
 #' @importFrom shinycssloaders withSpinner
-# @importFrom shinydashboard
 #' @importFrom shinythemes shinytheme
+#' @importFrom yaml read_yaml
+
+
+
+# @importFrom flexdashboard
+# @importFrom shinyBS
+# @importFrom shinydashboard
 # @importFrom shinyWidgets
 # @importFrom tidyverse
 # @importFrom xts
-#' @importFrom yaml read_yaml
+
 
 #' @keywords internal
 #'
 "_PACKAGE"
+
+

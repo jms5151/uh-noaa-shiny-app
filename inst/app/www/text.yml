@@ -1,0 +1,27 @@
+welcome_txt: 'Welcome to the Multi-Factor Coral Disease Forecast data explorer'
+landing_page_info_txt: 'Use this tool to explore current and future coral disease risk. Nowcasts indicate disease risk predictions that use observed (including satellite) data. Forecasts indicate disease risk predictions that use modeled future conditions.'
+forecasts_step_1_txt: '1. Overview of current regional disease conditions.'
+forecasts_step_1_txt_sub: 'Hover mouse over bars to see percentage of pixels in each risk category.'
+forecasts_step_2_txt: '2. Spatial variation in current and future disease risk.' 
+forecasts_step_2_txt_sub: 'Toggle among map layers at different space and time scales (in map legend).'
+forecasts_step_3_txt: '3. Location-specific seasonal disease projections.'
+forecasts_step_3_txt_sub: 'Click on a polygon on the map to see disease projections through time.'
+scenarios_page_info_txt: 'Click on a pixel and adjust sliders to explore coral disease mitigation potential.'
+scenarios_page_explainer_txt: 'Use this tool to refine nowcast predictions based on 
+local conditions and to assess intervention strategies.'
+scenarios_step_1_txt: 'Step 1: Select a region & disease.'
+scenarios_step_2_txt: 'Step 2: Select a location.'
+scenarios_step_3_txt: 'Step 3: Adjust local conditions.'
+scenarios_step_4_txt: 'Step 4: Assess changes in disease risk due to changes in local conditions.'
+scenarios_page_explainer_txt_2: 'Location-specific condition values may not update on per-pixel (or management zone) basis because the spatial scale of the underlying data may be larger than a pixel (or management zone).'
+historical_data_txt1: 'This map shows the locations, data collectors, and time range for the survey data that was used to build the coral disease models.'
+historical_data_txt2: 'You can zoom in and out to explore different regions and click on survey points for pop-up information.' 
+historical_data_txt3: 'There is less uncertainty in disease forecasts for locations with more surveys.'
+turbidity_hover_txt: 'Turbidity is represented by the diffuse attenuation coefficient at 490 nm (Kd490). Higher value indicate lower clarity of ocean water.'
+photo_credit: "Photos courtesy of Courtney Couch and Laurie Raymundo."
+disease_info_text: "Growth anomalies are chronic, protuberant masses of coral skeletons (i.e., tumors) 
+that reduce growth, fecundity, and survival. White syndromes are characterized by progressive tissue loss across the coral colony with lesions progressing slowly (chronic to subacute) or rapidly (acute). The top row of images show lesion manifestation on host taxa modeled in this application while the second row of images shows how this disease appears on different coral taxa."
+warning_levels_txt: "Disease on the Great Barrier Reef (GBR) is measured as a density (total number of diseased colonies per 75m<sup>2</sup>), while disease in the U.S. Pacific is measured as prevalence (total number of diseased colonies divided by total number of colonies observed). Abundance pertains to specificmorphologies where applicable. Prevalence pertains to specific families."
+about_models_text: "Quantile regresson forest models are used to estimate disease risk in this product. Quantile regression forests use tree-based ensemble methods to estimate conditional quantiles. Quantile regression forest models were built using a subset of data shown in the Historical data page of this application, the remaining data was used for validation. There are separate models used for each disease-region group (i.e., growth anomalies in Australia, growth anomalies in the U.S. Pacific, white syndromes in Australia, and white syndromes in the U.S. Pacific)."
+funding_statement_txt: 'Funding for this product is from the <a href="https://appliedsciences.nasa.gov/what-we-do/ecological-forecasting">NASA Ecological Forecasting program</a> grant NNX17AI21G. The work was led by researchers at the <a href="http://www.himb.hawaii.edu/">Hawaii Institute of Marine Biology, University of Hawaii</a> and <a href="https://coralreefwatch.noaa.gov/">NOAA Coral Reef Watch</a>.'
+publications_txt: '<ol> <li>Geiger EF, Heron SF, Hernandez WJ, Caldwell JM, Falinski K, Callender T, Greene AL, Liu G, De La Cour JL, Armstrong RA, Donahue MJ, Eakin CM. (2021) <a href="https://www.frontiersin.org/articles/10.3389/fmars.2021.643302/full">Optimal Spatiotemporal Scales to Aggregate Satellite Ocean Color Data for Nearshore Reefs and Tropical Coastal Waters: Two Case Studies.</a> Frontiers in Marine Science. </li> <br> <li>Greene A, Donahue MJ, Caldwell JM, Heron SF, Geiger E, Raymundo LJ. (2020) <a href="https://www.frontiersin.org/articles/10.3389/fmars.2020.601469/full">Coral Disease Time Series Highlight Size-Dependent Risk and Other Drivers of White Syndrome in a Multi-Species Model.</a> Frontiers in Marine Science 7, 1022. </li> <br> <li>Greene A, Leggat W, Donahue MJ, Raymundo LJ, Caldwell JM, Moriarty T, Heron SF, Ainsworth TD. (2020) <a href="https://besjournals.onlinelibrary.wiley.com/doi/abs/10.1111/2041-210X.13431">Complementary sampling methods for coral histology, metabolomics, and microbiome.</a> Methods in Ecology and Evolution, 11(9), 1012-1020. </li> <br> <li>Caldwell JM, Aeby G, Heron SF, and Donahue MJ. (2020) <a href="https://www.nature.com/articles/s41598-020-59688-8">Case-control design identified ecological drivers of endemic coral diseases.</a> Scientific Reports, 10(1), 1-11. </li>'

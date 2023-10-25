@@ -1,7 +1,8 @@
 app_ui <- function (theme = shinytheme("flatly")) {
 
-  app_text <- read_yaml("inst/app/www/text.yml")
-
+  app_text     <- read_yaml(app_file("text.yml"))
+  app_settings <- read_yaml(app_file("settings.yml"))
+  
   navbarPage(title       = "", 
              id          = "nav",
              collapsible = TRUE,
@@ -11,11 +12,11 @@ app_ui <- function (theme = shinytheme("flatly")) {
     tabPanel(title = "Coral disease predictions",
       fluidRow(
         column(width = 12,
-               h2(strong(app_text$welcome_txt, 
+               h2(strong(app_text$welcome, 
                          style = "color: #009999;")),
-               h5(app_text$landing_page_info_txt, 
+               h5(app_text$landing_page_info, 
                   style = "color: #009999;"),
-               uiOutput("noaa_ref")
+               HTML(app_text$noaa_ref)
         )
       ),
       br( ),
@@ -27,23 +28,23 @@ app_ui <- function (theme = shinytheme("flatly")) {
              style = "background-color: #00172D;
                       color: white;
                       padding-bottom: 3px"),
-          h4(app_text$forecasts_step_1_txt, 
+          h4(app_text$forecasts_step_1, 
              style = "color: #009999;"),
-          h6(app_text$forecasts_step_1_txt_sub, 
+          h6(app_text$forecasts_step_1_sub, 
              style = "color: #009999;"),
           #plotlyOutput( ),
           br( )
         ),
 
         column(width = 6,
-          h4("Risk map",
+          h4("Risk map (total disease)",
              align = "center",
              style = "background-color: #00172D;
                       color: white;
                       padding-bottom: 3px"),
-          h4(app_text$forecasts_step_2_txt, 
+          h4(app_text$forecasts_step_2, 
              style = "color: #009999;"),
-          h6(app_text$forecasts_step_2_txt_sub, 
+          h6(app_text$forecasts_step_2_sub, 
              style = "color: #009999;"),
           #leafletOutput( ),
           br( )
@@ -56,9 +57,9 @@ app_ui <- function (theme = shinytheme("flatly")) {
              style = "background-color: #00172D;
                       color: white;
                       padding-bottom: 3px"),
-          h4(app_text$forecasts_step_3_txt, 
+          h4(app_text$forecasts_step_3, 
              style = "color: #009999;"),
-          h6(app_text$forecasts_step_3_txt_sub, 
+          h6(app_text$forecasts_step_3_sub, 
              style = "color: #009999;"),
           #plotlyOutput( ),
           #plotlyOutput( ),
@@ -72,7 +73,7 @@ app_ui <- function (theme = shinytheme("flatly")) {
                ),
                column(width = 10,
                  h4(
-                   strong(app_text$scenarios_page_explainer_txt, 
+                   strong(app_text$scenarios_page_explainer, 
                           style = "color: #009999;")
                  )
                )
@@ -86,20 +87,28 @@ app_ui <- function (theme = shinytheme("flatly")) {
     ),
     tabPanel(title = "About",
       h3("Coral disease information:"),
+      imageOutput("cdz_images") %>%
+        withSpinner(color = app_settings$spinColor),
+      app_text$disease_info,
+      app_text$photo_credit,
+      br( ), br( ), 
+
+      h3("Disease risk warning levels:"),
+      dataTableOutput("warning_levels_table"),
       br(),
-      HTML(app_text$warning_levels_txt),
-    
-      br(),
+      HTML(app_text$warning_levels),
+      br( ), br( ),
+
       h3("Model description:"),
-      app_text$about_models_text,
-    
-      br(),
+      app_text$about_models,
+      br( ), br( ),
+
       h3("Funding:"),
-      HTML(app_text$funding_statement_txt),
-    
-      br(),
+      HTML(app_text$funding_statement),
+      br( ),
+
       h3("Publications:"),
-      HTML(app_text$publications_txt)
+      HTML(app_text$publications)
     )
 
   )

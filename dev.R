@@ -27,6 +27,4 @@ putting app code into inst
 
 source("./inst/app/app.R")
 
-
-shinyApp(ui     = app_ui(),
-         server = app_server)
+devtools::document();shinyApp(ui = app_ui(), server = app_server)

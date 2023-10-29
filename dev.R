@@ -1,21 +1,10 @@
+devtools::document()
+shinyApp(ui = app_ui(), server = app_server)
+runApp(appDir = app_path( ))
 
-
-
-  flexdashboard:::
-  leaflet:::
-  plotly:::
-  sf:::
-  shiny:::
-  shinyBS:::
-  shinycssloaders:::
-  shinydashboard:::
-  shinythemes:::
-  shinyWidgets:::
-  tidyverse:::
-  xts:::
 
 devtools::load_all()
-devtools::document()
+
 devtools::build()
 
 shinyOptions(cache = cache_mem(max_size = 500e6))
@@ -23,8 +12,37 @@ shinyOptions(cache = cache_mem(max_size = 500e6))
 app_ui()
 
 
-putting app code into inst
+file_paths(root = "package")
+
+run_app
+
+
 
 source("./inst/app/app.R")
 
-devtools::document();shinyApp(ui = app_ui(), server = app_server)
+devtools::document();
+
+profvis::profvis({
+  shinyApp(ui = app_ui(), server = app_server)
+})
+
+
+devtools::document()
+f <- data_files(file_ext = c("RData", "Rds"))
+load_rds_files()
+
+
+basemap <- create_basemap()
+mapFun(basemap, 
+layerNames = c('nowcast_polygons_5km'
+                 , 'one_month_forecast_polygons_5km'
+                 , 'two_month_forecast_polygons_5km'
+                 , 'three_month_forecast_polygons_5km'
+                 , 'polygons_GBRMPA_zoning'
+                 , 'polygons_management_zoning')
+  , groupNames = c('Nowcast'
+                   , 'One month forecast'
+                   , 'Two month forecast'
+                   , 'Three month forecast'
+                   , 'GBRMPA nowcast'
+                   , 'Management area nowcast')) 

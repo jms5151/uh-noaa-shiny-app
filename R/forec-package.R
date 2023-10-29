@@ -1,9 +1,9 @@
 
 #' @importFrom cachem cache_mem
-#' @importFrom htmltools br div img includeCSS h2 h3 h4 h5 h6 HTML strong
+#' @importFrom htmltools br div h2 h3 h4 h5 h6 hr HTML img includeCSS strong
 #' @importFrom leaflet addCircleMarkers addLegend addPolygons addScaleBar 
-#'               addTiles colorBin highlightOptions invokeMethod leaflet
-#'               leafletOutput markerClusterOptions renderLeaflet 
+#'               addTiles colorBin getMapData highlightOptions invokeMethod 
+#'               leaflet leafletOutput markerClusterOptions renderLeaflet 
 #'               setView
 #' @importFrom magrittr `%>%`
 #' @importFrom plotly add_ribbons add_trace layout plot_ly plotlyOutput 

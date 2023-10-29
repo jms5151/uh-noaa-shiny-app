@@ -2,10 +2,8 @@ app_server <- function (input,
                         output,
                         session) {
 
-message("poop")
   forecast_page(input, output)
   about_page(input, output)
-message("flush")
 
 }
 
@@ -33,6 +31,10 @@ about_page <- function(input, output) {
 
 forecast_page <- function(input, output) {
 
-
+  output$logo_images <- renderImage({
+      list(src = app_file("logos.png"))
+    }, 
+    deleteFile = FALSE
+  )
 
 }

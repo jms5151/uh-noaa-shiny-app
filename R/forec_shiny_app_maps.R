@@ -3,11 +3,16 @@
 # function to add scale bar that adjusts with zoom -----
 
 addScaleBar <- function(map,
-                        position = c('topright', 'bottomright', 'bottomleft', 'topleft'),
-                        options  = scaleBarOptions()) {
+                        position = c("topright", "bottomright", "bottomleft", "topleft"),
+                        options  = scaleBarOptions( )) {
   
-  options = c(options, list(position = match.arg(position)))
-  invokeMethod(map, getMapData(map), 'addScaleBar', options)
+  options <- c(options, list(position = match.arg(position)))
+
+  invokeMethod(map    = map, 
+               data   = getMapData(map), 
+               method = "addScaleBar", 
+                        options)
+
 }
 
 scaleBarOptions <- function(maxWidth       = 100, 
@@ -15,18 +20,36 @@ scaleBarOptions <- function(maxWidth       = 100,
                             imperial       = TRUE,
                             updateWhenIdle = TRUE) {
 
-  list(maxWidth = maxWidth, 
+  list(maxWidth       = maxWidth, 
        metric         = metric, 
        imperial       = imperial,
        updateWhenIdle = updateWhenIdle)
+
 }
 
-# Function to add polygon layers to a basemap -----
+create_basemap <- function (cols         = c("#CCFFFF", "#FFEF00", "#FFB300", "#EB1F08", "#8D1002"),
+                            legendLabels = c("No/low risk", "Watch", "Warning", "Alert Level 1", "Alert Level 2")) {
 
-mapFun <- function (layerNames, 
+  leaflet( ) %>%
+  addTiles(group = "OpenStreetMap") %>%
+  addTiles(urlTemplate = "http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}", 
+           group       = "Satellite") %>%
+  addScaleBar(position = "topright") %>%
+  addLegend(position = "topleft",
+            colors   = cols,
+            labels   = legendLabels,
+            title    = "Disease risk",
+            opacity  = 1)
+
+}
+
+
+
+mapFun <- function (basemap = create_basemap(),
+                    layerNames, 
                     groupNames) {
 
-  newMap <- reefs_basemap
+  newMap <- basemap
   
   for(i in 1:length(layerNames)){
     newMap <- newMap %>%

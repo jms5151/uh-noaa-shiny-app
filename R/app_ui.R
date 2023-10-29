@@ -2,12 +2,12 @@ app_ui <- function (theme = shinytheme("flatly")) {
 
   app_text     <- read_yaml(app_file("text.yml"))
   app_settings <- read_yaml(app_file("settings.yml"))
-  
+
   navbarPage(title       = "", 
              id          = "nav",
              collapsible = TRUE,
              theme       = theme,
-             header      = includeCSS("inst/app/www/styles.css"),
+             header      = includeCSS(app_file("styles.css")),
 
     tabPanel(title = "Coral disease predictions",
       fluidRow(
@@ -65,7 +65,10 @@ app_ui <- function (theme = shinytheme("flatly")) {
           #plotlyOutput( ),
           br( )
         )
-      )
+      ),
+      hr(),
+      #textOutput(outputId = "last_update"),
+      imageOutput("logo_images")
     ),
     tabPanel(title = "Investigating scenarios",
 

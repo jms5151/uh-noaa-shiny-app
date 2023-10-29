@@ -1,7 +1,3 @@
-# load all data -----------------------------------------------------------------------
-
-
-# format functions
 update_drisk <- function(df){
   df$drisk <- as.numeric(df$drisk) 
   return(df)

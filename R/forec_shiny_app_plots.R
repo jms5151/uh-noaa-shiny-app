@@ -200,34 +200,4 @@ scenarios_barplot_fun <- function(df, baselineValue, riskType){
 }  
 
 
-# create plots -----------------------------------------------------------------
-individual_gauges <- function(df){
-  plot_ly(df,
-          x = ~Value,
-          y = ~Disease,
-          type = 'bar',
-          # text = ~N,
-          color = ~name,
-          marker = list(color = ~colors,
-                        line = list(color = I("black"),
-                                    width = 1.5)),
-          hovertemplate = '%{x:.2p} of reef pixels <extra></extra>'
-  ) %>%
-    layout(yaxis = list(title = '',
-                        showticklabels = FALSE,
-                        tickformat = ""),
-           xaxis = list(title = '',
-                        showticklabels = FALSE,
-                        tickformat = "",
-                        showgrid = F,
-                        zeroline = FALSE),
-           barmode = 'stack',
-           showlegend = FALSE,
-           margin = list(
-             l = 0,
-             r = 0,
-             b = 0,
-             t = 0
-           )
-    )
-}
+

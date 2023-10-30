@@ -51,7 +51,9 @@ app_ui_predictions <- function (app_text     = read_yaml(app_file("text.yml")),
            style = "color: #009999;"),
         h6(app_text$forecasts_step_1_sub, 
            style = "color: #009999;"),
-        plotlyOutput(outputId = "gauge_plots"),
+        plotlyOutput(outputId = "gauge_plots",
+                     height   = 400) %>%
+          withSpinner(color = app_settings$spinColor),
         br( )
       ),
 

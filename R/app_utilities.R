@@ -1,10 +1,3 @@
-load_rds_files <- function ( ) {
-
-  rds_filenames <- data_files(file_ext = c("RData", "Rds"))
-  lapply(rds_filenames, load, .GlobalEnv)
-
-}
-
 
 app_file <- function (x) {
 

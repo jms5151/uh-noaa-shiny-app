@@ -5,8 +5,8 @@ devtools::document()
 
 
 
-
-
+basemap <-create_basemap()
+usethis::use_data(basemap)
 
 shinyApp(ui = app_ui(), server = app_server)
 runApp(appDir = app_path( ))

@@ -7,6 +7,22 @@ app_server <- function (input,
 
 }
 
+
+forecast_page <- function(input, output) {
+
+  output$logo_images <- renderImage({
+      list(src = app_file("logos.png"))
+    }, 
+    deleteFile = FALSE
+  )
+
+  output$gauge_plots <- renderPlotly({
+    plot(sample(1000))
+  }) %>% bindCache("gaugePlots")
+
+}
+
+
 about_page <- function(input, output) {
 
   output$cdz_images <- renderImage({
@@ -25,16 +41,6 @@ about_page <- function(input, output) {
       searching = FALSE,
       info = FALSE
     )
-  )
-
-}
-
-forecast_page <- function(input, output) {
-
-  output$logo_images <- renderImage({
-      list(src = app_file("logos.png"))
-    }, 
-    deleteFile = FALSE
   )
 
 }

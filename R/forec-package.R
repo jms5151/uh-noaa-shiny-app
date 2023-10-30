@@ -1,6 +1,7 @@
 
 #' @importFrom cachem cache_mem
 #' @importFrom htmltools br div h2 h3 h4 h5 h6 hr HTML img includeCSS strong
+#'               tags
 #' @importFrom leaflet addCircleMarkers addLegend addPolygons addScaleBar 
 #'               addTiles colorBin getMapData highlightOptions invokeMethod 
 #'               leaflet leafletOutput markerClusterOptions renderLeaflet 

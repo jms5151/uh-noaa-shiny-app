@@ -15,41 +15,44 @@ div.outer {
 }
 
 /* Customize fonts */
-  body, label, input, button, select { 
-    font-family: 'Helvetica Neue', Helvetica;
-    font-weight: 200;
-  }
-h1, h2, h3, h4 { font-weight: 400; }
+body, label, input, button, select { 
+  font-family: 'Helvetica Neue', Helvetica;
+  font-weight: 200;
+}
+
+h1, h2, h3, h4 { 
+  font-weight: 400; 
+}
 
 #controls {
-/* Appearance */
+  /* Appearance */
   background-color: white;
-padding: 0 10px 10px 10px;
-cursor: move;
-/* Fade out while not hovering */
+  padding: 0 10px 10px 10px;
+  cursor: move;
+  /* Fade out while not hovering */
   opacity: 0.55;
-zoom: 0.9;
-transition: opacity 500ms 1s;
+  zoom: 0.9;
+  transition: opacity 500ms 1s;
 }
 
 #controls:hover {
-/* Fade in while hovering */
+  /* Fade in while hovering */
   opacity: 0.75;
-transition-delay: 0;
+  transition-delay: 0;
 }
 
 #logo {
-/* Appearance */
+  /* Appearance */
   background-color: transparent;
-cursor: move;
-/* Fade out while not hovering */
+  cursor: move;
+  /* Fade out while not hovering */
   opacity: 0.25;
-zoom: 0.9;
-transition: opacity 500ms 1s;
+  zoom: 0.9;
+  transition: opacity 500ms 1s;
 }
 
 #logo:hover {
-/* Fade in while hovering */
+  /* Fade in while hovering */
   opacity: 0.95;
-transition-delay: 0;
+  transition-delay: 0;
 }

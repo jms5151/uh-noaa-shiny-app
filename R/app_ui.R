@@ -67,7 +67,8 @@ app_ui_predictions <- function (app_text     = read_app_text( ),
            style = "color: #009999;"),
         h6(app_text$forecasts_step_2_sub, 
            style = "color: #009999;"),
-        #leafletOutput( ),
+       # leafletOutput(outputId = "map1") %>%
+        #  withSpinner(color = app_settings$spinColor),
         br( )
       ),
 
@@ -82,8 +83,12 @@ app_ui_predictions <- function (app_text     = read_app_text( ),
            style = "color: #009999;"),
         h6(app_text$forecasts_step_3_sub, 
            style = "color: #009999;"),
-        #plotlyOutput( ),
-        #plotlyOutput( ),
+    #    plotlyOutput(outputId = "plotlyGA",
+     #                height   = 200) %>%
+      #    withSpinner(color = app_settings$spinColor),
+      #  plotlyOutput(outputId = "plotlyWS",
+       #              height   = 200) %>%
+        #  withSpinner(color = app_settings$spinColor),
         br( )
       )
     ),

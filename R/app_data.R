@@ -1,5 +1,18 @@
 # need to generalize the file locations
 
+load_shape_files <- function (main_dir = ".") {
+
+  shp_files <- data_files(file_ext = "shp", main_dir = main_dir)
+
+  out <- lapply(X     = shp_files, 
+                FUN   = st_read,
+                quiet = TRUE)
+
+  names(out) <- gsub('.*\\/|\\.shp', '', shp_files)
+  out
+}
+
+
 load_gauge_data <- function (main_dir = ".") {
 
   ga_forecast <- read.csv(data_file("Forecasts", "ga_forecast.csv", main_dir = main_dir))

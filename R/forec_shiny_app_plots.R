@@ -110,25 +110,6 @@ diseaseRisk_plotly <- function(df, titleName){
            ) 
   }
 
-# empty plot to display line graph before any pixel is selected -------------------
-diseaseRisk_placeholder_plot <- function(titleName, dateRange) {
-  plot_ly() %>%
-    add_trace(x = ~range(dateRange), 
-              y = 0, 
-              type = 'scatter', 
-              mode = 'lines') %>%
-    layout(title = titleName,
-           xaxis = list(showgrid = F, 
-                        title = ""), 
-           yaxis = list(showline = T, 
-                        showgrid = F, 
-                        range = c(0, 12),
-                        title = "Disease risk"),
-           font = list(size = 14),
-           showlegend = FALSE,
-           margin = plotly_margins)
-}
-
 # Scenarios plots ------------------------------
 
 scenarios_barplot_fun <- function(df, baselineValue, riskType){

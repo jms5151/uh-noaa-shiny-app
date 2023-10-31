@@ -18,7 +18,29 @@ forecast_page <- function(input, output) {
 
   output$gauge_plots <- renderPlotly({
     gauge_plots( )
-  }) %>% bindCache("gaugePlots")
+  }) 
+
+ # output$map1 <- renderLeaflet({
+ #   leaf_reefs
+ # }) 
+
+
+  #output$plotlyGA <- renderPlotly({
+
+#    ga_forecast <- read.csv(data_file("Forecasts", "ga_forecast.csv"))
+
+ #   diseaseRisk_placeholder_plot(titleName = "Growth anomalies",
+  #                               dateRange = ga_forecast$Date)
+#  }) 
+
+ # output$plotlyWS <- renderPlotly({
+
+  #  ws_forecast <- read.csv(data_file("Forecasts", "ws_forecast.csv"))
+
+   # diseaseRisk_placeholder_plot(titleName = "White syndromes",
+    #                             dateRange = ws_forecast$Date)
+#  })
+
 
 }
 

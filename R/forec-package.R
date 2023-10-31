@@ -19,6 +19,7 @@
 #' @importFrom shinythemes shinytheme
 #' @importFrom tidyr gather
 #' @importFrom usethis use_data
+#' @importFrom utils read.csv
 #' @importFrom yaml read_yaml
 
 

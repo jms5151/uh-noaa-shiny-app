@@ -129,3 +129,29 @@ gauge_plots <- function (main_dir = ".") {
 
 
 }
+
+
+
+
+diseaseRisk_placeholder_plot <- function(titleName, 
+                                         dateRange) {
+
+  plot_ly() %>%
+    add_trace(x = ~range(dateRange), 
+              y = 0, 
+              type = 'scatter', 
+              mode = 'lines') %>%
+    layout(title = titleName,
+           xaxis = list(showgrid = F, 
+                        title = ""), 
+           yaxis = list(showline = T, 
+                        showgrid = F, 
+                        range = c(0, 12),
+                        title = "Disease risk"),
+           font = list(size = 14),
+           showlegend = FALSE,
+           margin = list(l = 50,
+                         r = 20,
+                         b = 20,
+                         t = 60))
+}

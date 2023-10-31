@@ -1,13 +1,13 @@
 app_ui <- function (theme = shinytheme("flatly")) {
 
-  app_text     <- read_yaml(app_file("text.yml"))
-  app_settings <- read_yaml(app_file("settings.yml"))
+  app_text     <- read_app_text( )
+  app_settings <- read_app_settings( )
 
   navbarPage(title       = "", 
              id          = "nav",
              collapsible = TRUE,
              theme       = theme,
-             header      = tags$head(includeCSS(app_file("styles.css"))),
+             header      = app_css_header( ),
 
     app_ui_predictions(app_text     = app_text,
                        app_settings = app_settings),
@@ -25,8 +25,8 @@ app_ui <- function (theme = shinytheme("flatly")) {
 
 }
 
-app_ui_predictions <- function (app_text     = read_yaml(app_file("text.yml")),
-                                app_settings = read_yaml(app_file("settings.yml"))) { 
+app_ui_predictions <- function (app_text     = read_app_text( ),
+                                app_settings = read_app_settings( )) { 
 
   tabPanel(title = "Coral disease predictions",
     fluidRow(

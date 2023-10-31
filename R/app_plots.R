@@ -38,7 +38,6 @@ gauge_plots <- function (main_dir = ".") {
                                  family = "Arial"),
                 showarrow = FALSE)
 
-  gauge_data <- gauge_data(main_dir = main_dir)
 
   gauge_ga_samoas <- gauge_data %>%
                        subset(Disease == "Growth anomalies" & Region == "samoas") %>%

@@ -17,7 +17,7 @@ forecast_page <- function(input, output) {
   )
 
   output$gauge_plots <- renderPlotly({
-    gauge_plots()
+    gauge_plots( )
   }) %>% bindCache("gaugePlots")
 
 }

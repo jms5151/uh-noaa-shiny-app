@@ -6,11 +6,11 @@ read.csv(data_file("Forecasts", "ga_forecast.csv"))
 
 
 
-basemap <-create_basemap()
-usethis::use_data(basemap)
 
-shinyApp(ui = app_ui(), server = app_server)
+
+#shinyApp(ui = app_ui(), server = app_server)
 runApp(appDir = app_path( ))
+shinyAppDir(appDir = app_path( ))
 
 
 devtools::load_all()

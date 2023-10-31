@@ -18,6 +18,7 @@
 #' @importFrom shinycssloaders withSpinner
 #' @importFrom shinythemes shinytheme
 #' @importFrom tidyr gather
+#' @importFrom usethis use_data
 #' @importFrom yaml read_yaml
 
 

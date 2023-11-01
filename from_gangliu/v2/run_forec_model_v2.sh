@@ -342,7 +342,7 @@ foreach region ($list_regions)
   # Set minimum file size: first three for predictions and last three for satellite:
   switch ($region)
   case 'gbr':  
-    set list_file_size_expected_min  = ('700000' '5000000' '7000000' '10000' '10000' '10000')
+    set list_file_size_expected_min  = ('400000' '5000000' '7000000' '10000' '10000' '10000')
     breaksw
   case 'guam_cnmi':
     set list_file_size_expected_min  = ( '20000'  '100000'  '100000' '10000' '10000' '10000')

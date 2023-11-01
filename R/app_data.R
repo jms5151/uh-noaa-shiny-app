@@ -15,6 +15,8 @@ load_shape_files <- function (main_dir = ".") {
 
 load_gauge_data <- function (main_dir = ".") {
 
+# use feather
+# but also, where to put this so we dont need to read it again later
   ga_forecast <- read.csv(data_file("Forecasts", "ga_forecast.csv", main_dir = main_dir))
   ws_forecast <- read.csv(data_file("Forecasts", "ws_forecast.csv", main_dir = main_dir))
 

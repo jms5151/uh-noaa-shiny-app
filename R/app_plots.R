@@ -29,8 +29,8 @@ individual_gauges <- function (df) {
     )
 }
 
-gauge_plots <- function (main_dir = ".") {
-
+gauge_plots <- function ( ) {
+#Sys.sleep(10)
   aList <- list(xanchor   = 'left',
                 x         = 0,
                 y         = 0.9,

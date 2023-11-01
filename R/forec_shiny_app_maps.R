@@ -45,9 +45,23 @@ create_basemap <- function (cols         = c("#CCFFFF", "#FFEF00", "#FFB300", "#
 
 
 
-mapFun <- function (basemap = create_basemap(),
-                    layerNames, 
-                    groupNames) {
+mapFun <- function (basemap,
+                    layerNames = c('nowcast_polygons_5km', 
+                                   'one_month_forecast_polygons_5km',
+                                   'two_month_forecast_polygons_5km',
+                                   'three_month_forecast_polygons_5km',
+                                   'polygons_GBRMPA_zoning',
+                                   'polygons_management_zoning'),
+                     groupNames = c('Nowcast',
+                                    'One month forecast',
+                                    'Two month forecast',
+                                    'Three month forecast',
+                                    'GBRMPA nowcast',
+                                    'Management area nowcast'), 
+                    pal = colorBin(c("#CCFFFF", "#FFEF00", "#FFB300", "#EB1F08", "#8D1002"), 
+                                   domain = shpFiles[['nowcast_polygons_5km']]$drisk, 
+                                   bins = 0:4, 
+                                   na.color = "transparent")) {
 
   newMap <- basemap
   

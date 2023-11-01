@@ -1,34 +1,20 @@
-file_paths <- function (app_text_file     = "text.yml",
-                        app_settings_file = "settings.yml",
-                        app_style_file    = "styles.css",
-                        root              = "package") {
-
-  app <- app_path(root = root)
-
-  list(app_text     = file.path(app, "www", app_text_file),
-       app_settings = file.path(app, "www", app_settings_file),
-       app_style    = file.path(app, "www", app_style_file))
-
-
-}
-
-app_path <- function (root = "package") {
-
-  if (root == "package") {
-    system.file("app", package = "uhnoaashinyapp") 
-  } else if (root == "local") {
-    normalizePath(".", "/")
-  } else {
-    stop("package must have `root` of `package` or `local`")
-  }
-
-}
-
 
 
 app_file <- function (...) {
 
-  system.file("app", "www", ..., package = "uhnoaashinyapp")
+  system.file("app", ..., package = "uhnoaashinyapp")
+
+}
+
+app_logo_path <- function ( ) {
+
+  app_file("logos.png")
+
+}
+
+app_disease_pictures_path <- function ( ) {
+
+  app_file("disease_pictures.png")
 
 }
 
@@ -52,5 +38,17 @@ data_file <- function (...,
                        data_dir = "forec_shiny_app_data") {
 
   file.path(main_dir, data_dir, ...)
+
+}
+
+read_app_text <- function ( ) {
+
+  read_yaml(app_file("text.yml"))
+  
+}
+
+read_app_settings <- function ( ) {
+
+  read_yaml(app_file("settings.yml"))
 
 }

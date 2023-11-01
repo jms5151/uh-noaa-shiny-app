@@ -1,158 +1,228 @@
-app_ui <- function (theme = shinytheme("flatly")) {
-
-  app_text     <- read_app_text( )
-  app_settings <- read_app_settings( )
+app_ui <- function ( ) {
 
   navbarPage(title       = "", 
              id          = "nav",
              collapsible = TRUE,
-             theme       = theme,
+             theme       = shinytheme("flatly"),
              header      = app_css_header( ),
 
-    app_ui_predictions(app_text     = app_text,
-                       app_settings = app_settings),
+    app_ui_predictions( ),
 
-    app_ui_scenarios(app_text     = app_text,
-                     app_settings = app_settings),
+    app_ui_scenarios( ),
 
-    app_ui_historical_data(app_text     = app_text,
-                           app_settings = app_settings),
+    app_ui_historical_data( ),
 
-    app_ui_about(app_text     = app_text,
-                 app_settings = app_settings)
+    app_ui_about( )
 
   )
 
 }
 
-app_ui_predictions <- function (app_text     = read_app_text( ),
-                                app_settings = read_app_settings( )) { 
+app_ui_predictions <- function ( ) { 
 
   tabPanel(title = "Coral disease predictions",
-    fluidRow(
-      column(width = 12,
-             h2(strong(app_text$welcome, 
-                       style = "color: #009999;")),
-             h5(app_text$landing_page_info, 
-                style = "color: #009999;"),
-             HTML(app_text$noaa_ref)
-      )
-    ),
+
+    app_ui_predictions_welcome( ),
+
     br( ),
-    fluidRow(style = "border-style: double; border-color: #00172D;",
-      column(style = "border-right: double; border-color: #00172D;",
-             width = 3,
+
+    app_ui_predictions_figures( ),
+
+    hr( ),
+
+    app_ui_predictions_logos( )
+  )
+
+}
+
+app_ui_predictions_figures <- function ( ) {
+
+  fluidRow(style = "border-style: double; border-color: #00172D;",
+    app_ui_predictions_gauge_plots( ),
+    app_ui_predictions_reef_map( ),
+    app_ui_predictions_disease_risk_plots( )
+  )
+
+}
+
+app_ui_predictions_disease_risk_plots <- function ( ) {
+
+  column(width = 3,
+         style = "border-left: double; border-color: #00172D;",
+         h4("Risk predictions",
+            align = "center",
+            style = "background-color: #00172D;
+                     color: white;
+                     padding-bottom: 3px"),
+         h4(HTML(app_text$forecasts_step_3),
+                 style = "color: #009999;"),
+         h6(HTML(app_text$forecasts_step_3_sub),
+                 style = "color: #009999;"),
+         plotlyOutput(outputId = "plotlyGA",
+                      height = 200) %>%
+           withSpinner(color = app_settings$spinColor),
+         plotlyOutput(outputId = "plotlyWS",
+                     height = 200) %>%
+           withSpinner(color = app_settings$spinColor),
+         br( ))
+
+}
+
+app_ui_predictions_reef_map <- function ( ) {
+
+  column(width = 6,
+         h4("Risk map (total disease)",
+            align = "center",
+            style = "background-color: #00172D;
+                     color: white;
+                     padding-bottom: 3px"),
+         h4(HTML(app_text$forecasts_step_2), 
+                 style = "color: #009999;"),
+         h6(HTML(app_text$forecasts_step_2_sub), 
+                 style = "color: #009999;"), 
+         leafletOutput(outputId = "map1") %>%
+           withSpinner(color = app_settings$spinColor),
+         br( ))
+}
+
+app_ui_predictions_gauge_plots <- function ( ) {
+
+  column(style = "border-right: double; border-color: #00172D;",
+         width = 3,
         h4("Risk nowcast",
            align = "center",
            style = "background-color: #00172D;
                     color: white;
                     padding-bottom: 3px"),
-        h4(app_text$forecasts_step_1, 
+        h4(HTML(app_text$forecasts_step_1), 
            style = "color: #009999;"),
-        h6(app_text$forecasts_step_1_sub, 
+        h6(HTML(app_text$forecasts_step_1_sub), 
            style = "color: #009999;"),
         plotlyOutput(outputId = "gauge_plots",
                      height   = 400) %>%
           withSpinner(color = app_settings$spinColor),
         br( )
-      ),
-
-      column(width = 6,
-        h4("Risk map (total disease)",
-           align = "center",
-           style = "background-color: #00172D;
-                    color: white;
-                    padding-bottom: 3px"),
-        h4(app_text$forecasts_step_2, 
-           style = "color: #009999;"),
-        h6(app_text$forecasts_step_2_sub, 
-           style = "color: #009999;"),
-       # leafletOutput(outputId = "map1") %>%
-        #  withSpinner(color = app_settings$spinColor),
-        br( )
-      ),
-
-      column(style = "border-left: double; border-color: #00172D;",
-             width = 3,
-        h4("Risk predictions",
-           align = "center",
-           style = "background-color: #00172D;
-                    color: white;
-                    padding-bottom: 3px"),
-        h4(app_text$forecasts_step_3, 
-           style = "color: #009999;"),
-        h6(app_text$forecasts_step_3_sub, 
-           style = "color: #009999;"),
-    #    plotlyOutput(outputId = "plotlyGA",
-     #                height   = 200) %>%
-      #    withSpinner(color = app_settings$spinColor),
-      #  plotlyOutput(outputId = "plotlyWS",
-       #              height   = 200) %>%
-        #  withSpinner(color = app_settings$spinColor),
-        br( )
       )
-    ),
-    hr(),
-    #textOutput(outputId = "last_update"),
-    imageOutput("logo_images")
-  )
 
 }
 
-app_ui_scenarios <- function (app_text     = read_yaml(app_file("text.yml")),
-                              app_settings = read_yaml(app_file("settings.yml"))) { 
+app_ui_predictions_logos <- function ( ) {
+
+  imageOutput("logo_images")
+
+}
+
+app_ui_predictions_welcome <- function ( ) {
+
+  fluidRow(
+      column(width = 12,
+             h2(strong(HTML(app_text$welcome), 
+                       style = "color: #009999;")),
+             h5(HTML(app_text$landing_page_info),
+                style = "color: #009999;"),
+             HTML(app_text$noaa_ref)
+      )
+    )
+
+}
+
+app_ui_scenarios <- function ( ) {
 
   tabPanel(title = "Investigating scenarios",
 
-    fluidRow(column(width = 1),
-             column(width = 10,
-               h4(strong(app_text$scenarios_page_explainer, 
-                         style = "color: #009999;")
-                 )
-               )
-    ),
+    app_ui_scenarios_explainer( ),
+    
     br( )
+
   )
 }
 
 
+app_ui_scenarios_explainer <- function ( ) {
 
-app_ui_historical_data <- function (app_text     = read_yaml(app_file("text.yml")),
-                                    app_settings = read_yaml(app_file("settings.yml"))) { 
+  fluidRow(column(width = 1),
+           column(width = 10,
+               h4(strong(HTML(app_text$scenarios_page_explainer), 
+                         style = "color: #009999;"))))
+
+
+
+
+}
+
+
+
+
+app_ui_historical_data <- function ( ) {
 
   tabPanel(title = "Historical data")
 
 
 }
 
-app_ui_about <- function (app_text     = read_yaml(app_file("text.yml")),
-                          app_settings = read_yaml(app_file("settings.yml"))) { 
+app_ui_about <- function ( ) {
 
   tabPanel(title = "About",
-    h3("Coral disease information:"),
-    imageOutput("cdz_images") %>%
-      withSpinner(color = app_settings$spinColor),
-    app_text$disease_info,
-    app_text$photo_credit,
+
+    app_ui_about_disease_information( ),
+
     br( ), br( ), 
 
-    h3("Disease risk warning levels:"),
-    dataTableOutput("warning_levels_table"),
-    br(),
-    HTML(app_text$warning_levels),
+    app_ui_about_warning_levels( ),
+
     br( ), br( ),
 
-    h3("Model description:"),
-    app_text$about_models,
+    app_ui_about_models( ),
+
     br( ), br( ),
 
-    h3("Funding:"),
-    HTML(app_text$funding_statement),
-    br( ),
+    app_ui_about_funding( ),
 
-    h3("Publications:"),
-    HTML(app_text$publications)
+    br( ), br( ), 
+    
+    app_ui_about_publications( )
+
   )
 
 }
 
+app_ui_about_disease_information <- function ( ) {
+
+  div(h3("Coral disease information:"),
+      imageOutput("cdz_images") %>%
+        withSpinner(color = app_settings$spinColor),
+      HTML(app_text$disease_info),
+      HTML(app_text$photo_credit))
+
+}
+
+app_ui_about_warning_levels <- function ( ) {
+
+  div(h3("Disease risk warning levels:"),
+      dataTableOutput("warning_levels_table"),
+       br( ),
+       HTML(app_text$warning_levels))
+
+}
+
+app_ui_about_models <- function ( ) {
+
+  div(h3("Model description:"),
+      HTML(app_text$about_models))
+
+}
+
+app_ui_about_funding <- function ( ) {
+
+  div(h3("Funding:"),
+      HTML(app_text$funding_statement))
+
+}
+
+
+app_ui_about_publications <- function ( ) {
+
+  div(h3("Publications:"),
+      HTML(app_text$publications))
+
+}

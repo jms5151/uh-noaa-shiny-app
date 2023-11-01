@@ -1,12 +1,19 @@
 devtools::document()
+run_app()
+
+
+# need to square away that reactivity in the leaflet
+
 
 read.csv(app_file("text.yml"))
 
 read.csv(data_file("Forecasts", "ga_forecast.csv"))
 
+app_text
+app_settings
 
-
-
+rm(list="app_text")
+rm(list="app_settings")
 
 #shinyApp(ui = app_ui(), server = app_server)
 runApp(appDir = app_path( ))

@@ -30,6 +30,8 @@ app_ui_predictions <- function ( ) {
 
     hr( ),
 
+    app_ui_predictions_last_update( ),
+
     app_ui_predictions_logos( )
   )
 
@@ -106,9 +108,15 @@ app_ui_predictions_gauge_plots <- function ( ) {
 
 }
 
+app_ui_predictions_last_update <- function ( ) {
+
+  textOutput(outputId = "last_update")
+
+}
+
 app_ui_predictions_logos <- function ( ) {
 
-  imageOutput("logo_images")
+  imageOutput(outputId = "logo_images")
 
 }
 

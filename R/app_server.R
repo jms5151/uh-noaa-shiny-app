@@ -40,9 +40,21 @@ forecast_page <- function(input, output) {
                                  dateRange = ws_forecast$Date)
   })
 
+  output$last_update <- renderText({
+    last_update_text( )
+  }) %>%
+  bindCache(Sys.Date( )) 
 
 }
 
+last_update_text <- function ( ) {
+
+  last_update_date <- ga_forecast[which(ga_forecast$Date == max(ga_forecast$Date[ga_forecast$type == "nowcast"]))[1], "Date"] + 1
+  last_update_date <- as.Date(last_update_date[[1]], "%Y-%m-%d")
+
+  paste0('Last update: ', last_update_date)
+
+}
 
 about_page <- function(input, output) {
 

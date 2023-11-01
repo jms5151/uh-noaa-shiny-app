@@ -44,7 +44,6 @@ app_global <- function ( ) {
          value = load_shape_files( ),
          pos   = 1)
 
-
 }
 
 app_clear_global <- function ( ) {

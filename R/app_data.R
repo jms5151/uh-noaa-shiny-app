@@ -12,13 +12,20 @@ load_shape_files <- function (main_dir = ".") {
   out
 }
 
+load_ga_forecast <- function (main_dir = ".") {
 
-load_gauge_data <- function (main_dir = ".") {
+  read_csv_arrow(file = data_file("Forecasts", "ga_forecast.csv", main_dir = main_dir))
 
-# use feather
-# but also, where to put this so we dont need to read it again later
-  ga_forecast <- read.csv(data_file("Forecasts", "ga_forecast.csv", main_dir = main_dir))
-  ws_forecast <- read.csv(data_file("Forecasts", "ws_forecast.csv", main_dir = main_dir))
+}
+
+load_ws_forecast <- function (main_dir = ".") {
+
+  read_csv_arrow(file = data_file("Forecasts", "ws_forecast.csv", main_dir = main_dir))
+
+}
+
+
+load_gauge_data <- function ( ) {
 
   # figure out which date to use
   nowcast_date_indexes <- which(ga_forecast$Date == max(ga_forecast$Date[ga_forecast$type == "nowcast"]))

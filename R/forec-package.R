@@ -1,5 +1,5 @@
-
-#' @importFrom cachem cache_mem
+#' @importFrom arrow read_csv_arrow
+#' @importFrom cachem cache_disk cache_mem
 #' @importFrom dplyr filter group_by left_join summarize
 #' @importFrom htmltools br div h2 h3 h4 h5 h6 hr HTML img includeCSS strong
 #'               tags
@@ -19,7 +19,6 @@
 #' @importFrom shinythemes shinytheme
 #' @importFrom tidyr gather
 #' @importFrom usethis use_data
-#' @importFrom utils read.csv
 #' @importFrom yaml read_yaml
 
 

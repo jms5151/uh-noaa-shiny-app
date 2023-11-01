@@ -10,6 +10,7 @@ Encoding: UTF-8
 Depends:
   R (>= 3.5.0)
 Imports:
+  arrow,
   cachem,
   dplyr,
   flexdashboard,

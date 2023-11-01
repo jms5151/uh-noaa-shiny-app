@@ -4,8 +4,9 @@ run_app <- function ( ) {
 
   app_global( )
 
-shinyOptions(cache = cachem::cache_disk(file.path(dirname(tempdir()), "myapp-cache")))
-
+# at least when working locally, cache_mem doesn't work for me right now?
+#  shinyOptions(cache = cache_mem(max_size = 500e6))
+  shinyOptions(cache = cache_disk(file.path(dirname(tempdir()), "myapp-cache")))
 
   shinyApp(ui      = app_ui( ),
            server  = app_server)
@@ -23,6 +24,14 @@ app_global <- function ( ) {
          value = read_app_settings( ),
          pos   = 1)
 
+  assign(x     = "ga_forecast",
+         value = load_ga_forecast( ),
+         pos   = 1)
+
+  assign(x     = "ws_forecast",
+         value = load_ws_forecast( ),
+         pos   = 1)
+
   assign(x     = "gauge_data",
          value = load_gauge_data( ),
          pos   = 1)
@@ -35,12 +44,15 @@ app_global <- function ( ) {
          value = load_shape_files( ),
          pos   = 1)
 
+
 }
 
 app_clear_global <- function ( ) {
 
   rm("app_text", pos = 1)
   rm("app_settings", pos = 1)
+  rm("ga_forecast", pos = 1)
+  rm("ws_forecast", pos = 1)
   rm("gauge_data", pos = 1)
   rm("basemap", pos = 1)
   rm("shpFiles", pos = 1)

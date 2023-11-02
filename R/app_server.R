@@ -29,13 +29,11 @@ forecast_page <- function(input, output) {
 
 
   output$plotlyGA <- renderPlotly({
-
     diseaseRisk_placeholder_plot(titleName = "Growth anomalies",
                                  dateRange = ga_forecast$Date)
   }) 
 
   output$plotlyWS <- renderPlotly({
-
     diseaseRisk_placeholder_plot(titleName = "White syndromes",
                                  dateRange = ws_forecast$Date)
   })
@@ -44,6 +42,80 @@ forecast_page <- function(input, output) {
     last_update_text( )
   }) %>%
   bindCache(Sys.Date( )) 
+
+  observeEvent(eventExpr   = input$map1_shape_click, 
+               handlerExpr = handle_map_shape_click(input  = input, 
+                                                    output = output))
+
+}
+
+handle_map_shape_click <- function(input, 
+                                   output) {
+
+
+  if(input$map1_shape_click$group %in% c("Nowcast", "One month forecast", "Two month forecast", "Three month forecast")) {
+
+    # Grid of pixels
+    ga_5km_forecast <- subset(x = ga_forecast,
+                              ID == input$map1_shape_click$id)
+
+    ws_5km_forecast <- subset(x = ws_forecast,
+                              ID == input$map1_shape_click$id)
+
+    output$plotlyGA <- renderPlotly({
+      diseaseRisk_plotly(df        = ga_5km_forecast,
+                         titleName = "Growth anomalies")
+    })
+
+    output$plotlyWS <- renderPlotly({
+      diseaseRisk_plotly(df        = ws_5km_forecast,
+                         titleName = "White syndromes")
+    })
+       
+
+  } else if(input$map1_shape_click$group == "Management area nowcast") {
+
+    # Management area polygons
+    ga_management_forecasts <- subset(x = ga_nowcast_aggregated_to_management_zones,
+                                      ID == input$map1_shape_click$id)
+
+    ws_management_forecasts  <- subset(x = ws_nowcast_aggregated_to_management_zones,
+                                       ID == input$map1_shape_click$id)
+
+    output$plotlyGA <- renderPlotly({
+      diseaseRisk_plotly(df        = ga_management_forecasts,
+                         titleName = "Growth anomalies")
+    })
+
+    output$plotlyWS <- renderPlotly({
+      diseaseRisk_plotly(df        = ws_management_forecasts,
+                         titleName = "White syndromes")
+    })
+
+
+
+  } else if(input$map1_shape_click$group == "GBRMPA nowcast") {
+
+
+    # GBRMPA polygons
+    ga_gbrmpa_forecast <- subset(x = ga_gbr_nowcast_aggregated_to_gbrmpa_park_zones,
+                                 ID == input$map1_shape_click$id)
+
+      ws_gbrmpa_forecast <- subset(x = ws_gbr_nowcast_aggregated_to_gbrmpa_park_zones,
+                                   ID == input$map1_shape_click$id)
+
+    output$plotlyGA <- renderPlotly({
+      diseaseRisk_plotly(df        = ga_gbrmpa_forecast,
+                         titleName = "Growth anomalies")
+    })
+
+    output$plotlyWS <- renderPlotly({
+      diseaseRisk_plotly(df        = ws_gbrmpa_forecast,
+                         titleName = "White syndromes")
+    })
+
+  }
+
 
 }
 

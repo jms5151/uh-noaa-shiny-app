@@ -130,11 +130,19 @@ gauge_plots <- function ( ) {
 
 }
 
+plotly_margins <- function ( ) {
+
+  list(l = 50,
+       r = 20,
+       b = 20,
+       t = 60)
+
+}
 
 
 
-diseaseRisk_placeholder_plot <- function(titleName, 
-                                         dateRange) {
+diseaseRisk_placeholder_plot <- function (titleName, 
+                                          dateRange) {
 
   plot_ly() %>%
     add_trace(x = ~range(dateRange), 
@@ -150,8 +158,103 @@ diseaseRisk_placeholder_plot <- function(titleName,
                         title = "Disease risk"),
            font = list(size = 14),
            showlegend = FALSE,
-           margin = list(l = 50,
-                         r = 20,
-                         b = 20,
-                         t = 60))
+           margin = plotly_margins( ))
 }
+
+
+
+
+
+diseaseRisk_plotly <- function (df, 
+                                titleName){
+  df <- data.frame(df)
+  yMax <- max(df$Upr) + 2
+  if(unique(df$Region) == 'gbr'){
+
+    newTitle <- "Disease risk\n(#/75m<sup>2</sup>)"
+
+    if(titleName == "Growth anomalies"){
+
+      watchThreshold   <- 5
+      warningThreshold <- 15
+      alert1Threshold  <- 25
+      alert2Threshold  <- 50
+
+    } else {
+
+      watchThreshold   <- 1
+      warningThreshold <- 5
+      alert1Threshold  <- 10
+      alert2Threshold  <- 20
+
+    }
+  } else {
+
+    newTitle <- "Disease risk\n(%)"
+
+    if(titleName == "Growth anomalies"){
+
+      watchThreshold   <- 5
+      warningThreshold <- 10
+      alert1Threshold  <- 15
+      alert2Threshold  <- 25
+
+    } else {
+
+      watchThreshold   <- 1
+      warningThreshold <- 5
+      alert1Threshold  <- 10
+      alert2Threshold  <- 15
+    }
+  }
+  plot_ly( ) %>%
+    add_trace(data = df,
+              x = ~Date,
+              y = ~value,
+              type = 'scatter',
+              mode = 'lines+markers',
+              color = ~type,
+              colors = c("midnightblue", "midnightblue"),
+              text = ~paste("Date:", Date,
+                            "<br>Disease risk:",
+                            "<br>90th percentile", round(Upr), #"%", # IQR90
+                            "<br>75th percentile", round(value), #"%", #IQR75
+                            "<br>50th percentile", round(Lwr)#, "%" #IQR50
+              ),
+              hoverinfo = "text"
+
+              ) %>%
+
+    add_ribbons(data = df, 
+                x = ~Date, 
+                ymin = ~Lwr, 
+                ymax = ~Upr,
+                color = ~type,
+                opacity = 0.3,
+                hoverinfo='skip') %>%
+    layout(title = titleName,
+           xaxis = list(showgrid = F, 
+                        title = ""), 
+           yaxis = list(showline = T, 
+                        showgrid = F, 
+                        range = c(0, yMax),
+                        title = newTitle),
+           font = list(size = 11),
+           showlegend = FALSE,
+           # updatemenus = button_info, 
+           margin = plotly_margins ( ),
+           shapes = list(hline(y     = watchThreshold, 
+                               color = "#FFEF00"),
+                         hline(y     = warningThreshold, 
+                               color = "#FFB300"),
+                         hline(y     = alert1Threshold, 
+                               color = "#EB1F08"),
+                         hline(y = alert2Threshold,
+                               color = "#8D1002")),
+            annotations = list(x = c(df$Date[7], df$Date[16]), 
+                               y = c(yMax, yMax),
+                               text = c("Nowcasts", "Forecasts"),
+                               showarrow = c(FALSE, FALSE),
+                               xanchor = c("right", 'right'))) 
+  }
+

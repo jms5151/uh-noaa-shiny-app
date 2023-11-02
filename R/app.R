@@ -6,7 +6,7 @@ run_app <- function ( ) {
 
 # at least when working locally, cache_mem doesn't work for me right now?
 #  shinyOptions(cache = cache_mem(max_size = 500e6))
-  shinyOptions(cache = cache_disk(file.path(dirname(tempdir()), "myapp-cache")))
+#  shinyOptions(cache = cache_disk(file.path(dirname(tempdir()), "myapp-cache")))
 
   shinyApp(ui      = app_ui( ),
            server  = app_server)
@@ -32,6 +32,22 @@ app_global <- function ( ) {
          value = load_ws_forecast( ),
          pos   = 1)
 
+  assign(x     = "ga_nowcast_aggregated_to_management_zones",
+         value = load_ga_nowcast_aggregated_to_management_zones( ),
+         pos   = 1)
+
+  assign(x     = "ws_nowcast_aggregated_to_management_zones",
+         value = load_ws_nowcast_aggregated_to_management_zones( ),
+         pos   = 1)
+
+  assign(x     = "ga_gbr_nowcast_aggregated_to_gbrmpa_park_zones",
+         value = load_ga_gbr_nowcast_aggregated_to_gbrmpa_park_zones( ),
+         pos   = 1)
+
+  assign(x     = "ws_gbr_nowcast_aggregated_to_gbrmpa_park_zones",
+         value = load_ws_gbr_nowcast_aggregated_to_gbrmpa_park_zones( ),
+         pos   = 1)
+
   assign(x     = "gauge_data",
          value = load_gauge_data( ),
          pos   = 1)
@@ -52,6 +68,10 @@ app_clear_global <- function ( ) {
   rm("app_settings", pos = 1)
   rm("ga_forecast", pos = 1)
   rm("ws_forecast", pos = 1)
+  rm("ga_nowcast_aggregated_to_management_zones", pos = 1)
+  rm("ws_nowcast_aggregated_to_management_zones", pos = 1)
+  rm("ga_gbr_nowcast_aggregated_to_gbrmpa_park_zones", pos = 1)
+  rm("ws_gbr_nowcast_aggregated_to_gbrmpa_park_zones", pos = 1)
   rm("gauge_data", pos = 1)
   rm("basemap", pos = 1)
   rm("shpFiles", pos = 1)

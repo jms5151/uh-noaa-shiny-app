@@ -24,6 +24,30 @@ load_ws_forecast <- function (main_dir = ".") {
 
 }
 
+load_ga_nowcast_aggregated_to_management_zones <- function (main_dir = ".") {
+
+  read_csv_arrow(file = data_file("Forecasts", "ga_nowcast_aggregated_to_management_zones.csv", main_dir = main_dir))
+
+}
+
+load_ws_nowcast_aggregated_to_management_zones <- function (main_dir = ".") {
+
+  read_csv_arrow(file = data_file("Forecasts", "ws_nowcast_aggregated_to_management_zones.csv", main_dir = main_dir))
+
+}
+
+load_ga_gbr_nowcast_aggregated_to_gbrmpa_park_zones <- function (main_dir = ".") {
+
+  read_csv_arrow(file = data_file("Forecasts", "ga_gbr_nowcast_aggregated_to_gbrmpa_park_zones.csv", main_dir = main_dir))
+
+}
+
+load_ws_gbr_nowcast_aggregated_to_gbrmpa_park_zones <- function (main_dir = ".") {
+
+  read_csv_arrow(file = data_file("Forecasts", "ws_gbr_nowcast_aggregated_to_gbrmpa_park_zones.csv", main_dir = main_dir))
+
+}
+
 
 load_gauge_data <- function ( ) {
 

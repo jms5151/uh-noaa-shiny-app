@@ -8,6 +8,7 @@ run_app <- function ( ) {
 #  shinyOptions(cache = cache_mem(max_size = 500e6))
 #  shinyOptions(cache = cache_disk(file.path(dirname(tempdir()), "myapp-cache")))
 
+# here is a change
   shinyApp(ui      = app_ui( ),
            server  = app_server)
 

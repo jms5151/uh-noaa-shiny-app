@@ -199,7 +199,7 @@ ui <- navbarPage(
           )
         ),
 
-        setSliderColor(c(rep("#003152", 15)), c(1:15)),
+        # setSliderColor(c(rep("#003152", 15)), c(1:15)),
 
         # Scenarios - GA, Pacific -------------------
         conditionalPanel(

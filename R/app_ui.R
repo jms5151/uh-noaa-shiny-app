@@ -12,7 +12,7 @@ app_ui <- function ( ) {
 
     app_ui_historical_data( ),
 
-    app_ui_about( )
+    # app_ui_about( )
 
   )
 

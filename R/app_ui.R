@@ -138,23 +138,65 @@ app_ui_scenarios <- function ( ) {
 
   tabPanel(title = "Investigating scenarios",
 
-    app_ui_scenarios_explainer( ),
+    app_ui_scenarios_explainer_top( ),
     
-    br( )
+    br( ),
+    
+    app_ui_scenarios_row( ),
+
+    app_ui_scenarios_explainer_bottom( ),
+
+    hr( )
 
   )
+
+}
+
+app_ui_scenarios_row <- function ( ) {
+
+  fluidRow(column(width = 1),
+    app_ui_scenarios_row_inputs( ))
+
+}
+
+app_ui_scenarios_row_inputs <- function ( ) {
+
+  column(width = 3,
+         style = "height: 1050px;
+                  border: 2px double #00172D;
+                  padding-top: 15px;
+                  padding-left: 20px;
+                  padding-bottom: 10px;",
+         h4(strong(HTML(app_text$scenarios_step_1), 
+                         style = "color: #009999;")), 
+
+         selectInput(inputId  = "Region",
+                     label    = "Select region",
+                     selected = NULL,
+                     choices  = c("U.S. Pacific", "Great Barrier Reef, Australia")),
+         selectInput(InputId  = "Disease",
+                     label    = "Select disease type",
+                     choices = c("Growth anomalies", "White syndromes"))
+
+ )
+
 }
 
 
-app_ui_scenarios_explainer <- function ( ) {
+app_ui_scenarios_explainer_top <- function ( ) {
 
   fluidRow(column(width = 1),
            column(width = 10,
-               h4(strong(HTML(app_text$scenarios_page_explainer), 
+               h4(strong(HTML(app_text$scenarios_page_explainer_top), 
                          style = "color: #009999;"))))
 
+}
 
+app_ui_scenarios_explainer_bottom <- function ( ) {
 
+  fluidRow(column(width = 1),
+           column(width = 10,
+               h5(HTML(app_text$scenarios_page_explainer_bottom))))
 
 }
 

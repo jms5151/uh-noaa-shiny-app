@@ -14,7 +14,7 @@
 #' @importFrom shiny absolutePanel bindCache column dataTableOutput fluidRow 
 #'               hr imageOutput navbarPage observeEvent onStop reactive 
 #'               renderDataTable renderImage renderText renderUI runApp 
-#'               shinyApp shinyOptions tabPanel textOutput 
+#'               selectInput shinyApp shinyOptions tabPanel textOutput 
 #' @importFrom shinycssloaders withSpinner
 #' @importFrom shinythemes shinytheme
 #' @importFrom tidyr gather

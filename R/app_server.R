@@ -145,3 +145,71 @@ about_page <- function(input, output) {
                                                                 info      = FALSE))
 
 }
+
+scenarios_page <- function(input, output) {
+  
+  observeEvent(
+    { 
+      input$Region
+      input$Disease
+    }#, 
+#    handle_dropdown_change(input, output)
+  )
+}
+
+
+handle_dropdown_change <- function(input, output) {
+
+  if(input$Region == 'U.S. Pacific' &&
+      input$Disease == 'Growth anomalies'){
+    
+    output$management_map <- renderLeaflet({
+      scenarios_ga_pac_map
+    })
+    
+    output$scenarios_barplot <- renderPlotly({
+      scenarios_placeholder_plot
+    })
+
+  }
+  
+  if(input$Region == 'U.S. Pacific' &&
+      input$Disease == 'White syndromes'){
+    
+    output$management_map <- renderLeaflet({
+      scenarios_ws_pac_map
+    })
+    
+    output$scenarios_barplot <- renderPlotly({
+      scenarios_placeholder_plot
+    })
+    
+  }
+
+  if(input$Region == 'Great Barrier Reef, Australia' &&
+      input$Disease == 'Growth anomalies'){
+    
+    output$management_map <- renderLeaflet({
+      scenarios_ga_gbr_map
+    })
+    
+    output$scenarios_barplot <- renderPlotly({
+      scenarios_placeholder_plot
+    })
+    
+  }
+  
+  if(input$Region == 'Great Barrier Reef, Australia' &&
+      input$Disease == 'White syndromes'){
+    
+    output$management_map <- renderLeaflet({
+      scenarios_ws_gbr_map
+    })
+    
+    output$scenarios_barplot <- renderPlotly({
+      scenarios_placeholder_plot
+    })
+    
+  }
+  
+}

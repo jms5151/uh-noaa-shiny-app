@@ -167,21 +167,49 @@ app_ui_scenarios_row_inputs <- function ( ) {
                   padding-top: 15px;
                   padding-left: 20px;
                   padding-bottom: 10px;",
+
          h4(strong(HTML(app_text$scenarios_step_1), 
                          style = "color: #009999;")), 
-
          selectInput(inputId  = "Region",
                      label    = "Select region",
                      selected = NULL,
                      choices  = c("U.S. Pacific", "Great Barrier Reef, Australia")),
-         selectInput(InputId  = "Disease",
+         selectInput(inputId  = "Disease",
                      label    = "Select disease type",
-                     choices = c("Growth anomalies", "White syndromes"))
+                     choices = c("Growth anomalies", "White syndromes")),
+
+         h4(strong(HTML(app_text$scenarios_step_2), 
+                         style = "color: #009999;")), 
+
+         setSliderColor(c(rep("#003152", 15)), c(1:15)),
+
+         scenario_panel_ga_pacific( )
 
  )
 
 }
 
+
+scenario_panel_ga_pacific <- function ( ) {
+
+  conditionalPanel(condition = "input.Region == 'U.S. Pacific' &
+                                input.Disease == 'Growth anomalies'",
+                   sliderInput(inputId = "coral_size_slider_ga_pac",
+                               label   = span(h5(strong("Median coral colony size")),
+                                              tags$i(h6(textOutput(outputId = "corsize_value_ga_pac")))),
+                               min     = 5,
+                               max     = 65,
+                               step    = 10,
+                               post    = " cm",
+                               value   = 15,
+                               width   = "275px"), 
+                   bsTooltip(id        = "coral_size_slider_ga_pac",
+                             title     = "Median colony size of corals in the family Poritidae.",
+                             placement = "right",
+                             trigger   = "hover")
+  )
+
+}
 
 app_ui_scenarios_explainer_top <- function ( ) {
 

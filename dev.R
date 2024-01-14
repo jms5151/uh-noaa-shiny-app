@@ -24,4 +24,5 @@ app_ui()
 # working in the scenarios page server code
 #
 #  where is scenarios_placeholder_map defined? is it anywhere?
-# same with the scenarios_placeholder_plot
+
+

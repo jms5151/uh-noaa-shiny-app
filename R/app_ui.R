@@ -177,11 +177,13 @@ app_ui_scenarios_outputs <- function ( ) {
                       height   = "325px") %>%
           withSpinner(color = app_settings$spinColor),
 
-
         hr( ),
 
-        h4(strong(app_text$scenarios_step_4, style = "color: #009999;"))
-  )
+        h4(strong(app_text$scenarios_step_4, style = "color: #009999;")),
+        
+        plotlyOutput(outputId = "scenarios_barplot",
+                     height   = "350px") %>%
+          withSpinner(color = app_settings$spinColor))  
 
 }
 

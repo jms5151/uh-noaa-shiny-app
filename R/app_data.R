@@ -12,6 +12,19 @@ load_shape_files <- function (main_dir = ".") {
   out
 }
 
+
+load_ga_pac_scenarios <- function (main_dir = ".") {
+
+  read_csv_arrow(file = data_file("Scenarios", "ga_pac_scenarios.csv", main_dir = main_dir))
+
+}
+
+load_ga_pac_basevals_id <- function (main_dir = ".") {
+
+  read_csv_arrow(file = data_file("Scenarios", "ga_pac_basevals_id.csv", main_dir = main_dir))
+
+}
+
 load_ga_forecast <- function (main_dir = ".") {
 
   read_csv_arrow(file = data_file("Forecasts", "ga_forecast.csv", main_dir = main_dir))

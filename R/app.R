@@ -60,6 +60,18 @@ app_global <- function ( ) {
          value = load_shape_files( ),
          pos   = 1)
 
+  assign(x     = "ga_pac_basevals_ID",
+         value = load_ga_pac_basevals_id( ),
+         pos   = 1)
+
+  assign(x     = "ga_pac_scenarios",
+         value = load_ga_pac_scenarios( ),
+         pos   = 1)
+
+  assign(x     = "basemap",
+         value = create_basemap( ),
+         pos   = 1)
+
 }
 
 app_clear_global <- function ( ) {
@@ -75,6 +87,8 @@ app_clear_global <- function ( ) {
   rm("gauge_data", pos = 1)
   rm("basemap", pos = 1)
   rm("shpFiles", pos = 1)
+  rm("ga_pac_basevals_ID", pos = 1)
+  rm("ga_pac_scenarios", pos = 1)
 
 }
 

@@ -86,4 +86,27 @@ scenarios_barplot_fun <- function(df, baselineValue, riskType){
 }  
 
 
+scenarios_placeholder_barplot <- function( ){
 
+  plot_ly(
+    type = "bar"
+
+  ) %>%
+    layout(
+      xaxis = list(
+        showgrid = FALSE,
+        title = "", 
+        visible = FALSE
+      ), 
+      yaxis = list(
+        showline = TRUE,
+        showgrid = FALSE,
+        range = c(-100, 100),
+        title = "Change in disease risk<br>(from current conditions)"
+      ),
+      font = list(size = 12),
+      showlegend = FALSE
+      ) 
+
+ 
+} 

@@ -155,11 +155,37 @@ app_ui_scenarios <- function ( ) {
 app_ui_scenarios_row <- function ( ) {
 
   fluidRow(column(width = 1),
-    app_ui_scenarios_row_inputs( ))
+    app_ui_scenarios_inputs( ),
+    app_ui_scenarios_outputs( ))
 
 }
 
-app_ui_scenarios_row_inputs <- function ( ) {
+app_ui_scenarios_outputs <- function ( ) {
+
+  column(width = 7,
+         style = "height: 1050px;
+                  border-top: 2px double #00172D;
+                  border-right: 2px double #00172D;
+                  border-bottom: 2px double #00172D;
+                  padding-top: 15px;
+                  padding-left: 25px;
+                  padding-right: 25px;
+                  padding-bottom: 25px;",
+        h4(strong(app_text$scenarios_step_3, style = "color: #009999;")),
+
+        leafletOutput(outputId = "management_map",
+                      height   = "325px") %>%
+          withSpinner(color = app_settings$spinColor),
+
+
+        hr( ),
+
+        h4(strong(app_text$scenarios_step_4, style = "color: #009999;"))
+  )
+
+}
+
+app_ui_scenarios_inputs <- function ( ) {
 
   column(width = 3,
          style = "height: 1050px;
@@ -178,38 +204,21 @@ app_ui_scenarios_row_inputs <- function ( ) {
                      label    = "Select disease type",
                      choices = c("Growth anomalies", "White syndromes")),
 
-         h4(strong(HTML(app_text$scenarios_step_2), 
+         h4(strong(HTML(app_text$scenarios_step_3), 
                          style = "color: #009999;")), 
 
-         setSliderColor(c(rep("#003152", 15)), c(1:15)),
+         scenario_panel_ga_pacific( ),
 
-         scenario_panel_ga_pacific( )
+         scenario_panel_ws_pacific( ), 
+
+         scenario_panel_ga_gbr( ),
+
+         scenario_panel_ws_gbr( )
 
  )
 
 }
 
-
-scenario_panel_ga_pacific <- function ( ) {
-
-  conditionalPanel(condition = "input.Region == 'U.S. Pacific' &
-                                input.Disease == 'Growth anomalies'",
-                   sliderInput(inputId = "coral_size_slider_ga_pac",
-                               label   = span(h5(strong("Median coral colony size")),
-                                              tags$i(h6(textOutput(outputId = "corsize_value_ga_pac")))),
-                               min     = 5,
-                               max     = 65,
-                               step    = 10,
-                               post    = " cm",
-                               value   = 15,
-                               width   = "275px"), 
-                   bsTooltip(id        = "coral_size_slider_ga_pac",
-                             title     = "Median colony size of corals in the family Poritidae.",
-                             placement = "right",
-                             trigger   = "hover")
-  )
-
-}
 
 app_ui_scenarios_explainer_top <- function ( ) {
 

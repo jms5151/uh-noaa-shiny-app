@@ -1,4 +1,5 @@
 #' @importFrom arrow read_csv_arrow
+#' @importFrom bslib page_navbar tooltip 
 #' @importFrom cachem cache_disk cache_mem
 #' @importFrom dplyr filter group_by left_join summarize
 #' @importFrom htmltools br div h2 h3 h4 h5 h6 hr HTML img includeCSS span 
@@ -12,11 +13,10 @@
 #'               renderPlotly subplot
 #' @importFrom sf st_read
 #' @importFrom shiny absolutePanel bindCache column conditionalPanel 
-#'               dataTableOutput fluidRow hr imageOutput navbarPage 
-#'               observeEvent onStop reactive renderDataTable renderImage 
-#'               renderText renderUI runApp selectInput shinyApp 
+#'               dataTableOutput fluidRow hr imageOutput markdown navbarPage 
+#'               observeEvent onStop reactive renderDataTable 
+#'               renderImage renderText renderUI runApp selectInput shinyApp 
 #'               shinyOptions sliderInput tabPanel textOutput 
-#' @importFrom shinyBS bsTooltip
 #' @importFrom shinycssloaders withSpinner
 #' @importFrom shinythemes shinytheme
 #' @importFrom tidyr gather

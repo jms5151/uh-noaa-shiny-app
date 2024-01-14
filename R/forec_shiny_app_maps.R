@@ -91,3 +91,21 @@ mapFun <- function (basemap,
     hideGroup(hideGroupNames)
   
 }
+
+create_historicalMap <- function ( ) {
+
+  leaflet( ) %>%
+  addTiles(urlTemplate = "http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}") %>%
+  addCircleMarkers(data = historical_data,
+                   lat = ~Latitude,
+                   lng = ~Longitude,
+                   radius = ~9, #sqrt(N)
+                   color = ~'yellow',
+                   popup = ~survey_text,
+                   clusterOptions = markerClusterOptions()) %>%
+  addScaleBar( ) %>%
+  setView(lng = -180, lat = 16.4502 , zoom = 3)
+
+}
+
+

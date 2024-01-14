@@ -12,6 +12,23 @@ load_shape_files <- function (main_dir = ".") {
   out
 }
 
+load_historical_data <- function ( ) {
+
+  read_csv_arrow(file = app_file("historical_surveys.csv"))
+
+}
+
+load_ws_pac_scenarios <- function (main_dir = ".") {
+
+  read_csv_arrow(file = data_file("Scenarios", "ws_pac_scenarios.csv", main_dir = main_dir))
+
+}
+
+load_ws_pac_basevals_id <- function (main_dir = ".") {
+
+  read_csv_arrow(file = data_file("Scenarios", "ws_pac_basevals_id.csv", main_dir = main_dir))
+
+}
 
 load_ga_pac_scenarios <- function (main_dir = ".") {
 
@@ -22,6 +39,111 @@ load_ga_pac_scenarios <- function (main_dir = ".") {
 load_ga_pac_basevals_id <- function (main_dir = ".") {
 
   read_csv_arrow(file = data_file("Scenarios", "ga_pac_basevals_id.csv", main_dir = main_dir))
+
+}
+
+
+load_ga_gbr_scenarios <- function (main_dir = ".") {
+
+  read_csv_arrow(file = data_file("Scenarios", "ga_gbr_scenarios.csv", main_dir = main_dir))
+
+}
+
+load_ga_gbr_basevals_id <- function (main_dir = ".") {
+
+  read_csv_arrow(file = data_file("Scenarios", "ga_gbr_basevals_id.csv", main_dir = main_dir))
+
+}
+
+
+load_ws_gbr_scenarios <- function (main_dir = ".") {
+
+  read_csv_arrow(file = data_file("Scenarios", "ws_gbr_scenarios.csv", main_dir = main_dir))
+
+}
+
+load_ws_gbr_basevals_id <- function (main_dir = ".") {
+
+  read_csv_arrow(file = data_file("Scenarios", "ws_gbr_basevals_id.csv", main_dir = main_dir))
+
+}
+
+load_ga_pac_basevals_management <- function (main_dir = ".") {
+
+  read_csv_arrow(file = data_file("Scenarios", "ga_pac_basevals_management.csv", main_dir = main_dir))
+
+}
+
+load_ga_pac_scenarios_aggregated_to_management_zones <- function (main_dir = ".") {
+
+  read_csv_arrow(file = data_file("Scenarios", "ga_pac_scenarios_aggregated_to_management_zones.csv", main_dir = main_dir))
+
+}
+
+
+load_ws_pac_basevals_management <- function (main_dir = ".") {
+
+  read_csv_arrow(file = data_file("Scenarios", "ws_pac_basevals_management.csv", main_dir = main_dir))
+
+}
+
+load_ws_pac_scenarios_aggregated_to_management_zones <- function (main_dir = ".") {
+
+  read_csv_arrow(file = data_file("Scenarios", "ws_pac_scenarios_aggregated_to_management_zones.csv", main_dir = main_dir))
+
+}
+
+
+load_ga_gbr_basevals_management <- function (main_dir = ".") {
+
+  read_csv_arrow(file = data_file("Scenarios", "ga_gbr_basevals_management.csv", main_dir = main_dir))
+
+}
+
+load_ga_gbr_scenarios_aggregated_to_management_zones <- function (main_dir = ".") {
+
+  read_csv_arrow(file = data_file("Scenarios", "ga_gbr_scenarios_aggregated_to_management_zones.csv", main_dir = main_dir))
+
+}
+
+
+
+load_ws_gbr_basevals_management <- function (main_dir = ".") {
+
+  read_csv_arrow(file = data_file("Scenarios", "ws_gbr_basevals_management.csv", main_dir = main_dir))
+
+}
+
+load_ws_gbr_scenarios_aggregated_to_management_zones <- function (main_dir = ".") {
+
+  read_csv_arrow(file = data_file("Scenarios", "ws_gbr_scenarios_aggregated_to_management_zones.csv", main_dir = main_dir))
+
+}
+
+
+
+load_ga_gbr_basevals_gbrmpa <- function (main_dir = ".") {
+
+  read_csv_arrow(file = data_file("Scenarios", "ga_gbr_basevals_gbrmpa.csv", main_dir = main_dir))
+
+}
+
+load_ga_gbr_scenarios_aggregated_to_gbrmpa_park_zones <- function (main_dir = ".") {
+
+  read_csv_arrow(file = data_file("Scenarios", "ga_gbr_scenarios_aggregated_to_gbrmpa_park_zones.csv", main_dir = main_dir))
+
+}
+
+
+load_ws_gbr_basevals_gbrmpa <- function (main_dir = ".") {
+
+  read_csv_arrow(file = data_file("Scenarios", "ws_gbr_basevals_gbrmpa.csv", main_dir = main_dir))
+
+}
+
+load_ws_gbr_scenarios_aggregated_to_gbrmpa_park_zones <- function (main_dir = ".") {
+
+  read_csv_arrow(file = data_file("Scenarios", "ws_gbr_scenarios_aggregated_to_gbrmpa_park_zones.csv", main_dir = main_dir))
 
 }
 

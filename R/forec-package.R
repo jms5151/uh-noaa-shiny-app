@@ -13,12 +13,14 @@
 #'               plotlyOutput renderPlotly subplot
 #' @importFrom sf st_read
 #' @importFrom shiny absolutePanel bindCache column conditionalPanel 
-#'               dataTableOutput fluidRow hr htmlOutput imageOutput markdown 
-#'               navbarPage observeEvent onStop reactive renderDataTable 
-#'               renderImage renderText renderUI runApp selectInput shinyApp 
-#'               shinyOptions sliderInput tabPanel textOutput 
+#'               dataTableOutput fluidRow hr htmlOutput icon imageOutput 
+#'               markdown navbarPage observeEvent onStop reactive 
+#'               renderDataTable renderImage renderText renderUI runApp 
+#'               selectInput shinyApp shinyOptions sliderInput tabPanel 
+#'               textOutput 
 #' @importFrom shinycssloaders withSpinner
 #' @importFrom shinythemes shinytheme
+#' @importFrom shinyWidgets dropMenu dropdownButton
 #' @importFrom tidyr gather
 #' @importFrom usethis use_data
 #' @importFrom yaml read_yaml

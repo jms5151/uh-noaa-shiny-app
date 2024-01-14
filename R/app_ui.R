@@ -171,7 +171,7 @@ app_ui_scenarios_outputs <- function ( ) {
                   padding-left: 25px;
                   padding-right: 25px;
                   padding-bottom: 25px;",
-        h4(strong(app_text$scenarios_step_3, style = "color: #009999;")),
+        h4(strong(app_text$scenarios_step_2, style = "color: #009999;")),
 
         leafletOutput(outputId = "management_map",
                       height   = "325px") %>%
@@ -244,8 +244,26 @@ app_ui_scenarios_explainer_bottom <- function ( ) {
 
 app_ui_historical_data <- function ( ) {
 
-  tabPanel(title = "Historical data")
-
+  tabPanel(title = "Historical data",
+           div(class = "outer",
+               tags$head(includeCSS("styles.css")),
+               leafletOutput("historical_data_map",
+                             width = "100%",
+                             height = "100%")),
+    absolutePanel(id = "controls",
+                  class = "panel panel-default",
+                  top = 80,
+                  left = 60,
+                  fixed = TRUE,
+                  draggable = FALSE,
+                  height = "auto",
+                  class = "dropdown",
+                  dropMenu(dropdownButton(icon = icon('info'),
+                                          size = "xs"),
+                           h3(strong('Information')),
+                           h5(app_text$historical_data_1),
+                           h5(app_text$historical_data_2),
+                           h5(app_text$historical_data_3))))
 
 }
 

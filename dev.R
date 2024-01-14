@@ -21,8 +21,5 @@ app_ui()
 # i tried to bring over the functions, but it still wasn't working
 # it must be some setting setup stuff, so im making shinyBS required
 
-# working in the scenarios page server code
-#
-#  where is scenarios_placeholder_map defined? is it anywhere?
 
 

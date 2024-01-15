@@ -10,26 +10,26 @@ forecast_page <- function(input, output) {
   output$gauge_plots <- renderPlotly({
     gauge_plots( )
   }) %>%
-  bindCache("gaugePlots")
+  bindCache(Sys.Date( ))
 
 
   output$map1 <- renderLeaflet({
     mapFun(basemap = basemap)
   }) %>%
-  bindCache("leaf_reefs") 
+  bindCache(Sys.Date( ))
 
 
   output$plotlyGA <- renderPlotly({
     diseaseRisk_placeholder_plot(titleName = "Growth anomalies",
                                  dateRange = ga_forecast$Date)
   })  %>%
-  bindCache("Growth anomalies")
+  bindCache(Sys.Date( ))
 
   output$plotlyWS <- renderPlotly({
     diseaseRisk_placeholder_plot(titleName = "White syndromes",
                                  dateRange = ws_forecast$Date)
   }) %>%
-  bindCache("White syndromes")
+  bindCache(Sys.Date( ))
 
   output$last_update <- renderText({
     last_update_text( )

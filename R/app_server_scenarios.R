@@ -3,11 +3,13 @@ scenarios_page <- function(input, output) {
   
   output$scenarios_barplot <- renderPlotly({
     scenarios_placeholder_barplot( )
-  }) %>% bindCache("placeholder-bar-plot")
+  }) %>% 
+  bindCache(Sys.Date( ))
 
   output$management_map <- renderPlotly({
     create_basemap( )
-  }) %>% bindCache("placeholder-bar-plot")
+  }) %>% 
+  bindCache(Sys.Date( ))
 
   observeEvent(eventExpr   = {
                 input$Region

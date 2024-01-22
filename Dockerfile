@@ -37,9 +37,7 @@ RUN R -e \
 
 WORKDIR /app
 
-COPY codes /app/codes
 COPY forec_shiny_app_data /app/forec_shiny_app_data
-COPY styles.css /app/styles.css
 COPY Rprofile.site /usr/lib/R/etc/
 
 EXPOSE 3838

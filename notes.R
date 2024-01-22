@@ -10,3 +10,6 @@ function has no args or only is based on a big arg (like basemap)
 we're now using the global function to assign and clear global to remove 
 
 all the app text gets read in through HTML so can markup if wanted
+
+
+shinyOptions(cache = cachem::cache_mem(max_size = 500e6))

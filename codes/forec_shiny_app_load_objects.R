@@ -1,1 +1,0 @@
-message("all objects should be loaded via package mechanisms")

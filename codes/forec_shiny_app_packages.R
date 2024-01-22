@@ -1,1 +1,0 @@
-message("all dependencies should be loaded via package mechanisms")

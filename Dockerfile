@@ -1,6 +1,6 @@
 FROM rocker/geospatial:latest
 
-# ~2s
+
 RUN echo "Updating apt sources." && apt-get -qq update
 
 # Install libss1.1
@@ -10,30 +10,17 @@ ENV LIBSSL_FILE=libssl1.1_1.1.1-1ubuntu2.1~18.04.21_amd64.deb
 RUN wget $LIBSSL_URL
 RUN dpkg -i $LIBSSL_FILE
 
-# ~55s
+
 RUN echo "Installing R package dependencies." && \
     apt-get -qq install \
     libcurl4-gnutls-dev \
     proj-bin 
 
-# Install pak package manager - ~5s
+# Install pak package manager 
 RUN R -e 'install.packages("pak", repos = "https://r-lib.github.io/p/pak/dev")'
 
-# Install R packages - ~550s (~2x faster using pak::pkg_install vs install.packages)
-RUN R -e \
-    'pak::pkg_install(c(\
-    "shinythemes",\
-    "leaflet",\
-    "flexdashboard",\
-    "tidyverse",\
-    "shinyWidgets",\
-    "plotly",\
-    "xts",\
-    "shinydashboard",\
-    "shinycssloaders",\
-    "shinyBS",\
-    "sf"\
-    ))'
+# Install project package 
+RUN R -e "remotes::install_github('jms5151/uh-noaa-shiny-app')
 
 WORKDIR /app
 

@@ -20,7 +20,7 @@ RUN echo "Installing R package dependencies." && \
 RUN R -e 'install.packages("pak", repos = "https://r-lib.github.io/p/pak/dev")'
 
 # Install project package 
-RUN R -e "remotes::install_github('jms5151/uh-noaa-shiny-app')"
+RUN R -e "remotes::install_github('jms5151/uh-noaa-shiny-app', ref = github_pull('7'))"
 
 WORKDIR /app
 

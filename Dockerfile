@@ -19,8 +19,11 @@ RUN echo "Installing R package dependencies." && \
 # Install pak package manager 
 RUN R -e 'install.packages("pak", repos = "https://r-lib.github.io/p/pak/dev")'
 
-# Install project package 
-RUN R -e "remotes::install_github('jms5151/uh-noaa-shiny-app', ref = remotes::github_pull('7'))"
+# Install project package from github event that triggered the specific workflow
+
+ARG event_sha="HEAD"
+RUN echo "Installing uh-noaa-shiny-app from github at ref $event_sha"
+RUN R -e "remotes::install_github('jms5151/uh-noaa-shiny-app', ref = '$event_sha')"
 
 WORKDIR /app
 

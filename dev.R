@@ -6,6 +6,9 @@ run_app()
 runApp(appDir = app_path( ))
 shinyAppDir(appDir = app_path( ))
 
+runApp(appDir = run_app( ))
+
+
 
 devtools::load_all()
 

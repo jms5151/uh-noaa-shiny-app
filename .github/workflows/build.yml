@@ -13,6 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       R_KEEP_PKG_SOURCE: yes
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
 
     steps:
       - name: Checkout GitHub repository
@@ -54,11 +55,12 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           context: .
-          tags: ${{ steps.docker_metadata.outputs.tags }}
+          tags: test #${{ steps.docker_metadata.outputs.tags }}
           cache-from: type=registry,ref=jamiecaldwell/uh-crw:latest
           cache-to: type=inline
           push: ${{ github.event_name == 'release' }}
-
+          build-args: |
+            "event_sha=${{ github.sha }}"
 
       - name: Deploy the image to the webserver on a tagged release
         if: ${{ github.event_name == 'release' }}

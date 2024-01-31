@@ -25,4 +25,4 @@ app_ui()
 # it must be some setting setup stuff, so im making shinyBS required
 
 
-
+pak::pkg_install('jms5151/uh-noaa-shiny-app#7')

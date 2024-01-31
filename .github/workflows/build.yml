@@ -55,7 +55,7 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           context: .
-          tags: test #${{ steps.docker_metadata.outputs.tags }}
+          tags: ${{ steps.docker_metadata.outputs.tags }}
           cache-from: type=registry,ref=jamiecaldwell/uh-crw:latest
           cache-to: type=inline
           push: ${{ github.event_name == 'release' }}

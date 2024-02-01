@@ -1,3 +1,6 @@
+#'
+#' @export
+#'
 run_app <- function (main_dir = ".") {
 
   onStop(fun = app_clear_global)

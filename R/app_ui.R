@@ -246,7 +246,7 @@ app_ui_historical_data <- function ( ) {
 
   tabPanel(title = "Historical data",
            div(class = "outer",
-               tags$head(includeCSS("styles.css")),
+               tags$head(includeCSS(app_file("styles.css"))),
                leafletOutput("historical_data_map",
                              width = "100%",
                              height = "100%")),

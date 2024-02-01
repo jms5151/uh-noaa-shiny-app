@@ -26,3 +26,10 @@ app_ui()
 
 remotes::install_github('jms5151/uh-noaa-shiny-app', ref = remotes::github_pull(7))
 pak::pkg_install('jms5151/uh-noaa-shiny-app#7')
+
+library(uhnoaashinyapp)
+uhnoaashinyapp:::run_app()
+
+
+
+uhnoaashinyapp:::app_global

@@ -24,11 +24,11 @@ app_ui()
 # i tried to bring over the functions, but it still wasn't working
 # it must be some setting setup stuff, so im making shinyBS required
 
-remotes::install_github('jms5151/uh-noaa-shiny-app', ref = remotes::github_pull(7))
+remotes::install_github('jms5151/uh-noaa-shiny-app', ref = remotes::github_pull(7), force = TRUE)
 pak::pkg_install('jms5151/uh-noaa-shiny-app#7')
 
-library(uhnoaashinyapp)
-uhnoaashinyapp:::run_app()
+
+uhnoaashinyapp::run_app()
 
 
 

@@ -48,7 +48,8 @@ jobs:
           path: transcrypt
 
       - name: Initialise transcrypt
-        run: ./transcrypt/transcrypt --rekey -c 'aes-256-cbc:pbkdf2:1024' -p '${{ secrets.TRANSCRYPT_PASSWORD }}' --yes
+        run: ./transcrypt/transcrypt -p '${{ secrets.TRANSCRYPT_PASSWORD }}' --yes
+
 
       - name: Build container image and push to dockerhub on a tagged release
         uses: docker/build-push-action@v5

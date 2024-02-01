@@ -48,7 +48,7 @@ jobs:
           path: transcrypt
 
       - name: Initialise transcrypt
-        run: ./transcrypt/transcrypt -c id-aes256-GCM -p '${{ secrets.TRANSCRYPT_PASSWORD }}' --yes
+        run: ./transcrypt/transcrypt -c iter -p '${{ secrets.TRANSCRYPT_PASSWORD }}' --yes
 
 
       - name: Build container image and push to dockerhub on a tagged release

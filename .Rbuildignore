@@ -1,0 +1,13 @@
+^Meta$
+^doc$
+^.*\.Rproj$
+^\.Rproj\.user$
+^notes.R$
+^working.R$
+^docs$
+^docker$
+^\.github$
+^pkgdown$
+^codemeta\.json$
+^forec_shiny_app_data$
+^from_gangliu$

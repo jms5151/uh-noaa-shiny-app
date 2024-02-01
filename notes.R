@@ -13,3 +13,8 @@ all the app text gets read in through HTML so can markup if wanted
 
 
 shinyOptions(cache = cachem::cache_mem(max_size = 500e6))
+
+
+# at least when working locally, cache_mem doesn't work for me right now?
+#  shinyOptions(cache = cache_mem(max_size = 500e6))
+#  shinyOptions(cache = cache_disk(file.path(dirname(tempdir()), "myapp-cache")))

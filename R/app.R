@@ -3,16 +3,15 @@
 #'
 run_app <- function (main_dir = ".") {
 
+  require(uhnoaashinyapp)
   onStop(fun = app_clear_global)
 
   app_global(main_dir = main_dir)
 
-# at least when working locally, cache_mem doesn't work for me right now?
-#  shinyOptions(cache = cache_mem(max_size = 500e6))
-#  shinyOptions(cache = cache_disk(file.path(dirname(tempdir()), "myapp-cache")))
-
   shinyApp(ui      = app_ui( ),
-           server  = app_server)
+           server  = app_server,
+           options = list(host = "0.0.0.0", 
+                          port = 3838))
 
 }
 

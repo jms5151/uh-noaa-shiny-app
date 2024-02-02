@@ -15,6 +15,9 @@ run_app <- function (main_dir = ".", port = 3838, host = "0.0.0.0") {
 
 }
 
+#'
+#' @export
+#'
 app_global <- function (main_dir = ".") {
 
   assign(x     = "app_text",

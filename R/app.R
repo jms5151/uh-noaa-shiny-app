@@ -1,7 +1,7 @@
 #'
 #' @export
 #'
-run_app <- function (main_dir = ".") {
+run_app <- function (main_dir = ".", port = 3838, host = "0.0.0.0") {
 
   require(uhnoaashinyapp)
   onStop(fun = app_clear_global)
@@ -10,8 +10,8 @@ run_app <- function (main_dir = ".") {
 
   shinyApp(ui      = app_ui( ),
            server  = app_server,
-           options = list(host = "0.0.0.0", 
-                          port = 3838))
+           options = list(host = host, 
+                          port = port))
 
 }
 

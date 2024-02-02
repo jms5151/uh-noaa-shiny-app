@@ -34,7 +34,6 @@ scp -o StrictHostKeyChecking=no -i infra/id_rsa \
     infra/docker-compose.prod.yml \
     root@$HOST:${DEPLOY_DIR}/docker-compose.prod.yml
 
-
 echo -e "\n>>> Updating Docker Swarm stack $DOCKER_STACK_NAME"
 ssh -o StrictHostKeyChecking=no -i infra/id_rsa root@$HOST /bin/bash << EOF
     set -e
@@ -43,9 +42,7 @@ ssh -o StrictHostKeyChecking=no -i infra/id_rsa root@$HOST /bin/bash << EOF
     echo "$DOCKER_PASSWORD" | docker login --username $DOCKER_ID --password-stdin
     docker stack deploy --with-registry-auth --compose-file docker-compose.prod.yml $DOCKER_STACK_NAME
     rm -f /srv/socks/shiny.sock
-    echo "last successful echo"
     docker service update --force coral_web
-    echo "this isn't being echoed"
     echo "Pruning docker images"
     docker image prune -af
 EOF

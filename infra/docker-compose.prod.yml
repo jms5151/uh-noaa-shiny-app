@@ -3,6 +3,6 @@ version: "3"
 services:
   web:
     image: jamiecaldwell/uh-crw:latest
-    command: R -e "uhnoaashinyapp::run_app(port=structure('/app/socks/shiny.sock', mask=384), host='66.228.47.179')"
+    command: R -e "shiny::runApp('/app/codes/forec_shiny_app.R', port=structure('/app/socks/shiny.sock', mask=384), host='66.228.47.179')"
     volumes:
       - /srv/socks:/app/socks

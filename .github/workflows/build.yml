@@ -17,11 +17,11 @@ jobs:
 
     steps:
       - name: Checkout GitHub repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Define Docker metadata
         id: docker_metadata
-        uses: docker/metadata-action@v4
+        uses: docker/metadata-action@v5
         with:
           images: jamiecaldwell/uh-crw
           tags: |
@@ -42,7 +42,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Checkout transcrypt
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           repository: elasticdog/transcrypt
           path: transcrypt

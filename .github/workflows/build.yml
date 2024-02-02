@@ -1,73 +1,51 @@
 name: Build and Deploy
-
 on:
   push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
-  release:
-    types: [ published ]
+    branches:
+      - main
 
 jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      R_KEEP_PKG_SOURCE: yes
-      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+      HOST: "66.228.47.179"
+      DOCKER_STACK_NAME: coral
+      DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+      DOCKER_ID: jamiecaldwell
 
     steps:
-      - name: Checkout GitHub repository
-        uses: actions/checkout@v3
-
-      - name: Define Docker metadata
-        id: docker_metadata
-        uses: docker/metadata-action@v4
-        with:
-          images: jamiecaldwell/uh-crw
-          tags: |
-            type=raw,value=latest
-            type=semver,pattern={{raw}} 
-
-
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v3
-
-      - name: Set up Pandoc
-        uses: r-lib/actions/setup-pandoc@v2
-
-      - name: Login to Docker Hub
-        uses: docker/login-action@v3
-        with:
-          username: jamiecaldwell
-          password: ${{ secrets.DOCKER_PASSWORD }}
+      # Check out GitHub reportiory
+      - uses: actions/checkout@v2
 
       - name: Checkout transcrypt
-        uses: actions/checkout@v3
+        uses: actions/checkout@v2
         with:
           repository: elasticdog/transcrypt
           path: transcrypt
 
       - name: Initialise transcrypt
-        run: ./transcrypt/transcrypt -p '${{ secrets.TRANSCRYPT_PASSWORD }}' --yes
+        run: ./transcrypt/transcrypt -c aes-256-cbc -p '${{ secrets.TRANSCRYPT_PASSWORD }}' --yes
 
+      # Build the Docker image
+      - name: Build container image
+        run: |
+          DOCKER_BUILDKIT=1 docker build \
+          --tag jamiecaldwell/uh-crw:latest \
+          --cache-from jamiecaldwell/uh-crw:latest \
+          --build-arg BUILDKIT_INLINE_CACHE=1 .
 
-      - name: Build container image and push to dockerhub on a tagged release
-        uses: docker/build-push-action@v5
+      # Login to DockerHub
+      - name: Login to DockerHub
+        uses: docker/login-action@v1
         with:
-          context: .
-          tags: ${{ steps.docker_metadata.outputs.tags }}
-          cache-from: type=registry,ref=jamiecaldwell/uh-crw:latest
-          cache-to: type=inline
-          push: ${{ github.event_name == 'release' }}
-          build-args: |
-            "event_sha=${{ github.sha }}"
+          username: jamiecaldwell
+          password: ${{ secrets.DOCKER_PASSWORD }}
 
-      - name: Deploy the image to the webserver on a tagged release
-        if: ${{ github.event_name == 'release' }}
+      # Push the image to DockerHub
+      - name: Push container image
+        run: docker push jamiecaldwell/uh-crw:latest
+
+      # Deploy the image to the webserver.
+      - name: Run deploy script
         run: ./infra/deploy.sh
         shell: bash
-        env: 
-          HOST: "66.228.47.179"
-          DOCKER_STACK_NAME: coral
-          DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
-          DOCKER_ID: jamiecaldwell

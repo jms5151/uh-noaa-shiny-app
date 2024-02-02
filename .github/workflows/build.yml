@@ -26,7 +26,7 @@ jobs:
           images: jamiecaldwell/uh-crw
           tags: |
             type=raw,value=latest
-#            type=semver,pattern={{raw}} 
+            type=semver,pattern={{raw}} 
 
 
       - name: Set up Docker Buildx

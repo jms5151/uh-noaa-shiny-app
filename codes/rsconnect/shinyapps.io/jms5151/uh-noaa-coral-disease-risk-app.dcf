@@ -1,0 +1,13 @@
+name: uh-noaa-coral-disease-risk-app
+title: uh-noaa-coral-disease-risk-app
+username:
+account: jms5151
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 5610922
+bundleId: 5558633
+url: https://jms5151.shinyapps.io/uh-noaa-coral-disease-risk-app/
+when: 1644360771.99867
+lastSyncTime: 1644360771.99867
+asMultiple: FALSE
+asStatic: FALSE

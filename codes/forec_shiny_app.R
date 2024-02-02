@@ -1,5 +1,7 @@
 # Fore-C interactive explorer -----------------------------------------------------
 # load libraries (and install if not already installed) 
+
+library(uhnoaashinyapp)
 source("./forec_shiny_app_packages.R", local = TRUE)
 
 # load data 

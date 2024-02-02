@@ -58,12 +58,12 @@ jobs:
           tags: ${{ steps.docker_metadata.outputs.tags }}
           cache-from: type=registry,ref=jamiecaldwell/uh-crw:latest
           cache-to: type=inline
-         # push: ${{ github.event_name == 'release' }}
+          push: true #${{ github.event_name == 'release' }}
           build-args: |
             "event_sha=${{ github.sha }}"
 
       - name: Deploy the image to the webserver #on a tagged release
-       # if: ${{ github.event_name == 'release' }}
+        if: true #${{ github.event_name == 'release' }}
         run: ./infra/deploy.sh
         shell: bash
         env: 

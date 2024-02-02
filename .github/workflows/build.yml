@@ -51,19 +51,19 @@ jobs:
         run: ./transcrypt/transcrypt -p '${{ secrets.TRANSCRYPT_PASSWORD }}' --yes
 
 
-      - name: Build container image and push to dockerhub on a tagged release
+      - name: Build container image and push to dockerhub #on a tagged release
         uses: docker/build-push-action@v5
         with:
           context: .
           tags: ${{ steps.docker_metadata.outputs.tags }}
           cache-from: type=registry,ref=jamiecaldwell/uh-crw:latest
           cache-to: type=inline
-          push: ${{ github.event_name == 'release' }}
+         # push: ${{ github.event_name == 'release' }}
           build-args: |
             "event_sha=${{ github.sha }}"
 
-      - name: Deploy the image to the webserver on a tagged release
-        if: ${{ github.event_name == 'release' }}
+      - name: Deploy the image to the webserver #on a tagged release
+       # if: ${{ github.event_name == 'release' }}
         run: ./infra/deploy.sh
         shell: bash
         env: 

@@ -44,7 +44,7 @@ ssh -o StrictHostKeyChecking=no -i infra/id_rsa root@$HOST /bin/bash << EOF
     docker stack deploy --with-registry-auth --compose-file docker-compose.prod.yml $DOCKER_STACK_NAME
     rm -f /srv/socks/shiny.sock
     echo "last successful echo"
-    docker service update --force  --detach coral_web
+    docker service update --force coral_web
     echo "this isn't being echoed"
     echo "Pruning docker images"
     docker image prune -af

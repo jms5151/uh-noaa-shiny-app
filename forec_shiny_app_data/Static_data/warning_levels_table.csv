@@ -1,0 +1,6 @@
+Warning_level,Growth_anomalies_GBR_Australia,Growth anomalies_U.S._Pacific,White_syndromes_GBR_Australia,White_syndromes_U.S._Pacific
+No stress,0 - 5 colonies,0 - 5 %,0 - 1 colonies,0 - 1 %
+Watch,6 - 15 colonies,6 - 10 %,2 - 5 colonies,2 - 5 %
+Warning,16 - 25 colonies,11 - 15 %,6 - 10 colonies,6 - 10 %
+Alert level 1,26 - 50 colonies,16 - 25 %,11 - 20 colonies,11 - 15 %
+Alert level 2,>50 colonies,>25 %,>20 colonies,>15 %

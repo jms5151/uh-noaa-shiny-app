@@ -6,7 +6,7 @@
 \alias{uhnoaashinyapp-package}
 \title{uhnoaashinyapp: Multi-Factor Coral Disease Forecast Data Explorer}
 \description{
-A shiny application to visualize and explore near term coral disease forecasts associated with the NOAA Coral Reef Watch experimental product, 'Multi-Factor Coral Disease Forecast', developed in collaboration with researchers from the University of Hawaii at Manoa (USA) and James Cook University (Australia). The application has four components: 1) visualizations through space and time of Pacific coral reef diseases; 2) scenarios for refining predictions or assessing interventions; 3) historical data records that were used to build the disease risk models; and 4) supportiving information about the product.
+A shiny application to visualize and explore near term coral disease forecasts associated with the NOAA Coral Reef Watch experimental product, 'Multi-Factor Coral Disease Forecast', developed in collaboration with researchers from the University of Hawaii at Manoa (USA) and James Cook University (Australia). The application has four components: 1) visualizations through space and time of Pacific coral reef diseases; 2) scenarios for refining predictions or assessing interventions; 3) historical data records that were used to build the disease risk models; and 4) supporting information about the product.
 }
 \seealso{
 Useful links:

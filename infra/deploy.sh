@@ -41,11 +41,16 @@ ssh -o StrictHostKeyChecking=no -i infra/id_rsa root@$HOST /bin/bash << EOF
     echo "Deploying new container"
     cd $DEPLOY_DIR
     echo "$DOCKER_PASSWORD" | docker login --username $DOCKER_ID --password-stdin
+    echo "__step_break__1"
     docker stack deploy --with-registry-auth --compose-file docker-compose.prod.yml $DOCKER_STACK_NAME
+    echo "__step_break__2"
     rm -f /srv/socks/shiny.sock
+    echo "__step_break__3"
     docker service update --force coral_web
+    echo "__step_break__4"
     echo "Pruning docker images"
     docker image prune -af
+    echo "__step_break__5"
 EOF
 
 echo -e "\n>>> Deployment finished"

@@ -9,7 +9,7 @@ app_global(main_dir = "..")
 
 
 
-shinyApp(app_ui( ), app_server)
+#shinyApp(app_ui( ), app_server)
 
 source("./forec_shiny_app_packages.R", local = TRUE)
 

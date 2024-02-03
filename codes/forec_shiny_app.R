@@ -6,7 +6,7 @@ library(uhnoaashinyapp)
 uhnoaashinyapp:::read_app_text( )
 uhnoaashinyapp:::read_app_settings( )
 uhnoaashinyapp:::load_historical_data( )
-uhnoaashinyapp:::load_ga_forecast( )
+uhnoaashinyapp:::load_ga_forecast(main = file.path(".", "app"))
 
 source("./forec_shiny_app_packages.R", local = TRUE)
 

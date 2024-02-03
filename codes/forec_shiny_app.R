@@ -13,6 +13,11 @@ uhnoaashinyapp:::load_historical_data( )
 uhnoaashinyapp:::load_ga_forecast(main_dir = main_dir)
 uhnoaashinyapp:::load_ws_forecast(main_dir = main_dir)
 
+uhnoaashinyapp:::load_ga_nowcast_aggregated_to_management_zones(main_dir = main_dir)
+uhnoaashinyapp:::load_ws_nowcast_aggregated_to_management_zones(main_dir = main_dir)
+uhnoaashinyapp:::load_ga_gbr_nowcast_aggregated_to_gbrmpa_park_zones(main_dir = main_dir)
+uhnoaashinyapp:::load_ws_gbr_nowcast_aggregated_to_gbrmpa_park_zones(main_dir = main_dir)
+
 
 
 

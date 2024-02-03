@@ -3,7 +3,7 @@
 
 library(uhnoaashinyapp)
 
-if(file.exists("app")){stop()}
+if(file.exists("pages")){stop()}
 
 source("./forec_shiny_app_packages.R", local = TRUE)
 

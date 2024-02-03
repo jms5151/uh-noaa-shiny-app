@@ -73,6 +73,10 @@ app_global <- function (main_dir = ".") {
          value = load_shape_files(main_dir = main_dir),
          pos   = 1)
 
+  assign(x     = "ga_pac_basevals_ID",
+         value = load_ga_pac_basevals_id(main_dir = main_dir),
+         pos   = 1)
+
 }
 
 #'
@@ -93,8 +97,9 @@ app_clear_global <- function ( ) {
   rm("historicalMap", pos = 1)
   rm("gauge_data", pos = 1)
 
-  rm("shpFiles", pos = 1)
 
+  rm("shpFiles", pos = 1)
+  rm("ga_pac_basevals_ID", pos = 1)
 
 }
 

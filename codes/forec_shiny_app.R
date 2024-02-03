@@ -1,16 +1,20 @@
 # Fore-C interactive explorer -----------------------------------------------------
 # load libraries (and install if not already installed) 
 
-library(uhnoaashinyapp)
+
+uhnoaashinyapp::run_app(main_dir = "..")
 
 
-main_dir <- ".."
+#library(uhnoaashinyapp)
+
+
+#main_dir <- ".."
 
 #app_global(main_dir = main_dir)
 
 #  shinyApp(ui      = app_ui( ),
 #           server  = app_server)
-run_app(main_dir = main_dir)
+#run_app(main_dir = main_dir)
 
 
 #source("./forec_shiny_app_packages.R", local = TRUE)

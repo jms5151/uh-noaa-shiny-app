@@ -1,3 +1,12 @@
+# This workflow occurs on all pushes, pull requests, and tagged releases
+#   It builds an image based on the current repo
+#   However, that image is only pushed to docker hub and loaded to the server when one of two conditions is met:
+#     1. It is a tagged release
+#     2. It is a commit containing the text 'Weekly data update' (case-insensitive)
+#
+# A tagged release of the repo leads to an image with the latest tag and a semantic-version tag 
+# A data update of the repo leads to an image with the latest tag and a tag that says data-update-<date>
+
 name: Build and Deploy
 
 on:
@@ -28,11 +37,8 @@ jobs:
           tags: |
             type=raw,value=latest
             type=semver,pattern={{raw}} 
-            type=raw,value=data-update,suffix=${{ github.event.repository.updated_at }},enable=${{ contains(github.event.head_commit.message, 'Weekly data update') }}
+            type=raw,value=data-update-,suffix=${{ github.event.repository.updated_at }},enable=${{ contains(github.event.head_commit.message, 'Weekly data update') }}
 
-      - name: echo eitheror
-        run: |
-          echo okay "$EITHEROR"
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3

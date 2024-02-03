@@ -26,7 +26,7 @@ load_ws_pac_scenarios <- function (main_dir = ".") {
 
 load_ws_pac_basevals_id <- function (main_dir = ".") {
 
-  read_csv_arrow(file = data_file("Scenarios", "ws_pac_basevals_id.csv", main_dir = main_dir))
+  read_csv_arrow(file = data_file("Scenarios", "ws_pac_basevals_ID.csv", main_dir = main_dir))
 
 }
 
@@ -51,7 +51,7 @@ load_ga_gbr_scenarios <- function (main_dir = ".") {
 
 load_ga_gbr_basevals_id <- function (main_dir = ".") {
 
-  read_csv_arrow(file = data_file("Scenarios", "ga_gbr_basevals_id.csv", main_dir = main_dir))
+  read_csv_arrow(file = data_file("Scenarios", "ga_gbr_basevals_ID.csv", main_dir = main_dir))
 
 }
 
@@ -64,7 +64,7 @@ load_ws_gbr_scenarios <- function (main_dir = ".") {
 
 load_ws_gbr_basevals_id <- function (main_dir = ".") {
 
-  read_csv_arrow(file = data_file("Scenarios", "ws_gbr_basevals_id.csv", main_dir = main_dir))
+  read_csv_arrow(file = data_file("Scenarios", "ws_gbr_basevals_ID.csv", main_dir = main_dir))
 
 }
 

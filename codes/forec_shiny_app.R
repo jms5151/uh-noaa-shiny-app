@@ -2,9 +2,8 @@
 # load libraries (and install if not already installed) 
 
 library(uhnoaashinyapp)
-print("1312")
-message("hi how are you")
-app_global
+
+uhnoaashinyapp:::read_app_text
 
 
 source("./forec_shiny_app_packages.R", local = TRUE)

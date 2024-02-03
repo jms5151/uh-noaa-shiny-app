@@ -4,7 +4,7 @@
 library(uhnoaashinyapp)
 
 #app_global(main_dir = "..")
-#uhnoaashinyapp:::load_ga_forecast(main_dir = "..")
+uhnoaashinyapp:::load_ga_forecast(main_dir = "..")
 #if(file.exists(file.path(".." "forec_shiny_app_data"))){stop()}
 
 

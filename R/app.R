@@ -73,6 +73,38 @@ app_global <- function (main_dir = ".") {
          value = load_shape_files(main_dir = main_dir),
          pos   = 1)
 
+  assign(x     = "ga_pac_basevals_ID",
+         value = load_ga_pac_basevals_id(main_dir = main_dir),
+         pos   = 1)
+
+  assign(x     = "ga_pac_scenarios",
+         value = load_ga_pac_scenarios(main_dir = main_dir),
+         pos   = 1)
+
+  assign(x     = "ws_pac_basevals_ID",
+         value = load_ws_pac_basevals_id(main_dir = main_dir),
+         pos   = 1)
+
+  assign(x     = "ws_pac_scenarios",
+         value = load_ws_pac_scenarios(main_dir = main_dir),
+         pos   = 1)
+
+  assign(x     = "ga_gbr_basevals_ID",
+         value = load_ga_gbr_basevals_id(main_dir = main_dir),
+         pos   = 1)
+
+  assign(x     = "ga_gbr_scenarios",
+         value = load_ga_gbr_scenarios(main_dir = main_dir),
+         pos   = 1)
+
+  assign(x     = "ws_gbr_basevals_ID",
+         value = load_ws_gbr_basevals_id(main_dir = main_dir),
+         pos   = 1)
+
+  assign(x     = "ws_gbr_scenarios",
+         value = load_ws_gbr_scenarios(main_dir = main_dir),
+         pos   = 1)
+
 }
 
 #'
@@ -94,5 +126,15 @@ app_clear_global <- function ( ) {
   rm("gauge_data", pos = 1)
 
   rm("shpFiles", pos = 1)
+
+  rm("ga_pac_basevals_ID", pos = 1)
+  rm("ga_pac_scenarios", pos = 1)
+  rm("ws_pac_basevals_ID", pos = 1)
+  rm("ws_pac_scenarios", pos = 1)
+  rm("ga_gbr_basevals_ID", pos = 1)
+  rm("ga_gbr_scenarios", pos = 1)
+  rm("ws_gbr_basevals_ID", pos = 1)
+  rm("ws_gbr_scenarios", pos = 1)
+
 }
 

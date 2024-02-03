@@ -9,7 +9,7 @@ app_ui <- function ( ) {
              theme       = shinytheme("flatly"),
              header      = app_css_header( ),
 
- #   app_ui_predictions( ),
+    app_ui_predictions( ),
 
  #   app_ui_scenarios( ),
 

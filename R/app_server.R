@@ -5,7 +5,7 @@ app_server <- function (input,
                         output,
                         session) {
 
-  #forecast_page(input, output)
+  forecast_page(input, output)
  # scenarios_page(input, output)
   historical_data_page(input, output)
   about_page(input, output)

@@ -31,6 +31,9 @@ app_global <- function (main_dir = ".") {
 
 }
 
+#'
+#' @export
+#'
 app_clear_global <- function ( ) {
 
   rm("app_text", pos = 1)

@@ -40,6 +40,12 @@ jobs:
             type=raw,value=data-update-,suffix=${{ github.event.repository.updated_at }},enable=${{ contains(github.event.head_commit.message, 'Weekly data update') }}
 
 
+
+      - name: echo eitheror
+        run: |
+          echo okay "$EITHEROR"
+
+
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
 

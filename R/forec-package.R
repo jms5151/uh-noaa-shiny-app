@@ -1,3 +1,7 @@
+# bsToolTip is not working unless i load the whole shinyBS library
+# i tried to bring over the functions, but it still wasn't working
+# it must be some setting setup stuff, so im making shinyBS required
+
 #' @importFrom arrow read_csv_arrow
 #' @importFrom bslib page_navbar tooltip 
 #' @importFrom cachem cache_disk cache_mem
@@ -24,10 +28,6 @@
 #' @importFrom tidyr gather
 #' @importFrom usethis use_data
 #' @importFrom yaml read_yaml
-
-
-
-
 
 #' @keywords internal
 #'

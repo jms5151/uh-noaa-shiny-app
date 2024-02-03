@@ -29,6 +29,19 @@ app_global <- function (main_dir = ".") {
          pos   = 1)
 
 
+  assign(x     = "historical_data",
+         value = load_historical_data( ),
+         pos   = 1)
+
+  assign(x     = "ga_forecast",
+         value = load_ga_forecast(main_dir = main_dir),
+         pos   = 1)
+
+  assign(x     = "ws_forecast",
+         value = load_ws_forecast(main_dir = main_dir),
+         pos   = 1)
+
+
 }
 
 #'
@@ -38,6 +51,10 @@ app_clear_global <- function ( ) {
 
   rm("app_text", pos = 1)
   rm("app_settings", pos = 1)
+
+  rm("ga_forecast", pos = 1)
+  rm("ws_forecast", pos = 1)
+  rm("historical_data", pos = 1)
 
 }
 

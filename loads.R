@@ -1,5 +1,4 @@
 
-uhnoaashinyapp:::read_app_settings( )
 uhnoaashinyapp:::load_historical_data( )
 uhnoaashinyapp:::load_ga_forecast(main_dir = main_dir)
 uhnoaashinyapp:::load_ws_forecast(main_dir = main_dir)
@@ -199,3 +198,7 @@ uhnoaashinyapp:::load_ws_gbr_scenarios_aggregated_to_gbrmpa_park_zones(main_dir 
   rm("ga_gbr_scenarios_aggregated_to_gbrmpa_park_zones", pos = 1)
   rm("ws_gbr_basevals_gbrmpa", pos = 1)
   rm("ws_gbr_scenarios_aggregated_to_gbrmpa_park_zones", pos = 1)
+
+
+
+

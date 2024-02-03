@@ -3,10 +3,7 @@
 
 library(uhnoaashinyapp)
 
-uhnoaashinyapp:::read_app_text( )
-uhnoaashinyapp:::read_app_settings( )
-uhnoaashinyapp:::load_historical_data( )
-uhnoaashinyapp:::load_ga_forecast(main_dir = file.path("app"))
+if(file.exists("app")){stop()}
 
 source("./forec_shiny_app_packages.R", local = TRUE)
 

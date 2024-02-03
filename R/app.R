@@ -28,7 +28,6 @@ app_global <- function (main_dir = ".") {
          value = read_app_settings( ),
          pos   = 1)
 
-
   assign(x     = "historical_data",
          value = load_historical_data( ),
          pos   = 1)
@@ -42,6 +41,23 @@ app_global <- function (main_dir = ".") {
          pos   = 1)
 
 
+  assign(x     = "ga_nowcast_aggregated_to_management_zones",
+         value = load_ga_nowcast_aggregated_to_management_zones(main_dir = main_dir),
+         pos   = 1)
+
+  assign(x     = "ws_nowcast_aggregated_to_management_zones",
+         value = load_ws_nowcast_aggregated_to_management_zones(main_dir = main_dir),
+         pos   = 1)
+
+  assign(x     = "ga_gbr_nowcast_aggregated_to_gbrmpa_park_zones",
+         value = load_ga_gbr_nowcast_aggregated_to_gbrmpa_park_zones(main_dir = main_dir),
+         pos   = 1)
+
+  assign(x     = "ws_gbr_nowcast_aggregated_to_gbrmpa_park_zones",
+         value = load_ws_gbr_nowcast_aggregated_to_gbrmpa_park_zones(main_dir = main_dir),
+         pos   = 1)
+
+
 }
 
 #'
@@ -51,10 +67,14 @@ app_clear_global <- function ( ) {
 
   rm("app_text", pos = 1)
   rm("app_settings", pos = 1)
-
+  rm("historical_data", pos = 1)
   rm("ga_forecast", pos = 1)
   rm("ws_forecast", pos = 1)
-  rm("historical_data", pos = 1)
+
+  rm("ga_nowcast_aggregated_to_management_zones", pos = 1)
+  rm("ws_nowcast_aggregated_to_management_zones", pos = 1)
+  rm("ga_gbr_nowcast_aggregated_to_gbrmpa_park_zones", pos = 1)
+  rm("ws_gbr_nowcast_aggregated_to_gbrmpa_park_zones", pos = 1)
 
 }
 

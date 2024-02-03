@@ -24,6 +24,15 @@ uhnoaashinyapp:::load_ws_gbr_nowcast_aggregated_to_gbrmpa_park_zones(main_dir = 
 
 uhnoaashinyapp:::load_shape_files(main_dir = main_dir)
 
+uhnoaashinyapp:::load_ga_pac_basevals_id(main_dir = main_dir)
+uhnoaashinyapp:::load_ga_pac_scenarios(main_dir = main_dir)
+uhnoaashinyapp:::load_ws_pac_basevals_id(main_dir = main_dir)
+uhnoaashinyapp:::load_ws_pac_scenarios(main_dir = main_dir)
+uhnoaashinyapp:::load_ga_gbr_basevals_id(main_dir = main_dir)
+uhnoaashinyapp:::load_ga_gbr_scenarios(main_dir = main_dir)
+uhnoaashinyapp:::load_ws_gbr_basevals_id(main_dir = main_dir)
+uhnoaashinyapp:::load_ws_gbr_scenarios(main_dir = main_dir)
+
 
 
 

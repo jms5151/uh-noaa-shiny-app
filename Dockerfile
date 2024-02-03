@@ -14,9 +14,7 @@ RUN R -e "remotes::install_github('jms5151/uh-noaa-shiny-app', ref = '$event_sha
 WORKDIR /app
 
 
-COPY codes /app/codes
 COPY forec_shiny_app_data /app/forec_shiny_app_data
-COPY styles.css /app/styles.css
 COPY Rprofile.site /usr/lib/R/etc/
 
 EXPOSE 3838

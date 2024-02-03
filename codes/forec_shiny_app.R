@@ -2,8 +2,9 @@
 # load libraries (and install if not already installed) 
 
 library(uhnoaashinyapp)
+uhnoaashinyapp::load_ga_forecast(main_dir = "..")
 
-if(file.exists(file.path(".." "forec_shiny_app_data"))){stop()}
+#if(file.exists(file.path(".." "forec_shiny_app_data"))){stop()}
 
 source("./forec_shiny_app_packages.R", local = TRUE)
 

@@ -72,7 +72,6 @@ app_global <- function (main_dir = ".") {
          value = load_shape_files(main_dir = main_dir),
          pos   = 1)
 
-
   assign(x     = "ga_pac_basevals_ID",
          value = load_ga_pac_basevals_id(main_dir = main_dir),
          pos   = 1)
@@ -110,6 +109,57 @@ app_global <- function (main_dir = ".") {
          pos   = 1)
 
 
+
+
+  assign(x     = "ga_pac_basevals_management",
+         value = load_ga_pac_basevals_management(main_dir = main_dir),
+         pos   = 1)
+
+  assign(x     = "ga_pac_scenarios_aggregated_to_management_zones",
+         value = load_ga_pac_scenarios_aggregated_to_management_zones(main_dir = main_dir),
+         pos   = 1)
+
+  assign(x     = "ws_pac_basevals_management",
+         value = load_ws_pac_basevals_management(main_dir = main_dir),
+         pos   = 1)
+
+  assign(x     = "ws_pac_scenarios_aggregated_to_management_zones",
+         value = load_ws_pac_scenarios_aggregated_to_management_zones(main_dir = main_dir),
+         pos   = 1)
+
+
+  assign(x     = "ga_gbr_basevals_management",
+         value = load_ga_gbr_basevals_management(main_dir = main_dir),
+         pos   = 1)
+
+  assign(x     = "ga_gbr_scenarios_aggregated_to_management_zones",
+         value = load_ga_gbr_scenarios_aggregated_to_management_zones(main_dir = main_dir),
+         pos   = 1)
+
+  assign(x     = "ws_gbr_basevals_management",
+         value = load_ws_gbr_basevals_management(main_dir = main_dir),
+         pos   = 1)
+
+  assign(x     = "ws_gbr_scenarios_aggregated_to_management_zones",
+         value = load_ws_gbr_scenarios_aggregated_to_management_zones(main_dir = main_dir),
+         pos   = 1)
+
+  assign(x     = "ga_gbr_basevals_gbrmpa",
+         value = load_ga_gbr_basevals_gbrmpa(main_dir = main_dir),
+         pos   = 1)
+
+  assign(x     = "ga_gbr_scenarios_aggregated_to_gbrmpa_park_zones",
+         value = load_ga_gbr_scenarios_aggregated_to_gbrmpa_park_zones(main_dir = main_dir),
+         pos   = 1)
+
+  assign(x     = "ws_gbr_basevals_gbrmpa",
+         value = load_ws_gbr_basevals_gbrmpa(main_dir = main_dir),
+         pos   = 1)
+
+  assign(x     = "ws_gbr_scenarios_aggregated_to_gbrmpa_park_zones",
+         value = load_ws_gbr_scenarios_aggregated_to_gbrmpa_park_zones(main_dir = main_dir),
+         pos   = 1)
+
 }
 
 #'
@@ -131,7 +181,6 @@ app_clear_global <- function ( ) {
   rm("gauge_data", pos = 1)
   rm("shpFiles", pos = 1)
   rm("ga_pac_basevals_ID", pos = 1)
-
   rm("ga_pac_basevals_ID", pos = 1)
   rm("ga_pac_scenarios", pos = 1)
   rm("ws_pac_basevals_ID", pos = 1)
@@ -140,5 +189,19 @@ app_clear_global <- function ( ) {
   rm("ga_gbr_scenarios", pos = 1)
   rm("ws_gbr_basevals_ID", pos = 1)
   rm("ws_gbr_scenarios", pos = 1)
+
+  rm("ga_pac_basevals_management", pos = 1)
+  rm("ga_pac_scenarios_aggregated_to_management_zones", pos = 1)
+  rm("ws_pac_basevals_management", pos = 1)
+  rm("ws_pac_scenarios_aggregated_to_management_zones", pos = 1)
+  rm("ga_gbr_basevals_management", pos = 1)
+  rm("ga_gbr_scenarios_aggregated_to_management_zones", pos = 1)
+  rm("ws_gbr_basevals_management", pos = 1)
+  rm("ws_gbr_scenarios_aggregated_to_management_zones", pos = 1)
+  rm("ga_gbr_basevals_gbrmpa", pos = 1)
+  rm("ga_gbr_scenarios_aggregated_to_gbrmpa_park_zones", pos = 1)
+  rm("ws_gbr_basevals_gbrmpa", pos = 1)
+  rm("ws_gbr_scenarios_aggregated_to_gbrmpa_park_zones", pos = 1)
+
 }
 

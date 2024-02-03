@@ -1,9 +1,9 @@
 # Fore-C interactive explorer -----------------------------------------------------
 # load libraries (and install if not already installed) 
 
-library(uhnoaashinyapp)
+#library(uhnoaashinyapp)
 
-app_global(main_dir = "..")
+#app_global(main_dir = "..")
 #uhnoaashinyapp:::load_ga_forecast(main_dir = "..")
 #if(file.exists(file.path(".." "forec_shiny_app_data"))){stop()}
 

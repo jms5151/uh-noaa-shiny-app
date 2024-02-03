@@ -3,10 +3,10 @@
 
 library(uhnoaashinyapp)
 
-#app_global(main_dir = "..")
 
 main_dir <- ".."
 
+app_global(main_dir = main_dir)
 
 
 

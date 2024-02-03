@@ -28,7 +28,7 @@ jobs:
           tags: |
             type=raw,value=latest
             type=semver,pattern={{raw}} 
-            type=raw,value=data-update,enable=${{ contains(github.event.head_commit.message, 'Weekly data update') }}
+            type=raw,value=data-update,suffix=${{ github.event.repository.updated_at }},enable=${{ contains(github.event.head_commit.message, 'Weekly data update') }}
 
       - name: echo eitheror
         run: |

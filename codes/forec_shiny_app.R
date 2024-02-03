@@ -2,6 +2,8 @@
 # load libraries (and install if not already installed) 
 
 library(uhnoaashinyapp)
+print("1312")
+message("hi how are you")
 app_global
 
 

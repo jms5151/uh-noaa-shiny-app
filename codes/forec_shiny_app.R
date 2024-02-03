@@ -3,7 +3,7 @@
 
 library(uhnoaashinyapp)
 
-uhnoaashinyapp:::read_app_text
+uhnoaashinyapp:::read_app_text( )
 
 
 source("./forec_shiny_app_packages.R", local = TRUE)

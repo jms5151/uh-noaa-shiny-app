@@ -13,21 +13,19 @@ Depends:
   shinyBS
 Imports:
   arrow,
+  bslib,
   cachem,
   dplyr,
-  flexdashboard,
   htmltools,
   leaflet,
   magrittr,
   plotly,
   sf,
   shinycssloaders,
-  shinydashboard,
   shinythemes,
   shinyWidgets,
   tidyr,
   usethis,
-  xts,
   yaml
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3

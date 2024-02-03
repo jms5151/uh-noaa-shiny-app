@@ -6,11 +6,11 @@ library(uhnoaashinyapp)
 
 main_dir <- ".."
 
-app_global(main_dir = main_dir)
+#app_global(main_dir = main_dir)
 
-  shinyApp(ui      = app_ui( ),
-           server  = app_server)
-
+#  shinyApp(ui      = app_ui( ),
+#           server  = app_server)
+run_app(main_dir = main_dir)
 
 
 #source("./forec_shiny_app_packages.R", local = TRUE)

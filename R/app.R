@@ -56,13 +56,17 @@ app_global <- function (main_dir = ".") {
          value = load_ws_gbr_nowcast_aggregated_to_gbrmpa_park_zones(main_dir = main_dir),
          pos   = 1)
 
-
   assign(x     = "basemap",
          value = create_basemap( ),
          pos   = 1)
 
   assign(x     = "historicalMap",
          value = create_historicalMap( ),
+         pos   = 1)
+
+
+  assign(x     = "gauge_data",
+         value = load_gauge_data( ),
          pos   = 1)
 }
 
@@ -80,9 +84,10 @@ app_clear_global <- function ( ) {
   rm("ws_nowcast_aggregated_to_management_zones", pos = 1)
   rm("ga_gbr_nowcast_aggregated_to_gbrmpa_park_zones", pos = 1)
   rm("ws_gbr_nowcast_aggregated_to_gbrmpa_park_zones", pos = 1)
-
   rm("basemap", pos = 1)
   rm("historicalMap", pos = 1)
+
+  rm("gauge_data", pos = 1)
 
 }
 

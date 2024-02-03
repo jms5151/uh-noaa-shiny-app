@@ -63,9 +63,32 @@ jobs:
           build-args: |
             "event_sha=${{ github.sha }}"
 
+      - name: Build container image and push to dockerhub on a data update
+        uses: docker/build-push-action@v5
+        with:
+          context: .
+          tags: ${{ steps.docker_metadata.outputs.tags }}
+          cache-from: type=registry,ref=jamiecaldwell/uh-crw:latest
+          cache-to: type=inline
+#          push: ${{ github.event_name == 'release' }}
+          push: contains(github.event.head_commit.message, '[Weekly data update]')
+          build-args: |
+            "event_sha=${{ github.sha }}"
+
       - name: Deploy the image to the webserver on a tagged release or data update
 #        if: ${{ github.event_name == 'release' }}
         if: ${{ contains(github.event.head_commit.message, '[Weekly data update]')}}
+        run: ./infra/deploy.sh
+        shell: bash
+        env: 
+          HOST: "66.228.47.179"
+          DOCKER_STACK_NAME: coral
+          DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+          DOCKER_ID: jamiecaldwell
+
+      - name: Deploy the image to the webserver on a data update
+#        if: ${{ github.event_name == 'release' }}
+        if:  contains(github.event.head_commit.message, '[Weekly data update]')
         run: ./infra/deploy.sh
         shell: bash
         env: 

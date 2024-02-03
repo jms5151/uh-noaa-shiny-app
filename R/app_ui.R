@@ -7,13 +7,13 @@ app_ui <- function ( ) {
              id          = "nav",
              collapsible = TRUE,
              theme       = shinytheme("flatly"),
-             header      = app_css_header( ),
+          #   header      = app_css_header( ),
 
-    app_ui_predictions( ),
+ #   app_ui_predictions( ),
 
-    app_ui_scenarios( ),
+ #   app_ui_scenarios( ),
 
-    app_ui_historical_data( ),
+  #  app_ui_historical_data( ),
 
     app_ui_about( )
 

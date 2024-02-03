@@ -8,32 +8,6 @@ library(uhnoaashinyapp)
 main_dir <- ".."
 
 
-uhnoaashinyapp:::read_app_settings( )
-uhnoaashinyapp:::load_historical_data( )
-uhnoaashinyapp:::load_ga_forecast(main_dir = main_dir)
-uhnoaashinyapp:::load_ws_forecast(main_dir = main_dir)
-
-uhnoaashinyapp:::load_ga_nowcast_aggregated_to_management_zones(main_dir = main_dir)
-uhnoaashinyapp:::load_ws_nowcast_aggregated_to_management_zones(main_dir = main_dir)
-uhnoaashinyapp:::load_ga_gbr_nowcast_aggregated_to_gbrmpa_park_zones(main_dir = main_dir)
-uhnoaashinyapp:::load_ws_gbr_nowcast_aggregated_to_gbrmpa_park_zones(main_dir = main_dir)
-
-
-
-
-
-uhnoaashinyapp:::load_shape_files(main_dir = main_dir)
-
-uhnoaashinyapp:::load_ga_pac_basevals_id(main_dir = main_dir)
-uhnoaashinyapp:::load_ga_pac_scenarios(main_dir = main_dir)
-uhnoaashinyapp:::load_ws_pac_basevals_id(main_dir = main_dir)
-uhnoaashinyapp:::load_ws_pac_scenarios(main_dir = main_dir)
-uhnoaashinyapp:::load_ga_gbr_basevals_id(main_dir = main_dir)
-uhnoaashinyapp:::load_ga_gbr_scenarios(main_dir = main_dir)
-uhnoaashinyapp:::load_ws_gbr_basevals_id(main_dir = main_dir)
-uhnoaashinyapp:::load_ws_gbr_scenarios(main_dir = main_dir)
-
-
 
 
 

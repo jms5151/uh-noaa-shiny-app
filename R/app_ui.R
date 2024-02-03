@@ -1,3 +1,6 @@
+#'
+#' @export
+#'
 app_ui <- function ( ) {
 
   navbarPage(title       = "", 

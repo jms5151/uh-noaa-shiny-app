@@ -1,6 +1,0 @@
-
-shiny::runApp 
-  app.R
-    shiny::shinyApp
-      app_ui
-      app_server

@@ -1,4 +1,4 @@
-# uh-noaa-shiny-app 
+# uh-noaa-shiny-app
 
 ### Setup
 

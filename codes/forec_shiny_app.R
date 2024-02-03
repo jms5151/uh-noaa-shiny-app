@@ -4,12 +4,25 @@
 library(uhnoaashinyapp)
 
 #app_global(main_dir = "..")
-uhnoaashinyapp:::load_ga_forecast(main_dir = "..")
-#if(file.exists(file.path(".." "forec_shiny_app_data"))){stop()}
+
+main_dir <- ".."
+
+
+uhnoaashinyapp:::read_app_settings( )
+uhnoaashinyapp:::load_historical_data( )
+uhnoaashinyapp:::load_ga_forecast(main_dir = main_dir)
+uhnoaashinyapp:::load_ws_forecast(main_dir = main_dir)
 
 
 
-#shinyApp(app_ui( ), app_server)
+
+
+
+
+
+
+
+
 
 source("./forec_shiny_app_packages.R", local = TRUE)
 

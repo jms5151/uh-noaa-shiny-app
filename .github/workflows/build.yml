@@ -73,7 +73,7 @@ jobs:
             "event_sha=${{ github.sha }}"
 
       - name: Deploy the image to the webserver on a tagged release
-        if: "$RELEASE"
+        if: {{$RELEASE}}
         run: ./infra/deploy.sh
         shell: bash
         env: 

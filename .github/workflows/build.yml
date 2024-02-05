@@ -65,8 +65,6 @@ jobs:
         with:
           context: .
           tags: ${{ steps.docker_metadata.outputs.tags }}
-          cache-from: type=registry,ref=jamiecaldwell/uh-crw:latest
-          cache-to: type=inline
           push: ${{ github.event_name == 'release' || contains(github.event.head_commit.message, 'Weekly data update') }}
           build-args: |
             "event_sha=${{ github.sha }}"

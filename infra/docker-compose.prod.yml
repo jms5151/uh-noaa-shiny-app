@@ -6,3 +6,4 @@ services:
     command: R -e "uhnoaashinyapp::run_app(port = structure('/app/socks/shiny.sock', mask = 384))"
     volumes:
       - /srv/socks:/app/socks
+      - ../forec_shiny_app_data

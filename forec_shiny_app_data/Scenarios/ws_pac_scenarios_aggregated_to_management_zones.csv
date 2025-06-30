@@ -391,104 +391,104 @@ guam_cnmi,Turbidity,1.7,cnmi_9,8.0,0.415,0.5,0.53,42.0,0
 guam_cnmi,Turbidity,1.8,cnmi_9,8.0,0.415,0.5,0.53,42.0,0
 guam_cnmi,Turbidity,1.9,cnmi_9,8.0,0.415,0.5,0.53,42.0,0
 guam_cnmi,Turbidity,2.0,cnmi_9,8.0,0.415,0.5,0.53,42.0,0
-guam_cnmi,Coral cover,5.0,guam_Achang Reef Flat Marine Preserve,0.5,0.45,0.51,0.54,50.5,0
-guam_cnmi,Coral cover,15.0,guam_Achang Reef Flat Marine Preserve,0.5,0.49,0.52,0.54,51.5,0
-guam_cnmi,Coral cover,25.0,guam_Achang Reef Flat Marine Preserve,0.5,0.49,0.52,0.54,51.5,0
-guam_cnmi,Coral cover,35.0,guam_Achang Reef Flat Marine Preserve,0.5,0.49,0.52,0.54,51.5,0
-guam_cnmi,Coral cover,45.0,guam_Achang Reef Flat Marine Preserve,0.5,0.49,0.52,0.54,51.5,0
-guam_cnmi,Coral cover,55.0,guam_Achang Reef Flat Marine Preserve,0.5,0.49,0.52,0.54,51.5,0
-guam_cnmi,Coral cover,65.0,guam_Achang Reef Flat Marine Preserve,0.5,0.49,0.52,0.54,51.5,0
-guam_cnmi,Coral size,5.0,guam_Achang Reef Flat Marine Preserve,0.5,0.0,0.01,0.0809999999999999,0.5,0
-guam_cnmi,Coral size,15.0,guam_Achang Reef Flat Marine Preserve,0.5,0.0,0.005,0.0809999999999999,0.0,0
-guam_cnmi,Coral size,25.0,guam_Achang Reef Flat Marine Preserve,0.5,0.0,0.005,0.1109999999999999,0.0,0
-guam_cnmi,Coral size,35.0,guam_Achang Reef Flat Marine Preserve,0.5,0.0,0.015,0.1109999999999999,1.0,0
-guam_cnmi,Coral size,45.0,guam_Achang Reef Flat Marine Preserve,0.5,0.0,0.015,0.1109999999999999,1.0,0
-guam_cnmi,Coral size,55.0,guam_Achang Reef Flat Marine Preserve,0.5,0.0,0.015,0.12,1.0,0
-guam_cnmi,Coral size,65.0,guam_Achang Reef Flat Marine Preserve,0.5,0.0,0.025,0.13,2.0,0
-guam_cnmi,Herb. fish,0.0,guam_Achang Reef Flat Marine Preserve,0.5,0.49,0.52,0.5509999999999999,51.5,0
-guam_cnmi,Herb. fish,0.1,guam_Achang Reef Flat Marine Preserve,0.5,0.49,0.52,0.5609999999999999,51.5,0
-guam_cnmi,Herb. fish,0.2,guam_Achang Reef Flat Marine Preserve,0.5,0.49,0.52,0.54,51.5,0
-guam_cnmi,Herb. fish,0.3,guam_Achang Reef Flat Marine Preserve,0.5,0.48,0.5125,0.54,50.5,0
-guam_cnmi,Herb. fish,0.4,guam_Achang Reef Flat Marine Preserve,0.5,0.48,0.5125,0.54,50.5,0
-guam_cnmi,Herb. fish,0.5,guam_Achang Reef Flat Marine Preserve,0.5,0.48,0.5125,0.54,50.5,0
-guam_cnmi,Herb. fish,0.6,guam_Achang Reef Flat Marine Preserve,0.5,0.48,0.5125,0.54,50.5,0
-guam_cnmi,Parrotfish density,0.0,guam_Achang Reef Flat Marine Preserve,0.5,0.0,0.025,0.13,2.0,0
-guam_cnmi,Parrotfish density,0.01,guam_Achang Reef Flat Marine Preserve,0.5,0.0,0.025,0.13,2.0,0
-guam_cnmi,Parrotfish density,0.02,guam_Achang Reef Flat Marine Preserve,0.5,0.0,0.025,0.13,2.0,0
-guam_cnmi,Parrotfish density,0.03,guam_Achang Reef Flat Marine Preserve,0.5,0.0,0.0625,0.15,5.5,0
-guam_cnmi,Parrotfish density,0.04,guam_Achang Reef Flat Marine Preserve,0.5,0.15,0.16,0.17,15.5,0
-guam_cnmi,Parrotfish density,0.05,guam_Achang Reef Flat Marine Preserve,0.5,0.16,0.17,0.17,16.5,0
-guam_cnmi,Parrotfish density,0.06,guam_Achang Reef Flat Marine Preserve,0.5,0.16,0.17,0.17,16.5,0
-guam_cnmi,Turbidity,0.0,guam_Achang Reef Flat Marine Preserve,0.5,0.16,0.17,0.17,16.5,0
-guam_cnmi,Turbidity,0.1,guam_Achang Reef Flat Marine Preserve,0.5,0.17,0.17,0.18,16.5,0
-guam_cnmi,Turbidity,0.2,guam_Achang Reef Flat Marine Preserve,0.5,0.42,0.5,0.53,49.5,0
-guam_cnmi,Turbidity,0.3,guam_Achang Reef Flat Marine Preserve,0.5,0.47,0.51,0.54,50.5,0
-guam_cnmi,Turbidity,0.4,guam_Achang Reef Flat Marine Preserve,0.5,0.47,0.51,0.54,50.5,0
-guam_cnmi,Turbidity,0.5,guam_Achang Reef Flat Marine Preserve,0.5,0.47,0.51,0.54,50.5,0
-guam_cnmi,Turbidity,0.6,guam_Achang Reef Flat Marine Preserve,0.5,0.47,0.5125,0.54,50.5,0
-guam_cnmi,Turbidity,0.7,guam_Achang Reef Flat Marine Preserve,0.5,0.47,0.5125,0.54,50.5,0
-guam_cnmi,Turbidity,0.8,guam_Achang Reef Flat Marine Preserve,0.5,0.47,0.51,0.54,50.5,0
-guam_cnmi,Turbidity,0.9,guam_Achang Reef Flat Marine Preserve,0.5,0.46,0.51,0.54,50.5,0
-guam_cnmi,Turbidity,1.0,guam_Achang Reef Flat Marine Preserve,0.5,0.455,0.51,0.54,50.5,0
-guam_cnmi,Turbidity,1.1,guam_Achang Reef Flat Marine Preserve,0.5,0.445,0.51,0.54,50.5,0
-guam_cnmi,Turbidity,1.2,guam_Achang Reef Flat Marine Preserve,0.5,0.44,0.51,0.54,50.5,0
-guam_cnmi,Turbidity,1.3,guam_Achang Reef Flat Marine Preserve,0.5,0.44,0.51,0.54,50.5,0
-guam_cnmi,Turbidity,1.4,guam_Achang Reef Flat Marine Preserve,0.5,0.44,0.51,0.54,50.5,0
-guam_cnmi,Turbidity,1.5,guam_Achang Reef Flat Marine Preserve,0.5,0.44,0.51,0.54,50.5,0
-guam_cnmi,Turbidity,1.6,guam_Achang Reef Flat Marine Preserve,0.5,0.44,0.51,0.54,50.5,0
-guam_cnmi,Turbidity,1.7,guam_Achang Reef Flat Marine Preserve,0.5,0.44,0.51,0.54,50.5,0
-guam_cnmi,Turbidity,1.8,guam_Achang Reef Flat Marine Preserve,0.5,0.44,0.51,0.54,50.5,0
-guam_cnmi,Turbidity,1.9,guam_Achang Reef Flat Marine Preserve,0.5,0.44,0.51,0.54,50.5,0
-guam_cnmi,Turbidity,2.0,guam_Achang Reef Flat Marine Preserve,0.5,0.44,0.51,0.54,50.5,0
-guam_cnmi,Coral cover,5.0,guam_Pati Point Marine Preserve,1.0,0.45,0.51,0.54,50.0,0
-guam_cnmi,Coral cover,15.0,guam_Pati Point Marine Preserve,1.0,0.49,0.52,0.54,51.0,0
-guam_cnmi,Coral cover,25.0,guam_Pati Point Marine Preserve,1.0,0.49,0.52,0.54,51.0,0
-guam_cnmi,Coral cover,35.0,guam_Pati Point Marine Preserve,1.0,0.49,0.52,0.54,51.0,0
-guam_cnmi,Coral cover,45.0,guam_Pati Point Marine Preserve,1.0,0.49,0.52,0.54,51.0,0
-guam_cnmi,Coral cover,55.0,guam_Pati Point Marine Preserve,1.0,0.49,0.52,0.54,51.0,0
-guam_cnmi,Coral cover,65.0,guam_Pati Point Marine Preserve,1.0,0.49,0.52,0.54,51.0,0
-guam_cnmi,Coral size,5.0,guam_Pati Point Marine Preserve,1.0,0.0,0.01,0.0809999999999999,0.5,0
-guam_cnmi,Coral size,15.0,guam_Pati Point Marine Preserve,1.0,0.0,0.01,0.0809999999999999,0.0,0
-guam_cnmi,Coral size,25.0,guam_Pati Point Marine Preserve,1.0,0.0,0.01,0.1109999999999999,1.0,0
-guam_cnmi,Coral size,35.0,guam_Pati Point Marine Preserve,1.0,0.0,0.02,0.1109999999999999,1.0,0
-guam_cnmi,Coral size,45.0,guam_Pati Point Marine Preserve,1.0,0.0,0.02,0.1109999999999999,1.0,0
-guam_cnmi,Coral size,55.0,guam_Pati Point Marine Preserve,1.0,0.0,0.02,0.12,1.0,0
-guam_cnmi,Coral size,65.0,guam_Pati Point Marine Preserve,1.0,0.0,0.03,0.13,2.0,0
-guam_cnmi,Herb. fish,0.0,guam_Pati Point Marine Preserve,1.0,0.49,0.52,0.5509999999999999,51.0,0
-guam_cnmi,Herb. fish,0.1,guam_Pati Point Marine Preserve,1.0,0.49,0.52,0.5609999999999999,51.0,0
-guam_cnmi,Herb. fish,0.2,guam_Pati Point Marine Preserve,1.0,0.49,0.52,0.54,51.0,0
-guam_cnmi,Herb. fish,0.3,guam_Pati Point Marine Preserve,1.0,0.48,0.5125,0.54,50.0,0
-guam_cnmi,Herb. fish,0.4,guam_Pati Point Marine Preserve,1.0,0.48,0.5125,0.54,50.0,0
-guam_cnmi,Herb. fish,0.5,guam_Pati Point Marine Preserve,1.0,0.48,0.5125,0.54,50.0,0
-guam_cnmi,Herb. fish,0.6,guam_Pati Point Marine Preserve,1.0,0.48,0.5125,0.54,50.0,0
-guam_cnmi,Parrotfish density,0.0,guam_Pati Point Marine Preserve,1.0,0.0,0.03,0.13,2.0,0
-guam_cnmi,Parrotfish density,0.01,guam_Pati Point Marine Preserve,1.0,0.0,0.03,0.13,2.0,0
-guam_cnmi,Parrotfish density,0.02,guam_Pati Point Marine Preserve,1.0,0.0,0.03,0.13,2.0,0
-guam_cnmi,Parrotfish density,0.03,guam_Pati Point Marine Preserve,1.0,0.0,0.0625,0.15,5.0,0
-guam_cnmi,Parrotfish density,0.04,guam_Pati Point Marine Preserve,1.0,0.15,0.16,0.17,15.0,0
-guam_cnmi,Parrotfish density,0.05,guam_Pati Point Marine Preserve,1.0,0.16,0.17,0.17,16.0,0
-guam_cnmi,Parrotfish density,0.06,guam_Pati Point Marine Preserve,1.0,0.16,0.17,0.17,16.0,0
-guam_cnmi,Turbidity,0.0,guam_Pati Point Marine Preserve,1.0,0.16,0.17,0.17,16.0,0
-guam_cnmi,Turbidity,0.1,guam_Pati Point Marine Preserve,1.0,0.17,0.17,0.18,16.0,0
-guam_cnmi,Turbidity,0.2,guam_Pati Point Marine Preserve,1.0,0.42,0.5,0.53,49.0,0
-guam_cnmi,Turbidity,0.3,guam_Pati Point Marine Preserve,1.0,0.47,0.51,0.54,50.0,0
-guam_cnmi,Turbidity,0.4,guam_Pati Point Marine Preserve,1.0,0.47,0.51,0.54,50.0,0
-guam_cnmi,Turbidity,0.5,guam_Pati Point Marine Preserve,1.0,0.47,0.51,0.54,50.0,0
-guam_cnmi,Turbidity,0.6,guam_Pati Point Marine Preserve,1.0,0.47,0.5125,0.54,50.0,0
-guam_cnmi,Turbidity,0.7,guam_Pati Point Marine Preserve,1.0,0.47,0.5125,0.54,50.0,0
-guam_cnmi,Turbidity,0.8,guam_Pati Point Marine Preserve,1.0,0.47,0.51,0.54,50.0,0
-guam_cnmi,Turbidity,0.9,guam_Pati Point Marine Preserve,1.0,0.46,0.51,0.54,50.0,0
-guam_cnmi,Turbidity,1.0,guam_Pati Point Marine Preserve,1.0,0.455,0.51,0.54,50.0,0
-guam_cnmi,Turbidity,1.1,guam_Pati Point Marine Preserve,1.0,0.445,0.51,0.54,50.0,0
-guam_cnmi,Turbidity,1.2,guam_Pati Point Marine Preserve,1.0,0.44,0.51,0.54,50.0,0
-guam_cnmi,Turbidity,1.3,guam_Pati Point Marine Preserve,1.0,0.44,0.51,0.54,50.0,0
-guam_cnmi,Turbidity,1.4,guam_Pati Point Marine Preserve,1.0,0.44,0.51,0.54,50.0,0
-guam_cnmi,Turbidity,1.5,guam_Pati Point Marine Preserve,1.0,0.44,0.51,0.54,50.0,0
-guam_cnmi,Turbidity,1.6,guam_Pati Point Marine Preserve,1.0,0.44,0.51,0.54,50.0,0
-guam_cnmi,Turbidity,1.7,guam_Pati Point Marine Preserve,1.0,0.44,0.51,0.54,50.0,0
-guam_cnmi,Turbidity,1.8,guam_Pati Point Marine Preserve,1.0,0.44,0.51,0.54,50.0,0
-guam_cnmi,Turbidity,1.9,guam_Pati Point Marine Preserve,1.0,0.44,0.51,0.54,50.0,0
-guam_cnmi,Turbidity,2.0,guam_Pati Point Marine Preserve,1.0,0.44,0.51,0.54,50.0,0
+guam_cnmi,Coral cover,5.0,guam_Achang Reef Flat Marine Preserve,0.0,0.45,0.51,0.54,51.0,0
+guam_cnmi,Coral cover,15.0,guam_Achang Reef Flat Marine Preserve,0.0,0.49,0.52,0.54,52.0,0
+guam_cnmi,Coral cover,25.0,guam_Achang Reef Flat Marine Preserve,0.0,0.49,0.52,0.54,52.0,0
+guam_cnmi,Coral cover,35.0,guam_Achang Reef Flat Marine Preserve,0.0,0.49,0.52,0.54,52.0,0
+guam_cnmi,Coral cover,45.0,guam_Achang Reef Flat Marine Preserve,0.0,0.49,0.52,0.54,52.0,0
+guam_cnmi,Coral cover,55.0,guam_Achang Reef Flat Marine Preserve,0.0,0.49,0.52,0.54,52.0,0
+guam_cnmi,Coral cover,65.0,guam_Achang Reef Flat Marine Preserve,0.0,0.49,0.52,0.54,52.0,0
+guam_cnmi,Coral size,5.0,guam_Achang Reef Flat Marine Preserve,0.0,0.0,0.01,0.0809999999999999,1.0,0
+guam_cnmi,Coral size,15.0,guam_Achang Reef Flat Marine Preserve,0.0,0.0,0.00125,0.0809999999999999,0.0,0
+guam_cnmi,Coral size,25.0,guam_Achang Reef Flat Marine Preserve,0.0,0.0,0.01,0.1109999999999999,1.0,0
+guam_cnmi,Coral size,35.0,guam_Achang Reef Flat Marine Preserve,0.0,0.0,0.015,0.1109999999999999,1.5,0
+guam_cnmi,Coral size,45.0,guam_Achang Reef Flat Marine Preserve,0.0,0.0,0.015,0.1109999999999999,1.5,0
+guam_cnmi,Coral size,55.0,guam_Achang Reef Flat Marine Preserve,0.0,0.0,0.015,0.12,1.5,0
+guam_cnmi,Coral size,65.0,guam_Achang Reef Flat Marine Preserve,0.0,0.0,0.02,0.13,2.0,0
+guam_cnmi,Herb. fish,0.0,guam_Achang Reef Flat Marine Preserve,0.0,0.49,0.52,0.5509999999999999,52.0,0
+guam_cnmi,Herb. fish,0.1,guam_Achang Reef Flat Marine Preserve,0.0,0.49,0.52,0.5609999999999999,52.0,0
+guam_cnmi,Herb. fish,0.2,guam_Achang Reef Flat Marine Preserve,0.0,0.49,0.52,0.54,52.0,0
+guam_cnmi,Herb. fish,0.3,guam_Achang Reef Flat Marine Preserve,0.0,0.48,0.5125,0.54,51.0,0
+guam_cnmi,Herb. fish,0.4,guam_Achang Reef Flat Marine Preserve,0.0,0.48,0.5125,0.54,51.0,0
+guam_cnmi,Herb. fish,0.5,guam_Achang Reef Flat Marine Preserve,0.0,0.48,0.5125,0.54,51.0,0
+guam_cnmi,Herb. fish,0.6,guam_Achang Reef Flat Marine Preserve,0.0,0.48,0.5125,0.54,51.0,0
+guam_cnmi,Parrotfish density,0.0,guam_Achang Reef Flat Marine Preserve,0.0,0.0,0.02,0.13,2.0,0
+guam_cnmi,Parrotfish density,0.01,guam_Achang Reef Flat Marine Preserve,0.0,0.0,0.02,0.13,2.0,0
+guam_cnmi,Parrotfish density,0.02,guam_Achang Reef Flat Marine Preserve,0.0,0.0,0.025,0.13,2.5,0
+guam_cnmi,Parrotfish density,0.03,guam_Achang Reef Flat Marine Preserve,0.0,0.0,0.0625,0.15,6.0,0
+guam_cnmi,Parrotfish density,0.04,guam_Achang Reef Flat Marine Preserve,0.0,0.15,0.16,0.17,16.0,0
+guam_cnmi,Parrotfish density,0.05,guam_Achang Reef Flat Marine Preserve,0.0,0.16,0.17,0.17,17.0,0
+guam_cnmi,Parrotfish density,0.06,guam_Achang Reef Flat Marine Preserve,0.0,0.16,0.17,0.17,17.0,0
+guam_cnmi,Turbidity,0.0,guam_Achang Reef Flat Marine Preserve,0.0,0.16,0.17,0.17,17.0,0
+guam_cnmi,Turbidity,0.1,guam_Achang Reef Flat Marine Preserve,0.0,0.17,0.17,0.18,17.0,0
+guam_cnmi,Turbidity,0.2,guam_Achang Reef Flat Marine Preserve,0.0,0.42,0.5,0.53,50.0,0
+guam_cnmi,Turbidity,0.3,guam_Achang Reef Flat Marine Preserve,0.0,0.47,0.51,0.54,51.0,0
+guam_cnmi,Turbidity,0.4,guam_Achang Reef Flat Marine Preserve,0.0,0.47,0.51,0.54,51.0,0
+guam_cnmi,Turbidity,0.5,guam_Achang Reef Flat Marine Preserve,0.0,0.47,0.51,0.54,51.0,0
+guam_cnmi,Turbidity,0.6,guam_Achang Reef Flat Marine Preserve,0.0,0.47,0.5125,0.54,51.0,0
+guam_cnmi,Turbidity,0.7,guam_Achang Reef Flat Marine Preserve,0.0,0.47,0.5125,0.54,51.0,0
+guam_cnmi,Turbidity,0.8,guam_Achang Reef Flat Marine Preserve,0.0,0.47,0.51,0.54,51.0,0
+guam_cnmi,Turbidity,0.9,guam_Achang Reef Flat Marine Preserve,0.0,0.46,0.51,0.54,51.0,0
+guam_cnmi,Turbidity,1.0,guam_Achang Reef Flat Marine Preserve,0.0,0.455,0.51,0.54,51.0,0
+guam_cnmi,Turbidity,1.1,guam_Achang Reef Flat Marine Preserve,0.0,0.445,0.51,0.54,51.0,0
+guam_cnmi,Turbidity,1.2,guam_Achang Reef Flat Marine Preserve,0.0,0.44,0.51,0.54,51.0,0
+guam_cnmi,Turbidity,1.3,guam_Achang Reef Flat Marine Preserve,0.0,0.44,0.51,0.54,51.0,0
+guam_cnmi,Turbidity,1.4,guam_Achang Reef Flat Marine Preserve,0.0,0.44,0.51,0.54,51.0,0
+guam_cnmi,Turbidity,1.5,guam_Achang Reef Flat Marine Preserve,0.0,0.44,0.51,0.54,51.0,0
+guam_cnmi,Turbidity,1.6,guam_Achang Reef Flat Marine Preserve,0.0,0.44,0.51,0.54,51.0,0
+guam_cnmi,Turbidity,1.7,guam_Achang Reef Flat Marine Preserve,0.0,0.44,0.51,0.54,51.0,0
+guam_cnmi,Turbidity,1.8,guam_Achang Reef Flat Marine Preserve,0.0,0.44,0.51,0.54,51.0,0
+guam_cnmi,Turbidity,1.9,guam_Achang Reef Flat Marine Preserve,0.0,0.44,0.51,0.54,51.0,0
+guam_cnmi,Turbidity,2.0,guam_Achang Reef Flat Marine Preserve,0.0,0.44,0.51,0.54,51.0,0
+guam_cnmi,Coral cover,5.0,guam_Pati Point Marine Preserve,0.0,0.45,0.51,0.54,51.0,0
+guam_cnmi,Coral cover,15.0,guam_Pati Point Marine Preserve,0.0,0.49,0.52,0.54,52.0,0
+guam_cnmi,Coral cover,25.0,guam_Pati Point Marine Preserve,0.0,0.49,0.52,0.54,52.0,0
+guam_cnmi,Coral cover,35.0,guam_Pati Point Marine Preserve,0.0,0.49,0.52,0.54,52.0,0
+guam_cnmi,Coral cover,45.0,guam_Pati Point Marine Preserve,0.0,0.49,0.52,0.54,52.0,0
+guam_cnmi,Coral cover,55.0,guam_Pati Point Marine Preserve,0.0,0.49,0.52,0.54,52.0,0
+guam_cnmi,Coral cover,65.0,guam_Pati Point Marine Preserve,0.0,0.49,0.52,0.54,52.0,0
+guam_cnmi,Coral size,5.0,guam_Pati Point Marine Preserve,0.0,0.0,0.01,0.0809999999999999,1.0,0
+guam_cnmi,Coral size,15.0,guam_Pati Point Marine Preserve,0.0,0.0,0.0,0.0809999999999999,0.0,0
+guam_cnmi,Coral size,25.0,guam_Pati Point Marine Preserve,0.0,0.0,0.01,0.1109999999999999,1.0,0
+guam_cnmi,Coral size,35.0,guam_Pati Point Marine Preserve,0.0,0.0,0.02,0.1109999999999999,2.0,0
+guam_cnmi,Coral size,45.0,guam_Pati Point Marine Preserve,0.0,0.0,0.02,0.1109999999999999,1.5,0
+guam_cnmi,Coral size,55.0,guam_Pati Point Marine Preserve,0.0,0.0,0.02,0.12,2.0,0
+guam_cnmi,Coral size,65.0,guam_Pati Point Marine Preserve,0.0,0.0,0.02,0.13,2.0,0
+guam_cnmi,Herb. fish,0.0,guam_Pati Point Marine Preserve,0.0,0.49,0.52,0.5509999999999999,52.0,0
+guam_cnmi,Herb. fish,0.1,guam_Pati Point Marine Preserve,0.0,0.49,0.52,0.5609999999999999,52.0,0
+guam_cnmi,Herb. fish,0.2,guam_Pati Point Marine Preserve,0.0,0.49,0.52,0.54,52.0,0
+guam_cnmi,Herb. fish,0.3,guam_Pati Point Marine Preserve,0.0,0.48,0.5125,0.54,51.0,0
+guam_cnmi,Herb. fish,0.4,guam_Pati Point Marine Preserve,0.0,0.48,0.5125,0.54,51.0,0
+guam_cnmi,Herb. fish,0.5,guam_Pati Point Marine Preserve,0.0,0.48,0.5125,0.54,51.0,0
+guam_cnmi,Herb. fish,0.6,guam_Pati Point Marine Preserve,0.0,0.48,0.5125,0.54,51.0,0
+guam_cnmi,Parrotfish density,0.0,guam_Pati Point Marine Preserve,0.0,0.0,0.02,0.13,2.0,0
+guam_cnmi,Parrotfish density,0.01,guam_Pati Point Marine Preserve,0.0,0.0,0.02,0.13,2.0,0
+guam_cnmi,Parrotfish density,0.02,guam_Pati Point Marine Preserve,0.0,0.0,0.03,0.13,2.0,0
+guam_cnmi,Parrotfish density,0.03,guam_Pati Point Marine Preserve,0.0,0.0,0.0625,0.15,6.0,0
+guam_cnmi,Parrotfish density,0.04,guam_Pati Point Marine Preserve,0.0,0.15,0.16,0.17,16.0,0
+guam_cnmi,Parrotfish density,0.05,guam_Pati Point Marine Preserve,0.0,0.16,0.17,0.17,17.0,0
+guam_cnmi,Parrotfish density,0.06,guam_Pati Point Marine Preserve,0.0,0.16,0.17,0.17,17.0,0
+guam_cnmi,Turbidity,0.0,guam_Pati Point Marine Preserve,0.0,0.16,0.17,0.17,17.0,0
+guam_cnmi,Turbidity,0.1,guam_Pati Point Marine Preserve,0.0,0.17,0.17,0.18,17.0,0
+guam_cnmi,Turbidity,0.2,guam_Pati Point Marine Preserve,0.0,0.42,0.5,0.53,50.0,0
+guam_cnmi,Turbidity,0.3,guam_Pati Point Marine Preserve,0.0,0.47,0.51,0.54,51.0,0
+guam_cnmi,Turbidity,0.4,guam_Pati Point Marine Preserve,0.0,0.47,0.51,0.54,51.0,0
+guam_cnmi,Turbidity,0.5,guam_Pati Point Marine Preserve,0.0,0.47,0.51,0.54,51.0,0
+guam_cnmi,Turbidity,0.6,guam_Pati Point Marine Preserve,0.0,0.47,0.5125,0.54,51.0,0
+guam_cnmi,Turbidity,0.7,guam_Pati Point Marine Preserve,0.0,0.47,0.5125,0.54,51.0,0
+guam_cnmi,Turbidity,0.8,guam_Pati Point Marine Preserve,0.0,0.47,0.51,0.54,51.0,0
+guam_cnmi,Turbidity,0.9,guam_Pati Point Marine Preserve,0.0,0.46,0.51,0.54,51.0,0
+guam_cnmi,Turbidity,1.0,guam_Pati Point Marine Preserve,0.0,0.455,0.51,0.54,51.0,0
+guam_cnmi,Turbidity,1.1,guam_Pati Point Marine Preserve,0.0,0.445,0.51,0.54,51.0,0
+guam_cnmi,Turbidity,1.2,guam_Pati Point Marine Preserve,0.0,0.44,0.51,0.54,51.0,0
+guam_cnmi,Turbidity,1.3,guam_Pati Point Marine Preserve,0.0,0.44,0.51,0.54,51.0,0
+guam_cnmi,Turbidity,1.4,guam_Pati Point Marine Preserve,0.0,0.44,0.51,0.54,51.0,0
+guam_cnmi,Turbidity,1.5,guam_Pati Point Marine Preserve,0.0,0.44,0.51,0.54,51.0,0
+guam_cnmi,Turbidity,1.6,guam_Pati Point Marine Preserve,0.0,0.44,0.51,0.54,51.0,0
+guam_cnmi,Turbidity,1.7,guam_Pati Point Marine Preserve,0.0,0.44,0.51,0.54,51.0,0
+guam_cnmi,Turbidity,1.8,guam_Pati Point Marine Preserve,0.0,0.44,0.51,0.54,51.0,0
+guam_cnmi,Turbidity,1.9,guam_Pati Point Marine Preserve,0.0,0.44,0.51,0.54,51.0,0
+guam_cnmi,Turbidity,2.0,guam_Pati Point Marine Preserve,0.0,0.44,0.51,0.54,51.0,0
 guam_cnmi,Coral cover,5.0,guam_Piti Bomb Holes Marine Preserve,1.5,0.415,0.5,0.53,48.5,0
 guam_cnmi,Coral cover,15.0,guam_Piti Bomb Holes Marine Preserve,1.5,0.48,0.5125,0.54,49.5,0
 guam_cnmi,Coral cover,25.0,guam_Piti Bomb Holes Marine Preserve,1.5,0.48,0.5125,0.54,49.5,0
@@ -937,13 +937,13 @@ hawaii,Coral cover,35.0,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zo
 hawaii,Coral cover,45.0,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 1,2.0,0.49,0.52,0.5509999999999999,50.0,0
 hawaii,Coral cover,55.0,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 1,2.0,0.49,0.52,0.5509999999999999,50.0,0
 hawaii,Coral cover,65.0,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 1,2.0,0.49,0.52,0.5509999999999999,50.0,0
-hawaii,Coral size,5.0,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 1,2.0,0.0,0.03,0.07,1.0,0
+hawaii,Coral size,5.0,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 1,2.0,0.0,0.02,0.07,0.0,0
 hawaii,Coral size,15.0,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 1,2.0,0.0,0.02,0.07,0.0,0
-hawaii,Coral size,25.0,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 1,2.0,0.0,0.0225,0.0709999999999999,0.0,0
-hawaii,Coral size,35.0,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 1,2.0,0.0,0.03,0.0709999999999999,1.0,0
-hawaii,Coral size,45.0,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 1,2.0,0.0,0.0225,0.0709999999999999,0.0,0
-hawaii,Coral size,55.0,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 1,2.0,0.0,0.03,0.0809999999999999,1.0,0
-hawaii,Coral size,65.0,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 1,2.0,0.0,0.04,0.11,2.0,0
+hawaii,Coral size,25.0,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 1,2.0,0.0,0.02,0.0709999999999999,0.0,0
+hawaii,Coral size,35.0,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 1,2.0,0.0,0.02,0.0709999999999999,0.0,0
+hawaii,Coral size,45.0,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 1,2.0,0.0,0.02,0.0709999999999999,0.0,0
+hawaii,Coral size,55.0,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 1,2.0,0.0,0.02,0.0809999999999999,0.0,0
+hawaii,Coral size,65.0,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 1,2.0,0.0,0.03,0.11,1.0,0
 hawaii,Herb. fish,0.0,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 1,2.0,0.49,0.52,0.5509999999999999,50.0,0
 hawaii,Herb. fish,0.1,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 1,2.0,0.49,0.52,0.5609999999999999,50.0,0
 hawaii,Herb. fish,0.2,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 1,2.0,0.49,0.52,0.54,50.0,0
@@ -951,13 +951,13 @@ hawaii,Herb. fish,0.3,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone
 hawaii,Herb. fish,0.4,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 1,2.0,0.48,0.5125,0.54,49.0,0
 hawaii,Herb. fish,0.5,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 1,2.0,0.48,0.5125,0.54,49.0,0
 hawaii,Herb. fish,0.6,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 1,2.0,0.48,0.5125,0.54,49.0,0
-hawaii,Parrotfish density,0.0,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 1,2.0,0.0,0.04,0.11,2.0,0
-hawaii,Parrotfish density,0.01,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 1,2.0,0.0,0.04,0.11,2.0,0
+hawaii,Parrotfish density,0.0,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 1,2.0,0.0,0.03,0.11,1.0,0
+hawaii,Parrotfish density,0.01,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 1,2.0,0.0,0.03,0.11,1.0,0
 hawaii,Parrotfish density,0.02,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 1,2.0,0.0,0.04,0.11,2.0,0
 hawaii,Parrotfish density,0.03,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 1,2.0,0.01,0.06,0.15,4.0,0
-hawaii,Parrotfish density,0.04,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 1,2.0,0.13,0.16,0.17,14.0,0
+hawaii,Parrotfish density,0.04,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 1,2.0,0.135,0.16,0.17,14.0,0
 hawaii,Parrotfish density,0.05,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 1,2.0,0.14,0.17,0.17,15.0,0
-hawaii,Parrotfish density,0.06,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 1,2.0,0.135,0.17,0.17,15.0,0
+hawaii,Parrotfish density,0.06,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 1,2.0,0.14,0.17,0.17,15.0,0
 hawaii,Turbidity,0.0,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 1,2.0,0.14,0.17,0.17,15.0,0
 hawaii,Turbidity,0.1,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 1,2.0,0.15,0.17,0.18,15.0,0
 hawaii,Turbidity,0.2,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 1,2.0,0.42,0.5025,0.54,48.0,0
@@ -986,13 +986,13 @@ hawaii,Coral cover,35.0,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zo
 hawaii,Coral cover,45.0,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 2,2.0,0.49,0.52,0.5509999999999999,50.0,0
 hawaii,Coral cover,55.0,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 2,2.0,0.49,0.52,0.5509999999999999,50.0,0
 hawaii,Coral cover,65.0,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 2,2.0,0.49,0.52,0.5509999999999999,50.0,0
-hawaii,Coral size,5.0,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 2,2.0,0.0,0.03,0.07,1.0,0
+hawaii,Coral size,5.0,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 2,2.0,0.0,0.02,0.07,0.0,0
 hawaii,Coral size,15.0,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 2,2.0,0.0,0.02,0.07,0.0,0
-hawaii,Coral size,25.0,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 2,2.0,0.0,0.0225,0.0709999999999999,0.0,0
-hawaii,Coral size,35.0,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 2,2.0,0.0,0.03,0.0709999999999999,1.0,0
-hawaii,Coral size,45.0,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 2,2.0,0.0,0.0225,0.0709999999999999,0.0,0
-hawaii,Coral size,55.0,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 2,2.0,0.0,0.03,0.0809999999999999,1.0,0
-hawaii,Coral size,65.0,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 2,2.0,0.0,0.04,0.11,2.0,0
+hawaii,Coral size,25.0,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 2,2.0,0.0,0.02,0.0709999999999999,0.0,0
+hawaii,Coral size,35.0,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 2,2.0,0.0,0.02,0.0709999999999999,0.0,0
+hawaii,Coral size,45.0,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 2,2.0,0.0,0.02,0.0709999999999999,0.0,0
+hawaii,Coral size,55.0,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 2,2.0,0.0,0.02,0.0809999999999999,0.0,0
+hawaii,Coral size,65.0,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 2,2.0,0.0,0.03,0.11,1.0,0
 hawaii,Herb. fish,0.0,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 2,2.0,0.49,0.52,0.5509999999999999,50.0,0
 hawaii,Herb. fish,0.1,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 2,2.0,0.49,0.52,0.5609999999999999,50.0,0
 hawaii,Herb. fish,0.2,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 2,2.0,0.49,0.52,0.54,50.0,0
@@ -1000,13 +1000,13 @@ hawaii,Herb. fish,0.3,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone
 hawaii,Herb. fish,0.4,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 2,2.0,0.48,0.5125,0.54,49.0,0
 hawaii,Herb. fish,0.5,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 2,2.0,0.48,0.5125,0.54,49.0,0
 hawaii,Herb. fish,0.6,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 2,2.0,0.48,0.5125,0.54,49.0,0
-hawaii,Parrotfish density,0.0,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 2,2.0,0.0,0.04,0.11,2.0,0
-hawaii,Parrotfish density,0.01,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 2,2.0,0.0,0.04,0.11,2.0,0
+hawaii,Parrotfish density,0.0,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 2,2.0,0.0,0.03,0.11,1.0,0
+hawaii,Parrotfish density,0.01,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 2,2.0,0.0,0.03,0.11,1.0,0
 hawaii,Parrotfish density,0.02,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 2,2.0,0.0,0.04,0.11,2.0,0
 hawaii,Parrotfish density,0.03,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 2,2.0,0.01,0.06,0.15,4.0,0
-hawaii,Parrotfish density,0.04,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 2,2.0,0.13,0.16,0.17,14.0,0
+hawaii,Parrotfish density,0.04,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 2,2.0,0.135,0.16,0.17,14.0,0
 hawaii,Parrotfish density,0.05,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 2,2.0,0.14,0.17,0.17,15.0,0
-hawaii,Parrotfish density,0.06,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 2,2.0,0.135,0.17,0.17,15.0,0
+hawaii,Parrotfish density,0.06,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 2,2.0,0.14,0.17,0.17,15.0,0
 hawaii,Turbidity,0.0,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 2,2.0,0.14,0.17,0.17,15.0,0
 hawaii,Turbidity,0.1,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 2,2.0,0.15,0.17,0.18,15.0,0
 hawaii,Turbidity,0.2,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 2,2.0,0.42,0.5025,0.54,48.0,0
@@ -1134,10 +1134,10 @@ hawaii,Coral cover,45.0,hawaii_Honolua-Mokuleia Bay MLCD,1.0,0.49,0.52,0.54,51.0
 hawaii,Coral cover,55.0,hawaii_Honolua-Mokuleia Bay MLCD,1.0,0.49,0.52,0.54,51.0,0
 hawaii,Coral cover,65.0,hawaii_Honolua-Mokuleia Bay MLCD,1.0,0.49,0.52,0.54,51.0,0
 hawaii,Coral size,5.0,hawaii_Honolua-Mokuleia Bay MLCD,1.0,0.0,0.01,0.03,0.0,0
-hawaii,Coral size,15.0,hawaii_Honolua-Mokuleia Bay MLCD,1.0,0.0,0.01,0.03,0.0,0
-hawaii,Coral size,25.0,hawaii_Honolua-Mokuleia Bay MLCD,1.0,0.0,0.01,0.0309999999999999,0.0,0
-hawaii,Coral size,35.0,hawaii_Honolua-Mokuleia Bay MLCD,1.0,0.0,0.01,0.0309999999999999,0.0,0
-hawaii,Coral size,45.0,hawaii_Honolua-Mokuleia Bay MLCD,1.0,0.0,0.01,0.0309999999999999,0.0,0
+hawaii,Coral size,15.0,hawaii_Honolua-Mokuleia Bay MLCD,1.0,0.0,0.01,0.02,0.0,0
+hawaii,Coral size,25.0,hawaii_Honolua-Mokuleia Bay MLCD,1.0,0.0,0.01,0.03,0.0,0
+hawaii,Coral size,35.0,hawaii_Honolua-Mokuleia Bay MLCD,1.0,0.0,0.01,0.03,0.0,0
+hawaii,Coral size,45.0,hawaii_Honolua-Mokuleia Bay MLCD,1.0,0.0,0.01,0.03,0.0,0
 hawaii,Coral size,55.0,hawaii_Honolua-Mokuleia Bay MLCD,1.0,0.0,0.01,0.0309999999999999,0.0,0
 hawaii,Coral size,65.0,hawaii_Honolua-Mokuleia Bay MLCD,1.0,0.0,0.02,0.1,1.0,0
 hawaii,Herb. fish,0.0,hawaii_Honolua-Mokuleia Bay MLCD,1.0,0.49,0.52,0.5509999999999999,51.0,0
@@ -1150,7 +1150,7 @@ hawaii,Herb. fish,0.6,hawaii_Honolua-Mokuleia Bay MLCD,1.0,0.48,0.5125,0.54,50.0
 hawaii,Parrotfish density,0.0,hawaii_Honolua-Mokuleia Bay MLCD,1.0,0.0,0.02,0.1,1.0,0
 hawaii,Parrotfish density,0.01,hawaii_Honolua-Mokuleia Bay MLCD,1.0,0.0,0.02,0.1,1.0,0
 hawaii,Parrotfish density,0.02,hawaii_Honolua-Mokuleia Bay MLCD,1.0,0.0,0.02,0.1,1.0,0
-hawaii,Parrotfish density,0.03,hawaii_Honolua-Mokuleia Bay MLCD,1.0,0.0,0.03,0.11,2.0,0
+hawaii,Parrotfish density,0.03,hawaii_Honolua-Mokuleia Bay MLCD,1.0,0.0,0.02,0.11,1.0,0
 hawaii,Parrotfish density,0.04,hawaii_Honolua-Mokuleia Bay MLCD,1.0,0.15,0.16,0.17,15.0,0
 hawaii,Parrotfish density,0.05,hawaii_Honolua-Mokuleia Bay MLCD,1.0,0.16,0.17,0.17,16.0,0
 hawaii,Parrotfish density,0.06,hawaii_Honolua-Mokuleia Bay MLCD,1.0,0.16,0.17,0.17,16.0,0
@@ -1281,7 +1281,7 @@ hawaii,Coral cover,45.0,hawaii_Ka Lae (South Pt) (BRFA M),0.0,0.48,0.5125,0.54,5
 hawaii,Coral cover,55.0,hawaii_Ka Lae (South Pt) (BRFA M),0.0,0.48,0.5125,0.54,51.0,0
 hawaii,Coral cover,65.0,hawaii_Ka Lae (South Pt) (BRFA M),0.0,0.48,0.5125,0.54,51.0,0
 hawaii,Coral size,5.0,hawaii_Ka Lae (South Pt) (BRFA M),0.0,0.0,0.0,0.01,0.0,0
-hawaii,Coral size,15.0,hawaii_Ka Lae (South Pt) (BRFA M),0.0,0.0,0.0,0.01,0.0,0
+hawaii,Coral size,15.0,hawaii_Ka Lae (South Pt) (BRFA M),0.0,0.0,0.0,0.00549999999999995,0.0,0
 hawaii,Coral size,25.0,hawaii_Ka Lae (South Pt) (BRFA M),0.0,0.0,0.0,0.01,0.0,0
 hawaii,Coral size,35.0,hawaii_Ka Lae (South Pt) (BRFA M),0.0,0.0,0.0,0.02,0.0,0
 hawaii,Coral size,45.0,hawaii_Ka Lae (South Pt) (BRFA M),0.0,0.0,0.0,0.015499999999999951,0.0,0
@@ -1433,7 +1433,7 @@ hawaii,Coral size,25.0,hawaii_Kahoolawe Island Reserve: Zone A,0.0,0.0,0.0,0.0,0
 hawaii,Coral size,35.0,hawaii_Kahoolawe Island Reserve: Zone A,0.0,0.0,0.0,0.01,0.0,0
 hawaii,Coral size,45.0,hawaii_Kahoolawe Island Reserve: Zone A,0.0,0.0,0.0,0.01,0.0,0
 hawaii,Coral size,55.0,hawaii_Kahoolawe Island Reserve: Zone A,0.0,0.0,0.0,0.01,0.0,0
-hawaii,Coral size,65.0,hawaii_Kahoolawe Island Reserve: Zone A,0.0,0.0,0.01,0.0529999999999998,1.0,0
+hawaii,Coral size,65.0,hawaii_Kahoolawe Island Reserve: Zone A,0.0,0.0,0.0,0.0529999999999998,0.0,0
 hawaii,Herb. fish,0.0,hawaii_Kahoolawe Island Reserve: Zone A,0.0,0.49,0.52,0.5509999999999999,52.0,0
 hawaii,Herb. fish,0.1,hawaii_Kahoolawe Island Reserve: Zone A,0.0,0.49,0.52,0.5609999999999999,52.0,0
 hawaii,Herb. fish,0.2,hawaii_Kahoolawe Island Reserve: Zone A,0.0,0.49,0.52,0.54,52.0,0
@@ -1441,8 +1441,8 @@ hawaii,Herb. fish,0.3,hawaii_Kahoolawe Island Reserve: Zone A,0.0,0.48,0.5125,0.
 hawaii,Herb. fish,0.4,hawaii_Kahoolawe Island Reserve: Zone A,0.0,0.48,0.5125,0.54,51.0,0
 hawaii,Herb. fish,0.5,hawaii_Kahoolawe Island Reserve: Zone A,0.0,0.48,0.5125,0.54,51.0,0
 hawaii,Herb. fish,0.6,hawaii_Kahoolawe Island Reserve: Zone A,0.0,0.48,0.5125,0.54,51.0,0
-hawaii,Parrotfish density,0.0,hawaii_Kahoolawe Island Reserve: Zone A,0.0,0.0,0.0025,0.0529999999999998,0.0,0
-hawaii,Parrotfish density,0.01,hawaii_Kahoolawe Island Reserve: Zone A,0.0,0.0,0.0025,0.0529999999999998,0.0,0
+hawaii,Parrotfish density,0.0,hawaii_Kahoolawe Island Reserve: Zone A,0.0,0.0,0.0,0.0529999999999998,0.0,0
+hawaii,Parrotfish density,0.01,hawaii_Kahoolawe Island Reserve: Zone A,0.0,0.0,0.0,0.0529999999999998,0.0,0
 hawaii,Parrotfish density,0.02,hawaii_Kahoolawe Island Reserve: Zone A,0.0,0.0,0.0,0.0529999999999998,0.0,0
 hawaii,Parrotfish density,0.03,hawaii_Kahoolawe Island Reserve: Zone A,0.0,0.0,0.01,0.1,1.0,0
 hawaii,Parrotfish density,0.04,hawaii_Kahoolawe Island Reserve: Zone A,0.0,0.15,0.16,0.17,16.0,0
@@ -1492,7 +1492,7 @@ hawaii,Herb. fish,0.5,hawaii_Kahoolawe Island Reserve: Zone B,0.0,0.48,0.5125,0.
 hawaii,Herb. fish,0.6,hawaii_Kahoolawe Island Reserve: Zone B,0.0,0.48,0.5125,0.54,51.0,0
 hawaii,Parrotfish density,0.0,hawaii_Kahoolawe Island Reserve: Zone B,0.0,0.0,0.01,0.0529999999999998,1.0,0
 hawaii,Parrotfish density,0.01,hawaii_Kahoolawe Island Reserve: Zone B,0.0,0.0,0.01,0.0529999999999998,1.0,0
-hawaii,Parrotfish density,0.02,hawaii_Kahoolawe Island Reserve: Zone B,0.0,0.0,0.01,0.0529999999999998,1.0,0
+hawaii,Parrotfish density,0.02,hawaii_Kahoolawe Island Reserve: Zone B,0.0,0.0,0.005,0.0529999999999998,0.5,0
 hawaii,Parrotfish density,0.03,hawaii_Kahoolawe Island Reserve: Zone B,0.0,0.0,0.01,0.1,1.0,0
 hawaii,Parrotfish density,0.04,hawaii_Kahoolawe Island Reserve: Zone B,0.0,0.15,0.16,0.17,16.0,0
 hawaii,Parrotfish density,0.05,hawaii_Kahoolawe Island Reserve: Zone B,0.0,0.15,0.17,0.17,17.0,0
@@ -1527,11 +1527,11 @@ hawaii,Coral cover,55.0,hawaii_Kahului Harbor FMA,0.0,0.48,0.5125,0.54,51.0,0
 hawaii,Coral cover,65.0,hawaii_Kahului Harbor FMA,0.0,0.48,0.5125,0.54,51.0,0
 hawaii,Coral size,5.0,hawaii_Kahului Harbor FMA,0.0,0.0,0.0,0.01,0.0,0
 hawaii,Coral size,15.0,hawaii_Kahului Harbor FMA,0.0,0.0,0.0,0.15,0.0,0
-hawaii,Coral size,25.0,hawaii_Kahului Harbor FMA,0.0,0.0,0.16,0.2,16.0,0
+hawaii,Coral size,25.0,hawaii_Kahului Harbor FMA,0.0,0.0,0.1525,0.2,15.0,0
 hawaii,Coral size,35.0,hawaii_Kahului Harbor FMA,0.0,0.0,0.13,0.18,13.0,0
-hawaii,Coral size,45.0,hawaii_Kahului Harbor FMA,0.0,0.0,0.13,0.18,13.0,0
-hawaii,Coral size,55.0,hawaii_Kahului Harbor FMA,0.0,0.01,0.18,0.2509999999999999,18.0,0
-hawaii,Coral size,65.0,hawaii_Kahului Harbor FMA,0.0,0.01,0.17,0.25,17.0,0
+hawaii,Coral size,45.0,hawaii_Kahului Harbor FMA,0.0,0.0,0.1225,0.18,12.0,0
+hawaii,Coral size,55.0,hawaii_Kahului Harbor FMA,0.0,0.02,0.18,0.2509999999999999,18.0,0
+hawaii,Coral size,65.0,hawaii_Kahului Harbor FMA,0.0,0.015,0.17,0.25,17.0,0
 hawaii,Herb. fish,0.0,hawaii_Kahului Harbor FMA,0.0,0.49,0.52,0.5509999999999999,52.0,0
 hawaii,Herb. fish,0.1,hawaii_Kahului Harbor FMA,0.0,0.49,0.52,0.5609999999999999,52.0,0
 hawaii,Herb. fish,0.2,hawaii_Kahului Harbor FMA,0.0,0.49,0.52,0.54,52.0,0
@@ -1539,15 +1539,15 @@ hawaii,Herb. fish,0.3,hawaii_Kahului Harbor FMA,0.0,0.48,0.5125,0.54,51.0,0
 hawaii,Herb. fish,0.4,hawaii_Kahului Harbor FMA,0.0,0.48,0.5125,0.54,51.0,0
 hawaii,Herb. fish,0.5,hawaii_Kahului Harbor FMA,0.0,0.48,0.5125,0.54,51.0,0
 hawaii,Herb. fish,0.6,hawaii_Kahului Harbor FMA,0.0,0.48,0.5125,0.54,51.0,0
-hawaii,Parrotfish density,0.0,hawaii_Kahului Harbor FMA,0.0,0.01,0.17,0.25,17.0,0
-hawaii,Parrotfish density,0.01,hawaii_Kahului Harbor FMA,0.0,0.01,0.17,0.25,17.0,0
-hawaii,Parrotfish density,0.02,hawaii_Kahului Harbor FMA,0.0,0.025,0.17,0.2509999999999999,17.0,0
-hawaii,Parrotfish density,0.03,hawaii_Kahului Harbor FMA,0.0,0.045,0.18,0.2509999999999999,18.0,0
-hawaii,Parrotfish density,0.04,hawaii_Kahului Harbor FMA,0.0,0.04,0.18,0.25,18.0,0
-hawaii,Parrotfish density,0.05,hawaii_Kahului Harbor FMA,0.0,0.04,0.18,0.25,18.0,0
-hawaii,Parrotfish density,0.06,hawaii_Kahului Harbor FMA,0.0,0.04,0.18,0.25,18.0,0
-hawaii,Turbidity,0.0,hawaii_Kahului Harbor FMA,0.0,0.055,0.1825,0.27,18.0,0
-hawaii,Turbidity,0.1,hawaii_Kahului Harbor FMA,0.0,0.12,0.2525,0.29,25.0,0
+hawaii,Parrotfish density,0.0,hawaii_Kahului Harbor FMA,0.0,0.015,0.17,0.25,17.0,0
+hawaii,Parrotfish density,0.01,hawaii_Kahului Harbor FMA,0.0,0.02,0.17,0.25,17.0,0
+hawaii,Parrotfish density,0.02,hawaii_Kahului Harbor FMA,0.0,0.04,0.17,0.2509999999999999,17.0,0
+hawaii,Parrotfish density,0.03,hawaii_Kahului Harbor FMA,0.0,0.075,0.18,0.2509999999999999,18.0,0
+hawaii,Parrotfish density,0.04,hawaii_Kahului Harbor FMA,0.0,0.055,0.18,0.25,18.0,0
+hawaii,Parrotfish density,0.05,hawaii_Kahului Harbor FMA,0.0,0.055,0.18,0.25,18.0,0
+hawaii,Parrotfish density,0.06,hawaii_Kahului Harbor FMA,0.0,0.055,0.18,0.25,18.0,0
+hawaii,Turbidity,0.0,hawaii_Kahului Harbor FMA,0.0,0.075,0.1825,0.27,18.0,0
+hawaii,Turbidity,0.1,hawaii_Kahului Harbor FMA,0.0,0.125,0.2525,0.29,25.0,0
 hawaii,Turbidity,0.2,hawaii_Kahului Harbor FMA,0.0,0.49,0.52,0.54,52.0,0
 hawaii,Turbidity,0.3,hawaii_Kahului Harbor FMA,0.0,0.5,0.53,0.55,53.0,0
 hawaii,Turbidity,0.4,hawaii_Kahului Harbor FMA,0.0,0.5,0.53,0.5509999999999999,53.0,0
@@ -1673,11 +1673,11 @@ hawaii,Coral cover,45.0,hawaii_Kailua-Keauhou FRA,0.0,0.48,0.5125,0.54,51.0,0
 hawaii,Coral cover,55.0,hawaii_Kailua-Keauhou FRA,0.0,0.48,0.5125,0.54,51.0,0
 hawaii,Coral cover,65.0,hawaii_Kailua-Keauhou FRA,0.0,0.48,0.5125,0.54,51.0,0
 hawaii,Coral size,5.0,hawaii_Kailua-Keauhou FRA,0.0,0.0,0.0,0.035,0.0,0
-hawaii,Coral size,15.0,hawaii_Kailua-Keauhou FRA,0.0,0.0,0.0,0.02049999999999995,0.0,0
-hawaii,Coral size,25.0,hawaii_Kailua-Keauhou FRA,0.0,0.0,0.0,0.03549999999999995,0.0,0
+hawaii,Coral size,15.0,hawaii_Kailua-Keauhou FRA,0.0,0.0,0.0,0.02549999999999995,0.0,0
+hawaii,Coral size,25.0,hawaii_Kailua-Keauhou FRA,0.0,0.0,0.0,0.04049999999999995,0.0,0
 hawaii,Coral size,35.0,hawaii_Kailua-Keauhou FRA,0.0,0.0,0.0,0.04049999999999995,0.0,0
-hawaii,Coral size,45.0,hawaii_Kailua-Keauhou FRA,0.0,0.0,0.0,0.03549999999999995,0.0,0
-hawaii,Coral size,55.0,hawaii_Kailua-Keauhou FRA,0.0,0.0,0.0,0.04049999999999995,0.0,0
+hawaii,Coral size,45.0,hawaii_Kailua-Keauhou FRA,0.0,0.0,0.0,0.04049999999999995,0.0,0
+hawaii,Coral size,55.0,hawaii_Kailua-Keauhou FRA,0.0,0.0,0.0,0.04549999999999995,0.0,0
 hawaii,Coral size,65.0,hawaii_Kailua-Keauhou FRA,0.0,0.0,0.01,0.10049999999999995,1.0,0
 hawaii,Herb. fish,0.0,hawaii_Kailua-Keauhou FRA,0.0,0.49,0.52,0.5509999999999999,52.0,0
 hawaii,Herb. fish,0.1,hawaii_Kailua-Keauhou FRA,0.0,0.49,0.52,0.5609999999999999,52.0,0
@@ -2212,11 +2212,11 @@ hawaii,Coral cover,45.0,hawaii_Keauhou Bay FMA,0.0,0.48,0.5125,0.54,51.0,0
 hawaii,Coral cover,55.0,hawaii_Keauhou Bay FMA,0.0,0.48,0.5125,0.54,51.0,0
 hawaii,Coral cover,65.0,hawaii_Keauhou Bay FMA,0.0,0.48,0.5125,0.54,51.0,0
 hawaii,Coral size,5.0,hawaii_Keauhou Bay FMA,0.0,0.0,0.0,0.03,0.0,0
-hawaii,Coral size,15.0,hawaii_Keauhou Bay FMA,0.0,0.0,0.0,0.01,0.0,0
-hawaii,Coral size,25.0,hawaii_Keauhou Bay FMA,0.0,0.0,0.0,0.02,0.0,0
-hawaii,Coral size,35.0,hawaii_Keauhou Bay FMA,0.0,0.0,0.0,0.03,0.0,0
-hawaii,Coral size,45.0,hawaii_Keauhou Bay FMA,0.0,0.0,0.0,0.02,0.0,0
-hawaii,Coral size,55.0,hawaii_Keauhou Bay FMA,0.0,0.0,0.0,0.0209999999999999,0.0,0
+hawaii,Coral size,15.0,hawaii_Keauhou Bay FMA,0.0,0.0,0.0,0.02,0.0,0
+hawaii,Coral size,25.0,hawaii_Keauhou Bay FMA,0.0,0.0,0.0,0.03,0.0,0
+hawaii,Coral size,35.0,hawaii_Keauhou Bay FMA,0.0,0.0,0.01,0.03,1.0,0
+hawaii,Coral size,45.0,hawaii_Keauhou Bay FMA,0.0,0.0,0.01,0.03,1.0,0
+hawaii,Coral size,55.0,hawaii_Keauhou Bay FMA,0.0,0.0,0.01,0.0309999999999999,1.0,0
 hawaii,Coral size,65.0,hawaii_Keauhou Bay FMA,0.0,0.0,0.01,0.1,1.0,0
 hawaii,Herb. fish,0.0,hawaii_Keauhou Bay FMA,0.0,0.49,0.52,0.5509999999999999,52.0,0
 hawaii,Herb. fish,0.1,hawaii_Keauhou Bay FMA,0.0,0.49,0.52,0.5609999999999999,52.0,0
@@ -2228,7 +2228,7 @@ hawaii,Herb. fish,0.6,hawaii_Keauhou Bay FMA,0.0,0.48,0.5125,0.54,51.0,0
 hawaii,Parrotfish density,0.0,hawaii_Keauhou Bay FMA,0.0,0.0,0.01,0.1,1.0,0
 hawaii,Parrotfish density,0.01,hawaii_Keauhou Bay FMA,0.0,0.0,0.01,0.1,1.0,0
 hawaii,Parrotfish density,0.02,hawaii_Keauhou Bay FMA,0.0,0.0,0.01,0.1,1.0,0
-hawaii,Parrotfish density,0.03,hawaii_Keauhou Bay FMA,0.0,0.0,0.01,0.11,1.0,0
+hawaii,Parrotfish density,0.03,hawaii_Keauhou Bay FMA,0.0,0.0,0.02,0.11,2.0,0
 hawaii,Parrotfish density,0.04,hawaii_Keauhou Bay FMA,0.0,0.15,0.18,0.2,18.0,0
 hawaii,Parrotfish density,0.05,hawaii_Keauhou Bay FMA,0.0,0.15,0.18,0.2,18.0,0
 hawaii,Parrotfish density,0.06,hawaii_Keauhou Bay FMA,0.0,0.15,0.18,0.2,18.0,0
@@ -2261,11 +2261,11 @@ hawaii,Coral cover,45.0,hawaii_Keauhou Bay FMA: Thrownetting Zone,0.0,0.48,0.512
 hawaii,Coral cover,55.0,hawaii_Keauhou Bay FMA: Thrownetting Zone,0.0,0.48,0.5125,0.54,51.0,0
 hawaii,Coral cover,65.0,hawaii_Keauhou Bay FMA: Thrownetting Zone,0.0,0.48,0.5125,0.54,51.0,0
 hawaii,Coral size,5.0,hawaii_Keauhou Bay FMA: Thrownetting Zone,0.0,0.0,0.0,0.03,0.0,0
-hawaii,Coral size,15.0,hawaii_Keauhou Bay FMA: Thrownetting Zone,0.0,0.0,0.0,0.01,0.0,0
-hawaii,Coral size,25.0,hawaii_Keauhou Bay FMA: Thrownetting Zone,0.0,0.0,0.0,0.02,0.0,0
-hawaii,Coral size,35.0,hawaii_Keauhou Bay FMA: Thrownetting Zone,0.0,0.0,0.0,0.03,0.0,0
-hawaii,Coral size,45.0,hawaii_Keauhou Bay FMA: Thrownetting Zone,0.0,0.0,0.0,0.02,0.0,0
-hawaii,Coral size,55.0,hawaii_Keauhou Bay FMA: Thrownetting Zone,0.0,0.0,0.0,0.0209999999999999,0.0,0
+hawaii,Coral size,15.0,hawaii_Keauhou Bay FMA: Thrownetting Zone,0.0,0.0,0.0,0.02,0.0,0
+hawaii,Coral size,25.0,hawaii_Keauhou Bay FMA: Thrownetting Zone,0.0,0.0,0.0,0.03,0.0,0
+hawaii,Coral size,35.0,hawaii_Keauhou Bay FMA: Thrownetting Zone,0.0,0.0,0.01,0.03,1.0,0
+hawaii,Coral size,45.0,hawaii_Keauhou Bay FMA: Thrownetting Zone,0.0,0.0,0.01,0.03,1.0,0
+hawaii,Coral size,55.0,hawaii_Keauhou Bay FMA: Thrownetting Zone,0.0,0.0,0.01,0.0309999999999999,1.0,0
 hawaii,Coral size,65.0,hawaii_Keauhou Bay FMA: Thrownetting Zone,0.0,0.0,0.01,0.1,1.0,0
 hawaii,Herb. fish,0.0,hawaii_Keauhou Bay FMA: Thrownetting Zone,0.0,0.49,0.52,0.5509999999999999,52.0,0
 hawaii,Herb. fish,0.1,hawaii_Keauhou Bay FMA: Thrownetting Zone,0.0,0.49,0.52,0.5609999999999999,52.0,0
@@ -2277,7 +2277,7 @@ hawaii,Herb. fish,0.6,hawaii_Keauhou Bay FMA: Thrownetting Zone,0.0,0.48,0.5125,
 hawaii,Parrotfish density,0.0,hawaii_Keauhou Bay FMA: Thrownetting Zone,0.0,0.0,0.01,0.1,1.0,0
 hawaii,Parrotfish density,0.01,hawaii_Keauhou Bay FMA: Thrownetting Zone,0.0,0.0,0.01,0.1,1.0,0
 hawaii,Parrotfish density,0.02,hawaii_Keauhou Bay FMA: Thrownetting Zone,0.0,0.0,0.01,0.1,1.0,0
-hawaii,Parrotfish density,0.03,hawaii_Keauhou Bay FMA: Thrownetting Zone,0.0,0.0,0.01,0.11,1.0,0
+hawaii,Parrotfish density,0.03,hawaii_Keauhou Bay FMA: Thrownetting Zone,0.0,0.0,0.02,0.11,2.0,0
 hawaii,Parrotfish density,0.04,hawaii_Keauhou Bay FMA: Thrownetting Zone,0.0,0.15,0.18,0.2,18.0,0
 hawaii,Parrotfish density,0.05,hawaii_Keauhou Bay FMA: Thrownetting Zone,0.0,0.15,0.18,0.2,18.0,0
 hawaii,Parrotfish density,0.06,hawaii_Keauhou Bay FMA: Thrownetting Zone,0.0,0.15,0.18,0.2,18.0,0
@@ -2717,7 +2717,7 @@ hawaii,Herb. fish,0.5,hawaii_Makapuu Pt (BRFA E),0.0,0.48,0.5125,0.54,51.0,0
 hawaii,Herb. fish,0.6,hawaii_Makapuu Pt (BRFA E),0.0,0.48,0.5125,0.54,51.0,0
 hawaii,Parrotfish density,0.0,hawaii_Makapuu Pt (BRFA E),0.0,0.0,0.01,0.06,1.0,0
 hawaii,Parrotfish density,0.01,hawaii_Makapuu Pt (BRFA E),0.0,0.0,0.01,0.06,0.0,0
-hawaii,Parrotfish density,0.02,hawaii_Makapuu Pt (BRFA E),0.0,0.0,0.0,0.08,0.0,0
+hawaii,Parrotfish density,0.02,hawaii_Makapuu Pt (BRFA E),0.0,0.0,0.0,0.0639999999999997,0.0,0
 hawaii,Parrotfish density,0.03,hawaii_Makapuu Pt (BRFA E),0.0,0.0,0.01,0.1,1.0,0
 hawaii,Parrotfish density,0.04,hawaii_Makapuu Pt (BRFA E),0.0,0.15,0.16,0.17,16.0,0
 hawaii,Parrotfish density,0.05,hawaii_Makapuu Pt (BRFA E),0.0,0.15,0.17,0.1709999999999999,17.0,0
@@ -3674,55 +3674,55 @@ hawaii,Turbidity,1.7,hawaii_Papawai Bay FMA,0.0,0.41,0.5,0.53,50.0,0
 hawaii,Turbidity,1.8,hawaii_Papawai Bay FMA,0.0,0.41,0.5,0.53,50.0,0
 hawaii,Turbidity,1.9,hawaii_Papawai Bay FMA,0.0,0.41,0.5,0.53,50.0,0
 hawaii,Turbidity,2.0,hawaii_Papawai Bay FMA,0.0,0.41,0.5,0.53,50.0,0
-hawaii,Coral cover,5.0,hawaii_Pokai Bay,1.0,0.455,0.51,0.54,50.0,0
-hawaii,Coral cover,15.0,hawaii_Pokai Bay,1.0,0.49,0.52,0.5609999999999999,51.0,0
-hawaii,Coral cover,25.0,hawaii_Pokai Bay,1.0,0.49,0.52,0.5609999999999999,51.0,0
-hawaii,Coral cover,35.0,hawaii_Pokai Bay,1.0,0.49,0.52,0.5609999999999999,51.0,0
-hawaii,Coral cover,45.0,hawaii_Pokai Bay,1.0,0.49,0.52,0.5609999999999999,51.0,0
-hawaii,Coral cover,55.0,hawaii_Pokai Bay,1.0,0.49,0.52,0.5609999999999999,51.0,0
-hawaii,Coral cover,65.0,hawaii_Pokai Bay,1.0,0.49,0.52,0.5609999999999999,51.0,0
-hawaii,Coral size,5.0,hawaii_Pokai Bay,1.0,0.0,0.015,0.07049999999999995,0.5,0
-hawaii,Coral size,15.0,hawaii_Pokai Bay,1.0,0.0,0.01,0.07049999999999995,0.0,0
-hawaii,Coral size,25.0,hawaii_Pokai Bay,1.0,0.0,0.01,0.08549999999999995,0.0,0
-hawaii,Coral size,35.0,hawaii_Pokai Bay,1.0,0.0,0.015,0.08549999999999995,0.5,0
-hawaii,Coral size,45.0,hawaii_Pokai Bay,1.0,0.0,0.015,0.08549999999999995,0.5,0
-hawaii,Coral size,55.0,hawaii_Pokai Bay,1.0,0.0,0.015,0.09,0.5,0
-hawaii,Coral size,65.0,hawaii_Pokai Bay,1.0,0.0,0.025,0.11,1.5,0
-hawaii,Herb. fish,0.0,hawaii_Pokai Bay,1.0,0.49,0.52,0.5509999999999999,51.0,0
-hawaii,Herb. fish,0.1,hawaii_Pokai Bay,1.0,0.49,0.52,0.5609999999999999,51.0,0
-hawaii,Herb. fish,0.2,hawaii_Pokai Bay,1.0,0.49,0.52,0.54,51.0,0
-hawaii,Herb. fish,0.3,hawaii_Pokai Bay,1.0,0.48,0.5125,0.54,50.0,0
-hawaii,Herb. fish,0.4,hawaii_Pokai Bay,1.0,0.48,0.5125,0.54,50.0,0
-hawaii,Herb. fish,0.5,hawaii_Pokai Bay,1.0,0.48,0.5125,0.54,50.0,0
-hawaii,Herb. fish,0.6,hawaii_Pokai Bay,1.0,0.48,0.5125,0.54,50.0,0
-hawaii,Parrotfish density,0.0,hawaii_Pokai Bay,1.0,0.0,0.025,0.11,1.5,0
-hawaii,Parrotfish density,0.01,hawaii_Pokai Bay,1.0,0.0,0.025,0.11049999999999995,1.5,0
-hawaii,Parrotfish density,0.02,hawaii_Pokai Bay,1.0,0.0,0.0225,0.11049999999999995,1.0,0
-hawaii,Parrotfish density,0.03,hawaii_Pokai Bay,1.0,0.005,0.051250000000000004,0.1409999999999999,4.0,0
-hawaii,Parrotfish density,0.04,hawaii_Pokai Bay,1.0,0.1125,0.16,0.17,15.0,0
-hawaii,Parrotfish density,0.05,hawaii_Pokai Bay,1.0,0.12,0.17,0.17,16.0,0
-hawaii,Parrotfish density,0.06,hawaii_Pokai Bay,1.0,0.1175,0.17,0.17,16.0,0
-hawaii,Turbidity,0.0,hawaii_Pokai Bay,1.0,0.125,0.17,0.17,16.0,0
-hawaii,Turbidity,0.1,hawaii_Pokai Bay,1.0,0.135,0.17,0.175,16.0,0
-hawaii,Turbidity,0.2,hawaii_Pokai Bay,1.0,0.425,0.51,0.54,50.0,0
-hawaii,Turbidity,0.3,hawaii_Pokai Bay,1.0,0.48,0.52,0.5609999999999999,51.0,0
-hawaii,Turbidity,0.4,hawaii_Pokai Bay,1.0,0.485,0.52,0.57,51.0,0
-hawaii,Turbidity,0.5,hawaii_Pokai Bay,1.0,0.485,0.52,0.57,51.0,0
-hawaii,Turbidity,0.6,hawaii_Pokai Bay,1.0,0.48,0.52,0.57,51.0,0
-hawaii,Turbidity,0.7,hawaii_Pokai Bay,1.0,0.48,0.52,0.57,51.0,0
-hawaii,Turbidity,0.8,hawaii_Pokai Bay,1.0,0.48,0.52,0.55,51.0,0
-hawaii,Turbidity,0.9,hawaii_Pokai Bay,1.0,0.47,0.52,0.5409999999999999,51.0,0
-hawaii,Turbidity,1.0,hawaii_Pokai Bay,1.0,0.46,0.5125,0.54,50.0,0
-hawaii,Turbidity,1.1,hawaii_Pokai Bay,1.0,0.445,0.51,0.54,50.0,0
-hawaii,Turbidity,1.2,hawaii_Pokai Bay,1.0,0.44,0.51,0.54,50.0,0
-hawaii,Turbidity,1.3,hawaii_Pokai Bay,1.0,0.44,0.51,0.54,50.0,0
-hawaii,Turbidity,1.4,hawaii_Pokai Bay,1.0,0.44,0.51,0.54,50.0,0
-hawaii,Turbidity,1.5,hawaii_Pokai Bay,1.0,0.44,0.51,0.54,50.0,0
-hawaii,Turbidity,1.6,hawaii_Pokai Bay,1.0,0.44,0.51,0.54,50.0,0
-hawaii,Turbidity,1.7,hawaii_Pokai Bay,1.0,0.44,0.51,0.54,50.0,0
-hawaii,Turbidity,1.8,hawaii_Pokai Bay,1.0,0.44,0.51,0.54,50.0,0
-hawaii,Turbidity,1.9,hawaii_Pokai Bay,1.0,0.44,0.51,0.54,50.0,0
-hawaii,Turbidity,2.0,hawaii_Pokai Bay,1.0,0.44,0.51,0.54,50.0,0
+hawaii,Coral cover,5.0,hawaii_Pokai Bay,0.5,0.455,0.51,0.54,50.5,0
+hawaii,Coral cover,15.0,hawaii_Pokai Bay,0.5,0.49,0.52,0.5609999999999999,51.5,0
+hawaii,Coral cover,25.0,hawaii_Pokai Bay,0.5,0.49,0.52,0.5609999999999999,51.5,0
+hawaii,Coral cover,35.0,hawaii_Pokai Bay,0.5,0.49,0.52,0.5609999999999999,51.5,0
+hawaii,Coral cover,45.0,hawaii_Pokai Bay,0.5,0.49,0.52,0.5609999999999999,51.5,0
+hawaii,Coral cover,55.0,hawaii_Pokai Bay,0.5,0.49,0.52,0.5609999999999999,51.5,0
+hawaii,Coral cover,65.0,hawaii_Pokai Bay,0.5,0.49,0.52,0.5609999999999999,51.5,0
+hawaii,Coral size,5.0,hawaii_Pokai Bay,0.5,0.0,0.01,0.06549999999999995,0.5,0
+hawaii,Coral size,15.0,hawaii_Pokai Bay,0.5,0.0,0.005,0.06549999999999995,0.0,0
+hawaii,Coral size,25.0,hawaii_Pokai Bay,0.5,0.0,0.005,0.0809999999999999,0.0,0
+hawaii,Coral size,35.0,hawaii_Pokai Bay,0.5,0.0,0.015,0.0809999999999999,1.0,0
+hawaii,Coral size,45.0,hawaii_Pokai Bay,0.5,0.0,0.01,0.0809999999999999,0.5,0
+hawaii,Coral size,55.0,hawaii_Pokai Bay,0.5,0.0,0.01125,0.09,0.5,0
+hawaii,Coral size,65.0,hawaii_Pokai Bay,0.5,0.0,0.02,0.11,1.5,0
+hawaii,Herb. fish,0.0,hawaii_Pokai Bay,0.5,0.49,0.52,0.5509999999999999,51.5,0
+hawaii,Herb. fish,0.1,hawaii_Pokai Bay,0.5,0.49,0.52,0.5609999999999999,51.5,0
+hawaii,Herb. fish,0.2,hawaii_Pokai Bay,0.5,0.49,0.52,0.54,51.5,0
+hawaii,Herb. fish,0.3,hawaii_Pokai Bay,0.5,0.48,0.5125,0.54,50.5,0
+hawaii,Herb. fish,0.4,hawaii_Pokai Bay,0.5,0.48,0.5125,0.54,50.5,0
+hawaii,Herb. fish,0.5,hawaii_Pokai Bay,0.5,0.48,0.5125,0.54,50.5,0
+hawaii,Herb. fish,0.6,hawaii_Pokai Bay,0.5,0.48,0.5125,0.54,50.5,0
+hawaii,Parrotfish density,0.0,hawaii_Pokai Bay,0.5,0.0,0.02,0.11,1.5,0
+hawaii,Parrotfish density,0.01,hawaii_Pokai Bay,0.5,0.0,0.02,0.11049999999999995,1.5,0
+hawaii,Parrotfish density,0.02,hawaii_Pokai Bay,0.5,0.0,0.01625,0.11049999999999995,1.0,0
+hawaii,Parrotfish density,0.03,hawaii_Pokai Bay,0.5,0.005,0.051250000000000004,0.14549999999999996,4.5,0
+hawaii,Parrotfish density,0.04,hawaii_Pokai Bay,0.5,0.11750000000000001,0.16,0.17,15.5,0
+hawaii,Parrotfish density,0.05,hawaii_Pokai Bay,0.5,0.1225,0.17,0.17,16.5,0
+hawaii,Parrotfish density,0.06,hawaii_Pokai Bay,0.5,0.1225,0.17,0.17,16.5,0
+hawaii,Turbidity,0.0,hawaii_Pokai Bay,0.5,0.125,0.17,0.17,16.5,0
+hawaii,Turbidity,0.1,hawaii_Pokai Bay,0.5,0.135,0.17,0.175,16.5,0
+hawaii,Turbidity,0.2,hawaii_Pokai Bay,0.5,0.425,0.51,0.54,50.5,0
+hawaii,Turbidity,0.3,hawaii_Pokai Bay,0.5,0.48,0.52,0.5609999999999999,51.5,0
+hawaii,Turbidity,0.4,hawaii_Pokai Bay,0.5,0.485,0.52,0.57,51.5,0
+hawaii,Turbidity,0.5,hawaii_Pokai Bay,0.5,0.485,0.52,0.57,51.5,0
+hawaii,Turbidity,0.6,hawaii_Pokai Bay,0.5,0.48,0.52,0.57,51.5,0
+hawaii,Turbidity,0.7,hawaii_Pokai Bay,0.5,0.48,0.52,0.57,51.5,0
+hawaii,Turbidity,0.8,hawaii_Pokai Bay,0.5,0.48,0.52,0.55,51.5,0
+hawaii,Turbidity,0.9,hawaii_Pokai Bay,0.5,0.47,0.52,0.5409999999999999,51.5,0
+hawaii,Turbidity,1.0,hawaii_Pokai Bay,0.5,0.46,0.5125,0.54,50.5,0
+hawaii,Turbidity,1.1,hawaii_Pokai Bay,0.5,0.445,0.51,0.54,50.5,0
+hawaii,Turbidity,1.2,hawaii_Pokai Bay,0.5,0.44,0.51,0.54,50.5,0
+hawaii,Turbidity,1.3,hawaii_Pokai Bay,0.5,0.44,0.51,0.54,50.5,0
+hawaii,Turbidity,1.4,hawaii_Pokai Bay,0.5,0.44,0.51,0.54,50.5,0
+hawaii,Turbidity,1.5,hawaii_Pokai Bay,0.5,0.44,0.51,0.54,50.5,0
+hawaii,Turbidity,1.6,hawaii_Pokai Bay,0.5,0.44,0.51,0.54,50.5,0
+hawaii,Turbidity,1.7,hawaii_Pokai Bay,0.5,0.44,0.51,0.54,50.5,0
+hawaii,Turbidity,1.8,hawaii_Pokai Bay,0.5,0.44,0.51,0.54,50.5,0
+hawaii,Turbidity,1.9,hawaii_Pokai Bay,0.5,0.44,0.51,0.54,50.5,0
+hawaii,Turbidity,2.0,hawaii_Pokai Bay,0.5,0.44,0.51,0.54,50.5,0
 hawaii,Coral cover,5.0,hawaii_Port Allen FMA,0.0,0.44,0.51,0.54,51.0,0
 hawaii,Coral cover,15.0,hawaii_Port Allen FMA,0.0,0.49,0.52,0.5509999999999999,52.0,0
 hawaii,Coral cover,25.0,hawaii_Port Allen FMA,0.0,0.49,0.52,0.5509999999999999,52.0,0

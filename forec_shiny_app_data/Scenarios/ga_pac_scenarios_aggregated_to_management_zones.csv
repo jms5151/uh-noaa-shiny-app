@@ -17,8 +17,8 @@ guam_cnmi,Development,0.7,cnmi_1,0.0,0.01,0.02,0.03,2.0,0
 guam_cnmi,Development,0.8,cnmi_1,0.0,0.01,0.02,0.03,2.0,0
 guam_cnmi,Development,0.9,cnmi_1,0.0,0.01,0.02,0.03,2.0,0
 guam_cnmi,Development,1.0,cnmi_1,0.0,0.01,0.02,0.03,2.0,0
-guam_cnmi,Fish,0.1,cnmi_1,0.0,0.02,0.04,0.2429999999999998,4.0,0
-guam_cnmi,Fish,0.2,cnmi_1,0.0,0.02,0.04,0.2709999999999999,4.0,0
+guam_cnmi,Fish,0.1,cnmi_1,0.0,0.02,0.0325,0.2429999999999998,3.0,0
+guam_cnmi,Fish,0.2,cnmi_1,0.0,0.02,0.03,0.27,3.0,0
 guam_cnmi,Fish,0.3,cnmi_1,0.0,0.01,0.02,0.03,2.0,0
 guam_cnmi,Fish,0.4,cnmi_1,0.0,0.01,0.02,0.03,2.0,0
 guam_cnmi,Fish,0.5,cnmi_1,0.0,0.01,0.02,0.03,2.0,0
@@ -30,7 +30,7 @@ guam_cnmi,Turbidity,0.2,cnmi_1,0.0,0.02,0.2,0.2,20.0,0
 guam_cnmi,Turbidity,0.3,cnmi_1,0.0,0.02,0.2,0.2,20.0,0
 guam_cnmi,Turbidity,0.4,cnmi_1,0.0,0.02,0.2,0.2,20.0,0
 guam_cnmi,Turbidity,0.5,cnmi_1,0.0,0.02,0.2,0.2,20.0,0
-guam_cnmi,Coral size,5.0,cnmi_10,0.5,0.0,0.0,0.01,-0.5,0
+guam_cnmi,Coral size,5.0,cnmi_10,0.5,0.0,0.0,0.00549999999999995,-0.5,0
 guam_cnmi,Coral size,15.0,cnmi_10,0.5,0.0,0.005,0.005,0.0,0
 guam_cnmi,Coral size,25.0,cnmi_10,0.5,0.0,0.00125,0.005,-0.5,0
 guam_cnmi,Coral size,35.0,cnmi_10,0.5,0.0,0.0,0.005,-0.5,0
@@ -155,7 +155,7 @@ guam_cnmi,Turbidity,0.3,cnmi_4,0.0,0.02,0.2,0.2,20.0,0
 guam_cnmi,Turbidity,0.4,cnmi_4,0.0,0.02,0.2,0.2,20.0,0
 guam_cnmi,Turbidity,0.5,cnmi_4,0.0,0.02,0.2,0.2,20.0,0
 guam_cnmi,Coral size,5.0,cnmi_5,0.0,0.0,0.0,0.01,0.0,0
-guam_cnmi,Coral size,15.0,cnmi_5,0.0,0.0,0.0,0.01,0.0,0
+guam_cnmi,Coral size,15.0,cnmi_5,0.0,0.0,0.0,0.0,0.0,0
 guam_cnmi,Coral size,25.0,cnmi_5,0.0,0.0,0.0,0.01,0.0,0
 guam_cnmi,Coral size,35.0,cnmi_5,0.0,0.0,0.0,0.01,0.0,0
 guam_cnmi,Coral size,45.0,cnmi_5,0.0,0.0,0.0,0.01,0.0,0
@@ -404,30 +404,30 @@ guam_cnmi,Turbidity,0.4,guam_Tumon Bay Marine Preserve,0.5,0.02,0.2,0.2,19.5,0
 guam_cnmi,Turbidity,0.5,guam_Tumon Bay Marine Preserve,0.5,0.02,0.2,0.2,19.5,0
 hawaii,Coral size,5.0,hawaii_Ahihi-Kinau NAR,0.0,0.0,0.0,0.0,0.0,0
 hawaii,Coral size,15.0,hawaii_Ahihi-Kinau NAR,0.0,0.0,0.0,0.0,0.0,0
-hawaii,Coral size,25.0,hawaii_Ahihi-Kinau NAR,0.0,0.0,0.0,0.02,0.0,0
-hawaii,Coral size,35.0,hawaii_Ahihi-Kinau NAR,0.0,0.0,0.0,0.02,0.0,0
-hawaii,Coral size,45.0,hawaii_Ahihi-Kinau NAR,0.0,0.0,0.0,0.0209999999999999,0.0,0
-hawaii,Coral size,55.0,hawaii_Ahihi-Kinau NAR,0.0,0.0,0.0,0.03,0.0,0
+hawaii,Coral size,25.0,hawaii_Ahihi-Kinau NAR,0.0,0.0,0.0,0.0309999999999999,0.0,0
+hawaii,Coral size,35.0,hawaii_Ahihi-Kinau NAR,0.0,0.0,0.0,0.04,0.0,0
+hawaii,Coral size,45.0,hawaii_Ahihi-Kinau NAR,0.0,0.0,0.0025,0.05,0.0,0
+hawaii,Coral size,55.0,hawaii_Ahihi-Kinau NAR,0.0,0.0,0.01,0.0509999999999999,1.0,0
 hawaii,Coral size,65.0,hawaii_Ahihi-Kinau NAR,0.0,0.0,0.02,0.05,2.0,0
-hawaii,Development,0.0,hawaii_Ahihi-Kinau NAR,0.0,0.005,0.02,0.05,2.0,0
-hawaii,Development,0.1,hawaii_Ahihi-Kinau NAR,0.0,0.01,0.02,0.05,2.0,0
+hawaii,Development,0.0,hawaii_Ahihi-Kinau NAR,0.0,0.0,0.02,0.06,2.0,0
+hawaii,Development,0.1,hawaii_Ahihi-Kinau NAR,0.0,0.0,0.02,0.05,2.0,0
 hawaii,Development,0.2,hawaii_Ahihi-Kinau NAR,0.0,0.02,0.05,0.25,5.0,0
 hawaii,Development,0.3,hawaii_Ahihi-Kinau NAR,0.0,0.02,0.05,0.2409999999999999,5.0,0
-hawaii,Development,0.4,hawaii_Ahihi-Kinau NAR,0.0,0.02,0.0425,0.24,4.0,0
-hawaii,Development,0.5,hawaii_Ahihi-Kinau NAR,0.0,0.02,0.0425,0.24,4.0,0
-hawaii,Development,0.6,hawaii_Ahihi-Kinau NAR,0.0,0.02,0.0425,0.24,4.0,0
-hawaii,Development,0.7,hawaii_Ahihi-Kinau NAR,0.0,0.02,0.0425,0.24,4.0,0
-hawaii,Development,0.8,hawaii_Ahihi-Kinau NAR,0.0,0.02,0.0425,0.24,4.0,0
-hawaii,Development,0.9,hawaii_Ahihi-Kinau NAR,0.0,0.02,0.0425,0.24,4.0,0
-hawaii,Development,1.0,hawaii_Ahihi-Kinau NAR,0.0,0.02,0.0425,0.24,4.0,0
-hawaii,Fish,0.1,hawaii_Ahihi-Kinau NAR,0.0,0.02,0.05,0.2709999999999999,5.0,0
-hawaii,Fish,0.2,hawaii_Ahihi-Kinau NAR,0.0,0.02,0.05,0.2709999999999999,5.0,0
-hawaii,Fish,0.3,hawaii_Ahihi-Kinau NAR,0.0,0.01,0.02,0.04,2.0,0
-hawaii,Fish,0.4,hawaii_Ahihi-Kinau NAR,0.0,0.01,0.02,0.04,2.0,0
-hawaii,Fish,0.5,hawaii_Ahihi-Kinau NAR,0.0,0.01,0.02,0.04,2.0,0
-hawaii,Fish,0.6,hawaii_Ahihi-Kinau NAR,0.0,0.01,0.02,0.04,2.0,0
-hawaii,Fish,0.7,hawaii_Ahihi-Kinau NAR,0.0,0.01,0.02,0.04,2.0,0
-hawaii,Turbidity,0.0,hawaii_Ahihi-Kinau NAR,0.0,0.01,0.02,0.04,2.0,0
+hawaii,Development,0.4,hawaii_Ahihi-Kinau NAR,0.0,0.02,0.04,0.24,4.0,0
+hawaii,Development,0.5,hawaii_Ahihi-Kinau NAR,0.0,0.02,0.04,0.24,4.0,0
+hawaii,Development,0.6,hawaii_Ahihi-Kinau NAR,0.0,0.02,0.04,0.24,4.0,0
+hawaii,Development,0.7,hawaii_Ahihi-Kinau NAR,0.0,0.02,0.04,0.24,4.0,0
+hawaii,Development,0.8,hawaii_Ahihi-Kinau NAR,0.0,0.02,0.04,0.24,4.0,0
+hawaii,Development,0.9,hawaii_Ahihi-Kinau NAR,0.0,0.02,0.04,0.24,4.0,0
+hawaii,Development,1.0,hawaii_Ahihi-Kinau NAR,0.0,0.02,0.04,0.24,4.0,0
+hawaii,Fish,0.1,hawaii_Ahihi-Kinau NAR,0.0,0.02,0.04,0.2709999999999999,4.0,0
+hawaii,Fish,0.2,hawaii_Ahihi-Kinau NAR,0.0,0.02,0.04,0.2709999999999999,4.0,0
+hawaii,Fish,0.3,hawaii_Ahihi-Kinau NAR,0.0,0.01,0.02,0.0409999999999999,2.0,0
+hawaii,Fish,0.4,hawaii_Ahihi-Kinau NAR,0.0,0.01,0.02,0.0409999999999999,2.0,0
+hawaii,Fish,0.5,hawaii_Ahihi-Kinau NAR,0.0,0.01,0.02,0.0409999999999999,2.0,0
+hawaii,Fish,0.6,hawaii_Ahihi-Kinau NAR,0.0,0.01,0.02,0.0409999999999999,2.0,0
+hawaii,Fish,0.7,hawaii_Ahihi-Kinau NAR,0.0,0.01,0.02,0.0409999999999999,2.0,0
+hawaii,Turbidity,0.0,hawaii_Ahihi-Kinau NAR,0.0,0.01,0.02,0.0409999999999999,2.0,0
 hawaii,Turbidity,0.1,hawaii_Ahihi-Kinau NAR,0.0,0.01,0.02,0.0409999999999999,2.0,0
 hawaii,Turbidity,0.2,hawaii_Ahihi-Kinau NAR,0.0,0.02,0.2,0.2,20.0,0
 hawaii,Turbidity,0.3,hawaii_Ahihi-Kinau NAR,0.0,0.02,0.2,0.2,20.0,0
@@ -435,10 +435,10 @@ hawaii,Turbidity,0.4,hawaii_Ahihi-Kinau NAR,0.0,0.02,0.2,0.2,20.0,0
 hawaii,Turbidity,0.5,hawaii_Ahihi-Kinau NAR,0.0,0.02,0.2,0.2,20.0,0
 hawaii,Coral size,5.0,hawaii_Haena CBFA,0.0,0.0,0.0,0.0,0.0,0
 hawaii,Coral size,15.0,hawaii_Haena CBFA,0.0,0.0,0.0,0.005,0.0,0
-hawaii,Coral size,25.0,hawaii_Haena CBFA,0.0,0.0,0.0,0.03,0.0,0
-hawaii,Coral size,35.0,hawaii_Haena CBFA,0.0,0.0,0.0,0.025999999999999898,0.0,0
-hawaii,Coral size,45.0,hawaii_Haena CBFA,0.0,0.0,0.0,0.03049999999999995,0.0,0
-hawaii,Coral size,55.0,hawaii_Haena CBFA,0.0,0.0,0.0,0.0709999999999999,0.0,0
+hawaii,Coral size,25.0,hawaii_Haena CBFA,0.0,0.0,0.0,0.035,0.0,0
+hawaii,Coral size,35.0,hawaii_Haena CBFA,0.0,0.0,0.0,0.03549999999999995,0.0,0
+hawaii,Coral size,45.0,hawaii_Haena CBFA,0.0,0.0,0.0,0.04049999999999995,0.0,0
+hawaii,Coral size,55.0,hawaii_Haena CBFA,0.0,0.0,0.0,0.10149999999999984,0.0,0
 hawaii,Coral size,65.0,hawaii_Haena CBFA,0.0,0.0,0.025,0.42549999999999943,2.5,0
 hawaii,Development,0.0,hawaii_Haena CBFA,0.0,0.015,0.12,0.89,12.0,0
 hawaii,Development,0.1,hawaii_Haena CBFA,0.0,0.0,0.021249999999999998,0.18449999999999916,2.0,0
@@ -466,10 +466,10 @@ hawaii,Turbidity,0.4,hawaii_Haena CBFA,0.0,0.02,0.2,0.2,20.0,0
 hawaii,Turbidity,0.5,hawaii_Haena CBFA,0.0,0.02,0.2,0.2,20.0,0
 hawaii,Coral size,5.0,hawaii_Haena CBFA: Makua Puuhonua,0.0,0.0,0.0,0.0,0.0,0
 hawaii,Coral size,15.0,hawaii_Haena CBFA: Makua Puuhonua,0.0,0.0,0.0,0.01,0.0,0
-hawaii,Coral size,25.0,hawaii_Haena CBFA: Makua Puuhonua,0.0,0.0,0.0,0.02,0.0,0
-hawaii,Coral size,35.0,hawaii_Haena CBFA: Makua Puuhonua,0.0,0.0,0.0,0.0109999999999999,0.0,0
-hawaii,Coral size,45.0,hawaii_Haena CBFA: Makua Puuhonua,0.0,0.0,0.0,0.02,0.0,0
-hawaii,Coral size,55.0,hawaii_Haena CBFA: Makua Puuhonua,0.0,0.0,0.0,0.03,0.0,0
+hawaii,Coral size,25.0,hawaii_Haena CBFA: Makua Puuhonua,0.0,0.0,0.0,0.03,0.0,0
+hawaii,Coral size,35.0,hawaii_Haena CBFA: Makua Puuhonua,0.0,0.0,0.0,0.03,0.0,0
+hawaii,Coral size,45.0,hawaii_Haena CBFA: Makua Puuhonua,0.0,0.0,0.0,0.04,0.0,0
+hawaii,Coral size,55.0,hawaii_Haena CBFA: Makua Puuhonua,0.0,0.0,0.0,0.0909999999999999,0.0,0
 hawaii,Coral size,65.0,hawaii_Haena CBFA: Makua Puuhonua,0.0,0.0,0.02,0.2,2.0,0
 hawaii,Development,0.0,hawaii_Haena CBFA: Makua Puuhonua,0.0,0.01,0.12,0.89,12.0,0
 hawaii,Development,0.1,hawaii_Haena CBFA: Makua Puuhonua,0.0,0.0,0.02,0.1459999999999996,2.0,0
@@ -497,10 +497,10 @@ hawaii,Turbidity,0.4,hawaii_Haena CBFA: Makua Puuhonua,0.0,0.02,0.2,0.2,20.0,0
 hawaii,Turbidity,0.5,hawaii_Haena CBFA: Makua Puuhonua,0.0,0.02,0.2,0.2,20.0,0
 hawaii,Coral size,5.0,hawaii_Haena CBFA: Opihi Management Area,0.0,0.0,0.0,0.0,0.0,0
 hawaii,Coral size,15.0,hawaii_Haena CBFA: Opihi Management Area,0.0,0.0,0.0,0.01,0.0,0
-hawaii,Coral size,25.0,hawaii_Haena CBFA: Opihi Management Area,0.0,0.0,0.0,0.02,0.0,0
-hawaii,Coral size,35.0,hawaii_Haena CBFA: Opihi Management Area,0.0,0.0,0.0,0.0109999999999999,0.0,0
-hawaii,Coral size,45.0,hawaii_Haena CBFA: Opihi Management Area,0.0,0.0,0.0,0.02,0.0,0
-hawaii,Coral size,55.0,hawaii_Haena CBFA: Opihi Management Area,0.0,0.0,0.0,0.03,0.0,0
+hawaii,Coral size,25.0,hawaii_Haena CBFA: Opihi Management Area,0.0,0.0,0.0,0.03,0.0,0
+hawaii,Coral size,35.0,hawaii_Haena CBFA: Opihi Management Area,0.0,0.0,0.0,0.03,0.0,0
+hawaii,Coral size,45.0,hawaii_Haena CBFA: Opihi Management Area,0.0,0.0,0.0,0.04,0.0,0
+hawaii,Coral size,55.0,hawaii_Haena CBFA: Opihi Management Area,0.0,0.0,0.0,0.0909999999999999,0.0,0
 hawaii,Coral size,65.0,hawaii_Haena CBFA: Opihi Management Area,0.0,0.0,0.02,0.2,2.0,0
 hawaii,Development,0.0,hawaii_Haena CBFA: Opihi Management Area,0.0,0.01,0.12,0.89,12.0,0
 hawaii,Development,0.1,hawaii_Haena CBFA: Opihi Management Area,0.0,0.0,0.02,0.1459999999999996,2.0,0
@@ -528,10 +528,10 @@ hawaii,Turbidity,0.4,hawaii_Haena CBFA: Opihi Management Area,0.0,0.02,0.2,0.2,2
 hawaii,Turbidity,0.5,hawaii_Haena CBFA: Opihi Management Area,0.0,0.02,0.2,0.2,20.0,0
 hawaii,Coral size,5.0,hawaii_Haena CBFA: Vessel Transit Boundary,0.0,0.0,0.0,0.0,0.0,0
 hawaii,Coral size,15.0,hawaii_Haena CBFA: Vessel Transit Boundary,0.0,0.0,0.0,0.01,0.0,0
-hawaii,Coral size,25.0,hawaii_Haena CBFA: Vessel Transit Boundary,0.0,0.0,0.0,0.02,0.0,0
-hawaii,Coral size,35.0,hawaii_Haena CBFA: Vessel Transit Boundary,0.0,0.0,0.0,0.0109999999999999,0.0,0
-hawaii,Coral size,45.0,hawaii_Haena CBFA: Vessel Transit Boundary,0.0,0.0,0.0,0.02,0.0,0
-hawaii,Coral size,55.0,hawaii_Haena CBFA: Vessel Transit Boundary,0.0,0.0,0.0,0.03,0.0,0
+hawaii,Coral size,25.0,hawaii_Haena CBFA: Vessel Transit Boundary,0.0,0.0,0.0,0.03,0.0,0
+hawaii,Coral size,35.0,hawaii_Haena CBFA: Vessel Transit Boundary,0.0,0.0,0.0,0.03,0.0,0
+hawaii,Coral size,45.0,hawaii_Haena CBFA: Vessel Transit Boundary,0.0,0.0,0.0,0.04,0.0,0
+hawaii,Coral size,55.0,hawaii_Haena CBFA: Vessel Transit Boundary,0.0,0.0,0.0,0.0909999999999999,0.0,0
 hawaii,Coral size,65.0,hawaii_Haena CBFA: Vessel Transit Boundary,0.0,0.0,0.02,0.2,2.0,0
 hawaii,Development,0.0,hawaii_Haena CBFA: Vessel Transit Boundary,0.0,0.01,0.12,0.89,12.0,0
 hawaii,Development,0.1,hawaii_Haena CBFA: Vessel Transit Boundary,0.0,0.0,0.02,0.1459999999999996,2.0,0
@@ -559,31 +559,31 @@ hawaii,Turbidity,0.4,hawaii_Haena CBFA: Vessel Transit Boundary,0.0,0.02,0.2,0.2
 hawaii,Turbidity,0.5,hawaii_Haena CBFA: Vessel Transit Boundary,0.0,0.02,0.2,0.2,20.0,0
 hawaii,Coral size,5.0,hawaii_Hanamalo Pt-Kanewaa Pt NRA,0.0,0.0,0.2,0.2,20.0,0
 hawaii,Coral size,15.0,hawaii_Hanamalo Pt-Kanewaa Pt NRA,0.0,0.0,0.0,0.0,0.0,0
-hawaii,Coral size,25.0,hawaii_Hanamalo Pt-Kanewaa Pt NRA,0.0,0.0,0.0,0.03,0.0,0
-hawaii,Coral size,35.0,hawaii_Hanamalo Pt-Kanewaa Pt NRA,0.0,0.0,0.0,0.03,0.0,0
-hawaii,Coral size,45.0,hawaii_Hanamalo Pt-Kanewaa Pt NRA,0.0,0.0,0.0,0.03,0.0,0
-hawaii,Coral size,55.0,hawaii_Hanamalo Pt-Kanewaa Pt NRA,0.0,0.0,0.0,0.03,0.0,0
-hawaii,Coral size,65.0,hawaii_Hanamalo Pt-Kanewaa Pt NRA,0.0,0.0,0.02,0.04,2.0,0
-hawaii,Development,0.0,hawaii_Hanamalo Pt-Kanewaa Pt NRA,0.0,0.0,0.02,0.04,2.0,0
-hawaii,Development,0.1,hawaii_Hanamalo Pt-Kanewaa Pt NRA,0.0,0.0,0.02,0.04,2.0,0
-hawaii,Development,0.2,hawaii_Hanamalo Pt-Kanewaa Pt NRA,0.0,0.0,0.02,0.04,2.0,0
-hawaii,Development,0.3,hawaii_Hanamalo Pt-Kanewaa Pt NRA,0.0,0.01,0.02,0.03549999999999995,2.0,0
-hawaii,Development,0.4,hawaii_Hanamalo Pt-Kanewaa Pt NRA,0.0,0.01,0.02,0.03549999999999995,2.0,0
-hawaii,Development,0.5,hawaii_Hanamalo Pt-Kanewaa Pt NRA,0.0,0.01,0.02,0.03549999999999995,2.0,0
-hawaii,Development,0.6,hawaii_Hanamalo Pt-Kanewaa Pt NRA,0.0,0.01,0.02,0.03549999999999995,2.0,0
-hawaii,Development,0.7,hawaii_Hanamalo Pt-Kanewaa Pt NRA,0.0,0.01,0.02,0.03549999999999995,2.0,0
-hawaii,Development,0.8,hawaii_Hanamalo Pt-Kanewaa Pt NRA,0.0,0.01,0.02,0.03549999999999995,2.0,0
-hawaii,Development,0.9,hawaii_Hanamalo Pt-Kanewaa Pt NRA,0.0,0.01,0.02,0.03549999999999995,2.0,0
-hawaii,Development,1.0,hawaii_Hanamalo Pt-Kanewaa Pt NRA,0.0,0.01,0.02,0.03549999999999995,2.0,0
+hawaii,Coral size,25.0,hawaii_Hanamalo Pt-Kanewaa Pt NRA,0.0,0.0,0.0,0.0,0.0,0
+hawaii,Coral size,35.0,hawaii_Hanamalo Pt-Kanewaa Pt NRA,0.0,0.0,0.0,0.0,0.0,0
+hawaii,Coral size,45.0,hawaii_Hanamalo Pt-Kanewaa Pt NRA,0.0,0.0,0.0,0.0,0.0,0
+hawaii,Coral size,55.0,hawaii_Hanamalo Pt-Kanewaa Pt NRA,0.0,0.0,0.0,0.0,0.0,0
+hawaii,Coral size,65.0,hawaii_Hanamalo Pt-Kanewaa Pt NRA,0.0,0.0,0.02,0.03,2.0,0
+hawaii,Development,0.0,hawaii_Hanamalo Pt-Kanewaa Pt NRA,0.0,0.0,0.02,0.03,2.0,0
+hawaii,Development,0.1,hawaii_Hanamalo Pt-Kanewaa Pt NRA,0.0,0.0,0.02,0.03,2.0,0
+hawaii,Development,0.2,hawaii_Hanamalo Pt-Kanewaa Pt NRA,0.0,0.0,0.02,0.03,2.0,0
+hawaii,Development,0.3,hawaii_Hanamalo Pt-Kanewaa Pt NRA,0.0,0.01,0.02,0.03,2.0,0
+hawaii,Development,0.4,hawaii_Hanamalo Pt-Kanewaa Pt NRA,0.0,0.01,0.02,0.03,2.0,0
+hawaii,Development,0.5,hawaii_Hanamalo Pt-Kanewaa Pt NRA,0.0,0.01,0.02,0.03,2.0,0
+hawaii,Development,0.6,hawaii_Hanamalo Pt-Kanewaa Pt NRA,0.0,0.01,0.02,0.03,2.0,0
+hawaii,Development,0.7,hawaii_Hanamalo Pt-Kanewaa Pt NRA,0.0,0.01,0.02,0.03,2.0,0
+hawaii,Development,0.8,hawaii_Hanamalo Pt-Kanewaa Pt NRA,0.0,0.01,0.02,0.03,2.0,0
+hawaii,Development,0.9,hawaii_Hanamalo Pt-Kanewaa Pt NRA,0.0,0.01,0.02,0.03,2.0,0
+hawaii,Development,1.0,hawaii_Hanamalo Pt-Kanewaa Pt NRA,0.0,0.01,0.02,0.03,2.0,0
 hawaii,Fish,0.1,hawaii_Hanamalo Pt-Kanewaa Pt NRA,0.0,0.02,0.04,0.2709999999999999,4.0,0
-hawaii,Fish,0.2,hawaii_Hanamalo Pt-Kanewaa Pt NRA,0.0,0.02,0.04,0.2709999999999999,4.0,0
-hawaii,Fish,0.3,hawaii_Hanamalo Pt-Kanewaa Pt NRA,0.0,0.01,0.02,0.03549999999999995,2.0,0
-hawaii,Fish,0.4,hawaii_Hanamalo Pt-Kanewaa Pt NRA,0.0,0.01,0.02,0.03549999999999995,2.0,0
-hawaii,Fish,0.5,hawaii_Hanamalo Pt-Kanewaa Pt NRA,0.0,0.01,0.02,0.03549999999999995,2.0,0
-hawaii,Fish,0.6,hawaii_Hanamalo Pt-Kanewaa Pt NRA,0.0,0.01,0.02,0.03549999999999995,2.0,0
-hawaii,Fish,0.7,hawaii_Hanamalo Pt-Kanewaa Pt NRA,0.0,0.01,0.02,0.03549999999999995,2.0,0
-hawaii,Turbidity,0.0,hawaii_Hanamalo Pt-Kanewaa Pt NRA,0.0,0.01,0.02,0.03549999999999995,2.0,0
-hawaii,Turbidity,0.1,hawaii_Hanamalo Pt-Kanewaa Pt NRA,0.0,0.01,0.02,0.03549999999999995,2.0,0
+hawaii,Fish,0.2,hawaii_Hanamalo Pt-Kanewaa Pt NRA,0.0,0.02,0.036250000000000004,0.2709999999999999,3.5,0
+hawaii,Fish,0.3,hawaii_Hanamalo Pt-Kanewaa Pt NRA,0.0,0.01,0.02,0.03,2.0,0
+hawaii,Fish,0.4,hawaii_Hanamalo Pt-Kanewaa Pt NRA,0.0,0.01,0.02,0.03,2.0,0
+hawaii,Fish,0.5,hawaii_Hanamalo Pt-Kanewaa Pt NRA,0.0,0.01,0.02,0.03,2.0,0
+hawaii,Fish,0.6,hawaii_Hanamalo Pt-Kanewaa Pt NRA,0.0,0.01,0.02,0.03,2.0,0
+hawaii,Fish,0.7,hawaii_Hanamalo Pt-Kanewaa Pt NRA,0.0,0.01,0.02,0.03,2.0,0
+hawaii,Turbidity,0.0,hawaii_Hanamalo Pt-Kanewaa Pt NRA,0.0,0.01,0.02,0.03,2.0,0
+hawaii,Turbidity,0.1,hawaii_Hanamalo Pt-Kanewaa Pt NRA,0.0,0.01,0.02,0.03,2.0,0
 hawaii,Turbidity,0.2,hawaii_Hanamalo Pt-Kanewaa Pt NRA,0.0,0.02,0.2,0.2,20.0,0
 hawaii,Turbidity,0.3,hawaii_Hanamalo Pt-Kanewaa Pt NRA,0.0,0.02,0.2,0.2,20.0,0
 hawaii,Turbidity,0.4,hawaii_Hanamalo Pt-Kanewaa Pt NRA,0.0,0.02,0.2,0.2,20.0,0
@@ -607,7 +607,7 @@ hawaii,Development,0.8,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zon
 hawaii,Development,0.9,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 1,0.0,0.02,0.05,0.32,5.0,0
 hawaii,Development,1.0,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 1,0.0,0.02,0.05,0.32,5.0,0
 hawaii,Fish,0.1,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 1,0.0,0.02,0.0525,0.32,5.0,0
-hawaii,Fish,0.2,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 1,0.0,0.02,0.0625,0.32,6.0,0
+hawaii,Fish,0.2,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 1,0.0,0.02,0.0525,0.32,5.0,0
 hawaii,Fish,0.3,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 1,0.0,0.01,0.02,0.03,2.0,0
 hawaii,Fish,0.4,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 1,0.0,0.01,0.02,0.03,2.0,0
 hawaii,Fish,0.5,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 1,0.0,0.01,0.02,0.03,2.0,0
@@ -638,7 +638,7 @@ hawaii,Development,0.8,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zon
 hawaii,Development,0.9,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 2,0.0,0.02,0.05,0.32,5.0,0
 hawaii,Development,1.0,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 2,0.0,0.02,0.05,0.32,5.0,0
 hawaii,Fish,0.1,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 2,0.0,0.02,0.0525,0.32,5.0,0
-hawaii,Fish,0.2,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 2,0.0,0.02,0.0625,0.32,6.0,0
+hawaii,Fish,0.2,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 2,0.0,0.02,0.0525,0.32,5.0,0
 hawaii,Fish,0.3,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 2,0.0,0.01,0.02,0.03,2.0,0
 hawaii,Fish,0.4,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 2,0.0,0.01,0.02,0.03,2.0,0
 hawaii,Fish,0.5,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 2,0.0,0.01,0.02,0.03,2.0,0
@@ -652,66 +652,66 @@ hawaii,Turbidity,0.4,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 
 hawaii,Turbidity,0.5,hawaii_Hanamaulu Bay & Ahukini Recreational Pier FMA: Zone 2,0.0,0.02,0.2,0.2,20.0,0
 hawaii,Coral size,5.0,hawaii_Hanauma Bay MLCD,0.0,0.0,0.0,0.0,0.0,0
 hawaii,Coral size,15.0,hawaii_Hanauma Bay MLCD,0.0,0.0,0.0,0.0,0.0,0
-hawaii,Coral size,25.0,hawaii_Hanauma Bay MLCD,0.0,0.0,0.0,0.03,0.0,0
-hawaii,Coral size,35.0,hawaii_Hanauma Bay MLCD,0.0,0.0,0.0,0.0309999999999999,0.0,0
-hawaii,Coral size,45.0,hawaii_Hanauma Bay MLCD,0.0,0.0,0.01,0.05,1.0,0
-hawaii,Coral size,55.0,hawaii_Hanauma Bay MLCD,0.0,0.0,0.01,0.0509999999999999,1.0,0
-hawaii,Coral size,65.0,hawaii_Hanauma Bay MLCD,0.0,0.01,0.02,0.07,2.0,0
-hawaii,Development,0.0,hawaii_Hanauma Bay MLCD,0.0,0.01,0.03,0.08,3.0,0
-hawaii,Development,0.1,hawaii_Hanauma Bay MLCD,0.0,0.01,0.03,0.0709999999999999,3.0,0
-hawaii,Development,0.2,hawaii_Hanauma Bay MLCD,0.0,0.02,0.05,0.28,5.0,0
-hawaii,Development,0.3,hawaii_Hanauma Bay MLCD,0.0,0.02,0.05,0.28,5.0,0
+hawaii,Coral size,25.0,hawaii_Hanauma Bay MLCD,0.0,0.0,0.01,0.06,1.0,0
+hawaii,Coral size,35.0,hawaii_Hanauma Bay MLCD,0.0,0.0,0.01,0.07,1.0,0
+hawaii,Coral size,45.0,hawaii_Hanauma Bay MLCD,0.0,0.0,0.01,0.08,1.0,0
+hawaii,Coral size,55.0,hawaii_Hanauma Bay MLCD,0.0,0.0,0.01,0.0909999999999999,1.0,0
+hawaii,Coral size,65.0,hawaii_Hanauma Bay MLCD,0.0,0.01,0.03,0.1,3.0,0
+hawaii,Development,0.0,hawaii_Hanauma Bay MLCD,0.0,0.01,0.03,0.1,3.0,0
+hawaii,Development,0.1,hawaii_Hanauma Bay MLCD,0.0,0.01,0.03,0.1,3.0,0
+hawaii,Development,0.2,hawaii_Hanauma Bay MLCD,0.0,0.02,0.06,0.28,6.0,0
+hawaii,Development,0.3,hawaii_Hanauma Bay MLCD,0.0,0.02,0.07,0.28,7.0,0
 hawaii,Development,0.4,hawaii_Hanauma Bay MLCD,0.0,0.02,0.05,0.28,5.0,0
 hawaii,Development,0.5,hawaii_Hanauma Bay MLCD,0.0,0.02,0.05,0.2809999999999999,5.0,0
 hawaii,Development,0.6,hawaii_Hanauma Bay MLCD,0.0,0.02,0.05,0.2809999999999999,5.0,0
-hawaii,Development,0.7,hawaii_Hanauma Bay MLCD,0.0,0.02,0.0425,0.28,4.0,0
-hawaii,Development,0.8,hawaii_Hanauma Bay MLCD,0.0,0.02,0.0425,0.28,4.0,0
-hawaii,Development,0.9,hawaii_Hanauma Bay MLCD,0.0,0.02,0.0425,0.28,4.0,0
-hawaii,Development,1.0,hawaii_Hanauma Bay MLCD,0.0,0.02,0.0425,0.28,4.0,0
-hawaii,Fish,0.1,hawaii_Hanauma Bay MLCD,0.0,0.02,0.0425,0.2709999999999999,4.0,0
-hawaii,Fish,0.2,hawaii_Hanauma Bay MLCD,0.0,0.02,0.04,0.2709999999999999,4.0,0
-hawaii,Fish,0.3,hawaii_Hanauma Bay MLCD,0.0,0.01,0.02,0.0309999999999999,2.0,0
-hawaii,Fish,0.4,hawaii_Hanauma Bay MLCD,0.0,0.01,0.02,0.04,2.0,0
-hawaii,Fish,0.5,hawaii_Hanauma Bay MLCD,0.0,0.01,0.02,0.04,2.0,0
-hawaii,Fish,0.6,hawaii_Hanauma Bay MLCD,0.0,0.01,0.02,0.04,2.0,0
-hawaii,Fish,0.7,hawaii_Hanauma Bay MLCD,0.0,0.01,0.02,0.04,2.0,0
-hawaii,Turbidity,0.0,hawaii_Hanauma Bay MLCD,0.0,0.01,0.02,0.04,2.0,0
-hawaii,Turbidity,0.1,hawaii_Hanauma Bay MLCD,0.0,0.01,0.02,0.04,2.0,0
+hawaii,Development,0.7,hawaii_Hanauma Bay MLCD,0.0,0.02,0.05,0.28,5.0,0
+hawaii,Development,0.8,hawaii_Hanauma Bay MLCD,0.0,0.02,0.05,0.28,5.0,0
+hawaii,Development,0.9,hawaii_Hanauma Bay MLCD,0.0,0.02,0.05,0.28,5.0,0
+hawaii,Development,1.0,hawaii_Hanauma Bay MLCD,0.0,0.02,0.05,0.28,5.0,0
+hawaii,Fish,0.1,hawaii_Hanauma Bay MLCD,0.0,0.02,0.05,0.2709999999999999,5.0,0
+hawaii,Fish,0.2,hawaii_Hanauma Bay MLCD,0.0,0.02,0.05,0.2709999999999999,5.0,0
+hawaii,Fish,0.3,hawaii_Hanauma Bay MLCD,0.0,0.02,0.03,0.06,3.0,0
+hawaii,Fish,0.4,hawaii_Hanauma Bay MLCD,0.0,0.02,0.03,0.06,3.0,0
+hawaii,Fish,0.5,hawaii_Hanauma Bay MLCD,0.0,0.02,0.03,0.06,3.0,0
+hawaii,Fish,0.6,hawaii_Hanauma Bay MLCD,0.0,0.02,0.03,0.06,3.0,0
+hawaii,Fish,0.7,hawaii_Hanauma Bay MLCD,0.0,0.02,0.03,0.06,3.0,0
+hawaii,Turbidity,0.0,hawaii_Hanauma Bay MLCD,0.0,0.02,0.03,0.06,3.0,0
+hawaii,Turbidity,0.1,hawaii_Hanauma Bay MLCD,0.0,0.02,0.03,0.06,3.0,0
 hawaii,Turbidity,0.2,hawaii_Hanauma Bay MLCD,0.0,0.02,0.2,0.2,20.0,0
 hawaii,Turbidity,0.3,hawaii_Hanauma Bay MLCD,0.0,0.02,0.2,0.2,20.0,0
 hawaii,Turbidity,0.4,hawaii_Hanauma Bay MLCD,0.0,0.02,0.2,0.2,20.0,0
 hawaii,Turbidity,0.5,hawaii_Hanauma Bay MLCD,0.0,0.02,0.2,0.2,20.0,0
 hawaii,Coral size,5.0,"hawaii_Hilo Harbor, Wailoa River & Wailuku River",3.0,0.01,0.03,0.05,0.0,0
-hawaii,Coral size,15.0,"hawaii_Hilo Harbor, Wailoa River & Wailuku River",3.0,0.02,0.03,0.0509999999999999,0.0,0
-hawaii,Coral size,25.0,"hawaii_Hilo Harbor, Wailoa River & Wailuku River",3.0,0.055,0.33,0.45,30.0,0
-hawaii,Coral size,35.0,"hawaii_Hilo Harbor, Wailoa River & Wailuku River",3.0,0.21,0.27,0.35,24.0,0
-hawaii,Coral size,45.0,"hawaii_Hilo Harbor, Wailoa River & Wailuku River",3.0,0.25,0.27,0.35,24.0,0
-hawaii,Coral size,55.0,"hawaii_Hilo Harbor, Wailoa River & Wailuku River",3.0,0.25,0.27,0.35,24.0,0
-hawaii,Coral size,65.0,"hawaii_Hilo Harbor, Wailoa River & Wailuku River",3.0,0.25,0.27,0.35,24.0,0
-hawaii,Development,0.0,"hawaii_Hilo Harbor, Wailoa River & Wailuku River",3.0,0.98,0.9825,0.99,95.0,0
-hawaii,Development,0.1,"hawaii_Hilo Harbor, Wailoa River & Wailuku River",3.0,0.74,0.97,0.99,94.0,0
-hawaii,Development,0.2,"hawaii_Hilo Harbor, Wailoa River & Wailuku River",3.0,0.32,0.35,0.35,32.0,0
-hawaii,Development,0.3,"hawaii_Hilo Harbor, Wailoa River & Wailuku River",3.0,0.31,0.35,0.35,32.0,0
-hawaii,Development,0.4,"hawaii_Hilo Harbor, Wailoa River & Wailuku River",3.0,0.31,0.35,0.35,32.0,0
-hawaii,Development,0.5,"hawaii_Hilo Harbor, Wailoa River & Wailuku River",3.0,0.31,0.35,0.35,32.0,0
-hawaii,Development,0.6,"hawaii_Hilo Harbor, Wailoa River & Wailuku River",3.0,0.25,0.27,0.35,24.0,0
-hawaii,Development,0.7,"hawaii_Hilo Harbor, Wailoa River & Wailuku River",3.0,0.25,0.27,0.35,24.0,0
-hawaii,Development,0.8,"hawaii_Hilo Harbor, Wailoa River & Wailuku River",3.0,0.25,0.27,0.35,24.0,0
-hawaii,Development,0.9,"hawaii_Hilo Harbor, Wailoa River & Wailuku River",3.0,0.25,0.27,0.35,24.0,0
-hawaii,Development,1.0,"hawaii_Hilo Harbor, Wailoa River & Wailuku River",3.0,0.25,0.27,0.35,24.0,0
-hawaii,Fish,0.1,"hawaii_Hilo Harbor, Wailoa River & Wailuku River",3.0,0.115,0.27,0.35,24.0,0
-hawaii,Fish,0.2,"hawaii_Hilo Harbor, Wailoa River & Wailuku River",3.0,0.25,0.27,0.35,24.0,0
-hawaii,Fish,0.3,"hawaii_Hilo Harbor, Wailoa River & Wailuku River",3.0,0.06,0.26,0.27,23.0,0
-hawaii,Fish,0.4,"hawaii_Hilo Harbor, Wailoa River & Wailuku River",3.0,0.06,0.25,0.26,22.0,0
-hawaii,Fish,0.5,"hawaii_Hilo Harbor, Wailoa River & Wailuku River",3.0,0.06,0.25,0.26,22.0,0
-hawaii,Fish,0.6,"hawaii_Hilo Harbor, Wailoa River & Wailuku River",3.0,0.06,0.25,0.26,22.0,0
-hawaii,Fish,0.7,"hawaii_Hilo Harbor, Wailoa River & Wailuku River",3.0,0.06,0.25,0.26,22.0,0
-hawaii,Turbidity,0.0,"hawaii_Hilo Harbor, Wailoa River & Wailuku River",3.0,0.065,0.25,0.3029999999999998,22.0,0
-hawaii,Turbidity,0.1,"hawaii_Hilo Harbor, Wailoa River & Wailuku River",3.0,0.06,0.25,0.26,22.0,0
-hawaii,Turbidity,0.2,"hawaii_Hilo Harbor, Wailoa River & Wailuku River",3.0,0.06,0.25,0.26,22.0,0
-hawaii,Turbidity,0.3,"hawaii_Hilo Harbor, Wailoa River & Wailuku River",3.0,0.06,0.25,0.26,22.0,0
-hawaii,Turbidity,0.4,"hawaii_Hilo Harbor, Wailoa River & Wailuku River",3.0,0.06,0.25,0.26,22.0,0
-hawaii,Turbidity,0.5,"hawaii_Hilo Harbor, Wailoa River & Wailuku River",3.0,0.06,0.25,0.26,22.0,0
+hawaii,Coral size,15.0,"hawaii_Hilo Harbor, Wailoa River & Wailuku River",3.0,0.01,0.03,0.06,0.0,0
+hawaii,Coral size,25.0,"hawaii_Hilo Harbor, Wailoa River & Wailuku River",3.0,0.06,0.2,0.3409999999999999,17.0,0
+hawaii,Coral size,35.0,"hawaii_Hilo Harbor, Wailoa River & Wailuku River",3.0,0.07,0.21,0.32,18.0,0
+hawaii,Coral size,45.0,"hawaii_Hilo Harbor, Wailoa River & Wailuku River",3.0,0.07,0.24,0.32,21.0,0
+hawaii,Coral size,55.0,"hawaii_Hilo Harbor, Wailoa River & Wailuku River",3.0,0.07,0.24,0.32,21.0,0
+hawaii,Coral size,65.0,"hawaii_Hilo Harbor, Wailoa River & Wailuku River",3.0,0.07,0.24,0.32,21.0,0
+hawaii,Development,0.0,"hawaii_Hilo Harbor, Wailoa River & Wailuku River",3.0,0.89,0.98,0.99,95.0,0
+hawaii,Development,0.1,"hawaii_Hilo Harbor, Wailoa River & Wailuku River",3.0,0.2,0.89,0.99,86.0,0
+hawaii,Development,0.2,"hawaii_Hilo Harbor, Wailoa River & Wailuku River",3.0,0.07,0.28,0.35,25.0,0
+hawaii,Development,0.3,"hawaii_Hilo Harbor, Wailoa River & Wailuku River",3.0,0.07,0.27,0.35,24.0,0
+hawaii,Development,0.4,"hawaii_Hilo Harbor, Wailoa River & Wailuku River",3.0,0.07,0.27,0.35,24.0,0
+hawaii,Development,0.5,"hawaii_Hilo Harbor, Wailoa River & Wailuku River",3.0,0.07,0.3025,0.35,27.0,0
+hawaii,Development,0.6,"hawaii_Hilo Harbor, Wailoa River & Wailuku River",3.0,0.07,0.24,0.32,21.0,0
+hawaii,Development,0.7,"hawaii_Hilo Harbor, Wailoa River & Wailuku River",3.0,0.07,0.24,0.32,21.0,0
+hawaii,Development,0.8,"hawaii_Hilo Harbor, Wailoa River & Wailuku River",3.0,0.07,0.24,0.32,21.0,0
+hawaii,Development,0.9,"hawaii_Hilo Harbor, Wailoa River & Wailuku River",3.0,0.07,0.24,0.32,21.0,0
+hawaii,Development,1.0,"hawaii_Hilo Harbor, Wailoa River & Wailuku River",3.0,0.07,0.24,0.32,21.0,0
+hawaii,Fish,0.1,"hawaii_Hilo Harbor, Wailoa River & Wailuku River",3.0,0.07,0.2,0.34,17.0,0
+hawaii,Fish,0.2,"hawaii_Hilo Harbor, Wailoa River & Wailuku River",3.0,0.07,0.21,0.32,18.0,0
+hawaii,Fish,0.3,"hawaii_Hilo Harbor, Wailoa River & Wailuku River",3.0,0.05,0.2,0.25,17.0,0
+hawaii,Fish,0.4,"hawaii_Hilo Harbor, Wailoa River & Wailuku River",3.0,0.05,0.2,0.24,17.0,0
+hawaii,Fish,0.5,"hawaii_Hilo Harbor, Wailoa River & Wailuku River",3.0,0.05,0.2,0.24,17.0,0
+hawaii,Fish,0.6,"hawaii_Hilo Harbor, Wailoa River & Wailuku River",3.0,0.05,0.2,0.24,17.0,0
+hawaii,Fish,0.7,"hawaii_Hilo Harbor, Wailoa River & Wailuku River",3.0,0.05,0.2,0.24,17.0,0
+hawaii,Turbidity,0.0,"hawaii_Hilo Harbor, Wailoa River & Wailuku River",3.0,0.03,0.08,0.24,5.0,0
+hawaii,Turbidity,0.1,"hawaii_Hilo Harbor, Wailoa River & Wailuku River",3.0,0.03,0.08,0.25,5.0,0
+hawaii,Turbidity,0.2,"hawaii_Hilo Harbor, Wailoa River & Wailuku River",3.0,0.05,0.2,0.25,17.0,0
+hawaii,Turbidity,0.3,"hawaii_Hilo Harbor, Wailoa River & Wailuku River",3.0,0.05,0.2,0.25,17.0,0
+hawaii,Turbidity,0.4,"hawaii_Hilo Harbor, Wailoa River & Wailuku River",3.0,0.05,0.2,0.24,17.0,0
+hawaii,Turbidity,0.5,"hawaii_Hilo Harbor, Wailoa River & Wailuku River",3.0,0.05,0.2,0.24,17.0,0
 hawaii,Coral size,5.0,hawaii_Honolua-Mokuleia Bay MLCD,0.0,0.0,0.0,0.0,0.0,0
 hawaii,Coral size,15.0,hawaii_Honolua-Mokuleia Bay MLCD,0.0,0.0,0.0,0.0,0.0,0
 hawaii,Coral size,25.0,hawaii_Honolua-Mokuleia Bay MLCD,0.0,0.0,0.0325,0.5409999999999999,3.0,0
@@ -745,22 +745,22 @@ hawaii,Turbidity,0.4,hawaii_Honolua-Mokuleia Bay MLCD,0.0,0.02,0.2,0.2,20.0,0
 hawaii,Turbidity,0.5,hawaii_Honolua-Mokuleia Bay MLCD,0.0,0.02,0.2,0.2,20.0,0
 hawaii,Coral size,5.0,hawaii_Honolulu Harbor,0.0,0.0,0.0,0.0,0.0,0
 hawaii,Coral size,15.0,hawaii_Honolulu Harbor,0.0,0.0,0.0,0.0,0.0,0
-hawaii,Coral size,25.0,hawaii_Honolulu Harbor,0.0,0.0,0.0025,0.04,0.0,0
-hawaii,Coral size,35.0,hawaii_Honolulu Harbor,0.0,0.0,0.0,0.04,0.0,0
-hawaii,Coral size,45.0,hawaii_Honolulu Harbor,0.0,0.0,0.01,0.0409999999999999,1.0,0
-hawaii,Coral size,55.0,hawaii_Honolulu Harbor,0.0,0.0,0.01,0.05,1.0,0
-hawaii,Coral size,65.0,hawaii_Honolulu Harbor,0.0,0.0,0.02,0.07,2.0,0
-hawaii,Development,0.0,hawaii_Honolulu Harbor,0.0,0.01,0.03,0.2289999999999983,3.0,0
-hawaii,Development,0.1,hawaii_Honolulu Harbor,0.0,0.0,0.02,0.07,2.0,0
-hawaii,Development,0.2,hawaii_Honolulu Harbor,0.0,0.02,0.04,0.2009999999999999,4.0,0
+hawaii,Coral size,25.0,hawaii_Honolulu Harbor,0.0,0.0,0.0,0.02,0.0,0
+hawaii,Coral size,35.0,hawaii_Honolulu Harbor,0.0,0.0,0.0,0.0209999999999999,0.0,0
+hawaii,Coral size,45.0,hawaii_Honolulu Harbor,0.0,0.0,0.0,0.03,0.0,0
+hawaii,Coral size,55.0,hawaii_Honolulu Harbor,0.0,0.0,0.0,0.04,0.0,0
+hawaii,Coral size,65.0,hawaii_Honolulu Harbor,0.0,0.0,0.02,0.05,2.0,0
+hawaii,Development,0.0,hawaii_Honolulu Harbor,0.0,0.0,0.02,0.08,2.0,0
+hawaii,Development,0.1,hawaii_Honolulu Harbor,0.0,0.0,0.02,0.0509999999999999,2.0,0
+hawaii,Development,0.2,hawaii_Honolulu Harbor,0.0,0.02,0.03,0.2009999999999999,3.0,0
 hawaii,Development,0.3,hawaii_Honolulu Harbor,0.0,0.02,0.04,0.21,4.0,0
-hawaii,Development,0.4,hawaii_Honolulu Harbor,0.0,0.02,0.0325,0.2009999999999999,3.0,0
-hawaii,Development,0.5,hawaii_Honolulu Harbor,0.0,0.02,0.0325,0.2009999999999999,3.0,0
-hawaii,Development,0.6,hawaii_Honolulu Harbor,0.0,0.02,0.0325,0.2009999999999999,3.0,0
-hawaii,Development,0.7,hawaii_Honolulu Harbor,0.0,0.02,0.0325,0.2009999999999999,3.0,0
-hawaii,Development,0.8,hawaii_Honolulu Harbor,0.0,0.02,0.0325,0.2009999999999999,3.0,0
-hawaii,Development,0.9,hawaii_Honolulu Harbor,0.0,0.02,0.0325,0.2009999999999999,3.0,0
-hawaii,Development,1.0,hawaii_Honolulu Harbor,0.0,0.02,0.0325,0.2009999999999999,3.0,0
+hawaii,Development,0.4,hawaii_Honolulu Harbor,0.0,0.02,0.03,0.21,3.0,0
+hawaii,Development,0.5,hawaii_Honolulu Harbor,0.0,0.02,0.03,0.21,3.0,0
+hawaii,Development,0.6,hawaii_Honolulu Harbor,0.0,0.02,0.03,0.21,3.0,0
+hawaii,Development,0.7,hawaii_Honolulu Harbor,0.0,0.02,0.03,0.21,3.0,0
+hawaii,Development,0.8,hawaii_Honolulu Harbor,0.0,0.02,0.03,0.21,3.0,0
+hawaii,Development,0.9,hawaii_Honolulu Harbor,0.0,0.02,0.03,0.21,3.0,0
+hawaii,Development,1.0,hawaii_Honolulu Harbor,0.0,0.02,0.03,0.21,3.0,0
 hawaii,Fish,0.1,hawaii_Honolulu Harbor,0.0,0.02,0.04,0.28,4.0,0
 hawaii,Fish,0.2,hawaii_Honolulu Harbor,0.0,0.02,0.04,0.28,4.0,0
 hawaii,Fish,0.3,hawaii_Honolulu Harbor,0.0,0.01,0.02,0.03,2.0,0
@@ -793,7 +793,7 @@ hawaii,Development,0.8,hawaii_Hookena FRA,0.0,0.01,0.02,0.03,2.0,0
 hawaii,Development,0.9,hawaii_Hookena FRA,0.0,0.01,0.02,0.03,2.0,0
 hawaii,Development,1.0,hawaii_Hookena FRA,0.0,0.01,0.02,0.03,2.0,0
 hawaii,Fish,0.1,hawaii_Hookena FRA,0.0,0.02,0.04,0.2709999999999999,4.0,0
-hawaii,Fish,0.2,hawaii_Hookena FRA,0.0,0.02,0.04,0.2709999999999999,4.0,0
+hawaii,Fish,0.2,hawaii_Hookena FRA,0.0,0.02,0.0325,0.2709999999999999,3.0,0
 hawaii,Fish,0.3,hawaii_Hookena FRA,0.0,0.01,0.02,0.03,2.0,0
 hawaii,Fish,0.4,hawaii_Hookena FRA,0.0,0.01,0.02,0.03,2.0,0
 hawaii,Fish,0.5,hawaii_Hookena FRA,0.0,0.01,0.02,0.03,2.0,0
@@ -807,30 +807,30 @@ hawaii,Turbidity,0.4,hawaii_Hookena FRA,0.0,0.02,0.2,0.2,20.0,0
 hawaii,Turbidity,0.5,hawaii_Hookena FRA,0.0,0.02,0.2,0.2,20.0,0
 hawaii,Coral size,5.0,hawaii_Ka Lae (South Pt) (BRFA M),0.0,0.0,0.2,0.2,20.0,0
 hawaii,Coral size,15.0,hawaii_Ka Lae (South Pt) (BRFA M),0.0,0.0,0.0,0.0,0.0,0
-hawaii,Coral size,25.0,hawaii_Ka Lae (South Pt) (BRFA M),0.0,0.01,0.04,0.07,4.0,0
-hawaii,Coral size,35.0,hawaii_Ka Lae (South Pt) (BRFA M),0.0,0.01,0.04125,0.1909999999999999,4.0,0
-hawaii,Coral size,45.0,hawaii_Ka Lae (South Pt) (BRFA M),0.0,0.01,0.05,0.25699999999999984,5.0,0
-hawaii,Coral size,55.0,hawaii_Ka Lae (South Pt) (BRFA M),0.0,0.01,0.045,0.2339999999999998,4.5,0
-hawaii,Coral size,65.0,hawaii_Ka Lae (South Pt) (BRFA M),0.0,0.02,0.09,0.4909999999999999,9.0,0
-hawaii,Development,0.0,hawaii_Ka Lae (South Pt) (BRFA M),0.0,0.02,0.08625,0.5049999999999997,8.5,0
-hawaii,Development,0.1,hawaii_Ka Lae (South Pt) (BRFA M),0.0,0.0475,0.26,0.4009999999999999,26.0,0
-hawaii,Development,0.2,hawaii_Ka Lae (South Pt) (BRFA M),0.0,0.08,0.16999999999999998,0.4149999999999991,17.0,0
-hawaii,Development,0.3,hawaii_Ka Lae (South Pt) (BRFA M),0.0,0.08,0.16999999999999998,0.4149999999999991,17.0,0
-hawaii,Development,0.4,hawaii_Ka Lae (South Pt) (BRFA M),0.0,0.08,0.16999999999999998,0.4149999999999991,17.0,0
-hawaii,Development,0.5,hawaii_Ka Lae (South Pt) (BRFA M),0.0,0.08,0.16999999999999998,0.4149999999999991,17.0,0
-hawaii,Development,0.6,hawaii_Ka Lae (South Pt) (BRFA M),0.0,0.08,0.16999999999999998,0.4149999999999991,17.0,0
-hawaii,Development,0.7,hawaii_Ka Lae (South Pt) (BRFA M),0.0,0.08,0.16999999999999998,0.4149999999999991,17.0,0
-hawaii,Development,0.8,hawaii_Ka Lae (South Pt) (BRFA M),0.0,0.08,0.16999999999999998,0.4149999999999991,17.0,0
-hawaii,Development,0.9,hawaii_Ka Lae (South Pt) (BRFA M),0.0,0.08,0.16999999999999998,0.4149999999999991,17.0,0
-hawaii,Development,1.0,hawaii_Ka Lae (South Pt) (BRFA M),0.0,0.08,0.16999999999999998,0.4149999999999991,17.0,0
-hawaii,Fish,0.1,hawaii_Ka Lae (South Pt) (BRFA M),0.0,0.16749999999999998,0.32,0.47,32.0,0
-hawaii,Fish,0.2,hawaii_Ka Lae (South Pt) (BRFA M),0.0,0.22,0.32,0.4709999999999999,32.0,0
-hawaii,Fish,0.3,hawaii_Ka Lae (South Pt) (BRFA M),0.0,0.075,0.23,0.48,23.0,0
-hawaii,Fish,0.4,hawaii_Ka Lae (South Pt) (BRFA M),0.0,0.08,0.16999999999999998,0.4149999999999991,17.0,0
-hawaii,Fish,0.5,hawaii_Ka Lae (South Pt) (BRFA M),0.0,0.08,0.16999999999999998,0.4149999999999991,17.0,0
-hawaii,Fish,0.6,hawaii_Ka Lae (South Pt) (BRFA M),0.0,0.08,0.16999999999999998,0.4149999999999991,17.0,0
-hawaii,Fish,0.7,hawaii_Ka Lae (South Pt) (BRFA M),0.0,0.08,0.16999999999999998,0.4149999999999991,17.0,0
-hawaii,Turbidity,0.0,hawaii_Ka Lae (South Pt) (BRFA M),0.0,0.08,0.16999999999999998,0.4149999999999991,17.0,0
+hawaii,Coral size,25.0,hawaii_Ka Lae (South Pt) (BRFA M),0.0,0.01,0.036250000000000004,0.07,3.5,0
+hawaii,Coral size,35.0,hawaii_Ka Lae (South Pt) (BRFA M),0.0,0.01,0.04,0.17249999999999985,4.0,0
+hawaii,Coral size,45.0,hawaii_Ka Lae (South Pt) (BRFA M),0.0,0.01,0.05,0.2514999999999999,5.0,0
+hawaii,Coral size,55.0,hawaii_Ka Lae (South Pt) (BRFA M),0.0,0.01,0.045,0.22749999999999984,4.5,0
+hawaii,Coral size,65.0,hawaii_Ka Lae (South Pt) (BRFA M),0.0,0.02,0.08625,0.49,8.5,0
+hawaii,Development,0.0,hawaii_Ka Lae (South Pt) (BRFA M),0.0,0.02,0.09125,0.4909999999999999,9.0,0
+hawaii,Development,0.1,hawaii_Ka Lae (South Pt) (BRFA M),0.0,0.05,0.26,0.39549999999999996,26.0,0
+hawaii,Development,0.2,hawaii_Ka Lae (South Pt) (BRFA M),0.0,0.08,0.12,0.3459999999999997,12.0,0
+hawaii,Development,0.3,hawaii_Ka Lae (South Pt) (BRFA M),0.0,0.08,0.12,0.3459999999999997,12.0,0
+hawaii,Development,0.4,hawaii_Ka Lae (South Pt) (BRFA M),0.0,0.08,0.12,0.3459999999999997,12.0,0
+hawaii,Development,0.5,hawaii_Ka Lae (South Pt) (BRFA M),0.0,0.08,0.12,0.3459999999999997,12.0,0
+hawaii,Development,0.6,hawaii_Ka Lae (South Pt) (BRFA M),0.0,0.08,0.12,0.3459999999999997,12.0,0
+hawaii,Development,0.7,hawaii_Ka Lae (South Pt) (BRFA M),0.0,0.08,0.12,0.3459999999999997,12.0,0
+hawaii,Development,0.8,hawaii_Ka Lae (South Pt) (BRFA M),0.0,0.08,0.12,0.3459999999999997,12.0,0
+hawaii,Development,0.9,hawaii_Ka Lae (South Pt) (BRFA M),0.0,0.08,0.12,0.3459999999999997,12.0,0
+hawaii,Development,1.0,hawaii_Ka Lae (South Pt) (BRFA M),0.0,0.08,0.12,0.3459999999999997,12.0,0
+hawaii,Fish,0.1,hawaii_Ka Lae (South Pt) (BRFA M),0.0,0.14250000000000002,0.32,0.47,32.0,0
+hawaii,Fish,0.2,hawaii_Ka Lae (South Pt) (BRFA M),0.0,0.2125,0.32,0.4709999999999999,32.0,0
+hawaii,Fish,0.3,hawaii_Ka Lae (South Pt) (BRFA M),0.0,0.075,0.23,0.4709999999999999,23.0,0
+hawaii,Fish,0.4,hawaii_Ka Lae (South Pt) (BRFA M),0.0,0.08,0.12,0.3459999999999997,12.0,0
+hawaii,Fish,0.5,hawaii_Ka Lae (South Pt) (BRFA M),0.0,0.08,0.12,0.3459999999999997,12.0,0
+hawaii,Fish,0.6,hawaii_Ka Lae (South Pt) (BRFA M),0.0,0.08,0.12,0.3459999999999997,12.0,0
+hawaii,Fish,0.7,hawaii_Ka Lae (South Pt) (BRFA M),0.0,0.08,0.12,0.3459999999999997,12.0,0
+hawaii,Turbidity,0.0,hawaii_Ka Lae (South Pt) (BRFA M),0.0,0.08,0.12,0.3459999999999997,12.0,0
 hawaii,Turbidity,0.1,hawaii_Ka Lae (South Pt) (BRFA M),0.0,0.08,0.23,0.23,23.0,0
 hawaii,Turbidity,0.2,hawaii_Ka Lae (South Pt) (BRFA M),0.0,0.08,0.23,0.23,23.0,0
 hawaii,Turbidity,0.3,hawaii_Ka Lae (South Pt) (BRFA M),0.0,0.08,0.23,0.23,23.0,0
@@ -838,14 +838,14 @@ hawaii,Turbidity,0.4,hawaii_Ka Lae (South Pt) (BRFA M),0.0,0.06,0.23,0.23,23.0,0
 hawaii,Turbidity,0.5,hawaii_Ka Lae (South Pt) (BRFA M),0.0,0.06,0.23,0.23,23.0,0
 hawaii,Coral size,5.0,hawaii_Kaena Pt (BRFA D),0.0,0.0,0.0,0.0,0.0,0
 hawaii,Coral size,15.0,hawaii_Kaena Pt (BRFA D),0.0,0.0,0.0,0.0,0.0,0
-hawaii,Coral size,25.0,hawaii_Kaena Pt (BRFA D),0.0,0.0,0.0,0.04,0.0,0
-hawaii,Coral size,35.0,hawaii_Kaena Pt (BRFA D),0.0,0.0,0.0,0.0409999999999999,0.0,0
-hawaii,Coral size,45.0,hawaii_Kaena Pt (BRFA D),0.0,0.0,0.01,0.05,1.0,0
-hawaii,Coral size,55.0,hawaii_Kaena Pt (BRFA D),0.0,0.0,0.01,0.05,1.0,0
+hawaii,Coral size,25.0,hawaii_Kaena Pt (BRFA D),0.0,0.0,0.0,0.02,0.0,0
+hawaii,Coral size,35.0,hawaii_Kaena Pt (BRFA D),0.0,0.0,0.0,0.02,0.0,0
+hawaii,Coral size,45.0,hawaii_Kaena Pt (BRFA D),0.0,0.0,0.0,0.03,0.0,0
+hawaii,Coral size,55.0,hawaii_Kaena Pt (BRFA D),0.0,0.0,0.0,0.03,0.0,0
 hawaii,Coral size,65.0,hawaii_Kaena Pt (BRFA D),0.0,0.0,0.02,0.05,2.0,0
-hawaii,Development,0.0,hawaii_Kaena Pt (BRFA D),0.0,0.0,0.02,0.06,2.0,0
+hawaii,Development,0.0,hawaii_Kaena Pt (BRFA D),0.0,0.0,0.02,0.0509999999999999,2.0,0
 hawaii,Development,0.1,hawaii_Kaena Pt (BRFA D),0.0,0.0,0.02,0.05,2.0,0
-hawaii,Development,0.2,hawaii_Kaena Pt (BRFA D),0.0,0.02,0.05,0.2509999999999999,5.0,0
+hawaii,Development,0.2,hawaii_Kaena Pt (BRFA D),0.0,0.02,0.04,0.2509999999999999,4.0,0
 hawaii,Development,0.3,hawaii_Kaena Pt (BRFA D),0.0,0.02,0.05,0.25,5.0,0
 hawaii,Development,0.4,hawaii_Kaena Pt (BRFA D),0.0,0.02,0.04,0.2409999999999999,4.0,0
 hawaii,Development,0.5,hawaii_Kaena Pt (BRFA D),0.0,0.02,0.04,0.2429999999999998,4.0,0
@@ -856,28 +856,28 @@ hawaii,Development,0.9,hawaii_Kaena Pt (BRFA D),0.0,0.02,0.04,0.2429999999999998
 hawaii,Development,1.0,hawaii_Kaena Pt (BRFA D),0.0,0.02,0.04,0.2429999999999998,4.0,0
 hawaii,Fish,0.1,hawaii_Kaena Pt (BRFA D),0.0,0.02,0.04,0.2709999999999999,4.0,0
 hawaii,Fish,0.2,hawaii_Kaena Pt (BRFA D),0.0,0.02,0.04,0.2709999999999999,4.0,0
-hawaii,Fish,0.3,hawaii_Kaena Pt (BRFA D),0.0,0.01,0.02,0.0409999999999999,2.0,0
-hawaii,Fish,0.4,hawaii_Kaena Pt (BRFA D),0.0,0.01,0.02,0.0409999999999999,2.0,0
-hawaii,Fish,0.5,hawaii_Kaena Pt (BRFA D),0.0,0.01,0.02,0.0409999999999999,2.0,0
-hawaii,Fish,0.6,hawaii_Kaena Pt (BRFA D),0.0,0.01,0.02,0.0409999999999999,2.0,0
-hawaii,Fish,0.7,hawaii_Kaena Pt (BRFA D),0.0,0.01,0.02,0.0409999999999999,2.0,0
-hawaii,Turbidity,0.0,hawaii_Kaena Pt (BRFA D),0.0,0.01,0.02,0.0409999999999999,2.0,0
-hawaii,Turbidity,0.1,hawaii_Kaena Pt (BRFA D),0.0,0.01,0.02,0.0409999999999999,2.0,0
+hawaii,Fish,0.3,hawaii_Kaena Pt (BRFA D),0.0,0.01,0.02,0.03,2.0,0
+hawaii,Fish,0.4,hawaii_Kaena Pt (BRFA D),0.0,0.01,0.02,0.03,2.0,0
+hawaii,Fish,0.5,hawaii_Kaena Pt (BRFA D),0.0,0.01,0.02,0.03,2.0,0
+hawaii,Fish,0.6,hawaii_Kaena Pt (BRFA D),0.0,0.01,0.02,0.03,2.0,0
+hawaii,Fish,0.7,hawaii_Kaena Pt (BRFA D),0.0,0.01,0.02,0.03,2.0,0
+hawaii,Turbidity,0.0,hawaii_Kaena Pt (BRFA D),0.0,0.01,0.02,0.03,2.0,0
+hawaii,Turbidity,0.1,hawaii_Kaena Pt (BRFA D),0.0,0.01,0.02,0.03,2.0,0
 hawaii,Turbidity,0.2,hawaii_Kaena Pt (BRFA D),0.0,0.02,0.2,0.2,20.0,0
 hawaii,Turbidity,0.3,hawaii_Kaena Pt (BRFA D),0.0,0.02,0.2,0.2,20.0,0
 hawaii,Turbidity,0.4,hawaii_Kaena Pt (BRFA D),0.0,0.02,0.2,0.2,20.0,0
 hawaii,Turbidity,0.5,hawaii_Kaena Pt (BRFA D),0.0,0.02,0.2,0.2,20.0,0
 hawaii,Coral size,5.0,hawaii_Kahekili Herbivore FMA,0.0,0.0,0.0,0.01,0.0,0
 hawaii,Coral size,15.0,hawaii_Kahekili Herbivore FMA,0.0,0.0,0.0,0.01,0.0,0
-hawaii,Coral size,25.0,hawaii_Kahekili Herbivore FMA,0.0,0.01,0.0775,0.28,8.0,0
-hawaii,Coral size,35.0,hawaii_Kahekili Herbivore FMA,0.0,0.01,0.05,0.28,5.0,0
-hawaii,Coral size,45.0,hawaii_Kahekili Herbivore FMA,0.0,0.01,0.05,0.31,5.0,0
-hawaii,Coral size,55.0,hawaii_Kahekili Herbivore FMA,0.0,0.01,0.05,0.31,5.0,0
+hawaii,Coral size,25.0,hawaii_Kahekili Herbivore FMA,0.0,0.01,0.1,0.28,10.0,0
+hawaii,Coral size,35.0,hawaii_Kahekili Herbivore FMA,0.0,0.01,0.06,0.28,6.0,0
+hawaii,Coral size,45.0,hawaii_Kahekili Herbivore FMA,0.0,0.01,0.06,0.31,6.0,0
+hawaii,Coral size,55.0,hawaii_Kahekili Herbivore FMA,0.0,0.01,0.06,0.31,6.0,0
 hawaii,Coral size,65.0,hawaii_Kahekili Herbivore FMA,0.0,0.02,0.05,0.31,5.0,0
 hawaii,Development,0.0,hawaii_Kahekili Herbivore FMA,0.0,0.02,0.12,0.89,12.0,0
-hawaii,Development,0.1,hawaii_Kahekili Herbivore FMA,0.0,0.01,0.03,0.2,3.0,0
+hawaii,Development,0.1,hawaii_Kahekili Herbivore FMA,0.0,0.0,0.03,0.2,3.0,0
 hawaii,Development,0.2,hawaii_Kahekili Herbivore FMA,0.0,0.02,0.05,0.31,5.0,0
-hawaii,Development,0.3,hawaii_Kahekili Herbivore FMA,0.0,0.02,0.05,0.31,5.0,0
+hawaii,Development,0.3,hawaii_Kahekili Herbivore FMA,0.0,0.02,0.06,0.31,6.0,0
 hawaii,Development,0.4,hawaii_Kahekili Herbivore FMA,0.0,0.02,0.05,0.31,5.0,0
 hawaii,Development,0.5,hawaii_Kahekili Herbivore FMA,0.0,0.02,0.05,0.32,5.0,0
 hawaii,Development,0.6,hawaii_Kahekili Herbivore FMA,0.0,0.02,0.05,0.32,5.0,0
@@ -887,13 +887,13 @@ hawaii,Development,0.9,hawaii_Kahekili Herbivore FMA,0.0,0.02,0.05,0.32,5.0,0
 hawaii,Development,1.0,hawaii_Kahekili Herbivore FMA,0.0,0.02,0.05,0.32,5.0,0
 hawaii,Fish,0.1,hawaii_Kahekili Herbivore FMA,0.0,0.02,0.0775,0.3209999999999999,8.0,0
 hawaii,Fish,0.2,hawaii_Kahekili Herbivore FMA,0.0,0.02,0.0625,0.32,6.0,0
-hawaii,Fish,0.3,hawaii_Kahekili Herbivore FMA,0.0,0.01,0.02,0.0309999999999999,2.0,0
-hawaii,Fish,0.4,hawaii_Kahekili Herbivore FMA,0.0,0.01,0.02,0.04,2.0,0
-hawaii,Fish,0.5,hawaii_Kahekili Herbivore FMA,0.0,0.01,0.02,0.04,2.0,0
-hawaii,Fish,0.6,hawaii_Kahekili Herbivore FMA,0.0,0.01,0.02,0.04,2.0,0
-hawaii,Fish,0.7,hawaii_Kahekili Herbivore FMA,0.0,0.01,0.02,0.04,2.0,0
-hawaii,Turbidity,0.0,hawaii_Kahekili Herbivore FMA,0.0,0.01,0.02,0.04,2.0,0
-hawaii,Turbidity,0.1,hawaii_Kahekili Herbivore FMA,0.0,0.01,0.02,0.04,2.0,0
+hawaii,Fish,0.3,hawaii_Kahekili Herbivore FMA,0.0,0.01,0.02,0.0409999999999999,2.0,0
+hawaii,Fish,0.4,hawaii_Kahekili Herbivore FMA,0.0,0.01,0.02,0.0409999999999999,2.0,0
+hawaii,Fish,0.5,hawaii_Kahekili Herbivore FMA,0.0,0.01,0.02,0.0409999999999999,2.0,0
+hawaii,Fish,0.6,hawaii_Kahekili Herbivore FMA,0.0,0.01,0.02,0.0409999999999999,2.0,0
+hawaii,Fish,0.7,hawaii_Kahekili Herbivore FMA,0.0,0.01,0.02,0.0409999999999999,2.0,0
+hawaii,Turbidity,0.0,hawaii_Kahekili Herbivore FMA,0.0,0.01,0.02,0.0409999999999999,2.0,0
+hawaii,Turbidity,0.1,hawaii_Kahekili Herbivore FMA,0.0,0.01,0.02,0.0409999999999999,2.0,0
 hawaii,Turbidity,0.2,hawaii_Kahekili Herbivore FMA,0.0,0.02,0.2,0.2,20.0,0
 hawaii,Turbidity,0.3,hawaii_Kahekili Herbivore FMA,0.0,0.02,0.2,0.2,20.0,0
 hawaii,Turbidity,0.4,hawaii_Kahekili Herbivore FMA,0.0,0.02,0.2,0.2,20.0,0
@@ -908,7 +908,7 @@ hawaii,Coral size,65.0,hawaii_Kahoolawe Island Reserve: Zone A,0.0,0.0,0.02,0.04
 hawaii,Development,0.0,hawaii_Kahoolawe Island Reserve: Zone A,0.0,0.0,0.02,0.05,2.0,0
 hawaii,Development,0.1,hawaii_Kahoolawe Island Reserve: Zone A,0.0,0.0,0.02,0.0409999999999999,2.0,0
 hawaii,Development,0.2,hawaii_Kahoolawe Island Reserve: Zone A,0.0,0.02,0.04,0.25,4.0,0
-hawaii,Development,0.3,hawaii_Kahoolawe Island Reserve: Zone A,0.0,0.02,0.05,0.2409999999999999,5.0,0
+hawaii,Development,0.3,hawaii_Kahoolawe Island Reserve: Zone A,0.0,0.02,0.0425,0.24,4.0,0
 hawaii,Development,0.4,hawaii_Kahoolawe Island Reserve: Zone A,0.0,0.02,0.03,0.24,3.0,0
 hawaii,Development,0.5,hawaii_Kahoolawe Island Reserve: Zone A,0.0,0.02,0.03,0.24,3.0,0
 hawaii,Development,0.6,hawaii_Kahoolawe Island Reserve: Zone A,0.0,0.02,0.03,0.24,3.0,0
@@ -931,22 +931,22 @@ hawaii,Turbidity,0.4,hawaii_Kahoolawe Island Reserve: Zone A,0.0,0.02,0.2,0.2,20
 hawaii,Turbidity,0.5,hawaii_Kahoolawe Island Reserve: Zone A,0.0,0.02,0.2,0.2,20.0,0
 hawaii,Coral size,5.0,hawaii_Kahoolawe Island Reserve: Zone B,0.0,0.0,0.0,0.0,0.0,0
 hawaii,Coral size,15.0,hawaii_Kahoolawe Island Reserve: Zone B,0.0,0.0,0.0,0.0,0.0,0
-hawaii,Coral size,25.0,hawaii_Kahoolawe Island Reserve: Zone B,0.0,0.0,0.0,0.01,0.0,0
-hawaii,Coral size,35.0,hawaii_Kahoolawe Island Reserve: Zone B,0.0,0.0,0.0,0.01,0.0,0
-hawaii,Coral size,45.0,hawaii_Kahoolawe Island Reserve: Zone B,0.0,0.0,0.0,0.01049999999999995,0.0,0
-hawaii,Coral size,55.0,hawaii_Kahoolawe Island Reserve: Zone B,0.0,0.0,0.0,0.015,0.0,0
-hawaii,Coral size,65.0,hawaii_Kahoolawe Island Reserve: Zone B,0.0,0.0,0.02,0.03549999999999995,2.0,0
-hawaii,Development,0.0,hawaii_Kahoolawe Island Reserve: Zone B,0.0,0.0,0.02,0.04,2.0,0
-hawaii,Development,0.1,hawaii_Kahoolawe Island Reserve: Zone B,0.0,0.0,0.02,0.03549999999999995,2.0,0
-hawaii,Development,0.2,hawaii_Kahoolawe Island Reserve: Zone B,0.0,0.0,0.02,0.04,2.0,0
-hawaii,Development,0.3,hawaii_Kahoolawe Island Reserve: Zone B,0.0,0.01,0.02,0.04,2.0,0
-hawaii,Development,0.4,hawaii_Kahoolawe Island Reserve: Zone B,0.0,0.01,0.02,0.04,2.0,0
-hawaii,Development,0.5,hawaii_Kahoolawe Island Reserve: Zone B,0.0,0.01,0.02,0.04,2.0,0
-hawaii,Development,0.6,hawaii_Kahoolawe Island Reserve: Zone B,0.0,0.01,0.02,0.04,2.0,0
-hawaii,Development,0.7,hawaii_Kahoolawe Island Reserve: Zone B,0.0,0.01,0.02,0.04,2.0,0
-hawaii,Development,0.8,hawaii_Kahoolawe Island Reserve: Zone B,0.0,0.01,0.02,0.04,2.0,0
-hawaii,Development,0.9,hawaii_Kahoolawe Island Reserve: Zone B,0.0,0.01,0.02,0.04,2.0,0
-hawaii,Development,1.0,hawaii_Kahoolawe Island Reserve: Zone B,0.0,0.01,0.02,0.04,2.0,0
+hawaii,Coral size,25.0,hawaii_Kahoolawe Island Reserve: Zone B,0.0,0.0,0.0,0.0,0.0,0
+hawaii,Coral size,35.0,hawaii_Kahoolawe Island Reserve: Zone B,0.0,0.0,0.0,0.0,0.0,0
+hawaii,Coral size,45.0,hawaii_Kahoolawe Island Reserve: Zone B,0.0,0.0,0.0,0.0,0.0,0
+hawaii,Coral size,55.0,hawaii_Kahoolawe Island Reserve: Zone B,0.0,0.0,0.0,0.0,0.0,0
+hawaii,Coral size,65.0,hawaii_Kahoolawe Island Reserve: Zone B,0.0,0.0,0.02,0.03,2.0,0
+hawaii,Development,0.0,hawaii_Kahoolawe Island Reserve: Zone B,0.0,0.0,0.02,0.03,2.0,0
+hawaii,Development,0.1,hawaii_Kahoolawe Island Reserve: Zone B,0.0,0.0,0.02,0.03,2.0,0
+hawaii,Development,0.2,hawaii_Kahoolawe Island Reserve: Zone B,0.0,0.0,0.02,0.03,2.0,0
+hawaii,Development,0.3,hawaii_Kahoolawe Island Reserve: Zone B,0.0,0.01,0.02,0.03,2.0,0
+hawaii,Development,0.4,hawaii_Kahoolawe Island Reserve: Zone B,0.0,0.01,0.02,0.03,2.0,0
+hawaii,Development,0.5,hawaii_Kahoolawe Island Reserve: Zone B,0.0,0.01,0.02,0.03,2.0,0
+hawaii,Development,0.6,hawaii_Kahoolawe Island Reserve: Zone B,0.0,0.01,0.02,0.03,2.0,0
+hawaii,Development,0.7,hawaii_Kahoolawe Island Reserve: Zone B,0.0,0.01,0.02,0.03,2.0,0
+hawaii,Development,0.8,hawaii_Kahoolawe Island Reserve: Zone B,0.0,0.01,0.02,0.03,2.0,0
+hawaii,Development,0.9,hawaii_Kahoolawe Island Reserve: Zone B,0.0,0.01,0.02,0.03,2.0,0
+hawaii,Development,1.0,hawaii_Kahoolawe Island Reserve: Zone B,0.0,0.01,0.02,0.03,2.0,0
 hawaii,Fish,0.1,hawaii_Kahoolawe Island Reserve: Zone B,0.0,0.02,0.04,0.2709999999999999,4.0,0
 hawaii,Fish,0.2,hawaii_Kahoolawe Island Reserve: Zone B,0.0,0.02,0.0325,0.2709999999999999,3.0,0
 hawaii,Fish,0.3,hawaii_Kahoolawe Island Reserve: Zone B,0.0,0.01,0.02,0.03,2.0,0
@@ -962,35 +962,35 @@ hawaii,Turbidity,0.4,hawaii_Kahoolawe Island Reserve: Zone B,0.0,0.02,0.2,0.2,20
 hawaii,Turbidity,0.5,hawaii_Kahoolawe Island Reserve: Zone B,0.0,0.02,0.2,0.2,20.0,0
 hawaii,Coral size,5.0,hawaii_Kahului Harbor FMA,0.0,0.0,0.2,0.2,20.0,0
 hawaii,Coral size,15.0,hawaii_Kahului Harbor FMA,0.0,0.0,0.0,0.0,0.0,0
-hawaii,Coral size,25.0,hawaii_Kahului Harbor FMA,0.0,0.02,0.12,0.84,12.0,0
-hawaii,Coral size,35.0,hawaii_Kahului Harbor FMA,0.0,0.03,0.3,0.84,30.0,0
-hawaii,Coral size,45.0,hawaii_Kahului Harbor FMA,0.0,0.03,0.3,0.84,30.0,0
-hawaii,Coral size,55.0,hawaii_Kahului Harbor FMA,0.0,0.04,0.34,0.84,34.0,0
-hawaii,Coral size,65.0,hawaii_Kahului Harbor FMA,0.0,0.04,0.5974999999999999,0.8609999999999999,60.0,0
-hawaii,Development,0.0,hawaii_Kahului Harbor FMA,0.0,0.055,0.695,0.88,70.0,0
-hawaii,Development,0.1,hawaii_Kahului Harbor FMA,0.0,0.04,0.32,0.6609999999999999,32.0,0
-hawaii,Development,0.2,hawaii_Kahului Harbor FMA,0.0,0.0849999999999999,0.31,0.32,31.0,0
-hawaii,Development,0.3,hawaii_Kahului Harbor FMA,0.0,0.0849999999999999,0.31,0.32,31.0,0
-hawaii,Development,0.4,hawaii_Kahului Harbor FMA,0.0,0.0849999999999999,0.31,0.32,31.0,0
-hawaii,Development,0.5,hawaii_Kahului Harbor FMA,0.0,0.0849999999999999,0.31,0.32,31.0,0
-hawaii,Development,0.6,hawaii_Kahului Harbor FMA,0.0,0.0849999999999999,0.25,0.2609999999999999,25.0,0
-hawaii,Development,0.7,hawaii_Kahului Harbor FMA,0.0,0.0849999999999999,0.25,0.2609999999999999,25.0,0
-hawaii,Development,0.8,hawaii_Kahului Harbor FMA,0.0,0.0849999999999999,0.25,0.2609999999999999,25.0,0
-hawaii,Development,0.9,hawaii_Kahului Harbor FMA,0.0,0.0849999999999999,0.25,0.2609999999999999,25.0,0
-hawaii,Development,1.0,hawaii_Kahului Harbor FMA,0.0,0.0849999999999999,0.25,0.2609999999999999,25.0,0
-hawaii,Fish,0.1,hawaii_Kahului Harbor FMA,0.0,0.26,0.3125,0.35,31.0,0
-hawaii,Fish,0.2,hawaii_Kahului Harbor FMA,0.0,0.26,0.31,0.33,31.0,0
-hawaii,Fish,0.3,hawaii_Kahului Harbor FMA,0.0,0.08,0.26,0.27,26.0,0
-hawaii,Fish,0.4,hawaii_Kahului Harbor FMA,0.0,0.0849999999999999,0.25,0.26,25.0,0
-hawaii,Fish,0.5,hawaii_Kahului Harbor FMA,0.0,0.0849999999999999,0.25,0.26,25.0,0
-hawaii,Fish,0.6,hawaii_Kahului Harbor FMA,0.0,0.0849999999999999,0.25,0.26,25.0,0
-hawaii,Fish,0.7,hawaii_Kahului Harbor FMA,0.0,0.0849999999999999,0.25,0.26,25.0,0
-hawaii,Turbidity,0.0,hawaii_Kahului Harbor FMA,0.0,0.0849999999999999,0.26,0.2809999999999999,26.0,0
-hawaii,Turbidity,0.1,hawaii_Kahului Harbor FMA,0.0,0.0849999999999999,0.25,0.26,25.0,0
-hawaii,Turbidity,0.2,hawaii_Kahului Harbor FMA,0.0,0.0849999999999999,0.26,0.26,26.0,0
-hawaii,Turbidity,0.3,hawaii_Kahului Harbor FMA,0.0,0.08,0.26,0.26,26.0,0
-hawaii,Turbidity,0.4,hawaii_Kahului Harbor FMA,0.0,0.07,0.25,0.26,25.0,0
-hawaii,Turbidity,0.5,hawaii_Kahului Harbor FMA,0.0,0.07,0.25,0.26,25.0,0
+hawaii,Coral size,25.0,hawaii_Kahului Harbor FMA,0.0,0.0,0.01,0.01,1.0,0
+hawaii,Coral size,35.0,hawaii_Kahului Harbor FMA,0.0,0.0,0.0,0.01,0.0,0
+hawaii,Coral size,45.0,hawaii_Kahului Harbor FMA,0.0,0.0,0.0,0.01,0.0,0
+hawaii,Coral size,55.0,hawaii_Kahului Harbor FMA,0.0,0.0,0.0,0.01,0.0,0
+hawaii,Coral size,65.0,hawaii_Kahului Harbor FMA,0.0,0.01,0.02,0.03,2.0,0
+hawaii,Development,0.0,hawaii_Kahului Harbor FMA,0.0,0.01,0.02,0.0409999999999999,2.0,0
+hawaii,Development,0.1,hawaii_Kahului Harbor FMA,0.0,0.01,0.02,0.04,2.0,0
+hawaii,Development,0.2,hawaii_Kahului Harbor FMA,0.0,0.01,0.02,0.04,2.0,0
+hawaii,Development,0.3,hawaii_Kahului Harbor FMA,0.0,0.01,0.02,0.04,2.0,0
+hawaii,Development,0.4,hawaii_Kahului Harbor FMA,0.0,0.01,0.02,0.04,2.0,0
+hawaii,Development,0.5,hawaii_Kahului Harbor FMA,0.0,0.01,0.02,0.04,2.0,0
+hawaii,Development,0.6,hawaii_Kahului Harbor FMA,0.0,0.01,0.02,0.04,2.0,0
+hawaii,Development,0.7,hawaii_Kahului Harbor FMA,0.0,0.01,0.02,0.04,2.0,0
+hawaii,Development,0.8,hawaii_Kahului Harbor FMA,0.0,0.01,0.02,0.04,2.0,0
+hawaii,Development,0.9,hawaii_Kahului Harbor FMA,0.0,0.01,0.02,0.04,2.0,0
+hawaii,Development,1.0,hawaii_Kahului Harbor FMA,0.0,0.01,0.02,0.04,2.0,0
+hawaii,Fish,0.1,hawaii_Kahului Harbor FMA,0.0,0.03,0.31,0.35,31.0,0
+hawaii,Fish,0.2,hawaii_Kahului Harbor FMA,0.0,0.03,0.3,0.33,30.0,0
+hawaii,Fish,0.3,hawaii_Kahului Harbor FMA,0.0,0.01,0.02,0.04,2.0,0
+hawaii,Fish,0.4,hawaii_Kahului Harbor FMA,0.0,0.01,0.02,0.04,2.0,0
+hawaii,Fish,0.5,hawaii_Kahului Harbor FMA,0.0,0.01,0.02,0.04,2.0,0
+hawaii,Fish,0.6,hawaii_Kahului Harbor FMA,0.0,0.01,0.02,0.04,2.0,0
+hawaii,Fish,0.7,hawaii_Kahului Harbor FMA,0.0,0.01,0.02,0.04,2.0,0
+hawaii,Turbidity,0.0,hawaii_Kahului Harbor FMA,0.0,0.015,0.02,0.04,2.0,0
+hawaii,Turbidity,0.1,hawaii_Kahului Harbor FMA,0.0,0.01,0.02,0.04,2.0,0
+hawaii,Turbidity,0.2,hawaii_Kahului Harbor FMA,0.0,0.02,0.2,0.2,20.0,0
+hawaii,Turbidity,0.3,hawaii_Kahului Harbor FMA,0.0,0.02,0.2,0.2,20.0,0
+hawaii,Turbidity,0.4,hawaii_Kahului Harbor FMA,0.0,0.02,0.2,0.2,20.0,0
+hawaii,Turbidity,0.5,hawaii_Kahului Harbor FMA,0.0,0.02,0.2,0.2,20.0,0
 hawaii,Coral size,5.0,hawaii_Kailua Bay FMA,0.0,0.0,0.2,0.2,20.0,0
 hawaii,Coral size,15.0,hawaii_Kailua Bay FMA,0.0,0.0,0.0,0.0,0.0,0
 hawaii,Coral size,25.0,hawaii_Kailua Bay FMA,0.0,0.0,0.0,0.0,0.0,0
@@ -1086,35 +1086,35 @@ hawaii,Turbidity,0.4,hawaii_Kailua-Keauhou FRA,0.0,0.02,0.2,0.2,20.0,0
 hawaii,Turbidity,0.5,hawaii_Kailua-Keauhou FRA,0.0,0.02,0.2,0.2,20.0,0
 hawaii,Coral size,5.0,hawaii_Kalaupapa (BRFA G),0.0,0.0,0.0,0.0,0.0,0
 hawaii,Coral size,15.0,hawaii_Kalaupapa (BRFA G),0.0,0.0,0.0,0.0,0.0,0
-hawaii,Coral size,25.0,hawaii_Kalaupapa (BRFA G),0.0,0.0,0.05,0.1,5.0,0
-hawaii,Coral size,35.0,hawaii_Kalaupapa (BRFA G),0.0,0.0,0.0625,0.2509999999999999,6.0,0
-hawaii,Coral size,45.0,hawaii_Kalaupapa (BRFA G),0.0,0.0,0.07,0.2829999999999998,7.0,0
-hawaii,Coral size,55.0,hawaii_Kalaupapa (BRFA G),0.0,0.0,0.07,0.3649999999999997,7.0,0
-hawaii,Coral size,65.0,hawaii_Kalaupapa (BRFA G),0.0,0.01,0.0725,0.47,7.0,0
-hawaii,Development,0.0,hawaii_Kalaupapa (BRFA G),0.0,0.02,0.0825,0.88,8.0,0
-hawaii,Development,0.1,hawaii_Kalaupapa (BRFA G),0.0,0.01,0.07,0.4309999999999999,7.0,0
-hawaii,Development,0.2,hawaii_Kalaupapa (BRFA G),0.0,0.05,0.23,0.3109999999999999,23.0,0
-hawaii,Development,0.3,hawaii_Kalaupapa (BRFA G),0.0,0.05,0.23,0.3109999999999999,23.0,0
-hawaii,Development,0.4,hawaii_Kalaupapa (BRFA G),0.0,0.04,0.23,0.32,23.0,0
-hawaii,Development,0.5,hawaii_Kalaupapa (BRFA G),0.0,0.04,0.23,0.32,23.0,0
-hawaii,Development,0.6,hawaii_Kalaupapa (BRFA G),0.0,0.04,0.22,0.32,22.0,0
-hawaii,Development,0.7,hawaii_Kalaupapa (BRFA G),0.0,0.04,0.22,0.32,22.0,0
-hawaii,Development,0.8,hawaii_Kalaupapa (BRFA G),0.0,0.04,0.22,0.32,22.0,0
-hawaii,Development,0.9,hawaii_Kalaupapa (BRFA G),0.0,0.04,0.22,0.32,22.0,0
-hawaii,Development,1.0,hawaii_Kalaupapa (BRFA G),0.0,0.04,0.22,0.32,22.0,0
-hawaii,Fish,0.1,hawaii_Kalaupapa (BRFA G),0.0,0.04,0.2125,0.32,21.0,0
-hawaii,Fish,0.2,hawaii_Kalaupapa (BRFA G),0.0,0.04,0.2225,0.32,22.0,0
-hawaii,Fish,0.3,hawaii_Kalaupapa (BRFA G),0.0,0.03,0.0725,0.23,7.0,0
-hawaii,Fish,0.4,hawaii_Kalaupapa (BRFA G),0.0,0.03,0.0725,0.22,7.0,0
-hawaii,Fish,0.5,hawaii_Kalaupapa (BRFA G),0.0,0.03,0.0725,0.22,7.0,0
-hawaii,Fish,0.6,hawaii_Kalaupapa (BRFA G),0.0,0.03,0.0725,0.22,7.0,0
-hawaii,Fish,0.7,hawaii_Kalaupapa (BRFA G),0.0,0.03,0.0725,0.22,7.0,0
-hawaii,Turbidity,0.0,hawaii_Kalaupapa (BRFA G),0.0,0.03,0.0725,0.22,7.0,0
-hawaii,Turbidity,0.1,hawaii_Kalaupapa (BRFA G),0.0,0.03,0.0725,0.2209999999999999,7.0,0
-hawaii,Turbidity,0.2,hawaii_Kalaupapa (BRFA G),0.0,0.05,0.2,0.2209999999999999,20.0,0
-hawaii,Turbidity,0.3,hawaii_Kalaupapa (BRFA G),0.0,0.05,0.2,0.2209999999999999,20.0,0
-hawaii,Turbidity,0.4,hawaii_Kalaupapa (BRFA G),0.0,0.05,0.2,0.22,20.0,0
-hawaii,Turbidity,0.5,hawaii_Kalaupapa (BRFA G),0.0,0.05,0.2,0.22,20.0,0
+hawaii,Coral size,25.0,hawaii_Kalaupapa (BRFA G),0.0,0.0,0.01,0.0209999999999999,1.0,0
+hawaii,Coral size,35.0,hawaii_Kalaupapa (BRFA G),0.0,0.0,0.01,0.03,1.0,0
+hawaii,Coral size,45.0,hawaii_Kalaupapa (BRFA G),0.0,0.0,0.01,0.0309999999999999,1.0,0
+hawaii,Coral size,55.0,hawaii_Kalaupapa (BRFA G),0.0,0.0,0.01,0.0409999999999999,1.0,0
+hawaii,Coral size,65.0,hawaii_Kalaupapa (BRFA G),0.0,0.01,0.02,0.0609999999999999,2.0,0
+hawaii,Development,0.0,hawaii_Kalaupapa (BRFA G),0.0,0.01,0.03,0.1019999999999999,3.0,0
+hawaii,Development,0.1,hawaii_Kalaupapa (BRFA G),0.0,0.01,0.03,0.0609999999999999,3.0,0
+hawaii,Development,0.2,hawaii_Kalaupapa (BRFA G),0.0,0.02,0.05,0.2509999999999999,5.0,0
+hawaii,Development,0.3,hawaii_Kalaupapa (BRFA G),0.0,0.02,0.05,0.25,5.0,0
+hawaii,Development,0.4,hawaii_Kalaupapa (BRFA G),0.0,0.02,0.0425,0.2409999999999999,4.0,0
+hawaii,Development,0.5,hawaii_Kalaupapa (BRFA G),0.0,0.02,0.0425,0.2429999999999998,4.0,0
+hawaii,Development,0.6,hawaii_Kalaupapa (BRFA G),0.0,0.02,0.0425,0.2429999999999998,4.0,0
+hawaii,Development,0.7,hawaii_Kalaupapa (BRFA G),0.0,0.02,0.0425,0.2429999999999998,4.0,0
+hawaii,Development,0.8,hawaii_Kalaupapa (BRFA G),0.0,0.02,0.0425,0.2429999999999998,4.0,0
+hawaii,Development,0.9,hawaii_Kalaupapa (BRFA G),0.0,0.02,0.0425,0.2429999999999998,4.0,0
+hawaii,Development,1.0,hawaii_Kalaupapa (BRFA G),0.0,0.02,0.0425,0.2429999999999998,4.0,0
+hawaii,Fish,0.1,hawaii_Kalaupapa (BRFA G),0.0,0.02,0.05,0.28,5.0,0
+hawaii,Fish,0.2,hawaii_Kalaupapa (BRFA G),0.0,0.02,0.05,0.28,5.0,0
+hawaii,Fish,0.3,hawaii_Kalaupapa (BRFA G),0.0,0.01,0.02,0.04,2.0,0
+hawaii,Fish,0.4,hawaii_Kalaupapa (BRFA G),0.0,0.015,0.02,0.04,2.0,0
+hawaii,Fish,0.5,hawaii_Kalaupapa (BRFA G),0.0,0.015,0.02,0.04,2.0,0
+hawaii,Fish,0.6,hawaii_Kalaupapa (BRFA G),0.0,0.015,0.02,0.04,2.0,0
+hawaii,Fish,0.7,hawaii_Kalaupapa (BRFA G),0.0,0.015,0.02,0.04,2.0,0
+hawaii,Turbidity,0.0,hawaii_Kalaupapa (BRFA G),0.0,0.015,0.02,0.04,2.0,0
+hawaii,Turbidity,0.1,hawaii_Kalaupapa (BRFA G),0.0,0.015,0.02,0.04,2.0,0
+hawaii,Turbidity,0.2,hawaii_Kalaupapa (BRFA G),0.0,0.02,0.2,0.2,20.0,0
+hawaii,Turbidity,0.3,hawaii_Kalaupapa (BRFA G),0.0,0.02,0.2,0.2,20.0,0
+hawaii,Turbidity,0.4,hawaii_Kalaupapa (BRFA G),0.0,0.02,0.2,0.2,20.0,0
+hawaii,Turbidity,0.5,hawaii_Kalaupapa (BRFA G),0.0,0.02,0.2,0.2,20.0,0
 hawaii,Coral size,5.0,hawaii_Kaloko-Honokohau FRA / NRA,0.0,0.0,0.2,0.2,20.0,0
 hawaii,Coral size,15.0,hawaii_Kaloko-Honokohau FRA / NRA,0.0,0.0,0.0,0.0,0.0,0
 hawaii,Coral size,25.0,hawaii_Kaloko-Honokohau FRA / NRA,0.0,0.0,0.0,0.0,0.0,0
@@ -1147,36 +1147,36 @@ hawaii,Turbidity,0.3,hawaii_Kaloko-Honokohau FRA / NRA,0.0,0.02,0.2,0.2,20.0,0
 hawaii,Turbidity,0.4,hawaii_Kaloko-Honokohau FRA / NRA,0.0,0.02,0.2,0.2,20.0,0
 hawaii,Turbidity,0.5,hawaii_Kaloko-Honokohau FRA / NRA,0.0,0.02,0.2,0.2,20.0,0
 hawaii,Coral size,5.0,hawaii_Kanonone-Kalipoa (Ka Lae) NRA,0.0,0.0,0.2,0.2,20.0,0
-hawaii,Coral size,15.0,hawaii_Kanonone-Kalipoa (Ka Lae) NRA,0.0,0.0,0.0,0.0009999999999999,0.0,0
-hawaii,Coral size,25.0,hawaii_Kanonone-Kalipoa (Ka Lae) NRA,0.0,0.02,0.05,0.09,5.0,0
-hawaii,Coral size,35.0,hawaii_Kanonone-Kalipoa (Ka Lae) NRA,0.0,0.02,0.06,0.1,6.0,0
-hawaii,Coral size,45.0,hawaii_Kanonone-Kalipoa (Ka Lae) NRA,0.0,0.02,0.06,0.1,6.0,0
-hawaii,Coral size,55.0,hawaii_Kanonone-Kalipoa (Ka Lae) NRA,0.0,0.015,0.0525,0.0909999999999999,5.0,0
-hawaii,Coral size,65.0,hawaii_Kanonone-Kalipoa (Ka Lae) NRA,0.0,0.03,0.0625,0.1,6.0,0
-hawaii,Development,0.0,hawaii_Kanonone-Kalipoa (Ka Lae) NRA,0.0,0.03,0.0625,0.1,6.0,0
-hawaii,Development,0.1,hawaii_Kanonone-Kalipoa (Ka Lae) NRA,0.0,0.03,0.07,0.2209999999999999,7.0,0
-hawaii,Development,0.2,hawaii_Kanonone-Kalipoa (Ka Lae) NRA,0.0,0.03,0.0725,0.1569999999999995,7.0,0
-hawaii,Development,0.3,hawaii_Kanonone-Kalipoa (Ka Lae) NRA,0.0,0.03,0.0725,0.1569999999999995,7.0,0
-hawaii,Development,0.4,hawaii_Kanonone-Kalipoa (Ka Lae) NRA,0.0,0.03,0.0725,0.1569999999999995,7.0,0
-hawaii,Development,0.5,hawaii_Kanonone-Kalipoa (Ka Lae) NRA,0.0,0.03,0.0725,0.1569999999999995,7.0,0
-hawaii,Development,0.6,hawaii_Kanonone-Kalipoa (Ka Lae) NRA,0.0,0.03,0.0725,0.1559999999999996,7.0,0
-hawaii,Development,0.7,hawaii_Kanonone-Kalipoa (Ka Lae) NRA,0.0,0.03,0.0725,0.1559999999999996,7.0,0
-hawaii,Development,0.8,hawaii_Kanonone-Kalipoa (Ka Lae) NRA,0.0,0.03,0.0725,0.1559999999999996,7.0,0
-hawaii,Development,0.9,hawaii_Kanonone-Kalipoa (Ka Lae) NRA,0.0,0.03,0.0725,0.1559999999999996,7.0,0
-hawaii,Development,1.0,hawaii_Kanonone-Kalipoa (Ka Lae) NRA,0.0,0.03,0.0725,0.1559999999999996,7.0,0
-hawaii,Fish,0.1,hawaii_Kanonone-Kalipoa (Ka Lae) NRA,0.0,0.04,0.2,0.32,20.0,0
-hawaii,Fish,0.2,hawaii_Kanonone-Kalipoa (Ka Lae) NRA,0.0,0.04,0.21,0.32,21.0,0
-hawaii,Fish,0.3,hawaii_Kanonone-Kalipoa (Ka Lae) NRA,0.0,0.03,0.0725,0.22,7.0,0
-hawaii,Fish,0.4,hawaii_Kanonone-Kalipoa (Ka Lae) NRA,0.0,0.03,0.0725,0.1559999999999996,7.0,0
-hawaii,Fish,0.5,hawaii_Kanonone-Kalipoa (Ka Lae) NRA,0.0,0.03,0.0725,0.1559999999999996,7.0,0
-hawaii,Fish,0.6,hawaii_Kanonone-Kalipoa (Ka Lae) NRA,0.0,0.03,0.0725,0.1559999999999996,7.0,0
-hawaii,Fish,0.7,hawaii_Kanonone-Kalipoa (Ka Lae) NRA,0.0,0.03,0.0725,0.1559999999999996,7.0,0
-hawaii,Turbidity,0.0,hawaii_Kanonone-Kalipoa (Ka Lae) NRA,0.0,0.03,0.0725,0.22,7.0,0
-hawaii,Turbidity,0.1,hawaii_Kanonone-Kalipoa (Ka Lae) NRA,0.0,0.03,0.0725,0.2209999999999999,7.0,0
-hawaii,Turbidity,0.2,hawaii_Kanonone-Kalipoa (Ka Lae) NRA,0.0,0.05,0.2,0.2209999999999999,20.0,0
-hawaii,Turbidity,0.3,hawaii_Kanonone-Kalipoa (Ka Lae) NRA,0.0,0.05,0.2,0.2209999999999999,20.0,0
-hawaii,Turbidity,0.4,hawaii_Kanonone-Kalipoa (Ka Lae) NRA,0.0,0.05,0.2,0.22,20.0,0
-hawaii,Turbidity,0.5,hawaii_Kanonone-Kalipoa (Ka Lae) NRA,0.0,0.05,0.2,0.22,20.0,0
+hawaii,Coral size,15.0,hawaii_Kanonone-Kalipoa (Ka Lae) NRA,0.0,0.0,0.0,0.0,0.0,0
+hawaii,Coral size,25.0,hawaii_Kanonone-Kalipoa (Ka Lae) NRA,0.0,0.0,0.01,0.02,1.0,0
+hawaii,Coral size,35.0,hawaii_Kanonone-Kalipoa (Ka Lae) NRA,0.0,0.0,0.01,0.01,1.0,0
+hawaii,Coral size,45.0,hawaii_Kanonone-Kalipoa (Ka Lae) NRA,0.0,0.0,0.01,0.01,1.0,0
+hawaii,Coral size,55.0,hawaii_Kanonone-Kalipoa (Ka Lae) NRA,0.0,0.0,0.01,0.01,1.0,0
+hawaii,Coral size,65.0,hawaii_Kanonone-Kalipoa (Ka Lae) NRA,0.0,0.01,0.02,0.05,2.0,0
+hawaii,Development,0.0,hawaii_Kanonone-Kalipoa (Ka Lae) NRA,0.0,0.01,0.02,0.05,2.0,0
+hawaii,Development,0.1,hawaii_Kanonone-Kalipoa (Ka Lae) NRA,0.0,0.01,0.02,0.04,2.0,0
+hawaii,Development,0.2,hawaii_Kanonone-Kalipoa (Ka Lae) NRA,0.0,0.01,0.02,0.04,2.0,0
+hawaii,Development,0.3,hawaii_Kanonone-Kalipoa (Ka Lae) NRA,0.0,0.01,0.02,0.04,2.0,0
+hawaii,Development,0.4,hawaii_Kanonone-Kalipoa (Ka Lae) NRA,0.0,0.01,0.02,0.04,2.0,0
+hawaii,Development,0.5,hawaii_Kanonone-Kalipoa (Ka Lae) NRA,0.0,0.01,0.02,0.04,2.0,0
+hawaii,Development,0.6,hawaii_Kanonone-Kalipoa (Ka Lae) NRA,0.0,0.01,0.02,0.04,2.0,0
+hawaii,Development,0.7,hawaii_Kanonone-Kalipoa (Ka Lae) NRA,0.0,0.01,0.02,0.04,2.0,0
+hawaii,Development,0.8,hawaii_Kanonone-Kalipoa (Ka Lae) NRA,0.0,0.01,0.02,0.04,2.0,0
+hawaii,Development,0.9,hawaii_Kanonone-Kalipoa (Ka Lae) NRA,0.0,0.01,0.02,0.04,2.0,0
+hawaii,Development,1.0,hawaii_Kanonone-Kalipoa (Ka Lae) NRA,0.0,0.01,0.02,0.04,2.0,0
+hawaii,Fish,0.1,hawaii_Kanonone-Kalipoa (Ka Lae) NRA,0.0,0.02,0.05,0.2709999999999999,5.0,0
+hawaii,Fish,0.2,hawaii_Kanonone-Kalipoa (Ka Lae) NRA,0.0,0.02,0.0425,0.2709999999999999,4.0,0
+hawaii,Fish,0.3,hawaii_Kanonone-Kalipoa (Ka Lae) NRA,0.0,0.01,0.02,0.04,2.0,0
+hawaii,Fish,0.4,hawaii_Kanonone-Kalipoa (Ka Lae) NRA,0.0,0.01,0.02,0.04,2.0,0
+hawaii,Fish,0.5,hawaii_Kanonone-Kalipoa (Ka Lae) NRA,0.0,0.01,0.02,0.04,2.0,0
+hawaii,Fish,0.6,hawaii_Kanonone-Kalipoa (Ka Lae) NRA,0.0,0.01,0.02,0.04,2.0,0
+hawaii,Fish,0.7,hawaii_Kanonone-Kalipoa (Ka Lae) NRA,0.0,0.01,0.02,0.04,2.0,0
+hawaii,Turbidity,0.0,hawaii_Kanonone-Kalipoa (Ka Lae) NRA,0.0,0.01,0.02,0.04,2.0,0
+hawaii,Turbidity,0.1,hawaii_Kanonone-Kalipoa (Ka Lae) NRA,0.0,0.01,0.02,0.04,2.0,0
+hawaii,Turbidity,0.2,hawaii_Kanonone-Kalipoa (Ka Lae) NRA,0.0,0.02,0.2,0.2,20.0,0
+hawaii,Turbidity,0.3,hawaii_Kanonone-Kalipoa (Ka Lae) NRA,0.0,0.02,0.2,0.2,20.0,0
+hawaii,Turbidity,0.4,hawaii_Kanonone-Kalipoa (Ka Lae) NRA,0.0,0.02,0.2,0.2,20.0,0
+hawaii,Turbidity,0.5,hawaii_Kanonone-Kalipoa (Ka Lae) NRA,0.0,0.02,0.2,0.2,20.0,0
 hawaii,Coral size,5.0,hawaii_Kaula Rock (BRFA A),0.0,0.0,0.0,0.0,0.0,0
 hawaii,Coral size,15.0,hawaii_Kaula Rock (BRFA A),0.0,0.0,0.0,0.0,0.0,0
 hawaii,Coral size,25.0,hawaii_Kaula Rock (BRFA A),0.0,0.0,0.0,0.02,0.0,0
@@ -1208,8 +1208,8 @@ hawaii,Turbidity,0.2,hawaii_Kaula Rock (BRFA A),0.0,0.02,0.2,0.2,20.0,0
 hawaii,Turbidity,0.3,hawaii_Kaula Rock (BRFA A),0.0,0.02,0.2,0.2,20.0,0
 hawaii,Turbidity,0.4,hawaii_Kaula Rock (BRFA A),0.0,0.02,0.2,0.2,20.0,0
 hawaii,Turbidity,0.5,hawaii_Kaula Rock (BRFA A),0.0,0.02,0.2,0.2,20.0,0
-hawaii,Coral size,5.0,hawaii_Kaunakakai Harbor FMA: Area 1A,2.0,0.0,0.01,0.02,-1.0,0
-hawaii,Coral size,15.0,hawaii_Kaunakakai Harbor FMA: Area 1A,2.0,0.0,0.02,0.03,0.0,0
+hawaii,Coral size,5.0,hawaii_Kaunakakai Harbor FMA: Area 1A,2.0,0.0,0.0,0.02,-2.0,0
+hawaii,Coral size,15.0,hawaii_Kaunakakai Harbor FMA: Area 1A,2.0,0.0,0.0125,0.02,-1.0,0
 hawaii,Coral size,25.0,hawaii_Kaunakakai Harbor FMA: Area 1A,2.0,0.05,0.2,0.2,18.0,0
 hawaii,Coral size,35.0,hawaii_Kaunakakai Harbor FMA: Area 1A,2.0,0.06,0.2,0.3109999999999999,18.0,0
 hawaii,Coral size,45.0,hawaii_Kaunakakai Harbor FMA: Area 1A,2.0,0.06,0.2,0.32,18.0,0
@@ -1233,14 +1233,14 @@ hawaii,Fish,0.4,hawaii_Kaunakakai Harbor FMA: Area 1A,2.0,0.02,0.2,0.2,18.0,0
 hawaii,Fish,0.5,hawaii_Kaunakakai Harbor FMA: Area 1A,2.0,0.02,0.2,0.2,18.0,0
 hawaii,Fish,0.6,hawaii_Kaunakakai Harbor FMA: Area 1A,2.0,0.02,0.2,0.2,18.0,0
 hawaii,Fish,0.7,hawaii_Kaunakakai Harbor FMA: Area 1A,2.0,0.02,0.2,0.2,18.0,0
-hawaii,Turbidity,0.0,hawaii_Kaunakakai Harbor FMA: Area 1A,2.0,0.02,0.02,0.0409999999999999,0.0,0
-hawaii,Turbidity,0.1,hawaii_Kaunakakai Harbor FMA: Area 1A,2.0,0.015,0.02,0.04,0.0,0
+hawaii,Turbidity,0.0,hawaii_Kaunakakai Harbor FMA: Area 1A,2.0,0.01,0.02,0.0409999999999999,0.0,0
+hawaii,Turbidity,0.1,hawaii_Kaunakakai Harbor FMA: Area 1A,2.0,0.01,0.02,0.04,0.0,0
 hawaii,Turbidity,0.2,hawaii_Kaunakakai Harbor FMA: Area 1A,2.0,0.02,0.2,0.2,18.0,0
 hawaii,Turbidity,0.3,hawaii_Kaunakakai Harbor FMA: Area 1A,2.0,0.02,0.2,0.2,18.0,0
 hawaii,Turbidity,0.4,hawaii_Kaunakakai Harbor FMA: Area 1A,2.0,0.02,0.2,0.2,18.0,0
 hawaii,Turbidity,0.5,hawaii_Kaunakakai Harbor FMA: Area 1A,2.0,0.02,0.2,0.2,18.0,0
-hawaii,Coral size,5.0,hawaii_Kaunakakai Harbor FMA: Area 1B,2.0,0.0,0.01,0.02,-1.0,0
-hawaii,Coral size,15.0,hawaii_Kaunakakai Harbor FMA: Area 1B,2.0,0.0,0.02,0.03,0.0,0
+hawaii,Coral size,5.0,hawaii_Kaunakakai Harbor FMA: Area 1B,2.0,0.0,0.0,0.02,-2.0,0
+hawaii,Coral size,15.0,hawaii_Kaunakakai Harbor FMA: Area 1B,2.0,0.0,0.0125,0.02,-1.0,0
 hawaii,Coral size,25.0,hawaii_Kaunakakai Harbor FMA: Area 1B,2.0,0.05,0.2,0.2,18.0,0
 hawaii,Coral size,35.0,hawaii_Kaunakakai Harbor FMA: Area 1B,2.0,0.06,0.2,0.3109999999999999,18.0,0
 hawaii,Coral size,45.0,hawaii_Kaunakakai Harbor FMA: Area 1B,2.0,0.06,0.2,0.32,18.0,0
@@ -1264,14 +1264,14 @@ hawaii,Fish,0.4,hawaii_Kaunakakai Harbor FMA: Area 1B,2.0,0.02,0.2,0.2,18.0,0
 hawaii,Fish,0.5,hawaii_Kaunakakai Harbor FMA: Area 1B,2.0,0.02,0.2,0.2,18.0,0
 hawaii,Fish,0.6,hawaii_Kaunakakai Harbor FMA: Area 1B,2.0,0.02,0.2,0.2,18.0,0
 hawaii,Fish,0.7,hawaii_Kaunakakai Harbor FMA: Area 1B,2.0,0.02,0.2,0.2,18.0,0
-hawaii,Turbidity,0.0,hawaii_Kaunakakai Harbor FMA: Area 1B,2.0,0.02,0.02,0.0409999999999999,0.0,0
-hawaii,Turbidity,0.1,hawaii_Kaunakakai Harbor FMA: Area 1B,2.0,0.015,0.02,0.04,0.0,0
+hawaii,Turbidity,0.0,hawaii_Kaunakakai Harbor FMA: Area 1B,2.0,0.01,0.02,0.0409999999999999,0.0,0
+hawaii,Turbidity,0.1,hawaii_Kaunakakai Harbor FMA: Area 1B,2.0,0.01,0.02,0.04,0.0,0
 hawaii,Turbidity,0.2,hawaii_Kaunakakai Harbor FMA: Area 1B,2.0,0.02,0.2,0.2,18.0,0
 hawaii,Turbidity,0.3,hawaii_Kaunakakai Harbor FMA: Area 1B,2.0,0.02,0.2,0.2,18.0,0
 hawaii,Turbidity,0.4,hawaii_Kaunakakai Harbor FMA: Area 1B,2.0,0.02,0.2,0.2,18.0,0
 hawaii,Turbidity,0.5,hawaii_Kaunakakai Harbor FMA: Area 1B,2.0,0.02,0.2,0.2,18.0,0
-hawaii,Coral size,5.0,hawaii_Kaunakakai Harbor FMA: Area 2,2.0,0.0,0.01,0.02,-1.0,0
-hawaii,Coral size,15.0,hawaii_Kaunakakai Harbor FMA: Area 2,2.0,0.0,0.02,0.03,0.0,0
+hawaii,Coral size,5.0,hawaii_Kaunakakai Harbor FMA: Area 2,2.0,0.0,0.0,0.02,-2.0,0
+hawaii,Coral size,15.0,hawaii_Kaunakakai Harbor FMA: Area 2,2.0,0.0,0.0125,0.02,-1.0,0
 hawaii,Coral size,25.0,hawaii_Kaunakakai Harbor FMA: Area 2,2.0,0.05,0.2,0.2,18.0,0
 hawaii,Coral size,35.0,hawaii_Kaunakakai Harbor FMA: Area 2,2.0,0.06,0.2,0.3109999999999999,18.0,0
 hawaii,Coral size,45.0,hawaii_Kaunakakai Harbor FMA: Area 2,2.0,0.06,0.2,0.32,18.0,0
@@ -1295,8 +1295,8 @@ hawaii,Fish,0.4,hawaii_Kaunakakai Harbor FMA: Area 2,2.0,0.02,0.2,0.2,18.0,0
 hawaii,Fish,0.5,hawaii_Kaunakakai Harbor FMA: Area 2,2.0,0.02,0.2,0.2,18.0,0
 hawaii,Fish,0.6,hawaii_Kaunakakai Harbor FMA: Area 2,2.0,0.02,0.2,0.2,18.0,0
 hawaii,Fish,0.7,hawaii_Kaunakakai Harbor FMA: Area 2,2.0,0.02,0.2,0.2,18.0,0
-hawaii,Turbidity,0.0,hawaii_Kaunakakai Harbor FMA: Area 2,2.0,0.02,0.02,0.0409999999999999,0.0,0
-hawaii,Turbidity,0.1,hawaii_Kaunakakai Harbor FMA: Area 2,2.0,0.015,0.02,0.04,0.0,0
+hawaii,Turbidity,0.0,hawaii_Kaunakakai Harbor FMA: Area 2,2.0,0.01,0.02,0.0409999999999999,0.0,0
+hawaii,Turbidity,0.1,hawaii_Kaunakakai Harbor FMA: Area 2,2.0,0.01,0.02,0.04,0.0,0
 hawaii,Turbidity,0.2,hawaii_Kaunakakai Harbor FMA: Area 2,2.0,0.02,0.2,0.2,18.0,0
 hawaii,Turbidity,0.3,hawaii_Kaunakakai Harbor FMA: Area 2,2.0,0.02,0.2,0.2,18.0,0
 hawaii,Turbidity,0.4,hawaii_Kaunakakai Harbor FMA: Area 2,2.0,0.02,0.2,0.2,18.0,0
@@ -1474,8 +1474,8 @@ hawaii,Development,0.7,hawaii_Kiholo Bay FMA,0.0,0.01,0.02,0.03,2.0,0
 hawaii,Development,0.8,hawaii_Kiholo Bay FMA,0.0,0.01,0.02,0.03,2.0,0
 hawaii,Development,0.9,hawaii_Kiholo Bay FMA,0.0,0.01,0.02,0.03,2.0,0
 hawaii,Development,1.0,hawaii_Kiholo Bay FMA,0.0,0.01,0.02,0.03,2.0,0
-hawaii,Fish,0.1,hawaii_Kiholo Bay FMA,0.0,0.02,0.0625,0.32,6.0,0
-hawaii,Fish,0.2,hawaii_Kiholo Bay FMA,0.0,0.02,0.0625,0.32,6.0,0
+hawaii,Fish,0.1,hawaii_Kiholo Bay FMA,0.0,0.02,0.05,0.32,5.0,0
+hawaii,Fish,0.2,hawaii_Kiholo Bay FMA,0.0,0.02,0.05,0.32,5.0,0
 hawaii,Fish,0.3,hawaii_Kiholo Bay FMA,0.0,0.01,0.02,0.03,2.0,0
 hawaii,Fish,0.4,hawaii_Kiholo Bay FMA,0.0,0.01,0.02,0.03,2.0,0
 hawaii,Fish,0.5,hawaii_Kiholo Bay FMA,0.0,0.01,0.02,0.03,2.0,0
@@ -1521,21 +1521,21 @@ hawaii,Turbidity,0.5,hawaii_Kikaua Pt-Makolea NRA,0.0,0.02,0.2,0.2,20.0,0
 hawaii,Coral size,5.0,hawaii_LNFPA: Maui,0.0,0.0,0.0,0.0,0.0,0
 hawaii,Coral size,15.0,hawaii_LNFPA: Maui,0.0,0.0,0.0,0.0,0.0,0
 hawaii,Coral size,25.0,hawaii_LNFPA: Maui,0.0,0.0,0.01,0.03,1.0,0
-hawaii,Coral size,35.0,hawaii_LNFPA: Maui,0.0,0.0,0.00625,0.03,0.5,0
+hawaii,Coral size,35.0,hawaii_LNFPA: Maui,0.0,0.0,0.005,0.02549999999999995,0.5,0
 hawaii,Coral size,45.0,hawaii_LNFPA: Maui,0.0,0.0,0.00625,0.0309999999999999,0.5,0
-hawaii,Coral size,55.0,hawaii_LNFPA: Maui,0.0,0.0,0.01,0.0409999999999999,1.0,0
+hawaii,Coral size,55.0,hawaii_LNFPA: Maui,0.0,0.0,0.01,0.04,1.0,0
 hawaii,Coral size,65.0,hawaii_LNFPA: Maui,0.0,0.01,0.02,0.05,2.0,0
-hawaii,Development,0.0,hawaii_LNFPA: Maui,0.0,0.01,0.02,0.07,2.0,0
-hawaii,Development,0.1,hawaii_LNFPA: Maui,0.0,0.01,0.02,0.05549999999999995,2.0,0
+hawaii,Development,0.0,hawaii_LNFPA: Maui,0.0,0.01,0.02,0.0609999999999999,2.0,0
+hawaii,Development,0.1,hawaii_LNFPA: Maui,0.0,0.01,0.02,0.05049999999999995,2.0,0
 hawaii,Development,0.2,hawaii_LNFPA: Maui,0.0,0.02,0.04,0.25,4.0,0
 hawaii,Development,0.3,hawaii_LNFPA: Maui,0.0,0.02,0.05,0.2409999999999999,5.0,0
-hawaii,Development,0.4,hawaii_LNFPA: Maui,0.0,0.02,0.04,0.24,4.0,0
-hawaii,Development,0.5,hawaii_LNFPA: Maui,0.0,0.02,0.04,0.24,4.0,0
-hawaii,Development,0.6,hawaii_LNFPA: Maui,0.0,0.02,0.04,0.24,4.0,0
-hawaii,Development,0.7,hawaii_LNFPA: Maui,0.0,0.02,0.04,0.24,4.0,0
-hawaii,Development,0.8,hawaii_LNFPA: Maui,0.0,0.02,0.04,0.24,4.0,0
-hawaii,Development,0.9,hawaii_LNFPA: Maui,0.0,0.02,0.04,0.24,4.0,0
-hawaii,Development,1.0,hawaii_LNFPA: Maui,0.0,0.02,0.04,0.24,4.0,0
+hawaii,Development,0.4,hawaii_LNFPA: Maui,0.0,0.02,0.036250000000000004,0.24,3.5,0
+hawaii,Development,0.5,hawaii_LNFPA: Maui,0.0,0.02,0.036250000000000004,0.24,3.5,0
+hawaii,Development,0.6,hawaii_LNFPA: Maui,0.0,0.02,0.036250000000000004,0.24,3.5,0
+hawaii,Development,0.7,hawaii_LNFPA: Maui,0.0,0.02,0.036250000000000004,0.24,3.5,0
+hawaii,Development,0.8,hawaii_LNFPA: Maui,0.0,0.02,0.036250000000000004,0.24,3.5,0
+hawaii,Development,0.9,hawaii_LNFPA: Maui,0.0,0.02,0.036250000000000004,0.24,3.5,0
+hawaii,Development,1.0,hawaii_LNFPA: Maui,0.0,0.02,0.036250000000000004,0.24,3.5,0
 hawaii,Fish,0.1,hawaii_LNFPA: Maui,0.0,0.02,0.05,0.2709999999999999,5.0,0
 hawaii,Fish,0.2,hawaii_LNFPA: Maui,0.0,0.02,0.0425,0.2709999999999999,4.0,0
 hawaii,Fish,0.3,hawaii_LNFPA: Maui,0.0,0.01,0.02,0.04,2.0,0
@@ -1551,13 +1551,13 @@ hawaii,Turbidity,0.4,hawaii_LNFPA: Maui,0.0,0.02,0.2,0.2,20.0,0
 hawaii,Turbidity,0.5,hawaii_LNFPA: Maui,0.0,0.02,0.2,0.2,20.0,0
 hawaii,Coral size,5.0,hawaii_LNFPA: Oahu,0.0,0.0,0.0,0.0,0.0,0
 hawaii,Coral size,15.0,hawaii_LNFPA: Oahu,0.0,0.0,0.0,0.0,0.0,0
-hawaii,Coral size,25.0,hawaii_LNFPA: Oahu,0.0,0.0,0.01,0.045,1.0,0
-hawaii,Coral size,35.0,hawaii_LNFPA: Oahu,0.0,0.0,0.01,0.045,1.0,0
+hawaii,Coral size,25.0,hawaii_LNFPA: Oahu,0.0,0.0,0.01,0.03,1.0,0
+hawaii,Coral size,35.0,hawaii_LNFPA: Oahu,0.0,0.0,0.01,0.0309999999999999,1.0,0
 hawaii,Coral size,45.0,hawaii_LNFPA: Oahu,0.0,0.0,0.01,0.05,1.0,0
-hawaii,Coral size,55.0,hawaii_LNFPA: Oahu,0.0,0.0,0.01,0.0509999999999999,1.0,0
-hawaii,Coral size,65.0,hawaii_LNFPA: Oahu,0.0,0.01,0.03,0.08599999999999995,3.0,0
-hawaii,Development,0.0,hawaii_LNFPA: Oahu,0.0,0.0125,0.035,0.549999999999999,3.5,0
-hawaii,Development,0.1,hawaii_LNFPA: Oahu,0.0,0.01,0.03,0.07549999999999996,3.0,0
+hawaii,Coral size,55.0,hawaii_LNFPA: Oahu,0.0,0.0,0.01,0.05,1.0,0
+hawaii,Coral size,65.0,hawaii_LNFPA: Oahu,0.0,0.01,0.025,0.07549999999999996,2.5,0
+hawaii,Development,0.0,hawaii_LNFPA: Oahu,0.0,0.01,0.035,0.3599999999999991,3.5,0
+hawaii,Development,0.1,hawaii_LNFPA: Oahu,0.0,0.01,0.03,0.07049999999999995,3.0,0
 hawaii,Development,0.2,hawaii_LNFPA: Oahu,0.0,0.02,0.05,0.28,5.0,0
 hawaii,Development,0.3,hawaii_LNFPA: Oahu,0.0,0.02,0.05,0.28,5.0,0
 hawaii,Development,0.4,hawaii_LNFPA: Oahu,0.0,0.02,0.05,0.28,5.0,0
@@ -1568,13 +1568,13 @@ hawaii,Development,0.8,hawaii_LNFPA: Oahu,0.0,0.02,0.05,0.28,5.0,0
 hawaii,Development,0.9,hawaii_LNFPA: Oahu,0.0,0.02,0.05,0.28,5.0,0
 hawaii,Development,1.0,hawaii_LNFPA: Oahu,0.0,0.02,0.05,0.28,5.0,0
 hawaii,Fish,0.1,hawaii_LNFPA: Oahu,0.0,0.02,0.05,0.28,5.0,0
-hawaii,Fish,0.2,hawaii_LNFPA: Oahu,0.0,0.02,0.05,0.28049999999999997,5.0,0
+hawaii,Fish,0.2,hawaii_LNFPA: Oahu,0.0,0.02,0.04625,0.2809999999999999,4.5,0
 hawaii,Fish,0.3,hawaii_LNFPA: Oahu,0.0,0.01,0.02,0.04,2.0,0
 hawaii,Fish,0.4,hawaii_LNFPA: Oahu,0.0,0.01,0.02,0.04,2.0,0
 hawaii,Fish,0.5,hawaii_LNFPA: Oahu,0.0,0.01,0.02,0.04,2.0,0
 hawaii,Fish,0.6,hawaii_LNFPA: Oahu,0.0,0.01,0.02,0.04,2.0,0
 hawaii,Fish,0.7,hawaii_LNFPA: Oahu,0.0,0.01,0.02,0.04,2.0,0
-hawaii,Turbidity,0.0,hawaii_LNFPA: Oahu,0.0,0.0125,0.02,0.04,2.0,0
+hawaii,Turbidity,0.0,hawaii_LNFPA: Oahu,0.0,0.01,0.02,0.04,2.0,0
 hawaii,Turbidity,0.1,hawaii_LNFPA: Oahu,0.0,0.01,0.02,0.04,2.0,0
 hawaii,Turbidity,0.2,hawaii_LNFPA: Oahu,0.0,0.02,0.2,0.2,20.0,0
 hawaii,Turbidity,0.3,hawaii_LNFPA: Oahu,0.0,0.02,0.2,0.2,20.0,0
@@ -1582,12 +1582,12 @@ hawaii,Turbidity,0.4,hawaii_LNFPA: Oahu,0.0,0.02,0.2,0.2,20.0,0
 hawaii,Turbidity,0.5,hawaii_LNFPA: Oahu,0.0,0.02,0.2,0.2,20.0,0
 hawaii,Coral size,5.0,hawaii_Lapakahi MLCD: Zone A,0.0,0.0,0.2,0.2,20.0,0
 hawaii,Coral size,15.0,hawaii_Lapakahi MLCD: Zone A,0.0,0.0,0.0,0.0,0.0,0
-hawaii,Coral size,25.0,hawaii_Lapakahi MLCD: Zone A,0.0,0.0,0.0025,0.02,0.0,0
-hawaii,Coral size,35.0,hawaii_Lapakahi MLCD: Zone A,0.0,0.0,0.0,0.01,0.0,0
-hawaii,Coral size,45.0,hawaii_Lapakahi MLCD: Zone A,0.0,0.0,0.0,0.01,0.0,0
-hawaii,Coral size,55.0,hawaii_Lapakahi MLCD: Zone A,0.0,0.0,0.0,0.01,0.0,0
-hawaii,Coral size,65.0,hawaii_Lapakahi MLCD: Zone A,0.0,0.01,0.02,0.05,2.0,0
-hawaii,Development,0.0,hawaii_Lapakahi MLCD: Zone A,0.0,0.01,0.02,0.05,2.0,0
+hawaii,Coral size,25.0,hawaii_Lapakahi MLCD: Zone A,0.0,0.0,0.0,0.0,0.0,0
+hawaii,Coral size,35.0,hawaii_Lapakahi MLCD: Zone A,0.0,0.0,0.0,0.0,0.0,0
+hawaii,Coral size,45.0,hawaii_Lapakahi MLCD: Zone A,0.0,0.0,0.0,0.0,0.0,0
+hawaii,Coral size,55.0,hawaii_Lapakahi MLCD: Zone A,0.0,0.0,0.0,0.0,0.0,0
+hawaii,Coral size,65.0,hawaii_Lapakahi MLCD: Zone A,0.0,0.0,0.02,0.0409999999999999,2.0,0
+hawaii,Development,0.0,hawaii_Lapakahi MLCD: Zone A,0.0,0.0,0.02,0.0409999999999999,2.0,0
 hawaii,Development,0.1,hawaii_Lapakahi MLCD: Zone A,0.0,0.01,0.02,0.04,2.0,0
 hawaii,Development,0.2,hawaii_Lapakahi MLCD: Zone A,0.0,0.01,0.02,0.04,2.0,0
 hawaii,Development,0.3,hawaii_Lapakahi MLCD: Zone A,0.0,0.01,0.02,0.04,2.0,0
@@ -1600,7 +1600,7 @@ hawaii,Development,0.9,hawaii_Lapakahi MLCD: Zone A,0.0,0.01,0.02,0.04,2.0,0
 hawaii,Development,1.0,hawaii_Lapakahi MLCD: Zone A,0.0,0.01,0.02,0.04,2.0,0
 hawaii,Fish,0.1,hawaii_Lapakahi MLCD: Zone A,0.0,0.02,0.05,0.2709999999999999,5.0,0
 hawaii,Fish,0.2,hawaii_Lapakahi MLCD: Zone A,0.0,0.02,0.0425,0.2709999999999999,4.0,0
-hawaii,Fish,0.3,hawaii_Lapakahi MLCD: Zone A,0.0,0.01,0.02,0.04,2.0,0
+hawaii,Fish,0.3,hawaii_Lapakahi MLCD: Zone A,0.0,0.01,0.02,0.0309999999999999,2.0,0
 hawaii,Fish,0.4,hawaii_Lapakahi MLCD: Zone A,0.0,0.01,0.02,0.04,2.0,0
 hawaii,Fish,0.5,hawaii_Lapakahi MLCD: Zone A,0.0,0.01,0.02,0.04,2.0,0
 hawaii,Fish,0.6,hawaii_Lapakahi MLCD: Zone A,0.0,0.01,0.02,0.04,2.0,0
@@ -1613,12 +1613,12 @@ hawaii,Turbidity,0.4,hawaii_Lapakahi MLCD: Zone A,0.0,0.02,0.2,0.2,20.0,0
 hawaii,Turbidity,0.5,hawaii_Lapakahi MLCD: Zone A,0.0,0.02,0.2,0.2,20.0,0
 hawaii,Coral size,5.0,hawaii_Lapakahi MLCD: Zone B,0.0,0.0,0.2,0.2,20.0,0
 hawaii,Coral size,15.0,hawaii_Lapakahi MLCD: Zone B,0.0,0.0,0.0,0.0,0.0,0
-hawaii,Coral size,25.0,hawaii_Lapakahi MLCD: Zone B,0.0,0.0,0.0025,0.02,0.0,0
-hawaii,Coral size,35.0,hawaii_Lapakahi MLCD: Zone B,0.0,0.0,0.0,0.01,0.0,0
-hawaii,Coral size,45.0,hawaii_Lapakahi MLCD: Zone B,0.0,0.0,0.0,0.01,0.0,0
-hawaii,Coral size,55.0,hawaii_Lapakahi MLCD: Zone B,0.0,0.0,0.0,0.01,0.0,0
-hawaii,Coral size,65.0,hawaii_Lapakahi MLCD: Zone B,0.0,0.01,0.02,0.05,2.0,0
-hawaii,Development,0.0,hawaii_Lapakahi MLCD: Zone B,0.0,0.01,0.02,0.05,2.0,0
+hawaii,Coral size,25.0,hawaii_Lapakahi MLCD: Zone B,0.0,0.0,0.0,0.0,0.0,0
+hawaii,Coral size,35.0,hawaii_Lapakahi MLCD: Zone B,0.0,0.0,0.0,0.0,0.0,0
+hawaii,Coral size,45.0,hawaii_Lapakahi MLCD: Zone B,0.0,0.0,0.0,0.0,0.0,0
+hawaii,Coral size,55.0,hawaii_Lapakahi MLCD: Zone B,0.0,0.0,0.0,0.0,0.0,0
+hawaii,Coral size,65.0,hawaii_Lapakahi MLCD: Zone B,0.0,0.0,0.02,0.0409999999999999,2.0,0
+hawaii,Development,0.0,hawaii_Lapakahi MLCD: Zone B,0.0,0.0,0.02,0.0409999999999999,2.0,0
 hawaii,Development,0.1,hawaii_Lapakahi MLCD: Zone B,0.0,0.01,0.02,0.04,2.0,0
 hawaii,Development,0.2,hawaii_Lapakahi MLCD: Zone B,0.0,0.01,0.02,0.04,2.0,0
 hawaii,Development,0.3,hawaii_Lapakahi MLCD: Zone B,0.0,0.01,0.02,0.04,2.0,0
@@ -1631,7 +1631,7 @@ hawaii,Development,0.9,hawaii_Lapakahi MLCD: Zone B,0.0,0.01,0.02,0.04,2.0,0
 hawaii,Development,1.0,hawaii_Lapakahi MLCD: Zone B,0.0,0.01,0.02,0.04,2.0,0
 hawaii,Fish,0.1,hawaii_Lapakahi MLCD: Zone B,0.0,0.02,0.05,0.2709999999999999,5.0,0
 hawaii,Fish,0.2,hawaii_Lapakahi MLCD: Zone B,0.0,0.02,0.0425,0.2709999999999999,4.0,0
-hawaii,Fish,0.3,hawaii_Lapakahi MLCD: Zone B,0.0,0.01,0.02,0.04,2.0,0
+hawaii,Fish,0.3,hawaii_Lapakahi MLCD: Zone B,0.0,0.01,0.02,0.0309999999999999,2.0,0
 hawaii,Fish,0.4,hawaii_Lapakahi MLCD: Zone B,0.0,0.01,0.02,0.04,2.0,0
 hawaii,Fish,0.5,hawaii_Lapakahi MLCD: Zone B,0.0,0.01,0.02,0.04,2.0,0
 hawaii,Fish,0.6,hawaii_Lapakahi MLCD: Zone B,0.0,0.01,0.02,0.04,2.0,0
@@ -1644,35 +1644,35 @@ hawaii,Turbidity,0.4,hawaii_Lapakahi MLCD: Zone B,0.0,0.02,0.2,0.2,20.0,0
 hawaii,Turbidity,0.5,hawaii_Lapakahi MLCD: Zone B,0.0,0.02,0.2,0.2,20.0,0
 hawaii,Coral size,5.0,hawaii_Leleiwi Pt (BRFA L),0.0,0.0,0.0,0.0,0.0,0
 hawaii,Coral size,15.0,hawaii_Leleiwi Pt (BRFA L),0.0,0.0,0.0,0.0,0.0,0
-hawaii,Coral size,25.0,hawaii_Leleiwi Pt (BRFA L),0.0,0.01,0.0325,0.4909999999999999,3.0,0
-hawaii,Coral size,35.0,hawaii_Leleiwi Pt (BRFA L),0.0,0.01,0.155,0.49,16.0,0
-hawaii,Coral size,45.0,hawaii_Leleiwi Pt (BRFA L),0.0,0.01,0.325,0.5609999999999999,32.0,0
-hawaii,Coral size,55.0,hawaii_Leleiwi Pt (BRFA L),0.0,0.01,0.265,0.68,26.0,0
-hawaii,Coral size,65.0,hawaii_Leleiwi Pt (BRFA L),0.0,0.01,0.4025,0.7769999999999996,40.0,0
-hawaii,Development,0.0,hawaii_Leleiwi Pt (BRFA L),0.0,0.01,0.6475,0.88,65.0,0
-hawaii,Development,0.1,hawaii_Leleiwi Pt (BRFA L),0.0,0.07,0.43,0.6809999999999999,43.0,0
-hawaii,Development,0.2,hawaii_Leleiwi Pt (BRFA L),0.0,0.23,0.3325,0.47,33.0,0
-hawaii,Development,0.3,hawaii_Leleiwi Pt (BRFA L),0.0,0.23,0.3325,0.47,33.0,0
-hawaii,Development,0.4,hawaii_Leleiwi Pt (BRFA L),0.0,0.23,0.3325,0.47,33.0,0
+hawaii,Coral size,25.0,hawaii_Leleiwi Pt (BRFA L),0.0,0.0,0.03,0.4609999999999999,3.0,0
+hawaii,Coral size,35.0,hawaii_Leleiwi Pt (BRFA L),0.0,0.01,0.0625,0.48,6.0,0
+hawaii,Coral size,45.0,hawaii_Leleiwi Pt (BRFA L),0.0,0.01,0.08,0.49,8.0,0
+hawaii,Coral size,55.0,hawaii_Leleiwi Pt (BRFA L),0.0,0.01,0.08,0.53,8.0,0
+hawaii,Coral size,65.0,hawaii_Leleiwi Pt (BRFA L),0.0,0.01,0.185,0.6939999999999997,18.0,0
+hawaii,Development,0.0,hawaii_Leleiwi Pt (BRFA L),0.0,0.01,0.4825,0.88,48.0,0
+hawaii,Development,0.1,hawaii_Leleiwi Pt (BRFA L),0.0,0.03,0.39,0.68,39.0,0
+hawaii,Development,0.2,hawaii_Leleiwi Pt (BRFA L),0.0,0.23,0.32,0.47,32.0,0
+hawaii,Development,0.3,hawaii_Leleiwi Pt (BRFA L),0.0,0.23,0.32,0.47,32.0,0
+hawaii,Development,0.4,hawaii_Leleiwi Pt (BRFA L),0.0,0.23,0.32,0.47,32.0,0
 hawaii,Development,0.5,hawaii_Leleiwi Pt (BRFA L),0.0,0.23,0.32,0.47,32.0,0
-hawaii,Development,0.6,hawaii_Leleiwi Pt (BRFA L),0.0,0.23,0.32,0.47,32.0,0
-hawaii,Development,0.7,hawaii_Leleiwi Pt (BRFA L),0.0,0.23,0.32,0.47,32.0,0
-hawaii,Development,0.8,hawaii_Leleiwi Pt (BRFA L),0.0,0.23,0.32,0.47,32.0,0
-hawaii,Development,0.9,hawaii_Leleiwi Pt (BRFA L),0.0,0.23,0.32,0.47,32.0,0
-hawaii,Development,1.0,hawaii_Leleiwi Pt (BRFA L),0.0,0.23,0.32,0.47,32.0,0
-hawaii,Fish,0.1,hawaii_Leleiwi Pt (BRFA L),0.0,0.22,0.285,0.47,29.0,0
-hawaii,Fish,0.2,hawaii_Leleiwi Pt (BRFA L),0.0,0.23,0.32,0.47,32.0,0
+hawaii,Development,0.6,hawaii_Leleiwi Pt (BRFA L),0.0,0.225,0.31,0.47,31.0,0
+hawaii,Development,0.7,hawaii_Leleiwi Pt (BRFA L),0.0,0.22,0.31,0.47,31.0,0
+hawaii,Development,0.8,hawaii_Leleiwi Pt (BRFA L),0.0,0.22,0.31,0.47,31.0,0
+hawaii,Development,0.9,hawaii_Leleiwi Pt (BRFA L),0.0,0.22,0.31,0.47,31.0,0
+hawaii,Development,1.0,hawaii_Leleiwi Pt (BRFA L),0.0,0.22,0.31,0.47,31.0,0
+hawaii,Fish,0.1,hawaii_Leleiwi Pt (BRFA L),0.0,0.22,0.2725,0.47,27.0,0
+hawaii,Fish,0.2,hawaii_Leleiwi Pt (BRFA L),0.0,0.22,0.2925,0.47,29.0,0
 hawaii,Fish,0.3,hawaii_Leleiwi Pt (BRFA L),0.0,0.075,0.23,0.47,23.0,0
-hawaii,Fish,0.4,hawaii_Leleiwi Pt (BRFA L),0.0,0.08,0.2225,0.23,22.0,0
-hawaii,Fish,0.5,hawaii_Leleiwi Pt (BRFA L),0.0,0.08,0.2225,0.23,22.0,0
-hawaii,Fish,0.6,hawaii_Leleiwi Pt (BRFA L),0.0,0.08,0.2225,0.23,22.0,0
-hawaii,Fish,0.7,hawaii_Leleiwi Pt (BRFA L),0.0,0.08,0.2225,0.23,22.0,0
+hawaii,Fish,0.4,hawaii_Leleiwi Pt (BRFA L),0.0,0.08,0.23,0.23,23.0,0
+hawaii,Fish,0.5,hawaii_Leleiwi Pt (BRFA L),0.0,0.08,0.23,0.23,23.0,0
+hawaii,Fish,0.6,hawaii_Leleiwi Pt (BRFA L),0.0,0.08,0.23,0.23,23.0,0
+hawaii,Fish,0.7,hawaii_Leleiwi Pt (BRFA L),0.0,0.08,0.23,0.23,23.0,0
 hawaii,Turbidity,0.0,hawaii_Leleiwi Pt (BRFA L),0.0,0.08,0.22,0.2629999999999998,22.0,0
 hawaii,Turbidity,0.1,hawaii_Leleiwi Pt (BRFA L),0.0,0.08,0.23,0.23,23.0,0
 hawaii,Turbidity,0.2,hawaii_Leleiwi Pt (BRFA L),0.0,0.08,0.23,0.23,23.0,0
 hawaii,Turbidity,0.3,hawaii_Leleiwi Pt (BRFA L),0.0,0.08,0.23,0.23,23.0,0
-hawaii,Turbidity,0.4,hawaii_Leleiwi Pt (BRFA L),0.0,0.065,0.23,0.23,23.0,0
-hawaii,Turbidity,0.5,hawaii_Leleiwi Pt (BRFA L),0.0,0.065,0.23,0.23,23.0,0
+hawaii,Turbidity,0.4,hawaii_Leleiwi Pt (BRFA L),0.0,0.06,0.23,0.23,23.0,0
+hawaii,Turbidity,0.5,hawaii_Leleiwi Pt (BRFA L),0.0,0.06,0.23,0.23,23.0,0
 hawaii,Coral size,5.0,hawaii_Makahuena (BRFA C),0.0,0.0,0.0,0.0,0.0,0
 hawaii,Coral size,15.0,hawaii_Makahuena (BRFA C),0.0,0.0,0.0,0.01,0.0,0
 hawaii,Coral size,25.0,hawaii_Makahuena (BRFA C),0.0,0.0,0.0,0.03,0.0,0
@@ -1692,7 +1692,7 @@ hawaii,Development,0.8,hawaii_Makahuena (BRFA C),0.0,0.02,0.03,0.2,3.0,0
 hawaii,Development,0.9,hawaii_Makahuena (BRFA C),0.0,0.02,0.03,0.2,3.0,0
 hawaii,Development,1.0,hawaii_Makahuena (BRFA C),0.0,0.02,0.03,0.2,3.0,0
 hawaii,Fish,0.1,hawaii_Makahuena (BRFA C),0.0,0.02,0.04,0.2709999999999999,4.0,0
-hawaii,Fish,0.2,hawaii_Makahuena (BRFA C),0.0,0.02,0.0325,0.2709999999999999,3.0,0
+hawaii,Fish,0.2,hawaii_Makahuena (BRFA C),0.0,0.02,0.03,0.27,3.0,0
 hawaii,Fish,0.3,hawaii_Makahuena (BRFA C),0.0,0.01,0.02,0.03,2.0,0
 hawaii,Fish,0.4,hawaii_Makahuena (BRFA C),0.0,0.01,0.02,0.03,2.0,0
 hawaii,Fish,0.5,hawaii_Makahuena (BRFA C),0.0,0.01,0.02,0.03,2.0,0
@@ -1706,15 +1706,15 @@ hawaii,Turbidity,0.4,hawaii_Makahuena (BRFA C),0.0,0.02,0.2,0.2,20.0,0
 hawaii,Turbidity,0.5,hawaii_Makahuena (BRFA C),0.0,0.02,0.2,0.2,20.0,0
 hawaii,Coral size,5.0,hawaii_Makapuu Pt (BRFA E),0.0,0.0,0.0,0.0,0.0,0
 hawaii,Coral size,15.0,hawaii_Makapuu Pt (BRFA E),0.0,0.0,0.0,0.0,0.0,0
-hawaii,Coral size,25.0,hawaii_Makapuu Pt (BRFA E),0.0,0.0,0.01,0.0309999999999999,1.0,0
-hawaii,Coral size,35.0,hawaii_Makapuu Pt (BRFA E),0.0,0.0,0.01,0.0409999999999999,1.0,0
-hawaii,Coral size,45.0,hawaii_Makapuu Pt (BRFA E),0.0,0.0,0.01,0.0509999999999999,1.0,0
-hawaii,Coral size,55.0,hawaii_Makapuu Pt (BRFA E),0.0,0.0,0.01,0.06,1.0,0
-hawaii,Coral size,65.0,hawaii_Makapuu Pt (BRFA E),0.0,0.01,0.0225,0.07,2.0,0
+hawaii,Coral size,25.0,hawaii_Makapuu Pt (BRFA E),0.0,0.0,0.01,0.03,1.0,0
+hawaii,Coral size,35.0,hawaii_Makapuu Pt (BRFA E),0.0,0.0,0.01,0.0309999999999999,1.0,0
+hawaii,Coral size,45.0,hawaii_Makapuu Pt (BRFA E),0.0,0.0,0.01,0.05,1.0,0
+hawaii,Coral size,55.0,hawaii_Makapuu Pt (BRFA E),0.0,0.0,0.01,0.0509999999999999,1.0,0
+hawaii,Coral size,65.0,hawaii_Makapuu Pt (BRFA E),0.0,0.01,0.02,0.07,2.0,0
 hawaii,Development,0.0,hawaii_Makapuu Pt (BRFA E),0.0,0.01,0.03,0.0809999999999999,3.0,0
 hawaii,Development,0.1,hawaii_Makapuu Pt (BRFA E),0.0,0.01,0.03,0.0709999999999999,3.0,0
 hawaii,Development,0.2,hawaii_Makapuu Pt (BRFA E),0.0,0.02,0.05,0.28,5.0,0
-hawaii,Development,0.3,hawaii_Makapuu Pt (BRFA E),0.0,0.02,0.0525,0.28,5.0,0
+hawaii,Development,0.3,hawaii_Makapuu Pt (BRFA E),0.0,0.02,0.05,0.28,5.0,0
 hawaii,Development,0.4,hawaii_Makapuu Pt (BRFA E),0.0,0.02,0.05,0.28,5.0,0
 hawaii,Development,0.5,hawaii_Makapuu Pt (BRFA E),0.0,0.02,0.05,0.2809999999999999,5.0,0
 hawaii,Development,0.6,hawaii_Makapuu Pt (BRFA E),0.0,0.02,0.05,0.2809999999999999,5.0,0
@@ -1723,13 +1723,13 @@ hawaii,Development,0.8,hawaii_Makapuu Pt (BRFA E),0.0,0.02,0.05,0.28,5.0,0
 hawaii,Development,0.9,hawaii_Makapuu Pt (BRFA E),0.0,0.02,0.05,0.28,5.0,0
 hawaii,Development,1.0,hawaii_Makapuu Pt (BRFA E),0.0,0.02,0.05,0.28,5.0,0
 hawaii,Fish,0.1,hawaii_Makapuu Pt (BRFA E),0.0,0.02,0.05,0.2709999999999999,5.0,0
-hawaii,Fish,0.2,hawaii_Makapuu Pt (BRFA E),0.0,0.02,0.05,0.2709999999999999,5.0,0
+hawaii,Fish,0.2,hawaii_Makapuu Pt (BRFA E),0.0,0.02,0.0425,0.2709999999999999,4.0,0
 hawaii,Fish,0.3,hawaii_Makapuu Pt (BRFA E),0.0,0.01,0.02,0.04,2.0,0
-hawaii,Fish,0.4,hawaii_Makapuu Pt (BRFA E),0.0,0.015,0.02,0.04,2.0,0
-hawaii,Fish,0.5,hawaii_Makapuu Pt (BRFA E),0.0,0.015,0.02,0.04,2.0,0
-hawaii,Fish,0.6,hawaii_Makapuu Pt (BRFA E),0.0,0.015,0.02,0.04,2.0,0
-hawaii,Fish,0.7,hawaii_Makapuu Pt (BRFA E),0.0,0.015,0.02,0.04,2.0,0
-hawaii,Turbidity,0.0,hawaii_Makapuu Pt (BRFA E),0.0,0.015,0.02,0.04,2.0,0
+hawaii,Fish,0.4,hawaii_Makapuu Pt (BRFA E),0.0,0.01,0.02,0.04,2.0,0
+hawaii,Fish,0.5,hawaii_Makapuu Pt (BRFA E),0.0,0.01,0.02,0.04,2.0,0
+hawaii,Fish,0.6,hawaii_Makapuu Pt (BRFA E),0.0,0.01,0.02,0.04,2.0,0
+hawaii,Fish,0.7,hawaii_Makapuu Pt (BRFA E),0.0,0.01,0.02,0.04,2.0,0
+hawaii,Turbidity,0.0,hawaii_Makapuu Pt (BRFA E),0.0,0.01,0.02,0.04,2.0,0
 hawaii,Turbidity,0.1,hawaii_Makapuu Pt (BRFA E),0.0,0.01,0.02,0.04,2.0,0
 hawaii,Turbidity,0.2,hawaii_Makapuu Pt (BRFA E),0.0,0.02,0.2,0.2,20.0,0
 hawaii,Turbidity,0.3,hawaii_Makapuu Pt (BRFA E),0.0,0.02,0.2,0.2,20.0,0
@@ -1897,8 +1897,8 @@ hawaii,Coral size,35.0,hawaii_Moku Hooniki-Lipoa Pt (BRFA H),0.0,0.0,0.01,0.02,1
 hawaii,Coral size,45.0,hawaii_Moku Hooniki-Lipoa Pt (BRFA H),0.0,0.0,0.01,0.03,1.0,0
 hawaii,Coral size,55.0,hawaii_Moku Hooniki-Lipoa Pt (BRFA H),0.0,0.0,0.01,0.0309999999999999,1.0,0
 hawaii,Coral size,65.0,hawaii_Moku Hooniki-Lipoa Pt (BRFA H),0.0,0.01,0.02,0.05,2.0,0
-hawaii,Development,0.0,hawaii_Moku Hooniki-Lipoa Pt (BRFA H),0.0,0.01,0.02,0.0609999999999999,2.0,0
-hawaii,Development,0.1,hawaii_Moku Hooniki-Lipoa Pt (BRFA H),0.0,0.01,0.02,0.05,2.0,0
+hawaii,Development,0.0,hawaii_Moku Hooniki-Lipoa Pt (BRFA H),0.0,0.01,0.02,0.07,2.0,0
+hawaii,Development,0.1,hawaii_Moku Hooniki-Lipoa Pt (BRFA H),0.0,0.01,0.0225,0.0509999999999999,2.0,0
 hawaii,Development,0.2,hawaii_Moku Hooniki-Lipoa Pt (BRFA H),0.0,0.02,0.05,0.2509999999999999,5.0,0
 hawaii,Development,0.3,hawaii_Moku Hooniki-Lipoa Pt (BRFA H),0.0,0.02,0.05,0.25,5.0,0
 hawaii,Development,0.4,hawaii_Moku Hooniki-Lipoa Pt (BRFA H),0.0,0.02,0.0425,0.2409999999999999,4.0,0
@@ -1911,66 +1911,66 @@ hawaii,Development,1.0,hawaii_Moku Hooniki-Lipoa Pt (BRFA H),0.0,0.02,0.0425,0.2
 hawaii,Fish,0.1,hawaii_Moku Hooniki-Lipoa Pt (BRFA H),0.0,0.02,0.05,0.28,5.0,0
 hawaii,Fish,0.2,hawaii_Moku Hooniki-Lipoa Pt (BRFA H),0.0,0.02,0.05,0.28,5.0,0
 hawaii,Fish,0.3,hawaii_Moku Hooniki-Lipoa Pt (BRFA H),0.0,0.01,0.02,0.04,2.0,0
-hawaii,Fish,0.4,hawaii_Moku Hooniki-Lipoa Pt (BRFA H),0.0,0.01,0.02,0.04,2.0,0
-hawaii,Fish,0.5,hawaii_Moku Hooniki-Lipoa Pt (BRFA H),0.0,0.01,0.02,0.04,2.0,0
-hawaii,Fish,0.6,hawaii_Moku Hooniki-Lipoa Pt (BRFA H),0.0,0.01,0.02,0.04,2.0,0
-hawaii,Fish,0.7,hawaii_Moku Hooniki-Lipoa Pt (BRFA H),0.0,0.01,0.02,0.04,2.0,0
+hawaii,Fish,0.4,hawaii_Moku Hooniki-Lipoa Pt (BRFA H),0.0,0.015,0.02,0.04,2.0,0
+hawaii,Fish,0.5,hawaii_Moku Hooniki-Lipoa Pt (BRFA H),0.0,0.015,0.02,0.04,2.0,0
+hawaii,Fish,0.6,hawaii_Moku Hooniki-Lipoa Pt (BRFA H),0.0,0.015,0.02,0.04,2.0,0
+hawaii,Fish,0.7,hawaii_Moku Hooniki-Lipoa Pt (BRFA H),0.0,0.015,0.02,0.04,2.0,0
 hawaii,Turbidity,0.0,hawaii_Moku Hooniki-Lipoa Pt (BRFA H),0.0,0.01,0.02,0.04,2.0,0
-hawaii,Turbidity,0.1,hawaii_Moku Hooniki-Lipoa Pt (BRFA H),0.0,0.01,0.02,0.04,2.0,0
+hawaii,Turbidity,0.1,hawaii_Moku Hooniki-Lipoa Pt (BRFA H),0.0,0.015,0.02,0.04,2.0,0
 hawaii,Turbidity,0.2,hawaii_Moku Hooniki-Lipoa Pt (BRFA H),0.0,0.02,0.2,0.2,20.0,0
 hawaii,Turbidity,0.3,hawaii_Moku Hooniki-Lipoa Pt (BRFA H),0.0,0.02,0.2,0.2,20.0,0
 hawaii,Turbidity,0.4,hawaii_Moku Hooniki-Lipoa Pt (BRFA H),0.0,0.02,0.2,0.2,20.0,0
 hawaii,Turbidity,0.5,hawaii_Moku Hooniki-Lipoa Pt (BRFA H),0.0,0.02,0.2,0.2,20.0,0
 hawaii,Coral size,5.0,hawaii_Mokumana-Umalei Pt (BRFA J),0.0,0.0,0.0,0.0,0.0,0
 hawaii,Coral size,15.0,hawaii_Mokumana-Umalei Pt (BRFA J),0.0,0.0,0.0,0.0,0.0,0
-hawaii,Coral size,25.0,hawaii_Mokumana-Umalei Pt (BRFA J),0.0,0.0,0.01,0.045,1.0,0
-hawaii,Coral size,35.0,hawaii_Mokumana-Umalei Pt (BRFA J),0.0,0.0,0.01,0.08549999999999995,1.0,0
-hawaii,Coral size,45.0,hawaii_Mokumana-Umalei Pt (BRFA J),0.0,0.0,0.01,0.1219999999999998,1.0,0
-hawaii,Coral size,55.0,hawaii_Mokumana-Umalei Pt (BRFA J),0.0,0.0,0.01125,0.1439999999999998,1.0,0
-hawaii,Coral size,65.0,hawaii_Mokumana-Umalei Pt (BRFA J),0.0,0.0,0.03125,0.5859999999999996,3.0,0
-hawaii,Development,0.0,hawaii_Mokumana-Umalei Pt (BRFA J),0.0,0.005,0.08,0.87,8.0,0
-hawaii,Development,0.1,hawaii_Mokumana-Umalei Pt (BRFA J),0.0,0.01,0.35,0.55,35.0,0
-hawaii,Development,0.2,hawaii_Mokumana-Umalei Pt (BRFA J),0.0,0.14500000000000002,0.3025,0.47,30.5,0
-hawaii,Development,0.3,hawaii_Mokumana-Umalei Pt (BRFA J),0.0,0.1975,0.3025,0.47,30.5,0
-hawaii,Development,0.4,hawaii_Mokumana-Umalei Pt (BRFA J),0.0,0.12,0.3025,0.47,30.5,0
-hawaii,Development,0.5,hawaii_Mokumana-Umalei Pt (BRFA J),0.0,0.12,0.31125,0.47,31.0,0
-hawaii,Development,0.6,hawaii_Mokumana-Umalei Pt (BRFA J),0.0,0.12,0.2875,0.47,28.5,0
-hawaii,Development,0.7,hawaii_Mokumana-Umalei Pt (BRFA J),0.0,0.12,0.2875,0.47,28.5,0
-hawaii,Development,0.8,hawaii_Mokumana-Umalei Pt (BRFA J),0.0,0.12,0.2875,0.47,28.5,0
-hawaii,Development,0.9,hawaii_Mokumana-Umalei Pt (BRFA J),0.0,0.12,0.2875,0.47,28.5,0
-hawaii,Development,1.0,hawaii_Mokumana-Umalei Pt (BRFA J),0.0,0.12,0.2875,0.47,28.5,0
-hawaii,Fish,0.1,hawaii_Mokumana-Umalei Pt (BRFA J),0.0,0.12,0.28,0.47,28.0,0
-hawaii,Fish,0.2,hawaii_Mokumana-Umalei Pt (BRFA J),0.0,0.1325,0.30625,0.47,30.5,0
-hawaii,Fish,0.3,hawaii_Mokumana-Umalei Pt (BRFA J),0.0,0.075,0.23,0.47,23.0,0
-hawaii,Fish,0.4,hawaii_Mokumana-Umalei Pt (BRFA J),0.0,0.08,0.12,0.23,12.0,0
-hawaii,Fish,0.5,hawaii_Mokumana-Umalei Pt (BRFA J),0.0,0.08,0.12,0.23,12.0,0
-hawaii,Fish,0.6,hawaii_Mokumana-Umalei Pt (BRFA J),0.0,0.08,0.12,0.23,12.0,0
-hawaii,Fish,0.7,hawaii_Mokumana-Umalei Pt (BRFA J),0.0,0.08,0.12,0.23,12.0,0
-hawaii,Turbidity,0.0,hawaii_Mokumana-Umalei Pt (BRFA J),0.0,0.08,0.1674999999999999,0.27849999999999975,17.0,0
-hawaii,Turbidity,0.1,hawaii_Mokumana-Umalei Pt (BRFA J),0.0,0.08,0.23,0.23,23.0,0
-hawaii,Turbidity,0.2,hawaii_Mokumana-Umalei Pt (BRFA J),0.0,0.08,0.23,0.23,23.0,0
-hawaii,Turbidity,0.3,hawaii_Mokumana-Umalei Pt (BRFA J),0.0,0.08,0.23,0.23,23.0,0
-hawaii,Turbidity,0.4,hawaii_Mokumana-Umalei Pt (BRFA J),0.0,0.0625,0.23,0.23,23.0,0
-hawaii,Turbidity,0.5,hawaii_Mokumana-Umalei Pt (BRFA J),0.0,0.0625,0.23,0.23,23.0,0
+hawaii,Coral size,25.0,hawaii_Mokumana-Umalei Pt (BRFA J),0.0,0.0,0.035,0.1,3.5,0
+hawaii,Coral size,35.0,hawaii_Mokumana-Umalei Pt (BRFA J),0.0,0.0,0.04,0.1,4.0,0
+hawaii,Coral size,45.0,hawaii_Mokumana-Umalei Pt (BRFA J),0.0,0.0,0.04625,0.1,4.5,0
+hawaii,Coral size,55.0,hawaii_Mokumana-Umalei Pt (BRFA J),0.0,0.0025,0.051250000000000004,0.1,5.0,0
+hawaii,Coral size,65.0,hawaii_Mokumana-Umalei Pt (BRFA J),0.0,0.015,0.07,0.11099999999999995,7.0,0
+hawaii,Development,0.0,hawaii_Mokumana-Umalei Pt (BRFA J),0.0,0.02,0.07,0.13099999999999995,7.0,0
+hawaii,Development,0.1,hawaii_Mokumana-Umalei Pt (BRFA J),0.0,0.02,0.07,0.12,7.0,0
+hawaii,Development,0.2,hawaii_Mokumana-Umalei Pt (BRFA J),0.0,0.04,0.11249999999999999,0.26549999999999996,11.5,0
+hawaii,Development,0.3,hawaii_Mokumana-Umalei Pt (BRFA J),0.0,0.04,0.1225,0.26099999999999995,12.0,0
+hawaii,Development,0.4,hawaii_Mokumana-Umalei Pt (BRFA J),0.0,0.037500000000000006,0.1,0.26099999999999995,10.0,0
+hawaii,Development,0.5,hawaii_Mokumana-Umalei Pt (BRFA J),0.0,0.037500000000000006,0.1,0.2709999999999999,10.0,0
+hawaii,Development,0.6,hawaii_Mokumana-Umalei Pt (BRFA J),0.0,0.037500000000000006,0.1,0.2709999999999999,10.0,0
+hawaii,Development,0.7,hawaii_Mokumana-Umalei Pt (BRFA J),0.0,0.037500000000000006,0.1,0.2709999999999999,10.0,0
+hawaii,Development,0.8,hawaii_Mokumana-Umalei Pt (BRFA J),0.0,0.037500000000000006,0.1,0.2709999999999999,10.0,0
+hawaii,Development,0.9,hawaii_Mokumana-Umalei Pt (BRFA J),0.0,0.037500000000000006,0.1,0.2709999999999999,10.0,0
+hawaii,Development,1.0,hawaii_Mokumana-Umalei Pt (BRFA J),0.0,0.037500000000000006,0.1,0.2709999999999999,10.0,0
+hawaii,Fish,0.1,hawaii_Mokumana-Umalei Pt (BRFA J),0.0,0.04,0.1,0.27549999999999997,10.0,0
+hawaii,Fish,0.2,hawaii_Mokumana-Umalei Pt (BRFA J),0.0,0.037500000000000006,0.1,0.27549999999999997,10.0,0
+hawaii,Fish,0.3,hawaii_Mokumana-Umalei Pt (BRFA J),0.0,0.03,0.07,0.1,7.0,0
+hawaii,Fish,0.4,hawaii_Mokumana-Umalei Pt (BRFA J),0.0,0.03,0.07,0.1,7.0,0
+hawaii,Fish,0.5,hawaii_Mokumana-Umalei Pt (BRFA J),0.0,0.03,0.07,0.1,7.0,0
+hawaii,Fish,0.6,hawaii_Mokumana-Umalei Pt (BRFA J),0.0,0.03,0.07,0.1,7.0,0
+hawaii,Fish,0.7,hawaii_Mokumana-Umalei Pt (BRFA J),0.0,0.03,0.07,0.1,7.0,0
+hawaii,Turbidity,0.0,hawaii_Mokumana-Umalei Pt (BRFA J),0.0,0.03,0.07,0.1,7.0,0
+hawaii,Turbidity,0.1,hawaii_Mokumana-Umalei Pt (BRFA J),0.0,0.03,0.07,0.1,7.0,0
+hawaii,Turbidity,0.2,hawaii_Mokumana-Umalei Pt (BRFA J),0.0,0.05,0.2,0.2,20.0,0
+hawaii,Turbidity,0.3,hawaii_Mokumana-Umalei Pt (BRFA J),0.0,0.05,0.2,0.2,20.0,0
+hawaii,Turbidity,0.4,hawaii_Mokumana-Umalei Pt (BRFA J),0.0,0.05,0.2,0.2,20.0,0
+hawaii,Turbidity,0.5,hawaii_Mokumana-Umalei Pt (BRFA J),0.0,0.05,0.2,0.2,20.0,0
 hawaii,Coral size,5.0,hawaii_Mokuoloe (Coconut Island) MLR,2.0,0.0,0.02,0.05,0.0,0
 hawaii,Coral size,15.0,hawaii_Mokuoloe (Coconut Island) MLR,2.0,0.01,0.02,0.05,0.0,0
-hawaii,Coral size,25.0,hawaii_Mokuoloe (Coconut Island) MLR,2.0,0.2,0.2,0.33,18.0,0
-hawaii,Coral size,35.0,hawaii_Mokuoloe (Coconut Island) MLR,2.0,0.2,0.2,0.34,18.0,0
-hawaii,Coral size,45.0,hawaii_Mokuoloe (Coconut Island) MLR,2.0,0.2,0.2,0.35,18.0,0
-hawaii,Coral size,55.0,hawaii_Mokuoloe (Coconut Island) MLR,2.0,0.2,0.2,0.35,18.0,0
-hawaii,Coral size,65.0,hawaii_Mokuoloe (Coconut Island) MLR,2.0,0.2,0.2,0.35,18.0,0
+hawaii,Coral size,25.0,hawaii_Mokuoloe (Coconut Island) MLR,2.0,0.2,0.27,0.35,25.0,0
+hawaii,Coral size,35.0,hawaii_Mokuoloe (Coconut Island) MLR,2.0,0.2,0.28,0.35,26.0,0
+hawaii,Coral size,45.0,hawaii_Mokuoloe (Coconut Island) MLR,2.0,0.2,0.3125,0.35,29.0,0
+hawaii,Coral size,55.0,hawaii_Mokuoloe (Coconut Island) MLR,2.0,0.2,0.32,0.35,30.0,0
+hawaii,Coral size,65.0,hawaii_Mokuoloe (Coconut Island) MLR,2.0,0.2,0.3225,0.35,30.0,0
 hawaii,Development,0.0,hawaii_Mokuoloe (Coconut Island) MLR,2.0,0.2,0.8825000000000001,0.931,86.0,0
 hawaii,Development,0.1,hawaii_Mokuoloe (Coconut Island) MLR,2.0,0.2,0.2,0.89,18.0,0
-hawaii,Development,0.2,hawaii_Mokuoloe (Coconut Island) MLR,2.0,0.2,0.2,0.35,18.0,0
-hawaii,Development,0.3,hawaii_Mokuoloe (Coconut Island) MLR,2.0,0.2,0.2,0.35,18.0,0
-hawaii,Development,0.4,hawaii_Mokuoloe (Coconut Island) MLR,2.0,0.2,0.2,0.35,18.0,0
-hawaii,Development,0.5,hawaii_Mokuoloe (Coconut Island) MLR,2.0,0.2,0.2,0.35,18.0,0
-hawaii,Development,0.6,hawaii_Mokuoloe (Coconut Island) MLR,2.0,0.2,0.2,0.35,18.0,0
-hawaii,Development,0.7,hawaii_Mokuoloe (Coconut Island) MLR,2.0,0.2,0.2,0.35,18.0,0
-hawaii,Development,0.8,hawaii_Mokuoloe (Coconut Island) MLR,2.0,0.2,0.2,0.35,18.0,0
-hawaii,Development,0.9,hawaii_Mokuoloe (Coconut Island) MLR,2.0,0.2,0.2,0.35,18.0,0
-hawaii,Development,1.0,hawaii_Mokuoloe (Coconut Island) MLR,2.0,0.2,0.2,0.35,18.0,0
-hawaii,Fish,0.1,hawaii_Mokuoloe (Coconut Island) MLR,2.0,0.2,0.33,0.35,31.0,0
+hawaii,Development,0.2,hawaii_Mokuoloe (Coconut Island) MLR,2.0,0.2,0.3125,0.35,29.0,0
+hawaii,Development,0.3,hawaii_Mokuoloe (Coconut Island) MLR,2.0,0.2,0.3125,0.35,29.0,0
+hawaii,Development,0.4,hawaii_Mokuoloe (Coconut Island) MLR,2.0,0.2,0.3225,0.35,30.0,0
+hawaii,Development,0.5,hawaii_Mokuoloe (Coconut Island) MLR,2.0,0.2,0.33,0.35,31.0,0
+hawaii,Development,0.6,hawaii_Mokuoloe (Coconut Island) MLR,2.0,0.2,0.33,0.35,31.0,0
+hawaii,Development,0.7,hawaii_Mokuoloe (Coconut Island) MLR,2.0,0.2,0.33,0.35,31.0,0
+hawaii,Development,0.8,hawaii_Mokuoloe (Coconut Island) MLR,2.0,0.2,0.33,0.35,31.0,0
+hawaii,Development,0.9,hawaii_Mokuoloe (Coconut Island) MLR,2.0,0.2,0.33,0.35,31.0,0
+hawaii,Development,1.0,hawaii_Mokuoloe (Coconut Island) MLR,2.0,0.2,0.33,0.35,31.0,0
+hawaii,Fish,0.1,hawaii_Mokuoloe (Coconut Island) MLR,2.0,0.2,0.35,0.35,33.0,0
 hawaii,Fish,0.2,hawaii_Mokuoloe (Coconut Island) MLR,2.0,0.2,0.32,0.35,30.0,0
 hawaii,Fish,0.3,hawaii_Mokuoloe (Coconut Island) MLR,2.0,0.02,0.2,0.2,18.0,0
 hawaii,Fish,0.4,hawaii_Mokuoloe (Coconut Island) MLR,2.0,0.02,0.2,0.2,18.0,0
@@ -1989,20 +1989,20 @@ hawaii,Coral size,25.0,hawaii_Molokini Shoal MLCD: Zone A,0.0,0.0,0.0,0.02,0.0,0
 hawaii,Coral size,35.0,hawaii_Molokini Shoal MLCD: Zone A,0.0,0.0,0.0,0.02,0.0,0
 hawaii,Coral size,45.0,hawaii_Molokini Shoal MLCD: Zone A,0.0,0.0,0.0,0.0209999999999999,0.0,0
 hawaii,Coral size,55.0,hawaii_Molokini Shoal MLCD: Zone A,0.0,0.0,0.0,0.03,0.0,0
-hawaii,Coral size,65.0,hawaii_Molokini Shoal MLCD: Zone A,0.0,0.0,0.02,0.05,2.0,0
+hawaii,Coral size,65.0,hawaii_Molokini Shoal MLCD: Zone A,0.0,0.0,0.02,0.0409999999999999,2.0,0
 hawaii,Development,0.0,hawaii_Molokini Shoal MLCD: Zone A,0.0,0.0,0.02,0.05,2.0,0
-hawaii,Development,0.1,hawaii_Molokini Shoal MLCD: Zone A,0.0,0.0,0.02,0.05,2.0,0
+hawaii,Development,0.1,hawaii_Molokini Shoal MLCD: Zone A,0.0,0.0,0.02,0.0409999999999999,2.0,0
 hawaii,Development,0.2,hawaii_Molokini Shoal MLCD: Zone A,0.0,0.02,0.04,0.25,4.0,0
-hawaii,Development,0.3,hawaii_Molokini Shoal MLCD: Zone A,0.0,0.02,0.05,0.2409999999999999,5.0,0
-hawaii,Development,0.4,hawaii_Molokini Shoal MLCD: Zone A,0.0,0.02,0.0325,0.24,3.0,0
-hawaii,Development,0.5,hawaii_Molokini Shoal MLCD: Zone A,0.0,0.02,0.0325,0.24,3.0,0
-hawaii,Development,0.6,hawaii_Molokini Shoal MLCD: Zone A,0.0,0.02,0.0325,0.24,3.0,0
-hawaii,Development,0.7,hawaii_Molokini Shoal MLCD: Zone A,0.0,0.02,0.0325,0.24,3.0,0
-hawaii,Development,0.8,hawaii_Molokini Shoal MLCD: Zone A,0.0,0.02,0.0325,0.24,3.0,0
-hawaii,Development,0.9,hawaii_Molokini Shoal MLCD: Zone A,0.0,0.02,0.0325,0.24,3.0,0
-hawaii,Development,1.0,hawaii_Molokini Shoal MLCD: Zone A,0.0,0.02,0.0325,0.24,3.0,0
+hawaii,Development,0.3,hawaii_Molokini Shoal MLCD: Zone A,0.0,0.02,0.0425,0.24,4.0,0
+hawaii,Development,0.4,hawaii_Molokini Shoal MLCD: Zone A,0.0,0.02,0.03,0.24,3.0,0
+hawaii,Development,0.5,hawaii_Molokini Shoal MLCD: Zone A,0.0,0.02,0.03,0.24,3.0,0
+hawaii,Development,0.6,hawaii_Molokini Shoal MLCD: Zone A,0.0,0.02,0.03,0.24,3.0,0
+hawaii,Development,0.7,hawaii_Molokini Shoal MLCD: Zone A,0.0,0.02,0.03,0.24,3.0,0
+hawaii,Development,0.8,hawaii_Molokini Shoal MLCD: Zone A,0.0,0.02,0.03,0.24,3.0,0
+hawaii,Development,0.9,hawaii_Molokini Shoal MLCD: Zone A,0.0,0.02,0.03,0.24,3.0,0
+hawaii,Development,1.0,hawaii_Molokini Shoal MLCD: Zone A,0.0,0.02,0.03,0.24,3.0,0
 hawaii,Fish,0.1,hawaii_Molokini Shoal MLCD: Zone A,0.0,0.02,0.04,0.2709999999999999,4.0,0
-hawaii,Fish,0.2,hawaii_Molokini Shoal MLCD: Zone A,0.0,0.02,0.04,0.2709999999999999,4.0,0
+hawaii,Fish,0.2,hawaii_Molokini Shoal MLCD: Zone A,0.0,0.02,0.0325,0.2709999999999999,3.0,0
 hawaii,Fish,0.3,hawaii_Molokini Shoal MLCD: Zone A,0.0,0.01,0.02,0.03,2.0,0
 hawaii,Fish,0.4,hawaii_Molokini Shoal MLCD: Zone A,0.0,0.01,0.02,0.03,2.0,0
 hawaii,Fish,0.5,hawaii_Molokini Shoal MLCD: Zone A,0.0,0.01,0.02,0.03,2.0,0
@@ -2020,20 +2020,20 @@ hawaii,Coral size,25.0,hawaii_Molokini Shoal MLCD: Zone B,0.0,0.0,0.0,0.02,0.0,0
 hawaii,Coral size,35.0,hawaii_Molokini Shoal MLCD: Zone B,0.0,0.0,0.0,0.02,0.0,0
 hawaii,Coral size,45.0,hawaii_Molokini Shoal MLCD: Zone B,0.0,0.0,0.0,0.0209999999999999,0.0,0
 hawaii,Coral size,55.0,hawaii_Molokini Shoal MLCD: Zone B,0.0,0.0,0.0,0.03,0.0,0
-hawaii,Coral size,65.0,hawaii_Molokini Shoal MLCD: Zone B,0.0,0.0,0.02,0.05,2.0,0
+hawaii,Coral size,65.0,hawaii_Molokini Shoal MLCD: Zone B,0.0,0.0,0.02,0.0409999999999999,2.0,0
 hawaii,Development,0.0,hawaii_Molokini Shoal MLCD: Zone B,0.0,0.0,0.02,0.05,2.0,0
-hawaii,Development,0.1,hawaii_Molokini Shoal MLCD: Zone B,0.0,0.0,0.02,0.05,2.0,0
+hawaii,Development,0.1,hawaii_Molokini Shoal MLCD: Zone B,0.0,0.0,0.02,0.0409999999999999,2.0,0
 hawaii,Development,0.2,hawaii_Molokini Shoal MLCD: Zone B,0.0,0.02,0.04,0.25,4.0,0
-hawaii,Development,0.3,hawaii_Molokini Shoal MLCD: Zone B,0.0,0.02,0.05,0.2409999999999999,5.0,0
-hawaii,Development,0.4,hawaii_Molokini Shoal MLCD: Zone B,0.0,0.02,0.0325,0.24,3.0,0
-hawaii,Development,0.5,hawaii_Molokini Shoal MLCD: Zone B,0.0,0.02,0.0325,0.24,3.0,0
-hawaii,Development,0.6,hawaii_Molokini Shoal MLCD: Zone B,0.0,0.02,0.0325,0.24,3.0,0
-hawaii,Development,0.7,hawaii_Molokini Shoal MLCD: Zone B,0.0,0.02,0.0325,0.24,3.0,0
-hawaii,Development,0.8,hawaii_Molokini Shoal MLCD: Zone B,0.0,0.02,0.0325,0.24,3.0,0
-hawaii,Development,0.9,hawaii_Molokini Shoal MLCD: Zone B,0.0,0.02,0.0325,0.24,3.0,0
-hawaii,Development,1.0,hawaii_Molokini Shoal MLCD: Zone B,0.0,0.02,0.0325,0.24,3.0,0
+hawaii,Development,0.3,hawaii_Molokini Shoal MLCD: Zone B,0.0,0.02,0.0425,0.24,4.0,0
+hawaii,Development,0.4,hawaii_Molokini Shoal MLCD: Zone B,0.0,0.02,0.03,0.24,3.0,0
+hawaii,Development,0.5,hawaii_Molokini Shoal MLCD: Zone B,0.0,0.02,0.03,0.24,3.0,0
+hawaii,Development,0.6,hawaii_Molokini Shoal MLCD: Zone B,0.0,0.02,0.03,0.24,3.0,0
+hawaii,Development,0.7,hawaii_Molokini Shoal MLCD: Zone B,0.0,0.02,0.03,0.24,3.0,0
+hawaii,Development,0.8,hawaii_Molokini Shoal MLCD: Zone B,0.0,0.02,0.03,0.24,3.0,0
+hawaii,Development,0.9,hawaii_Molokini Shoal MLCD: Zone B,0.0,0.02,0.03,0.24,3.0,0
+hawaii,Development,1.0,hawaii_Molokini Shoal MLCD: Zone B,0.0,0.02,0.03,0.24,3.0,0
 hawaii,Fish,0.1,hawaii_Molokini Shoal MLCD: Zone B,0.0,0.02,0.04,0.2709999999999999,4.0,0
-hawaii,Fish,0.2,hawaii_Molokini Shoal MLCD: Zone B,0.0,0.02,0.04,0.2709999999999999,4.0,0
+hawaii,Fish,0.2,hawaii_Molokini Shoal MLCD: Zone B,0.0,0.02,0.0325,0.2709999999999999,3.0,0
 hawaii,Fish,0.3,hawaii_Molokini Shoal MLCD: Zone B,0.0,0.01,0.02,0.03,2.0,0
 hawaii,Fish,0.4,hawaii_Molokini Shoal MLCD: Zone B,0.0,0.01,0.02,0.03,2.0,0
 hawaii,Fish,0.5,hawaii_Molokini Shoal MLCD: Zone B,0.0,0.01,0.02,0.03,2.0,0
@@ -2064,7 +2064,7 @@ hawaii,Development,0.8,hawaii_Napoopoo-Honaunau FRA,0.0,0.01,0.02,0.03,2.0,0
 hawaii,Development,0.9,hawaii_Napoopoo-Honaunau FRA,0.0,0.01,0.02,0.03,2.0,0
 hawaii,Development,1.0,hawaii_Napoopoo-Honaunau FRA,0.0,0.01,0.02,0.03,2.0,0
 hawaii,Fish,0.1,hawaii_Napoopoo-Honaunau FRA,0.0,0.02,0.04,0.2709999999999999,4.0,0
-hawaii,Fish,0.2,hawaii_Napoopoo-Honaunau FRA,0.0,0.02,0.036250000000000004,0.2709999999999999,3.5,0
+hawaii,Fish,0.2,hawaii_Napoopoo-Honaunau FRA,0.0,0.02,0.0325,0.2709999999999999,3.0,0
 hawaii,Fish,0.3,hawaii_Napoopoo-Honaunau FRA,0.0,0.01,0.02,0.03,2.0,0
 hawaii,Fish,0.4,hawaii_Napoopoo-Honaunau FRA,0.0,0.01,0.02,0.03,2.0,0
 hawaii,Fish,0.5,hawaii_Napoopoo-Honaunau FRA,0.0,0.01,0.02,0.03,2.0,0
@@ -2077,16 +2077,16 @@ hawaii,Turbidity,0.3,hawaii_Napoopoo-Honaunau FRA,0.0,0.02,0.2,0.2,20.0,0
 hawaii,Turbidity,0.4,hawaii_Napoopoo-Honaunau FRA,0.0,0.02,0.2,0.2,20.0,0
 hawaii,Turbidity,0.5,hawaii_Napoopoo-Honaunau FRA,0.0,0.02,0.2,0.2,20.0,0
 hawaii,Coral size,5.0,hawaii_Nawiliwili Harbor FMA,0.0,0.0,0.0,0.0,0.0,0
-hawaii,Coral size,15.0,hawaii_Nawiliwili Harbor FMA,0.0,0.0,0.0,0.0009999999999999,0.0,0
+hawaii,Coral size,15.0,hawaii_Nawiliwili Harbor FMA,0.0,0.0,0.0,0.01,0.0,0
 hawaii,Coral size,25.0,hawaii_Nawiliwili Harbor FMA,0.0,0.0,0.0,0.0409999999999999,0.0,0
 hawaii,Coral size,35.0,hawaii_Nawiliwili Harbor FMA,0.0,0.0,0.0,0.0409999999999999,0.0,0
 hawaii,Coral size,45.0,hawaii_Nawiliwili Harbor FMA,0.0,0.0,0.0,0.0409999999999999,0.0,0
-hawaii,Coral size,55.0,hawaii_Nawiliwili Harbor FMA,0.0,0.0,0.0,0.0909999999999999,0.0,0
-hawaii,Coral size,65.0,hawaii_Nawiliwili Harbor FMA,0.0,0.0,0.02,0.1909999999999999,2.0,0
-hawaii,Development,0.0,hawaii_Nawiliwili Harbor FMA,0.0,0.01,0.055,0.89,6.0,0
-hawaii,Development,0.1,hawaii_Nawiliwili Harbor FMA,0.0,0.0,0.02,0.1909999999999999,2.0,0
-hawaii,Development,0.2,hawaii_Nawiliwili Harbor FMA,0.0,0.02,0.05,0.28,5.0,0
-hawaii,Development,0.3,hawaii_Nawiliwili Harbor FMA,0.0,0.02,0.05,0.2919999999999998,5.0,0
+hawaii,Coral size,55.0,hawaii_Nawiliwili Harbor FMA,0.0,0.0,0.01,0.0909999999999999,1.0,0
+hawaii,Coral size,65.0,hawaii_Nawiliwili Harbor FMA,0.0,0.0,0.02,0.2,2.0,0
+hawaii,Development,0.0,hawaii_Nawiliwili Harbor FMA,0.0,0.01,0.0775,0.89,8.0,0
+hawaii,Development,0.1,hawaii_Nawiliwili Harbor FMA,0.0,0.0,0.02,0.2,2.0,0
+hawaii,Development,0.2,hawaii_Nawiliwili Harbor FMA,0.0,0.02,0.05,0.2809999999999999,5.0,0
+hawaii,Development,0.3,hawaii_Nawiliwili Harbor FMA,0.0,0.02,0.05,0.31,5.0,0
 hawaii,Development,0.4,hawaii_Nawiliwili Harbor FMA,0.0,0.02,0.05,0.31,5.0,0
 hawaii,Development,0.5,hawaii_Nawiliwili Harbor FMA,0.0,0.02,0.05,0.32,5.0,0
 hawaii,Development,0.6,hawaii_Nawiliwili Harbor FMA,0.0,0.02,0.05,0.32,5.0,0
@@ -2094,8 +2094,8 @@ hawaii,Development,0.7,hawaii_Nawiliwili Harbor FMA,0.0,0.02,0.05,0.32,5.0,0
 hawaii,Development,0.8,hawaii_Nawiliwili Harbor FMA,0.0,0.02,0.05,0.32,5.0,0
 hawaii,Development,0.9,hawaii_Nawiliwili Harbor FMA,0.0,0.02,0.05,0.32,5.0,0
 hawaii,Development,1.0,hawaii_Nawiliwili Harbor FMA,0.0,0.02,0.05,0.32,5.0,0
-hawaii,Fish,0.1,hawaii_Nawiliwili Harbor FMA,0.0,0.02,0.0625,0.32,6.0,0
-hawaii,Fish,0.2,hawaii_Nawiliwili Harbor FMA,0.0,0.02,0.1,0.32,10.0,0
+hawaii,Fish,0.1,hawaii_Nawiliwili Harbor FMA,0.0,0.02,0.0525,0.32,5.0,0
+hawaii,Fish,0.2,hawaii_Nawiliwili Harbor FMA,0.0,0.02,0.0625,0.32,6.0,0
 hawaii,Fish,0.3,hawaii_Nawiliwili Harbor FMA,0.0,0.01,0.02,0.03,2.0,0
 hawaii,Fish,0.4,hawaii_Nawiliwili Harbor FMA,0.0,0.01,0.02,0.03,2.0,0
 hawaii,Fish,0.5,hawaii_Nawiliwili Harbor FMA,0.0,0.01,0.02,0.03,2.0,0
@@ -2188,7 +2188,7 @@ hawaii,Development,0.8,hawaii_North Kohala FRA,0.0,0.01,0.02,0.03,2.0,0
 hawaii,Development,0.9,hawaii_North Kohala FRA,0.0,0.01,0.02,0.03,2.0,0
 hawaii,Development,1.0,hawaii_North Kohala FRA,0.0,0.01,0.02,0.03,2.0,0
 hawaii,Fish,0.1,hawaii_North Kohala FRA,0.0,0.02,0.04,0.2709999999999999,4.0,0
-hawaii,Fish,0.2,hawaii_North Kohala FRA,0.0,0.02,0.04,0.2709999999999999,4.0,0
+hawaii,Fish,0.2,hawaii_North Kohala FRA,0.0,0.02,0.0325,0.2709999999999999,3.0,0
 hawaii,Fish,0.3,hawaii_North Kohala FRA,0.0,0.01,0.02,0.03,2.0,0
 hawaii,Fish,0.4,hawaii_North Kohala FRA,0.0,0.01,0.02,0.03,2.0,0
 hawaii,Fish,0.5,hawaii_North Kohala FRA,0.0,0.01,0.02,0.03,2.0,0
@@ -2269,7 +2269,7 @@ hawaii,Coral size,35.0,hawaii_Paiko Lagoon WS,2.0,0.02,0.27,0.3109999999999999,2
 hawaii,Coral size,45.0,hawaii_Paiko Lagoon WS,2.0,0.02,0.27,0.33,25.0,0
 hawaii,Coral size,55.0,hawaii_Paiko Lagoon WS,2.0,0.02,0.27,0.33,25.0,0
 hawaii,Coral size,65.0,hawaii_Paiko Lagoon WS,2.0,0.03,0.27,0.33,25.0,0
-hawaii,Development,0.0,hawaii_Paiko Lagoon WS,2.0,0.02,0.0775,0.89,6.0,0
+hawaii,Development,0.0,hawaii_Paiko Lagoon WS,2.0,0.02,0.105,0.89,9.0,0
 hawaii,Development,0.1,hawaii_Paiko Lagoon WS,2.0,0.01,0.03,0.1459999999999996,1.0,0
 hawaii,Development,0.2,hawaii_Paiko Lagoon WS,2.0,0.03,0.27,0.3309999999999999,25.0,0
 hawaii,Development,0.3,hawaii_Paiko Lagoon WS,2.0,0.03,0.27,0.33,25.0,0
@@ -2280,15 +2280,15 @@ hawaii,Development,0.7,hawaii_Paiko Lagoon WS,2.0,0.03,0.2825,0.34,26.0,0
 hawaii,Development,0.8,hawaii_Paiko Lagoon WS,2.0,0.03,0.2825,0.34,26.0,0
 hawaii,Development,0.9,hawaii_Paiko Lagoon WS,2.0,0.03,0.2825,0.34,26.0,0
 hawaii,Development,1.0,hawaii_Paiko Lagoon WS,2.0,0.03,0.2825,0.34,26.0,0
-hawaii,Fish,0.1,hawaii_Paiko Lagoon WS,2.0,0.04,0.31,0.35,29.0,0
-hawaii,Fish,0.2,hawaii_Paiko Lagoon WS,2.0,0.04,0.31,0.32,29.0,0
-hawaii,Fish,0.3,hawaii_Paiko Lagoon WS,2.0,0.01,0.02,0.0309999999999999,0.0,0
-hawaii,Fish,0.4,hawaii_Paiko Lagoon WS,2.0,0.01,0.02,0.04,0.0,0
-hawaii,Fish,0.5,hawaii_Paiko Lagoon WS,2.0,0.01,0.02,0.04,0.0,0
-hawaii,Fish,0.6,hawaii_Paiko Lagoon WS,2.0,0.01,0.02,0.04,0.0,0
-hawaii,Fish,0.7,hawaii_Paiko Lagoon WS,2.0,0.01,0.02,0.04,0.0,0
-hawaii,Turbidity,0.0,hawaii_Paiko Lagoon WS,2.0,0.01,0.02,0.04,0.0,0
-hawaii,Turbidity,0.1,hawaii_Paiko Lagoon WS,2.0,0.01,0.02,0.04,0.0,0
+hawaii,Fish,0.1,hawaii_Paiko Lagoon WS,2.0,0.05,0.31,0.35,29.0,0
+hawaii,Fish,0.2,hawaii_Paiko Lagoon WS,2.0,0.045,0.31,0.32,29.0,0
+hawaii,Fish,0.3,hawaii_Paiko Lagoon WS,2.0,0.01,0.02,0.05,0.0,0
+hawaii,Fish,0.4,hawaii_Paiko Lagoon WS,2.0,0.01,0.02,0.05,0.0,0
+hawaii,Fish,0.5,hawaii_Paiko Lagoon WS,2.0,0.01,0.02,0.05,0.0,0
+hawaii,Fish,0.6,hawaii_Paiko Lagoon WS,2.0,0.01,0.02,0.05,0.0,0
+hawaii,Fish,0.7,hawaii_Paiko Lagoon WS,2.0,0.01,0.02,0.05,0.0,0
+hawaii,Turbidity,0.0,hawaii_Paiko Lagoon WS,2.0,0.01,0.02,0.05,0.0,0
+hawaii,Turbidity,0.1,hawaii_Paiko Lagoon WS,2.0,0.01,0.02,0.05,0.0,0
 hawaii,Turbidity,0.2,hawaii_Paiko Lagoon WS,2.0,0.02,0.2,0.2,18.0,0
 hawaii,Turbidity,0.3,hawaii_Paiko Lagoon WS,2.0,0.02,0.2,0.2,18.0,0
 hawaii,Turbidity,0.4,hawaii_Paiko Lagoon WS,2.0,0.02,0.2,0.2,18.0,0
@@ -2342,8 +2342,8 @@ hawaii,Development,0.7,hawaii_Pokai Bay,0.0,0.02,0.04,0.26,4.0,0
 hawaii,Development,0.8,hawaii_Pokai Bay,0.0,0.02,0.04,0.26,4.0,0
 hawaii,Development,0.9,hawaii_Pokai Bay,0.0,0.02,0.04,0.26,4.0,0
 hawaii,Development,1.0,hawaii_Pokai Bay,0.0,0.02,0.04,0.26,4.0,0
-hawaii,Fish,0.1,hawaii_Pokai Bay,0.0,0.02,0.051250000000000004,0.2955,5.0,0
-hawaii,Fish,0.2,hawaii_Pokai Bay,0.0,0.02,0.065,0.29500000000000004,6.5,0
+hawaii,Fish,0.1,hawaii_Pokai Bay,0.0,0.02,0.04625,0.2955,4.5,0
+hawaii,Fish,0.2,hawaii_Pokai Bay,0.0,0.02,0.04625,0.29500000000000004,4.5,0
 hawaii,Fish,0.3,hawaii_Pokai Bay,0.0,0.01,0.02,0.03,2.0,0
 hawaii,Fish,0.4,hawaii_Pokai Bay,0.0,0.01,0.02,0.03,2.0,0
 hawaii,Fish,0.5,hawaii_Pokai Bay,0.0,0.01,0.02,0.03,2.0,0
@@ -2360,9 +2360,9 @@ hawaii,Coral size,15.0,hawaii_Port Allen FMA,0.0,0.0,0.0,0.01,0.0,0
 hawaii,Coral size,25.0,hawaii_Port Allen FMA,0.0,0.0,0.0,0.03,0.0,0
 hawaii,Coral size,35.0,hawaii_Port Allen FMA,0.0,0.0,0.0,0.0209999999999999,0.0,0
 hawaii,Coral size,45.0,hawaii_Port Allen FMA,0.0,0.0,0.0,0.0309999999999999,0.0,0
-hawaii,Coral size,55.0,hawaii_Port Allen FMA,0.0,0.0,0.0,0.04,0.0,0
+hawaii,Coral size,55.0,hawaii_Port Allen FMA,0.0,0.0,0.0025,0.04,0.0,0
 hawaii,Coral size,65.0,hawaii_Port Allen FMA,0.0,0.0,0.02,0.05,2.0,0
-hawaii,Development,0.0,hawaii_Port Allen FMA,0.0,0.0,0.02,0.0509999999999999,2.0,0
+hawaii,Development,0.0,hawaii_Port Allen FMA,0.0,0.0,0.02,0.0609999999999999,2.0,0
 hawaii,Development,0.1,hawaii_Port Allen FMA,0.0,0.0,0.02,0.05,2.0,0
 hawaii,Development,0.2,hawaii_Port Allen FMA,0.0,0.02,0.03,0.1729999999999998,3.0,0
 hawaii,Development,0.3,hawaii_Port Allen FMA,0.0,0.02,0.04,0.21,4.0,0
@@ -2374,7 +2374,7 @@ hawaii,Development,0.8,hawaii_Port Allen FMA,0.0,0.02,0.03,0.2,3.0,0
 hawaii,Development,0.9,hawaii_Port Allen FMA,0.0,0.02,0.03,0.2,3.0,0
 hawaii,Development,1.0,hawaii_Port Allen FMA,0.0,0.02,0.03,0.2,3.0,0
 hawaii,Fish,0.1,hawaii_Port Allen FMA,0.0,0.02,0.04,0.2709999999999999,4.0,0
-hawaii,Fish,0.2,hawaii_Port Allen FMA,0.0,0.02,0.0325,0.2709999999999999,3.0,0
+hawaii,Fish,0.2,hawaii_Port Allen FMA,0.0,0.02,0.03,0.27,3.0,0
 hawaii,Fish,0.3,hawaii_Port Allen FMA,0.0,0.01,0.02,0.03,2.0,0
 hawaii,Fish,0.4,hawaii_Port Allen FMA,0.0,0.01,0.02,0.03,2.0,0
 hawaii,Fish,0.5,hawaii_Port Allen FMA,0.0,0.01,0.02,0.03,2.0,0
@@ -2450,13 +2450,13 @@ hawaii,Turbidity,0.4,hawaii_Puako-Anaehoomalu FRA / NRA,0.0,0.02,0.2,0.2,20.0,0
 hawaii,Turbidity,0.5,hawaii_Puako-Anaehoomalu FRA / NRA,0.0,0.02,0.2,0.2,20.0,0
 hawaii,Coral size,5.0,hawaii_Pupukea MLCD: Shark's Cove & Three Tables,0.0,0.0,0.0,0.0,0.0,0
 hawaii,Coral size,15.0,hawaii_Pupukea MLCD: Shark's Cove & Three Tables,0.0,0.0,0.0,0.0,0.0,0
-hawaii,Coral size,25.0,hawaii_Pupukea MLCD: Shark's Cove & Three Tables,0.0,0.0,0.01,0.02,1.0,0
-hawaii,Coral size,35.0,hawaii_Pupukea MLCD: Shark's Cove & Three Tables,0.0,0.0,0.01,0.0209999999999999,1.0,0
-hawaii,Coral size,45.0,hawaii_Pupukea MLCD: Shark's Cove & Three Tables,0.0,0.0,0.01,0.03,1.0,0
-hawaii,Coral size,55.0,hawaii_Pupukea MLCD: Shark's Cove & Three Tables,0.0,0.0,0.01,0.03,1.0,0
-hawaii,Coral size,65.0,hawaii_Pupukea MLCD: Shark's Cove & Three Tables,0.0,0.01,0.02,0.05,2.0,0
-hawaii,Development,0.0,hawaii_Pupukea MLCD: Shark's Cove & Three Tables,0.0,0.01,0.02,0.0609999999999999,2.0,0
-hawaii,Development,0.1,hawaii_Pupukea MLCD: Shark's Cove & Three Tables,0.0,0.01,0.02,0.05,2.0,0
+hawaii,Coral size,25.0,hawaii_Pupukea MLCD: Shark's Cove & Three Tables,0.0,0.0,0.01,0.03,1.0,0
+hawaii,Coral size,35.0,hawaii_Pupukea MLCD: Shark's Cove & Three Tables,0.0,0.0,0.01,0.03,1.0,0
+hawaii,Coral size,45.0,hawaii_Pupukea MLCD: Shark's Cove & Three Tables,0.0,0.0,0.01,0.04,1.0,0
+hawaii,Coral size,55.0,hawaii_Pupukea MLCD: Shark's Cove & Three Tables,0.0,0.0,0.01,0.05,1.0,0
+hawaii,Coral size,65.0,hawaii_Pupukea MLCD: Shark's Cove & Three Tables,0.0,0.01,0.03,0.0509999999999999,3.0,0
+hawaii,Development,0.0,hawaii_Pupukea MLCD: Shark's Cove & Three Tables,0.0,0.01,0.03,0.1259999999999996,3.0,0
+hawaii,Development,0.1,hawaii_Pupukea MLCD: Shark's Cove & Three Tables,0.0,0.01,0.03,0.06,3.0,0
 hawaii,Development,0.2,hawaii_Pupukea MLCD: Shark's Cove & Three Tables,0.0,0.02,0.05,0.27,5.0,0
 hawaii,Development,0.3,hawaii_Pupukea MLCD: Shark's Cove & Three Tables,0.0,0.02,0.05,0.27,5.0,0
 hawaii,Development,0.4,hawaii_Pupukea MLCD: Shark's Cove & Three Tables,0.0,0.02,0.05,0.2709999999999999,5.0,0
@@ -2469,10 +2469,10 @@ hawaii,Development,1.0,hawaii_Pupukea MLCD: Shark's Cove & Three Tables,0.0,0.02
 hawaii,Fish,0.1,hawaii_Pupukea MLCD: Shark's Cove & Three Tables,0.0,0.02,0.05,0.28,5.0,0
 hawaii,Fish,0.2,hawaii_Pupukea MLCD: Shark's Cove & Three Tables,0.0,0.02,0.05,0.28,5.0,0
 hawaii,Fish,0.3,hawaii_Pupukea MLCD: Shark's Cove & Three Tables,0.0,0.01,0.02,0.04,2.0,0
-hawaii,Fish,0.4,hawaii_Pupukea MLCD: Shark's Cove & Three Tables,0.0,0.01,0.02,0.04,2.0,0
-hawaii,Fish,0.5,hawaii_Pupukea MLCD: Shark's Cove & Three Tables,0.0,0.01,0.02,0.04,2.0,0
-hawaii,Fish,0.6,hawaii_Pupukea MLCD: Shark's Cove & Three Tables,0.0,0.01,0.02,0.04,2.0,0
-hawaii,Fish,0.7,hawaii_Pupukea MLCD: Shark's Cove & Three Tables,0.0,0.01,0.02,0.04,2.0,0
+hawaii,Fish,0.4,hawaii_Pupukea MLCD: Shark's Cove & Three Tables,0.0,0.01,0.02,0.0409999999999999,2.0,0
+hawaii,Fish,0.5,hawaii_Pupukea MLCD: Shark's Cove & Three Tables,0.0,0.01,0.02,0.0409999999999999,2.0,0
+hawaii,Fish,0.6,hawaii_Pupukea MLCD: Shark's Cove & Three Tables,0.0,0.01,0.02,0.0409999999999999,2.0,0
+hawaii,Fish,0.7,hawaii_Pupukea MLCD: Shark's Cove & Three Tables,0.0,0.01,0.02,0.0409999999999999,2.0,0
 hawaii,Turbidity,0.0,hawaii_Pupukea MLCD: Shark's Cove & Three Tables,0.0,0.01,0.02,0.04,2.0,0
 hawaii,Turbidity,0.1,hawaii_Pupukea MLCD: Shark's Cove & Three Tables,0.0,0.01,0.02,0.04,2.0,0
 hawaii,Turbidity,0.2,hawaii_Pupukea MLCD: Shark's Cove & Three Tables,0.0,0.02,0.2,0.2,20.0,0
@@ -2560,7 +2560,7 @@ hawaii,Development,0.8,hawaii_South Kona Opelu Mgmt Special Rules,0.0,0.01,0.02,
 hawaii,Development,0.9,hawaii_South Kona Opelu Mgmt Special Rules,0.0,0.01,0.02,0.03,2.0,0
 hawaii,Development,1.0,hawaii_South Kona Opelu Mgmt Special Rules,0.0,0.01,0.02,0.03,2.0,0
 hawaii,Fish,0.1,hawaii_South Kona Opelu Mgmt Special Rules,0.0,0.02,0.04,0.2709999999999999,4.0,0
-hawaii,Fish,0.2,hawaii_South Kona Opelu Mgmt Special Rules,0.0,0.02,0.04,0.2709999999999999,4.0,0
+hawaii,Fish,0.2,hawaii_South Kona Opelu Mgmt Special Rules,0.0,0.02,0.0325,0.2709999999999999,3.0,0
 hawaii,Fish,0.3,hawaii_South Kona Opelu Mgmt Special Rules,0.0,0.01,0.02,0.03,2.0,0
 hawaii,Fish,0.4,hawaii_South Kona Opelu Mgmt Special Rules,0.0,0.01,0.02,0.03,2.0,0
 hawaii,Fish,0.5,hawaii_South Kona Opelu Mgmt Special Rules,0.0,0.01,0.02,0.03,2.0,0
@@ -2574,66 +2574,66 @@ hawaii,Turbidity,0.4,hawaii_South Kona Opelu Mgmt Special Rules,0.0,0.02,0.2,0.2
 hawaii,Turbidity,0.5,hawaii_South Kona Opelu Mgmt Special Rules,0.0,0.02,0.2,0.2,20.0,0
 hawaii,Coral size,5.0,hawaii_Upolu Pt (BRFA K),0.0,0.0,0.0,0.0,0.0,0
 hawaii,Coral size,15.0,hawaii_Upolu Pt (BRFA K),0.0,0.0,0.0,0.0,0.0,0
-hawaii,Coral size,25.0,hawaii_Upolu Pt (BRFA K),0.0,0.0,0.01,0.04,1.0,0
-hawaii,Coral size,35.0,hawaii_Upolu Pt (BRFA K),0.0,0.0,0.01,0.0559999999999999,1.0,0
-hawaii,Coral size,45.0,hawaii_Upolu Pt (BRFA K),0.0,0.0,0.01,0.10549999999999995,1.0,0
-hawaii,Coral size,55.0,hawaii_Upolu Pt (BRFA K),0.0,0.0,0.01,0.15199999999999955,1.0,0
-hawaii,Coral size,65.0,hawaii_Upolu Pt (BRFA K),0.0,0.0,0.03,0.5859999999999996,3.0,0
-hawaii,Development,0.0,hawaii_Upolu Pt (BRFA K),0.0,0.0,0.07,0.88,7.0,0
-hawaii,Development,0.1,hawaii_Upolu Pt (BRFA K),0.0,0.0075,0.295,0.55,30.0,0
-hawaii,Development,0.2,hawaii_Upolu Pt (BRFA K),0.0,0.12,0.32,0.47,32.0,0
-hawaii,Development,0.3,hawaii_Upolu Pt (BRFA K),0.0,0.1775,0.32,0.47,32.0,0
-hawaii,Development,0.4,hawaii_Upolu Pt (BRFA K),0.0,0.12,0.32,0.47,32.0,0
-hawaii,Development,0.5,hawaii_Upolu Pt (BRFA K),0.0,0.12,0.32,0.47,32.0,0
-hawaii,Development,0.6,hawaii_Upolu Pt (BRFA K),0.0,0.12,0.3125,0.47,31.0,0
-hawaii,Development,0.7,hawaii_Upolu Pt (BRFA K),0.0,0.12,0.3125,0.47,31.0,0
-hawaii,Development,0.8,hawaii_Upolu Pt (BRFA K),0.0,0.12,0.3125,0.47,31.0,0
-hawaii,Development,0.9,hawaii_Upolu Pt (BRFA K),0.0,0.12,0.3125,0.47,31.0,0
-hawaii,Development,1.0,hawaii_Upolu Pt (BRFA K),0.0,0.12,0.3125,0.47,31.0,0
-hawaii,Fish,0.1,hawaii_Upolu Pt (BRFA K),0.0,0.12,0.3025,0.47,30.0,0
-hawaii,Fish,0.2,hawaii_Upolu Pt (BRFA K),0.0,0.12,0.32,0.47,32.0,0
-hawaii,Fish,0.3,hawaii_Upolu Pt (BRFA K),0.0,0.07250000000000001,0.23,0.47,23.0,0
-hawaii,Fish,0.4,hawaii_Upolu Pt (BRFA K),0.0,0.075,0.12,0.23,12.0,0
-hawaii,Fish,0.5,hawaii_Upolu Pt (BRFA K),0.0,0.075,0.12,0.23,12.0,0
-hawaii,Fish,0.6,hawaii_Upolu Pt (BRFA K),0.0,0.075,0.12,0.23,12.0,0
-hawaii,Fish,0.7,hawaii_Upolu Pt (BRFA K),0.0,0.075,0.12,0.23,12.0,0
-hawaii,Turbidity,0.0,hawaii_Upolu Pt (BRFA K),0.0,0.075,0.12,0.27849999999999975,12.0,0
-hawaii,Turbidity,0.1,hawaii_Upolu Pt (BRFA K),0.0,0.075,0.23,0.23,23.0,0
-hawaii,Turbidity,0.2,hawaii_Upolu Pt (BRFA K),0.0,0.075,0.23,0.23,23.0,0
-hawaii,Turbidity,0.3,hawaii_Upolu Pt (BRFA K),0.0,0.075,0.23,0.23,23.0,0
-hawaii,Turbidity,0.4,hawaii_Upolu Pt (BRFA K),0.0,0.06,0.23,0.23,23.0,0
-hawaii,Turbidity,0.5,hawaii_Upolu Pt (BRFA K),0.0,0.06,0.23,0.23,23.0,0
+hawaii,Coral size,25.0,hawaii_Upolu Pt (BRFA K),0.0,0.0,0.01,0.04549999999999995,1.0,0
+hawaii,Coral size,35.0,hawaii_Upolu Pt (BRFA K),0.0,0.0,0.01,0.08049999999999995,1.0,0
+hawaii,Coral size,45.0,hawaii_Upolu Pt (BRFA K),0.0,0.0,0.015,0.0909999999999999,1.5,0
+hawaii,Coral size,55.0,hawaii_Upolu Pt (BRFA K),0.0,0.0,0.015,0.09549999999999995,1.5,0
+hawaii,Coral size,65.0,hawaii_Upolu Pt (BRFA K),0.0,0.01,0.021249999999999998,0.12,2.0,0
+hawaii,Development,0.0,hawaii_Upolu Pt (BRFA K),0.0,0.01,0.0625,0.1319999999999999,6.0,0
+hawaii,Development,0.1,hawaii_Upolu Pt (BRFA K),0.0,0.01,0.07,0.11099999999999995,7.0,0
+hawaii,Development,0.2,hawaii_Upolu Pt (BRFA K),0.0,0.04,0.1,0.2559999999999999,10.0,0
+hawaii,Development,0.3,hawaii_Upolu Pt (BRFA K),0.0,0.04,0.12,0.25099999999999995,12.0,0
+hawaii,Development,0.4,hawaii_Upolu Pt (BRFA K),0.0,0.0325,0.1,0.24649999999999989,10.0,0
+hawaii,Development,0.5,hawaii_Upolu Pt (BRFA K),0.0,0.0325,0.1,0.25699999999999984,10.0,0
+hawaii,Development,0.6,hawaii_Upolu Pt (BRFA K),0.0,0.0325,0.1,0.25699999999999984,10.0,0
+hawaii,Development,0.7,hawaii_Upolu Pt (BRFA K),0.0,0.0325,0.1,0.25699999999999984,10.0,0
+hawaii,Development,0.8,hawaii_Upolu Pt (BRFA K),0.0,0.0325,0.1,0.25699999999999984,10.0,0
+hawaii,Development,0.9,hawaii_Upolu Pt (BRFA K),0.0,0.0325,0.1,0.25699999999999984,10.0,0
+hawaii,Development,1.0,hawaii_Upolu Pt (BRFA K),0.0,0.0325,0.1,0.25699999999999984,10.0,0
+hawaii,Fish,0.1,hawaii_Upolu Pt (BRFA K),0.0,0.04,0.1,0.28,10.0,0
+hawaii,Fish,0.2,hawaii_Upolu Pt (BRFA K),0.0,0.037500000000000006,0.1,0.28,10.0,0
+hawaii,Fish,0.3,hawaii_Upolu Pt (BRFA K),0.0,0.03,0.07,0.1,7.0,0
+hawaii,Fish,0.4,hawaii_Upolu Pt (BRFA K),0.0,0.03,0.07,0.1,7.0,0
+hawaii,Fish,0.5,hawaii_Upolu Pt (BRFA K),0.0,0.03,0.07,0.1,7.0,0
+hawaii,Fish,0.6,hawaii_Upolu Pt (BRFA K),0.0,0.03,0.07,0.1,7.0,0
+hawaii,Fish,0.7,hawaii_Upolu Pt (BRFA K),0.0,0.03,0.07,0.1,7.0,0
+hawaii,Turbidity,0.0,hawaii_Upolu Pt (BRFA K),0.0,0.03,0.07,0.1,7.0,0
+hawaii,Turbidity,0.1,hawaii_Upolu Pt (BRFA K),0.0,0.03,0.07,0.1,7.0,0
+hawaii,Turbidity,0.2,hawaii_Upolu Pt (BRFA K),0.0,0.05,0.2,0.2,20.0,0
+hawaii,Turbidity,0.3,hawaii_Upolu Pt (BRFA K),0.0,0.05,0.2,0.2,20.0,0
+hawaii,Turbidity,0.4,hawaii_Upolu Pt (BRFA K),0.0,0.05,0.2,0.2,20.0,0
+hawaii,Turbidity,0.5,hawaii_Upolu Pt (BRFA K),0.0,0.05,0.2,0.2,20.0,0
 hawaii,Coral size,5.0,hawaii_Waiakea PFA,3.0,0.01,0.03,0.05,0.0,0
-hawaii,Coral size,15.0,hawaii_Waiakea PFA,3.0,0.02,0.03,0.0509999999999999,0.0,0
-hawaii,Coral size,25.0,hawaii_Waiakea PFA,3.0,0.055,0.33,0.45,30.0,0
-hawaii,Coral size,35.0,hawaii_Waiakea PFA,3.0,0.21,0.27,0.35,24.0,0
-hawaii,Coral size,45.0,hawaii_Waiakea PFA,3.0,0.25,0.27,0.35,24.0,0
-hawaii,Coral size,55.0,hawaii_Waiakea PFA,3.0,0.25,0.27,0.35,24.0,0
-hawaii,Coral size,65.0,hawaii_Waiakea PFA,3.0,0.25,0.27,0.35,24.0,0
-hawaii,Development,0.0,hawaii_Waiakea PFA,3.0,0.98,0.9825,0.99,95.0,0
-hawaii,Development,0.1,hawaii_Waiakea PFA,3.0,0.74,0.97,0.99,94.0,0
-hawaii,Development,0.2,hawaii_Waiakea PFA,3.0,0.32,0.35,0.35,32.0,0
-hawaii,Development,0.3,hawaii_Waiakea PFA,3.0,0.31,0.35,0.35,32.0,0
-hawaii,Development,0.4,hawaii_Waiakea PFA,3.0,0.31,0.35,0.35,32.0,0
-hawaii,Development,0.5,hawaii_Waiakea PFA,3.0,0.31,0.35,0.35,32.0,0
-hawaii,Development,0.6,hawaii_Waiakea PFA,3.0,0.25,0.27,0.35,24.0,0
-hawaii,Development,0.7,hawaii_Waiakea PFA,3.0,0.25,0.27,0.35,24.0,0
-hawaii,Development,0.8,hawaii_Waiakea PFA,3.0,0.25,0.27,0.35,24.0,0
-hawaii,Development,0.9,hawaii_Waiakea PFA,3.0,0.25,0.27,0.35,24.0,0
-hawaii,Development,1.0,hawaii_Waiakea PFA,3.0,0.25,0.27,0.35,24.0,0
-hawaii,Fish,0.1,hawaii_Waiakea PFA,3.0,0.115,0.27,0.35,24.0,0
-hawaii,Fish,0.2,hawaii_Waiakea PFA,3.0,0.25,0.27,0.35,24.0,0
-hawaii,Fish,0.3,hawaii_Waiakea PFA,3.0,0.06,0.26,0.27,23.0,0
-hawaii,Fish,0.4,hawaii_Waiakea PFA,3.0,0.06,0.25,0.26,22.0,0
-hawaii,Fish,0.5,hawaii_Waiakea PFA,3.0,0.06,0.25,0.26,22.0,0
-hawaii,Fish,0.6,hawaii_Waiakea PFA,3.0,0.06,0.25,0.26,22.0,0
-hawaii,Fish,0.7,hawaii_Waiakea PFA,3.0,0.06,0.25,0.26,22.0,0
-hawaii,Turbidity,0.0,hawaii_Waiakea PFA,3.0,0.065,0.25,0.3029999999999998,22.0,0
-hawaii,Turbidity,0.1,hawaii_Waiakea PFA,3.0,0.06,0.25,0.26,22.0,0
-hawaii,Turbidity,0.2,hawaii_Waiakea PFA,3.0,0.06,0.25,0.26,22.0,0
-hawaii,Turbidity,0.3,hawaii_Waiakea PFA,3.0,0.06,0.25,0.26,22.0,0
-hawaii,Turbidity,0.4,hawaii_Waiakea PFA,3.0,0.06,0.25,0.26,22.0,0
-hawaii,Turbidity,0.5,hawaii_Waiakea PFA,3.0,0.06,0.25,0.26,22.0,0
+hawaii,Coral size,15.0,hawaii_Waiakea PFA,3.0,0.01,0.03,0.06,0.0,0
+hawaii,Coral size,25.0,hawaii_Waiakea PFA,3.0,0.06,0.2,0.3409999999999999,17.0,0
+hawaii,Coral size,35.0,hawaii_Waiakea PFA,3.0,0.07,0.21,0.32,18.0,0
+hawaii,Coral size,45.0,hawaii_Waiakea PFA,3.0,0.07,0.24,0.32,21.0,0
+hawaii,Coral size,55.0,hawaii_Waiakea PFA,3.0,0.07,0.24,0.32,21.0,0
+hawaii,Coral size,65.0,hawaii_Waiakea PFA,3.0,0.07,0.24,0.32,21.0,0
+hawaii,Development,0.0,hawaii_Waiakea PFA,3.0,0.89,0.98,0.99,95.0,0
+hawaii,Development,0.1,hawaii_Waiakea PFA,3.0,0.2,0.89,0.99,86.0,0
+hawaii,Development,0.2,hawaii_Waiakea PFA,3.0,0.07,0.28,0.35,25.0,0
+hawaii,Development,0.3,hawaii_Waiakea PFA,3.0,0.07,0.27,0.35,24.0,0
+hawaii,Development,0.4,hawaii_Waiakea PFA,3.0,0.07,0.27,0.35,24.0,0
+hawaii,Development,0.5,hawaii_Waiakea PFA,3.0,0.07,0.3025,0.35,27.0,0
+hawaii,Development,0.6,hawaii_Waiakea PFA,3.0,0.07,0.24,0.32,21.0,0
+hawaii,Development,0.7,hawaii_Waiakea PFA,3.0,0.07,0.24,0.32,21.0,0
+hawaii,Development,0.8,hawaii_Waiakea PFA,3.0,0.07,0.24,0.32,21.0,0
+hawaii,Development,0.9,hawaii_Waiakea PFA,3.0,0.07,0.24,0.32,21.0,0
+hawaii,Development,1.0,hawaii_Waiakea PFA,3.0,0.07,0.24,0.32,21.0,0
+hawaii,Fish,0.1,hawaii_Waiakea PFA,3.0,0.07,0.2,0.34,17.0,0
+hawaii,Fish,0.2,hawaii_Waiakea PFA,3.0,0.07,0.21,0.32,18.0,0
+hawaii,Fish,0.3,hawaii_Waiakea PFA,3.0,0.05,0.2,0.25,17.0,0
+hawaii,Fish,0.4,hawaii_Waiakea PFA,3.0,0.05,0.2,0.24,17.0,0
+hawaii,Fish,0.5,hawaii_Waiakea PFA,3.0,0.05,0.2,0.24,17.0,0
+hawaii,Fish,0.6,hawaii_Waiakea PFA,3.0,0.05,0.2,0.24,17.0,0
+hawaii,Fish,0.7,hawaii_Waiakea PFA,3.0,0.05,0.2,0.24,17.0,0
+hawaii,Turbidity,0.0,hawaii_Waiakea PFA,3.0,0.03,0.08,0.24,5.0,0
+hawaii,Turbidity,0.1,hawaii_Waiakea PFA,3.0,0.03,0.08,0.25,5.0,0
+hawaii,Turbidity,0.2,hawaii_Waiakea PFA,3.0,0.05,0.2,0.25,17.0,0
+hawaii,Turbidity,0.3,hawaii_Waiakea PFA,3.0,0.05,0.2,0.25,17.0,0
+hawaii,Turbidity,0.4,hawaii_Waiakea PFA,3.0,0.05,0.2,0.24,17.0,0
+hawaii,Turbidity,0.5,hawaii_Waiakea PFA,3.0,0.05,0.2,0.24,17.0,0
 hawaii,Coral size,5.0,hawaii_Wawaloli FMA,0.0,0.0,0.2,0.2,20.0,0
 hawaii,Coral size,15.0,hawaii_Wawaloli FMA,0.0,0.0,0.0,0.0,0.0,0
 hawaii,Coral size,25.0,hawaii_Wawaloli FMA,0.0,0.0,0.0,0.0,0.0,0
@@ -2684,7 +2684,7 @@ hawaii,Development,0.8,hawaii_West Hawaii Regional FMA,0.0,0.01,0.02,0.03,2.0,0
 hawaii,Development,0.9,hawaii_West Hawaii Regional FMA,0.0,0.01,0.02,0.03,2.0,0
 hawaii,Development,1.0,hawaii_West Hawaii Regional FMA,0.0,0.01,0.02,0.03,2.0,0
 hawaii,Fish,0.1,hawaii_West Hawaii Regional FMA,0.0,0.02,0.04,0.2709999999999999,4.0,0
-hawaii,Fish,0.2,hawaii_West Hawaii Regional FMA,0.0,0.02,0.04,0.2709999999999999,4.0,0
+hawaii,Fish,0.2,hawaii_West Hawaii Regional FMA,0.0,0.02,0.0325,0.2709999999999999,3.0,0
 hawaii,Fish,0.3,hawaii_West Hawaii Regional FMA,0.0,0.01,0.02,0.03,2.0,0
 hawaii,Fish,0.4,hawaii_West Hawaii Regional FMA,0.0,0.01,0.02,0.03,2.0,0
 hawaii,Fish,0.5,hawaii_West Hawaii Regional FMA,0.0,0.01,0.02,0.03,2.0,0

@@ -1,4 +1,4 @@
-ID,Latitude,Longitude,Region,predicted,Response,Response_level,Lwr,value,Upr,disease_risk_change
+ID,Latitude,Longitude,Region,predicted,Response,Response_level,Lwr,value,Upr,disease_risk_change  
 1010001,28.375,-178.375,hawaii,0.0,Coral size,5.0,0.0,0.0,0.01,0.0
 1010002,28.425,-178.375,hawaii,0.0,Coral size,5.0,0.0,0.0,0.01,0.0
 1010003,28.475,-178.375,hawaii,0.0,Coral size,5.0,0.0,0.01,0.02,1.0

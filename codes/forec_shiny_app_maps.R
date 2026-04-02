@@ -43,7 +43,7 @@ legendLabels <- c("No/low risk",
 
 # base map ---------------------------------------------------------------------
 reefs_basemap <- leaflet() %>%
-  addTiles(group = "OpenStreetMap") %>%
+  #addTiles(group = "OpenStreetMap") %>%
   addTiles(urlTemplate="http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}", group = "Satellite") %>%
   addScaleBar("topright") %>%
   leaflet::addLegend("topleft",

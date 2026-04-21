@@ -1,4 +1,4 @@
-ID,Region,Date,type,Lwr,value,Upr,drisk  
+ID,Region,Date,type,Lwr,value,Upr,drisk
 cnmi_1,guam_cnmi,2026-02-01,nowcast,0.0,0.8,3.2,0
 cnmi_1,guam_cnmi,2026-02-08,nowcast,0.0,0.8,3.2,0
 cnmi_1,guam_cnmi,2026-02-15,nowcast,0.0,0.8,3.2,0

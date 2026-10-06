@@ -1,4 +1,4 @@
-ID,Region,Date,type,Lwr,value,Upr,drisk
+ID,Region,Date,type,Lwr,value,Upr,drisk 
 gbr_1,gbr,2026-07-19,nowcast,0.0,0.0,0.0,0
 gbr_1,gbr,2026-07-26,nowcast,0.0,0.0,0.0,0
 gbr_1,gbr,2026-08-02,nowcast,0.0,0.0,0.0,0
